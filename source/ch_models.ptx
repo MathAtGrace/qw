@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="ch-models" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Math Models</title>
+  <introduction>
+    <p>This chapter will focus on mathematical models.</p>
+  </introduction>
+
+  <xi:include href="./sec-models-slope.ptx"/>
+  <xi:include href="./sec-models-lin-fun.ptx"/>
+  <xi:include href="./old-sec-models-linear.ptx"/>
+  <xi:include href="./sec-models-exponential.ptx"/>
+  <xi:include href="./sec-models-exponential-2.ptx"/>
+  <xi:include href="./sec-models-periodic.ptx"/>
+</chapter>

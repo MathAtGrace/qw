@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <xi:include href="bookinfo.ptx" />
+  
+  <book xml:id="ula">
+    <title> Understanding Linear Algebra</title>
+
+    <xi:include href="./frontmatter.ptx" />
+    <xi:include href="./ch_intro.ptx" />
+    <xi:include href="./ch_numbers.ptx" />
+    <xi:include href="./backmatter.ptx" />
+
+  </book>
+</pretext>
