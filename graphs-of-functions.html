@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Graphs of Functions</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Quantitative Wisdom">
+<meta property="book:author" content=" Dr. Ryan Johnson ">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+    renderActions: {
+        findScript: [10, function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        }, '']
+    },
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+},
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://webwork-ptx.aimath.org/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
+<script src="https://pretextbook.org/js/0.13/pretext-webwork/2.17/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script async="" src="https://cse.google.com/cse.js?cx=015103900096539427448:ngwuia10qci"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.13/pretext_search.js"></script><link href="https://pretextbook.org/css/0.4/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '5.0.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.5.4/runtime.0d64a5199ae36cbe.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.5.4/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.5.4/runestone.ecc6dff5cad8b815.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.5.4/637.0fa6cababf056764.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.5.4/runestone.3eb60bc006ae9a54.css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\degree}[0]{^{\circ}}
+\newcommand{\Ccancel}[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{blue}{#1}} 
+\delimitershortfall-1sp
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\newcommand{\sfrac}[2]{{#1}/{#2}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="qw.html"><span class="title">Quantitative Wisdom:</span> <span class="subtitle">Numerical literacy from the perspective of Biblical wisdom</span></a></h1>
+<p class="byline">Dr. Ryan Johnson</p>
+</div>
+<div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
+<div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="functions.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-bonus-algebra.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="functions.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-bonus-algebra.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="dedication-1.html" data-scroll="dedication-1" class="internal">Dedication</a></li>
+<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1" class="internal">Acknowledgements</a></li>
+<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1" class="internal">Our goals</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-introduction.html" data-scroll="ch-introduction" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a><ul><li><a href="time.html" data-scroll="time" class="internal">Time Management Lab</a></li></ul>
+</li>
+<li class="link">
+<a href="ch-numbers.html" data-scroll="ch-numbers" class="internal"><span class="codenumber">2</span> <span class="title">Numbers</span></a><ul><li><a href="sec-problem-solving.html" data-scroll="sec-problem-solving" class="internal">Problem Solving</a></li></ul>
+</li>
+<li class="link">
+<a href="financial_math.html" data-scroll="financial_math" class="internal"><span class="codenumber">3</span> <span class="title">Finance</span></a><ul>
+<li><a href="sec-finance-intro-spreadsheet.html" data-scroll="sec-finance-intro-spreadsheet" class="internal">Introduction to Spreadsheets</a></li>
+<li><a href="sec-finance-simple-compound.html" data-scroll="sec-finance-simple-compound" class="internal">Simple and Compound Interest</a></li>
+<li><a href="sec-finance-savings-plan.html" data-scroll="sec-finance-savings-plan" class="internal">Savings Plans</a></li>
+<li><a href="sec-3-4-loans.html" data-scroll="sec-3-4-loans" class="internal">Loan Payments</a></li>
+<li><a href="chap_two_income_taxes.html" data-scroll="chap_two_income_taxes" class="internal">Income Taxes</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="data.html" data-scroll="data" class="internal"><span class="codenumber">4</span> <span class="title">Data</span></a><ul>
+<li><a href="sec-4-1-statistical-process.html" data-scroll="sec-4-1-statistical-process" class="internal">Overview of the Statistical Process</a></li>
+<li><a href="sec-4-2-describing-data.html" data-scroll="sec-4-2-describing-data" class="internal">Describing Data</a></li>
+<li><a href="sec-4-3-measure-of-center.html" data-scroll="sec-4-3-measure-of-center" class="internal">Summary Statistics: Measures of Center</a></li>
+<li><a href="sec-4-4-measure-of-variation.html" data-scroll="sec-4-4-measure-of-variation" class="internal">Summary Statistics: Measures of Variation</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-models.html" data-scroll="ch-models" class="internal"><span class="codenumber">5</span> <span class="title">Math Models</span></a><ul>
+<li><a href="sec-models-linear.html" data-scroll="sec-models-linear" class="internal">Function Notation and Linear Functions</a></li>
+<li><a href="sec-models-exponential.html" data-scroll="sec-models-exponential" class="internal">Exponential Growth and Decay</a></li>
+<li><a href="sec-models-exponential-2.html" data-scroll="sec-models-exponential-2" class="internal">Exponential Models</a></li>
+<li><a href="sec-models-periodic.html" data-scroll="sec-models-periodic" class="internal">Periodic Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-bonus-algebra.html" data-scroll="ch-bonus-algebra" class="internal"><span class="codenumber">6</span> <span class="title">Math Models</span></a><ul>
+<li><a href="LinMod.html" data-scroll="LinMod" class="internal">Linear Models</a></li>
+<li><a href="functions.html" data-scroll="functions" class="internal">Functions</a></li>
+<li><a href="graphs-of-functions.html" data-scroll="graphs-of-functions" class="active">Graphs of Functions</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Back Matter</span></a></li>
+<li class="link">
+<a href="app-spreadsheet-reference.html" data-scroll="app-spreadsheet-reference" class="internal"><span class="codenumber">A</span> <span class="title">Spreadsheet Reference</span></a><ul>
+<li><a href="subsection-138.html" data-scroll="subsection-138" class="internal">Basic Calculations</a></li>
+<li><a href="subsection-139.html" data-scroll="subsection-139" class="internal">Cell References</a></li>
+<li><a href="subsection-140.html" data-scroll="subsection-140" class="internal">Cell Formatting</a></li>
+<li><a href="subsection-141.html" data-scroll="subsection-141" class="internal">Fill-Down Feature</a></li>
+<li><a href="subsection-142.html" data-scroll="subsection-142" class="internal">Formulas</a></li>
+</ul>
+</li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="graphs-of-functions"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">6.3</span> <span class="title">Graphs of Functions</span>
+</h2>
+<section class="subsection" id="subsection-134"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">6.3.1</span> <span class="title">Reading Function Values from a Graph</span>
+</h3>
+<p id="p-5000">The Dow-Jones Industrial Average (DJIA) gives the average of the stock prices of 30 major companies. The graph below shows the DJIA as a function of time during the stock market correction of October 1987. The DJIA is thus <span class="process-math">\(f(t)\text{,}\)</span> recorded at noon on day <span class="process-math">\(t\)</span> of October.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-DJIA.svg" role="img" class="contained" alt="DJIA"></div></div></div>
+<p id="p-5001">The values of the input variable, time, are displayed on the horizontal axis, and the values of the output variable, DJIA, are displayed on the vertical axis. There is no formula that gives the DJIA for a particular day; but it is still a function, defined by its graph. The value of <span class="process-math">\(f(t)\)</span> is specified by the vertical coordinate of the point with the given <span class="process-math">\(t\)</span>-coordinate.</p>
+<article class="example example-like" id="example-DJIA"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.1</span><span class="period">.</span>
+</h4>
+<ol id="p-5002" class="lower-alpha">
+<li id="li-2269"><p id="p-derived-li-2269">The coordinates of point <span class="process-math">\(P\)</span> on the DJIA graph are <span class="process-math">\((15, 2412)\text{.}\)</span> What do the coordinates tell you about the function <span class="process-math">\(f\text{?}\)</span></p></li>
+<li id="li-2270"><p id="p-derived-li-2270">If the DJIA was 1726 at noon on October 20, what can you say about the graph of <span class="process-math">\(f\text{?}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-323" id="solution-323"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-323"><div class="solution solution-like"><ol id="p-5003" class="lower-alpha">
+<li id="li-2271"><p id="p-derived-li-2271">The coordinates of point <span class="process-math">\(P\)</span> tell us that <span class="process-math">\(f(15) = 2412\text{,}\)</span> so the DJIA was 2412 at noon on October 15.</p></li>
+<li id="li-2272"><p id="p-derived-li-2272">We can say that <span class="process-math">\(f(20) = 1726\text{,}\)</span> so the point <span class="process-math">\((20, 1726)\)</span> lies on the graph of <span class="process-math">\(f\text{.}\)</span> This point is labeled <span class="process-math">\(Q\)</span> in the figure above.</p></li>
+</ol></div></div>
+</div></article><p id="p-5004">Thus, the coordinates of each point on the graph of the function represent a pair of corresponding values of the two variables.</p>
+<article class="assemblage assemblage-like" id="assemblage-38"><h4 class="heading"><span class="title">Graph of a Function.</span></h4>
+<p id="p-5005">The point <span class="process-math">\((a, b)\)</span> lies on the graph of the function <span class="process-math">\(f\)</span> if and only if <span class="process-math">\(f(a)=b\text{.}\)</span></p></article><article class="exercise exercise-like" id="exercise-518"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">QuickCheck 1.</span>
+</h4>
+<div id="webwork-70" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="70" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRncHQgPSBSYWRpb0J1dHRvbnMoCiAgWyJcKDgrMTc9Z1wpIiwKICAiXChnKzg9MTdcKSIsCiAgIlwoZyg4KT0xN1wpIiwKICAiXCg4PVxkZnJhY3sxN317Z31cKSJdLAogIDIsIAopOwoKQkVHSU5fUEdNTApXcml0ZSBhbiBlcXVhdGlvbiB0aGF0IHNheXMgdGhhdCB0aGUgcG9pbnQgW2AoOCwxNylgXSBsaWVzIG9uIHRoZSBncmFwaCBvZiBbYGdcdGV4dHsufWBdCgogICAgW19deyRncHR9ezV9CgoKRU5EX1BHTUwKCkJFR0lOX1BHTUxfU09MVVRJT04KW2BnKDgpPTE3YF0KCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-5006">Write an equation that says that the point <span class="process-math">\((8,17)\)</span> lies on the graph of <span class="process-math">\(g\text{.}\)</span></p> <p id="p-5007"><ul style="list-style:circle;">
+<li id="li-2273"><p id="p-5008"><span class="process-math">\(\displaystyle 8+17=g\)</span></p></li>
+<li id="li-2274"><p id="p-5009"><span class="process-math">\(\displaystyle g+8=17\)</span></p></li>
+<li id="li-2275"><p id="p-5010"><span class="process-math">\(\displaystyle g(8)=17\)</span></p></li>
+<li id="li-2276"><p id="p-5011"><span class="process-math">\(\displaystyle 8=\dfrac{17}{g}\)</span></p></li>
+</ul></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-252" id="answer-252"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-252"><div class="answer solution-like"><p id="p-5012"><span class="process-math">\(\text{Choice 3}\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-324" id="solution-324"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-324"><div class="solution solution-like"><p id="p-5013"><span class="process-math">\(g(8)=17\)</span></p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-70')">Activate</button></div>
+</div></article><article class="exercise exercise-like" id="exercise-519"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">Practice 1.</span>
+</h4>
+<div class="introduction" id="introduction-68">
+<p id="p-5014">The water level in Lake Huron alters unpredictably over time. The graph below gives the average water level, <span class="process-math">\(L(t)\text{,}\)</span> in meters in the year <span class="process-math">\(t\)</span> over a 20-year period. (Source: The Canadian Hydrographic Service)</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-Lake-Huron.svg" role="img" class="contained" alt="graph of Lake Huron water level"></div></div></div>
+</div>
+<div id="webwork-71" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="71" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRjb29yZCA9IFJhZGlvQnV0dG9ucygKICAgIFsiXChMKDE5OTcpID0gMTc2Ljk4XCk7IHRoZSBhdmVyYWdlIHdhdGVyIGxldmVsIHdhcyAxNzYuOTggbWV0ZXJzIGluIDE5OTcuIiwgIlwoTCgxNzYuOTgpID0gMTc2Ljk4XCk7IHRoZSBhdmVyYWdlIHdhdGVyIGxldmVsIHdhcyAxNzYuOTggbWV0ZXJzIGluIDE5OTcuIl0sCiAgMCwgIyBpbmRleCBvZiBjb3JyZWN0IGFuc3dlcjsgY291bGQgYWxzbyBqdXN0IGJlIHRoZSBjb3JyZWN0IGFuc3dlcgopOwokcG9pbnQgPSBSYWRpb0J1dHRvbnMoCiAgICBbIlwoTCgxNzYuMTEpID0gMjAwNFwpLiBUaGUgcG9pbnQgXCgoMTc2LjExLCAyMDA0KVwpIGxpZXMgb24gdGhlIGdyYXBoIG9mIFwoTFwpLiIsICJcKEwoMjAwNCkgPSAxNzYuMTFcKS4gVGhlIHBvaW50IFwoKDIwMDQsIDE3Ni4xMSlcKSBsaWVzIG9uIHRoZSBncmFwaCBvZiBcKExcKS4iXSwKICAxLCAjIGluZGV4IG9mIGNvcnJlY3QgYW5zd2VyOyBjb3VsZCBhbHNvIGp1c3QgYmUgdGhlIGNvcnJlY3QgYW5zd2VyCik7CgpCRUdJTl9QR01MCmEuICBUaGUgY29vcmRpbmF0ZXMgb2YgcG9pbnQgW2BIYF0gb24gdGhlIGdyYXBoIGFyZSBbYCgxOTk3LCAxNzYuOTgpXHRleHR7Ln1gXSBXaGF0IGRvIHRoZSBjb29yZGluYXRlcyB0ZWxsIHlvdSBhYm91dCB0aGUgZnVuY3Rpb24gW2BMXHRleHR7P31gXQoKICAgIFtfXXskY29vcmR9ezV9CgoKYS4gIFRoZSBhdmVyYWdlIHdhdGVyIGxldmVsIGluIFtgMjAwNGBdIHdhcyBbYDE3Ni4xMWBdIG1ldGVycy4gV3JpdGUgdGhpcyBmYWN0IGluIGZ1bmN0aW9uIG5vdGF0aW9uLiBXaGF0IGNhbiB5b3Ugc2F5IGFib3V0IHRoZSBncmFwaCBvZiBbYExcdGV4dHs/fWBdCgogICAgW19deyRwb2ludH17NX0KCgoKRU5EX1BHTUwKCkJFR0lOX1BHTUxfU09MVVRJT04KYS4gIFtgTCgxOTk3KSA9IDE3Ni45OFx0ZXh0ezt9YF0gdGhlIGF2ZXJhZ2Ugd2F0ZXIgbGV2ZWwgd2FzIFtgMTc2Ljk4YF0gbWV0ZXJzIGluIFtgMTk5N1x0ZXh0ey59YF0KCgphLiAgW2BMKDIwMDQpID0gMTc2LjExXHRleHR7Ln1gXSBUaGUgcG9pbnQgW2AoMjAwNCwgMTc2LjExKWBdIGxpZXMgb24gdGhlIGdyYXBoIG9mIFtgTFx0ZXh0ey59YF0KCgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<ol id="p-5015" class="lower-alpha">
+<li id="li-2277">
+<p id="p-5016">The coordinates of point <span class="process-math">\(H\)</span> on the graph are <span class="process-math">\((1997, 176.98)\text{.}\)</span> What do the coordinates tell you about the function <span class="process-math">\(L\text{?}\)</span></p>
+<p id="p-5017"><ul style="list-style:circle;">
+<li id="li-2278"><p id="p-5018"><span class="process-math">\(L(1997) = 176.98\text{;}\)</span> the average water level was 176.98 meters in 1997.</p></li>
+<li id="li-2279"><p id="p-5019"><span class="process-math">\(L(176.98) = 176.98\text{;}\)</span> the average water level was 176.98 meters in 1997.</p></li>
+</ul></p>
+</li>
+<li id="li-2280">
+<p id="p-5020">The average water level in <span class="process-math">\(2004\)</span> was <span class="process-math">\(176.11\)</span> meters. Write this fact in function notation. What can you say about the graph of <span class="process-math">\(L\text{?}\)</span></p>
+<p id="p-5021"><ul style="list-style:circle;">
+<li id="li-2281"><p id="p-5022"><span class="process-math">\(L(176.11) = 2004\text{.}\)</span> The point <span class="process-math">\((176.11, 2004)\)</span> lies on the graph of <span class="process-math">\(L\text{.}\)</span></p></li>
+<li id="li-2282"><p id="p-5023"><span class="process-math">\(L(2004) = 176.11\text{.}\)</span> The point <span class="process-math">\((2004, 176.11)\)</span> lies on the graph of <span class="process-math">\(L\text{.}\)</span></p></li>
+</ul></p>
+</li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-253" id="answer-253"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-253"><div class="answer solution-like"><p id="p-5024"><span class="process-math">\(\text{Choice 1}\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-254" id="answer-254"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-254"><div class="answer solution-like"><p id="p-5025"><span class="process-math">\(\text{Choice 2}\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-325" id="solution-325"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-325"><div class="solution solution-like"><ol id="p-5026" class="lower-alpha">
+<li id="li-2283"><p id="p-5027"><span class="process-math">\(L(1997) = 176.98\text{;}\)</span> the average water level was <span class="process-math">\(176.98\)</span> meters in <span class="process-math">\(1997\text{.}\)</span></p></li>
+<li id="li-2284"><p id="p-5028"><span class="process-math">\(L(2004) = 176.11\text{.}\)</span> The point <span class="process-math">\((2004, 176.11)\)</span> lies on the graph of <span class="process-math">\(L\text{.}\)</span></p></li>
+</ol></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-71')">Activate</button></div>
+</div></article><p id="p-5029">Here is another way of describing how a graph depicts a function.</p>
+<article class="assemblage assemblage-like" id="assemblage-39"><h4 class="heading"><span class="title">Functions and Coordinates.</span></h4>
+<p id="p-5030">Each point on the graph of the function <span class="process-math">\(f\)</span> has coordinates <span class="process-math">\((x, f(x))\)</span> for some value of <span class="process-math">\(x\text{.}\)</span></p></article><article class="example example-like" id="example-function-graph"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.4</span><span class="period">.</span>
+</h4>
+<p id="p-5031">The figure shows the graph of a function <span class="process-math">\(g\text{.}\)</span></p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:35%;margin-right:35%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-function.svg" role="img" class="contained" alt="graph of a function"></div></div></div>
+<ol id="p-5032" class="lower-alpha">
+<li id="li-2285"><p id="p-derived-li-2285">Find <span class="process-math">\(g(-2)\)</span> and <span class="process-math">\(g(5)\text{.}\)</span></p></li>
+<li id="li-2286"><p id="p-derived-li-2286">For what value(s) of <span class="process-math">\(t\)</span> is <span class="process-math">\(g(t) = -2\text{?}\)</span></p></li>
+<li id="li-2287"><p id="p-derived-li-2287">What is the largest, or maximum, value of <span class="process-math">\(g(t)\text{?}\)</span> For what value of <span class="process-math">\(t\)</span> does the function take on its maximum value?</p></li>
+<li id="li-2288"><p id="p-derived-li-2288">On what intervals is <span class="process-math">\(g\)</span> increasing?</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-326" id="solution-326"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-326"><div class="solution solution-like"><ol id="p-5033" class="lower-alpha">
+<li id="li-2289"><p id="p-derived-li-2289">To find <span class="process-math">\(g(-2)\text{,}\)</span> we look for the point with <span class="process-math">\(t\)</span>-coordinate <span class="process-math">\(-2\text{.}\)</span> The point <span class="process-math">\((-2, 0)\)</span> lies on the graph of <span class="process-math">\(g\text{,}\)</span> so <span class="process-math">\(g(-2) = 0\text{.}\)</span> Similarly, the point <span class="process-math">\((5, 1)\)</span> lies on the graph, so <span class="process-math">\(g(5) = 1\text{.}\)</span></p></li>
+<li id="li-2290"><p id="p-derived-li-2290">We look for points on the graph with <span class="process-math">\(y\)</span>-coordinate <span class="process-math">\(-2\text{.}\)</span> Because the points <span class="process-math">\((-5, -2)\text{,}\)</span> <span class="process-math">\((-3, -2)\text{,}\)</span> and <span class="process-math">\((3, -2)\)</span> lie on the graph, we know that <span class="process-math">\(g(-5) = -2\text{,}\)</span> <span class="process-math">\(g(-3) = -2\text{,}\)</span> and <span class="process-math">\(g(3) = -2\text{.}\)</span> Thus, the <span class="process-math">\(t\)</span>-values we want are <span class="process-math">\(-5\text{,}\)</span> <span class="process-math">\(-3\text{,}\)</span> and <span class="process-math">\(3\text{.}\)</span></p></li>
+<li id="li-2291"><p id="p-derived-li-2291">The highest point on the graph is <span class="process-math">\((1, 4)\text{,}\)</span> so the largest <span class="process-math">\(y\)</span>-value is <span class="process-math">\(4\text{.}\)</span> Thus, the maximum value of <span class="process-math">\(g(t)\)</span> is <span class="process-math">\(4\text{,}\)</span> and it occurs when <span class="process-math">\(t = 1\text{.}\)</span></p></li>
+<li id="li-2292"><p id="p-derived-li-2292">A graph is increasing if the <span class="process-math">\(y\)</span>-values get larger as we read from left to right. The graph of <span class="process-math">\(g\)</span> is increasing for <span class="process-math">\(t\)</span>-values between <span class="process-math">\(-4\)</span> and <span class="process-math">\(1\text{,}\)</span> and between <span class="process-math">\(3\)</span> and <span class="process-math">\(5\text{.}\)</span> Thus, <span class="process-math">\(g\)</span> is increasing on the intervals <span class="process-math">\((-4, 1)\)</span> and <span class="process-math">\((3, 5)\text{.}\)</span></p></li>
+</ol></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-520"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.3.5</span><span class="period">.</span><span class="space"> </span><span class="title">Practice 2.</span>
+</h4>
+<div class="introduction" id="introduction-69">
+<p id="p-5034">Refer to the graph of the function <span class="process-math">\(g\)</span> shown in <a href="" class="xref" data-knowl="./knowl/example-function-graph.html" title="Example 6.3.4">Example 6.3.4</a>.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-function.svg" role="img" class="contained" alt="graph of a function"></div></div></div>
+</div>
+<div id="webwork-72" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="72" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJQb3BVcC5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCdOdW1lcmljJyk7JHlpbnQgPSAzOwokemVyb3MgPSBMaXN0KCItMiwyLDQiKTsKJG15X2V2YWx1YXRvciA9ICR6ZXJvcyAtPiBjbXAoCiBzaG93SGludHM9PjEsCiBzaG93TGVuZ3RoSGludHMgPT4gMSwKIHBhcnRpYWxDcmVkaXQgPT4gMSwKKTsgCiRtaW4gPSAtMzsKJHRtaW4gPSAtNDsKJFllcyA9IFBvcFVwKAogIFsiPyIsIlllcyIsIk5vIl0sCiAgMSwgCik7ICAgICAgICAKJE5vID0gUG9wVXAoCiAgWyI/IiwiWWVzIiwiTm8iXSwKICAyLCAKKTsKCkJFR0lOX1BHTUwKYS4gIFtgIGcoMCk9IGBdW19deyR5aW50fXszfQoKCmEuICBMaXN0IHRoZSB2YWx1ZShzKSBvZiBbYCB0IGBdIGZvciB3aGljaCBbYCBnKHQpID0gMCBcdGV4dHsufWBdIFNlcGFyYXRlIGRpZmZlcmVudCB2YWx1ZXMgd2l0aCBjb21tYXMuCgogICAgW19deyRteV9ldmFsdWF0b3J9ezEwfQoKCmEuICBXaGF0IGlzIHRoZSBzbWFsbGVzdCwgb3IgbWluaW11bSwgdmFsdWUgb2YgW2AgZyh0KSBcdGV4dHs/fWBdCgogICAgTWluaW11bTogW19deyRtaW59ezN9CgogICAgRm9yIHdoYXQgdmFsdWUgb2YgW2AgdCBgXSBkb2VzIHRoZSBmdW5jdGlvbiB0YWtlIG9uIGl0cyBtaW5pbXVtIHZhbHVlPwoKICAgIFtgIHQ9IGBdW19deyR0bWlufXszfQoKCmEuICBTZWxlY3QgYWxsIHRoZSBpbnRlcnZhbHMgbGlzdGVkIGJlbG93IHdoZXJlIFtgIGcgYF0gaXMgZGVjcmVhc2luZy4KCiAgICBGcm9tIFtgLTVgXSB0byBbYC00XHRleHR7P31gXSBbX117JFllc317NX0KCiAgICBGcm9tIFtgLTVgXSB0byBbYC0yXHRleHR7P31gXSBbX117JE5vfXs1fQoKICAgIEZyb20gMiB0byA0PyBbX117JE5vfXs1fQoKICAgIEZyb20gMSB0byAzPyBbX117JFllc317NX0KCgoKRU5EX1BHTUwKCkJFR0lOX1BHTUxfU09MVVRJT04KYS4gIFtgM2BdCgoKYS4gIFtgIC0yLCAyLCA0IGBdCgoKYS4gIFtgIC0zIFx0ZXh0ezt9YF0gW2AgdCA9IC00IGBdCgoKYS4gIFtgICgtNSwgLTQpIGBdIGFuZCBbYCAoMSwgMykgYF0KCgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<ol id="p-5035" class="lower-alpha">
+<li id="li-2293"><p id="p-5036"><span class="process-math">\(g(0)=\)</span><span class="fillin underline" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></p></li>
+<li id="li-2294"><p id="p-5037">List the value(s) of <span class="process-math">\(t\)</span> for which <span class="process-math">\(g(t) = 0 \text{.}\)</span> Separate different values with commas.</p></li>
+<li id="li-2295">
+<p id="p-5038">What is the smallest, or minimum, value of <span class="process-math">\(g(t) \text{?}\)</span></p>
+<p id="p-5039">Minimum: <span class="fillin underline" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></p>
+<p id="p-5040">For what value of <span class="process-math">\(t\)</span> does the function take on its minimum value?</p>
+<p id="p-5041"><span class="process-math">\(t=\)</span><span class="fillin underline" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></p>
+</li>
+<li id="li-2296">
+<p id="p-5042">Select all the intervals listed below where <span class="process-math">\(g\)</span> is decreasing.</p>
+<p id="p-5043">From <span class="process-math">\(-5\)</span> to <span class="process-math">\(-4\text{?}\)</span> <ul style="list-style:circle;">
+<li id="li-2298"><p id="p-5045">Yes</p></li>
+<li id="li-2299"><p id="p-5046">No</p></li>
+</ul></p>
+<p id="p-5047">From <span class="process-math">\(-5\)</span> to <span class="process-math">\(-2\text{?}\)</span> <ul style="list-style:circle;">
+<li id="li-2301"><p id="p-5049">Yes</p></li>
+<li id="li-2302"><p id="p-5050">No</p></li>
+</ul></p>
+<p id="p-5051">From 2 to 4? <ul style="list-style:circle;">
+<li id="li-2304"><p id="p-5053">Yes</p></li>
+<li id="li-2305"><p id="p-5054">No</p></li>
+</ul></p>
+<p id="p-5055">From 1 to 3? <ul style="list-style:circle;">
+<li id="li-2307"><p id="p-5057">Yes</p></li>
+<li id="li-2308"><p id="p-5058">No</p></li>
+</ul></p>
+</li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-255" id="answer-255"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-255"><div class="answer solution-like"><p id="p-5059"><span class="process-math">\(3\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-256" id="answer-256"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-256"><div class="answer solution-like"><p id="p-5060"><span class="process-math">\(-2, 2, 4\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-257" id="answer-257"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-257"><div class="answer solution-like"><p id="p-5061"><span class="process-math">\(-3\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-258" id="answer-258"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-258"><div class="answer solution-like"><p id="p-5062"><span class="process-math">\(-4\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-259" id="answer-259"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">5</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-259"><div class="answer solution-like"><p id="p-5063"><span class="process-math">\(\text{Yes}\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-260" id="answer-260"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">6</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-260"><div class="answer solution-like"><p id="p-5064"><span class="process-math">\(\text{No}\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-261" id="answer-261"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">7</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-261"><div class="answer solution-like"><p id="p-5065"><span class="process-math">\(\text{No}\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-262" id="answer-262"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">8</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-262"><div class="answer solution-like"><p id="p-5066"><span class="process-math">\(\text{Yes}\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-327" id="solution-327"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-327"><div class="solution solution-like"><ol id="p-5067" class="lower-alpha">
+<li id="li-2309"><p id="p-5068"><span class="process-math">\(\displaystyle 3\)</span></p></li>
+<li id="li-2310"><p id="p-5069"><span class="process-math">\(\displaystyle -2, 2, 4\)</span></p></li>
+<li id="li-2311"><p id="p-5070"><span class="process-math">\(-3 \text{;}\)</span> <span class="process-math">\(t = -4\)</span></p></li>
+<li id="li-2312"><p id="p-5071"><span class="process-math">\((-5, -4)\)</span> and <span class="process-math">\((1, 3)\)</span></p></li>
+</ol></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-72')">Activate</button></div>
+</div></article><article class="exercise exercise-like" id="exercise-521"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.3.6</span><span class="period">.</span><span class="space"> </span><span class="title">QuickCheck 2.</span>
+</h4>
+<div id="webwork-73" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="73" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRmb2Z4ID0gUmFkaW9CdXR0b25zKAogIFsiSXQgaXMgbm90IHBvc3NpYmxlIGZvciB0aGUgZnVuY3Rpb24gXCh5PWYoeClcKSB0byB0YWtlIG9uIHRoZSBzYW1lIFwoeVwpLXZhbHVlIGF0IHR3byBkaWZmZXJlbnQgXCh4XCktdmFsdWVzLiIsCiAgIlRoZSBtYXhpbXVtIHZhbHVlIG9mIFwoeT1mKHgpXCkgbWF5IG9jY3VyIGF0IHR3byBkaWZmZXJlbnQgXCh4XCktdmFsdWVzLiIsCiAgIlRoZSBtYXhpbXVtIHZhbHVlIG9mIHRoZSBmdW5jdGlvbiBcKHk9Zih4KVwpIGlzIHRoZSBsYXJnZXN0IFwoeFwpLXZhbHVlIHRoYXQgYXBwZWFycyBvbiB0aGUgZ3JhcGguIiwKICAiXChmKHgpPTBcKSBhdCB0aGUgXCh5XCktaW50ZXJjZXB0IG9mIFwoZih4KVwpLiJdLAogIDEsIAopOwoKQkVHSU5fUEdNTApXaGljaCBvZiB0aGUgZm9sbG93aW5nIGlzIHRydWU/CgogICAgW19deyRmb2Z4fXs1fQoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OClRoZSBtYXhpbXVtIHZhbHVlIG9mIFtgeT1mKHgpYF0gbWF5IG9jY3VyIGF0IHR3byBkaWZmZXJlbnQgW2B4YF0tdmFsdWVzLgoKCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw==" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-5072">Which of the following is true?</p> <p id="p-5073"><ul style="list-style:circle;">
+<li id="li-2313"><p id="p-5074">It is not possible for the function <span class="process-math">\(y=f(x)\)</span> to take on the same <span class="process-math">\(y\)</span>-value at two different <span class="process-math">\(x\)</span>-values.</p></li>
+<li id="li-2314"><p id="p-5075">The maximum value of <span class="process-math">\(y=f(x)\)</span> may occur at two different <span class="process-math">\(x\)</span>-values.</p></li>
+<li id="li-2315"><p id="p-5076">The maximum value of the function <span class="process-math">\(y=f(x)\)</span> is the largest <span class="process-math">\(x\)</span>-value that appears on the graph.</p></li>
+<li id="li-2316"><p id="p-5077"><span class="process-math">\(f(x)=0\)</span> at the <span class="process-math">\(y\)</span>-intercept of <span class="process-math">\(f(x)\text{.}\)</span></p></li>
+</ul></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-263" id="answer-263"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-263"><div class="answer solution-like"><p id="p-5078"><span class="process-math">\(\text{Choice 2}\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-328" id="solution-328"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-328"><div class="solution solution-like"><p id="p-5079">The maximum value of <span class="process-math">\(y=f(x)\)</span> may occur at two different <span class="process-math">\(x\)</span>-values.</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-73')">Activate</button></div>
+</div></article><article class="technology computation-like" id="technology-5"><h4 class="heading">
+<span class="type">Technology</span><span class="space"> </span><span class="codenumber">6.3.7</span><span class="period">.</span><span class="space"> </span><span class="title">Finding Coordinates with a Graphing Utility.</span>
+</h4> <p id="p-5080">We can use the <kbd class="kbdkey">TRACE</kbd> feature to find the coordinates of points on a graph. For example, graph the equation <span class="process-math">\(y = -2.6x - 5.4\)</span> in the window</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Xmin<span class="process-math">\(=-5\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">Xmax<span class="process-math">\(=4.4\)</span>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Ymin<span class="process-math">\(=-20\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">Ymax<span class="process-math">\(=15\)</span>
+</td>
+</tr>
+</table></div></div></div> <div class="sidebyside"><div class="sbsrow" style="margin-left:32%;margin-right:32%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-GC-trace.svg" role="img" class="contained" alt="GC trace"></div></div></div> <p id="p-5081">Press <kbd class="kbdkey">TRACE</kbd>, and a “bug” begins flashing on the display. The coordinates of the bug appear at the bottom of the display, as shown in the figure. Use the left and right arrows to move the bug along the graph. You can check that the coordinates of the point <span class="process-math">\((2, -10.6)\)</span> do satisfy the equation <span class="process-math">\(y = -2.6x - 5.4\text{.}\)</span></p> <p id="p-5082">The points identified by the Trace bug depend on the window settings. If we want to find the <span class="process-math">\(y\)</span>-coordinate for a particular <span class="process-math">\(x\)</span>-value, we enter the <span class="process-math">\(x\)</span>-coordinate of the desired point and press <kbd class="kbdkey">ENTER</kbd>.</p></article></section><section class="subsection" id="subsection-135"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">6.3.2</span> <span class="title">Constructing the Graph of a Function</span>
+</h3>
+<p id="p-5083">Although some functions are defined by their graphs, we can also construct graphs for functions described by tables or equations. We make these graphs the same way we graph equations in two variables: by plotting points whose coordinates satisfy the equation.</p>
+<article class="example example-like" id="example-graph-square-root"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.8</span><span class="period">.</span>
+</h4>
+<p id="p-5084">Graph the function <span class="process-math">\(f(x) = \sqrt{x + 4}\)</span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image has-tabular" data-refid="hk-solution-329" id="solution-329"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-329"><div class="solution solution-like">
+<p id="p-5085">We choose several convenient values for <span class="process-math">\(x\)</span> and evaluate the function to find the corresponding <span class="process-math">\(f(x)\)</span>-values. For this function we cannot choose <span class="process-math">\(x\)</span>-values less than <span class="process-math">\(-4\text{,}\)</span> because the square root of a negative number is not a real number.</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(\alert{-4}) =\sqrt{\alert{-4} + 4}=\sqrt{0}= 0
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(\alert{-3}) =\sqrt{\alert{-3} + 4}=\sqrt{1}= 1
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(\alert{0}) =\sqrt{\alert{0} + 4}=\sqrt{4}=2
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(\alert{2}) =\sqrt{\alert{2} + 4}=\sqrt{6}\approx 2.45
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(\alert{5}) =\sqrt{\alert{5} + 4}=\sqrt{9}=3
+\end{equation*}
+</div>
+<p class="continuation">The results are shown in the table.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:12%;">
+<div class="sbspanel fixed-width middle" style="width:56.8181818181818%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t3 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b1 r1 l0 t3 lines"><span class="process-math">\(f(x)\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(-4\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(-3\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(2\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(2\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\sqrt{6}\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(5\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(3\)</span></td>
+</tr>
+</table></div>
+<div class="sbspanel middle" style="width:43.1818181818182%;"><img src="external/images/fig-sq-root.svg" role="img" class="contained" alt="square root graph"></div>
+</div></div> <p id="p-5086">Points on the graph have coordinates <span class="process-math">\((x, f(x))\text{,}\)</span> so the vertical coordinate of each point is given by the value of <span class="process-math">\(f(x)\text{.}\)</span>  We plot the points and connect them with a smooth curve, as shown in the figure.  Notice that no points on the graph have <span class="process-math">\(x\)</span>-coordinates less than <span class="process-math">\(-4\text{.}\)</span></p>
+</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-522"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.3.9</span><span class="period">.</span><span class="space"> </span><span class="title">QuickCheck 3.</span>
+</h4>
+<div id="webwork-74" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="74" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRmb2YzID0gUmFkaW9CdXR0b25zKAogIFsiRmluZCAzIG9uIHRoZSBcKHhcKS1heGlzLCBtb3ZlIHZlcnRpY2FsbHkgdG8gdGhlIHBvaW50LCB0aGVuIGhvcml6b250YWxseSB0byB0aGUgXCh5XCktYXhpcy4iLAogICJGaW5kIDMgb24gdGhlIFwoeVwpLWF4aXMsIG1vdmUgaG9yaXpvbnRhbGx5IHRvIHRoZSBwb2ludCwgdGhlbiB2ZXJ0aWNhbGx5IHRvIHRoZSBcKHhcKS1heGlzLiIsCiAgIlN1YnN0aXR1ZSAzIGZvciBcKHhcKSBpbnRvIHRoZSBmb3JtdWxhIGZvciB0aGUgZnVuY3Rpb24uIiwKICAiU3Vic3RpdHVlIDMgZm9yIFwoeVwpIGludG8gdGhlIGZvcm11bGEgZm9yIHRoZSBmdW5jdGlvbi4iXSwKICAwLCAKKTsKCkJFR0lOX1BHTUwKSG93IGRvIHdlIGZpbmQgdGhlIHZhbHVlIG9mIFtgZigzKWBdIGZyb20gYSBncmFwaCBvZiBbYGZcdGV4dHs/fWBdCgogICAgW19deyRmb2YzfXs1fQoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OCkZpbmQgMyBvbiB0aGUgW2B4YF0tYXhpcywgbW92ZSB2ZXJ0aWNhbGx5IHRvIHRoZSBwb2ludCwgdGhlbiBob3Jpem9udGFsbHkgdG8gdGhlIFtgeWBdLWF4aXMuCgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-5087">How do we find the value of <span class="process-math">\(f(3)\)</span> from a graph of <span class="process-math">\(f\text{?}\)</span></p> <p id="p-5088"><ul style="list-style:circle;">
+<li id="li-2317"><p id="p-5089">Find 3 on the <span class="process-math">\(x\)</span>-axis, move vertically to the point, then horizontally to the <span class="process-math">\(y\)</span>-axis.</p></li>
+<li id="li-2318"><p id="p-5090">Find 3 on the <span class="process-math">\(y\)</span>-axis, move horizontally to the point, then vertically to the <span class="process-math">\(x\)</span>-axis.</p></li>
+<li id="li-2319"><p id="p-5091">Substitue 3 for <span class="process-math">\(x\)</span> into the formula for the function.</p></li>
+<li id="li-2320"><p id="p-5092">Substitue 3 for <span class="process-math">\(y\)</span> into the formula for the function.</p></li>
+</ul></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-264" id="answer-264"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-264"><div class="answer solution-like"><p id="p-5093"><span class="process-math">\(\text{Choice 1}\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-330" id="solution-330"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-330"><div class="solution solution-like"><p id="p-5094">Find 3 on the <span class="process-math">\(x\)</span>-axis, move vertically to the point, then horizontally to the <span class="process-math">\(y\)</span>-axis.</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-74')">Activate</button></div>
+</div></article><article class="technology computation-like" id="technology-6"><h4 class="heading">
+<span class="type">Technology</span><span class="space"> </span><span class="codenumber">6.3.10</span><span class="period">.</span><span class="space"> </span><span class="title">Using Technology to Graph a Function.</span>
+</h4> <p id="p-5095">We can also use a graphing utility to obtain a table and graph for the function in <a href="" class="xref" data-knowl="./knowl/example-graph-square-root.html" title="Example 6.3.8">Example 6.3.8</a>. We graph a function just as we graphed an equation. For this function, we enter <span class="process-math">\(Y_1 = \sqrt{\,}(X+4)\)</span> and press <kbd class="kbdkey">ZOOM</kbd> <span class="process-math">\(6\)</span> for the standard window.  The graph is shown below.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:35%;margin-right:35%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-GC-sq-root.svg" role="img" class="contained" alt="GC square root graph"></div></div></div></article><article class="exercise exercise-like" id="exercise-523"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.3.11</span><span class="period">.</span><span class="space"> </span><span class="title">Practice 3.</span>
+</h4>
+<div id="webwork-75" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="75" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIm5pY2VUYWJsZXMucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiY29udGV4dEZyYWN0aW9uLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7CkNvbnRleHQoIkZyYWN0aW9uIiktPnZhcmlhYmxlcy0+YWRkKHI9PidSZWFsJyk7CiRmdW5jID0gRm9ybXVsYSgieCoqMy0yIik7CiRhMCA9ICRmdW5jLT5ldmFsKHg9Pi0yKTsKJGExID0gJGZ1bmMtPmV2YWwoeD0+LTEpOwokYTIgPSAkZnVuYy0+ZXZhbCh4PT4tMS8yKTsKJGEyID0gRnJhY3Rpb24oJGEyKTsKJGEzID0gJGZ1bmMtPmV2YWwoeD0+MCk7CiRhNCA9ICRmdW5jLT5ldmFsKHg9PjEvMik7CiRhNCA9IEZyYWN0aW9uKCRhNCk7CiRhNSA9ICRmdW5jLT5ldmFsKHg9PjEpOwokYTYgPSAkZnVuYy0+ZXZhbCh4PT4yKTsKCkJFR0lOX1BHTUwKTGV0IFtgZih4KSA9IFskZnVuY11gXQoKQ29tcGxldGUgdGhlIHRhYmxlIG9mIHZhbHVlcyBhbmQgc2tldGNoIGEgZ3JhcGggb2YgdGhlIGZ1bmN0aW9uLgoKPj4gW0BEYXRhVGFibGUoW1tbUEdNTCgnW2B4YF0nKSxtaWRydWxlPT4nMScscm93Y3NzPT4nYm9yZGVyLWJvdHRvbToxcHggc29saWQ7JyxjZWxsY3NzPT4nYm9yZGVyLXRvcDozcHggc29saWQ7Ym9yZGVyLWxlZnQ6MXB4IHNvbGlkO2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFtQR01MKCdbYC0yYF0nKSxjZWxsY3NzPT4nYm9yZGVyLXRvcDozcHggc29saWQ7Ym9yZGVyLXJpZ2h0OjFweCBzb2xpZDsnLF0sW1BHTUwoJ1tgLTFgXScpLGNlbGxjc3M9Pidib3JkZXItdG9wOjNweCBzb2xpZDtib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnW2AtXGZyYWN7MX17Mn1gXScpLGNlbGxjc3M9Pidib3JkZXItdG9wOjNweCBzb2xpZDtib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnW2AwYF0nKSxjZWxsY3NzPT4nYm9yZGVyLXRvcDozcHggc29saWQ7Ym9yZGVyLXJpZ2h0OjFweCBzb2xpZDsnLF0sW1BHTUwoJ1tgXGZyYWN7MX17Mn1gXScpLGNlbGxjc3M9Pidib3JkZXItdG9wOjNweCBzb2xpZDtib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnW2AxYF0nKSxjZWxsY3NzPT4nYm9yZGVyLXRvcDozcHggc29saWQ7Ym9yZGVyLXJpZ2h0OjFweCBzb2xpZDsnLF0sW1BHTUwoJ1tgMmBdJyksY2VsbGNzcz0+J2JvcmRlci10b3A6M3B4IHNvbGlkO2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLF0sW1tQR01MKCdbYGYoeClgXScpLHJvd2Nzcz0+J2JvcmRlci1ib3R0b206MXB4IHNvbGlkOycsY2VsbGNzcz0+J2JvcmRlci1sZWZ0OjFweCBzb2xpZDtib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnW19deyRhMH17Mn0nKSxjZWxsY3NzPT4nYm9yZGVyLXJpZ2h0OjFweCBzb2xpZDsnLF0sW1BHTUwoJ1tfXXskYTF9ezF9JyksY2VsbGNzcz0+J2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFtQR01MKCdbX117JGEyfXsyfScpLGNlbGxjc3M9Pidib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnW19deyRhM317MX0nKSxjZWxsY3NzPT4nYm9yZGVyLXJpZ2h0OjFweCBzb2xpZDsnLF0sW1BHTUwoJ1tfXXskYTR9ezJ9JyksY2VsbGNzcz0+J2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFtQR01MKCdbX117JGE1fXsxfScpLGNlbGxjc3M9Pidib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnW19deyRhNn17MX0nKSxjZWxsY3NzPT4nYm9yZGVyLXJpZ2h0OjFweCBzb2xpZDsnLF0sXSxdLGFsaWduPT4nfGN8Y3xjfGN8Y3xjfGN8Y3wnLGNvbHVtbnNjc3M9PltdLGNlbnRlcj0+MCwpO0BdKiA8PAoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OCj4+IFtARGF0YVRhYmxlKFtbW1BHTUwoJ1tgeGBdJyksbWlkcnVsZT0+JzEnLHJvd2Nzcz0+J2JvcmRlci1ib3R0b206MXB4IHNvbGlkOycsY2VsbGNzcz0+J2JvcmRlci10b3A6M3B4IHNvbGlkO2JvcmRlci1sZWZ0OjFweCBzb2xpZDtib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnW2AtMmBdJyksY2VsbGNzcz0+J2JvcmRlci10b3A6M3B4IHNvbGlkO2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFtQR01MKCdbYC0xYF0nKSxjZWxsY3NzPT4nYm9yZGVyLXRvcDozcHggc29saWQ7Ym9yZGVyLXJpZ2h0OjFweCBzb2xpZDsnLF0sW1BHTUwoJ1tgLVxmcmFjezF9ezJ9YF0nKSxjZWxsY3NzPT4nYm9yZGVyLXRvcDozcHggc29saWQ7Ym9yZGVyLXJpZ2h0OjFweCBzb2xpZDsnLF0sW1BHTUwoJ1tgMGBdJyksY2VsbGNzcz0+J2JvcmRlci10b3A6M3B4IHNvbGlkO2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFtQR01MKCdbYFxmcmFjezF9ezJ9YF0nKSxjZWxsY3NzPT4nYm9yZGVyLXRvcDozcHggc29saWQ7Ym9yZGVyLXJpZ2h0OjFweCBzb2xpZDsnLF0sW1BHTUwoJ1tgMWBdJyksY2VsbGNzcz0+J2JvcmRlci10b3A6M3B4IHNvbGlkO2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFtQR01MKCdbYDJgXScpLGNlbGxjc3M9Pidib3JkZXItdG9wOjNweCBzb2xpZDtib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxdLFtbUEdNTCgnW2BmKHgpYF0nKSxyb3djc3M9Pidib3JkZXItYm90dG9tOjFweCBzb2xpZDsnLGNlbGxjc3M9Pidib3JkZXItbGVmdDoxcHggc29saWQ7Ym9yZGVyLXJpZ2h0OjFweCBzb2xpZDsnLF0sW1BHTUwoJ1tgLTEwIGBdJyksY2VsbGNzcz0+J2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFtQR01MKCdbYC0zIGBdJyksY2VsbGNzcz0+J2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFtQR01MKCdbYFxmcmFjey0xN317OH1gXScpLGNlbGxjc3M9Pidib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnW2AtMmBdJyksY2VsbGNzcz0+J2JvcmRlci1yaWdodDoxcHggc29saWQ7JyxdLFtQR01MKCdbYFxmcmFjey0xNX17OH0gYF0nKSxjZWxsY3NzPT4nYm9yZGVyLXJpZ2h0OjFweCBzb2xpZDsnLF0sW1BHTUwoJ1tgLTFgXScpLGNlbGxjc3M9Pidib3JkZXItcmlnaHQ6MXB4IHNvbGlkOycsXSxbUEdNTCgnW2A2YF0nKSxjZWxsY3NzPT4nYm9yZGVyLXJpZ2h0OjFweCBzb2xpZDsnLF0sXSxdLGFsaWduPT4nfGN8Y3xjfGN8Y3xjfGN8Y3wnLGNvbHVtbnNjc3M9PltdLGNlbnRlcj0+MCwpO0BdKiA8PAoKVGhlIGdyYXBoIGlzIHNob3duIGJlbG93LgoKCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw==" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-5096">Let <span class="process-math">\(f(x) = {x^{3}-2}\)</span></p> <p id="p-5097">Complete the table of values and sketch a graph of the function.</p>  <div class="tabular-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><table class="tabular">
+<tr>
+<td class="c t b1 r1 l1 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="c t b1 r1 l0 t0 lines"><span class="process-math">\(-2\)</span></td>
+<td class="c t b1 r1 l0 t0 lines"><span class="process-math">\(-1\)</span></td>
+<td class="c t b1 r1 l0 t0 lines"><span class="process-math">\(-\frac{1}{2}\)</span></td>
+<td class="c t b1 r1 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="c t b1 r1 l0 t0 lines"><span class="process-math">\(\frac{1}{2}\)</span></td>
+<td class="c t b1 r1 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c t b1 r1 l0 t0 lines"><span class="process-math">\(2\)</span></td>
+</tr>
+<tr>
+<td class="c t b0 r1 l1 t0 lines"><span class="process-math">\(f(x)\)</span></td>
+<td class="c t b0 r1 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="c t b0 r1 l0 t0 lines"><span class="fillin underline" role="img" aria-label="1-character blank" style="width: 0.454545454545455em;"></span></td>
+<td class="c t b0 r1 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="c t b0 r1 l0 t0 lines"><span class="fillin underline" role="img" aria-label="1-character blank" style="width: 0.454545454545455em;"></span></td>
+<td class="c t b0 r1 l0 t0 lines"><span class="fillin underline" role="img" aria-label="2-character blank" style="width: 0.909090909090909em;"></span></td>
+<td class="c t b0 r1 l0 t0 lines"><span class="fillin underline" role="img" aria-label="1-character blank" style="width: 0.454545454545455em;"></span></td>
+<td class="c t b0 r1 l0 t0 lines"><span class="fillin underline" role="img" aria-label="1-character blank" style="width: 0.454545454545455em;"></span></td>
+</tr>
+</table></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-265" id="answer-265"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-265"><div class="answer solution-like"><p id="p-5098"><span class="process-math">\(-10\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-266" id="answer-266"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-266"><div class="answer solution-like"><p id="p-5099"><span class="process-math">\(-3\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-267" id="answer-267"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-267"><div class="answer solution-like"><p id="p-5100"><span class="process-math">\(-{\frac{17}{8}}\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-268" id="answer-268"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">4</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-268"><div class="answer solution-like"><p id="p-5101"><span class="process-math">\(-2\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-269" id="answer-269"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">5</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-269"><div class="answer solution-like"><p id="p-5102"><span class="process-math">\(-{\frac{15}{8}}\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-270" id="answer-270"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">6</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-270"><div class="answer solution-like"><p id="p-5103"><span class="process-math">\(-1\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-271" id="answer-271"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">7</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-271"><div class="answer solution-like"><p id="p-5104"><span class="process-math">\(6\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original has-tabular" data-refid="hk-solution-331" id="solution-331"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-331"><div class="solution solution-like">
+<div class="tabular-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><table class="tabular">
+<tr>
+<td class="c t b1 r1 l1 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="c t b1 r1 l0 t0 lines"><span class="process-math">\(-2\)</span></td>
+<td class="c t b1 r1 l0 t0 lines"><span class="process-math">\(-1\)</span></td>
+<td class="c t b1 r1 l0 t0 lines"><span class="process-math">\(-\frac{1}{2}\)</span></td>
+<td class="c t b1 r1 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="c t b1 r1 l0 t0 lines"><span class="process-math">\(\frac{1}{2}\)</span></td>
+<td class="c t b1 r1 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c t b1 r1 l0 t0 lines"><span class="process-math">\(2\)</span></td>
+</tr>
+<tr>
+<td class="c t b0 r1 l1 t0 lines"><span class="process-math">\(f(x)\)</span></td>
+<td class="c t b0 r1 l0 t0 lines"><span class="process-math">\(-10\)</span></td>
+<td class="c t b0 r1 l0 t0 lines"><span class="process-math">\(-3\)</span></td>
+<td class="c t b0 r1 l0 t0 lines"><span class="process-math">\(\frac{-17}{8}\)</span></td>
+<td class="c t b0 r1 l0 t0 lines"><span class="process-math">\(-2\)</span></td>
+<td class="c t b0 r1 l0 t0 lines"><span class="process-math">\(\frac{-15}{8}\)</span></td>
+<td class="c t b0 r1 l0 t0 lines"><span class="process-math">\(-1\)</span></td>
+<td class="c t b0 r1 l0 t0 lines"><span class="process-math">\(6\)</span></td>
+</tr>
+</table></div> <p id="p-5105">The graph is shown below.</p>
+</div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-75')">Activate</button></div>
+</div>
+<div class="conclusion" id="conclusion-7"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:75%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-in-ex-ans-1-3-3.svg" role="img" class="contained" alt="cubic"></div></div></div></div></article><article class="exercise exercise-like" id="exercise-524"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.3.12</span><span class="period">.</span><span class="space"> </span><span class="title">Pause and Reflect.</span>
+</h4>
+<div id="webwork-76" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="76" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Vzc2F5bWFjcm9zLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7CkNvbnRleHQoJ051bWVyaWMnKTsKCkJFR0lOX1BHTUwKSG93IGlzIGdyYXBoaW5nIGEgZnVuY3Rpb24gZGlmZmVyZW50IGZyb20gZ3JhcGhpbmcgYW4gZXF1YXRpb24/CgpbQEFOUyhlc3NheV9jbXAoKSk7ZXNzYXlfYm94KDYsNzYpQF0qIFtAZXNzYXlfaGVscCgpQF0qCgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents"><p id="p-5106">How is graphing a function different from graphing an equation?</p></div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-76')">Activate</button></div>
+</div></article></section><section class="subsection" id="subsection-136"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">6.3.3</span> <span class="title">The Vertical Line Test</span>
+</h3>
+<p id="p-5107">In a function, two different outputs cannot be related to the same input. This restriction means that two different ordered pairs cannot have the same first coordinate. What does it mean for the graph of the function?</p>
+<p id="p-5108">Consider the graph shown in figure (a) below. Every vertical line intersects the graph in at most one point, so there is only one point on the graph for each <span class="process-math">\(x\)</span>-value. This graph represents a function.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:17.5%;margin-right:17.5%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-vertical-line-test.svg" role="img" class="contained" alt="vertical line test"></div></div></div>
+<p id="p-5109">In figure (b), however, the line <span class="process-math">\(x = 2\)</span> intersects the graph at two points, <span class="process-math">\((2, 1)\)</span> and <span class="process-math">\((2, 4)\text{.}\)</span> Two different <span class="process-math">\(y\)</span>-values, <span class="process-math">\(1\)</span> and <span class="process-math">\(4\text{,}\)</span> are related to the same <span class="process-math">\(x\)</span>-value, <span class="process-math">\(2\text{.}\)</span> This graph cannot be the graph of a function.</p>
+<p id="p-5110">We summarize these observations as follows.</p>
+<article class="assemblage assemblage-like" id="assemblage-40"><h4 class="heading"><span class="title">The Vertical Line Test.</span></h4>
+<p id="p-5111">A graph represents a function if and only if every vertical line intersects the graph in at most one point.</p></article><article class="example example-like" id="example-vertical-line-test"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.13</span><span class="period">.</span>
+</h4>
+<p id="p-5112">Use the vertical line test to decide which of the graphs in the figure represent functions.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-vertical-line-test2.svg" role="img" class="contained" alt="vertical line test"></div></div></div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-332" id="solution-332"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-332"><div class="solution solution-like"><ul id="p-5113" class="disc">
+<li id="li-2321"><p id="p-5114">Graph (a) represents a function, because it passes the vertical line test.</p></li>
+<li id="li-2322"><p id="p-5115">Graph (b) is not the graph of a function, because the vertical line at (for example) <span class="process-math">\(x = 1\)</span> intersects the graph at two points.</p></li>
+<li id="li-2323"><p id="p-5116">For graph (c), notice the break in the curve at <span class="process-math">\(x = 2\text{:}\)</span> The solid dot at <span class="process-math">\((2, 1)\)</span> is the only point on the graph with <span class="process-math">\(x = 2\text{;}\)</span> the open circle at <span class="process-math">\((2, 3)\)</span> indicates that <span class="process-math">\((2, 3)\)</span> is not a point on the graph. Thus, graph (c) is a function, with <span class="process-math">\(f(2) = 1\text{.}\)</span></p></li>
+</ul></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-525"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.3.14</span><span class="period">.</span><span class="space"> </span><span class="title">QuickCheck 4.</span>
+</h4>
+<div id="webwork-77" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="77" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyR2ZXIgPSBSYWRpb0J1dHRvbnMoCiAgWyJBKSBJZiB0aGUgZ3JhcGggaXMgYSB2ZXJ0aWNhbCBsaW5lLiIsCiAgIkIpIElmIHRoZSBncmFwaCBpcyBpbmNyZWFzaW5nLiIsCiAgIkMpIElmIHRoZSBncmFwaCBpcyBkZWNyZWFzaW5nLiIsCiAgIkQpIElmIHRoZSBncmFwaCBpcyBhIGZ1bmN0aW9uLiJdLAogIDMsIAopOwoKQkVHSU5fUEdNTApXaGF0IGRvZXMgdGhlIHZlcnRpY2FsIGxpbmUgdGVzdCB0ZWxsIHVzPwoKICAgIFtfXXskdmVyfXs1fQoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OClRoZSB2ZXJ0aWNhbCBsaW5lIHRlc3QgdGVsbHMgdXMgaWYgdGhlIGdyYXBoIGlzIGEgZnVuY3Rpb24uCgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-5117">What does the vertical line test tell us?</p> <p id="p-5118"><ul style="list-style:circle;">
+<li id="li-2324"><p id="p-5119">A) If the graph is a vertical line.</p></li>
+<li id="li-2325"><p id="p-5120">B) If the graph is increasing.</p></li>
+<li id="li-2326"><p id="p-5121">C) If the graph is decreasing.</p></li>
+<li id="li-2327"><p id="p-5122">D) If the graph is a function.</p></li>
+</ul></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-272" id="answer-272"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-272"><div class="answer solution-like"><p id="p-5123"><span class="process-math">\(\text{D) If ... a function.}\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-333" id="solution-333"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-333"><div class="solution solution-like"><p id="p-5124">The vertical line test tells us if the graph is a function.</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-77')">Activate</button></div>
+</div></article><article class="exercise exercise-like" id="exercise-526"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.3.15</span><span class="period">.</span><span class="space"> </span><span class="title">Practice 4.</span>
+</h4>
+<div class="introduction" id="introduction-70">
+<p id="p-5125">Use the vertical line test to determine which of the graphs below represent functions.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-vertical-line-test3.svg" role="img" class="contained" alt="vertical line test"></div></div></div>
+</div>
+<div id="webwork-78" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="78" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRjaG9pY2UgPSBSYWRpb0J1dHRvbnMoCiAgWyIoYSkiLAogICIoYikiLAogICIoYykiLAogICJOb25lIG9mIHRoZSBhYm92ZSJdLAogIDEsIAopOwoKQkVHSU5fUEdNTApbX117JGNob2ljZX17NX0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpPbmx5IChiKSBpcyBhIGZ1bmN0aW9uLgoKCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw==" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-5126"><ul style="list-style:circle;">
+<li id="li-2328"><p id="p-5127">(a)</p></li>
+<li id="li-2329"><p id="p-5128">(b)</p></li>
+<li id="li-2330"><p id="p-5129">(c)</p></li>
+<li id="li-2331"><p id="p-5130">None of the above</p></li>
+</ul></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-273" id="answer-273"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-273"><div class="answer solution-like"><p id="p-5131"><span class="process-math">\(\text{(b)}\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-334" id="solution-334"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-334"><div class="solution solution-like"><p id="p-5132">Only (b) is a function.</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-78')">Activate</button></div>
+</div></article></section><section class="subsection" id="subsection-137"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">6.3.4</span> <span class="title">Graphical Solution of Equations and Inequalities</span>
+</h3>
+<p id="p-5133">The graph of an equation in two variables is just a picture of its solutions. When we read the coordinates of a point on the graph, we are reading a pair of <span class="process-math">\(x\)</span>- and <span class="process-math">\(y\)</span>-values that make the equation true.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:65%;">
+<p id="p-5134">For example, the point <span class="process-math">\((2, 7)\)</span> lies on the graph of <span class="process-math">\(y = 2x + 3\)</span> shown at right, so we know that the ordered pair <span class="process-math">\((2, 7)\)</span> is a solution of the equation <span class="process-math">\(y = 2x + 3\text{.}\)</span> You can verify algebraically that <span class="process-math">\(x = \alert{2}\)</span> and <span class="process-math">\(y = \alert{7}\)</span> satisfy the equation:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\text{Does }~\alert{7} = 2 (\alert{2}) + 3\text{?} ~~~~~~~~ \blert{\text{Yes}}
+\end{equation*}
+</div>
+</div>
+<div class="sbspanel middle" style="width:27%;"><img src="external/images/fig-function-graph.svg" role="img" class="contained" alt="function graph"></div>
+</div></div>
+<p id="p-5135">We can also say that <span class="process-math">\(x = 2\)</span> is a solution of the one-variable equation <span class="process-math">\(2x + 3 = 7\text{.}\)</span> In fact, we can use the graph of <span class="process-math">\(y = 2x + 3\)</span> to solve the equation <span class="process-math">\(2x + 3 = k\)</span> for any value of <span class="process-math">\(k\text{.}\)</span> Thus, we can use graphs to find solutions to equations in one variable.</p>
+<article class="example example-like" id="example-graph-to-solve"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.16</span><span class="period">.</span>
+</h4>
+<p id="p-5136">Use the graph of <span class="process-math">\(y = 285 - 15x\)</span> to solve the equation <span class="process-math">\(150 = 285 - 15x\text{.}\)</span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-335" id="solution-335"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-335"><div class="solution solution-like">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:5%;">
+<div class="sbspanel top" style="width:63.1578947368421%;">
+<p id="p-5137">We begin by locating the point <span class="process-math">\(P\)</span> on the graph for which <span class="process-math">\(y = 150\text{,}\)</span> as shown in the figure.</p>
+<p id="p-5138">Next we find the <span class="process-math">\(x\)</span>-coordinate of point <span class="process-math">\(P\)</span> by drawing an imaginary line from <span class="process-math">\(P\)</span> straight down to the <span class="process-math">\(x\)</span>-axis. The <span class="process-math">\(x\)</span>-coordinate of <span class="process-math">\(P\)</span> is <span class="process-math">\(x = 9\text{.}\)</span></p>
+<p id="p-5139">Thus, <span class="process-math">\(P\)</span> is the point <span class="process-math">\((9,150)\text{,}\)</span> and <span class="process-math">\(x = 9\)</span> when <span class="process-math">\(y = 150\text{.}\)</span> The solution of the equation <span class="process-math">\(150 = 285 - 15x\)</span> is <span class="process-math">\(x = 9\text{.}\)</span></p>
+</div>
+<div class="sbspanel top" style="width:31.5789473684211%;"><img src="external/images/fig-graph-to-solve.svg" role="img" class="contained" alt="function graph"></div>
+</div></div> <p id="p-5140">You can verify the solution algebraically by substituting <span class="process-math">\(x = \alert{9}\)</span> into the equation:</p> <p id="p-5141">Does <span class="process-math">\(150 = 285 - 15(\alert{9})\text{?}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-5142">
+\begin{equation*}
+285 - 15(\alert{9}) = 285 - 135 = 150. ~~~~~~\blert{\text{Yes}}
+\end{equation*}
+</div>
+</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-527"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.3.17</span><span class="period">.</span><span class="space"> </span><span class="title">QuickCheck 5.</span>
+</h4>
+<div id="webwork-79" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="79" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRmb2Y4ID0gUmFkaW9CdXR0b25zKAogIFsiXCgoOCwyKVwpIiwKICAiXCgoMiw4KVwpIiwKICAiQm90aCBcKCg4LDIpXCkgYW5kIFwoKDIsOClcKSIsCiAgIkFsbCBwb2ludHMgYmV0d2VlbiAyIGFuZCA4LiJdLAogIDAsIAopOwoKQkVHSU5fUEdNTApJZiBbYGYoOCk9Mlx0ZXh0eyx9YF0gd2hhdCBwb2ludCBsaWVzIG9uIHRoZSBncmFwaCBvZiBbYGZcdGV4dHs/fWBdCgogICAgW19deyRmb2Y4fXs1fQoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OCltgKDgsMilgXQoKCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw==" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-5143">If <span class="process-math">\(f(8)=2\text{,}\)</span> what point lies on the graph of <span class="process-math">\(f\text{?}\)</span></p> <p id="p-5144"><ul style="list-style:circle;">
+<li id="li-2332"><p id="p-5145"><span class="process-math">\(\displaystyle (8,2)\)</span></p></li>
+<li id="li-2333"><p id="p-5146"><span class="process-math">\(\displaystyle (2,8)\)</span></p></li>
+<li id="li-2334"><p id="p-5147">Both <span class="process-math">\((8,2)\)</span> and <span class="process-math">\((2,8)\)</span></p></li>
+<li id="li-2335"><p id="p-5148">All points between 2 and 8.</p></li>
+</ul></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-274" id="answer-274"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-274"><div class="answer solution-like"><p id="p-5149"><span class="process-math">\(\text{Choice 1}\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-336" id="solution-336"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-336"><div class="solution solution-like"><p id="p-5150"><span class="process-math">\((8,2)\)</span></p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-79')">Activate</button></div>
+</div></article><article class="note remark-like" id="note-10"><h4 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">6.3.18</span><span class="period">.</span>
+</h4>
+<p id="p-5151">The relationship between an equation and its graph is an important one. For the previous example, make sure you understand that the following three statements are equivalent:</p>
+<ul class="disc">
+<li id="li-2336"><p id="p-derived-li-2336">The point <span class="process-math">\((9, 150)\)</span> lies on the graph of <span class="process-math">\(y = 285 - 15x\text{.}\)</span></p></li>
+<li id="li-2337"><p id="p-derived-li-2337">The ordered pair <span class="process-math">\((9, 150)\)</span> is a solution of the equation <span class="process-math">\(y = 285 - 15x\text{.}\)</span></p></li>
+<li id="li-2338"><p id="p-derived-li-2338"><span class="process-math">\(x = 9\)</span> is a solution of the equation <span class="process-math">\(150 = 285 - 15x\text{.}\)</span></p></li>
+</ul></article><article class="exercise exercise-like" id="exercise-graph-to-solve-linear"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.3.19</span><span class="period">.</span><span class="space"> </span><span class="title">Practice 5.</span>
+</h4>
+<div class="introduction" id="introduction-71"><div class="sidebyside"><div class="sbsrow" style="margin-left:35%;margin-right:35%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-graph-to-solve2.svg" role="img" class="contained" alt="function graph"></div></div></div></div>
+<div id="webwork-80" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="80" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKVEVYVChNT0RFUyhQVFg9PicnLEhUTUw9Pic8ZGl2IHN0eWxlPSJkaXNwbGF5Om5vbmU7Ij5cKFxuZXdjb21tYW5ke1xibGVydH1bMV17XGJvbGRzeW1ib2x7XGNvbG9ye2JsdWV9eyMxfX19XG5ld2NvbW1hbmR7XGFtcH17Jn1cKTwvZGl2PicpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhbnN3ZXI9LTIuNTsKCkJFR0lOX1BHTUwKYS4gIFVzZSB0aGUgZ3JhcGggb2YgW2B5ID0gMzAgLSA4eGBdIHNob3duIGFib3ZlIHRvIHNvbHZlIHRoZSBlcXVhdGlvbgoKICAgIFtgYGAzMCAtIDh4ID0gNTBgYGBdCgoKCiAgICBbYHg9YF1bX117JGFuc3dlcn17M30KCgphLiAgVmVyaWZ5IHlvdXIgc29sdXRpb24gYWxnZWJyYWljYWxseS4KCgoKRU5EX1BHTUwKCkJFR0lOX1BHTUxfU09MVVRJT04KYS4gIFRoZSBwb2ludCBvbiB0aGUgbGluZSB3aGVyZSB0aGUgW2B5YF0tY29vcmRpbmF0ZSBpcyA1MCBpcyB0aGUgcG9pbnQgW2AoLTIuNSw1MClcdGV4dHssfWBdIHNvIFtgeD0tMi41YF0gaXMgdGhlIHNvbHV0aW9uLgoKCmEuICBXZSB2ZXJpZnkgdGhhdCB3ZSBoYXZlIGFuIGlkZW50aXR5IHdoZW4gd2Ugc3Vic3RpdHV0ZSBbYHg9LTIuNWBdIGludG8gdGhlIGVxdWF0aW9uIFtgMzAgLSA4eCA9IDUwXHRleHR7Ln1gXQoKICAgIAoKICAgIFtgYGBcYmVnaW57YWxpZ25lZH0KICAgIDMwLTgoXGFsZXJ0ey0yLjV9KSBcYW1wIFxzdGFja3JlbHtcdGV4dHs/fX17PX0gNTBcXAogICAgMzAgLSAoLTIwKSBcYW1wID0gNTAgXGFtcCBcYmxlcnR7XHRleHR7WWVzIX19CiAgICBcZW5ke2FsaWduZWR9CiAgICBgYGBdCgoKCgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<ol id="p-5152" class="lower-alpha">
+<li id="li-2339">
+<p id="p-5153">Use the graph of <span class="process-math">\(y = 30 - 8x\)</span> shown above to solve the equation</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-5154">
+\begin{equation*}
+30 - 8x = 50
+\end{equation*}
+</div>
+<p id="p-5155"><span class="process-math">\(x=\)</span><span class="fillin underline" role="img" aria-label="3-character blank" style="width: 1.363636363636364em;"></span></p>
+</li>
+<li id="li-2340"><p id="p-5156">Verify your solution algebraically.</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-275" id="answer-275"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-275"><div class="answer solution-like"><p id="p-5157"><span class="process-math">\(-2.5\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-337" id="solution-337"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-337"><div class="solution solution-like"><ol id="p-5158" class="lower-alpha">
+<li id="li-2341"><p id="p-5159">The point on the line where the <span class="process-math">\(y\)</span>-coordinate is 50 is the point <span class="process-math">\((-2.5,50)\text{,}\)</span> so <span class="process-math">\(x=-2.5\)</span> is the solution.</p></li>
+<li id="li-2342">
+<p id="p-5160">We verify that we have an identity when we substitute <span class="process-math">\(x=-2.5\)</span> into the equation <span class="process-math">\(30 - 8x = 50\text{.}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-5161">
+\begin{equation*}
+\begin{aligned}
+30-8(\alert{-2.5}) \amp \stackrel{\text{?}}{=} 50\\
+30 - (-20) \amp = 50 \amp \blert{\text{Yes!}}
+\end{aligned}
+\end{equation*}
+</div>
+</li>
+</ol></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-80')">Activate</button></div>
+</div>
+<div class="conclusion" id="conclusion-8">
+<p id="p-5162">For part (b):</p> <p id="p-5163">We verify that we have an identity when we substitute <span class="process-math">\(x=-2.5\)</span> into the equation <span class="process-math">\(30 - 8x = 50\text{.}\)</span></p> <div class="displaymath process-math" data-contains-math-knowls="" id="md-169">
+\begin{align*}
+30-8(\alert{-2.5}) \amp \stackrel{\text{?}}{=} 50\\
+30 - (-20) \amp = 50 \amp \blert{\text{Yes!}}
+\end{align*}
+</div>
+</div></article><p id="p-5165">In a similar fashion, we can solve inequalities with a graph.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:5%;">
+<div class="sbspanel middle" style="width:61.0526315789474%;">
+<p id="p-5166">Consider again the graph of <span class="process-math">\(y = 2x + 3\text{,}\)</span> shown at right. We saw that <span class="process-math">\(x = 2\)</span> is the solution of the equation <span class="process-math">\(2x + 3 = 7\text{.}\)</span> When we use <span class="process-math">\(x = 2\)</span> as the input for the function <span class="process-math">\(f(x) = 2x + 3\text{,}\)</span> the output is <span class="process-math">\(y = 7\text{.}\)</span> Which input values for <span class="process-math">\(x\)</span> produce output values greater than <span class="process-math">\(7\text{?}\)</span></p>
+<p id="p-5167">You can see that <span class="process-math">\(x\)</span>-values greater than <span class="process-math">\(2\)</span> produce <span class="process-math">\(y\)</span>-values greater than <span class="process-math">\(7\text{,}\)</span> because points on the graph with <span class="process-math">\(x\)</span>-values greater than <span class="process-math">\(2\)</span> have <span class="process-math">\(y\)</span>-values greater than <span class="process-math">\(7\text{.}\)</span> Thus, the solutions of the inequality <span class="process-math">\(2x + 3 \gt 7\)</span> are <span class="process-math">\(x\gt 2\text{.}\)</span> You can verify this result by solving the inequality algebraically.</p>
+</div>
+<div class="sbspanel middle" style="width:29.4736842105263%;"><img src="external/images/fig-graph-to-solve3.svg" role="img" class="contained" alt="function graph"></div>
+</div></div>
+<article class="example example-like" id="example-graph-to-solve2"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.20</span><span class="period">.</span>
+</h4>
+<p id="p-5168">Use the graph of <span class="process-math">\(y = 285 - 15x\)</span> to solve the inequality</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+285 - 15x \gt 150
+\end{equation*}
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-338" id="solution-338"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-338"><div class="solution solution-like">
+<p id="p-5169">We begin by locating the point <span class="process-math">\(P\)</span> on the graph for which <span class="process-math">\(y = 150\text{.}\)</span> Its <span class="process-math">\(x\)</span>-coordinate is <span class="process-math">\(x = 9\text{.}\)</span> Now, because <span class="process-math">\(y = 285 - 15x\)</span> for points on the graph, the inequality</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+285-15x \gt 150
+\end{equation*}
+</div>
+<p class="continuation">is equivalent to <span class="process-math">\(y \gt 150\text{.}\)</span></p> <div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-graph-to-solve-inequality.svg" role="img" class="contained" alt="function graph"></div></div></div> <p id="p-5170">So we are looking for points on the graph with <span class="process-math">\(y\)</span>-coordinate greater than <span class="process-math">\(150\text{.}\)</span> These points are shown in red on the graph. The <span class="process-math">\(x\)</span>-coordinates of these points are the <span class="process-math">\(x\)</span>-values that satisfy the inequality. From the graph, we see that the solutions are <span class="process-math">\(x \lt 9\text{.}\)</span></p>
+</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-529"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.3.21</span><span class="period">.</span><span class="space"> </span><span class="title">QuickCheck 6.</span>
+</h4>
+<div id="webwork-81" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="81" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKVEVYVChNT0RFUyhQVFg9PicnLEhUTUw9Pic8ZGl2IHN0eWxlPSJkaXNwbGF5Om5vbmU7Ij5cKFxuZXdjb21tYW5ke1xsdH17PH1cbmV3Y29tbWFuZHtcZ3R9ez59XCk8L2Rpdj4nKSk7CkNvbnRleHQoJ051bWVyaWMnKTskaW5lcSA9IFJhZGlvQnV0dG9ucygKICBbIlwoeCBcZ3QgLTE1XCkiLAogICJcKHggXGx0IC0xNVwpIiwKICAiXCh4IFxndCAxOFwpIiwKICAiXCh4IFxsdCAxOFwpIl0sCiAgMywgCik7CgpCRUdJTl9QR01MCllvdSBhcmUgdXNpbmcgYSBncmFwaCBvZiBbYGYoeCk9NDgtMy41eGBdIHRvIHNvbHZlIHRoZSBpbmVxdWFsaXR5IFtgNDgtMy41eCBcZ3QgLTE1XHRleHR7Ln1gXSAgWW91IGZpbmQgdGhhdCBbYGYoMTgpPS0xNVx0ZXh0ey59YF0gWW91ciBhbnN3ZXIgaXM6CgogICAgW19deyRpbmVxfXs1fQoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OCltgeCBcbHQgMThgXQoKCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw==" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-5171">You are using a graph of <span class="process-math">\(f(x)=48-3.5x\)</span> to solve the inequality <span class="process-math">\(48-3.5x \gt -15\text{.}\)</span>  You find that <span class="process-math">\(f(18)=-15\text{.}\)</span> Your answer is:</p> <p id="p-5172"><ul style="list-style:circle;">
+<li id="li-2343"><p id="p-5173"><span class="process-math">\(\displaystyle x \gt -15\)</span></p></li>
+<li id="li-2344"><p id="p-5174"><span class="process-math">\(\displaystyle x \lt -15\)</span></p></li>
+<li id="li-2345"><p id="p-5175"><span class="process-math">\(\displaystyle x \gt 18\)</span></p></li>
+<li id="li-2346"><p id="p-5176"><span class="process-math">\(\displaystyle x \lt 18\)</span></p></li>
+</ul></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-276" id="answer-276"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-276"><div class="answer solution-like"><p id="p-5177"><span class="process-math">\(\text{Choice 4}\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-339" id="solution-339"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-339"><div class="solution solution-like"><p id="p-5178"><span class="process-math">\(x \lt 18\)</span></p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-81')">Activate</button></div>
+</div></article><article class="exercise exercise-like" id="exercise-530"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.3.22</span><span class="period">.</span><span class="space"> </span><span class="title">Practice 6.</span>
+</h4>
+<div class="introduction" id="introduction-72"><div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;">
+<div class="sbspanel middle" style="width:55.5555555555556%;"><p id="p-5179">Here is the graph from <a href="" class="xref" data-knowl="./knowl/exercise-graph-to-solve-linear.html" title="Checkpoint 6.3.19: Practice 5">Checkpoint 6.3.19</a> (Practice 5).</p></div>
+<div class="sbspanel middle" style="width:33.3333333333333%;"><img src="external/images/fig-graph-to-solve2.svg" role="img" class="contained" alt="function graph"></div>
+</div></div></div>
+<div id="webwork-82" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="82" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJjb250ZXh0SW5lcXVhbGl0aWVzLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7ClRFWFQoTU9ERVMoUFRYPT4nJyxIVE1MPT4nPGRpdiBzdHlsZT0iZGlzcGxheTpub25lOyI+XChcbmV3Y29tbWFuZHtcYmxlcnR9WzFde1xib2xkc3ltYm9se1xjb2xvcntibHVlfXsjMX19fVxuZXdjb21tYW5ke1xsdH17PH1cbmV3Y29tbWFuZHtcZ3R9ez59XG5ld2NvbW1hbmR7XGFtcH17Jn1cKTwvZGl2PicpKTsKQ29udGV4dCgiSW5lcXVhbGl0aWVzIik7CgokYW5zd2VyPSBDb21wdXRlKCJ4ID49IC0yLjUiKTsKCkJFR0lOX1BHTUwKYS4gIFVzZSB0aGUgZ3JhcGggb2YgW2AgeSA9IDMwIC0gOHggYF0gYWJvdmUgdG8gc29sdmUgdGhlIGluZXF1YWxpdHkKCiAgICBbYGBgIDMwIC0gOHggXGxlIDUwIGBgYF0KCgoKICAgIEFuc3dlcjogW19deyRhbnN3ZXJ9ezh9CgogICAgTm90ZTogVXNlICJbYCBcbHQ9IGBdIiBmb3IgdGhlIFtgIFxsZSBgXSBzeW1ib2wsIGFuZCB1c2UgIltgIFxndD0gYF0iIGZvciBbYCBcZ2UgXHRleHR7Ln1gXQoKCmEuICBTb2x2ZSB0aGUgaW5lcXVhbGl0eSBhbGdlYnJhaWNhbGx5LiAgIAoKCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgphLiAgQXMgd2UgZm91bmQgaW4gdGhlIHByZXZpb3VzIENoZWNrcG9pbnQsIHRoZSBwb2ludCBvbiBbYHk9MzAtOHhgXSB3aGVyZSBbYCB5PTUwIGBdIG9jY3VycyB3aGVuIFtgIHg9LTIuNSBcdGV4dHsufWBdIFRoZSBbYCB5IGBdLWNvb3JkaW5hdGVzIGFyZSBzbWFsbGVyIGFzIHdlIG1vdmUgdG8gdGhlIHJpZ2h0IG9uIHRoZSBncmFwaCwgdGhhdCBpcywgZm9yIHRoZSBwb2ludHMgd2hlcmUgW2AgeFxnZSAtMi41IFx0ZXh0ey59YF0KCgphLiAgWyROQlNQXSoKCgogICAgW2BgYFxiZWdpbnthbGlnbmVkfQogICAgIDMwLTh4IFxhbXAgXGxlIDUwIFxhbXBcYW1wXGJsZXJ0e3tcc21hbGwgXHRleHR7U3VidHJhY3QgMzAgZnJvbSBib3RoIHNpZGVzLn19fSBcXAogICAgIC04eCBcYW1wIFxsZSAyMCBcYW1wXGFtcCBcYmxlcnR7e1xzbWFsbCBcdGV4dHtEaXZpZGUgYnkgfSB7LTh9IFx0ZXh0eyBhbmQgcmV2ZXJzZSBpbmVxdWFsaXR5Ln19fSBcXAogICAgeCBcYW1wIFxnZSAtMi41CiAgICBcZW5ke2FsaWduZWR9CiAgICBgYGBdCgoKCgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<ol id="p-5180" class="lower-alpha">
+<li id="li-2347">
+<p id="p-5181">Use the graph of <span class="process-math">\(y = 30 - 8x\)</span> above to solve the inequality</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-5182">
+\begin{equation*}
+30 - 8x \le 50
+\end{equation*}
+</div>
+<p id="p-5183">Answer: <span class="fillin underline" role="img" aria-label="8-character blank" style="width: 3.636363636363636em;"></span></p>
+<p id="p-5184">Note: Use “<span class="process-math">\(\lt=\)</span>” for the <span class="process-math">\(\le\)</span> symbol, and use “<span class="process-math">\(\gt=\)</span>” for <span class="process-math">\(\ge \text{.}\)</span></p>
+</li>
+<li id="li-2348"><p id="p-5185">Solve the inequality algebraically.</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-277" id="answer-277"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-277"><div class="answer solution-like"><p id="p-5186"><span class="process-math">\(x\ge -2.5\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-340" id="solution-340"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-340"><div class="solution solution-like"><ol id="p-5187" class="lower-alpha">
+<li id="li-2349"><p id="p-5188">As we found in the previous Checkpoint, the point on <span class="process-math">\(y=30-8x\)</span> where <span class="process-math">\(y=50\)</span> occurs when <span class="process-math">\(x=-2.5 \text{.}\)</span> The <span class="process-math">\(y\)</span>-coordinates are smaller as we move to the right on the graph, that is, for the points where <span class="process-math">\(x\ge -2.5 \text{.}\)</span></p></li>
+<li id="li-2350">
+<p id="p-5189"> </p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-5190">
+\begin{equation*}
+\begin{aligned}
+30-8x \amp \le 50 \amp\amp\blert{{\small \text{Subtract 30 from both sides.}}} \\
+-8x \amp \le 20 \amp\amp \blert{{\small \text{Divide by } {-8} \text{ and reverse inequality.}}} \\
+x \amp \ge -2.5
+\end{aligned}
+\end{equation*}
+</div>
+</li>
+</ol></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-82')">Activate</button></div>
+</div></article><p id="p-5191">We can also use this graphical technique to solve nonlinear equations and inequalities.</p>
+<article class="example example-like" id="example-graph-to-solve-cubic"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.23</span><span class="period">.</span>
+</h4>
+<p id="p-5192">Use a graph of <span class="process-math">\(f(x) = -2x^3 + x^2 + 16x\)</span> to solve the equation</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+-2x^3 + x^2 + 16x = 15
+\end{equation*}
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-341" id="solution-341"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-341"><div class="solution solution-like">
+<p id="p-5193">If we sketch in the horizontal line <span class="process-math">\(y = 15\text{,}\)</span> we can see that there are three points on the graph of <span class="process-math">\(f\)</span> that have <span class="process-math">\(y\)</span>-coordinate <span class="process-math">\(15\text{,}\)</span> as shown below. The <span class="process-math">\(x\)</span>-coordinates of these points are the solutions of the equation.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-graph-to-solve-cubic.svg" role="img" class="contained" alt="graph of cubic"></div></div></div> <p id="p-5194">From the graph, we see that the solutions are <span class="process-math">\(x = -3\text{,}\)</span> <span class="process-math">\(x = 1\text{,}\)</span> and approximately <span class="process-math">\(x = 2.5\text{.}\)</span> We can verify each solution algebraically.</p> <p id="p-5195">For example, if <span class="process-math">\(x = \alert{-3}\text{,}\)</span> we have</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\begin{aligned}[t]
+f(\alert{-3})\amp= -2(\alert{-3})3 + (\alert{-3})^2 + 16(\alert{-3})\\
+\amp= -2(-27) + 9 - 48\\
+\amp =54 + 9 - 48 = 15  
+\end{aligned}
+\end{equation*}
+</div>
+<p class="continuation">so <span class="process-math">\(-3\)</span> is a solution.  Similarly, you can check that <span class="process-math">\(x = 1\)</span> and <span class="process-math">\(x = 2.5\)</span> are solutions.</p>
+</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-graph-to-solve-quadratic"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.3.24</span><span class="period">.</span><span class="space"> </span><span class="title">Practice 7.</span>
+</h4>
+<div class="introduction" id="introduction-73"><div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-graph-to-solve-quadratic.svg" role="img" class="contained" alt="graph of parabola"></div></div></div></div>
+<div id="webwork-83" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="83" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQQ0NtYWNyb3MucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRhbnN3ZXI9TGlzdCgiLTgsNCIpOwokbXlfZXZhbHVhdG9yID0gJGFuc3dlciAtPiBjbXAoCiBzaG93SGludHM9PjEsCiBzaG93TGVuZ3RoSGludHMgPT4gMSwKIHBhcnRpYWxDcmVkaXQgPT4gMSwKKTsKCkJFR0lOX1BHTUwKVXNlIHRoZSBncmFwaCBvZiBbYCB5ID0gXGZyYWN7MX17Mn1uXjIgKyAybiAtIDEwIGBdIHNob3duIGFib3ZlICB0byBzb2x2ZQoKW2BgYCBcZnJhY3sxfXsyfW5eMiArIDJuIC0gMTAgPSA2IGBgYF0KCmFuZCB2ZXJpZnkgeW91ciBzb2x1dGlvbnMgYWxnZWJyYWljYWxseS4KCltgIG49IGBdW19deyRteV9ldmFsdWF0b3J9ezEwfQoKW0BLZXlib2FyZEluc3RydWN0aW9ucygnU2VwYXJhdGUgZGlmZmVyZW50IHZhbHVlcyB3aXRoIGEgY29tbWEuJylAXSoqCgoKRU5EX1BHTUwKCkJFR0lOX1BHTUxfU09MVVRJT04KW2AgLTgsIDQgYF0KCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-5196">Use the graph of <span class="process-math">\(y = \frac{1}{2}n^2 + 2n - 10\)</span> shown above  to solve</p> <div class="displaymath process-math" data-contains-math-knowls="" id="p-5197">
+\begin{equation*}
+\frac{1}{2}n^2 + 2n - 10 = 6
+\end{equation*}
+</div> <p id="p-5198">and verify your solutions algebraically.</p> <p id="p-5199"><span class="process-math">\(n=\)</span><span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-278" id="answer-278"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-278"><div class="answer solution-like"><p id="p-5200"><span class="process-math">\(-8, 4\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-342" id="solution-342"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-342"><div class="solution solution-like"><p id="p-5201"><span class="process-math">\(-8, 4\)</span></p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-83')">Activate</button></div>
+</div></article><article class="exercise exercise-like" id="exercise-532"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.3.25</span><span class="period">.</span><span class="space"> </span><span class="title">QuickCheck 7.</span>
+</h4>
+<div id="webwork-84" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="84" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRkZWMgPSBSYWRpb0J1dHRvbnMoCiAgWyJJZiBpdHMgXCh4XCktdmFsdWVzIGluY3JlYXNlIGZyb20gbGVmdCB0byByaWdodC4iLAogICJJZiBpdHMgXCh5XCktdmFsdWVzIGRlY3JlYXNlIHdoZW4gaXRzIFwoeFwpLXZhbHVlcyBkZWNyZWFzZS4iLAogICJJZiBpdHMgXCh5XCktdmFsdWVzIGRlY3JlYXNlIHdoZW4gaXRzIFwoeFwpLXZhbHVlcyBpbmNyZWFzZS4iLAogICJJZiB0aGUgZ3JhcGggbGllcyBiZWxvdyB0aGUgXCh4XCktYXhpcy4iXSwKICAyLCAKKTsKCkJFR0lOX1BHTUwKV2hlbiBpcyBhIGZ1bmN0aW9uIGNhbGxlZCBkZWNyZWFzaW5nPwoKICAgIFtfXXskZGVjfXs1fQoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OCkEgZnVuY3Rpb24gaXMgY2FsbGVkIGRlY3JlYXNpbmcgaWYgaXRzIFtgeWBdLXZhbHVlcyBkZWNyZWFzZSB3aGVuIGl0cyBbYHhgXS12YWx1ZXMgaW5jcmVhc2UuCgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-5202">When is a function called decreasing?</p> <p id="p-5203"><ul style="list-style:circle;">
+<li id="li-2351"><p id="p-5204">If its <span class="process-math">\(x\)</span>-values increase from left to right.</p></li>
+<li id="li-2352"><p id="p-5205">If its <span class="process-math">\(y\)</span>-values decrease when its <span class="process-math">\(x\)</span>-values decrease.</p></li>
+<li id="li-2353"><p id="p-5206">If its <span class="process-math">\(y\)</span>-values decrease when its <span class="process-math">\(x\)</span>-values increase.</p></li>
+<li id="li-2354"><p id="p-5207">If the graph lies below the <span class="process-math">\(x\)</span>-axis.</p></li>
+</ul></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-279" id="answer-279"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-279"><div class="answer solution-like"><p id="p-5208"><span class="process-math">\(\text{Choice 3}\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-343" id="solution-343"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-343"><div class="solution solution-like"><p id="p-5209">A function is called decreasing if its <span class="process-math">\(y\)</span>-values decrease when its <span class="process-math">\(x\)</span>-values increase.</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-84')">Activate</button></div>
+</div></article><article class="technology computation-like" id="technology-7"><h4 class="heading">
+<span class="type">Technology</span><span class="space"> </span><span class="codenumber">6.3.26</span><span class="period">.</span><span class="space"> </span><span class="title">Using the Trace Feature.</span>
+</h4> <p id="p-5210">You can use the Trace feature on a graphing utility to approximate solutions to equations. Graph the function <span class="process-math">\(f(x)\)</span> in <a href="" class="xref" data-knowl="./knowl/example-graph-to-solve-cubic.html" title="Example 6.3.23">Example 6.3.23</a>  in the window</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Xmin<span class="process-math">\(=-4\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">Xmax<span class="process-math">\(=4\)</span>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Ymin<span class="process-math">\(=-20\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">Ymax<span class="process-math">\(=40\)</span>
+</td>
+</tr>
+</table></div></div></div> <p id="p-5211">and trace along the curve to the point <span class="process-math">\((2.4680851, 15.512401)\text{.}\)</span> We are close to a solution, because the <span class="process-math">\(y\)</span>-value is close to <span class="process-math">\(15\text{.}\)</span> Try entering <span class="process-math">\(x\)</span>-values close to <span class="process-math">\(2.4680851\text{,}\)</span> for instance, <span class="process-math">\(x = 2.4\)</span> and <span class="process-math">\(x = 2.5\text{,}\)</span> to find a better approximation for the solution.</p></article><article class="example example-like" id="example-graph-to-solve-cubic2"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.27</span><span class="period">.</span>
+</h4>
+<p id="p-5212">Use the graph in <a href="" class="xref" data-knowl="./knowl/example-graph-to-solve-cubic.html" title="Example 6.3.23">Example 6.3.23</a>  to solve the inequality</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/example-graph-to-solve-cubic.html">
+\begin{equation*}
+-2x^3 + x^2 + 16x \ge 15
+\end{equation*}
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-344" id="solution-344"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-344"><div class="solution solution-like">
+<p id="p-5213">We first locate all points on the graph that have <span class="process-math">\(y\)</span>-coordinates greater than or equal to <span class="process-math">\(15\text{.}\)</span> The <span class="process-math">\(x\)</span>-coordinates of these points are the solutions of the inequality.</p> <p id="p-5214">The figure below shows the points in red, and their <span class="process-math">\(x\)</span>-coordinates as intervals on the <span class="process-math">\(x\)</span>-axis. The solutions are <span class="process-math">\(x \le -3\)</span> and <span class="process-math">\(1\le x \le 2.5\text{,}\)</span> or in interval notation, <span class="process-math">\((-\infty, -3] \cup [1, 2.5]\text{.}\)</span> (See <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "Interval-notation" missing or not unique]</code> to review interval notation.)</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-graph-to-solve-cubic2.svg" role="img" class="contained" alt="graph of cubic"></div></div></div>
+</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-533"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.3.28</span><span class="period">.</span><span class="space"> </span><span class="title">Practice 8.</span>
+</h4>
+<div class="introduction" id="introduction-74"><div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-graph-to-solve-quadratic.svg" role="img" class="contained" alt="graph of cubic"></div></div></div></div>
+<div id="webwork-85" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="85" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQQ0NtYWNyb3MucGwiLCJjb250ZXh0SW5lcXVhbGl0aWVzLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7ClRFWFQoTU9ERVMoUFRYPT4nJyxIVE1MPT4nPGRpdiBzdHlsZT0iZGlzcGxheTpub25lOyI+XChcbmV3Y29tbWFuZHtcbHR9ezx9XCk8L2Rpdj4nKSk7CkNvbnRleHQoIkluZXF1YWxpdGllcyIpLT52YXJpYWJsZXMtPmFkZChuPT4iUmVhbCIpOwokYW5zd2VyPSBDb21wdXRlKCItOCA8IG4gPCA0Iik7CgpCRUdJTl9QR01MClVzZSB0aGUgZ3JhcGggYWJvdmUgZnJvbSBQcmFjdGljZSA3IGFib3ZlIHRvIHNvbHZlIHRoZSBpbmVxdWFsaXR5CgpbYGBgXGJlZ2lue2dhdGhlcmVkfQogXGZyYWN7MX17Mn1uXjIgKyAybiAtIDEwIFxsdCA2IApcZW5ke2dhdGhlcmVkfQpgYGBdCgoKCkFuc3dlcjogW19deyRhbnN3ZXJ9ezEyfQoKW0BLZXlib2FyZEluc3RydWN0aW9ucygnTm90ZTogVXNlIGludGVydmFsIG5vdGF0aW9uIG9yIGluZXF1YWxpdGllcy4nKUBdKioKCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpbYCAtOCBcbHQgbiBcbHQgNCBcdGV4dHssfWBdIG9yIGluIGludGVydmFsIG5vdGF0aW9uLCBbYCgtOCw0KWBdCgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-5215">Use the graph above from Practice 7 above to solve the inequality</p> <div class="displaymath process-math" data-contains-math-knowls="" id="p-5216">
+\begin{equation*}
+\begin{gathered}
+\frac{1}{2}n^2 + 2n - 10 \lt 6 
+\end{gathered}
+\end{equation*}
+</div> <p id="p-5217">Answer: <span class="fillin underline" role="img" aria-label="12-character blank" style="width: 5.454545454545454em;"></span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-280" id="answer-280"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-280"><div class="answer solution-like"><p id="p-5218"><span class="process-math">\(-8 &lt; n &lt; 4\)</span></p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-345" id="solution-345"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-345"><div class="solution solution-like"><p id="p-5219"><span class="process-math">\(-8 \lt n \lt 4 \text{,}\)</span> or in interval notation, <span class="process-math">\((-8,4)\)</span></p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-85')">Activate</button></div>
+</div></article><article class="exercise exercise-like" id="exercise-534"><h4 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">6.3.29</span><span class="period">.</span><span class="space"> </span><span class="title">Pause and Reflect.</span>
+</h4>
+<div id="webwork-86" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="86" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Vzc2F5bWFjcm9zLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7CkNvbnRleHQoJ051bWVyaWMnKTsKCkJFR0lOX1BHTUwKRXhwbGFpbiBob3cgdG8gdXNlIHRoZSBncmFwaCBvZiBbYHk9eCtcc3FydHt4fWBdIHRvIHNvbHZlIHRoZSBlcXVhdGlvbiBbYHgrXHNxcnR7eH09NTZcdGV4dHsufWBdCgpbQEFOUyhlc3NheV9jbXAoKSk7ZXNzYXlfYm94KDYsNzYpQF0qIFtAZXNzYXlfaGVscCgpQF0qCgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents"><p id="p-5220">Explain how to use the graph of <span class="process-math">\(y=x+\sqrt{x}\)</span> to solve the equation <span class="process-math">\(x+\sqrt{x}=56\text{.}\)</span></p></div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-86')">Activate</button></div>
+</div></article></section><section class="exercises" id="section-1-3-exercises"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">6.3.5</span> <span class="title">Homework 1.3</span>
+</h3>
+<div class="exercisegroup" id="exercisegroup-32">
+<h4 class="heading"><span class="title">Exercise Group.</span></h4>
+<div class="introduction" id="introduction-75"><p id="p-5221">In Problems 1–8, use the graphs to answer the questions about the functions.</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-535"><h5 class="heading"><span class="codenumber">1<span class="period">.</span></span></h5>
+<ol id="p-5222" class="lower-alpha">
+<li id="li-2355"><p id="p-5223">Find <span class="process-math">\(h(-3)\text{,}\)</span> <span class="process-math">\(h(1)\text{,}\)</span> and <span class="process-math">\(h(3)\text{.}\)</span></p></li>
+<li id="li-2356"><p id="p-5224">For what value(s) of <span class="process-math">\(z\)</span> is <span class="process-math">\(h(z) = 3\text{?}\)</span></p></li>
+<li id="li-2357"><p id="p-5225">Find the intercepts of the graph. List the function values given by the intercepts.</p></li>
+<li id="li-2358"><p id="p-5226">What is the maximum value of <span class="process-math">\(h(z)\text{?}\)</span></p></li>
+<li id="li-2359"><p id="p-5227">For what value(s) of <span class="process-math">\(z\)</span> does <span class="process-math">\(h\)</span> take on its maximum value?</p></li>
+<li id="li-2360"><p id="p-5228">On what intervals is the function increasing? Decreasing?</p></li>
+</ol> <div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-ex-1-3-1.svg" role="img" class="contained" alt="curve"></div></div></div></article><article class="exercise exercise-like" id="exercise-536"><h5 class="heading"><span class="codenumber">2<span class="period">.</span></span></h5>
+<ol id="p-5231" class="lower-alpha">
+<li id="li-2367"><p id="p-5232">Find <span class="process-math">\(G(-3)\text{,}\)</span> <span class="process-math">\(G(-1)\text{,}\)</span> and <span class="process-math">\(G(2)\text{.}\)</span></p></li>
+<li id="li-2368"><p id="p-5233">For what value(s) of <span class="process-math">\(s\)</span> is <span class="process-math">\(G(s) = 3\text{?}\)</span></p></li>
+<li id="li-2369"><p id="p-5234">Find the intercepts of the graph. List the function values given by the intercepts.</p></li>
+<li id="li-2370"><p id="p-5235">What is the minimum value of <span class="process-math">\(G(s)\text{?}\)</span></p></li>
+<li id="li-2371"><p id="p-5236">For what value(s) of <span class="process-math">\(s\)</span> does <span class="process-math">\(G\)</span> take on its minimum value?</p></li>
+<li id="li-2372"><p id="p-5237">On what intervals is the function increasing? Decreasing?</p></li>
+</ol> <div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-ex-1-3-2.svg" role="img" class="contained" alt="curve"></div></div></div></article><article class="exercise exercise-like" id="exercise-537"><h5 class="heading"><span class="codenumber">3<span class="period">.</span></span></h5>
+<ol id="p-5238" class="lower-alpha">
+<li id="li-2373"><p id="p-5239">Find <span class="process-math">\(R(1)\)</span> and <span class="process-math">\(R(3)\text{.}\)</span></p></li>
+<li id="li-2374"><p id="p-5240">For what value(s) of <span class="process-math">\(p\)</span> is <span class="process-math">\(R(p)=2\text{?}\)</span></p></li>
+<li id="li-2375"><p id="p-5241">Find the intercepts of the graph. List the function values given by the intercepts.</p></li>
+<li id="li-2376"><p id="p-5242">Find the maximum and minimum values of <span class="process-math">\(R(p)\text{.}\)</span></p></li>
+<li id="li-2377"><p id="p-5243">For what value(s) of <span class="process-math">\(p\)</span> does <span class="process-math">\(R\)</span> take on its maximum and minimum values?</p></li>
+<li id="li-2378"><p id="p-5244">On what intervals is the function increasing? Decreasing?</p></li>
+</ol> <div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-ex-1-3-3.svg" role="img" class="contained" alt="curve"></div></div></div></article><article class="exercise exercise-like" id="exercise-538"><h5 class="heading"><span class="codenumber">4<span class="period">.</span></span></h5>
+<ol id="p-5252" class="lower-alpha">
+<li id="li-2385"><p id="p-5253">Find <span class="process-math">\(f (-1)\)</span> and <span class="process-math">\(f (3)\text{.}\)</span></p></li>
+<li id="li-2386"><p id="p-5254">For what value(s) of <span class="process-math">\(t\)</span> is <span class="process-math">\(f(t)=5\text{?}\)</span></p></li>
+<li id="li-2387"><p id="p-5255">Find the intercepts of the graph. List the function values given by the intercepts.</p></li>
+<li id="li-2388"><p id="p-5256">Find the maximum and minimum values of <span class="process-math">\(f(t)\text{.}\)</span></p></li>
+<li id="li-2389"><p id="p-5257">For what value(s) of <span class="process-math">\(t\)</span> does <span class="process-math">\(f\)</span> take on its maximum and minimum values?</p></li>
+<li id="li-2390"><p id="p-5258">On what intervals is the function increasing? Decreasing?</p></li>
+</ol> <div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-ex-1-3-4.svg" role="img" class="contained" alt="curve"></div></div></div></article><article class="exercise exercise-like" id="exercise-539"><h5 class="heading"><span class="codenumber">5<span class="period">.</span></span></h5>
+<ol id="p-5259" class="lower-alpha">
+<li id="li-2391"><p id="p-5260">Find <span class="process-math">\(S(0)\text{,}\)</span> <span class="process-math">\(S\left(\dfrac{1}{6}\right)\text{,}\)</span> and <span class="process-math">\(S(-1)\text{.}\)</span></p></li>
+<li id="li-2392"><p id="p-5261">Estimate the value of <span class="process-math">\(S\left(\dfrac{1}{3}\right)\)</span> from the graph.</p></li>
+<li id="li-2393"><p id="p-5262">For what value(s) of <span class="process-math">\(x\)</span> is <span class="process-math">\(S(x) = -\dfrac{1}{2}\text{?}\)</span></p></li>
+<li id="li-2394"><p id="p-5263">Find the maximum and minimum values of <span class="process-math">\(S(x)\text{.}\)</span></p></li>
+<li id="li-2395"><p id="p-5264">For what value(s) of <span class="process-math">\(x\)</span> does <span class="process-math">\(S\)</span> take on its maximum and minimum values?</p></li>
+</ol> <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-ex-1-3-5.svg" role="img" class="contained" alt="curve"></div></div></div></article><article class="exercise exercise-like" id="exercise-540"><h5 class="heading"><span class="codenumber">6<span class="period">.</span></span></h5>
+<ol id="p-5271" class="lower-alpha">
+<li id="li-2401"><p id="p-5272">Find <span class="process-math">\(C(0)\text{,}\)</span> <span class="process-math">\(C\left(-\dfrac{1}{3}\right)\text{,}\)</span> and <span class="process-math">\(C(1)\text{.}\)</span></p></li>
+<li id="li-2402"><p id="p-5273">Estimate the value of <span class="process-math">\(C\left(\dfrac{1}{6}\right)\)</span> from the graph.</p></li>
+<li id="li-2403"><p id="p-5274">For what value(s) of <span class="process-math">\(x\)</span> is <span class="process-math">\(C(x) = \dfrac{1}{2}\text{?}\)</span></p></li>
+<li id="li-2404"><p id="p-5275">Find the maximum and minimum values of <span class="process-math">\(C(x)\text{.}\)</span></p></li>
+<li id="li-2405"><p id="p-5276">For what value(s) of <span class="process-math">\(x\)</span> does <span class="process-math">\(C\)</span> take on its maximum and minimum values?</p></li>
+</ol> <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-ex-1-3-6.svg" role="img" class="contained" alt="curve"></div></div></div></article><article class="exercise exercise-like" id="exercise-541"><h5 class="heading"><span class="codenumber">7<span class="period">.</span></span></h5>
+<ol id="p-5277" class="lower-alpha">
+<li id="li-2406"><p id="p-5278">Find <span class="process-math">\(F(-3)\text{,}\)</span> <span class="process-math">\(F(-2)\text{,}\)</span> and <span class="process-math">\(F(2)\text{.}\)</span></p></li>
+<li id="li-2407"><p id="p-5279">For what value(s) of <span class="process-math">\(s\)</span> is <span class="process-math">\(F(s) = -1\text{?}\)</span></p></li>
+<li id="li-2408"><p id="p-5280">Find the maximum and minimum values of <span class="process-math">\(F(s)\text{.}\)</span></p></li>
+<li id="li-2409"><p id="p-5281">For what value(s) of <span class="process-math">\(s\)</span> does <span class="process-math">\(F\)</span> take on its maximum and minimum values?</p></li>
+</ol> <div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-ex-1-3-7.svg" role="img" class="contained" alt="curve"></div></div></div></article><article class="exercise exercise-like" id="exercise-542"><h5 class="heading"><span class="codenumber">8<span class="period">.</span></span></h5>
+<ol id="p-5287" class="lower-alpha">
+<li id="li-2414"><p id="p-5288">Find <span class="process-math">\(P(-3)\text{,}\)</span> <span class="process-math">\(P(-2)\text{,}\)</span> and <span class="process-math">\(P(1)\text{.}\)</span></p></li>
+<li id="li-2415"><p id="p-5289">For what value(s) of <span class="process-math">\(n\)</span> is <span class="process-math">\(P(n) = 0\text{?}\)</span></p></li>
+<li id="li-2416"><p id="p-5290">Find the maximum and minimum values of <span class="process-math">\(P(n)\text{.}\)</span></p></li>
+<li id="li-2417"><p id="p-5291">For what value(s) of <span class="process-math">\(n\)</span> does <span class="process-math">\(P\)</span> take on its maximum and minimum values?</p></li>
+</ol> <div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-ex-1-3-8.svg" role="img" class="contained" alt="curve"></div></div></div></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-33">
+<h4 class="heading"><span class="title">Exercise Group.</span></h4>
+<div class="introduction" id="introduction-76"><p id="p-5292">Which of the graphs in Problems 9 and 10 represent functions?</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-543"><h5 class="heading"><span class="codenumber">9<span class="period">.</span></span></h5>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-ex-1-3-9.svg" role="img" class="contained" alt="5 curves"></div></div></div></article><article class="exercise exercise-like" id="exercise-544"><h5 class="heading"><span class="codenumber">10<span class="period">.</span></span></h5>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-ex-1-3-10.svg" role="img" class="contained" alt="5 curves"></div></div></div></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-34">
+<h4 class="heading"><span class="title">Exercise Group.</span></h4>
+<div class="introduction" id="introduction-77">
+<p id="p-5294">In Problems 11–16,</p>
+<ol class="lower-alpha">
+<li id="li-2418"><p id="p-5295">Make a table of values and sketch a graph of the function by plotting points. (Use the suggested <span class="process-math">\(x\)</span>-values.)</p></li>
+<li id="li-2419"><p id="p-5296">Use a graphing utility to graph the function.</p></li>
+</ol>
+<p class="continuation">Compare the graphing utility's graph with your sketch.</p>
+</div>
+<div class="exercisegroup-exercises cols2">
+<article class="exercise exercise-like" id="exercise-545"><h5 class="heading"><span class="codenumber">11<span class="period">.</span></span></h5>
+<p id="p-5297"><span class="process-math">\(g(x) = x^3 + 4\text{;}\)</span> <span class="process-math">\(\hphantom{00000}x = -2, -1, \ldots , 2\)</span></p></article><article class="exercise exercise-like" id="exercise-546"><h5 class="heading"><span class="codenumber">12<span class="period">.</span></span></h5>
+<p id="p-5298"><span class="process-math">\(h(x) = 2 +\sqrt{x}\text{;}\)</span> <span class="process-math">\(\hphantom{00000}x = 0,1, \ldots , 9\)</span></p></article><article class="exercise exercise-like" id="exercise-547"><h5 class="heading"><span class="codenumber">13<span class="period">.</span></span></h5>
+<p id="p-5299"><span class="process-math">\(G(x) =\sqrt{4 - x}\text{;}\)</span> <span class="process-math">\(\hphantom{00000}x = -5, -4, \ldots , 4\)</span></p></article><article class="exercise exercise-like" id="exercise-548"><h5 class="heading"><span class="codenumber">14<span class="period">.</span></span></h5>
+<p id="p-5300"><span class="process-math">\(F(x) = \sqrt{x-1}\text{;}\)</span> <span class="process-math">\(\hphantom{00000}x = 1,2, \ldots , 10\)</span></p></article><article class="exercise exercise-like" id="exercise-549"><h5 class="heading"><span class="codenumber">15<span class="period">.</span></span></h5>
+<p id="p-5301"><span class="process-math">\(v(x) = 1 + 6x - x^3\text{;}\)</span> <span class="process-math">\(\hphantom{00000}x = -3, -2, \ldots , 3\)</span></p></article><article class="exercise exercise-like" id="exercise-550"><h5 class="heading"><span class="codenumber">16<span class="period">.</span></span></h5>
+<p id="p-5302"><span class="process-math">\(w(x) = x^3 - 8x\text{;}\)</span> <span class="process-math">\(\hphantom{00000}x = -4, -3, \ldots , 4\)</span></p></article>
+</div>
+</div>
+<article class="exercise exercise-like" id="exercise-551"><h4 class="heading"><span class="codenumber">17<span class="period">.</span></span></h4>
+<p id="p-5303">The graph shows the speed of sound in the ocean as a function of depth, <span class="process-math">\(S = f (d)\text{.}\)</span> The speed of sound is affected both by increasing water pressure and by dropping temperature. (Source: Scientific American)</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-ex-1-3-17.svg" role="img" class="contained" alt="speed of sound vs depth"></div></div></div>
+<ol id="p-5304" class="lower-alpha">
+<li id="li-2420"><p id="p-5305">Evaluate <span class="process-math">\(f (1000)\)</span> and explain its meaning.</p></li>
+<li id="li-2421"><p id="p-5306">Solve <span class="process-math">\(f (d) = 1500\)</span> and explain its meaning.</p></li>
+<li id="li-2422"><p id="p-5307">At what depth is the speed of sound the slowest, and what is the speed? Write your answer with function notation.</p></li>
+<li id="li-2423"><p id="p-5308">Describe the behavior of <span class="process-math">\(f (d)\)</span> as <span class="process-math">\(d\)</span> increases.</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-552"><h4 class="heading"><span class="codenumber">18<span class="period">.</span></span></h4>
+<p id="p-5314">The graph shows the water level in Lake Superior as a function of time, <span class="process-math">\(L = f (t)\text{.}\)</span> (Source: The Canadian Hydrographic Service)</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-ex-1-3-18.svg" role="img" class="contained" alt="water level vs time"></div></div></div>
+<ol id="p-5315" class="lower-alpha">
+<li id="li-2428"><p id="p-5316">Evaluate <span class="process-math">\(f (1997)\)</span> and explain its meaning.</p></li>
+<li id="li-2429"><p id="p-5317">Solve <span class="process-math">\(f (t) = 183.5\)</span> and explain its meaning.</p></li>
+<li id="li-2430"><p id="p-5318">In which two years did Lake Superior reach its highest levels, and what were those levels? Write your answers with function notation.</p></li>
+<li id="li-2431"><p id="p-5319">Over which two-year period did the water level drop the most?</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-553"><h4 class="heading"><span class="codenumber">19<span class="period">.</span></span></h4>
+<p id="p-5320">The graph shows the federal debt as a percentage of the gross domestic product (GDP), as a function of time, <span class="process-math">\(D = f (t)\text{.}\)</span> (Source: Office of Management and Budget)</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-ex-1-3-19.svg" role="img" class="contained" alt="federal debt"></div></div></div>
+<ol id="p-5321" class="lower-alpha">
+<li id="li-2432"><p id="p-5322">Evaluate <span class="process-math">\(f (1985)\)</span> and explain its meaning.</p></li>
+<li id="li-2433"><p id="p-5323">Solve <span class="process-math">\(f (t) = 70\)</span> and explain its meaning.</p></li>
+<li id="li-2434"><p id="p-5324">When did the federal debt reach its highest level since 1960, and what was that level? Write your answer with function notation.</p></li>
+<li id="li-2435"><p id="p-5325">What is the longest time interval over which the federal debt was decreasing?</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-554"><h4 class="heading"><span class="codenumber">20<span class="period">.</span></span></h4>
+<p id="p-5331">The graph shows the elevation of the Los Angeles Marathon course as a function of the distance into the race, <span class="process-math">\(a = f (t)\text{.}\)</span> (Source: Los Angeles Times, March 3, 2005)</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-LA-marathon.svg" role="img" class="contained" alt="LA marathon elevation"></div></div></div>
+<ol id="p-5332" class="lower-alpha">
+<li id="li-2440"><p id="p-5333">Evaluate <span class="process-math">\(f (5)\)</span> and explain its meaning.</p></li>
+<li id="li-2441"><p id="p-5334">Solve <span class="process-math">\(f (d) = 200\)</span> and explain its meaning.</p></li>
+<li id="li-2442"><p id="p-5335">When does the marathon course reach its lowest elevation, and what is that elevation? Write your answer with function notation.</p></li>
+<li id="li-2443"><p id="p-5336">Give three intervals over which the elevation is increasing.</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-555"><h4 class="heading"><span class="codenumber">21<span class="period">.</span></span></h4>
+<p id="p-5337">The figure shows a graph of <span class="process-math">\(y = -2x + 6\text{.}\)</span></p> <div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-ex-1-3-21.svg" role="img" class="contained" alt="y=-2x+6"></div></div></div>
+<ol id="p-5338" class="lower-alpha">
+<li id="li-2444">
+<p id="p-5339">Use the graph to find all values of <span class="process-math">\(x\)</span> for which</p>
+<ol class="upper-roman">
+<li id="li-2445"><p id="p-5340"><span class="process-math">\(\displaystyle y=12\)</span></p></li>
+<li id="li-2446"><p id="p-5341"><span class="process-math">\(\displaystyle y\gt 12\)</span></p></li>
+<li id="li-2447"><p id="p-5342"><span class="process-math">\(\displaystyle y\lt 12\)</span></p></li>
+</ol>
+</li>
+<li id="li-2448">
+<p id="p-5343">Use the graph to solve</p>
+<ol class="upper-roman">
+<li id="li-2449"><p id="p-5344"><span class="process-math">\(\displaystyle -2x + 6=12\)</span></p></li>
+<li id="li-2450"><p id="p-5345"><span class="process-math">\(\displaystyle -2x + 6\gt 12\)</span></p></li>
+<li id="li-2451"><p id="p-5346"><span class="process-math">\(\displaystyle -2x + 6\lt 12\)</span></p></li>
+</ol>
+</li>
+<li id="li-2452"><p id="p-5347">Explain why your answers to parts (a) and (b) are the same.</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-556"><h4 class="heading"><span class="codenumber">22<span class="period">.</span></span></h4>
+<p id="p-5358">The figure shows a graph of <span class="process-math">\(y =\dfrac{-x}{3} - 6\text{.}\)</span></p> <div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-ex-1-3-22.svg" role="img" class="contained" alt="y=-x/3 - 6"></div></div></div>
+<ol id="p-5359" class="lower-alpha">
+<li id="li-2462">
+<p id="p-5360">Use the graph to find all values of <span class="process-math">\(x\)</span> for which</p>
+<ol class="lower-roman">
+<li id="li-2463"><p id="p-5361"><span class="process-math">\(\displaystyle y=-4\)</span></p></li>
+<li id="li-2464"><p id="p-5362"><span class="process-math">\(\displaystyle y\gt -4\)</span></p></li>
+<li id="li-2465"><p id="p-5363"><span class="process-math">\(\displaystyle y\lt -4\)</span></p></li>
+</ol>
+</li>
+<li id="li-2466">
+<p id="p-5364">Use the graph to solve</p>
+<ol class="lower-roman">
+<li id="li-2467"><p id="p-5365"><span class="process-math">\(\displaystyle \dfrac{-x}{3} - 6=-4\)</span></p></li>
+<li id="li-2468"><p id="p-5366"><span class="process-math">\(\displaystyle \dfrac{-x}{3} - 6\gt -4\)</span></p></li>
+<li id="li-2469"><p id="p-5367"><span class="process-math">\(\displaystyle \dfrac{-x}{3} - 6\lt -4\)</span></p></li>
+</ol>
+</li>
+<li id="li-2470"><p id="p-5368">Explain why your answers to parts (a) and (b) are the same.</p></li>
+</ol></article><div class="exercisegroup" id="exercisegroup-35">
+<h4 class="heading"><span class="title">Exercise Group.</span></h4>
+<div class="introduction" id="introduction-78"><p id="p-5369">In Problems 23 and 24, use the graph to solve the equation or inequality, and then solve algebraically. (To review solving linear inequalities algebraically, see <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "appendix-Linear-Equations-and-Inequalities" missing or not unique]</code>.)</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-557"><h5 class="heading"><span class="codenumber">23<span class="period">.</span></span></h5>
+<p id="p-5370">The figure shows the graph of <span class="process-math">\(y = 1.4x - 0.64\text{.}\)</span> Solve the following:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:35%;margin-right:35%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-ex-1-3-23.svg" role="img" class="contained" alt="y = 1.4x - 0.64"></div></div></div>
+<ol id="p-5371" class="lower-alpha">
+<li id="li-2471"><p id="p-5372"><span class="process-math">\(\displaystyle 1.4x - 0.64 = 0.2\)</span></p></li>
+<li id="li-2472"><p id="p-5373"><span class="process-math">\(\displaystyle -1.2 = 1.4x - 0.64\)</span></p></li>
+<li id="li-2473"><p id="p-5374"><span class="process-math">\(\displaystyle 1.4x - 0.64\gt 0.2\)</span></p></li>
+<li id="li-2474"><p id="p-5375"><span class="process-math">\(\displaystyle -1.2\gt 1.4x - 0.64\)</span></p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-558"><h5 class="heading"><span class="codenumber">24<span class="period">.</span></span></h5>
+<p id="p-5381">The figure shows the graph of <span class="process-math">\(y = -2.4x + 2.32\text{.}\)</span> Solve the following:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-ex-1-3-24.svg" role="img" class="contained" alt="y = -2.4x + 2.32"></div></div></div>
+<ol id="p-5382" class="lower-alpha">
+<li id="li-2479"><p id="p-5383"><span class="process-math">\(\displaystyle 1.6 = -2.4x + 2.32\)</span></p></li>
+<li id="li-2480"><p id="p-5384"><span class="process-math">\(\displaystyle -2.4x + 2.32 = 0.4\)</span></p></li>
+<li id="li-2481"><p id="p-5385"><span class="process-math">\(\displaystyle -2.4x + 2.32\ge 1.6\)</span></p></li>
+<li id="li-2482"><p id="p-5386"><span class="process-math">\(\displaystyle 0.4\ge -2.4x + 2.32\)</span></p></li>
+</ol></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-36">
+<h4 class="heading"><span class="title">Exercise Group.</span></h4>
+<div class="introduction" id="introduction-79"><p id="p-5387">For Problems 25–30, use the graphs to estimate solutions to the equations and inequalities.</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-559"><h5 class="heading"><span class="codenumber">25<span class="period">.</span></span></h5>
+<p id="p-5388">The figure shows the graph of <span class="process-math">\(g(x) = \dfrac{12}{2 + x^2}\text{.}\)</span></p> <div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-ex-1-3-25.svg" role="img" class="contained" alt="bell-like curve"></div></div></div>
+<ol id="p-5389" class="lower-alpha">
+<li id="li-2483"><p id="p-5390">Solve <span class="process-math">\(\dfrac{12}{2 + x^2} = 4\)</span></p></li>
+<li id="li-2484"><p id="p-5391">Solve <span class="process-math">\(1\le \dfrac{12}{2 + x^2} \le 2\)</span></p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-560"><h5 class="heading"><span class="codenumber">26<span class="period">.</span></span></h5>
+<p id="p-5395">The figure shows the graph of <span class="process-math">\(f(x) = \dfrac{30\sqrt{x}}{1 + x}\text{.}\)</span></p> <div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-ex-1-3-26.svg" role="img" class="contained" alt="curve"></div></div></div>
+<ol id="p-5396" class="lower-alpha">
+<li id="li-2487"><p id="p-5397">Solve <span class="process-math">\(\dfrac{30\sqrt{x}}{1 + x} = 15\)</span></p></li>
+<li id="li-2488"><p id="p-5398">Solve <span class="process-math">\(\dfrac{30\sqrt{x}}{1 + x} \lt 12\)</span></p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-561"><h5 class="heading"><span class="codenumber">27<span class="period">.</span></span></h5>
+<p id="p-5399">The figure shows a graph of <span class="process-math">\(B = \dfrac{1}{3}p^3 - 3p + 2\text{.}\)</span></p> <div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-ex-1-3-27.svg" role="img" class="contained" alt="cubic curve"></div></div></div>
+<ol id="p-5400" class="lower-alpha">
+<li id="li-2489"><p id="p-5401">Solve <span class="process-math">\(\dfrac{1}{3}p^3 - 3p + 2 = 6\)</span></p></li>
+<li id="li-2490"><p id="p-5402">Solve <span class="process-math">\(\dfrac{1}{3}p^3 - 3p + 2=5\)</span></p></li>
+<li id="li-2491"><p id="p-5403">Solve <span class="process-math">\(\dfrac{1}{3}p^3 - 3p + 2\lt 1\)</span></p></li>
+<li id="li-2492"><p id="p-5404">What range of values does <span class="process-math">\(B\)</span> have for <span class="process-math">\(p\)</span> between <span class="process-math">\(-2.5\)</span> and <span class="process-math">\(0.5\text{?}\)</span></p></li>
+<li id="li-2493"><p id="p-5405">For what values of <span class="process-math">\(p\)</span> is <span class="process-math">\(B\)</span> increasing?</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-562"><h5 class="heading"><span class="codenumber">28<span class="period">.</span></span></h5>
+<p id="p-5412">The figure shows a graph of <span class="process-math">\(H = t^3 - 4t^2 - 4t + 12\text{.}\)</span></p> <div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-ex-1-3-28.svg" role="img" class="contained" alt="cubic curve"></div></div></div>
+<ol id="p-5413" class="lower-alpha">
+<li id="li-2499"><p id="p-5414">Solve <span class="process-math">\(t^3 - 4t^2 - 4t + 12 = -4\)</span></p></li>
+<li id="li-2500"><p id="p-5415">Solve <span class="process-math">\(t^3 - 4t^2 - 4t + 12=16\)</span></p></li>
+<li id="li-2501"><p id="p-5416">Solve <span class="process-math">\(t^3 - 4t^2 - 4t + 12\gt 6\)</span></p></li>
+<li id="li-2502"><p id="p-5417">Estimate the horizontal and vertical intercepts of the graph.</p></li>
+<li id="li-2503"><p id="p-5418">For what values of <span class="process-math">\(t\)</span> is <span class="process-math">\(H\)</span> increasing?</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-563"><h5 class="heading"><span class="codenumber">29<span class="period">.</span></span></h5>
+<p id="p-5419">The figure shows a graph of <span class="process-math">\(M = g(q)\text{.}\)</span></p> <div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-ex-1-3-29.svg" role="img" class="contained" alt="mystery curve"></div></div></div>
+<ol id="p-5420" class="lower-alpha">
+<li id="li-2504">
+<p id="p-5421">Find all values of <span class="process-math">\(q\)</span> for which</p>
+<ol class="upper-roman">
+<li id="li-2505"><p id="p-5422"><span class="process-math">\(\displaystyle g(q) = 0\)</span></p></li>
+<li id="li-2506"><p id="p-5423"><span class="process-math">\(\displaystyle g(q) = 16\)</span></p></li>
+<li id="li-2507"><p id="p-5424"><span class="process-math">\(\displaystyle g(q)\lt 6\)</span></p></li>
+</ol>
+</li>
+<li id="li-2508"><p id="p-5425">For what values of <span class="process-math">\(q\)</span> is <span class="process-math">\(g(q)\)</span> increasing?</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-564"><h5 class="heading"><span class="codenumber">30<span class="period">.</span></span></h5>
+<p id="p-5432">The figure shows a graph of <span class="process-math">\(P = f (t)\text{.}\)</span></p> <div class="sidebyside"><div class="sbsrow" style="margin-left:35%;margin-right:35%;"><div class="sbspanel top" style="width:100%;"><img src="external/images/fig-ex-1-3-30.svg" role="img" class="contained" alt="mystery curve"></div></div></div>
+<ol id="p-5433" class="lower-alpha">
+<li id="li-2514">
+<p id="p-5434">Find all values of <span class="process-math">\(t\)</span> for which</p>
+<ol class="upper-roman">
+<li id="li-2515"><p id="p-5435"><span class="process-math">\(\displaystyle f (t) = 3\)</span></p></li>
+<li id="li-2516"><p id="p-5436"><span class="process-math">\(\displaystyle f (t)\gt 4.5\)</span></p></li>
+<li id="li-2517"><p id="p-5437"><span class="process-math">\(\displaystyle 2\le f (t)\le 4\)</span></p></li>
+</ol>
+</li>
+<li id="li-2518"><p id="p-5438">For what values of <span class="process-math">\(t\)</span> is <span class="process-math">\(f (t)\)</span> decreasing?</p></li>
+</ol></article>
+</div>
+</div>
+<article class="exercise exercise-like" id="exercise-565"><h4 class="heading"><span class="codenumber">31<span class="period">.</span></span></h4>
+<ol id="p-5439" class="lower-alpha">
+<li id="li-2519">
+<p id="p-5440">Delbert reads the following values from the graph of a function:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f (-3) = 5, ~f (-1) = 2, ~f (1) = 0,
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f (-1) = -4, ~f (-3) = -2
+\end{equation*}
+</div>
+<p class="continuation">Can his readings be correct? Explain why or why not.</p>
+</li>
+<li id="li-2520">
+<p id="p-5441">Francine reads the following values from the graph of a function:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+g(-2) = 6, ~g(0) = 0, ~g(2) = 6,
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+g(4) = 0, ~g(6) = 6
+\end{equation*}
+</div>
+<p class="continuation">Can her readings be correct? Explain why or why not.</p>
+</li>
+</ol></article><article class="exercise exercise-like" id="exercise-566"><h4 class="heading"><span class="codenumber">32<span class="period">.</span></span></h4>
+<ol id="p-5445" class="lower-alpha">
+<li id="li-2523">
+<p id="p-5446">Sketch the graph of a function that has the following values:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+F(-2) = 3, ~F(-1) = 3, ~F(0) = 3,
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+F(1) = 3, ~F(2) = 3
+\end{equation*}
+</div>
+</li>
+<li id="li-2524">
+<p id="p-5447">Sketch the graph of a function that has the following values:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+G(-2) = 1, ~G(-1) = 0, ~G(0) = -1,
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+G(1) = 0, ~G(2) = 1
+\end{equation*}
+</div>
+</li>
+</ol></article><div class="exercisegroup" id="exercisegroup-37">
+<h4 class="heading"><span class="title">Exercise Group.</span></h4>
+<div class="introduction" id="introduction-80">
+<p id="p-5448">For Problems 33–36, graph each function in the friendly window</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-170">
+\begin{align*}
+\text{Xmin} \amp = -9.4 \amp\amp \text{Xmax} = 9.4\\
+\text{Ymin} \amp = -10 \amp\amp \text{Ymax} = 10
+\end{align*}
+</div>
+<p class="continuation">Then answer the questions about the graph. (See <code class="code-inline tex2jax_ignore">[cross-reference to target(s) "appendix-b" missing or not unique]</code>  for an explanation of friendly windows.)</p>
+</div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-567"><h5 class="heading"><span class="codenumber">33<span class="period">.</span></span></h5>
+<p id="p-5449"><span class="process-math">\(g(x) =\sqrt{36 - x^2}\)</span></p>
+<ol class="lower-alpha">
+<li id="li-2525">
+<p id="p-5450">Complete the table. (Round values to tenths.)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t3 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b1 r1 l0 t3 lines"><span class="process-math">\(-4\)</span></td>
+<td class="c m b1 r1 l0 t3 lines"><span class="process-math">\(-2\)</span></td>
+<td class="c m b1 r1 l0 t3 lines"><span class="process-math">\(3\)</span></td>
+<td class="c m b1 r1 l0 t3 lines"><span class="process-math">\(5\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(g(x)\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\hphantom{000}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\hphantom{000}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\hphantom{000}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\hphantom{000}\)</span></td>
+</tr>
+</table></div></div></div>
+</li>
+<li id="li-2526"><p id="p-5451">Find all points on the graph for which <span class="process-math">\(g(x) = 3.6\text{.}\)</span></p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-568"><h5 class="heading"><span class="codenumber">34<span class="period">.</span></span></h5>
+<p id="p-5454"><span class="process-math">\(g(x) =\sqrt{x^2}-6\)</span></p>
+<ol class="lower-alpha">
+<li id="li-2529">
+<p id="p-5455">Complete the table. (Round values to tenths.)</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t3 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b1 r1 l0 t3 lines"><span class="process-math">\(-8\)</span></td>
+<td class="c m b1 r1 l0 t3 lines"><span class="process-math">\(-2\)</span></td>
+<td class="c m b1 r1 l0 t3 lines"><span class="process-math">\(3\)</span></td>
+<td class="c m b1 r1 l0 t3 lines"><span class="process-math">\(6\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(f(x)\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\hphantom{000}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\hphantom{000}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\hphantom{000}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\hphantom{000}\)</span></td>
+</tr>
+</table></div></div></div>
+</li>
+<li id="li-2530"><p id="p-5456">Find all points on the graph for which <span class="process-math">\(f(x) = -2\text{.}\)</span></p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-569"><h5 class="heading"><span class="codenumber">35<span class="period">.</span></span></h5>
+<p id="p-5457"><span class="process-math">\(F(x) = 0.5x^3 - 4x\)</span></p>
+<ol class="lower-alpha">
+<li id="li-2531"><p id="p-5458">Estimate the coordinates of the turning points of the graph, that is, where the graph changes from increasing to decreasing or vice versa.</p></li>
+<li id="li-2532"><p id="p-5459">Write an equation of the form <span class="process-math">\(F(a) = b\)</span> for each turning point.</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-570"><h5 class="heading"><span class="codenumber">36<span class="period">.</span></span></h5>
+<p id="p-5463"><span class="process-math">\(G(x) = 2 + 4x - x^3\)</span></p>
+<ol class="lower-alpha">
+<li id="li-2535"><p id="p-5464">Estimate the coordinates of the turning points of the graph, that is, where the graph changes from increasing to decreasing or vice versa.</p></li>
+<li id="li-2536"><p id="p-5465">Write an equation of the form <span class="process-math">\(G(a) = b\)</span> for each turning point.</p></li>
+</ol></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-38">
+<h4 class="heading"><span class="title">Exercise Group.</span></h4>
+<div class="introduction" id="introduction-81">
+<p id="p-5466">For Problems 37–40, graph the function</p>
+<ol class="lower-alpha">
+<li id="li-2537"><p id="p-5467">First using the standard window.</p></li>
+<li id="li-2538"><p id="p-5468">Then using the suggested window. Explain how the window alters the appearance of the graph in each case.</p></li>
+</ol>
+</div>
+<div class="exercisegroup-exercises cols2">
+<article class="exercise exercise-like" id="exercise-571"><h5 class="heading"><span class="codenumber">37<span class="period">.</span></span></h5>
+<p id="p-5469"><span class="process-math">\(h(x) = \dfrac{1}{x^2 + 10}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-171">
+\begin{align*}
+{\text{Xmin}} \amp = -5 \amp\amp {\text{Xmax}} = 5\\
+{\text{Ymin}} \amp = 0 \amp\amp {\text{Ymax}} = 0.5
+\end{align*}
+</div></article><article class="exercise exercise-like" id="exercise-572"><h5 class="heading"><span class="codenumber">38<span class="period">.</span></span></h5>
+<p id="p-5472"><span class="process-math">\(H(x) =\sqrt{1-x^2} \)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-172">
+\begin{align*}
+{\text{Xmin}} \amp = -2 \amp\amp {\text{Xmax}} = 2\\
+{\text{Ymin}} \amp = -2 \amp\amp {\text{Ymax}} = 2
+\end{align*}
+</div></article><article class="exercise exercise-like" id="exercise-573"><h5 class="heading"><span class="codenumber">39<span class="period">.</span></span></h5>
+<p id="p-5473"><span class="process-math">\(P(x) = (x - 8)(x + 6)(x - 15)\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-173">
+\begin{align*}
+{\text{Xmin}} \amp = -10 \amp\amp {\text{Xmax}} = 20\\
+{\text{Ymin}} \amp = -250 \amp\amp {\text{Ymax}} = 750
+\end{align*}
+</div></article><article class="exercise exercise-like" id="exercise-574"><h5 class="heading"><span class="codenumber">40<span class="period">.</span></span></h5>
+<p id="p-5476"><span class="process-math">\(p(x) = 200x^3\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-174">
+\begin{align*}
+{\text{Xmin}} \amp = -5 \amp\amp {\text{Xmax}} = 5\\
+{\text{Ymin}} \amp = -10,000 \amp\amp {\text{Ymax}} = 10,000
+\end{align*}
+</div></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-39">
+<h4 class="heading"><span class="title">Exercise Group.</span></h4>
+<div class="introduction" id="introduction-82"><p id="p-5477">For Problems 41–44, graph the equation with the ZInteger setting. (Press <kbd class="kbdkey">ZOOM</kbd> <span class="process-math">\(6\text{,}\)</span>then <kbd class="kbdkey">ZOOM</kbd> <span class="process-math">\(8\)</span> <kbd class="kbdkey">ENTER</kbd>.) Use the graph to answer each question. Use the equation to verify your answers.</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-575"><h5 class="heading"><span class="codenumber">41<span class="period">.</span></span></h5>
+<p id="p-5478">Graph <span class="process-math">\(y = 2x - 3\)</span></p>
+<ol class="lower-alpha">
+<li id="li-2543"><p id="p-5479">For what value of <span class="process-math">\(x\)</span> is <span class="process-math">\(y = 5\text{?}\)</span></p></li>
+<li id="li-2544"><p id="p-5480">For what value of <span class="process-math">\(x\)</span> is <span class="process-math">\(y = -13\text{?}\)</span></p></li>
+<li id="li-2545"><p id="p-5481">For what values of <span class="process-math">\(x\)</span> is <span class="process-math">\(y\gt -1 \text{?}\)</span></p></li>
+<li id="li-2546"><p id="p-5482">For what values of <span class="process-math">\(x\)</span> is <span class="process-math">\(y\lt 25\text{?}\)</span></p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-576"><h5 class="heading"><span class="codenumber">42<span class="period">.</span></span></h5>
+<p id="p-5488">Graph <span class="process-math">\(y = 4 - 2x\)</span></p>
+<ol class="lower-alpha">
+<li id="li-2551"><p id="p-5489">For what value of <span class="process-math">\(x\)</span> is <span class="process-math">\(y = 6\text{?}\)</span></p></li>
+<li id="li-2552"><p id="p-5490">For what value of <span class="process-math">\(x\)</span> is <span class="process-math">\(y = -4\text{?}\)</span></p></li>
+<li id="li-2553"><p id="p-5491">For what values of <span class="process-math">\(x\)</span> is <span class="process-math">\(y\gt -12 \text{?}\)</span></p></li>
+<li id="li-2554"><p id="p-5492">For what values of <span class="process-math">\(x\)</span> is <span class="process-math">\(y\lt 18\text{?}\)</span></p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-577"><h5 class="heading"><span class="codenumber">43<span class="period">.</span></span></h5>
+<p id="p-5493">Graph <span class="process-math">\(y = 6.5 - 1.8x\)</span></p>
+<ol class="lower-alpha">
+<li id="li-2555"><p id="p-5494">For what value of <span class="process-math">\(x\)</span> is <span class="process-math">\(y = -13.3\text{?}\)</span></p></li>
+<li id="li-2556"><p id="p-5495">For what value of <span class="process-math">\(x\)</span> is <span class="process-math">\(y = 24.5\text{?}\)</span></p></li>
+<li id="li-2557"><p id="p-5496">For what values of <span class="process-math">\(x\)</span> is <span class="process-math">\(y\le 15.5 \text{?}\)</span></p></li>
+<li id="li-2558"><p id="p-5497">For what values of <span class="process-math">\(x\)</span> is <span class="process-math">\(y\ge -7.9\text{?}\)</span></p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-578"><h5 class="heading"><span class="codenumber">44<span class="period">.</span></span></h5>
+<p id="p-5503">Graph <span class="process-math">\(y = 0.2x + 1.4\)</span></p>
+<ol class="lower-alpha">
+<li id="li-2563"><p id="p-5504">For what value of <span class="process-math">\(x\)</span> is <span class="process-math">\(y = -5.2\text{?}\)</span></p></li>
+<li id="li-2564"><p id="p-5505">For what value of <span class="process-math">\(x\)</span> is <span class="process-math">\(y = 2.8\text{?}\)</span></p></li>
+<li id="li-2565"><p id="p-5506">For what values of <span class="process-math">\(x\)</span> is <span class="process-math">\(y\le -3.2 \text{?}\)</span></p></li>
+<li id="li-2566"><p id="p-5507">For what values of <span class="process-math">\(x\)</span> is <span class="process-math">\(y\ge 4.4\text{?}\)</span></p></li>
+</ol></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-40">
+<h4 class="heading"><span class="title">Exercise Group.</span></h4>
+<div class="introduction" id="introduction-83"><p id="p-5508">For Problems 45–48, graph the equation with the ZInteger setting. Use the graph to solve each equation or inequality. Check your solutions algebraically.</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-579"><h5 class="heading"><span class="codenumber">45<span class="period">.</span></span></h5>
+<p id="p-5509">Graph <span class="process-math">\(y = -0.4x + 3.7\)</span></p>
+<ol class="lower-alpha">
+<li id="li-2567"><p id="p-5510">Solve <span class="process-math">\(-0.4x + 3.7 = 2.1\)</span></p></li>
+<li id="li-2568"><p id="p-5511">Solve <span class="process-math">\(-0.4x + 3.7\gt -5.1\)</span></p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-580"><h5 class="heading"><span class="codenumber">46<span class="period">.</span></span></h5>
+<p id="p-5515">Graph <span class="process-math">\(y = 0.4 (x - 1.5)\)</span></p>
+<ol class="lower-alpha">
+<li id="li-2571"><p id="p-5516">Solve <span class="process-math">\(0.4 (x - 1.5) = -8.6\)</span></p></li>
+<li id="li-2572"><p id="p-5517">Solve <span class="process-math">\(0.4 (x - 1.5)\lt 8.6\)</span></p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-581"><h5 class="heading"><span class="codenumber">47<span class="period">.</span></span></h5>
+<p id="p-5518">Graph <span class="process-math">\(y = \dfrac{2}{3}x - 24\)</span></p>
+<ol class="lower-alpha">
+<li id="li-2573"><p id="p-5519">Solve <span class="process-math">\(\dfrac{2}{3}x - 24 = -10\dfrac{2}{3} \)</span></p></li>
+<li id="li-2574"><p id="p-5520">Solve <span class="process-math">\(\dfrac{2}{3}x - 24\le -19\dfrac{1}{3} \)</span></p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-582"><h5 class="heading"><span class="codenumber">48<span class="period">.</span></span></h5>
+<p id="p-5524">Graph <span class="process-math">\(y = \dfrac{80 - 3x}{5}\text{.}\)</span></p>
+<ol class="lower-alpha">
+<li id="li-2577"><p id="p-5525">Solve <span class="process-math">\(\dfrac{80 - 3x}{5} = 22\dfrac{3}{5} \text{.}\)</span></p></li>
+<li id="li-2578"><p id="p-5526">Solve <span class="process-math">\(\dfrac{80 - 3x}{5}\le -9\dfrac{2}{5} \text{.}\)</span></p></li>
+</ol></article>
+</div>
+</div>
+<article class="exercise exercise-like" id="exercise-583"><h4 class="heading"><span class="codenumber">49<span class="period">.</span></span></h4>
+<p id="p-5527">Graph <span class="process-math">\(y = 0.01x^3 - 0.1x^2 - 2.75x + 15\text{.}\)</span></p>
+<ol class="lower-alpha">
+<li id="li-2579"><p id="p-5528">Use your graph to solve <span class="process-math">\(0.01x^3 - 0.1x^2 - 2.75x + 15 = 0\text{.}\)</span></p></li>
+<li id="li-2580">
+<p id="p-5529">Press <kbd class="kbdkey">Y=</kbd> and enter <span class="process-math">\(Y_2 = 10\text{.}\)</span> Press <kbd class="kbdkey">GRAPH</kbd>, and you should see the horizontal line <span class="process-math">\(y = 10\)</span> superimposed on your previous graph. How many solutions does the equation</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+0.01x^3 - 0.1x^2 - 2.75x + 15 = 10
+\end{equation*}
+</div>
+<p class="continuation">have? Estimate each solution to the nearest whole number.</p>
+</li>
+</ol></article><article class="exercise exercise-like" id="exercise-584"><h4 class="heading"><span class="codenumber">50<span class="period">.</span></span></h4>
+<p id="p-5533">Graph <span class="process-math">\(y = 2.5x - 0.025x^2 - 0.005x^3\text{.}\)</span></p>
+<ol class="lower-alpha">
+<li id="li-2583"><p id="p-5534">Use your graph to solve <span class="process-math">\(2.5x - 0.025x^2 - 0.005x^3 = 0\text{.}\)</span></p></li>
+<li id="li-2584">
+<p id="p-5535">Press <kbd class="kbdkey">Y=</kbd> and enter <span class="process-math">\(Y_2 = -5\text{.}\)</span> Press <kbd class="kbdkey">GRAPH</kbd>, and you should see the horizontal line <span class="process-math">\(y = -5\)</span> superimposed on your previous graph. How many solutions does the equation</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+2.5x - 0.025x^2 - 0.005x^3 = -5
+\end{equation*}
+</div>
+<p class="continuation">have? Estimate each solution to the nearest whole number.</p>
+</li>
+</ol></article></section></section></div></main>
+</div>
+</body>
+</html>

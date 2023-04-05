@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><div class="solution solution-like">
+<p>To determine this, we need to think backwards. We are looking for the amount of the loan that can be paid off by $1,000 per month in the remaining 25 years. In other words, we’re looking for <span class="process-math">\(P\)</span> when:</p> <p><span class="process-math">\(d=\$1,000\text{,}\)</span> for the monthly loan payment</p> <p><span class="process-math">\(r=0.06\text{,}\)</span> for 6% annual rate</p> <p><span class="process-math">\(n=12\text{,}\)</span> since we’re doing monthly payments, we’ll compound monthly</p> <p><span class="process-math">\(t=25\text{,}\)</span> since we’d be making monthly payments for 25 more years</p> <p>To use a spreadsheet for this problem, we use the <code class="code-inline tex2jax_ignore">=PV</code> formula because we want to know what the present value would be at the time you want to sell in 5 years. We enter:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:40%;">
+<pre class="code-display tex2jax_ignore">=PV(0.06/12, 12*25, 1000,0)</pre>
+<p class="continuation">which gives us $155,206.86.</p>
+</div>
+<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_4/remaining_balance.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
+</div></div> <p>To check this with the formula we have:</p> <div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+P\amp=\frac{1000\left(1-\left(1+\frac{0.06}{12}\right)^{-12\cdot 25}\right)}{\frac{0.06}{12}}\\
+\amp=\frac{1000(1-(1.005)^{-300})}{0.005}\\
+\amp\approx\$155,206.86
+\end{align*}
+</div> <p>The loan balance with 25 years remaining on the loan will be $155,206.86</p>
+</div></body>
+</html>

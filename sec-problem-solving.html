@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Problem Solving</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Quantitative Wisdom">
+<meta property="book:author" content=" Dr. Ryan Johnson ">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+    renderActions: {
+        findScript: [10, function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        }, '']
+    },
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+},
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://webwork-ptx.aimath.org/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
+<script src="https://pretextbook.org/js/0.13/pretext-webwork/2.17/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script async="" src="https://cse.google.com/cse.js?cx=015103900096539427448:ngwuia10qci"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.13/pretext_search.js"></script><link href="https://pretextbook.org/css/0.4/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '5.0.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.6.1/runtime.143aca1952f785bd.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.6.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.6.1/runestone.ecc6dff5cad8b815.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.6.1/637.0fa6cababf056764.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.6.1/runestone.3eb60bc006ae9a54.css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\degree}[0]{^{\circ}}
+\newcommand{\Ccancel}[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\bluetext}[1]{\color{blue}{#1}} 
+\delimitershortfall-1sp
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\newcommand{\sfrac}[2]{{#1}/{#2}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="qw.html"><span class="title">Quantitative Wisdom:</span> <span class="subtitle">Numerical literacy from the perspective of Biblical wisdom</span></a></h1>
+<p class="byline">Dr. Ryan Johnson</p>
+</div>
+<div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
+<div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="ch-numbers.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-numbers.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="financial_math.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="ch-numbers.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-numbers.html" title="Up">Up</a><a class="next-button button toolbar-item" href="financial_math.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="dedication-1.html" data-scroll="dedication-1" class="internal">Dedication</a></li>
+<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1" class="internal">Acknowledgements</a></li>
+<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1" class="internal">Our goals</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-introduction.html" data-scroll="ch-introduction" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a><ul><li><a href="time.html" data-scroll="time" class="internal">Time Management Lab</a></li></ul>
+</li>
+<li class="link">
+<a href="ch-numbers.html" data-scroll="ch-numbers" class="internal"><span class="codenumber">2</span> <span class="title">Numbers</span></a><ul><li><a href="sec-problem-solving.html" data-scroll="sec-problem-solving" class="active">Problem Solving</a></li></ul>
+</li>
+<li class="link">
+<a href="financial_math.html" data-scroll="financial_math" class="internal"><span class="codenumber">3</span> <span class="title">Finance</span></a><ul>
+<li><a href="sec-finance-intro-spreadsheet.html" data-scroll="sec-finance-intro-spreadsheet" class="internal">Introduction to Spreadsheets</a></li>
+<li><a href="sec-finance-simple-compound.html" data-scroll="sec-finance-simple-compound" class="internal">Simple and Compound Interest</a></li>
+<li><a href="sec-finance-savings-plan.html" data-scroll="sec-finance-savings-plan" class="internal">Savings Plans</a></li>
+<li><a href="sec-3-4-loans.html" data-scroll="sec-3-4-loans" class="internal">Loan Payments</a></li>
+<li><a href="chap_two_income_taxes.html" data-scroll="chap_two_income_taxes" class="internal">Income Taxes</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="data.html" data-scroll="data" class="internal"><span class="codenumber">4</span> <span class="title">Data</span></a><ul>
+<li><a href="sec-4-1-statistical-process.html" data-scroll="sec-4-1-statistical-process" class="internal">Overview of the Statistical Process</a></li>
+<li><a href="sec-4-2-describing-data.html" data-scroll="sec-4-2-describing-data" class="internal">Describing Data</a></li>
+<li><a href="sec-4-3-measure-of-center.html" data-scroll="sec-4-3-measure-of-center" class="internal">Summary Statistics: Measures of Center</a></li>
+<li><a href="sec-4-4-measure-of-variation.html" data-scroll="sec-4-4-measure-of-variation" class="internal">Summary Statistics: Measures of Variation</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-models.html" data-scroll="ch-models" class="internal"><span class="codenumber">5</span> <span class="title">Math Models</span></a><ul>
+<li><a href="sec-models-linear.html" data-scroll="sec-models-linear" class="internal">Function Notation and Linear Functions</a></li>
+<li><a href="sec-models-exponential.html" data-scroll="sec-models-exponential" class="internal">Exponential Growth and Decay</a></li>
+<li><a href="sec-models-exponential-2.html" data-scroll="sec-models-exponential-2" class="internal">Exponential Models</a></li>
+<li><a href="sec-models-periodic.html" data-scroll="sec-models-periodic" class="internal">Periodic Functions</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="solutions-1.html" data-scroll="solutions-1" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></li>
+<li class="link"><a href="solutions-2.html" data-scroll="solutions-2" class="internal"><span class="codenumber">B</span> <span class="title">Solutions to Odd Exercises</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content">
+<section class="section" id="sec-problem-solving"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.1</span> <span class="title">Problem Solving</span>
+</h2>
+<section class="introduction" id="introduction-4">The following text and worksheet are based on Pierce College's Math 96, Lesson 1.1, which was based on Quantway 1.0.</section><article class="objectives goal-like" id="qr-objectives"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc"><li id="li-34"><p id="p-derived-li-34">Solve problems and estimate effectively in groups</p></li></ul></article><p id="p-23">Now we'll work together on a couple quantitative reasoning problems to give you a flavor of the course.</p>
+<article class="activity project-like" id="activity-3"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">The Vacation Puzzle.</span>
+</h3>
+<p id="p-24">A woman writes the following question to <em class="emphasis">Ask Marilyn</em>, a newspaper help columnist:<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-4" id="fn-4"><sup> 1 </sup></a></p> <blockquote class="blockquote" id="blockquote-1">Nine members of our family will be renting a vacation property. The total rental fee is $3600 for ten days. People will be staying for a varying number of days. I say the first step in figuring how much each person will owe for his or her share is to divide the fee by nine. My husband says we should start by dividing the fee by ten–the number of days we have the rental. Who is right?</blockquote> <ol class="lower-alpha">
+<li id="li-35"><p id="p-25">Discuss this situation with your group.  Make sure everyone understands the problem.  Investigate the two methods proposed by the husband and wife to determine the monetary implications.</p></li>
+<li id="li-36"><p id="p-26">Explore different solutions to the Vacation Property Puzzle.  As a group, pick a solution to share with the class.</p></li>
+</ol></article><article class="activity project-like" id="activity-4"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">The Toilet Paper Problem.</span>
+</h3>
+<p id="p-27">If you took all of the toilet paper that Americans use in a year and wrapped it around the planet at the equator, how many times would it go around the world?  Work in your groups to find an answer to present to the class. <a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-6" id="fn-6"><sup> 3 </sup></a></p> <p id="p-28">Here are some statistics that may or may not be helpful:</p> <ul class="disc">
+<li id="li-37"><p id="p-derived-li-37">3 Years: The average time a person sits on the toilet in a lifetime. Some much longer.</p></li>
+<li id="li-38"><p id="p-derived-li-38">384 trees are cut to provide toilet paper for one American's lifetime.</p></li>
+<li id="li-39"><p id="p-derived-li-39">810 rolls of toilet paper are produced from one average tree.</p></li>
+<li id="li-40"><p id="p-derived-li-40">Worldwide, products made from almost 270,000 trees are sent to landfills every day, Worldwide Fund for Nature reports. Roughly 10 percent of that total is attributable to toilet paper.</p></li>
+<li id="li-41"><p id="p-derived-li-41">The average American uses 57 sheets of toilet paper per day.</p></li>
+<li id="li-42"><p id="p-derived-li-42">Name brand TP is a preference for only 50% of consumers, while 35% reported that they didn't have a preference, and 15% said they didn't know how to answer the question.</p></li>
+<li id="li-43"><p id="p-derived-li-43">7% of American steal toilet paper from hotels. Really? C'mon people.</p></li>
+<li id="li-44"><p id="p-derived-li-44">Toilet paper squares are usually 4 inches long.</p></li>
+<li id="li-45"><p id="p-derived-li-45">Sales in the United States of what the industry calls "luxury" rolls - anything quilted, lotioned, perfumed or ultra-soft, from two- to four-ply - climbed to $1.4 billion in 2014, says Euromonitor International show. This segment is fastest growing segment of industry.</p></li>
+<li id="li-46"><p id="p-derived-li-46">There are approximately 325 million people in the United States of America.</p></li>
+<li id="li-47"><p id="p-derived-li-47">The circumference of the earth at the equator is almost 25,000 miles.</p></li>
+</ul></article><p id="p-30">In this lesson, you will learn how to evaluate information you see often in society. You will start with the following situation.</p>
+<article class="activity project-like" id="activity-5"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.3</span><span class="period">.</span><span class="space"> </span><span class="title">Problem Situation: Does This Information Make Sense?</span>
+</h3>
+<p id="p-31">You are traveling down the highway and see a billboard with this message:</p> <figure class="table table-like" id="table-1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.1<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular"><tr><td class="l m b1 r1 l1 t1 lines">Every year since 1950, the number of American children gunned down has doubled.</td></tr></table></div></figure> <ol class="lower-alpha"><li id="li-48"><p id="p-32">You do not see the name of the organization that put up the billboard. What groups might have wanted to publish this statement? What are some social issues or political ideas that this statement might support?</p></li></ol></article><p id="p-33">This question does not have a "right" answer, or even a numerical answer. The goal here is for you to think about the question, and write up a response. You will earn full credit as long as your answer is reasonable and on-topic.</p>
+<p id="p-34">The information in this statement is called <em class="emphasis">quantitative</em>. Quantitative information uses concepts about quantity or number. This can be specific numbers or a pattern based on numerical relationships such as doubling.</p>
+<p id="p-35">You hear and see statements using quantitative information every day. People use these statements as evidence to convince you to do things like</p>
+<ul class="disc">
+<li id="li-49"><p id="p-derived-li-49">vote a certain way</p></li>
+<li id="li-50"><p id="p-derived-li-50">donate or give money to a cause</p></li>
+<li id="li-51"><p id="p-derived-li-51">understand a health risk</p></li>
+</ul>
+<p id="p-36">You often do not know whether these statements are true. You may not be able to locate the information, but you can start by asking if the statement is reasonable. This means to ask if the statements make sense. You will be asked if information is <em class="emphasis">reasonable</em> throughout this course. This lesson will help you understand what is meant by this question.</p>
+<article class="activity project-like" id="activity-6"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.4</span><span class="period">.</span>
+</h3>
+<p id="p-37">In 1995, an article published the statement in the Problem Situation. Do you think this was a reasonable statement to make in 1995? (At this point, this should be an unjustified opinion, based on your intuition)</p> <p id="p-38">You only have the information in the statement. Using only that information, how can you decide if the statement is reasonable? (Focus on quantitative (numerical) approaches)</p></article><article class="activity project-like" id="activity-7"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.5</span><span class="period">.</span>
+</h3>
+<ol class="lower-alpha">
+<li id="li-52">
+<p id="p-39">To keep things simple, suppose the number of children in 1950 was 1 child. We could use any starting point, but this is a very easy number to work with. Using the problem situation statement that the number doubled every year since 1950, determine the number of children the statement claims were gunned down in the next few years after 1950.</p>
+<figure class="table table-like" id="table-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.2<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b1 r1 l1 t1 lines">Year</td>
+<td class="l m b1 r1 l0 t1 lines">Number of Children</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">1950</td>
+<td class="l m b1 r1 l0 t0 lines">1</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">1951</td>
+<td class="l m b1 r1 l0 t0 lines"><br></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">1952</td>
+<td class="l m b1 r1 l0 t0 lines"><br></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">1953</td>
+<td class="l m b1 r1 l0 t0 lines"><br></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">1954</td>
+<td class="l m b1 r1 l0 t0 lines"><br></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">1955</td>
+<td class="l m b1 r1 l0 t0 lines"><br></td>
+</tr>
+</table></div></figure>
+</li>
+<li id="li-53"><p id="p-40">Now, determine how many children this predicts for 1960.  Try to figure it out without multiplying by 2 ten times.</p></li>
+<li id="li-54">
+<p id="p-41">Earlier, you thought about ways to decide if the problem situation statement was reasonable.  One approach is to pick a starting number and see what the statement predicts.  Complete the following table.</p>
+<p id="p-42">In the third column, choose the most appropriate place value and round to the nearest whole value for that place value.  For example, if you had 3,125, you'd round that to “3 thousand.”</p>
+<figure class="table table-like" id="table-3"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.3<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b1 r1 l1 t1 lines">Year</td>
+<td class="l m b1 r1 l0 t1 lines">Number of Children</td>
+<td class="l m b1 r1 l0 t1 lines">Rounded (using words)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">1950</td>
+<td class="l m b1 r1 l0 t0 lines">1</td>
+<td class="l m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">1960</td>
+<td class="l m b1 r1 l0 t0 lines"><br></td>
+<td class="l m b1 r1 l0 t0 lines"><br></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">1970</td>
+<td class="l m b1 r1 l0 t0 lines"><br></td>
+<td class="l m b1 r1 l0 t0 lines"><br></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">1980</td>
+<td class="l m b1 r1 l0 t0 lines"><br></td>
+<td class="l m b1 r1 l0 t0 lines"><br></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">1990</td>
+<td class="l m b1 r1 l0 t0 lines"><br></td>
+<td class="l m b1 r1 l0 t0 lines"><br></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">1995</td>
+<td class="l m b1 r1 l0 t0 lines"><br></td>
+<td class="l m b1 r1 l0 t0 lines"><br></td>
+</tr>
+</table></div></figure>
+</li>
+<li id="li-55"><p id="p-43">Based on your calculations above, does the original statement from the problem situation seem reasonable?</p></li>
+</ol></article></section><div class="hidden-content tex2jax_ignore" id="hk-fn-4"><div class="fn">Maryilyn Vos Savant, “Sharing the Cost of a Vacation Rental,” <em class="emphasis">Parade</em>, May 2, 2016, accessed February 2, 2019, <a class="external" href="" target="_blank">https://parade.com/409251/marilynvossavant/how-should-you-divide-up-a-confusing-rental-cost/</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-5" id="fn-5"><sup> 2 </sup></a>
+</div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-5"><div class="fn"><code class="code-inline tex2jax_ignore"></code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-6"><div class="fn">This problem was orignally posed to the author by Dr. Ben Markham in a QR Faculty Workshop in October, 2018.</div></div>
+</div></main>
+</div>
+</body>
+</html>

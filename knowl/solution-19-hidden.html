@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><div class="solution solution-like">
+<p><span class="process-math">\(P = \$3000\text{,}\)</span> the initial deposit</p> <p><span class="process-math">\(r = 0.06\text{,}\)</span> 6% annual rate</p> <p><span class="process-math">\(n = 12\text{,}\)</span> 12 months in 1 year</p> <p><span class="process-math">\(t = 20\text{,}\)</span> since we're looking for how much we'll have after 20 years</p> <p>To use a spreadsheet, we will use the formula like this</p>
+<pre class="code-display tex2jax_ignore">=FV(rate per period, number of periods, payment amount, present value)</pre> <pre class="code-display tex2jax_ignore">=FV(0.06/12, 12*20, 0, 3000)</pre> <p>and get a result of $9,930.61, rounded to the nearest cent.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/financial_math/2_2/future_value.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div></div></div> <p>Note that the output of the formula gives the answer with the opposite sign as the principal and payments. A negative number may be denoted with a negative sign or with the color red or parentheses. The signs may be used in accounting, but we will ignore them in this book.</p> <p>To use a formula, we are looking for the future value, so we use the formula solved for A:</p> <div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+A\amp=3000\left(1+\frac{0.06}{12}\right)^{12\cdot20}\\
+\amp=\$9930.61
+\end{align*}
+</div> <p>To use a calculator, you would enter the formulas including parentheses around any inside operations. You would enter</p> <pre class="code-display tex2jax_ignore">3000(1+(0.06/12))^(12*20)=9930.61</pre>
+</div></body>
+</html>

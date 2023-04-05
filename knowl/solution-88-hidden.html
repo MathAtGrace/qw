@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><div class="solution solution-like"><ol class="lower-alpha">
+<li><p><code class="code-inline tex2jax_ignore">=PV(3.5%/4,4*12,1500)</code> which gives $58,586.02.</p></li>
+<li><p><code class="code-inline tex2jax_ignore">=PMT(3.5%/4,4*12,0,100000)</code> which gives $1,685.34.</p></li>
+<li>
+<p><code class="code-inline tex2jax_ignore">=PMT(3.5%/4,4*12,-8000,100000)</code> which gives $1,480.51.</p>
+<p>(Note 8000 is input as negative, to signify a payment.)</p>
+<p>Note this answer can also be found by subtracting the future value of $8000 here, which equals $12,153.47, from the required ending balance of $100,000 (which leaves $87,846.47) and then using the PMT function:</p>
+<p><code class="code-inline tex2jax_ignore">=PMT(3.5%/4,4*12,0,100000-12153.47)</code> which again gives $1,480.51.</p>
+<p>This can also be done in nested fashion (be careful to add the negative FV quantity): <code class="code-inline tex2jax_ignore">=PMT(3.5%/4,4*12,0,100000+FV(3.5%/4,4*12,0,8000))</code>.</p>
+</li>
+</ol></div></body>
+</html>

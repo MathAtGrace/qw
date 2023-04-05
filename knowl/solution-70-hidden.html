@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><div class="solution solution-like">
+<p>To use a spreadsheet, we use the <code class="code-inline tex2jax_ignore">=PMT</code> formula. For a loan, the loan amount is the present value and the future value is 0, indicating that the loan will be paid off. Teresa is making a down payment, so we also need to subtract that from the cost of the car to find the loan amount:</p> <p><span class="process-math">\(\$15,000 – \$3,000 = \$12,000\)</span></p> <p>Her loan amount is $12,000. For the <ins class="insert">3-year</ins> loan at 2.75% APR, we enter:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:40%;">
+<pre class="code-display tex2jax_ignore">=PMT(0.0275/12, 12*3, 12000, 0)</pre>
+<p>and get a result of $347.65.</p>
+</div>
+<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_4/loan_formulas1.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
+</div></div> <p>For the formula, we use the one solved for <span class="process-math">\(d\text{:}\)</span></p> <p><span class="process-math">\(r=.0275\text{,}\)</span> for 2.75% annual rate</p> <p><span class="process-math">\(n=12\text{,}\)</span> monthly payments</p> <p><span class="process-math">\(t=3\text{,}\)</span> for 3 years</p> <p><span class="process-math">\(P=12000\text{,}\)</span> since she can pay $3,000 of the $15,000</p> <div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+d\amp=\frac{P\left(\frac{r}{n}\right)}{\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}\\
+\amp=\frac{12000\left(\frac{0.0275}{12}\right)}{\left(1-\left(1+\frac{0.0275}{12}\right)^{-12\cdot 3}\right)}\\
+\amp\approx\$347.65
+\end{align*}
+</div> <p>Teresa’s car payment would be $347.65.</p> <p>Now for the <ins class="insert">5-year loan</ins> at 4% APR, we enter:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:40%;">
+<pre class="code-display tex2jax_ignore">=PMT(0.04/12, 12*5, 12000, 0)</pre>
+<p>and we get $221.00.</p>
+</div>
+<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_4/loan_formulas2.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
+</div></div> <p>To use the formula, we have:</p> <p><span class="process-math">\(r=.04\text{,}\)</span> for 4% annual rate</p> <p><span class="process-math">\(n=12\text{,}\)</span> monthly payments</p> <p><span class="process-math">\(t=5\text{,}\)</span> for 5 years</p> <p><span class="process-math">\(P=12000\text{,}\)</span> the loan amount</p> <div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+d\amp=\frac{P\left(\frac{r}{n}\right)}{\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}\\
+\amp=\frac{12000\left(\frac{0.04}{12}\right)}{\left(1-\left(1+\frac{0.04}{12}\right)^{-12\cdot 3}\right)}\\
+\amp\approx\$221.00
+\end{align*}
+</div> <p>Now let’s compare the loans by finding out how much Teresa would pay in interest for each loan.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:46%;">
+<p>For the <ins class="insert">3-year loan</ins> at 2.75% APR, her payments would total:</p>
+<p><span class="process-math">\(\$347.65(12)(3)=\$12,515.40\text{.}\)</span> Her interest would be $515.40.</p>
+</div>
+<div class="sbspanel top" style="width:46%;">
+<p>For the <ins class="insert">5-year loan</ins> at 4% APR, her payments would total:</p>
+<p><span class="process-math">\(\$221.00(12)(5)=\$13,260.00\text{.}\)</span> Her interest would be $1,260.00.</p>
+</div>
+</div></div> <p>There are two main differences between these two loans: the monthly payments and the total paid over the life of the loans. The first loan has a higher monthly payment by $126.65 per month. However, she would pay $744.60 less in interest.</p>
+</div></body>
+</html>

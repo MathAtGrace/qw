@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Loan Payments</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Quantitative Wisdom">
+<meta property="book:author" content=" Dr. Ryan Johnson ">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+},
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script async="" src="https://cse.google.com/cse.js?cx=015103900096539427448:ngwuia10qci"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.13/pretext_search.js"></script><link href="https://pretextbook.org/css/0.4/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\degree}[0]{^{\circ}}
+\newcommand{\Ccancel}[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\blert}[1]{\boldsymbol{\color{blue}{#1}}}
+\newcommand{\bluetext}[1]{\color{blue}{#1}} 
+\delimitershortfall-1sp
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\newcommand{\sfrac}[2]{{#1}/{#2}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="qw.html"><span class="title">Quantitative Wisdom:</span> <span class="subtitle">Numerical literacy from the perspective of Biblical wisdom</span></a></h1>
+<p class="byline">Dr. Ryan Johnson</p>
+</div>
+<div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
+<div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-finance-savings-plan.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="financial_math.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-3-5-mortgage-lab.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-finance-savings-plan.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="financial_math.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-3-5-mortgage-lab.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="dedication-1.html" data-scroll="dedication-1" class="internal">Dedication</a></li>
+<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1" class="internal">Acknowledgements</a></li>
+<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1" class="internal">Our goals</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-introduction.html" data-scroll="ch-introduction" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a><ul><li><a href="time.html" data-scroll="time" class="internal">Time Management Lab</a></li></ul>
+</li>
+<li class="link">
+<a href="ch-numbers.html" data-scroll="ch-numbers" class="internal"><span class="codenumber">2</span> <span class="title">Numbers</span></a><ul><li><a href="sec-problem-solving.html" data-scroll="sec-problem-solving" class="internal">Problem Solving</a></li></ul>
+</li>
+<li class="link">
+<a href="financial_math.html" data-scroll="financial_math" class="internal"><span class="codenumber">3</span> <span class="title">Finance</span></a><ul>
+<li><a href="sec-finance-intro-spreadsheet.html" data-scroll="sec-finance-intro-spreadsheet" class="internal">Introduction to Spreadsheets</a></li>
+<li><a href="sec-finance-simple-compound.html" data-scroll="sec-finance-simple-compound" class="internal">Simple and Compound Interest</a></li>
+<li><a href="sec-finance-savings-plan.html" data-scroll="sec-finance-savings-plan" class="internal">Savings Plans</a></li>
+<li><a href="sec-finance-loans.html" data-scroll="sec-finance-loans" class="active">Loan Payments</a></li>
+<li><a href="sec-3-5-mortgage-lab.html" data-scroll="sec-3-5-mortgage-lab" class="internal">Mortgage Lab</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Back Matter</span></a></li>
+<li class="link">
+<a href="app-spreadsheet-reference.html" data-scroll="app-spreadsheet-reference" class="internal"><span class="codenumber">A</span> <span class="title">Spreadsheet Reference</span></a><ul>
+<li><a href="subsection-33.html" data-scroll="subsection-33" class="internal">Basic Calculations</a></li>
+<li><a href="subsection-34.html" data-scroll="subsection-34" class="internal">Cell References</a></li>
+<li><a href="subsection-35.html" data-scroll="subsection-35" class="internal">Cell Formatting</a></li>
+<li><a href="subsection-36.html" data-scroll="subsection-36" class="internal">Fill-Down Feature</a></li>
+<li><a href="subsection-37.html" data-scroll="subsection-37" class="internal">Formulas</a></li>
+</ul>
+</li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-finance-loans"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.4</span> <span class="title">Loan Payments</span>
+</h2>
+<article class="objectives goal-like" id="objectives-5"><h3 class="heading">
+<span class="type">Objectives:</span><span class="space"> </span><span class="title">Section 3.4 Loan Payments</span>
+</h3>
+<div class="introduction" id="introduction-12"><p id="p-949">Students will be able to:</p></div>
+<ul class="disc">
+<li id="li-350"><p id="p-950">Use a spreadsheet and/or formula to calculate the payment amount for student loans, car loans, paying off credit cards and mortgage loans</p></li>
+<li id="li-351"><p id="p-951">Calculate the total paid over the life of a loan, amount of interest paid, and the percentage of the total amount paid in interest</p></li>
+<li id="li-352"><p id="p-952">Determine when to use each formula in the financial math chapter</p></li>
+</ul></article><section class="introduction" id="introduction-13"><p id="p-953">In the last section, you learned about savings plans. In this section, you will learn about conventional loans (also called amortized loans or installment loans). Examples include student loans, car loans and home mortgages. These techniques do not apply to payday loans, add-on loans, or other loan types where the interest is calculated up front. In this section we will also briefly cover credit cards. There is a more thorough chapter on credit cards available as an optional chapter.</p> </section><section class="subsection" id="subsection-25"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4.1</span> <span class="title">Installment Loans</span>
+</h3>
+<p id="p-954">Installment loans are also called <em class="alert">amortized loans</em>. They are designed so that the payment amount remains the same over the life (term) of the loan. In order for that amount to remain constant, the amount of money going towards paying the <em class="alert">principal</em> (amount owed) and towards the <em class="alert">interest</em> will vary. At the beginning of the loan, the amount owed is the largest. So, at the beginning the amount of interest charged will also be the largest. As the loan gets repaid the amount owed is reduced and therefore the interest is reduced. Therefore, at the beginning of an installment loan payments go mostly towards the interest, towards the end the payments are going mostly towards the principal.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/financial_math/2_4/interest_principal.png" class="contained" alt="A graph that shows how most of the payment goes to interest at the beginning of the loan and that decreases over time until the end of the loan when most of the payment goes toward the principal."></div></div></div>
+<p id="p-955">This is a graph of the interest and principal paid on a loan of $34,000 at 10% APR. Each year $5391.72 was paid in total. In the first year, $3,3305.92 was applied to the interest and $2085.80 was applied to the principal. In the last year of the loan, only $281.04 was applied to the interest and $5,110.68 was applied to the principal. Over 5 years, a total of $53,917.2 was paid for a loan of $34,000.</p></section><section class="subsection" id="subsection-26"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4.2</span> <span class="title">Loan Formulas</span>
+</h3>
+<p id="p-956">In a savings plan, you start with nothing, put money into an account once or on a regular basis, and have a larger balance at the end. Loans work in reverse. You start with a balance owed, make payments and the future value is zero when the loan is paid off.</p>
+<p id="p-957">We will continue to use the same spreadsheet formulas. The ones that are most useful for loans are <code class="code-inline tex2jax_ignore">=PV</code> and <code class="code-inline tex2jax_ignore">=PMT</code>. We will look at how the inputs change for a loan.</p>
+<article class="assemblage assemblage-like" id="assemblage-14"><h4 class="heading"><span class="title">Spreadsheet Formulas.</span></h4>
+<pre class="code-display tex2jax_ignore" id="p-958">=PV(rate per period, number of periods, payment amount, future value)</pre>
+<pre class="code-display tex2jax_ignore" id="p-959">=PMT(rate per period, number of periods, present value, future value)</pre>
+<dl id="p-960" class="description-list narrow">
+<dt id="li-353">rate per period</dt>
+<dd><p id="p-961">is the interest rate per compounding period, <span class="process-math">\(r/n\)</span></p></dd>
+<dt id="li-354">number of periods</dt>
+<dd><p id="p-962">is the total number of periods, <span class="process-math">\(n*t\)</span></p></dd>
+<dt id="li-355">payment amount</dt>
+<dd><p id="p-963">is the amount of regular payments, <span class="process-math">\(d\)</span></p></dd>
+<dt id="li-356">present value</dt>
+<dd><p id="p-964">is the amount deposited or principal, <span class="process-math">\(P\)</span></p></dd>
+<dt id="li-357">future value</dt>
+<dd><p id="p-965">is the amount you want in the future, 0 for a loan</p></dd>
+</dl></article><p id="p-966">These two formulas correspond to the formulas below. The formula for loans is derived in a similar way that we did for savings plans, but notice they have negative exponents. The details are omitted here.</p>
+<article class="assemblage assemblage-like" id="assemblage-15"><h4 class="heading"><span class="title">Loan Formulas.</span></h4>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-967">
+\begin{equation*}
+P=\frac{d\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}{\left(\frac{r}{n}\right)} \text{  or  } d=\frac{P\left(\frac{r}{n}\right)}{\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}
+\end{equation*}
+</div>
+<dl id="p-968" class="description-list narrow">
+<dt id="li-358"><span class="process-math">\(P\)</span></dt>
+<dd><p id="p-969">is the balance in the account at the beginning (the principal, or amount of the loan).</p></dd>
+<dt id="li-359"><span class="process-math">\(d\)</span></dt>
+<dd><p id="p-970">is your loan payment (your monthly payment, annual payment, etc.)</p></dd>
+<dt id="li-360"><span class="process-math">\(r\)</span></dt>
+<dd><p id="p-971">is the annual interest rate in decimal form</p></dd>
+<dt id="li-361"><span class="process-math">\(n\)</span></dt>
+<dd><p id="p-972">is the number of compounding periods in one year</p></dd>
+<dt id="li-362"><span class="process-math">\(t\)</span></dt>
+<dd><p id="p-973">is the length of the loan, in years</p></dd>
+</dl>
+<p id="p-974">Like before, the compounding frequency is not always explicitly given, but is determined by how often you make payments</p></article><article class="example example-like" id="example-17"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.1</span><span class="period">.</span>
+</h4>Teresa wants to buy a car that costs $15,000. She has $3,000 saved for the car and plans to finance the rest. She found a 3-year loan at 2.75% APR and a 5-year loan at 4% APR. How much will her monthly car payment be for each loan and how do these loans compare to each other.<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-71" id="solution-71"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-71"><div class="solution solution-like">
+<p id="p-975">To use a spreadsheet, we use the <code class="code-inline tex2jax_ignore">=PMT</code> formula. For a loan, the loan amount is the present value and the future value is 0, indicating that the loan will be paid off. Teresa is making a down payment, so we also need to subtract that from the cost of the car to find the loan amount:</p> <p id="p-976"><span class="process-math">\(\$15,000 – \$3,000 = \$12,000\)</span></p> <p id="p-977">Her loan amount is $12,000. For the <ins class="insert">3-year</ins> loan at 2.75% APR, we enter:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:40%;">
+<pre class="code-display tex2jax_ignore" id="p-978">=PMT(0.0275/12, 12*3, 12000, 0)</pre>
+<p id="p-979">and get a result of $347.65.</p>
+</div>
+<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_4/loan_formulas1.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
+</div></div> <p id="p-980">For the formula, we use the one solved for <span class="process-math">\(d\text{:}\)</span></p> <p id="p-981"><span class="process-math">\(r=.0275\text{,}\)</span> for 2.75% annual rate</p> <p id="p-982"><span class="process-math">\(n=12\text{,}\)</span> monthly payments</p> <p id="p-983"><span class="process-math">\(t=3\text{,}\)</span> for 3 years</p> <p id="p-984"><span class="process-math">\(P=12000\text{,}\)</span> since she can pay $3,000 of the $15,000</p> <div class="displaymath process-math" data-contains-math-knowls="" id="md-62">
+\begin{align*}
+d\amp=\frac{P\left(\frac{r}{n}\right)}{\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}\\
+\amp=\frac{12000\left(\frac{0.0275}{12}\right)}{\left(1-\left(1+\frac{0.0275}{12}\right)^{-12\cdot 3}\right)}\\
+\amp\approx\$347.65
+\end{align*}
+</div> <p id="p-986">Teresa’s car payment would be $347.65.</p> <p id="p-987">Now for the <ins class="insert">5-year loan</ins> at 4% APR, we enter:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:40%;">
+<pre class="code-display tex2jax_ignore" id="p-988">=PMT(0.04/12, 12*5, 12000, 0)</pre>
+<p id="p-989">and we get $221.00.</p>
+</div>
+<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_4/loan_formulas2.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
+</div></div> <p id="p-990">To use the formula, we have:</p> <p id="p-991"><span class="process-math">\(r=.04\text{,}\)</span> for 4% annual rate</p> <p id="p-992"><span class="process-math">\(n=12\text{,}\)</span> monthly payments</p> <p id="p-993"><span class="process-math">\(t=5\text{,}\)</span> for 5 years</p> <p id="p-994"><span class="process-math">\(P=12000\text{,}\)</span> the loan amount</p> <div class="displaymath process-math" data-contains-math-knowls="" id="md-63">
+\begin{align*}
+d\amp=\frac{P\left(\frac{r}{n}\right)}{\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}\\
+\amp=\frac{12000\left(\frac{0.04}{12}\right)}{\left(1-\left(1+\frac{0.04}{12}\right)^{-12\cdot 3}\right)}\\
+\amp\approx\$221.00
+\end{align*}
+</div> <p id="p-996">Now let’s compare the loans by finding out how much Teresa would pay in interest for each loan.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:46%;">
+<p id="p-997">For the <ins class="insert">3-year loan</ins> at 2.75% APR, her payments would total:</p>
+<p id="p-998"><span class="process-math">\(\$347.65(12)(3)=\$12,515.40\text{.}\)</span> Her interest would be $515.40.</p>
+</div>
+<div class="sbspanel top" style="width:46%;">
+<p id="p-999">For the <ins class="insert">5-year loan</ins> at 4% APR, her payments would total:</p>
+<p id="p-1000"><span class="process-math">\(\$221.00(12)(5)=\$13,260.00\text{.}\)</span> Her interest would be $1,260.00.</p>
+</div>
+</div></div> <p id="p-1001">There are two main differences between these two loans: the monthly payments and the total paid over the life of the loans. The first loan has a higher monthly payment by $126.65 per month. However, she would pay $744.60 less in interest.</p>
+</div></div>
+</div></article><p id="p-1002">In addition to loan payments, we can calculate the amount of loan we can afford given a monthly payment. Let’s look at that in the next example.</p>
+<article class="example example-like" id="example-18"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.2</span><span class="period">.</span>
+</h4>
+<p id="p-1003">You can afford $200 per month as a car payment. If you can get an auto loan at 3% APR for 60 months (5 years), how expensive of a car can you afford? In other words, what amount loan can you pay off with $200 per month?</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-72" id="solution-72"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-72"><div class="solution solution-like">
+<p id="p-1004">To use a spreadsheet for this problem, we use the <code class="code-inline tex2jax_ignore">=PV</code> formula because we want to know the present value, which is the value of the loan right now. We enter</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:40%;">
+<pre class="code-display tex2jax_ignore" id="p-1005">=PV(0.03/12, 12*5, 200,0)</pre>
+<p class="continuation">which gives $11,130.47.</p>
+</div>
+<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_4/loan_formulas3.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
+</div></div> <p id="p-1006">To use a formula, we are looking for <span class="process-math">\(P\text{,}\)</span> the starting amount of the loan.</p> <p id="p-1007"><span class="process-math">\(d=\$200\text{,}\)</span> the monthly loan payment</p> <p id="p-1008"><span class="process-math">\(r=0.03\text{,}\)</span> 3% annual rate</p> <p id="p-1009"><span class="process-math">\(n=12\text{,}\)</span> since we’re doing monthly payments, we’ll compound monthly</p> <p id="p-1010"><span class="process-math">\(t=5\text{,}\)</span> since we’re making monthly payments for 5 years</p> <div class="displaymath process-math" data-contains-math-knowls="" id="md-64">
+\begin{align*}
+P\amp=\frac{d\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}{\frac{r}{n}}\\
+\amp=\frac{200\left(1-\left(1+\frac{0.03}{12}\right)^{-12\cdot 5}\right)}{\frac{0.03}{12}}\\
+\amp=\frac{200(1-(1.0025)^{-60})}{0.0025}\\
+\amp\approx\$11,130.47
+\end{align*}
+</div> <p id="p-1012">You can afford a maximum loan of $11,130.47. If you have a down payment you can add that to get the value of the car you can buy. If there are any closing costs for the loan you also need to take that into consideration.</p> <p id="p-1013">To find the amount of interest you will pay for this loan, calculate the total of all your payments.</p> <p id="p-1014"><span class="process-math">\(\$200(5)(12)=\$12,000\)</span></p> <p id="p-1015">Then take the difference between the total payments and the loan amount.</p> <p id="p-1016"><span class="process-math">\(\$12,000-\$11,130.47=\$869.53\)</span></p> <p id="p-1017">In this case, you would be paying $869.53 in interest.</p>
+</div></div>
+</div></article><p id="p-1018">So far, we have looked at car loans. Student loans and home mortgages are calculated in the same way. Here is an example of a mortgage payment.</p>
+<article class="example example-like" id="example-19"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.3</span><span class="period">.</span>
+</h4>
+<p id="p-1019">You want to take out a $140,000 mortgage (home loan). The interest rate on the loan is 6%, and the loan is for 30 years. How much will your monthly payments be? What percentage of your total payments will go towards interest?</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-73" id="solution-73"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-73"><div class="solution solution-like">
+<p id="p-1020">To use a spreadsheet for this problem, we use the <code class="code-inline tex2jax_ignore">=PMT</code> formula because we want to know the payment amount. The amount of the loan is the present value and to pay off the loan the future value is 0. We enter</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:40%;">
+<pre class="code-display tex2jax_ignore" id="p-1021">=PMT(0.06/12, 12*30, 140000,0)</pre>
+<p class="continuation">which gives us $839.37.</p>
+</div>
+<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_4/loan_formulas4.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
+</div></div> <p id="p-1022">To use the formula, we have:</p> <p id="p-1023"><span class="process-math">\(r=0.06\text{,}\)</span> 6% annual rate</p> <p id="p-1024"><span class="process-math">\(n=12\text{,}\)</span> since we’re paying monthly</p> <p id="p-1025"><span class="process-math">\(t=30\text{,}\)</span> 30 years</p> <p id="p-1026"><span class="process-math">\(P=\$140,000\text{,}\)</span> the starting loan amount</p> <p id="p-1027">In this case, we’re going to use the equation that is solved for <span class="process-math">\(d\text{.}\)</span></p> <div class="displaymath process-math" data-contains-math-knowls="" id="md-65">
+\begin{align*}
+d\amp=\frac{P\left(\frac{r}{n}\right)}{\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}\\
+\amp=\frac{140000\left(\frac{0.06}{12}\right)}{\left(1-\left(1+\frac{0.06}{12}\right)^{-12\cdot 30}\right)}\\
+\amp=\frac{700}{(1-(1.005)^{-360})}\\
+\amp\approx\$839.37
+\end{align*}
+</div> <p id="p-1029">You would make payments of $839.37 per month for 30 years. To find out what percentage of the total will go towards interest, we need to total up all of the payments.</p> <div class="displaymath process-math" data-contains-math-knowls="" id="p-1030">
+\begin{equation*}
+\$839.37(30)(12)=\$302,173.20
+\end{equation*}
+</div> <p id="p-1031">Then take the difference between the total payments and the loan amount.</p> <div class="displaymath process-math" data-contains-math-knowls="" id="p-1032">
+\begin{equation*}
+\$302,173.20-\$140,000=\$162,173.20
+\end{equation*}
+</div> <p id="p-1033">In this case, you would be paying $162,173.20 in interest over the life of the loan. To find the percentage, we divide the interest by the total amount paid.</p> <div class="displaymath process-math" data-contains-math-knowls="" id="p-1034">
+\begin{equation*}
+\frac{\$162,173.20}{\$302,173.20} \approx 0.5367
+\end{equation*}
+</div> <p id="p-1035">About 53.7% of the total is being paid towards interest.</p>
+</div></div>
+</div></article></section><section class="subsection" id="subsection-27"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4.3</span> <span class="title">Remaining Loan Balance</span>
+</h3>
+<p id="p-1036">With loans, it is often desirable to determine what the remaining loan balance will be after some number of years. For example, if you purchase a home and plan to sell it in five years, you might want to know how much of the loan balance you will have paid off and how much you will have to pay from the sale.</p>
+<p id="p-1037">To determine the remaining loan balance after some number of years, we first need to calculate the payment amount, if we don’t already know it. Remember that only a portion of your loan payments go towards the loan balance; a portion is going to go towards interest. For example, if your payments were $1,000 a month, after a year you will <em class="emphasis">not</em> have paid off $12,000 of the loan balance.</p>
+<p id="p-1038">To determine the remaining loan balance, we can think “how much loan will these loan payments be able to pay off in the remaining time on the loan?”</p>
+<article class="example example-like" id="example-20"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.4</span><span class="period">.</span>
+</h4>
+<p id="p-1039">If a 30-year mortgage at an interest rate of 6% APR has payments of $1,000 a month, what will the loan balance be in 5 years?</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-74" id="solution-74"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-74"><div class="solution solution-like">
+<p id="p-1040">To determine this, we need to think backwards. We are looking for the amount of the loan that can be paid off by $1,000 per month in the remaining 25 years. In other words, we’re looking for <span class="process-math">\(P\)</span> when:</p> <p id="p-1041"><span class="process-math">\(d=\$1,000\text{,}\)</span> for the monthly loan payment</p> <p id="p-1042"><span class="process-math">\(r=0.06\text{,}\)</span> for 6% annual rate</p> <p id="p-1043"><span class="process-math">\(n=12\text{,}\)</span> since we’re doing monthly payments, we’ll compound monthly</p> <p id="p-1044"><span class="process-math">\(t=25\text{,}\)</span> since we’d be making monthly payments for 25 more years</p> <p id="p-1045">To use a spreadsheet for this problem, we use the <code class="code-inline tex2jax_ignore">=PV</code> formula because we want to know what the present value would be at the time you want to sell in 5 years. We enter:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:40%;">
+<pre class="code-display tex2jax_ignore" id="p-1046">=PV(0.06/12, 12*25, 1000,0)</pre>
+<p class="continuation">which gives us $155,206.86.</p>
+</div>
+<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_4/remaining_balance.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
+</div></div> <p id="p-1047">To check this with the formula we have:</p> <div class="displaymath process-math" data-contains-math-knowls="" id="md-66">
+\begin{align*}
+P\amp=\frac{1000\left(1-\left(1+\frac{0.06}{12}\right)^{-12\cdot 25}\right)}{\frac{0.06}{12}}\\
+\amp=\frac{1000(1-(1.005)^{-300})}{0.005}\\
+\amp\approx\$155,206.86
+\end{align*}
+</div> <p id="p-1049">The loan balance with 25 years remaining on the loan will be $155,206.86</p>
+</div></div>
+</div></article><p id="p-1050">Sometimes answering remaining balance questions requires two steps, both of which we have done in this section:</p>
+<ol class="decimal">
+<li id="li-363"><p id="p-1051">Calculate the monthly payment on the loan</p></li>
+<li id="li-364"><p id="p-1052">Calculate the remaining loan balance based on the <em class="emphasis">remaining time</em> on the loan</p></li>
+</ol></section><section class="subsection" id="subsection-28"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4.4</span> <span class="title">Credit Cards</span>
+</h3>
+<p id="p-1053">Credit cards are useful to many people. They can be used to build a credit score, as a short-term loan and as an alternative to physical cash. It is highly advisable to fully pay off a credit card each month because the interest rates are much higher than the conventional installment loans we discussed earlier. There can also be many expensive fees applied when carrying a balance. Because of these higher rates, it can be very easy to get into a lot of debt quickly.</p>
+<p id="p-1054">Credit cards are a common source of loan money, and therefore a common source of debt which must be repaid.  There are much fewer and lower barriers to obtaining and using a credit card than there are to obtaining, for example, a mortgage.  As such, there are some drawbacks both in terms of typically higher interest rates, as well as some structural differences.</p>
+<article class="example example-like" id="example-21"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.5</span><span class="period">.</span>
+</h4>
+<p id="p-1055">Bilqis gets a credit card, with 17.99% APR compounding daily. She uses the card to buy a $900 plane ticket.  She does not make any payments during the interest-free grace period. Her first payment is due 35 days after the grace period ended. Following the fine print in the credit card agreement, the minimum payment is calculated to be 1% of the outstanding balance after applying the APR; or $25, whichever is larger. What is her outstanding balance? What is her minimum payment? If she pays the minimum payment what will her new balance be?</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-75" id="solution-75"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-75"><div class="solution solution-like">
+<p id="p-1056">First we will see what she owes with the 17.99% APR using the compound interest formula for 35 days:</p> <div class="displaymath process-math" data-contains-math-knowls="" id="p-1057">
+\begin{equation*}
+900\left(1+\frac{0.1799}{365}\right)^{35} \approx 915.66
+\end{equation*}
+</div> <p id="p-1058">The spreadsheet formula for this computation is</p>
+<pre class="code-display tex2jax_ignore">=FV(0.1799/365,35,0,900)</pre> <p id="p-1059">With interest, Bilqis now owes $915.66.</p> <p id="p-1060">Now we will find one percent of the new balance which is</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\$915.66(0.01) \approx \$9.16\text{.}
+\end{equation*}
+</div> <p id="p-1061">$25 is larger than $9.16, so her first payment must be at least $25. If she makes the minimum payment we can subtract to find her new balance:</p> <div class="displaymath process-math" data-contains-math-knowls="" id="p-1062">
+\begin{equation*}
+\$915.66-\$25 = \$890.66\text{.}
+\end{equation*}
+</div> <p id="p-1063">Her new balance will be $890.66.</p>
+</div></div>
+</div></article></section><section class="subsection" id="subsection-29"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4.5</span> <span class="title">Summary of Spreadsheet Formulas</span>
+</h3>
+<p id="p-1064">Here are all the spreadsheet formulas from this chapter so far together so you can see the similarities and differences.</p>
+<article class="assemblage assemblage-like" id="assemblage-16"><h4 class="heading"><span class="title">Spreadsheet Formulas.</span></h4>
+<pre class="code-display tex2jax_ignore" id="p-1065">=principal+principal*rate*time</pre>
+<pre class="code-display tex2jax_ignore" id="p-1066">=FV(rate per period, number of periods, payment amount, present value)</pre>
+<pre class="code-display tex2jax_ignore" id="p-1067">=principal*EXP(yearly rate*years)</pre>
+<pre class="code-display tex2jax_ignore" id="p-1068">=PV(rate per period, number of periods, payment amount, future value)</pre>
+<pre class="code-display tex2jax_ignore" id="p-1069">=PMT(rate per period, number of periods, present value, future value)</pre>
+<pre class="code-display tex2jax_ignore" id="p-1070">=EFFECT(stated rate, number of compounding periods per year)</pre>
+<dl id="p-1071" class="description-list narrow">
+<dt id="li-365">rate per period</dt>
+<dd><p id="p-1072">is the interest rate per compounding period, <span class="process-math">\(r/n\)</span></p></dd>
+<dt id="li-366">number of periods</dt>
+<dd><p id="p-1073">is the total number of periods, <span class="process-math">\(n*t\)</span></p></dd>
+<dt id="li-367">payment amount</dt>
+<dd><p id="p-1074">is the amount of regular payments, <span class="process-math">\(d\)</span></p></dd>
+<dt id="li-368">present value</dt>
+<dd><p id="p-1075">is the amount deposited or principal, <span class="process-math">\(P\)</span></p></dd>
+<dt id="li-369">future value</dt>
+<dd><p id="p-1076">is the amount you want in the future, <span class="process-math">\(0\)</span> <em class="emphasis">for a loan</em></p></dd>
+</dl></article></section><section class="subsection" id="subsection-30"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4.6</span> <span class="title">When to use the formulas: What is the question asking?</span>
+</h3>
+<ul id="p-1077" class="disc">
+<li id="li-370"><p id="p-1078">Find a payment: <code class="code-inline tex2jax_ignore">=PMT</code></p></li>
+<li id="li-371"><p id="p-1079">Find the effective rate or compare accounts: <code class="code-inline tex2jax_ignore">=EFFECT</code></p></li>
+<li id="li-372"><p id="p-1080">How much do you need to deposit now, what loan amount can you afford, or remaining loan balance: <code class="code-inline tex2jax_ignore">=PV</code></p></li>
+<li id="li-373">
+<p id="p-1081">What will the account balance be in the future?</p>
+<ul class="circle">
+<li id="li-374"><p id="p-1082">Simple interest: <code class="code-inline tex2jax_ignore">=principal+principal*rate*time</code></p></li>
+<li id="li-375"><p id="p-1083">Compound interest (except continuous): <code class="code-inline tex2jax_ignore">=FV</code></p></li>
+<li id="li-376"><p id="p-1084">Continuously compounded interest: <code class="code-inline tex2jax_ignore">principal*EXP(rate*years)</code></p></li>
+</ul>
+</li>
+</ul></section><section class="subsection" id="subsection-31"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4.7</span> <span class="title">Summary of Mathematical Formulas</span>
+</h3>
+<article class="assemblage assemblage-like" id="assemblage-17"><h4 class="heading"><span class="title">Mathematical Formulas.</span></h4>
+<p id="p-1085">Simple Interest</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-1086">
+\begin{equation*}
+I=Prt \text{     or     } A=P+Prt
+\end{equation*}
+</div>
+<p id="p-1087">Compound Interest</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-1088">
+\begin{equation*}
+A=P\left(1+\frac{r}{n}\right)^{nt} \text{ or } P=\frac{A}{\left(1+\frac{r}{n}\right)^{nt}}
+\end{equation*}
+</div>
+<p id="p-1089">Continuously Compounded</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-1090">
+\begin{equation*}
+A=Pe^{rt} \text{  or  }P=\frac{A}{e^{rt}}
+\end{equation*}
+</div>
+<p id="p-1091">Savings Plans</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-1092">
+\begin{equation*}
+A=\frac{d\left(\left(1+\frac{r}{n}\right)^{nt}-1\right)}{\left(\frac{r}{n}\right)} \text{  or  } d=\frac{A\left(\frac{r}{n}\right)}{\left(\left(1+\frac{r}{n}\right)^{nt}-1\right)}
+\end{equation*}
+</div>
+<p id="p-1093">Loans</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-1094">
+\begin{equation*}
+P=\frac{d\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}{\frac{r}{n}} \text{  or  } d=\frac{P\left(\frac{r}{n}\right)}{\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}
+\end{equation*}
+</div>
+<dl id="p-1095" class="description-list narrow">
+<dt id="li-377"><span class="process-math">\(P\)</span></dt>
+<dd><p id="p-1096">is the principal, starting amount, or present value</p></dd>
+<dt id="li-378"><span class="process-math">\(d\)</span></dt>
+<dd><p id="p-1097">is your loan payment (your monthly payment, annual payment, etc.)</p></dd>
+<dt id="li-379"><span class="process-math">\(r\)</span></dt>
+<dd><p id="p-1098">is the annual intrest rate in decimal form</p></dd>
+<dt id="li-380"><span class="process-math">\(n\)</span></dt>
+<dd><p id="p-1099">is the number of compounding periods in one year</p></dd>
+<dt id="li-381"><span class="process-math">\(t\)</span></dt>
+<dd><p id="p-1100">is the length of the loan, in years</p></dd>
+<dt id="li-382"><span class="process-math">\(A\)</span></dt>
+<dd><p id="p-1101">is the end amunt or future value</p></dd>
+</dl>
+<p id="p-1102">If the compounding frequency is not always explicitly given, it is determined by how often you make payments</p></article></section><section class="subsection" id="subsection-32"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4.8</span> <span class="title">When to use the formulas: What is the question asking?</span>
+</h3>
+<ul id="p-1103" class="disc">
+<li id="li-383">
+<p id="p-1104">Find a payment</p>
+<ul class="circle">
+<li id="li-384"><p id="p-1105">Savings payment: savings plan equation (positive exponent) solved for <span class="process-math">\(d\)</span></p></li>
+<li id="li-385"><p id="p-1106">Loan payment: loan equation (negative exponent) solved for <span class="process-math">\(d\)</span></p></li>
+</ul>
+</li>
+<li id="li-386">
+<p id="p-1107">How much do you need to deposit now?</p>
+<ul class="circle">
+<li id="li-387"><p id="p-1108">Compound interest (except continuous): compound interest formulas solved for <span class="process-math">\(P\)</span></p></li>
+<li id="li-388"><p id="p-1109">Continuously compounded: the formula with e solved for <span class="process-math">\(P\)</span></p></li>
+</ul>
+</li>
+<li id="li-389"><p id="p-1110">What loan amount can you afford, or remaining loan balance: loan formula solved for <span class="process-math">\(P\)</span></p></li>
+<li id="li-390">
+<p id="p-1111">What will the account balance be in the future?</p>
+<ul class="circle">
+<li id="li-391">
+<p id="p-1112">One-time deposit:</p>
+<ul class="square">
+<li id="li-392"><p id="p-1113">Simple interest: simple interest formula</p></li>
+<li id="li-393"><p id="p-1114">Compound interest (except continuous): compound interest formula solved for <span class="process-math">\(A\)</span></p></li>
+<li id="li-394"><p id="p-1115">Continuously compounded interest: the formula with <span class="process-math">\(e\)</span> in it, solved for <span class="process-math">\(A\)</span></p></li>
+</ul>
+</li>
+<li id="li-395"><p id="p-1116">Regular payments: Savings plan formula solved for <span class="process-math">\(A\)</span></p></li>
+</ul>
+</li>
+</ul>
+<p id="p-1117">Remember, the most important part of answering any kind of question, money or otherwise, is first to correctly identify what the question is really asking, and to determine what approach will best allow you to solve the problem. After practicing with the exercises from this section, you can test yourself on which formula to use with exercises 14-21.</p></section><section class="exercises" id="exercises-4"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">3.4.9</span> <span class="title">Exercises</span>
+</h3>
+<article class="exercise exercise-like" id="exercise-52"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<p id="p-1118">You can afford a $700 per month mortgage payment. You’ve found a 30-year loan at 5.5% APR.</p> <ol id="p-1119" class="lower-alpha">
+<li id="li-396"><p id="p-1120">How big of a loan can you afford?</p></li>
+<li id="li-397"><p id="p-1121">How much total money will you pay the loan company?</p></li>
+<li id="li-398"><p id="p-1122">How much of that money is interest?</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-53"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<p id="p-1128">Marie can afford a $250 per month car payment. She’s found a 5-year loan at 7% APR.</p> <ol id="p-1129" class="lower-alpha">
+<li id="li-402"><p id="p-1130">How expensive of a car can she afford?</p></li>
+<li id="li-403"><p id="p-1131">How much total money will she pay the loan company?</p></li>
+<li id="li-404"><p id="p-1132">How much of that money is interest?</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-54"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<p id="p-1138">You want to buy a $25,000 car. The company is offering an interest rate of 2% APR for 48 months (4 years). What will your monthly payments be?</p></article><article class="exercise exercise-like" id="exercise-55"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<p id="p-1141">You decide to finance a $12,000 car at 3% APR compounded monthly for 4 years. What will your monthly payments be? How much interest will you pay over the life of the loan?</p></article><article class="exercise exercise-like" id="exercise-56"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
+<p id="p-1145">You want to buy a $200,000 home. You plan to pay 10% as a down payment and take out a 30-year loan for the rest.</p> <ol id="p-1146" class="lower-alpha">
+<li id="li-408"><p id="p-1147">How much is the loan amount going to be?</p></li>
+<li id="li-409"><p id="p-1148">What will your monthly payments be if the interest rate is 5%?</p></li>
+<li id="li-410"><p id="p-1149">What will your monthly payments be if the interest rate is 6%?</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-57"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+<p id="p-1156">Lynn bought a $300,000 house, paying 10% down, and financing the rest at 6.5% APR for 30 years.</p> <ol id="p-1157" class="lower-alpha">
+<li id="li-414"><p id="p-1158">Find her monthly payments.</p></li>
+<li id="li-415"><p id="p-1159">How much interest will she pay over the life of the loan?</p></li>
+<li id="li-416"><p id="p-1160">What percentage of her total payment was interest?</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-58"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
+<p id="p-1167">Emile bought a car for $24,000 three years ago. The loan had a 5-year term at 3% APR. How much does he still owe on the car?</p></article><article class="exercise exercise-like" id="exercise-59"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
+<p id="p-1174">A friend bought a house 15 years ago, taking out a $120,000 mortgage at 6% APR for 30 years. How much does she still owe on the mortgage?</p></article><div class="exercisegroup" id="exercisegroup-1">
+<h4 class="heading"><span class="title">Exercise Group.</span></h4>
+<div class="introduction" id="introduction-14"><p id="p-1181">Use a spreadsheet (not formulas) to answer problems 9 through 13 below.</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-60"><h5 class="heading"><span class="codenumber">9<span class="period">.</span></span></h5>
+<p id="p-1182">Imagine you have $20,000 saved as a down payment on a house. You wish to take out a fixed-rate 30-year mortgage loan at 4% APR (remember that mortgage rates usually assume monthly compounding). If the maximum mortgage payment you can afford is $950 per month, then what is the maximum house price that you can afford?</p></article><article class="exercise exercise-like" id="exercise-61"><h5 class="heading"><span class="codenumber">10<span class="period">.</span></span></h5>
+<p id="p-1185">Suppose another mortgage lender offers you a fixed-rate 15-year mortgage at 2.95% APR. You have $20,000 saved as a down payment, and you can afford a maximum mortgage payment of $950 per month. You are interested in a certain house for sale, with firm selling price of $200,000.</p> <ol id="p-1186" class="lower-alpha">
+<li id="li-420"><p id="p-1187">Find the monthly payment for this house. Can you afford it, under the terms of this lender?</p></li>
+<li id="li-421"><p id="p-1188">(Challenge): Suppose this same lender offers to increase the APR by only 0.05%, for each additional year added to the loan period beyond 15 years (so that a 16-year loan would have 3.00% APR, and a 17-year loan would have 3.05% APR, and so on), up to a maximum loan period of 25 years. Given these terms, does any combination of APR and loan period exist that would let you afford the house?  If so, state the <em class="emphasis">minimum</em> number of additional years needed, the total resulting loan period, the resulting APR, and the resulting monthly payment.</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-62"><h5 class="heading"><span class="codenumber">11<span class="period">.</span></span></h5>
+<p id="p-1193">An annuity firm pays 5% APR compounded yearly, and offers an investor the following: Deposit $100,000 with them today, and then starting one year from today, you will receive ten equal annual payments, with zero balance remaining afterward in the account. If an investor accepts their offer, then find the following:</p> <ol id="p-1194" class="lower-alpha">
+<li id="li-424"><p id="p-1195">What will be the payment amount for each of the ten equal payments?</p></li>
+<li id="li-425"><p id="p-1196">After ten years, how much interest will the investor have received, and what percentage of the total payment sum will represent interest?</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-63"><h5 class="heading"><span class="codenumber">12<span class="period">.</span></span></h5>
+<p id="p-1202">For twelve full years, and into an account that pays 3.5% APR compounded quarterly: Yanhong will either pay $1500 at the end of each calendar quarter, or, deposit a single lump sum that will give the same future value amount.</p> <ol id="p-1203" class="lower-alpha">
+<li id="li-428"><p id="p-1204">If Yanhong chooses the single lump sum option, then how much will Yanhong need to deposit?</p></li>
+<li id="li-429"><p id="p-1205">If Yanhong needs to have earned $100,000 in this account at the end of the twelve years, then the quarterly deposit amount will need to be increased. What would the new quarterly deposit amount need to be?</p></li>
+<li id="li-430"><p id="p-1206">(Challenge): If Yanhong will make quarterly deposits into this account for the twelve years, but also has $8,000 to additionally deposit into this account right away: What would the new quarterly deposit amount need to be, so that the total balance after twelve years is $100,000?</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-64"><h5 class="heading"><span class="codenumber">13<span class="period">.</span></span></h5>
+<p id="p-1215">Assume you take out a 30-year mortgage loan for $250,000 at a fixed 4.5% APR.</p> <ol id="p-1216" class="lower-alpha">
+<li id="li-434"><p id="p-1217">What will be the amount of your monthly payment?</p></li>
+<li id="li-435"><p id="p-1218">After the first ten years of payments, how much will remain on your loan balance?</p></li>
+<li id="li-436"><p id="p-1219">After the first twenty years of payments, how much will remain on your loan balance?</p></li>
+<li id="li-437"><p id="p-1220">Notice that the amount of the loan balance reduction during the second ten years, was very considerably bigger than the amount of the loan balance reduction during the first ten years. Why does the loan balance decrease at a faster and faster pace, the longer that the loan has been in repayment?</p></li>
+</ol></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-2">
+<h4 class="heading"><span class="title">Exercise Group.</span></h4>
+<div class="introduction" id="introduction-15"><p id="p-1228">For each of the following scenarios, determine which formula from sections 2.2-2.4 to use and solve the problem.</p></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-65"><h5 class="heading"><span class="codenumber">14<span class="period">.</span></span></h5>
+<p id="p-1229">Keisha received an inheritance of $20,000 and invested it at 6.9% APR, compounded continuously. How much will she have for college in 8 years?</p></article><article class="exercise exercise-like" id="exercise-66"><h5 class="heading"><span class="codenumber">15<span class="period">.</span></span></h5>
+<p id="p-1231">Paul wants to buy a new car. Rather than take out a loan, he decides to save $200 a month in an account earning 3.5% APR compounded monthly. How much will he have saved up after 3 years?</p></article><article class="exercise exercise-like" id="exercise-67"><h5 class="heading"><span class="codenumber">16<span class="period">.</span></span></h5>
+<p id="p-1233">Sol is managing investments for a non-profit company. They want to invest some money in an account earning 5% APR compounded annually with the goal to have $30,000 in the account in 6 years. How much should Sol deposit into the account?</p></article><article class="exercise exercise-like" id="exercise-68"><h5 class="heading"><span class="codenumber">17<span class="period">.</span></span></h5>
+<p id="p-1235">Miao is going to finance new office equipment at 2.8% APR over a 4-year term. If she can afford monthly payments of $100, how much equipment can she buy?</p></article><article class="exercise exercise-like" id="exercise-69"><h5 class="heading"><span class="codenumber">18<span class="period">.</span></span></h5>
+<p id="p-1237">How much would you need to save every month in an account earning 4.1% APR to have $5,000 saved up in two years.</p></article><article class="exercise exercise-like" id="exercise-70"><h5 class="heading"><span class="codenumber">19<span class="period">.</span></span></h5>
+<p id="p-1239">Terry and Jess are buying a house for $405,000 and they can afford to put 10% down. Their interest rate is 4.3% APR for 30 years. What will their monthly mortgage payment be?</p></article><article class="exercise exercise-like" id="exercise-71"><h5 class="heading"><span class="codenumber">20<span class="period">.</span></span></h5>
+<p id="p-1241">You loan your sister $500 for two years and she agrees to pay you back with 3% simple interest per year. How much will she pay you back</p></article><article class="exercise exercise-like" id="exercise-72"><h5 class="heading"><span class="codenumber">21<span class="period">.</span></span></h5>
+<p id="p-1243">Zahid starts saving $150 per month in an account that pays 4.8% APR compounded monthly. If he continues for 20 years, how much will he have? If he waited 10 years instead and put in $300 per month for 10 years with the same interest, how much would he have?</p></article>
+</div>
+</div></section></section></div></main>
+</div>
+</body>
+</html>

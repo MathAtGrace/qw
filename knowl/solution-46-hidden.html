@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><div class="solution solution-like">
+<p>To use a spreadsheet, we will use <code class="code-inline tex2jax_ignore">=FV</code> because we want to know the balance in the future. We enter 100 for the payment amount and 0 for the present value:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:40%;">
+<pre class="code-display tex2jax_ignore">=FV(0.06/12, 12*20, 100, 0)</pre>
+<p>which gives a result of $46,204.09.</p>
+</div>
+<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_3/savings_plan1.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
+</div></div> <p>Remember that the output of the formula gives the answer with the opposite sign as the principal and payments. For our purposes we will ignore the signs. To use the formula, we use the one solved for <em class="alert">A</em>, since we want to know the final amount.</p> <p><span class="process-math">\(d=\$100\text{,}\)</span> the monthly deposit</p> <p><span class="process-math">\(r=0.06\text{,}\)</span> 6% annual rate</p> <p><span class="process-math">\(n=12\text{,}\)</span> since we're doing monthly deposits, we'll compound monthly</p> <p><span class="process-math">\(t=20\text{,}\)</span> we want the amount after 20 years</p> <p>Putting this into the equation we have:</p> <div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+A\amp=\frac{100\left(\left(1+\frac{0.06}{12}\right)^{12\cdot 20}-1\right)}{\left(\frac{0.06}{12}\right)}\\
+\amp=\frac{100\left((1.005)^{240}-1\right)}{(0.005)}\\
+\amp\approx \$46.204.09
+\end{align*}
+</div> <p>With U.S. dollars we round to the nearest cent. The account will grow to $46,204.09 after 20 years.</p> <p>To find the <em class="emphasis">amount of interest earned</em>, calculate the total of all your deposits.</p> <div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\$100(20)(12)=\$24,000
+\end{equation*}
+</div> <p>The difference between the total amount and the deposits is the interest earned.</p> <div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\$46,204.09-\$24,000=\$22,204.09
+\end{equation*}
+</div> <p>The total amount of interest you earned was $22,204.09.</p> <p>To find the <em class="emphasis">percentage of the balance that is interest</em> we will divide the interest by the total balance.</p> <div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{\$22,204.09}{\$46,204.09}\approx 0.4810
+\end{equation*}
+</div> <p>or 48.1%. After 20 years 48.1% of the balance is from interest.</p>
+</div></body>
+</html>

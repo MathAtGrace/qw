@@ -1,0 +1,2519 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-representations>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-1" ww-id="webwork-1">
+    <static seed="1">
+      <statement><p>Use the ratio method to find an exponential function whose graph includes the points <m>(1, 20)</m> and <m>(3, 125)\text{.}</m></p>
+<p><m>f(x)=</m><fillin name="AnSwEr0001" characters="10"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>8\cdot 2.5^{x}</m>
+        </p>
+      </answer>
+      <solution><p><m>f (x) = 8(2.5)^x</m></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRmID0gRm9ybXVsYSgiOCogMi41Kip4Iik7CgpCRUdJTl9QR01MClVzZSB0aGUgcmF0aW8gbWV0aG9kIHRvIGZpbmQgYW4gZXhwb25lbnRpYWwgZnVuY3Rpb24gd2hvc2UgZ3JhcGggaW5jbHVkZXMgdGhlIHBvaW50cyBbYCgxLCAyMClgXSBhbmQgW2AoMywgMTI1KVx0ZXh0ey59YF0KCltgZih4KT1gXVtfXXskZn17MTB9CgoKRU5EX1BHTUwKCkJFR0lOX1BHTUxfU09MVVRJT04KW2BmICh4KSA9IDgoMi41KV54YF0KCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2023-04-05T16:02:07-04:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.3.3)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$f = Formula("8* 2.5**x");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Use the ratio method to find an exponential function whose graph includes the points [`(1, 20)`] and [`(3, 125)\text{.}`]
+
+[`f(x)=`][_]{$f}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[`f (x) = 8(2.5)^x`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-2" ww-id="webwork-2">
+    <static seed="2">
+      <statement><p>You have written a system of equations to fit an exponential function through two points. What is the next step?</p>
+<p><var form="buttons" name="AnSwEr0001">
+<li>
+<p>A) Calculate the slope.</p>
+</li>
+<li>
+<p>B) Subtract one equation from the other.</p>
+</li>
+<li>
+<p>C) Divide one equation by the other.</p>
+</li>
+<li>
+<p>D) Take the log of both sides.</p>
+</li>
+</var></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{C) Divide ... the other.}</m>
+        </p>
+      </answer>
+      <solution><p>Divide one equation by the other.</p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRzeXN0ID0gUmFkaW9CdXR0b25zKAogIFsiQSkgQ2FsY3VsYXRlIHRoZSBzbG9wZS4iLAogICJCKSBTdWJ0cmFjdCBvbmUgZXF1YXRpb24gZnJvbSB0aGUgb3RoZXIuIiwKICAiQykgRGl2aWRlIG9uZSBlcXVhdGlvbiBieSB0aGUgb3RoZXIuIiwKICAiRCkgVGFrZSB0aGUgbG9nIG9mIGJvdGggc2lkZXMuIl0sCiAgMiwgCik7CgpCRUdJTl9QR01MCllvdSBoYXZlIHdyaXR0ZW4gYSBzeXN0ZW0gb2YgZXF1YXRpb25zIHRvIGZpdCBhbiBleHBvbmVudGlhbCBmdW5jdGlvbiB0aHJvdWdoIHR3byBwb2ludHMuIFdoYXQgaXMgdGhlIG5leHQgc3RlcD8KCiAgICBbX117JHN5c3R9ezV9CgoKRU5EX1BHTUwKCkJFR0lOX1BHTUxfU09MVVRJT04KRGl2aWRlIG9uZSBlcXVhdGlvbiBieSB0aGUgb3RoZXIuCgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2023-04-05T16:02:07-04:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.3.4)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserRadioButtons.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$syst = RadioButtons(
+  ["A) Calculate the slope.",
+  "B) Subtract one equation from the other.",
+  "C) Divide one equation by the other.",
+  "D) Take the log of both sides."],
+  2, 
+);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+You have written a system of equations to fit an exponential function through two points. What is the next step?
+
+    [_]{$syst}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+Divide one equation by the other.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-3" ww-id="webwork-3">
+    <static seed="3">
+      <statement><p>The number of earthquakes that occur worldwide is a decreasing exponential function of their magnitude on the Richter scale. Between 2000 and 2005, there were 7480 earthquakes of magnitude 5 and 793 earthquakes of magnitude 6. (Source: National Earthquake Information Center, U.S. Geological Survey)</p>
+<p><ol label="a.">
+<li>
+<p>Find a formula for the number of earthquakes, <m>N(m)\text{,}</m> in terms of their magnitude.</p>
+<p><m>N(m)=</m><fillin name="AnSwEr0001" characters="20"/></p>
+<p>Do not use any commas: For example, instead of <lq/>10,000<rq/> enter simply <lq/>10000<rq/>.</p>
+</li>
+<li>
+<p>It is difficult to keep an accurate count of small earthquakes. Use your formula to estimate the number of magnitude 1 earthquakes that occurred between 2000 and 2005. <fillin name="AnSwEr0002" characters="8"/></p>
+<p>How many earthquakes of magnitude 8 occurred?  <fillin name="AnSwEr0003" characters="2"/></p>
+</li>
+</ol></p>
+</statement>
+      <answer>
+        <p>
+          <m>5.58527\times 10^{8}\cdot 0.106016^{m}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>5.92128\times 10^{7}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>8.91283</m>
+        </p>
+      </answer>
+      <solution><p><ol label="a.">
+<li>
+<p><m>N(m) = 558,526,329(0.106)^m</m></p>
+</li>
+<li>
+<p><m>59,212,751\text{;}</m> <m>~9</m></p>
+</li>
+</ol></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgpLT52YXJpYWJsZXMtPmFkZChtPT4iUmVhbCIpOwokYiA9IENvbXB1dGUoIjc5My83NDgwIik7CiRhID0gQ29tcHV0ZSgiNzQ4MC8kYioqNSIpOwokTiA9IEZvcm11bGEoIiRhKiRiKiptIik7CiRvbmUgPSAkTi0+ZXZhbChtPT4xKTsKJGVpZ2h0ID0gJE4tPmV2YWwobT0+OCktPndpdGgoCiAgdG9sVHlwZSA9PiAnYWJzb2x1dGUnLAogIHRvbGVyYW5jZSA9PiAuNTEsCik7CgpCRUdJTl9QR01MClRoZSBudW1iZXIgb2YgZWFydGhxdWFrZXMgdGhhdCBvY2N1ciB3b3JsZHdpZGUgaXMgYSBkZWNyZWFzaW5nIGV4cG9uZW50aWFsIGZ1bmN0aW9uIG9mIHRoZWlyIG1hZ25pdHVkZSBvbiB0aGUgUmljaHRlciBzY2FsZS4gQmV0d2VlbiAyMDAwIGFuZCAyMDA1LCB0aGVyZSB3ZXJlIDc0ODAgZWFydGhxdWFrZXMgb2YgbWFnbml0dWRlIDUgYW5kIDc5MyBlYXJ0aHF1YWtlcyBvZiBtYWduaXR1ZGUgNi4gKFNvdXJjZTogTmF0aW9uYWwgRWFydGhxdWFrZSBJbmZvcm1hdGlvbiBDZW50ZXIsIFUuUy4gR2VvbG9naWNhbCBTdXJ2ZXkpCgphLiAgRmluZCBhIGZvcm11bGEgZm9yIHRoZSBudW1iZXIgb2YgZWFydGhxdWFrZXMsIFtgTihtKVx0ZXh0eyx9YF0gaW4gdGVybXMgb2YgdGhlaXIgbWFnbml0dWRlLgoKICAgIFtgTihtKT1gXVtfXXskTn17MjB9CgogICAgRG8gbm90IHVzZSBhbnkgY29tbWFzOiBGb3IgZXhhbXBsZSwgaW5zdGVhZCBvZiAiMTAsMDAwIiBlbnRlciBzaW1wbHkgIjEwMDAwIi4KCgphLiAgSXQgaXMgZGlmZmljdWx0IHRvIGtlZXAgYW4gYWNjdXJhdGUgY291bnQgb2Ygc21hbGwgZWFydGhxdWFrZXMuIFVzZSB5b3VyIGZvcm11bGEgdG8gZXN0aW1hdGUgdGhlIG51bWJlciBvZiBtYWduaXR1ZGUgMSBlYXJ0aHF1YWtlcyB0aGF0IG9jY3VycmVkIGJldHdlZW4gMjAwMCBhbmQgMjAwNS4gW19deyRvbmV9ezh9CgogICAgSG93IG1hbnkgZWFydGhxdWFrZXMgb2YgbWFnbml0dWRlIDggb2NjdXJyZWQ/ICBbX117JGVpZ2h0fXsyfQoKCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgphLiAgW2BOKG0pID0gNTU4LDUyNiwzMjkoMC4xMDYpXm1gXQoKCmEuICBbYDU5LDIxMiw3NTFcdGV4dHs7fWBdIFtgfjlgXQoKCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2023-04-05T16:02:07-04:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.3.6)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context()->variables->add(m=>"Real");
+$b = Compute("793/7480");
+$a = Compute("7480/$b**5");
+$N = Formula("$a*$b**m");
+$one = $N->eval(m=>1);
+$eight = $N->eval(m=>8)->with(
+  tolType => 'absolute',
+  tolerance => .51,
+);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+The number of earthquakes that occur worldwide is a decreasing exponential function of their magnitude on the Richter scale. Between 2000 and 2005, there were 7480 earthquakes of magnitude 5 and 793 earthquakes of magnitude 6. (Source: National Earthquake Information Center, U.S. Geological Survey)
+
+a.  Find a formula for the number of earthquakes, [`N(m)\text{,}`] in terms of their magnitude.
+
+    [`N(m)=`][_]{$N}{20}
+
+    Do not use any commas: For example, instead of "10,000" enter simply "10000".
+
+a.  It is difficult to keep an accurate count of small earthquakes. Use your formula to estimate the number of magnitude 1 earthquakes that occurred between 2000 and 2005. [_]{$one}{8}
+
+    How many earthquakes of magnitude 8 occurred?  [_]{$eight}{2}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  [`N(m) = 558,526,329(0.106)^m`]
+
+a.  [`59,212,751\text{;}`] [`~9`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-4" ww-id="webwork-4">
+    <static seed="4">
+      <statement><p>Which statement is true?</p>
+<p><var form="buttons" name="AnSwEr0001">
+<li>
+<p>A) The doubling time of a population depends on its initial value.</p>
+</li>
+<li>
+<p>B) An increasing exponential function has a constant doubling time.</p>
+</li>
+<li>
+<p>C) The doubling time is twice the percent growth rate.</p>
+</li>
+<li>
+<p>D) The doubling time is half the percent growth rate.</p>
+</li>
+</var></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{B) An ... doubling time.}</m>
+        </p>
+      </answer>
+      <solution><p>An increasing exponential function has a constant doubling time.</p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRkdWJ0ID0gUmFkaW9CdXR0b25zKAogIFsiQSkgVGhlIGRvdWJsaW5nIHRpbWUgb2YgYSBwb3B1bGF0aW9uIGRlcGVuZHMgb24gaXRzIGluaXRpYWwgdmFsdWUuIiwKICAiQikgQW4gaW5jcmVhc2luZyBleHBvbmVudGlhbCBmdW5jdGlvbiBoYXMgYSBjb25zdGFudCBkb3VibGluZyB0aW1lLiIsCiAgIkMpIFRoZSBkb3VibGluZyB0aW1lIGlzIHR3aWNlIHRoZSBwZXJjZW50IGdyb3d0aCByYXRlLiIsCiAgIkQpIFRoZSBkb3VibGluZyB0aW1lIGlzIGhhbGYgdGhlIHBlcmNlbnQgZ3Jvd3RoIHJhdGUuIl0sCiAgMSwgCik7CgpCRUdJTl9QR01MCldoaWNoIHN0YXRlbWVudCBpcyB0cnVlPwoKICAgIFtfXXskZHVidH17NX0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpBbiBpbmNyZWFzaW5nIGV4cG9uZW50aWFsIGZ1bmN0aW9uIGhhcyBhIGNvbnN0YW50IGRvdWJsaW5nIHRpbWUuCgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2023-04-05T16:02:07-04:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.3.8)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserRadioButtons.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$dubt = RadioButtons(
+  ["A) The doubling time of a population depends on its initial value.",
+  "B) An increasing exponential function has a constant doubling time.",
+  "C) The doubling time is twice the percent growth rate.",
+  "D) The doubling time is half the percent growth rate."],
+  1, 
+);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Which statement is true?
+
+    [_]{$dubt}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+An increasing exponential function has a constant doubling time.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-5" ww-id="webwork-5">
+    <static seed="5">
+      <statement><p>In 2005, the population of Uganda was 26.9 million people and was growing by 3.2% per year.</p>
+<p><ol label="a.">
+<li>
+<p>Write a formula for the population of Uganda as a function of years since 2005.</p>
+<p><m>P(t)=</m><fillin name="AnSwEr0001" characters="12"/> million</p>
+</li>
+<li>
+<p>How long will it take the population of Uganda to double?</p>
+<p><fillin name="AnSwEr0002" characters="2"/> years</p>
+</li>
+<li>
+<p>Use your formula from part (a) to verify the doubling time for three doubling periods.</p>
+</li>
+</ol></p>
+</statement>
+      <answer>
+        <p>
+          <m>26.9\cdot 1.032^{t}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\frac{\log\!\left(2\right)}{\log\!\left(1.032\right)}</m>
+        </p>
+      </answer>
+      <solution><p><ol label="a.">
+<li>
+<p><m>P(t) = 26.9(1.032)^t</m> million</p>
+</li>
+<li>
+<p><m>22</m> years</p>
+</li>
+<li>
+<p><m>P(0) = 26.9\text{;}</m> <m>P(22)\approx 53.8\text{,}</m> i.e.,  <m>P(22)\approx 2\cdot P(0)\text{;}</m> <m>P(44)\approx 107.6\text{,}</m> i.e.,  <m>P(44)\approx 2\cdot P(22)\text{;}</m> <m>P(66)\approx 215.1\text{,}</m> i.e.,  <m>P(66)\approx 2\cdot P(44)</m></p>
+</li>
+</ol></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgpLT52YXJpYWJsZXMtPmFkZCh0PT4iUmVhbCIpOwokZiA9IEZvcm11bGEoIjI2LjkqMS4wMzIqKnQiKTsKJGR0ID0gQ29tcHV0ZSgibG9nKDIpL2xvZygxLjAzMikiKS0+d2l0aCgKICB0b2xUeXBlID0+ICdhYnNvbHV0ZScsCiAgdG9sZXJhbmNlID0+IC41LAopOwoKQkVHSU5fUEdNTApJbiAyMDA1LCB0aGUgcG9wdWxhdGlvbiBvZiBVZ2FuZGEgd2FzIDI2LjkgbWlsbGlvbiBwZW9wbGUgYW5kIHdhcyBncm93aW5nIGJ5IDMuMiUgcGVyIHllYXIuCgphLiAgV3JpdGUgYSBmb3JtdWxhIGZvciB0aGUgcG9wdWxhdGlvbiBvZiBVZ2FuZGEgYXMgYSBmdW5jdGlvbiBvZiB5ZWFycyBzaW5jZSAyMDA1LgoKICAgIFtgUCh0KT1gXVtfXXskZn17MTJ9IG1pbGxpb24KCgphLiAgSG93IGxvbmcgd2lsbCBpdCB0YWtlIHRoZSBwb3B1bGF0aW9uIG9mIFVnYW5kYSB0byBkb3VibGU/CgogICAgW19deyRkdH17Mn0geWVhcnMKCgphLiAgVXNlIHlvdXIgZm9ybXVsYSBmcm9tIHBhcnQgKGEpIHRvIHZlcmlmeSB0aGUgZG91YmxpbmcgdGltZSBmb3IgdGhyZWUgZG91YmxpbmcgcGVyaW9kcy4KCgoKRU5EX1BHTUwKCkJFR0lOX1BHTUxfU09MVVRJT04KYS4gIFtgUCh0KSA9IDI2LjkoMS4wMzIpXnRgXSBtaWxsaW9uCgoKYS4gIFtgMjJgXSB5ZWFycwoKCmEuICBbYFAoMCkgPSAyNi45XHRleHR7O31gXSBbYFAoMjIpXGFwcHJveCA1My44XHRleHR7LH1gXSBpLmUuLCAgW2BQKDIyKVxhcHByb3ggMlxjZG90IFAoMClcdGV4dHs7fWBdIFtgUCg0NClcYXBwcm94IDEwNy42XHRleHR7LH1gXSBpLmUuLCAgW2BQKDQ0KVxhcHByb3ggMlxjZG90IFAoMjIpXHRleHR7O31gXSBbYFAoNjYpXGFwcHJveCAyMTUuMVx0ZXh0eyx9YF0gaS5lLiwgIFtgUCg2NilcYXBwcm94IDJcY2RvdCBQKDQ0KWBdCgoKCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2023-04-05T16:02:07-04:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.3.9)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context()->variables->add(t=>"Real");
+$f = Formula("26.9*1.032**t");
+$dt = Compute("log(2)/log(1.032)")->with(
+  tolType => 'absolute',
+  tolerance => .5,
+);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+In 2005, the population of Uganda was 26.9 million people and was growing by 3.2% per year.
+
+a.  Write a formula for the population of Uganda as a function of years since 2005.
+
+    [`P(t)=`][_]{$f}{12} million
+
+a.  How long will it take the population of Uganda to double?
+
+    [_]{$dt}{2} years
+
+a.  Use your formula from part (a) to verify the doubling time for three doubling periods.
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  [`P(t) = 26.9(1.032)^t`] million
+
+a.  [`22`] years
+
+a.  [`P(0) = 26.9\text{;}`] [`P(22)\approx 53.8\text{,}`] i.e.,  [`P(22)\approx 2\cdot P(0)\text{;}`] [`P(44)\approx 107.6\text{,}`] i.e.,  [`P(44)\approx 2\cdot P(22)\text{;}`] [`P(66)\approx 215.1\text{,}`] i.e.,  [`P(66)\approx 2\cdot P(44)`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-6" ww-id="webwork-6">
+    <static seed="6">
+      <statement><p>The formula <m>P(t)=P_0 2^{t/D}</m> tells us that:</p>
+<p><var form="buttons" name="AnSwEr0001">
+<li>
+<p><m>P(t)</m> is twice the initial value.</p>
+</li>
+<li>
+<p>After 2 years, <m>P(t)=D</m>.</p>
+</li>
+<li>
+<p>After <m>D</m> years, <m>P(t)=2P_0</m>.</p>
+</li>
+<li>
+<p><m>P(t)</m> grows by a factor of <m>D</m>.</p>
+</li>
+</var></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{Choice 3}</m>
+        </p>
+      </answer>
+      <solution><p>After <m>D</m> years, <m>P(t)=2P_0\text{.}</m></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRkdWJmbSA9IFJhZGlvQnV0dG9ucygKICBbIlwoUCh0KVwpIGlzIHR3aWNlIHRoZSBpbml0aWFsIHZhbHVlLiIsCiAgIkFmdGVyIDIgeWVhcnMsIFwoUCh0KT1EXCkuIiwKICAiQWZ0ZXIgXChEXCkgeWVhcnMsIFwoUCh0KT0yUF8wXCkuIiwKICAiXChQKHQpXCkgZ3Jvd3MgYnkgYSBmYWN0b3Igb2YgXChEXCkuIl0sCiAgMiwgCik7CgpCRUdJTl9QR01MClRoZSBmb3JtdWxhIFtgUCh0KT1QXzAgMl57dC9EfWBdIHRlbGxzIHVzIHRoYXQ6CgogICAgW19deyRkdWJmbX17NX0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgpBZnRlciBbYERgXSB5ZWFycywgW2BQKHQpPTJQXzBcdGV4dHsufWBdCgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2023-04-05T16:02:07-04:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.3.10)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserRadioButtons.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$dubfm = RadioButtons(
+  ["\(P(t)\) is twice the initial value.",
+  "After 2 years, \(P(t)=D\).",
+  "After \(D\) years, \(P(t)=2P_0\).",
+  "\(P(t)\) grows by a factor of \(D\)."],
+  2, 
+);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+The formula [`P(t)=P_0 2^{t/D}`] tells us that:
+
+    [_]{$dubfm}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+After [`D`] years, [`P(t)=2P_0\text{.}`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-7" ww-id="webwork-7">
+    <static seed="7">
+      <statement><p>At its current rate of growth, the population of Mexico will double in 36.8 years. What is its annual percent rate of growth?</p>
+<p>Answer: <fillin name="AnSwEr0001" characters="3"/>%</p>
+</statement>
+      <answer>
+        <p>
+          <m>100\cdot \left(2^{\frac{1}{36.8}}-1\right)</m>
+        </p>
+      </answer>
+      <solution><p>1.9%</p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRyID0gQ29tcHV0ZSgiMTAwKigyKiooMS8zNi44KS0xKSIpLT53aXRoKAogIHRvbFR5cGUgPT4gJ2Fic29sdXRlJywKICB0b2xlcmFuY2UgPT4gLjA1MSwKKTsKCkJFR0lOX1BHTUwKQXQgaXRzIGN1cnJlbnQgcmF0ZSBvZiBncm93dGgsIHRoZSBwb3B1bGF0aW9uIG9mIE1leGljbyB3aWxsIGRvdWJsZSBpbiAzNi44IHllYXJzLiBXaGF0IGlzIGl0cyBhbm51YWwgcGVyY2VudCByYXRlIG9mIGdyb3d0aD8KCkFuc3dlcjogW19deyRyfXszfSUKCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgoxLjklCgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2023-04-05T16:02:07-04:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.3.12)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$r = Compute("100*(2**(1/36.8)-1)")->with(
+  tolType => 'absolute',
+  tolerance => .051,
+);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+At its current rate of growth, the population of Mexico will double in 36.8 years. What is its annual percent rate of growth?
+
+Answer: [_]{$r}{3}%
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+1.9%
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-8" ww-id="webwork-8">
+    <static seed="8">
+      <statement><p>How can you find the growth factor for an exponential function when you know its doubling time?</p>
+</statement>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Vzc2F5bWFjcm9zLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7CkNvbnRleHQoJ051bWVyaWMnKTsKCkJFR0lOX1BHTUwKSG93IGNhbiB5b3UgZmluZCB0aGUgZ3Jvd3RoIGZhY3RvciBmb3IgYW4gZXhwb25lbnRpYWwgZnVuY3Rpb24gd2hlbiB5b3Uga25vdyBpdHMgZG91YmxpbmcgdGltZT8KCltAQU5TKGVzc2F5X2NtcCgpKTtlc3NheV9ib3goNiw3NilAXSogW0Blc3NheV9oZWxwKClAXSoKCgpFTkRfUEdNTAoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2023-04-05T16:02:07-04:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.3.13)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGessaymacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+How can you find the growth factor for an exponential function when you know its doubling time?
+
+[@ANS(essay_cmp()); essay_box(6,76)@]* [@essay_help()@]*
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-9" ww-id="webwork-9">
+    <static seed="9">
+      <statement><p>The half-life of DDT is 15 years. This means that:</p>
+<p><var form="buttons" name="AnSwEr0001">
+<li>
+<p>A) 30 pounds of DDT dissolve in one year.</p>
+</li>
+<li>
+<p>B) 100 pounds of DDT dissolve in 30 years.</p>
+</li>
+<li>
+<p>C) After 30 years, 100 pounds of DDT is reduced to 25 pounds.</p>
+</li>
+<li>
+<p>D) Each half-pound of DDT takes 15 years to dissolve.</p>
+</li>
+</var></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{C) After ... 25 pounds.}</m>
+        </p>
+      </answer>
+      <solution><p>After 30 years, 100 pounds of DDT is reduced to 25 pounds.</p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJSYWRpb0J1dHRvbnMucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRkZHQgPSBSYWRpb0J1dHRvbnMoCiAgWyJBKSAzMCBwb3VuZHMgb2YgRERUIGRpc3NvbHZlIGluIG9uZSB5ZWFyLiIsCiAgIkIpIDEwMCBwb3VuZHMgb2YgRERUIGRpc3NvbHZlIGluIDMwIHllYXJzLiIsCiAgIkMpIEFmdGVyIDMwIHllYXJzLCAxMDAgcG91bmRzIG9mIEREVCBpcyByZWR1Y2VkIHRvIDI1IHBvdW5kcy4iLAogICJEKSBFYWNoIGhhbGYtcG91bmQgb2YgRERUIHRha2VzIDE1IHllYXJzIHRvIGRpc3NvbHZlLiJdLAogIDIsIAopOwoKQkVHSU5fUEdNTApUaGUgaGFsZi1saWZlIG9mIEREVCBpcyAxNSB5ZWFycy4gVGhpcyBtZWFucyB0aGF0OgoKICAgIFtfXXskZGR0fXs1fQoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OCkFmdGVyIDMwIHllYXJzLCAxMDAgcG91bmRzIG9mIEREVCBpcyByZWR1Y2VkIHRvIDI1IHBvdW5kcy4KCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2023-04-05T16:02:07-04:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.3.15)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserRadioButtons.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$ddt = RadioButtons(
+  ["A) 30 pounds of DDT dissolve in one year.",
+  "B) 100 pounds of DDT dissolve in 30 years.",
+  "C) After 30 years, 100 pounds of DDT is reduced to 25 pounds.",
+  "D) Each half-pound of DDT takes 15 years to dissolve."],
+  2, 
+);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+The half-life of DDT is 15 years. This means that:
+
+    [_]{$ddt}{5}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+After 30 years, 100 pounds of DDT is reduced to 25 pounds.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-10" ww-id="webwork-10">
+    <static seed="10">
+      <statement><p>Alcohol is eliminated from the body at a rate of 15% per hour.</p>
+<p><ol label="a.">
+<li>
+<p>Write a decay formula for the amount of alcohol remaining in the body, using <m>A_0</m> for the initial amount of alcohol.  [Note: Enter <lq/>A<rq/> to get <m>A_0\text{.}</m>].</p>
+<p><m>A(t)=</m><fillin name="AnSwEr0001" characters="15"/></p>
+</li>
+<li>
+<p>What is the half-life of alcohol in the body?</p>
+<p><fillin name="AnSwEr0002" characters="3"/> hours</p>
+</li>
+</ol></p>
+</statement>
+      <answer>
+        <p>
+          <m>A_0\cdot 0.85^{t}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\frac{\log\!\left(\frac{1}{2}\right)}{\log\!\left(0.85\right)}</m>
+        </p>
+      </answer>
+      <solution><p><ol label="a.">
+<li>
+<p><m>A(t) = A_0(0.85)^t</m></p>
+</li>
+<li>
+<p><m>4.3</m> hours</p>
+</li>
+</ol></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgpLT52YXJpYWJsZXMtPmFkZChBMCA9PiBbIlJlYWwiLFRlWD0+IkFfMCJdLCB0PT4iUmVhbCIpOwokZiA9IEZvcm11bGEoIkEwICogMC44NSoqdCIpOwokaGwgPSBDb21wdXRlKCJsb2coMS8yKS9sb2coMC44NSkiKS0+d2l0aCgKICB0b2xUeXBlID0+ICdhYnNvbHV0ZScsCiAgdG9sZXJhbmNlID0+IC4wNSwKKTsKCkJFR0lOX1BHTUwKQWxjb2hvbCBpcyBlbGltaW5hdGVkIGZyb20gdGhlIGJvZHkgYXQgYSByYXRlIG9mIDE1JSBwZXIgaG91ci4KCmEuICBXcml0ZSBhIGRlY2F5IGZvcm11bGEgZm9yIHRoZSBhbW91bnQgb2YgYWxjb2hvbCByZW1haW5pbmcgaW4gdGhlIGJvZHksIHVzaW5nIFtgQV8wYF0gZm9yIHRoZSBpbml0aWFsIGFtb3VudCBvZiBhbGNvaG9sLiAgXFtOb3RlOiBFbnRlciAiQSIgdG8gZ2V0IFtgQV8wXHRleHR7Ln1gXVxdLgoKICAgIFtgQSh0KT1gXVtfXXskZn17MTV9CgoKYS4gIFdoYXQgaXMgdGhlIGhhbGYtbGlmZSBvZiBhbGNvaG9sIGluIHRoZSBib2R5PwoKICAgIFtfXXskaGx9ezN9IGhvdXJzCgoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OCmEuICBbYEEodCkgPSBBXzAoMC44NSledGBdCgoKYS4gIFtgNC4zYF0gaG91cnMKCgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2023-04-05T16:02:07-04:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.3.16)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context()->variables->add(A0 => ["Real",TeX=>"A_0"], t=>"Real");
+$f = Formula("A0 * 0.85**t");
+$hl = Compute("log(1/2)/log(0.85)")->with(
+  tolType => 'absolute',
+  tolerance => .05,
+);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Alcohol is eliminated from the body at a rate of 15% per hour.
+
+a.  Write a decay formula for the amount of alcohol remaining in the body, using [`A_0`] for the initial amount of alcohol.  \[Note: Enter "A" to get [`A_0\text{.}`]\].
+
+    [`A(t)=`][_]{$f}{15}
+
+a.  What is the half-life of alcohol in the body?
+
+    [_]{$hl}{3} hours
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  [`A(t) = A_0(0.85)^t`]
+
+a.  [`4.3`] hours
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-11" ww-id="webwork-11">
+    <static seed="11">
+      <statement><p>Cesium-137, with a half-life of 30 years, is one of the most dangerous by-products of nuclear fission. What is the annual decay rate for cesium-137?</p>
+<p>Answer: <fillin name="AnSwEr0001" characters="3"/>%</p>
+</statement>
+      <answer>
+        <p>
+          <m>100\cdot \left(1-\frac{1}{2^{\frac{1}{30}}}\right)</m>
+        </p>
+      </answer>
+      <solution><p><m>2.28\%</m></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRyID0gQ29tcHV0ZSgiMTAwKigxLSgxLzIqKigxLzMwKSkpIiktPndpdGgoCiAgdG9sVHlwZSA9PiAnYWJzb2x1dGUnLAogIHRvbGVyYW5jZSA9PiAuMDA1LAopOwoKQkVHSU5fUEdNTApDZXNpdW0tMTM3LCB3aXRoIGEgaGFsZi1saWZlIG9mIDMwIHllYXJzLCBpcyBvbmUgb2YgdGhlIG1vc3QgZGFuZ2Vyb3VzIGJ5LXByb2R1Y3RzIG9mIG51Y2xlYXIgZmlzc2lvbi4gV2hhdCBpcyB0aGUgYW5udWFsIGRlY2F5IHJhdGUgZm9yIGNlc2l1bS0xMzc/CgpBbnN3ZXI6IFtfXXskcn17M30lCgoKRU5EX1BHTUwKCkJFR0lOX1BHTUxfU09MVVRJT04KW2AyLjI4XCVgXQoKCkVORF9QR01MX1NPTFVUSU9OCgpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2023-04-05T16:02:07-04:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.3.18)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$r = Compute("100*(1-(1/2**(1/30)))")->with(
+  tolType => 'absolute',
+  tolerance => .005,
+);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Cesium-137, with a half-life of 30 years, is one of the most dangerous by-products of nuclear fission. What is the annual decay rate for cesium-137?
+
+Answer: [_]{$r}{3}%
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+[`2.28\%`]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-12" ww-id="webwork-12">
+    <static seed="12">
+      <statement><p>How can you use the half-life to sketch a graph of an exponential function?</p>
+</statement>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2Vzc2F5bWFjcm9zLnBsIiwiUEdjb3Vyc2UucGwiLCk7VEVYVChiZWdpbnByb2JsZW0oKSk7CkNvbnRleHQoJ051bWVyaWMnKTsKCkJFR0lOX1BHTUwKSG93IGNhbiB5b3UgdXNlIHRoZSBoYWxmLWxpZmUgdG8gc2tldGNoIGEgZ3JhcGggb2YgYW4gZXhwb25lbnRpYWwgZnVuY3Rpb24/CgpbQEFOUyhlc3NheV9jbXAoKSk7ZXNzYXlfYm94KDYsNzYpQF0qIFtAZXNzYXlfaGVscCgpQF0qCgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2023-04-05T16:02:07-04:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.3.19)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGessaymacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+How can you use the half-life to sketch a graph of an exponential function?
+
+[@ANS(essay_cmp()); essay_box(6,76)@]* [@essay_help()@]*
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-13" ww-id="webwork-13">
+    <static seed="13">
+      <statement><p>The following graph shows the % battery charge on a cell phone as a function of the number of hours after midnight. The owner keeps the phone charging while she sleeps at night.</p>
+<p><ol label="a.">
+<li>
+<p>How many hours does it take to charge the phone?</p>
+<p>Answer: <fillin name="AnSwEr0001" characters="10"/></p>
+</li>
+<li>
+<p>What time does the user begin recharging the phone each day?</p>
+<p>Answer: <var form="popup" name="AnSwEr0002">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>12:00 A.M.</p>
+</li>
+<li>
+<p>6:00 A.M.</p>
+</li>
+<li>
+<p>12:00 P.M.</p>
+</li>
+<li>
+<p>6:00 P.M.</p>
+</li>
+</var></p>
+</li>
+<li>
+<p>This function is <em>periodic</em>, meaning that it repeats itself over and over.</p>
+<p>How many hours does it take to repeat itself completely?</p>
+<p>Answer: <fillin name="AnSwEr0003" characters="10"/></p>
+</li>
+</ol></p>
+</statement>
+      <answer>
+        <p>
+          <m>6</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{6:00 P.M.}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>24</m>
+        </p>
+      </answer>
+      <solution><p><ol label="a.">
+<li>
+<p>It takes <m>6</m> hours to fully recharge the phone.</p>
+</li>
+<li>
+<p>The user begins recharging the phone at <m>6:00</m> P.M. each day.</p>
+</li>
+<li>
+<p>It takes <m>24</m> hours for this function to repeat itself.</p>
+</li>
+</ol></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJQb3BVcC5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCdOdW1lcmljJyk7JHRpbWVUb0NoYXJnZT1SZWFsKDYpOwokYmVnaW5DaGFyZ2luZz1Qb3BVcCgKWyI/IiwiMTI6MDAgQS5NLiIsIjY6MDAgQS5NLiIsIjEyOjAwIFAuTS4iLCI2OjAwIFAuTS4iXSwiNjowMCBQLk0uIgopOwokcGVyaW9kPVJlYWwoMjQpOwoKQkVHSU5fUEdNTApUaGUgZm9sbG93aW5nIGdyYXBoIHNob3dzIHRoZSAlIGJhdHRlcnkgY2hhcmdlIG9uIGEgY2VsbCBwaG9uZSBhcyBhIGZ1bmN0aW9uIG9mIHRoZSBudW1iZXIgb2YgaG91cnMgYWZ0ZXIgbWlkbmlnaHQuIFRoZSBvd25lciBrZWVwcyB0aGUgcGhvbmUgY2hhcmdpbmcgd2hpbGUgc2hlIHNsZWVwcyBhdCBuaWdodC4KCmEuICBIb3cgbWFueSBob3VycyBkb2VzIGl0IHRha2UgdG8gY2hhcmdlIHRoZSBwaG9uZT8KCiAgICBBbnN3ZXI6IFtfXXskdGltZVRvQ2hhcmdlfXsxMH0KCgphLiAgV2hhdCB0aW1lIGRvZXMgdGhlIHVzZXIgYmVnaW4gcmVjaGFyZ2luZyB0aGUgcGhvbmUgZWFjaCBkYXk/CgogICAgQW5zd2VyOiBbX117JGJlZ2luQ2hhcmdpbmd9ezV9CgoKYS4gIFRoaXMgZnVuY3Rpb24gaXMgX3BlcmlvZGljXywgbWVhbmluZyB0aGF0IGl0IHJlcGVhdHMgaXRzZWxmIG92ZXIgYW5kIG92ZXIuCgogICAgSG93IG1hbnkgaG91cnMgZG9lcyBpdCB0YWtlIHRvIHJlcGVhdCBpdHNlbGYgY29tcGxldGVseT8KCiAgICBBbnN3ZXI6IFtfXXskcGVyaW9kfXsxMH0KCgoKRU5EX1BHTUwKCkJFR0lOX1BHTUxfU09MVVRJT04KYS4gIEl0IHRha2VzIFtgNmBdIGhvdXJzIHRvIGZ1bGx5IHJlY2hhcmdlIHRoZSBwaG9uZS4KCgphLiAgVGhlIHVzZXIgYmVnaW5zIHJlY2hhcmdpbmcgdGhlIHBob25lIGF0IFtgNjowMGBdIFAuTS4gZWFjaCBkYXkuCgoKYS4gIEl0IHRha2VzIFtgMjRgXSBob3VycyBmb3IgdGhpcyBmdW5jdGlvbiB0byByZXBlYXQgaXRzZWxmLgoKCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2023-04-05T16:02:07-04:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.4.1)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserPopUp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$timeToCharge=Real(6);
+$beginCharging=PopUp(
+["?","12:00 A.M.","6:00 A.M.","12:00 P.M.","6:00 P.M."],"6:00 P.M."
+);
+$period=Real(24);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+The following graph shows the % battery charge on a cell phone as a function of the number of hours after midnight. The owner keeps the phone charging while she sleeps at night.
+
+a.  How many hours does it take to charge the phone?
+
+    Answer: [_]{$timeToCharge}{10}
+
+a.  What time does the user begin recharging the phone each day?
+
+    Answer: [_]{$beginCharging}{5}
+
+a.  This function is _periodic_, meaning that it repeats itself over and over.
+
+    How many hours does it take to repeat itself completely?
+
+    Answer: [_]{$period}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  It takes [`6`] hours to fully recharge the phone.
+
+a.  The user begins recharging the phone at [`6:00`] P.M. each day.
+
+a.  It takes [`24`] hours for this function to repeat itself.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-14" ww-id="webwork-14">
+    <static seed="14">
+      <statement><p>The period of each function below is a whole number. Find the period of each function.</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" width="100%" pi:generated="webwork\images\webwork-14-image-1.png"/>
+<p>Period = <fillin name="AnSwEr0001" characters="10"/></p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" width="100%" pi:generated="webwork\images\webwork-14-image-2.png"/>
+<p>Period = <fillin name="AnSwEr0002" characters="10"/></p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" width="100%" pi:generated="webwork\images\webwork-14-image-3.png"/>
+<p>Period = <fillin name="AnSwEr0003" characters="10"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>4</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>5</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>3</m>
+        </p>
+      </answer>
+      <solution><p><ol label="a.">
+<li>
+<p>The period is 4.</p>
+</li>
+<li>
+<p>The period is 5.</p>
+</li>
+<li>
+<p>The period is 3.</p>
+</li>
+</ol></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwiUEdjb3Vyc2UucGwiLCk7JHJlZnJlc2hDYWNoZWRJbWFnZXM9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRwZXI9UmVhbCg0KTsKJHBlcjE9UmVhbCg1KTsKJHBlcjI9UmVhbCgzKTsKCiRncj1pbml0X2dyYXBoKC0xLC01LDEyLDUsCmF4ZXM9PlswLDBdLApncmlkPT5bMTMsMTBdLApzaXplPT5bNDAwLDQwMF0KKTsKYWRkX2Z1bmN0aW9ucygkZ3IsICIyKmNvcyhwaSp4LzIpKzEgZm9yIHggaW4gPC0xLDEyPiB1c2luZyBjb2xvcjpyZWQgYW5kIHdlaWdodDoyIik7CgokZ3IxPWluaXRfZ3JhcGgoLTEsLTUsMTIsNSwKYXhlcz0+WzAsMF0sCmdyaWQ9PlsxMywxMF0sCnNpemU9Pls0MDAsNDAwXQopOwphZGRfZnVuY3Rpb25zKCRncjEsICItMnggZm9yIHggaW4gPC0xLDE+IHVzaW5nIGNvbG9yOnJlZCBhbmQgd2VpZ2h0OjIiKTsKYWRkX2Z1bmN0aW9ucygkZ3IxLCAiLTYrNHggZm9yIHggaW4gPDEsMj4gdXNpbmcgY29sb3I6cmVkIGFuZCB3ZWlnaHQ6MiIpOwphZGRfZnVuY3Rpb25zKCRncjEsICI2LTJ4IGZvciB4IGluIDwyLDM+IHVzaW5nIGNvbG9yOnJlZCBhbmQgd2VpZ2h0OjIiKTsKYWRkX2Z1bmN0aW9ucygkZ3IxLCAiLTYrMnggZm9yIHggaW4gPDMsND4gdXNpbmcgY29sb3I6cmVkIGFuZCB3ZWlnaHQ6MiIpOwphZGRfZnVuY3Rpb25zKCRncjEsICIxMC0yeCBmb3IgeCBpbiA8NCw2PiB1c2luZyBjb2xvcjpyZWQgYW5kIHdlaWdodDoyIik7CmFkZF9mdW5jdGlvbnMoJGdyMSwgIi0yNis0eCBmb3IgeCBpbiA8Niw3PiB1c2luZyBjb2xvcjpyZWQgYW5kIHdlaWdodDoyIik7CmFkZF9mdW5jdGlvbnMoJGdyMSwgIjE2LTJ4IGZvciB4IGluIDw3LDg+IHVzaW5nIGNvbG9yOnJlZCBhbmQgd2VpZ2h0OjIiKTsKYWRkX2Z1bmN0aW9ucygkZ3IxLCAiLTE2KzJ4IGZvciB4IGluIDw4LDk+IHVzaW5nIGNvbG9yOnJlZCBhbmQgd2VpZ2h0OjIiKTsKYWRkX2Z1bmN0aW9ucygkZ3IxLCAiMjAtMnggZm9yIHggaW4gPDksMTE+IHVzaW5nIGNvbG9yOnJlZCBhbmQgd2VpZ2h0OjIiKTsKYWRkX2Z1bmN0aW9ucygkZ3IxLCAiLTQ2KzR4IGZvciB4IGluIDwxMSwxMj4gdXNpbmcgY29sb3I6cmVkIGFuZCB3ZWlnaHQ6MiIpOwphZGRfZnVuY3Rpb25zKCRncjEsICIyNi0yeCBmb3IgeCBpbiA8MTIsMTM+IHVzaW5nIGNvbG9yOnJlZCBhbmQgd2VpZ2h0OjIiKTsKCiRncjI9aW5pdF9ncmFwaCgtMiwtNiwxMiw2LApheGVzPT5bMCwwXSwKZ3JpZD0+WzE0LDEyXSwKc2l6ZT0+WzQwMCw0MDBdCik7CmFkZF9mdW5jdGlvbnMoJGdyMiwgIjIqc2luKDIqcGkvMyp4KS0yKmNvcygyKnBpLzEuNSp4KS0yIGZvciB4IGluIDwtMiwxMj4gdXNpbmcgY29sb3I6cmVkIGFuZCB3ZWlnaHQ6MiIpOwoKQkVHSU5fUEdNTApUaGUgcGVyaW9kIG9mIGVhY2ggZnVuY3Rpb24gYmVsb3cgaXMgYSB3aG9sZSBudW1iZXIuIEZpbmQgdGhlIHBlcmlvZCBvZiBlYWNoIGZ1bmN0aW9uLgoKPj4gW0BpbWFnZShpbnNlcnRHcmFwaCgkZ3IpLCB3aWR0aD0+NjAwKUBdKiAgPDwKClBlcmlvZCA9IFtfXXskcGVyfXsxMH0KCj4+IFtAaW1hZ2UoaW5zZXJ0R3JhcGgoJGdyMSksIHdpZHRoPT42MDApQF0qICA8PAoKUGVyaW9kID0gW19deyRwZXIxfXsxMH0KCj4+IFtAaW1hZ2UoaW5zZXJ0R3JhcGgoJGdyMiksIHdpZHRoPT42MDApQF0qICA8PAoKUGVyaW9kID0gW19deyRwZXIyfXsxMH0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgphLiAgVGhlIHBlcmlvZCBpcyBbJHBlcl0uCgoKYS4gIFRoZSBwZXJpb2QgaXMgWyRwZXIxXS4KCgphLiAgVGhlIHBlcmlvZCBpcyBbJHBlcjJdLgoKCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2023-04-05T16:02:07-04:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.4.2)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGgraphmacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$per=Real(4);
+$per1=Real(5);
+$per2=Real(3);
+
+$gr=init_graph(-1,-5,12,5,
+axes=>[0,0],
+grid=>[13,10],
+size=>[400,400]
+);
+add_functions($gr, "2*cos(pi*x/2)+1 for x in <-1,12> using color:red and weight:2");
+
+$gr1=init_graph(-1,-5,12,5,
+axes=>[0,0],
+grid=>[13,10],
+size=>[400,400]
+);
+add_functions($gr1, "-2x for x in <-1,1> using color:red and weight:2");
+add_functions($gr1, "-6+4x for x in <1,2> using color:red and weight:2");
+add_functions($gr1, "6-2x for x in <2,3> using color:red and weight:2");
+add_functions($gr1, "-6+2x for x in <3,4> using color:red and weight:2");
+add_functions($gr1, "10-2x for x in <4,6> using color:red and weight:2");
+add_functions($gr1, "-26+4x for x in <6,7> using color:red and weight:2");
+add_functions($gr1, "16-2x for x in <7,8> using color:red and weight:2");
+add_functions($gr1, "-16+2x for x in <8,9> using color:red and weight:2");
+add_functions($gr1, "20-2x for x in <9,11> using color:red and weight:2");
+add_functions($gr1, "-46+4x for x in <11,12> using color:red and weight:2");
+add_functions($gr1, "26-2x for x in <12,13> using color:red and weight:2");
+
+$gr2=init_graph(-2,-6,12,6,
+axes=>[0,0],
+grid=>[14,12],
+size=>[400,400]
+);
+add_functions($gr2, "2*sin(2*pi/3*x)-2*cos(2*pi/1.5*x)-2 for x in <-2,12> using color:red and weight:2");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+The period of each function below is a whole number. Find the period of each function.
+
+>> [@image(insertGraph($gr), width=>600)@]*  <<
+
+Period = [_]{$per}{10}
+
+>> [@image(insertGraph($gr1), width=>600)@]*  <<
+
+Period = [_]{$per1}{10}
+
+>> [@image(insertGraph($gr2), width=>600)@]*  <<
+
+Period = [_]{$per2}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  The period is [$per].
+
+a.  The period is [$per1].
+
+a.  The period is [$per2].
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-15" ww-id="webwork-15">
+    <static seed="15">
+      <statement><p>Suppose a person boards at the bottom of a Ferris Wheel and rides around for <m>35</m> seconds. See the graph below.</p>
+<p>At bottom left is a diagram of the Ferris Wheel, where the triangle shows the position of rider. Using the sliders at right, you can adjust things like:
+<ul label="disc">
+<li>
+<p>the wheel<rsq/>s <em>radius</em></p>
+</li>
+<li>
+<p>the <em>height</em> of the loading platform (which moves the wheel up or down)</p>
+</li>
+<li>
+<p>the <em>period</em> of the wheel.</p>
+</li>
+</ul></p>
+<p>The graph above shows the rider<rsq/>s height above the ground (in meters) as they ride on the wheel for <m>35</m> seconds.</p>
+<p><ol label="a.">
+<li>
+<p>For a person riding a Ferris Wheel, what causes a vertical stretch for the graph?</p>
+<p>Answer: <var form="popup" name="AnSwEr0001">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>Changing the radius of the wheel</p>
+</li>
+<li>
+<p>Changing the platform height</p>
+</li>
+<li>
+<p>Changing the period</p>
+</li>
+</var></p>
+</li>
+<li>
+<p>What causes a vertical shift for the graph?</p>
+<p>Answer: <var form="popup" name="AnSwEr0002">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>Changing the radius of the wheel</p>
+</li>
+<li>
+<p>Changing the platform height</p>
+</li>
+<li>
+<p>Changing the period</p>
+</li>
+</var></p>
+</li>
+<li>
+<p>What causes a horizontal stretch for the graph?</p>
+<p>Answer: <var form="popup" name="AnSwEr0003">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>Changing the radius of the wheel</p>
+</li>
+<li>
+<p>Changing the platform height</p>
+</li>
+<li>
+<p>Changing the period</p>
+</li>
+</var></p>
+</li>
+</ol></p>
+</statement>
+      <hint><p>Use the slider to increase the time completely. Then change the sliders for the <em>radius</em>, <em>platform height</em> and <em>period</em> and see what happens to the graph.</p>
+</hint>
+      <answer>
+        <p>
+          <m>\text{Changing the radius of the wheel}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{Changing the platform height}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{Changing the period}</m>
+        </p>
+      </answer>
+      <solution><p><ol label="a.">
+<li>
+<p>A vertical stretch occurs when the radius of the wheel changes. This should make sense because if the wheel is larger, the rider will reach a different maximum height.</p>
+</li>
+<li>
+<p>A vertical shift occurs when the boarding height is increased. The whole wheel moves <em>up</em>, causing the graph to shift vertically.</p>
+</li>
+<li>
+<p>A horizontal stretch occurs when the period of the wheel changes. If it takes longer for the wheel to make a complete rotation, then the rider<rsq/>s height function will be stretched horizontally.</p>
+</li>
+</ol></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJQb3BVcC5wbCIsIlBHY291cnNlLnBsIiwpO1RFWFQoYmVnaW5wcm9ibGVtKCkpOwpDb250ZXh0KCdOdW1lcmljJyk7JHZlcnRTdHJldGNoPVBvcFVwKFsiPyIsIkNoYW5naW5nIHRoZSByYWRpdXMgb2YgdGhlIHdoZWVsIiwiQ2hhbmdpbmcgdGhlIHBsYXRmb3JtIGhlaWdodCIsIkNoYW5naW5nIHRoZSBwZXJpb2QiXSwiQ2hhbmdpbmcgdGhlIHJhZGl1cyBvZiB0aGUgd2hlZWwiKTsKJHZlcnRTaGlmdD1Qb3BVcChbIj8iLCJDaGFuZ2luZyB0aGUgcmFkaXVzIG9mIHRoZSB3aGVlbCIsIkNoYW5naW5nIHRoZSBwbGF0Zm9ybSBoZWlnaHQiLCJDaGFuZ2luZyB0aGUgcGVyaW9kIl0sIkNoYW5naW5nIHRoZSBwbGF0Zm9ybSBoZWlnaHQiKTsKJGhvcml6b250YWxTdHJldGNoPVBvcFVwKFsiPyIsIkNoYW5naW5nIHRoZSByYWRpdXMgb2YgdGhlIHdoZWVsIiwiQ2hhbmdpbmcgdGhlIHBsYXRmb3JtIGhlaWdodCIsIkNoYW5naW5nIHRoZSBwZXJpb2QiXSwiQ2hhbmdpbmcgdGhlIHBlcmlvZCIpOwoKQkVHSU5fUEdNTApTdXBwb3NlIGEgcGVyc29uIGJvYXJkcyBhdCB0aGUgYm90dG9tIG9mIGEgRmVycmlzIFdoZWVsIGFuZCByaWRlcyBhcm91bmQgZm9yIFtgMzVgXSBzZWNvbmRzLiBTZWUgdGhlIGdyYXBoIGJlbG93LgoKQXQgYm90dG9tIGxlZnQgaXMgYSBkaWFncmFtIG9mIHRoZSBGZXJyaXMgV2hlZWwsIHdoZXJlIHRoZSB0cmlhbmdsZSBzaG93cyB0aGUgcG9zaXRpb24gb2YgcmlkZXIuIFVzaW5nIHRoZSBzbGlkZXJzIGF0IHJpZ2h0LCB5b3UgY2FuIGFkanVzdCB0aGluZ3MgbGlrZToKKiB0aGUgd2hlZWwncyBfcmFkaXVzXwoKCiogdGhlIF9oZWlnaHRfIG9mIHRoZSBsb2FkaW5nIHBsYXRmb3JtICh3aGljaCBtb3ZlcyB0aGUgd2hlZWwgdXAgb3IgZG93bikKCgoqIHRoZSBfcGVyaW9kXyBvZiB0aGUgd2hlZWwuCgoKVGhlIGdyYXBoIGFib3ZlIHNob3dzIHRoZSByaWRlcidzIGhlaWdodCBhYm92ZSB0aGUgZ3JvdW5kIChpbiBtZXRlcnMpIGFzIHRoZXkgcmlkZSBvbiB0aGUgd2hlZWwgZm9yIFtgMzVgXSBzZWNvbmRzLgoKYS4gIEZvciBhIHBlcnNvbiByaWRpbmcgYSBGZXJyaXMgV2hlZWwsIHdoYXQgY2F1c2VzIGEgdmVydGljYWwgc3RyZXRjaCBmb3IgdGhlIGdyYXBoPwoKICAgIEFuc3dlcjogW19deyR2ZXJ0U3RyZXRjaH17NX0KCgphLiAgV2hhdCBjYXVzZXMgYSB2ZXJ0aWNhbCBzaGlmdCBmb3IgdGhlIGdyYXBoPwoKICAgIEFuc3dlcjogW19deyR2ZXJ0U2hpZnR9ezV9CgoKYS4gIFdoYXQgY2F1c2VzIGEgaG9yaXpvbnRhbCBzdHJldGNoIGZvciB0aGUgZ3JhcGg/CgogICAgQW5zd2VyOiBbX117JGhvcml6b250YWxTdHJldGNofXs1fQoKCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9ISU5UClVzZSB0aGUgc2xpZGVyIHRvIGluY3JlYXNlIHRoZSB0aW1lIGNvbXBsZXRlbHkuIFRoZW4gY2hhbmdlIHRoZSBzbGlkZXJzIGZvciB0aGUgX3JhZGl1c18sIF9wbGF0Zm9ybSBoZWlnaHRfIGFuZCBfcGVyaW9kXyBhbmQgc2VlIHdoYXQgaGFwcGVucyB0byB0aGUgZ3JhcGguCgoKRU5EX1BHTUxfSElOVAoKQkVHSU5fUEdNTF9TT0xVVElPTgphLiAgQSB2ZXJ0aWNhbCBzdHJldGNoIG9jY3VycyB3aGVuIHRoZSByYWRpdXMgb2YgdGhlIHdoZWVsIGNoYW5nZXMuIFRoaXMgc2hvdWxkIG1ha2Ugc2Vuc2UgYmVjYXVzZSBpZiB0aGUgd2hlZWwgaXMgbGFyZ2VyLCB0aGUgcmlkZXIgd2lsbCByZWFjaCBhIGRpZmZlcmVudCBtYXhpbXVtIGhlaWdodC4KCgphLiAgQSB2ZXJ0aWNhbCBzaGlmdCBvY2N1cnMgd2hlbiB0aGUgYm9hcmRpbmcgaGVpZ2h0IGlzIGluY3JlYXNlZC4gVGhlIHdob2xlIHdoZWVsIG1vdmVzIF91cF8sIGNhdXNpbmcgdGhlIGdyYXBoIHRvIHNoaWZ0IHZlcnRpY2FsbHkuCgoKYS4gIEEgaG9yaXpvbnRhbCBzdHJldGNoIG9jY3VycyB3aGVuIHRoZSBwZXJpb2Qgb2YgdGhlIHdoZWVsIGNoYW5nZXMuIElmIGl0IHRha2VzIGxvbmdlciBmb3IgdGhlIHdoZWVsIHRvIG1ha2UgYSBjb21wbGV0ZSByb3RhdGlvbiwgdGhlbiB0aGUgcmlkZXIncyBoZWlnaHQgZnVuY3Rpb24gd2lsbCBiZSBzdHJldGNoZWQgaG9yaXpvbnRhbGx5LgoKCgpFTkRfUEdNTF9TT0xVVElPTgoKRU5ERE9DVU1FTlQoKTs=" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2023-04-05T16:02:07-04:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.4.3)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "parserPopUp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$vertStretch=PopUp(["?","Changing the radius of the wheel","Changing the platform height","Changing the period"],"Changing the radius of the wheel");
+$vertShift=PopUp(["?","Changing the radius of the wheel","Changing the platform height","Changing the period"],"Changing the platform height");
+$horizontalStretch=PopUp(["?","Changing the radius of the wheel","Changing the platform height","Changing the period"],"Changing the period");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+Suppose a person boards at the bottom of a Ferris Wheel and rides around for [`35`] seconds. See the graph below.
+
+At bottom left is a diagram of the Ferris Wheel, where the triangle shows the position of rider. Using the sliders at right, you can adjust things like:
+* the wheel's _radius_
+
+* the _height_ of the loading platform (which moves the wheel up or down)
+
+* the _period_ of the wheel.
+
+The graph above shows the rider's height above the ground (in meters) as they ride on the wheel for [`35`] seconds.
+
+a.  For a person riding a Ferris Wheel, what causes a vertical stretch for the graph?
+
+    Answer: [_]{$vertStretch}{5}
+
+a.  What causes a vertical shift for the graph?
+
+    Answer: [_]{$vertShift}{5}
+
+a.  What causes a horizontal stretch for the graph?
+
+    Answer: [_]{$horizontalStretch}{5}
+
+END_PGML
+
+############################################################
+# Hint
+############################################################
+#Set value of $showHint in PGcourse.pl for course-wide attempt threshhold for revealing hints
+
+BEGIN_PGML_HINT
+Use the slider to increase the time completely. Then change the sliders for the _radius_, _platform height_ and _period_ and see what happens to the graph.
+
+END_PGML_HINT
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  A vertical stretch occurs when the radius of the wheel changes. This should make sense because if the wheel is larger, the rider will reach a different maximum height.
+
+a.  A vertical shift occurs when the boarding height is increased. The whole wheel moves _up_, causing the graph to shift vertically.
+
+a.  A horizontal stretch occurs when the period of the wheel changes. If it takes longer for the wheel to make a complete rotation, then the rider's height function will be stretched horizontally.
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-16" ww-id="webwork-16">
+    <static seed="16">
+      <statement><!-- PTX:WARNING: PGML wanted to center align here. -->
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" width="100%" pi:generated="webwork\images\webwork-16-image-1.png"/>
+<p>The graph above shows a periodic function. Use it to determine the values below.</p>
+<p>Period = <fillin name="AnSwEr0001" characters="10"/></p>
+<p>Amplitude = <fillin name="AnSwEr0002" characters="10"/></p>
+<p>Midline: <m>y =</m><fillin name="AnSwEr0003" characters="10"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>4</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1.5</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-3.5</m>
+        </p>
+      </answer>
+      <solution><p><ol label="a.">
+<li>
+<p>Period = 4</p>
+</li>
+<li>
+<p>Amplitude = 1.5</p>
+</li>
+<li>
+<p>Midline: <m>y =</m>-3.5</p>
+</li>
+</ol></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwiUEdjb3Vyc2UucGwiLCk7JHJlZnJlc2hDYWNoZWRJbWFnZXM9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRwZXJpb2Q9UmVhbCg0KTsKJGFtcGxpdHVkZT1SZWFsKDEuNSk7CiRtaWRsaW5lPVJlYWwoLTMuNSk7CiRncj1pbml0X2dyYXBoKC0yLC02LDEyLDYsCmF4ZXM9PlswLDBdLApncmlkPT5bMTQsMTJdLApzaXplPT5bNDAwLDQwMF0KKTsKYWRkX2Z1bmN0aW9ucygkZ3IsICItMS41KmNvcygyKnBpLzQqeCktMy41IGZvciB4IGluIDwtMiwxMj4gdXNpbmcgY29sb3I6cmVkIGFuZCB3ZWlnaHQ6MiIpOwoKQkVHSU5fUEdNTAo+PiBbQGltYWdlKGluc2VydEdyYXBoKCRnciksIHdpZHRoPT42MDApQF0qICA8PAoKVGhlIGdyYXBoIGFib3ZlIHNob3dzIGEgcGVyaW9kaWMgZnVuY3Rpb24uIFVzZSBpdCB0byBkZXRlcm1pbmUgdGhlIHZhbHVlcyBiZWxvdy4KClBlcmlvZCA9IFtfXXskcGVyaW9kfXsxMH0KCkFtcGxpdHVkZSA9IFtfXXskYW1wbGl0dWRlfXsxMH0KCk1pZGxpbmU6IFtgeSA9IGBdW19deyRtaWRsaW5lfXsxMH0KCgpFTkRfUEdNTAoKQkVHSU5fUEdNTF9TT0xVVElPTgphLiAgUGVyaW9kID0gWyRwZXJpb2RdCgoKYS4gIEFtcGxpdHVkZSA9IFskYW1wbGl0dWRlXQoKCmEuICBNaWRsaW5lOiBbYHkgPSBgXVskbWlkbGluZV0KCgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2023-04-05T16:02:07-04:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.4.4)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGgraphmacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$period=Real(4);
+$amplitude=Real(1.5);
+$midline=Real(-3.5);
+$gr=init_graph(-2,-6,12,6,
+axes=>[0,0],
+grid=>[14,12],
+size=>[400,400]
+);
+add_functions($gr, "-1.5*cos(2*pi/4*x)-3.5 for x in <-2,12> using color:red and weight:2");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+>> [@image(insertGraph($gr), width=>600)@]*  <<
+
+The graph above shows a periodic function. Use it to determine the values below.
+
+Period = [_]{$period}{10}
+
+Amplitude = [_]{$amplitude}{10}
+
+Midline: [`y = `][_]{$midline}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  Period = [$period]
+
+a.  Amplitude = [$amplitude]
+
+a.  Midline: [`y = `][$midline]
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-17" ww-id="webwork-17">
+    <static seed="17">
+      <task>
+        <statement><p>A person rides a Ferris Wheel, boarding it at a height of <m>10</m> feet at the <m>6</m> <em>O<rsq/>clock</em> position. The wheel has a <em>diameter</em> of <m>60</m> feet, and it completes a revolution every 20 minutes.</p>
+<p>Let <m>f(t)</m> represent the person<rsq/>s height (in feet) above the ground, as a function of <m>t\text{,}</m> the number of minutes they<rsq/>ve been riding.</p>
+<p>Complete the table of values below for the function <m>f\text{.}</m></p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<tabular margins="0% 0%" valign="top" width="100%">
+<col/>
+<col halign="center"/>
+<row bottom="minor">
+<cell><m>t</m></cell>
+<cell><m>f(t)</m></cell>
+</row>
+<row bottom="minor">
+<cell><m>0</m></cell>
+<cell><fillin name="AnSwEr0001" characters="10"/></cell>
+</row>
+<row bottom="minor">
+<cell><m>5</m></cell>
+<cell><fillin name="AnSwEr0002" characters="10"/></cell>
+</row>
+<row bottom="minor">
+<cell><m>10</m></cell>
+<cell><fillin name="AnSwEr0003" characters="10"/></cell>
+</row>
+<row bottom="minor">
+<cell><m>15</m></cell>
+<cell><fillin name="AnSwEr0004" characters="10"/></cell>
+</row>
+<row>
+<cell><m>20</m></cell>
+<cell><fillin name="AnSwEr0005" characters="10"/></cell>
+</row>
+</tabular>
+</statement>
+        <answer>
+          <p>
+            <m>10</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>40</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>70</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>40</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>10</m>
+          </p>
+        </answer>
+        <solution><!-- PTX:WARNING: PGML wanted to center align here. -->
+<tabular margins="0% 0%" valign="top" width="100%">
+<col/>
+<col halign="center"/>
+<row bottom="minor">
+<cell><m>t</m></cell>
+<cell><m>f(t)</m></cell>
+</row>
+<row bottom="minor">
+<cell><m>0</m></cell>
+<cell><m>10</m></cell>
+</row>
+<row bottom="minor">
+<cell><m>5</m></cell>
+<cell><m>40</m></cell>
+</row>
+<row bottom="minor">
+<cell><m>10</m></cell>
+<cell><m>70</m></cell>
+</row>
+<row bottom="minor">
+<cell><m>15</m></cell>
+<cell><m>40</m></cell>
+</row>
+<row>
+<cell><m>20</m></cell>
+<cell><m>10</m></cell>
+</row>
+</tabular>
+</solution>
+      </task>
+      <task>
+        <statement><p>You found the heights in the following table:</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<tabular margins="0% 0%" valign="top" width="100%">
+<col/>
+<col halign="center"/>
+<row bottom="minor">
+<cell><m>t</m></cell>
+<cell><m>f(t)</m></cell>
+</row>
+<row bottom="minor">
+<cell><m>0</m></cell>
+<cell><m>10</m></cell>
+</row>
+<row bottom="minor">
+<cell><m>5</m></cell>
+<cell><m>40</m></cell>
+</row>
+<row bottom="minor">
+<cell><m>10</m></cell>
+<cell><m>70</m></cell>
+</row>
+<row bottom="minor">
+<cell><m>15</m></cell>
+<cell><m>40</m></cell>
+</row>
+<row>
+<cell><m>20</m></cell>
+<cell><m>10</m></cell>
+</row>
+</tabular>
+<p>In the graph below, move the points to match those from your table above. If the points are placed correctly, the graph of <m>y = f(t)</m> will appear.</p>
+<p>Did the graph appear? <var form="popup" name="AnSwEr0006">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>yes</p>
+</li>
+<li>
+<p>no</p>
+</li>
+</var></p>
+<p>What is the amplitude of the function?</p>
+<p>Answer: <fillin name="AnSwEr0007" characters="5"/> feet</p>
+<p>What is the period of the function?</p>
+<p>Answer: <fillin name="AnSwEr0008" characters="5"/> minutes</p>
+<p>What is the equation of the midline?</p>
+<p>Answer: <fillin name="AnSwEr0009" characters="10"/></p>
+</statement>
+        <answer>
+          <p>
+            <m>\text{yes}</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>30</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>20</m>
+          </p>
+        </answer>
+        <answer>
+          <p>
+            <m>y = 40</m>
+          </p>
+        </answer>
+        <solution><p><ol label="a.">
+<li>
+<p>The amplitude is <m>30</m> feet.</p>
+</li>
+<li>
+<p>The period is <m>20</m> minutes.</p>
+</li>
+<li>
+<p>The midline is: <m>y = 40</m></p>
+</li>
+</ol></p>
+</solution>
+      </task>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIm5pY2VUYWJsZXMucGwiLCJzY2FmZm9sZC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJwYXJzZXJBc3NpZ25tZW50LnBsIiwicGFyc2VyUG9wVXAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKJGFtcGxpdHVkZT1SZWFsKDMwKTsKJHBlcmlvZD1SZWFsKDIwKTsKJGhbMF09UmVhbCgxMCk7CiRoWzFdPVJlYWwoNDApOwokaFsyXT1SZWFsKDcwKTsKJGhbM109UmVhbCg0MCk7CiRoWzRdPVJlYWwoMTApOwokZGlkaXRncmFwaD1Qb3BVcCgKWyI/IiwieWVzIiwibm8iXSwieWVzIgopOwpDb250ZXh0KCktPnZhcmlhYmxlcy0+YXJlKHk9PidSZWFsJyk7CnBhcnNlcjo6QXNzaWdubWVudC0+QWxsb3c7CiRtaWRsaW5lPUZvcm11bGEoInk9NDAiKTsKU2NhZmZvbGQ6OkJlZ2luKGlzX29wZW4gPT4gImNvcnJlY3Rfb3JfZmlyc3RfaW5jb3JyZWN0IiwgbnVtYmVyZWQgPT4gMSk7U2VjdGlvbjo6QmVnaW4oIiIpOwpCRUdJTl9QR01MCkEgcGVyc29uIHJpZGVzIGEgRmVycmlzIFdoZWVsLCBib2FyZGluZyBpdCBhdCBhIGhlaWdodCBvZiBbYDEwYF0gZmVldCBhdCB0aGUgW2A2YF0gX08nY2xvY2tfIHBvc2l0aW9uLiBUaGUgd2hlZWwgaGFzIGEgX2RpYW1ldGVyXyBvZiBbYDYwYF0gZmVldCwgYW5kIGl0IGNvbXBsZXRlcyBhIHJldm9sdXRpb24gZXZlcnkgMjAgbWludXRlcy4KCkxldCBbYGYodClgXSByZXByZXNlbnQgdGhlIHBlcnNvbidzIGhlaWdodCAoaW4gZmVldCkgYWJvdmUgdGhlIGdyb3VuZCwgYXMgYSBmdW5jdGlvbiBvZiBbYHRcdGV4dHssfWBdIHRoZSBudW1iZXIgb2YgbWludXRlcyB0aGV5J3ZlIGJlZW4gcmlkaW5nLgoKQ29tcGxldGUgdGhlIHRhYmxlIG9mIHZhbHVlcyBiZWxvdyBmb3IgdGhlIGZ1bmN0aW9uIFtgZlx0ZXh0ey59YF0KCj4+IFtARGF0YVRhYmxlKFtbW1BHTUwoJ1tgdGBdJyksbWlkcnVsZT0+JzEnLHJvd2Nzcz0+J2JvcmRlci1ib3R0b206MnB4IHNvbGlkOycsY2VsbGNzcz0+J2JvcmRlci10b3A6M3B4IHNvbGlkOycsXSxbUEdNTCgnW2BmKHQpYF0nKSxjZWxsY3NzPT4nYm9yZGVyLXRvcDozcHggc29saWQ7JyxdLF0sW1tQR01MKCdbYDBgXScpLG1pZHJ1bGU9PicxJyxyb3djc3M9Pidib3JkZXItYm90dG9tOjJweCBzb2xpZDsnLF0sW1BHTUwoJ1tfXXskaFswXX17MTB9JyksXSxdLFtbUEdNTCgnW2A1YF0nKSxtaWRydWxlPT4nMScscm93Y3NzPT4nYm9yZGVyLWJvdHRvbToycHggc29saWQ7JyxdLFtQR01MKCdbX117JGhbMV19ezEwfScpLF0sXSxbW1BHTUwoJ1tgMTBgXScpLG1pZHJ1bGU9PicxJyxyb3djc3M9Pidib3JkZXItYm90dG9tOjJweCBzb2xpZDsnLF0sW1BHTUwoJ1tfXXskaFsyXX17MTB9JyksXSxdLFtbUEdNTCgnW2AxNWBdJyksbWlkcnVsZT0+JzEnLHJvd2Nzcz0+J2JvcmRlci1ib3R0b206MnB4IHNvbGlkOycsXSxbUEdNTCgnW19deyRoWzNdfXsxMH0nKSxdLF0sW1tQR01MKCdbYDIwYF0nKSxyb3djc3M9Pidib3JkZXItYm90dG9tOjJweCBzb2xpZDsnLF0sW1BHTUwoJ1tfXXskaFs0XX17MTB9JyksXSxdLF0sYWxpZ249PidsYycsY2VudGVyPT4wLCk7QF0qIDw8CgoKRU5EX1BHTUwKCkJFR0lOX1BHTUxfU09MVVRJT04KPj4gW0BEYXRhVGFibGUoW1tbUEdNTCgnW2B0YF0nKSxtaWRydWxlPT4nMScscm93Y3NzPT4nYm9yZGVyLWJvdHRvbToycHggc29saWQ7JyxjZWxsY3NzPT4nYm9yZGVyLXRvcDozcHggc29saWQ7JyxdLFtQR01MKCdbYGYodClgXScpLGNlbGxjc3M9Pidib3JkZXItdG9wOjNweCBzb2xpZDsnLF0sXSxbW1BHTUwoJ1tgMGBdJyksbWlkcnVsZT0+JzEnLHJvd2Nzcz0+J2JvcmRlci1ib3R0b206MnB4IHNvbGlkOycsXSxbUEdNTCgnW2AxMGBdJyksXSxdLFtbUEdNTCgnW2A1YF0nKSxtaWRydWxlPT4nMScscm93Y3NzPT4nYm9yZGVyLWJvdHRvbToycHggc29saWQ7JyxdLFtQR01MKCdbYDQwYF0nKSxdLF0sW1tQR01MKCdbYDEwYF0nKSxtaWRydWxlPT4nMScscm93Y3NzPT4nYm9yZGVyLWJvdHRvbToycHggc29saWQ7JyxdLFtQR01MKCdbYDcwYF0nKSxdLF0sW1tQR01MKCdbYDE1YF0nKSxtaWRydWxlPT4nMScscm93Y3NzPT4nYm9yZGVyLWJvdHRvbToycHggc29saWQ7JyxdLFtQR01MKCdbYDQwYF0nKSxdLF0sW1tQR01MKCdbYDIwYF0nKSxyb3djc3M9Pidib3JkZXItYm90dG9tOjJweCBzb2xpZDsnLF0sW1BHTUwoJ1tgMTBgXScpLF0sXSxdLGFsaWduPT4nbGMnLGNlbnRlcj0+MCwpO0BdKiA8PAoKCkVORF9QR01MX1NPTFVUSU9OClNlY3Rpb246OkVuZCgpO1NlY3Rpb246OkJlZ2luKCIiKTsKQkVHSU5fUEdNTApZb3UgZm91bmQgdGhlIGhlaWdodHMgaW4gdGhlIGZvbGxvd2luZyB0YWJsZToKCj4+IFtARGF0YVRhYmxlKFtbW1BHTUwoJ1tgdGBdJyksbWlkcnVsZT0+JzEnLHJvd2Nzcz0+J2JvcmRlci1ib3R0b206MnB4IHNvbGlkOycsY2VsbGNzcz0+J2JvcmRlci10b3A6M3B4IHNvbGlkOycsXSxbUEdNTCgnW2BmKHQpYF0nKSxjZWxsY3NzPT4nYm9yZGVyLXRvcDozcHggc29saWQ7JyxdLF0sW1tQR01MKCdbYDBgXScpLG1pZHJ1bGU9PicxJyxyb3djc3M9Pidib3JkZXItYm90dG9tOjJweCBzb2xpZDsnLF0sW1BHTUwoJ1tgMTBgXScpLF0sXSxbW1BHTUwoJ1tgNWBdJyksbWlkcnVsZT0+JzEnLHJvd2Nzcz0+J2JvcmRlci1ib3R0b206MnB4IHNvbGlkOycsXSxbUEdNTCgnW2A0MGBdJyksXSxdLFtbUEdNTCgnW2AxMGBdJyksbWlkcnVsZT0+JzEnLHJvd2Nzcz0+J2JvcmRlci1ib3R0b206MnB4IHNvbGlkOycsXSxbUEdNTCgnW2A3MGBdJyksXSxdLFtbUEdNTCgnW2AxNWBdJyksbWlkcnVsZT0+JzEnLHJvd2Nzcz0+J2JvcmRlci1ib3R0b206MnB4IHNvbGlkOycsXSxbUEdNTCgnW2A0MGBdJyksXSxdLFtbUEdNTCgnW2AyMGBdJykscm93Y3NzPT4nYm9yZGVyLWJvdHRvbToycHggc29saWQ7JyxdLFtQR01MKCdbYDEwYF0nKSxdLF0sXSxhbGlnbj0+J2xjJyxjZW50ZXI9PjAsKTtAXSogPDwKCkluIHRoZSBncmFwaCBiZWxvdywgbW92ZSB0aGUgcG9pbnRzIHRvIG1hdGNoIHRob3NlIGZyb20geW91ciB0YWJsZSBhYm92ZS4gSWYgdGhlIHBvaW50cyBhcmUgcGxhY2VkIGNvcnJlY3RseSwgdGhlIGdyYXBoIG9mIFtgeSA9IGYodClgXSB3aWxsIGFwcGVhci4KCkRpZCB0aGUgZ3JhcGggYXBwZWFyPyBbX117JGRpZGl0Z3JhcGh9ezV9CgpXaGF0IGlzIHRoZSBhbXBsaXR1ZGUgb2YgdGhlIGZ1bmN0aW9uPwoKQW5zd2VyOiBbX117JGFtcGxpdHVkZX17NX0gZmVldAoKV2hhdCBpcyB0aGUgcGVyaW9kIG9mIHRoZSBmdW5jdGlvbj8KCkFuc3dlcjogW19deyRwZXJpb2R9ezV9IG1pbnV0ZXMKCldoYXQgaXMgdGhlIGVxdWF0aW9uIG9mIHRoZSBtaWRsaW5lPwoKQW5zd2VyOiBbX117JG1pZGxpbmV9ezEwfQoKCkVORF9QR01MCgpCRUdJTl9QR01MX1NPTFVUSU9OCmEuICBUaGUgYW1wbGl0dWRlIGlzIFtgMzBgXSBmZWV0LgoKCmEuICBUaGUgcGVyaW9kIGlzIFtgMjBgXSBtaW51dGVzLgoKCmEuICBUaGUgbWlkbGluZSBpczogW2B5ID0gNDBgXQoKCgpFTkRfUEdNTF9TT0xVVElPTgpTZWN0aW9uOjpFbmQoKTtTY2FmZm9sZDo6RW5kKCk7CkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2023-04-05T16:02:07-04:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.4.7)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "niceTables.pl",
+  "scaffold.pl",
+  "AnswerFormatHelp.pl",
+  "parserAssignment.pl",
+  "parserPopUp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+COMMENT('This problem is scaffolded with multiple parts');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+$amplitude=Real(30);
+$period=Real(20);
+$h[0]=Real(10);
+$h[1]=Real(40);
+$h[2]=Real(70);
+$h[3]=Real(40);
+$h[4]=Real(10);
+$diditgraph=PopUp(
+["?","yes","no"],"yes"
+);
+Context()->variables->are(y=>'Real');
+parser::Assignment->Allow;
+$midline=Formula("y=40");
+
+############################################################
+# Body
+############################################################
+
+############################################################
+# Scaffold
+############################################################
+Scaffold::Begin(is_open => "correct_or_first_incorrect", numbered => 1);
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+A person rides a Ferris Wheel, boarding it at a height of [`10`] feet at the [`6`] _O'clock_ position. The wheel has a _diameter_ of [`60`] feet, and it completes a revolution every 20 minutes.
+
+Let [`f(t)`] represent the person's height (in feet) above the ground, as a function of [`t\text{,}`] the number of minutes they've been riding.
+
+Complete the table of values below for the function [`f\text{.}`]
+
+>> [@DataTable(
+  [
+    [[PGML('[`t`]'),
+      midrule => '1',
+      rowcss  => 'border-bottom: 2px solid; ',
+      cellcss => 'border-top: 3px solid; ',],
+     [PGML('[`f(t)`]'),
+      cellcss => 'border-top: 3px solid; ',],
+    ],
+    [[PGML('[`0`]'),
+      midrule => '1',
+      rowcss  => 'border-bottom: 2px solid; ',],
+     [PGML('[_]{$h[0]}{10}'),],
+    ],
+    [[PGML('[`5`]'),
+      midrule => '1',
+      rowcss  => 'border-bottom: 2px solid; ',],
+     [PGML('[_]{$h[1]}{10}'),],
+    ],
+    [[PGML('[`10`]'),
+      midrule => '1',
+      rowcss  => 'border-bottom: 2px solid; ',],
+     [PGML('[_]{$h[2]}{10}'),],
+    ],
+    [[PGML('[`15`]'),
+      midrule => '1',
+      rowcss  => 'border-bottom: 2px solid; ',],
+     [PGML('[_]{$h[3]}{10}'),],
+    ],
+    [[PGML('[`20`]'),
+      rowcss  => 'border-bottom: 2px solid; ',],
+     [PGML('[_]{$h[4]}{10}'),],
+    ],
+  ],
+  align => 'lc',
+  center => 0,
+);@]* <<
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+>> [@DataTable(
+  [
+    [[PGML('[`t`]'),
+      midrule => '1',
+      rowcss  => 'border-bottom: 2px solid; ',
+      cellcss => 'border-top: 3px solid; ',],
+     [PGML('[`f(t)`]'),
+      cellcss => 'border-top: 3px solid; ',],
+    ],
+    [[PGML('[`0`]'),
+      midrule => '1',
+      rowcss  => 'border-bottom: 2px solid; ',],
+     [PGML('[`10`]'),],
+    ],
+    [[PGML('[`5`]'),
+      midrule => '1',
+      rowcss  => 'border-bottom: 2px solid; ',],
+     [PGML('[`40`]'),],
+    ],
+    [[PGML('[`10`]'),
+      midrule => '1',
+      rowcss  => 'border-bottom: 2px solid; ',],
+     [PGML('[`70`]'),],
+    ],
+    [[PGML('[`15`]'),
+      midrule => '1',
+      rowcss  => 'border-bottom: 2px solid; ',],
+     [PGML('[`40`]'),],
+    ],
+    [[PGML('[`20`]'),
+      rowcss  => 'border-bottom: 2px solid; ',],
+     [PGML('[`10`]'),],
+    ],
+  ],
+  align => 'lc',
+  center => 0,
+);@]* <<
+
+END_PGML_SOLUTION
+
+Section::End();
+
+############################################################
+# Section
+############################################################
+Section::Begin("");
+
+BEGIN_PGML
+You found the heights in the following table:
+
+>> [@DataTable(
+  [
+    [[PGML('[`t`]'),
+      midrule => '1',
+      rowcss  => 'border-bottom: 2px solid; ',
+      cellcss => 'border-top: 3px solid; ',],
+     [PGML('[`f(t)`]'),
+      cellcss => 'border-top: 3px solid; ',],
+    ],
+    [[PGML('[`0`]'),
+      midrule => '1',
+      rowcss  => 'border-bottom: 2px solid; ',],
+     [PGML('[`10`]'),],
+    ],
+    [[PGML('[`5`]'),
+      midrule => '1',
+      rowcss  => 'border-bottom: 2px solid; ',],
+     [PGML('[`40`]'),],
+    ],
+    [[PGML('[`10`]'),
+      midrule => '1',
+      rowcss  => 'border-bottom: 2px solid; ',],
+     [PGML('[`70`]'),],
+    ],
+    [[PGML('[`15`]'),
+      midrule => '1',
+      rowcss  => 'border-bottom: 2px solid; ',],
+     [PGML('[`40`]'),],
+    ],
+    [[PGML('[`20`]'),
+      rowcss  => 'border-bottom: 2px solid; ',],
+     [PGML('[`10`]'),],
+    ],
+  ],
+  align => 'lc',
+  center => 0,
+);@]* <<
+
+In the graph below, move the points to match those from your table above. If the points are placed correctly, the graph of [`y = f(t)`] will appear.
+
+Did the graph appear? [_]{$diditgraph}{5}
+
+What is the amplitude of the function?
+
+Answer: [_]{$amplitude}{5} feet
+
+What is the period of the function?
+
+Answer: [_]{$period}{5} minutes
+
+What is the equation of the midline?
+
+Answer: [_]{$midline}{10}
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  The amplitude is [`30`] feet.
+
+a.  The period is [`20`] minutes.
+
+a.  The midline is: [`y = 40`]
+
+END_PGML_SOLUTION
+
+Section::End();
+
+Scaffold::End();
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-18" ww-id="webwork-18">
+    <static seed="18">
+      <statement><p>A person boards a Ferris Wheel at the <m>6</m> <em>O<rsq/>clock</em> position. The graph shows the person<rsq/>s height above the ground (in feet) as they ride the Ferris Wheel. Here, the horizontal axis represents time (in minutes).</p>
+<p>Use the graph to help answer the questions that follow.</p>
+<!-- PTX:WARNING: PGML wanted to center align here. -->
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" width="100%" pi:generated="webwork\images\webwork-18-image-1.png"/>
+<p><ol label="a.">
+<li>
+<p>What is the radius of the wheel?</p>
+<p>Answer: <fillin name="AnSwEr0001" characters="10"/> feet</p>
+</li>
+<li>
+<p>How high is the center of the wheel?</p>
+<p>Answer: <fillin name="AnSwEr0002" characters="10"/> feet</p>
+</li>
+<li>
+<p>How long does it take to make one complete revolution on the wheel?</p>
+<p>Answer: <fillin name="AnSwEr0003" characters="10"/> minutes</p>
+</li>
+</ol></p>
+</statement>
+      <answer>
+        <p>
+          <m>60</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>80</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>15</m>
+        </p>
+      </answer>
+      <solution><p><ol label="a.">
+<li>
+<p>The radius is 60 feet.</p>
+</li>
+<li>
+<p>The center of the wheel is 80 feet above the ground.</p>
+</li>
+<li>
+<p>It takes 15 minutes to make a complete revolution.</p>
+</li>
+</ol></p>
+</solution>
+    </static>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2dyYXBobWFjcm9zLnBsIiwiUEdjb3Vyc2UucGwiLCk7JHJlZnJlc2hDYWNoZWRJbWFnZXM9MTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOyRyYWRpdXM9UmVhbCg2MCk7CiRtaWRsaW5lPVJlYWwoODApOwokcGVyaW9kPVJlYWwoMTUpOwokZ3I9aW5pdF9ncmFwaCgtNSwtMjAsNDUsMjAwLApheGVzPT5bMCwwXSwKZ3JpZD0+WzEwLDExXSwKc2l6ZT0+WzQwMCw0MDBdCik7CmFkZF9mdW5jdGlvbnMoJGdyLCAiLTYwKmNvcygyKnBpLzE1KngpKzgwIGZvciB4IGluIDwwLDQ1PiB1c2luZyBjb2xvcjpyZWQgYW5kIHdlaWdodDoyIik7CgpCRUdJTl9QR01MCkEgcGVyc29uIGJvYXJkcyBhIEZlcnJpcyBXaGVlbCBhdCB0aGUgW2A2YF0gX08nY2xvY2tfIHBvc2l0aW9uLiBUaGUgZ3JhcGggc2hvd3MgdGhlIHBlcnNvbidzIGhlaWdodCBhYm92ZSB0aGUgZ3JvdW5kIChpbiBmZWV0KSBhcyB0aGV5IHJpZGUgdGhlIEZlcnJpcyBXaGVlbC4gSGVyZSwgdGhlIGhvcml6b250YWwgYXhpcyByZXByZXNlbnRzIHRpbWUgKGluIG1pbnV0ZXMpLgoKVXNlIHRoZSBncmFwaCB0byBoZWxwIGFuc3dlciB0aGUgcXVlc3Rpb25zIHRoYXQgZm9sbG93LgoKPj4gW0BpbWFnZShpbnNlcnRHcmFwaCgkZ3IpLCB3aWR0aD0+NjAwKUBdKiAgPDwKCmEuICBXaGF0IGlzIHRoZSByYWRpdXMgb2YgdGhlIHdoZWVsPwoKICAgIEFuc3dlcjogW19deyRyYWRpdXN9ezEwfSBmZWV0CgoKYS4gIEhvdyBoaWdoIGlzIHRoZSBjZW50ZXIgb2YgdGhlIHdoZWVsPwoKICAgIEFuc3dlcjogW19deyRtaWRsaW5lfXsxMH0gZmVldAoKCmEuICBIb3cgbG9uZyBkb2VzIGl0IHRha2UgdG8gbWFrZSBvbmUgY29tcGxldGUgcmV2b2x1dGlvbiBvbiB0aGUgd2hlZWw/CgogICAgQW5zd2VyOiBbX117JHBlcmlvZH17MTB9IG1pbnV0ZXMKCgoKRU5EX1BHTUwKCkJFR0lOX1BHTUxfU09MVVRJT04KYS4gIFRoZSByYWRpdXMgaXMgWyRyYWRpdXNdIGZlZXQuCgoKYS4gIFRoZSBjZW50ZXIgb2YgdGhlIHdoZWVsIGlzIFskbWlkbGluZV0gZmVldCBhYm92ZSB0aGUgZ3JvdW5kLgoKCmEuICBJdCB0YWtlcyBbJHBlcmlvZF0gbWludXRlcyB0byBtYWtlIGEgY29tcGxldGUgcmV2b2x1dGlvbi4gICAKCgoKRU5EX1BHTUxfU09MVVRJT04KCkVORERPQ1VNRU5UKCk7" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg><![CDATA[
+#############################################
+###       Generated from PreTeXt source      
+###       on 2023-04-05T16:02:07-04:00       
+###   A recent stable commit (2022-07-01):   
+### 6c761d3dba23af92cba35001c852aac04ae99a5f 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1(5.4.8)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGgraphmacros.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+$radius=Real(60);
+$midline=Real(80);
+$period=Real(15);
+$gr=init_graph(-5,-20,45,200,
+axes=>[0,0],
+grid=>[10,11],
+size=>[400,400]
+);
+add_functions($gr, "-60*cos(2*pi/15*x)+80 for x in <0,45> using color:red and weight:2");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+A person boards a Ferris Wheel at the [`6`] _O'clock_ position. The graph shows the person's height above the ground (in feet) as they ride the Ferris Wheel. Here, the horizontal axis represents time (in minutes).
+
+Use the graph to help answer the questions that follow.
+
+>> [@image(insertGraph($gr), width=>600)@]*  <<
+
+a.  What is the radius of the wheel?
+
+    Answer: [_]{$radius}{10} feet
+
+a.  How high is the center of the wheel?
+
+    Answer: [_]{$midline}{10} feet
+
+a.  How long does it take to make one complete revolution on the wheel?
+
+    Answer: [_]{$period}{10} minutes
+
+END_PGML
+
+############################################################
+# Solution
+############################################################
+
+BEGIN_PGML_SOLUTION
+a.  The radius is [$radius] feet.
+
+a.  The center of the wheel is [$midline] feet above the ground.
+
+a.  It takes [$period] minutes to make a complete revolution.   
+
+END_PGML_SOLUTION
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+]]></pg>
+  </webwork-reps>
+</webwork-representations>

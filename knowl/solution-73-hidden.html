@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><div class="solution solution-like">
+<p>To use a spreadsheet for this problem, we use the <code class="code-inline tex2jax_ignore">=PMT</code> formula because we want to know the payment amount. The amount of the loan is the present value and to pay off the loan the future value is 0. We enter</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:40%;">
+<pre class="code-display tex2jax_ignore">=PMT(0.06/12, 12*30, 140000,0)</pre>
+<p class="continuation">which gives us $839.37.</p>
+</div>
+<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_4/loan_formulas4.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
+</div></div> <p>To use the formula, we have:</p> <p><span class="process-math">\(r=0.06\text{,}\)</span> 6% annual rate</p> <p><span class="process-math">\(n=12\text{,}\)</span> since we’re paying monthly</p> <p><span class="process-math">\(t=30\text{,}\)</span> 30 years</p> <p><span class="process-math">\(P=\$140,000\text{,}\)</span> the starting loan amount</p> <p>In this case, we’re going to use the equation that is solved for <span class="process-math">\(d\text{.}\)</span></p> <div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+d\amp=\frac{P\left(\frac{r}{n}\right)}{\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}\\
+\amp=\frac{140000\left(\frac{0.06}{12}\right)}{\left(1-\left(1+\frac{0.06}{12}\right)^{-12\cdot 30}\right)}\\
+\amp=\frac{700}{(1-(1.005)^{-360})}\\
+\amp\approx\$839.37
+\end{align*}
+</div> <p>You would make payments of $839.37 per month for 30 years. To find out what percentage of the total will go towards interest, we need to total up all of the payments.</p> <div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\$839.37(30)(12)=\$302,173.20
+\end{equation*}
+</div> <p>Then take the difference between the total payments and the loan amount.</p> <div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\$302,173.20-\$140,000=\$162,173.20
+\end{equation*}
+</div> <p>In this case, you would be paying $162,173.20 in interest over the life of the loan. To find the percentage, we divide the interest by the total amount paid.</p> <div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{\$162,173.20}{\$302,173.20} \approx 0.5367
+\end{equation*}
+</div> <p>About 53.7% of the total is being paid towards interest.</p>
+</div></body>
+</html>

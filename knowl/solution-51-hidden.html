@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><div class="solution solution-like">
+<p>Before we calculate the balance for both scenarios, which one do you think will have a higher balance at the end?</p> <p>For scenario 1, there are two steps involved. The first part is the monthly payments for 15 years. To calculate this with a spreadsheet we enter</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:40%;">
+<pre class="code-display tex2jax_ignore">=FV(0.10/12, 12*15, 200,0)</pre>
+<p>which gives $82,894.07.</p>
+</div>
+<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_3/comparing_payments1.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
+</div></div> <p>Now you will stop making payments and let the money sit and earn interest for 20 more years. With a spreadsheet we enter</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:40%;">
+<pre class="code-display tex2jax_ignore">=FV(0.10/12, 12*20, 0, 82894.07)</pre>
+<p>which gives $607,453.85.</p>
+</div>
+<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_3/comparing_payments2.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
+</div></div> <p>The process is similar with the formulas. For the first step we have:</p> <div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+A\amp=\frac{200\left(\left(1+\frac{0.10}{12}\right)^{12\cdot 15}-1\right)}{\left(\frac{0.10}{12}\right)}\\
+\amp\approx\$82,894.07
+\end{align*}
+</div> <p>And for the second step we use the compound interest formula from <a href="sec-finance-simple-compound.html" class="internal" title="Section 3.2: Simple and Compound Interest">Section 3.2</a>.</p> <div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+A\amp=\$82,894.07\left(1+\frac{0.10}{12}\right)^{12\cdot 20}\\
+\amp\approx\$607,453.85
+\end{align*}
+</div> <p>Now for Scenario 2: Since we are not investing anything for the first 15 years there is nothing to calculate. This is a one-step problem. We will find the future value with the monthly payments of $200 for 20 years. With a spreadsheet we enter</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:40%;">
+<pre class="code-display tex2jax_ignore">=FV(0.10/12, 12*20, 200,0)</pre>
+<p>which gives $151,873.77.</p>
+</div>
+<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_3/comparing_payments3.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
+</div></div> <p>To check that with the formula we have:</p> <div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+A\amp=\frac{200\left(\left(1+\frac{0.10}{12}\right)^{12\cdot 20}-1\right)}{\left(\frac{0.10}{12}\right)}\\
+\amp\approx\$151,873.77
+\end{align*}
+</div> <p>Were you surprised by these numbers? You would put in less money in scenario 1 and end up with four times as much. The key to compounding interest is to start early. If you remember the graph of compound interest in <a href="sec-finance-simple-compound.html" class="internal" title="Section 3.2: Simple and Compound Interest">Section 3.2</a>, we can see that as time goes on, the balance increases exponentially.</p>
+</div></body>
+</html>

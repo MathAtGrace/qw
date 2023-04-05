@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.10</span><span class="period">.</span>
+</h4>
+<p>The oranges at a local grocery store have a mean diameter of 5.8 inches and a standard deviation of 1.2 inches. The apples, on the other hand, have a mean diameter of 4.2 inches and a standard deviation of 0.6 inches.</p> <p>Ali closes their eyes and selects and apple and an orange. When they look at both pieces of fruit, they seem small. If the orange has a diameter of 4.2 inches and the apple has a diameter of 3.5 inches, which is smaller relative to their respective piles of fruit?</p> <p>To determine which fruit is relatively smaller, Ali can find each of their Z-scores.</p> <div class="displaymath process-math" data-contains-math-knowls="">
+\begin{gather*}
+Z_{\text{Orange}}=\frac{4.2-5.8}{1.2}=-1.33\text{ standard deviations}\\
+Z_{\text{Apple}}=\frac{3.5-4.2}{0.6}=-1.17\text { standard deviations}
+\end{gather*}
+</div> <p>By convention, Z-scores are rounded to two decimal places, so we see that the orange is 1.33 standard deviations below its mean and the apple is 1.17 standard deviation below its mean. The orange is therefore smaller relative to its distribution since its Z-score is less than the apple’s Z-score.</p> <p>We can also see from the Z-scores that neither fruit has an unusually small diameter since each piece of fruit is less than 2 standard deviations from its mean.</p> <p>We can also find Z-scores using a spreadsheet with this formula:</p> <pre class="code-display tex2jax_ignore">=STANDARDIZE(data value, mean, standard deviation)</pre> <p>To verify our apple and orange Z-scores, we would write:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;">
+<p>Apple:</p>
+<pre class="code-display tex2jax_ignore">=STANDARDIZE(4.2, 5.8, 1.2)</pre>
+<p class="continuation">and we get -1.33 standard deviations</p>
+</div>
+<div class="sbspanel top" style="width:50%;"><img src="external/statistics/3_4/z_score1.png" class="contained" alt="a screenshot of a spreadsheet showing the =STANDARDIZE formula."></div>
+</div></div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;">
+<p>Orange:</p>
+<pre class="code-display tex2jax_ignore">=STANDARDIZE (3.5, 4.2, 0.6)</pre>
+<p class="continuation">and we get -1.17 standard deviations</p>
+</div>
+<div class="sbspanel top" style="width:50%;"><img src="external/statistics/3_4/z_score2.png" class="contained" alt="a screenshot of a spreadsheet showing the =STANDARDIZE formula."></div>
+</div></div></article><span class="incontext"><a href="sec-4-4-measure-of-variation.html#example-80" class="internal">in-context</a></span>
+</body>
+</html>
