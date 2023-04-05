@@ -15,7 +15,7 @@
       <exercisegroup xml:id="exercisegroup-cost-of-driving">
         <title>Problem Situation: Cost of Driving</title>
         <introduction>
-          Jenna’s job requires her to travel. She owns a 2006 Toyota 4Runner, but she also has the option to rent a car for her travel. In either case, her employer will reimburse her the same amount for the mileage driven using the rate set by the Internal Revenue Service. In 2015, that rate was 57.5 cents/mile. In this lesson you will explore the question of whether it would be better for Jenna to drive her own car or to rent a car.
+          Jenna's job requires her to travel. She owns a 2006 Toyota 4Runner, but she also has the option to rent a car for her travel. In either case, her employer will reimburse her the same amount for the mileage driven using the rate set by the Internal Revenue Service. In 2015, that rate was 57.5 cents/mile. In this lesson you will explore the question of whether it would be better for Jenna to drive her own car or to rent a car.
         </introduction>
         <exercise xml:id="exercise-cost-of-driving-1" workspace="1in">
           <statement>
@@ -29,7 +29,7 @@
         </exercise>
         <exercise xml:id="exercise-cost-of-driving-3" workspace="1in">
           <statement>
-            Gas mileage is rated for either city driving or highway driving. Most of Jenna’s travel will take place on the highway. For her next trip she needs to drive 193 miles from home, and then return.  The price of gas is $3.50/gallon. Her 4Runner gets 22 miles/gallon. If Jenna rents, she can request a small, fuel‐efficient car such as the Hyundai Elantra, which gets 40 miles/gallon.
+            Gas mileage is rated for either city driving or highway driving. Most of Jenna's travel will take place on the highway. For her next trip she needs to drive 193 miles from home, and then return.  The price of gas is $3.50/gallon. Her 4Runner gets 22 miles/gallon. If Jenna rents, she can request a small, fuel‐efficient car such as the Hyundai Elantra, which gets 40 miles/gallon. What is the cost of the gas for each vehicle? (Round to the nearest cent)
           </statement>
           <solution>
             Cost of gas for the 4Runner:
@@ -79,7 +79,7 @@
       </exercise>
       <exercise xml:id="exercise-cost-of-driving-5" workspace="1in">
         <statement>
-          Using the information below, calculate Jenna’s total cost of driving a rental car for a round trip.
+          Using the information below, calculate Jenna's total cost of driving a rental car for a round trip.
           <ul>
             <li>Price of gas: $3.50/gallon</li>
             <li>Length of trip (one way): 193 miles</li>
@@ -99,7 +99,7 @@
     <page>
       <exercise xml:id="exercise-cost-of-driving-6" workspace="1in">
         <statement>
-          Using the information below, calculate Jenna’s total cost of driving her own car for a round trip.
+          Using the information below, calculate Jenna's total cost of driving her own car for a round trip.
           <ul>
             <li>Price of gas: $3.50/gallon</li>
             <li>Length of trip (one way): 193 miles</li>
@@ -108,7 +108,7 @@
           You'll also want to incorporate these costs (we're not including every cost we could have included). What do I do with these?
           <ul>
             <li><b>General maintenance</b> (oil and fluid changes): $40 every 3,000 miles</li>
-            <li><b>Tires:</b> Tires for Jenna’s car cost $920; they are supposed to be replaced every 50,000 miles</li>
+            <li><b>Tires:</b> Tires for Jenna's car cost $920; they are supposed to be replaced every 50,000 miles</li>
             <li><b>Repairs:</b> The website Edmonds.com estimates that repairs on a three-year-old 2009 4Runner will be approximately $328 per year; this is based on driving 15,000 miles</li>
           </ul>
           Try the problem on your own first. If you are having trouble after 2 tries, we will break it down.

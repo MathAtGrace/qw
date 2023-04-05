@@ -32,7 +32,14 @@
       <source>source/solutions.ptx</source>
       <publication>publication/publication-solutions.ptx</publication>
       <output-dir>output/solutions-pdf</output-dir>
-      <xsl>xsl/acs-solution-manual.xsl</xsl>      
+      <xsl>xsl/acs-solution-manual.xsl</xsl>
+    </target>
+    <target name="websol">
+      <format>html</format>
+      <source>source/solutions.ptx</source>
+      <publication>publication/publication-solutions.ptx</publication>
+      <output-dir>output/solutions-html</output-dir>
+      <!--<xsl>xsl/acs-solution-manual.xsl</xsl>      -->
     </target>
     <target name="solutions-latex">
       <format>latex</format>

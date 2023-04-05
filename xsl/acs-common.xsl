@@ -40,7 +40,7 @@
    <xsl:text>\usepackage[scr=rsfso]{mathalfa}&#xa;</xsl:text>
    <xsl:text>\usepackage{bm} %load after all math to give access to bold math&#xa;</xsl:text>
    <xsl:text>% Now load the otf text fonts using fontspec--wont affect math&#xa;</xsl:text>
-   <xsl:text>\usepackage[no-math]{fontspec}&#xa;</xsl:text>
+   <xsl:text>%\usepackage[no-math]{fontspec} Commented out because it started breaking (2023-04-03)&#xa;</xsl:text>
    <xsl:text>\setmainfont{TeXGyrePagellaX}&#xa;</xsl:text>
    <xsl:text>\defaultfontfeatures{Ligatures=TeX,Scale=1,Mapping=tex-text}&#xa;</xsl:text>
    <xsl:text>\linespread{1.02}&#xa;</xsl:text>

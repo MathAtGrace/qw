@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude">
-  <xi:include href="bookinfo.xml" />
+  <xi:include href="bookinfo.ptx" />
 
   <book xml:id="solution-manual" permid="Pux">
       <title><line>Solutions Manual</line>
       <line>for</line>
-      <line>Understanding Linear Algebra</line>
+      <line>Quantitative Wisdom</line>
       </title>
     <frontmatter permid="bIP">
       <!-- Don't xi:include the titlepage, since solution authors differ -->
       <titlepage >
 
       <author>
-        <personname>David Austin</personname>
-        <department>Department of Mathematics</department>
-        <institution>Grand Valley State University</institution>
-        <email>austind@gvsu.edu</email>
+        <personname>Ryan Johnson</personname>
+        <department>Department of Science and Mathematics</department>
+        <institution>Grace College</institution>
+        <email>johnsor@grace.edu</email>
       </author>
 
       <date><today /></date>
@@ -24,8 +24,7 @@
 
       <preface permid="vBG">
         <p permid="HPY">
-	  This Solutions Manual for <pubtitle>Understanding Linear
-	  Algebra</pubtitle> is organized by section with each
+	  This Solutions Manual for <pubtitle>Quantitative Wisdom</pubtitle> is organized by section with each
 	  exercise starting at the top of its own page.  This should
 	  make it easy to extract only the solutions to certain
 	  exercises.
@@ -51,13 +50,7 @@
 
     </frontmatter>
 
-    <xi:include href="./chap1.xml" />
-    <xi:include href="./chap2.xml" />
-    <xi:include href="./chap3.xml" />
-    <xi:include href="./chap4.xml" />
-    <xi:include href="./chap5.xml" />
-    <xi:include href="./chap6.xml" />
-    <xi:include href="./chap7.xml" />
+    <xi:include href="./ch-3-finance.ptx" />
     <backmatter>
     <colophon>
       <p>

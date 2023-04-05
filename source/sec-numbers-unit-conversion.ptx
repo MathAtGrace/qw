@@ -444,7 +444,7 @@
             Start with 200 cubic meters per hour which can be written as<m>\dfrac{200\text{ m}^3}{1\text{ hour}}</m>
           </li>
           <li>
-            Then multiply by conversion fractions so that units you don’t want in the end will cancel. To form the conversion fractions find equivalent units for capacity or volume from the table.
+            Then multiply by conversion fractions so that units you don't want in the end will cancel. To form the conversion fractions find equivalent units for capacity or volume from the table.
             <me>
               \frac{200\text{ m}^3}{1 \text{ hour}} \cdot \frac{1000\text{ L}}{1\text{ m}^3} \cdot \frac{1\text{ qt}}{0.946\text{ L}} \cdot \frac{1\text{ gal}}{4\text{ qt}} \cdot \frac{1\text{ hr}}{60\text{ min}} \cdot \frac{1\text{ min}}{60\text{ sec}}
               = 14.68\frac{\text{gal}}{\text{sec}}
@@ -509,7 +509,7 @@
         <li>First re-write in symbols:  Convert 4 ft<m>^2</m>  to  in<m>^2</m>.</li>
         <li>
           <p>
-            We want to multiply 4 ft<m>^2</m>  by a conversion fraction with ft<m>^2</m>  in the denominator and in<m>^2</m>  in the numerator.  If we could find a conversion factor for feet in the denominator and inches in the numerator, then we could square that entire fraction so we’d end up with square units.  The linear measurement equivalency that 1 ft = 12 in.  So we’ll use square the fraction (12 in/1ft).
+            We want to multiply 4 ft<m>^2</m>  by a conversion fraction with ft<m>^2</m>  in the denominator and in<m>^2</m>  in the numerator.  If we could find a conversion factor for feet in the denominator and inches in the numerator, then we could square that entire fraction so we'd end up with square units.  The linear measurement equivalency that 1 ft = 12 in.  So we'll use square the fraction (12 in/1ft).
           </p>
           <me>
             4\text{ ft}^2 = 4\text{ ft}^2 \cdot \left(\frac{12 \text{ in}}{1 \text{ ft}}\right) = \left(4 \cdot 12^2\right)\text{ in}^2 = 576\text{ in}^2
@@ -522,7 +522,7 @@
       <ul>
         <li>First write the question using symbols for the units:   Convert 4 ft<m>^2</m>  to  in<m>^2</m>.</li>
         <li>
-          We want to multiply 4 ft<m>^2</m>  by a conversion fraction with ft<m>^2</m>  in the denominator and in<m>^2</m>  in the numerator.  If we could find a conversion factor for feet in the denominator and inches in the numerator, then we could square that entire fraction so we’d end up with square units.  The linear measurement equivalency that 1 ft = 12 in.  So we’ll use square the fraction (12 in/1ft).
+          We want to multiply 4 ft<m>^2</m>  by a conversion fraction with ft<m>^2</m>  in the denominator and in<m>^2</m>  in the numerator.  If we could find a conversion factor for feet in the denominator and inches in the numerator, then we could square that entire fraction so we'd end up with square units.  The linear measurement equivalency that 1 ft = 12 in.  So we'll use square the fraction (12 in/1ft).
           <me>
             4 \text{ ft}^2 \cdot \left(\frac{12 \text{ in}}{1 \text{ ft}}\right)^2 = 576 \text{ in}^2
           </me>
@@ -589,7 +589,7 @@
             <p>(b) A telecommunications device may be used in conjunction with hands free or voice operated technology.</p>
             <p>(c) A telecommunications device may be used or held to call 911 to report a bona fide emergency.</p>
           </blockquote>
-          Is texting while driving actually a problem?  A person might spend only 4 seconds to answer a text.  How far would the car go in that time?  It depends on the car’s speed.
+          Is texting while driving actually a problem?  A person might spend only 4 seconds to answer a text.  How far would the car go in that time?  It depends on the car's speed.
         </introduction>
         <exercise xml:id="exercise-texting-driving-1" workspace="1in">
           <statement>

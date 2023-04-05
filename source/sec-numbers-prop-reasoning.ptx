@@ -10,7 +10,7 @@
   </objectives>
 
   <p>
-    One of the most important natural resources that humans need for survival is water. An influential United Nations report published in 2003 predicted that severe water shortages will affect 4 billion people by 2050. This report also said that 40 percent of the world’s population did not have access to adequate sanitation facilities in 2003. Humans need clean water not just for drinking, but for necessary tasks such as sanitation, growing food, and producing goods.
+    One of the most important natural resources that humans need for survival is water. An influential United Nations report published in 2003 predicted that severe water shortages will affect 4 billion people by 2050. This report also said that 40 percent of the world's population did not have access to adequate sanitation facilities in 2003. Humans need clean water not just for drinking, but for necessary tasks such as sanitation, growing food, and producing goods.
   </p>
   <p>
     You will use a measure of water consumption called a “water footprint” that includes all of the ways that people use fresh water. According to Waterwiki.net, “The water footprint of an individual, business, or nation is defined as the total volume of freshwater that is used to produce the goods and services consumed by the individual, business, or nation.” Goods are physical products such as food, clothes, books, or cars. Services are types of work done by other people. Examples of services are having your hair cut, having a mechanic fix your car, or having someone provide day care for your children. Fresh water is often used to make goods and to provide you with services.
@@ -25,16 +25,16 @@
       <exercisegroup>
         <title>Problem Situation 1: Comparing Populations</title>
         <introduction>
-          You will begin by thinking of various ways you can compare different countries’ populations. Scientific notation will be a useful tool because it is a way to write large numbers. Recall that a number in scientific notation is written in the form: <m>M \times 10^n</m> where <m>1 \leq M &lt; 10</m> and <m>n</m> is an integer.
+          You will begin by thinking of various ways you can compare different countries' populations. Scientific notation will be a useful tool because it is a way to write large numbers. Recall that a number in scientific notation is written in the form: <m>M \times 10^n</m> where <m>1 \leq M &lt; 10</m> and <m>n</m> is an integer.
         </introduction>
         <exercise xml:id="review-scientific-notation" workspace="1in">
           <statement>
-            In 2014, the population of the United States was about 317 million, and Earth’s population was about 7.2 billion. Write these numbers in scientific notation.
+            In 2014, the population of the United States was about 317 million, and Earth's population was about 7.2 billion. Write these numbers in scientific notation.
           </statement>
         </exercise>
         <exercise xml:id="compare-us-to-world" workspace="1in">
           <statement>
-            Write a ratio comparing the U.S. population to the world’s population using a fraction.  Use a full sentence, and try to round to a reasonable amount.  Write a second sentence using a percentage instead.
+            Write a ratio comparing the U.S. population to the world's population using a fraction.  Use a full sentence, and try to round to a reasonable amount.  Write a second sentence using a percentage instead.
           </statement>
         </exercise>
         <exercise xml:id="compare-us-to-world-2" workspace=".5in">
@@ -50,7 +50,7 @@
         </exercise>
         <exercise xml:id="compare-china-to-world" workspace="1in">
           <statement>
-            In 2014, the population of China was 1.39 billion. Compare China’s 2014 population to the world population with a ratio. Using full sentences, write your answer as a fraction, and as a percent.
+            In 2014, the population of China was 1.39 billion. Compare China's 2014 population to the world population with a ratio. Using full sentences, write your answer as a fraction, and as a percent.
           </statement>
         </exercise>
         <exercise xml:id="compare-us-to-china" workspace=".5in">
@@ -69,7 +69,7 @@
         <title>Problem Situation 2: Comparing Water Footprints</title>
         <introduction>
           <p>
-            The population of the United States is the third largest in the world, exceeded only by China and India.  Which country uses the most water?  Which country uses the most water per person?  We’ll now explore this.
+            The population of the United States is the third largest in the world, exceeded only by China and India.  Which country uses the most water?  Which country uses the most water per person?  We'll now explore this.
           </p>
           <p>
             The table below gives the population and water footprints of China, India, and the United States for 2011.  Notice the units used, given in the column labels.

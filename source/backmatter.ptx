@@ -2,7 +2,15 @@
 <backmatter xml:id="backmatter" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Back Matter</title>
 
-  <xi:include href="./spreadsheet-reference.ptx" />
+  <!--<xi:include href="./spreadsheet-reference.ptx" />-->
+
+  <solutions divisional="hint">
+    <title>Selected Hints</title>
+  </solutions>
+  
+  <solutions divisional="solution" admit="odd">
+    <title>Solutions to Odd Exercises</title>
+  </solutions>
 
   <index>
     <title>Index</title>

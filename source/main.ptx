@@ -3,12 +3,18 @@
 
   <xi:include href="bookinfo.ptx" />
   
-  <book xml:id="ula">
-    <title> Understanding Linear Algebra</title>
+  <book xml:id="qw">
+    <title> Quantitative Wisdom </title>
+    <subtitle> Numerical literacy from the perspective of Biblical wisdom </subtitle>
 
     <xi:include href="./frontmatter.ptx" />
+
     <xi:include href="./ch_intro.ptx" />
-    <xi:include href="./ch_numbers.ptx" />
+    <xi:include href="./ch-2-numbers.ptx" />
+    <xi:include href="./ch-3-finance.ptx" />
+    <xi:include href="./ch-4-data.ptx" />
+    <xi:include href="./ch-5-models.ptx" />
+    <!--<xi:include href="./ch-6-bonus-algebra.ptx" />-->
     <xi:include href="./backmatter.ptx" />
 
   </book>

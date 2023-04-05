@@ -12,5 +12,11 @@
     "pretext": {
       "parser": "xml"
     }
-  }
+  },
+  "xml.fileAssociations": [
+    {
+      "pattern": "**/source/**.ptx",
+      "systemId": "C:\\Users\\johnsor\\.ptx\\schema\\pretext.rng"
+    }
+  ]
 }

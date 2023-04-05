@@ -36,7 +36,7 @@
   <xsl:text>% and update latex.preamble.late&#xa;</xsl:text>
   <xsl:text>\tcbset{ divisionsolutionstyle/.style={bwminimalstyle,&#xa;</xsl:text>
   <xsl:text>runintitlestyle, exercisespacingstyle, after title={\space},&#xa;</xsl:text>
-  <xsl:text>breakable, parbox=false, after={\clearpage} } }&#xa;</xsl:text>
+  <xsl:text>breakable, parbox=false, after={\space} } }&#xa;</xsl:text>
   <xsl:text>\tcbset{ explorationsolutionstyle/.style={bwminimalstyle,&#xa;</xsl:text>
   <xsl:text>runintitlestyle, exercisespacingstyle, after
   title={\space},&#xa;</xsl:text>
@@ -49,4 +49,3 @@
 </xsl:param>
 
 </xsl:stylesheet>
-
