@@ -26,19 +26,6 @@ window.MathJax = {
   options: {
     ignoreHtmlClass: "tex2jax_ignore|ignore-math",
     processHtmlClass: "process-math",
-    renderActions: {
-        findScript: [10, function (doc) {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
-                var display = !!node.type.match(/; *mode=display/);
-                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-                var text = document.createTextNode('');
-                node.parentNode.replaceChild(text, node);
-                math.start = {node: text, delim: '', n: 0};
-                math.end = {node: text, delim: '', n: 0};
-                doc.math.push(math);
-            });
-        }, '']
-    },
   },
   chtml: {
     scale: 0.88,
@@ -57,8 +44,7 @@ window.MathJax = {
     )}
 },
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://webwork-ptx.aimath.org/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
-<script src="https://pretextbook.org/js/0.13/pretext-webwork/2.17/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script async="" src="https://cse.google.com/cse.js?cx=015103900096539427448:ngwuia10qci"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.13/pretext_search.js"></script><link href="https://pretextbook.org/css/0.4/pretext_search.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script async="" src="https://cse.google.com/cse.js?cx=015103900096539427448:ngwuia10qci"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.13/pretext_search.js"></script><link href="https://pretextbook.org/css/0.4/pretext_search.css" rel="stylesheet" type="text/css">
 <script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
@@ -99,8 +85,8 @@ eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.6.1/runtime.143aca1952f785bd.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.6.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.6.1/runestone.ecc6dff5cad8b815.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.6.1/637.0fa6cababf056764.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.6.1/runestone.3eb60bc006ae9a54.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.6.2/runtime.66b619f51b746382.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.6.2/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.6.2/runestone.ecc6dff5cad8b815.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.6.2/637.0fa6cababf056764.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.6.2/runestone.3eb60bc006ae9a54.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\degree}[0]{^{\circ}}
@@ -179,7 +165,7 @@ eBookConfig.enable_chatcodes =  false;
 <li><a href="sec-models-linear.html" data-scroll="sec-models-linear" class="active">Function Notation and Linear Functions</a></li>
 <li><a href="sec-models-exponential.html" data-scroll="sec-models-exponential" class="internal">Exponential Growth and Decay</a></li>
 <li><a href="sec-models-exponential-2.html" data-scroll="sec-models-exponential-2" class="internal">Exponential Models</a></li>
-<li><a href="sec-models-periodic.html" data-scroll="sec-models-periodic" class="internal">Periodic Functions</a></li>
+<li><a href="sec-5-4-periodic-functions.html" data-scroll="sec-5-4-periodic-functions" class="internal">Periodic Functions</a></li>
 </ul>
 </li>
 <li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Back Matter</span></a></li>
