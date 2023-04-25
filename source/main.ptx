@@ -14,7 +14,8 @@
     <xi:include href="./ch-3-finance.ptx" />
     <xi:include href="./ch-4-data.ptx" />
     <xi:include href="./ch-5-models.ptx" />
-    <!--<xi:include href="./ch-6-bonus-algebra.ptx" />-->
+    <xi:include href="./ch-6-democracy.ptx" />
+    <!--<xi:include href="./ch-bonus-algebra.ptx" />-->
     <xi:include href="./backmatter.ptx" />
 
   </book>

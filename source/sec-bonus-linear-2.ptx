@@ -1092,7 +1092,7 @@ To compute <m>f(a) + f(3)</m>, we must first compute <m>f(a)</m> and <m>f(3)</m>
 </subsection>
 
 <!--<xi:include href="./summary-1-2.xml" />--> <!-- summary  -->
-<xi:include href="./sec-6-2-bonus-linear-2-exercises.ptx" /> <!-- exercises  -->
+<xi:include href="./sec-bonus-linear-2-exercises.ptx" /> <!-- exercises  -->
 
 </section> 
 <!-- </book>  </mathbook> -->

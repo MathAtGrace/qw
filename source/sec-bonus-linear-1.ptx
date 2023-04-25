@@ -1062,7 +1062,7 @@ other, are called <term>functions</term><idx>function</idx>. We will study vario
 </subsection>
 
 <!--<xi:include href="./summary-1-1.xml" />--> <!-- summary  -->
-<xi:include href="./sec-6-1-bonus-linear-1-exercises.ptx" /> <!-- exercises  -->
+<xi:include href="./sec-bonus-linear-1-exercises.ptx" /> <!-- exercises  -->
 
 </section>
 <!-- </book>  </mathbook> -->

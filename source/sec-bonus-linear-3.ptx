@@ -680,7 +680,7 @@ at most one point.</p></assemblage>
 </subsection>
 
 <!--<xi:include href="./summary-1-3.xml" />--> <!-- summary  -->
-<xi:include href="./sec-6-3-bonus-linear-3-exercises.ptx" /> <!-- exercises  -->
+<xi:include href="./sec-bonus-linear-3-exercises.ptx" /> <!-- exercises  -->
 
 </section> 
 <!-- </book>  </mathbook> -->
