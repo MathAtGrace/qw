@@ -11,8 +11,15 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>The center of the wheel is 80 feet above the ground.</p>
-<span class="incontext"><a href="sec-models-periodic.html#p-3698" class="internal">in-context</a></span>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<p><em class="emphasis">The first two steps are the same as the previous methods</em></p>
+<ol class="decimal">
+<li><p>Determine how many people each representative should represent. Do this by dividing the total population of all the states by the total number of representatives. This answer is called the <em class="alert">divisor</em>.</p></li>
+<li><p>Divide each state's population by the divisor to determine how many representatives it should have. Record this answer to several decimal places. This answer is called the <em class="alert">quota</em>.</p></li>
+<li><p>Cut off the decimal part of the quota to obtain the <em class="alert">lower quota</em>, which we'll call <span class="process-math">\(n\text{.}\)</span> Compute <span class="process-math">\(\sqrt{n(n+1)}\text{,}\)</span> which is the geometric mean of the lower quota and one value higher.</p></li>
+<li><p>Instead of using 0.5 to round like we are used to, we use the geometric mean. If the quota is as large or larger than the geometric mean, round up; if the quota is smaller than the geometric mean, round down. This is the <em class="alert">initial</em> allocation. Add up the resulting whole numbers.</p></li>
+<li><p>If the total from Step 4 is less than the total number of representatives, reduce the divisor and recalculate the quota and allocation. If the total from step 4 is larger than the total number of representatives, increase the divisor and recalculate. Continue doing this until the total is equal to the exact number of representatives. The divisor we end up using is called the <em class="alert">modified divisor</em>. This is a trial-and-error process.</p></li>
+</ol>
+<span class="incontext"><a href="sec-democracy-apportionment.html#p-3698" class="internal">in-context</a></span>
 </body>
 </html>

@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The Popular Vote, Electoral College and Electoral Power</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Quantitative Wisdom">
+<meta property="book:author" content=" Dr. Ryan Johnson ">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+},
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script async="" src="https://cse.google.com/cse.js?cx=015103900096539427448:ngwuia10qci"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.13/pretext_search.js"></script><link href="https://pretextbook.org/css/0.4/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '5.0.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.6.2/runtime.66b619f51b746382.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.6.2/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.6.2/runestone.ecc6dff5cad8b815.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.6.2/637.0fa6cababf056764.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.6.2/runestone.3eb60bc006ae9a54.css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\degree}[0]{^{\circ}}
+\newcommand{\Ccancel}[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\bluetext}[1]{\color{blue}{#1}} 
+\delimitershortfall-1sp
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\newcommand{\sfrac}[2]{{#1}/{#2}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="qw.html"><span class="title">Quantitative Wisdom:</span> <span class="subtitle">Numerical literacy from the perspective of Biblical wisdom</span></a></h1>
+<p class="byline">Dr. Ryan Johnson</p>
+</div>
+<div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
+<div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-democracy-voting.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="democracy.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-democracy-gerrymandering.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-democracy-voting.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="democracy.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-democracy-gerrymandering.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="dedication-1.html" data-scroll="dedication-1" class="internal">Dedication</a></li>
+<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1" class="internal">Acknowledgements</a></li>
+<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
+<li><a href="preface-1.html" data-scroll="preface-1" class="internal">Our goals</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-introduction.html" data-scroll="ch-introduction" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a><ul><li><a href="time.html" data-scroll="time" class="internal">Time Management Lab</a></li></ul>
+</li>
+<li class="link">
+<a href="ch-numbers.html" data-scroll="ch-numbers" class="internal"><span class="codenumber">2</span> <span class="title">Numbers</span></a><ul><li><a href="sec-problem-solving.html" data-scroll="sec-problem-solving" class="internal">Problem Solving</a></li></ul>
+</li>
+<li class="link">
+<a href="financial_math.html" data-scroll="financial_math" class="internal"><span class="codenumber">3</span> <span class="title">Finance</span></a><ul>
+<li><a href="sec-finance-intro-spreadsheet.html" data-scroll="sec-finance-intro-spreadsheet" class="internal">Introduction to Spreadsheets</a></li>
+<li><a href="sec-finance-simple-compound.html" data-scroll="sec-finance-simple-compound" class="internal">Simple and Compound Interest</a></li>
+<li><a href="sec-finance-savings-plan.html" data-scroll="sec-finance-savings-plan" class="internal">Savings Plans</a></li>
+<li><a href="sec-3-4-loans.html" data-scroll="sec-3-4-loans" class="internal">Loan Payments</a></li>
+<li><a href="chap_two_income_taxes.html" data-scroll="chap_two_income_taxes" class="internal">Income Taxes</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="data.html" data-scroll="data" class="internal"><span class="codenumber">4</span> <span class="title">Data</span></a><ul>
+<li><a href="sec-4-1-statistical-process.html" data-scroll="sec-4-1-statistical-process" class="internal">Overview of the Statistical Process</a></li>
+<li><a href="sec-4-2-describing-data.html" data-scroll="sec-4-2-describing-data" class="internal">Describing Data</a></li>
+<li><a href="sec-4-3-measure-of-center.html" data-scroll="sec-4-3-measure-of-center" class="internal">Summary Statistics: Measures of Center</a></li>
+<li><a href="sec-4-4-measure-of-variation.html" data-scroll="sec-4-4-measure-of-variation" class="internal">Summary Statistics: Measures of Variation</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-models.html" data-scroll="ch-models" class="internal"><span class="codenumber">5</span> <span class="title">Math Models</span></a><ul>
+<li><a href="sec-models-linear.html" data-scroll="sec-models-linear" class="internal">Function Notation and Linear Functions</a></li>
+<li><a href="sec-models-exponential.html" data-scroll="sec-models-exponential" class="internal">Exponential Growth and Decay</a></li>
+<li><a href="sec-models-exponential-2.html" data-scroll="sec-models-exponential-2" class="internal">Exponential Models</a></li>
+<li><a href="sec-5-4-periodic-functions.html" data-scroll="sec-5-4-periodic-functions" class="internal">Periodic Functions</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="democracy.html" data-scroll="democracy" class="internal"><span class="codenumber">6</span> <span class="title">Democracy</span></a><ul>
+<li><a href="sec-democracy-apportionment.html" data-scroll="sec-democracy-apportionment" class="internal">Apportionment</a></li>
+<li><a href="sec-democracy-voting.html" data-scroll="sec-democracy-voting" class="internal">Voting Methods</a></li>
+<li><a href="sec-democracy-popular-vote.html" data-scroll="sec-democracy-popular-vote" class="active">The Popular Vote, Electoral College and Electoral Power</a></li>
+<li><a href="sec-democracy-gerrymandering.html" data-scroll="sec-democracy-gerrymandering" class="internal">Gerrymandering and How to Measure It</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="solutions-1.html" data-scroll="solutions-1" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></li>
+<li class="link"><a href="solutions-2.html" data-scroll="solutions-2" class="internal"><span class="codenumber">B</span> <span class="title">Solutions to Odd Exercises</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content">
+<section class="section" id="sec-democracy-popular-vote"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">6.3</span> <span class="title">The Popular Vote, Electoral College and Electoral Power</span>
+</h2>
+<article class="objectives goal-like" id="objectives-14"><h3 class="heading">
+<span class="type">Objectives:</span><span class="space"> </span><span class="title">Section 6.3</span>
+</h3>
+<div class="introduction" id="introduction-48"><p id="p-4152">Students will be able to:</p></div>
+<ul class="disc">
+<li id="li-1811"><p id="p-4153">Calculate the number of electors per state</p></li>
+<li id="li-1812"><p id="p-4154">Determine the winner of the popular vote</p></li>
+<li id="li-1813"><p id="p-4155">Determine the winner of the electoral college</p></li>
+<li id="li-1814"><p id="p-4156">Calculate the electoral power of each state</p></li>
+</ul></article><section class="subsection" id="subsection-141"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">6.3.1</span> <span class="title">Choosing the U.S. President</span>
+</h3>
+<p id="p-4157">In the last section we talked about equal voting rights and studied several voting methods. To choose the President of the United States, we use another method, called the <em class="alert">Electoral College</em>. The Founders, with their newfound freedom from Britain, wanted to create a democracy where citizens could participate in choosing their president. Prior to the Electoral College, there were three options proposed (Best, 2004; Clayton, 2015). They were</p>
+<ol class="decimal">
+<li id="li-1815"><p id="p-4158">Congress would elect the president</p></li>
+<li id="li-1816"><p id="p-4159">State Legislatures would vote and elect the president</p></li>
+<li id="li-1817"><p id="p-4160">The people would elect a president by popular vote</p></li>
+</ol>
+<p id="p-4161">The first option of having Congress do this work was declined as this would alter the balance of power among the three separate branches of government. The idea to have State Legislatures also failed as there wouldn’t be the separation between having an independent Federal Government and State Governments.</p>
+<p id="p-4162">The <em class="alert">popular vote</em> means a candidate must win a plurality of all the votes cast for president, regardless of which state the voters live in. The popular vote was decided against as the Founders didn’t think all citizens would be informed enough about the candidates to make an educated decision (Clayton, 2015).</p>
+<p id="p-4163">Instead, the <em class="alert">Electoral College</em> was decided upon and, in this system, each state was given a certain number of electoral votes. Each state got an equal two votes for the two senate seats. This gave smaller states a leg up as they would have at least these votes. In addition, each state would be given more votes based on their population, equal to their representation in the House (Clayton, 2015). The District of Columbia, which is not a state, also gets 3 electoral votes. A candidate must win a majority of the electoral votes to win the U.S. presidency. If no candidate has a majority of electoral votes then a contingent election would be held by the U.S. House of Representatives between the three candidates with the most electoral votes.</p>
+<p id="p-4164">The 4 million U.S. Citizens who live in the <em class="alert">U.S. territories</em> of Guam, the Virgin Islands, the Northern Mariana Islands and Puerto Rico cannot vote in the presidential elections and do not have any electors for the U.S. President. Additionally, there are U.S. Nationals in American Samoa and other territories that cannot vote. You can learn more about residents of these territories in this Census Bureau Report<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-52" id="fn-52"><sup> 1 </sup></a>.</p>
+<p id="p-4165">As stated in the Constitution, the U.S. currently has 435 representatives in the House. They each serve 2-year terms, while the two senators from each state serve 6-year terms.</p>
+<article class="example example-like" id="example-112"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.1</span><span class="period">.</span>
+</h4>
+<p id="p-4166">How many electoral votes are there in the U.S. Electoral College?</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-296" id="solution-296"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-296"><div class="solution solution-like">
+<p id="p-4167"><span class="process-math">\(100+435+3=538\)</span></p> <p id="p-4168">By adding all the U.S. Senators, Representatives and 3 for Washington, D.C., we have a total of 538 electoral votes.</p>
+</div></div>
+</div></article><article class="example example-like" id="example-113"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.2</span><span class="period">.</span>
+</h4>
+<p id="p-4169">How many electoral votes does a candidate need to win to become the President of the United States?</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-297" id="solution-297"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-297"><div class="solution solution-like">
+<p id="p-4170"><span class="process-math">\(538\div2=269\)</span> then round up to 270.</p> <p id="p-4171">A candidate needs 270 electoral votes to win the U.S. Presidency.</p>
+</div></div>
+</div></article><article class="example example-like" id="example-114"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.3</span><span class="period">.</span>
+</h4>
+<p id="p-4172">The number of people who voted in the presidential election in 2016 was 136,452,150 (Ballotpedia, n.d.). How many votes would be needed to win a majority of the popular vote?</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-298" id="solution-298"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-298"><div class="solution solution-like">
+<p id="p-4173"><span class="process-math">\(136,452,150\div2=68,226,075\)</span> then round up to 68,226,076.</p> <p id="p-4174">A candidate would need 68,226,076 votes to win the popular vote.</p>
+</div></div>
+</div></article><article class="example example-like" id="example-115"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.4</span><span class="period">.</span>
+</h4>
+<p id="p-4175">There were approximately 230,931,921 eligible voters at the time of the 2016 election (McDonald, 2016). What percentage of eligible voters voted?</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-299" id="solution-299"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-299"><div class="solution solution-like">
+<p id="p-4176"><span class="process-math">\(136,452,150 \div 230,931,921 = 0.591\)</span></p> <p id="p-4177">About 59% of all the eligible voters voted in the 2016 election.</p>
+</div></div>
+</div></article><p id="p-4178">If you are interested in the 2016 election voting rates by race, Hispanic origin and age, you can find them in this Census Bureau Report<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-53" id="fn-53"><sup> 2 </sup></a>.</p></section><section class="subsection" id="subsection-142"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">6.3.2</span> <span class="title">How Electoral Votes are Determined</span>
+</h3>
+<p id="p-4179">While each state has a set number of electoral votes based on the formula above, the federal government gave states the control of how they distribute and cast their electoral votes (Paiva, 2011). In 48 states, the candidate with the most votes wins all of that state’s electoral votes, often called <em class="alert">winner-takes-all</em>. In essence, a candidate could win with barely a majority of the popular vote in that state and the entire state’s votes goes to that individual (Clayton, 2015). In 2 states, Maine and Nebraska, however, they use a district plan where instead of winner-takes-all, they use <em class="alert">proportionality</em>. This means that they award electoral votes by how individual districts vote. Each district gives their electoral vote to the winner of their district and the remaining two votes go to the candidate that won statewide.</p>
+<p id="p-4180">There is a movement to change from the Electoral College to the popular vote. One way this is happening is through the <em class="alert">National Popular Vote Interstate Compact</em><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-54" id="fn-54"><sup> 3 </sup></a>. States who adopt this compact agree to award their electoral votes to the winner of the national popular vote. If states and/or D.C. with at least 270 electoral votes adopt this compact, then the winner of the popular vote would win the electoral college and the presidency. At this time there are 196 electoral votes in states and D.C. who have enacted the bill and the bill has passed one or two legislative houses in additional states with 88 electoral votes.</p>
+<p id="p-4181">After citizens cast their votes by mail or on election day on the first Tuesday in November, electors gather in December and are responsible for casting the votes for their state. Electors cannot be elected officials and are chosen by their parties. Electors are expected to vote in alignment with the state they represent, but there have been faithless electors in the past. The U.S. Supreme Court ruled in July of 2020 that states can penalize electors who do not vote according to the law of the state.</p>
+<p id="p-4182">To see how the electoral college and popular votes work, we will look at a made-up country with a smaller number of states.</p>
+<article class="example example-like" id="example-116"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.5</span><span class="period">.</span>
+</h4>
+<p id="p-4183">Consider this country with 4 states. The rules for the number of senators and electors are the same as the U.S. government. Each state will get 1 representative for every 40,000 residents. For simplicity we will ignore any remainders.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines">State</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Representatives</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Senators</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Electors</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Small</td>
+<td class="c m b1 r1 l0 t0 lines">154,600</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Medium</td>
+<td class="c m b1 r1 l0 t0 lines">262,340</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Large</td>
+<td class="c m b1 r1 l0 t0 lines">581,135</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Huge</td>
+<td class="c m b1 r1 l0 t0 lines">1,362,070</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div></div></div> <ol id="p-4184" class="lower-alpha">
+<li id="li-1818"><p id="p-4185">Determine the number of electors for each state and the total for the country.</p></li>
+<li id="li-1819"><p id="p-4186">How many electoral votes are needed to win the presidential election?</p></li>
+<li id="li-1820"><p id="p-4187">Determine which candidate wins the popular vote and the electoral college vote.</p></li>
+<li id="li-1821"><p id="p-4188">Write down all the possible combinations of states that would win the election based on the electoral college.</p></li>
+<li id="li-1822"><p id="p-4189">What is the fewest number of individual votes needed to win the Electoral College?</p></li>
+<li id="li-1823"><p id="p-4190">What is the smallest percentage of the population that you can win the Electoral College with?</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-tabular" data-refid="hk-solution-300" id="solution-300"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-300"><div class="solution solution-like"><ol id="p-4191" class="lower-alpha">
+<li id="li-1824">
+<p id="p-4192">To find the number of electors for each state, we first divide each state population by 40,000 to determine the number of representatives they will have. We will drop the decimal remainders, similar to Hamilton’s method.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines">State</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Representatives</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Senators</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Electors</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Small</td>
+<td class="c m b1 r1 l0 t0 lines">154,600</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(154,600 \div 40,000= 3.865 \rightarrow 3\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Medium</td>
+<td class="c m b1 r1 l0 t0 lines">262,340</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(262,340 \div 40,000= 6.559 \rightarrow 6\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Large</td>
+<td class="c m b1 r1 l0 t0 lines">581,135</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(581,135 \div 40,000= 14.528 \rightarrow 14\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Huge</td>
+<td class="c m b1 r1 l0 t0 lines">1,362,070</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(862,070 \div 40,000= 21.552 \rightarrow 21\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div></div></div>
+<p id="p-4193"></p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines">State</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Representatives</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Senators</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Electors</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Small</td>
+<td class="c m b1 r1 l0 t0 lines">154,600</td>
+<td class="c m b1 r1 l0 t0 lines">3</td>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Medium</td>
+<td class="c m b1 r1 l0 t0 lines">262,340</td>
+<td class="c m b1 r1 l0 t0 lines">6</td>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Large</td>
+<td class="c m b1 r1 l0 t0 lines">581,135</td>
+<td class="c m b1 r1 l0 t0 lines">14</td>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Huge</td>
+<td class="c m b1 r1 l0 t0 lines">1,362,070</td>
+<td class="c m b1 r1 l0 t0 lines">21</td>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div></div></div>
+<p id="p-4194">Then we will add the number of representatives and the senators for each state.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines">State</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Representatives</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Senators</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Electors</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Small</td>
+<td class="c m b1 r1 l0 t0 lines">154,600</td>
+<td class="c m b1 r1 l0 t0 lines">3</td>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines">5</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Medium</td>
+<td class="c m b1 r1 l0 t0 lines">262,340</td>
+<td class="c m b1 r1 l0 t0 lines">6</td>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines">8</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Large</td>
+<td class="c m b1 r1 l0 t0 lines">581,135</td>
+<td class="c m b1 r1 l0 t0 lines">14</td>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines">16</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Huge</td>
+<td class="c m b1 r1 l0 t0 lines">1,362,070</td>
+<td class="c m b1 r1 l0 t0 lines">21</td>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines">23</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Totals</td>
+<td class="c m b1 r1 l0 t0 lines">1,860,145</td>
+<td class="c m b1 r1 l0 t0 lines">44</td>
+<td class="c m b1 r1 l0 t0 lines">8</td>
+<td class="c m b1 r1 l0 t0 lines">52</td>
+</tr>
+</table></div></div></div>
+<p id="p-4195">Now we can add up the total of all the electors from each state and we have:</p>
+<p id="p-4196"><span class="process-math">\(5 + 8 + 16 + 23 = 52\)</span> electors.</p>
+</li>
+<li id="li-1825">
+<p id="p-4197">To find out how many electoral votes are needed to win the presidential election, we calculate a majority of 52 electors.</p>
+<p id="p-4198"><span class="process-math">\(52 \div 2 = 26\text{,}\)</span> round up to 27</p>
+<p id="p-4199">27 electoral votes are needed to win the presidential election in this state</p>
+</li>
+<li id="li-1826">
+<p id="p-4200">To find the winner for each method, we need the results of an election. In our example, there are 2 candidates for the president, Candidate A and Candidate B. When a candidate wins in a state, they get all the electoral votes for that state. Given the votes for each candidate below, determine who wins the popular vote and who wins the electoral college vote.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines">State</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Votes for<br>Candidate A</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Votes for<br>Candidate B</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of Electoral<br>Votes for A</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of Electoral<br>Votes for B</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Small</td>
+<td class="c m b1 r1 l0 t0 lines">56,259</td>
+<td class="c m b1 r1 l0 t0 lines">98,341</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Medium</td>
+<td class="c m b1 r1 l0 t0 lines">130,082</td>
+<td class="c m b1 r1 l0 t0 lines">132,258</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Large</td>
+<td class="c m b1 r1 l0 t0 lines">278,177</td>
+<td class="c m b1 r1 l0 t0 lines">302,958</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Huge</td>
+<td class="c m b1 r1 l0 t0 lines">546,555</td>
+<td class="c m b1 r1 l0 t0 lines">315,515</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Totals</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div></div></div>
+<p id="p-4201">First, we will add up all the votes for each candidate in their columns. Next, we will look at each state individually to determine which candidate wins each state. Candidate B has more votes in Small, Medium and Large, so Candidate B gets all of the electoral votes in those states. Candidate A won Huge, so they get all of those electoral votes. We enter zero for the candidate who does not win in each state. Then we add up the electoral vote columns. Here is the completed table.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines">State</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Votes for<br>Candidate A</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Votes for<br>Candidate B</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of Electoral<br>Votes for A</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of Electoral<br>Votes for B</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Small</td>
+<td class="c m b1 r1 l0 t0 lines">56,259</td>
+<td class="c m b1 r1 l0 t0 lines">98,341</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">5</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Medium</td>
+<td class="c m b1 r1 l0 t0 lines">130,082</td>
+<td class="c m b1 r1 l0 t0 lines">132,258</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">8</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Large</td>
+<td class="c m b1 r1 l0 t0 lines">278,177</td>
+<td class="c m b1 r1 l0 t0 lines">302,958</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">16</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Huge</td>
+<td class="c m b1 r1 l0 t0 lines">546,555</td>
+<td class="c m b1 r1 l0 t0 lines">315,515</td>
+<td class="c m b1 r1 l0 t0 lines">23</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Totals</td>
+<td class="c m b1 r1 l0 t0 lines">1,011,073</td>
+<td class="c m b1 r1 l0 t0 lines">849,072</td>
+<td class="c m b1 r1 l0 t0 lines">23</td>
+<td class="c m b1 r1 l0 t0 lines">29</td>
+</tr>
+</table></div></div></div>
+<p id="p-4202">Now we can see that Candidate A wins the popular vote with 1,011,073 votes compared to 849,072 for Candidate B. But Candidate B wins the Electoral College with 29 electoral votes. So, Candidate B becomes the President of the United States.</p>
+<p id="p-4203">There have been 5 U.S. presidential elections where the winner of the popular vote was not the winner of the electoral college. In all the other elections, the two methods agreed and would have elected the same candidate.</p>
+<p id="p-4204">Try calculating the results if these were the votes instead:</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines">State</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Votes for<br>Candidate A</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Votes for<br>Candidate B</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of Electoral<br>Votes for A</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of Electoral<br>Votes for B</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Small</td>
+<td class="c m b1 r1 l0 t0 lines">56,259</td>
+<td class="c m b1 r1 l0 t0 lines">98,341</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Medium</td>
+<td class="c m b1 r1 l0 t0 lines">131,200</td>
+<td class="c m b1 r1 l0 t0 lines">131,140</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Large</td>
+<td class="c m b1 r1 l0 t0 lines">278,177</td>
+<td class="c m b1 r1 l0 t0 lines">302,958</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Huge</td>
+<td class="c m b1 r1 l0 t0 lines">546,555</td>
+<td class="c m b1 r1 l0 t0 lines">315,515</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Totals</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div></div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines">State</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Votes for<br>Candidate A</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Votes for<br>Candidate B</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of Electoral<br>Votes for A</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of Electoral<br>Votes for B</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Small</td>
+<td class="c m b1 r1 l0 t0 lines">56,259</td>
+<td class="c m b1 r1 l0 t0 lines">98,341</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">5</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Medium</td>
+<td class="c m b1 r1 l0 t0 lines">131,200</td>
+<td class="c m b1 r1 l0 t0 lines">131,140</td>
+<td class="c m b1 r1 l0 t0 lines">8</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Large</td>
+<td class="c m b1 r1 l0 t0 lines">278,177</td>
+<td class="c m b1 r1 l0 t0 lines">302,958</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">16</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Huge</td>
+<td class="c m b1 r1 l0 t0 lines">546,555</td>
+<td class="c m b1 r1 l0 t0 lines">315,515</td>
+<td class="c m b1 r1 l0 t0 lines">23</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Totals</td>
+<td class="c m b1 r1 l0 t0 lines">1,012,191</td>
+<td class="c m b1 r1 l0 t0 lines">847,954</td>
+<td class="c m b1 r1 l0 t0 lines">31</td>
+<td class="c m b1 r1 l0 t0 lines">21</td>
+</tr>
+</table></div></div></div>
+<p id="p-4205">This time Candidate A won Medium and Huge. That gave them the electoral vote victory. Note that the race in Medium was very close, and we only changed 1,118 votes or 0.06% of the votes to Candidate A which gave them the Electoral College.</p>
+<p id="p-4206">Opponents of the Electoral College system say that it causes candidates to focus on a few swing states, rather than campaigning equally in all states.</p>
+</li>
+<li id="li-1827">
+<p id="p-4207">Let’s look at which combinations of states the candidates could seek to win with.</p>
+<p id="p-4208">Since 27 electoral votes are needed, we will list all the winning combinations starting with the smallest number of states to win. We see that a candidate must win either Huge or Large, because Small and Medium together are not enough votes to win</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines">Combination</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Small, 5</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Medium, 8</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Large, 16</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Huge, 23</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Total</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Huge + Small</td>
+<td class="c m b1 r1 l0 t0 lines">5</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines">23</td>
+<td class="c m b1 r1 l0 t0 lines">28</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Huge + Medium</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines">8</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines">23</td>
+<td class="c m b1 r1 l0 t0 lines">31</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Huge + Large</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines">16</td>
+<td class="c m b1 r1 l0 t0 lines">23</td>
+<td class="c m b1 r1 l0 t0 lines">39</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Huge + Small + Medium</td>
+<td class="c m b1 r1 l0 t0 lines">5</td>
+<td class="c m b1 r1 l0 t0 lines">8</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines">23</td>
+<td class="c m b1 r1 l0 t0 lines">36</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Huge + Medium + Large</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines">8</td>
+<td class="c m b1 r1 l0 t0 lines">16</td>
+<td class="c m b1 r1 l0 t0 lines">23</td>
+<td class="c m b1 r1 l0 t0 lines">47</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Huge + Small + Large</td>
+<td class="c m b1 r1 l0 t0 lines">5</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines">16</td>
+<td class="c m b1 r1 l0 t0 lines">23</td>
+<td class="c m b1 r1 l0 t0 lines">44</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Large + Small + Medium</td>
+<td class="c m b1 r1 l0 t0 lines">5</td>
+<td class="c m b1 r1 l0 t0 lines">8</td>
+<td class="c m b1 r1 l0 t0 lines">16</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines">29</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">All States</td>
+<td class="c m b1 r1 l0 t0 lines">5</td>
+<td class="c m b1 r1 l0 t0 lines">8</td>
+<td class="c m b1 r1 l0 t0 lines">16</td>
+<td class="c m b1 r1 l0 t0 lines">23</td>
+<td class="c m b1 r1 l0 t0 lines">52</td>
+</tr>
+</table></div></div></div>
+<p id="p-4209">From the table we find there are 8 different ways to win the electoral college and candidates should definitely campaign in Large and Huge.</p>
+</li>
+<li id="li-1828">
+<p id="p-4210">To find the fewest number of individual votes a candidate could win with; let’s look at the table above. The combination of states with the fewest electoral votes is Huge and Small. Let’s see how many votes would be needed to win those two states.</p>
+<p id="p-4211">For Huge:</p>
+<p id="p-4212"><span class="process-math">\(862,070 \div 2 = 431,035\text{,}\)</span> then round up to 431,036</p>
+<p id="p-4213">For Small:</p>
+<p id="p-4214"><span class="process-math">\(154,600 \div 2 = 77,300\text{,}\)</span> then round up to 77,301</p>
+<p id="p-4215"><span class="process-math">\(431,036+77,301 \text{ votes } = 508,337 \text{ votes}\)</span></p>
+</li>
+<li id="li-1829">
+<p id="p-4216">The smallest number of votes to win the electoral college is 508,337. What percentage of the population is that? We will divide by the total population to get</p>
+<p id="p-4217"><span class="process-math">\(508,337 \div 1,860,145 = 0.2733\)</span></p>
+<p id="p-4218">If a candidate had the right combination of states, they could win the Electoral College with only 27.3% of the vote.</p>
+<p id="p-4219">People who support the Electoral College often say it protects small states. People who oppose the Electoral College often say that each person’s vote should count equally as in the popular vote. Next we will look at electoral power to understand the effect on small states.</p>
+</li>
+</ol></div></div>
+</div></article><p id="p-4220">People who support the Electoral College often say it protects small states. People who oppose the Electoral College often say that each person’s vote should count equally as in the popular vote. Next we will look at electoral power to understand the effect on small states.</p></section><section class="subsection" id="subsection-143"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">6.3.3</span> <span class="title">Electoral Power</span>
+</h3>
+<p id="p-4221"><em class="alert">Electoral power</em> is the value of a person’s vote in one state compared to another state. A related topic is voting power, which is the probability of any one person influencing an election. If you are interested in voting power, you can look up the Banzhaf Power Index. To calculate the electoral power, we will calculate a ratio of electoral votes for a given number of people. We could use any number, so we will choose the number of people that each representative represents, which is our divisor of 40,000 people.</p>
+<article class="example example-like" id="example-117"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.3.6</span><span class="period">.</span>
+</h4>
+<p id="p-4222">Using the same fictional country, use the table below to calculate the electoral power of each state.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines">State</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Representatives</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Senators</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Electors</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Electoral Votes Per<br>40,000 people</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Small</td>
+<td class="c m b1 r1 l0 t0 lines">154,600</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Medium</td>
+<td class="c m b1 r1 l0 t0 lines">262,340</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Large</td>
+<td class="c m b1 r1 l0 t0 lines">581,135</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Huge</td>
+<td class="c m b1 r1 l0 t0 lines">1,362,070</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div></div></div> <p id="p-4223">First, we fill in the number of representatives, senators and electoral votes for each state that we found earlier. Then we will calculate the number of electoral votes per 40,000 people.</p> <p id="p-4224">To do that, divide the number of electors by the number of representatives, since they each represent approximately 40,000 people. The results are shown in the table below. Note this is approximate because we cut off the decimal remainders when calculating the number of representatives.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines">State</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Representatives</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Senators</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Electors</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Electoral Votes Per<br>40,000 people</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Small</td>
+<td class="c m b1 r1 l0 t0 lines">154,600</td>
+<td class="c m b1 r1 l0 t0 lines">3</td>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines">5</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(5\div3 \approx 1.67\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Medium</td>
+<td class="c m b1 r1 l0 t0 lines">262,340</td>
+<td class="c m b1 r1 l0 t0 lines">6</td>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines">8</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(8\div6 \approx 1.33\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Large</td>
+<td class="c m b1 r1 l0 t0 lines">581,135</td>
+<td class="c m b1 r1 l0 t0 lines">14</td>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines">16</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(16 \div14 \approx 1.14\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Huge</td>
+<td class="c m b1 r1 l0 t0 lines">1,362,070</td>
+<td class="c m b1 r1 l0 t0 lines">21</td>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines">23</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(23\div21 \approx 1.10\)</span></td>
+</tr>
+</table></div></div></div> <p id="p-4225">Are you surprised to see that the smallest states have the highest electoral power? That is part of the design of the electoral college. The founders from small states were concerned that their votes would not matter, so every state gets 2 senators added to the number of representatives. For a state with few representatives, those 2 extra electoral votes make a big difference. For a large states, the extra 2 electoral votes don’t make a very big difference.</p> <p id="p-4226">You may have noticed a pattern when dividing to find the electoral power. Each time we divided the number of electoral votes by that number minus two. We can write that pattern as <span class="process-math">\(\frac{n}{n-2}\text{.}\)</span> Using GeoGebra to graph that pattern this is what we see.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel top" style="width:100%;"><img src="external/democracy/5_3/electoral1.png" class="contained" alt="A cartesian coordinate graph with number of electors on the x-axis and electoral power on the y-axis. The graph shows the maximum electoral power of 3 when there are 3 electors and an exponential decay as the number of electors goes up. With 4 electors the electoral power is 2, with 5 electors the electoral power is about 1.67 and the pattern levels off at an electoral power just over 1.0 as the number of electors increases."></div></div></div> <p id="p-4227">The minimum number of electors is three, since each state gets at least one representative in the apportionment process. The smallest states and Washington, D.C. have 3 electors and the greatest electoral power on the left side of the graph. The largest states like California, Florida and Texas have the least electoral power on the right side of the graph.</p> <p id="p-4228">Let’s say instead each state had equal electoral power by removing the 2 extra electoral votes or by using the popular vote. Then the graph would look like this.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel top" style="width:100%;"><img src="external/democracy/5_3/electoral2.png" class="contained" alt="A cartesian coordinate graph with the same axes as the previous graph. This time the electoral power is constant with an electoral power of 1 for every number of electors."></div></div></div> <p id="p-4229">Now that we have studied the popular vote, the Electoral College and electoral power, we leave it up to you to choose which method you think is best.</p></article></section><section class="exercises" id="exercises-15"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">6.3.4</span> <span class="title">Exercises</span>
+</h3>
+<article class="exercise exercise-like" id="exercise-335"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<p id="p-4230">How is the U.S. President selected?</p></article><article class="exercise exercise-like" id="exercise-336"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<p id="p-4232">How many electors are there in the U.S. Electoral College?</p></article><article class="exercise exercise-like" id="exercise-337"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<p id="p-4234">How many U.S. Senators represent each state?</p></article><article class="exercise exercise-like" id="exercise-338"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<p id="p-4236">What is the length of a term of a U.S. Senator?</p></article><article class="exercise exercise-like" id="exercise-339"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
+<p id="p-4238">How many Representatives serve in the U.S. House of Representatives?</p></article><article class="exercise exercise-like" id="exercise-340"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+<p id="p-4240">What is the length of a term of a U.S. Representative?</p></article><div class="exercisegroup" id="exercisegroup-19">
+<h4 class="heading"><span class="title">Exercise Group.</span></h4>
+<div class="introduction" id="introduction-49">
+<p id="p-4242">In each fictional country in problems 7-10, use the rules of the U.S. government to complete the table and determine the following:</p> <ol id="p-4243" class="lower-alpha">
+<li id="li-1830"><p id="p-4244">The total number of electors in the state.</p></li>
+<li id="li-1831"><p id="p-4245">The number of electoral votes needed for a majority and win a presidential election.</p></li>
+</ol>
+</div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-341"><h5 class="heading"><span class="codenumber">7<span class="period">.</span></span></h5>
+<p id="p-4246">In this country there is one representative for every 50,000 residents.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines">State</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Representatives</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Senators</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Electors</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Gandhi</td>
+<td class="c m b1 r1 l0 t0 lines">450,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Mandela</td>
+<td class="c m b1 r1 l0 t0 lines">150,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Gbowee</td>
+<td class="c m b1 r1 l0 t0 lines">600,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Total</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div></div></div></article><article class="exercise exercise-like" id="exercise-342"><h5 class="heading"><span class="codenumber">8<span class="period">.</span></span></h5>
+<p id="p-4250">In this country there is one representative for every 75,000 residents.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines">State</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Representatives</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Senators</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Electors</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Johnson</td>
+<td class="c m b1 r1 l0 t0 lines">225,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Rivera</td>
+<td class="c m b1 r1 l0 t0 lines">450,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Milk</td>
+<td class="c m b1 r1 l0 t0 lines">750,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Total</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div></div></div></article><article class="exercise exercise-like" id="exercise-343"><h5 class="heading"><span class="codenumber">9<span class="period">.</span></span></h5>
+<p id="p-4254">In this country there is one representative for every 40,000 residents.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines">State</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Representatives</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Senators</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Electors</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Tamez</td>
+<td class="c m b1 r1 l0 t0 lines">280,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Teters</td>
+<td class="c m b1 r1 l0 t0 lines">200,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Herrington</td>
+<td class="c m b1 r1 l0 t0 lines">400,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Osawa</td>
+<td class="c m b1 r1 l0 t0 lines">360,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Total</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div></div></div></article><article class="exercise exercise-like" id="exercise-344"><h5 class="heading"><span class="codenumber">10<span class="period">.</span></span></h5>
+<p id="p-4258">In this country there is one representative for every 60,000 residents.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines">State</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Representatives</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Senators</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Electors</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Johnson</td>
+<td class="c m b1 r1 l0 t0 lines">120,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Jackson</td>
+<td class="c m b1 r1 l0 t0 lines">480,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Cox</td>
+<td class="c m b1 r1 l0 t0 lines">720,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Browne</td>
+<td class="c m b1 r1 l0 t0 lines">420,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Total</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div></div></div></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-20">
+<h4 class="heading"><span class="title">Exercise Group.</span></h4>
+<div class="introduction" id="introduction-50">
+<p id="p-4262">In each fictional country in problems 11-14, use the rules of the U.S. government (assume that all of a state’s electoral votes go to the candidate who received the majority of the votes in that state) to complete the table and determine the following:</p> <ol id="p-4263" class="lower-alpha">
+<li id="li-1840"><p id="p-4264">The winner of the popular vote in the country and the percentage of votes they won.</p></li>
+<li id="li-1841"><p id="p-4265">The winner of the electoral college who becomes the president and the percentage of electoral votes they won.</p></li>
+</ol>
+</div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-345"><h5 class="heading"><span class="codenumber">11<span class="period">.</span></span></h5>
+<p id="p-4266">In this country from problem 7, there is one representative for every 50,000 residents.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines">State</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Votes for<br>Candidate A</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Votes for<br>Candidate B</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of Electoral<br>Votes for A</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of Electoral<br>Votes for B</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Gandhi</td>
+<td class="c m b1 r1 l0 t0 lines">216,000</td>
+<td class="c m b1 r1 l0 t0 lines">234,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Mandela</td>
+<td class="c m b1 r1 l0 t0 lines">37,500</td>
+<td class="c m b1 r1 l0 t0 lines">112,500</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Gbowee</td>
+<td class="c m b1 r1 l0 t0 lines">489,450</td>
+<td class="c m b1 r1 l0 t0 lines">110,550</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Total Votes</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div></div></div></article><article class="exercise exercise-like" id="exercise-346"><h5 class="heading"><span class="codenumber">12<span class="period">.</span></span></h5>
+<p id="p-4270">In this country from problem 8, there is one representative for every 75,000 residents.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines">State</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Votes for<br>Candidate A</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Votes for<br>Candidate B</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of Electoral<br>Votes for A</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of Electoral<br>Votes for B</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Johnson</td>
+<td class="c m b1 r1 l0 t0 lines">115,650</td>
+<td class="c m b1 r1 l0 t0 lines">109,350</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Rivera</td>
+<td class="c m b1 r1 l0 t0 lines">235,800</td>
+<td class="c m b1 r1 l0 t0 lines">214,200</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Milk</td>
+<td class="c m b1 r1 l0 t0 lines">117,750</td>
+<td class="c m b1 r1 l0 t0 lines">632,250</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Total</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div></div></div></article><article class="exercise exercise-like" id="exercise-347"><h5 class="heading"><span class="codenumber">13<span class="period">.</span></span></h5>
+<p id="p-4274">In this country from problem 9, there is one representative for every 40,000 residents.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines">State</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Votes for<br>Candidate A</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Votes for<br>Candidate B</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of Electoral<br>Votes for A</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of Electoral<br>Votes for B</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Tamez</td>
+<td class="c m b1 r1 l0 t0 lines">95,480</td>
+<td class="c m b1 r1 l0 t0 lines">184,250</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Teters</td>
+<td class="c m b1 r1 l0 t0 lines">104,200</td>
+<td class="c m b1 r1 l0 t0 lines">95,800</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Herrington</td>
+<td class="c m b1 r1 l0 t0 lines">203,600</td>
+<td class="c m b1 r1 l0 t0 lines">196,400</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Osawa</td>
+<td class="c m b1 r1 l0 t0 lines">46,080</td>
+<td class="c m b1 r1 l0 t0 lines">313,920</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Total Votes</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div></div></div></article><article class="exercise exercise-like" id="exercise-348"><h5 class="heading"><span class="codenumber">14<span class="period">.</span></span></h5>
+<p id="p-4278">In this country from problem 10, there is one representative for every 60,000 residents.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines">State</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Votes for<br>Candidate A</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Votes for<br>Candidate B</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of Electoral<br>Votes for A</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of Electoral<br>Votes for B</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Johnson</td>
+<td class="c m b1 r1 l0 t0 lines">52,440</td>
+<td class="c m b1 r1 l0 t0 lines">67,560</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Jackson</td>
+<td class="c m b1 r1 l0 t0 lines">418,080</td>
+<td class="c m b1 r1 l0 t0 lines">61,920</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Cox</td>
+<td class="c m b1 r1 l0 t0 lines">319,680</td>
+<td class="c m b1 r1 l0 t0 lines">400,320</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Browne</td>
+<td class="c m b1 r1 l0 t0 lines">350,280</td>
+<td class="c m b1 r1 l0 t0 lines">69,270</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Total Votes</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div></div></div></article>
+</div>
+</div>
+<div class="exercisegroup" id="exercisegroup-21">
+<h4 class="heading"><span class="title">Exercise Group.</span></h4>
+<div class="introduction" id="introduction-51">
+<p id="p-4282">In each fictional country in problems 15-18, use the rules of the U.S. government to complete the table and determine the following:</p> <ol id="p-4283" class="lower-alpha">
+<li id="li-1850"><p id="p-4284">The state that has the most electoral power</p></li>
+<li id="li-1851"><p id="p-4285">The state that has the least electoral power</p></li>
+</ol>
+</div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-349"><h5 class="heading"><span class="codenumber">15<span class="period">.</span></span></h5>
+<p id="p-4286">In this country from problem 7, there is one representative for every 50,000 residents.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines">State</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Representatives</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Senators</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Electors</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Electoral Votes per<br>50,000 people</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Gandhi</td>
+<td class="c m b1 r1 l0 t0 lines">450,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Mandela</td>
+<td class="c m b1 r1 l0 t0 lines">150,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Gbowee</td>
+<td class="c m b1 r1 l0 t0 lines">600,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div></div></div></article><article class="exercise exercise-like" id="exercise-350"><h5 class="heading"><span class="codenumber">16<span class="period">.</span></span></h5>
+<p id="p-4290">In this country from problem 8, there is one representative for every 75,000 residents.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines">State</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Representatives</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Senators</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Electors</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Electoral Votes per<br>50,000 people</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Johnson</td>
+<td class="c m b1 r1 l0 t0 lines">225,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Rivera</td>
+<td class="c m b1 r1 l0 t0 lines">450,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Milk</td>
+<td class="c m b1 r1 l0 t0 lines">750,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div></div></div></article><article class="exercise exercise-like" id="exercise-351"><h5 class="heading"><span class="codenumber">17<span class="period">.</span></span></h5>
+<p id="p-4294">In this country from problem 9, there is one representative for every 40,000 residents.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines">State</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Representatives</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Senators</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Electors</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Electoral Votes per<br>50,000 people</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Tamez</td>
+<td class="c m b1 r1 l0 t0 lines">280,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Teters</td>
+<td class="c m b1 r1 l0 t0 lines">200,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Herrington</td>
+<td class="c m b1 r1 l0 t0 lines">400,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Osawa</td>
+<td class="c m b1 r1 l0 t0 lines">360,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div></div></div></article><article class="exercise exercise-like" id="exercise-352"><h5 class="heading"><span class="codenumber">18<span class="period">.</span></span></h5>
+<p id="p-4298">In this country from problem 10, there is one representative for every 60,000 residents.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines">State</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Representatives</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Senators</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Number of<br>Electors</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Electoral Votes per<br>50,000 people</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Johnson</td>
+<td class="c m b1 r1 l0 t0 lines">120,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Jackson</td>
+<td class="c m b1 r1 l0 t0 lines">480,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Cox</td>
+<td class="c m b1 r1 l0 t0 lines">720,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Browne</td>
+<td class="c m b1 r1 l0 t0 lines">420,000</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div></div></div></article>
+</div>
+</div>
+<article class="exercise exercise-like" id="exercise-353"><h4 class="heading"><span class="codenumber">19<span class="period">.</span></span></h4>
+<p id="p-4302">For the country in problem 7, determine all the possible combinations of states that would win the electoral college. What is the minimum number of votes needed to win the electoral college?</p></article><article class="exercise exercise-like" id="exercise-354"><h4 class="heading"><span class="codenumber">20<span class="period">.</span></span></h4>
+<p id="p-4304">For the country in problem 8, determine all the possible combinations of states that would win the electoral college. What is the minimum number of votes needed to win the electoral college?</p></article><article class="exercise exercise-like" id="exercise-355"><h4 class="heading"><span class="codenumber">21<span class="period">.</span></span></h4>
+<p id="p-4306">For the country in problem 9, determine all the possible combinations of states that would win the electoral college. What is the minimum number of votes needed to win the electoral college?</p></article><article class="exercise exercise-like" id="exercise-356"><h4 class="heading"><span class="codenumber">22<span class="period">.</span></span></h4>
+<p id="p-4308">For the country in problem 10, determine all the possible combinations of states that would win the electoral college. What is the minimum number of votes needed to win the electoral college?</p></article></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-52"><div class="fn"><a class="external" href="https://www.census.gov/prod/2011pubs/12statab/outlying.pdf" target="_blank"><code class="code-inline tex2jax_ignore">https://www.census.gov/prod/2011pubs/12statab/outlying.pdf</code></a></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-53"><div class="fn"><a class="external" href="https://www.census.gov/newsroom/blogs/random-samplings/2017/05/voting_in_america.html" target="_blank"><code class="code-inline tex2jax_ignore">https://www.census.gov/newsroom/blogs/random-samplings/2017/05/voting_in_america.html</code></a></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-54"><div class="fn"><a class="external" href="https://www.nationalpopularvote.com/" target="_blank"><code class="code-inline tex2jax_ignore">https://www.nationalpopularvote.com/</code></a></div></div>
+</div></main>
+</div>
+</body>
+</html>
