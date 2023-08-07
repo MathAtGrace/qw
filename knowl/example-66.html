@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -12,12 +12,57 @@
 </head>
 <body class="ignore-math">
 <article class="example example-like"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.7</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.11</span><span class="period">.</span>
 </h4>
-<p>Let’s continue with our peanut butter example and find the median both by hand and with a spreadsheet. The price of peanut butter at 5 stores was $3.29, $3.59, $3.79, $3.75, and $3.99.</p> <p>To find the median by hand, we must first list the prices in order. This give us: $3.29, $3.59, $3.75, $3.79, $3.99</p> <p>Since there are an odd number of data values in the sample (<span class="process-math">\(n=5\)</span>), we know that the median will be the single data value in the middle of the ordered list.</p> <div class="displaymath process-math" data-contains-math-knowls="">
-\begin{gather*}
-\overbrace{3.29, 3.59}^{\text{Lower Half}} \overbrace{3.75}^{\text{Median}} \overbrace{3.79, 3.99}^{\text{Upper Half}}
-\end{gather*}
-</div> <p>The median price of peanut butter at these five stores is $3.75.</p> <p>Using a spreadsheet, we write</p> <pre class="code-display tex2jax_ignore">=MEDIAN(3.29, 3.59, 3.79, 3.75, 3.99)</pre> <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/statistics/3_3/median2.png" class="contained" alt="A screenshot of Excel showing the =MEDIAN formula with all the data values typed in."></div></div></div> <p>and we get a median price of $3.75.</p></article><span class="incontext"><a href="sec-4-3-measure-of-center.html#example-66" class="internal">in-context</a></span>
+<div class="para">Suppose we have collected weights from 100 subjects who identify as male, as part of a nutrition study. For our weight data, we have values ranging from a low of 121 pounds to a high of 263 pounds, giving a total span of <span class="process-math">\(263-121 = 142\text{.}\)</span>
+</div> <div class="para">There are many ways to draw a histogram and we will explain one way as an example. We will create 10 classes by doing the following calculation: Take the range of 142 and divide it by 10 to find the class width.</div> <div class="para"><span class="process-math">\(142/10 = 14.2\)</span></div> <div class="para">Then we round up the class width so that the largest data value will be in one of the classes. So we round up to a class width of 15. Since the minimum data value is 121, we will choose 120 to start with since it is a multiple of 15 that is less than 121.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:1.5%;margin-right:1.5%;">
+<div class="sbspanel fixed-width bottom" style="width:48.4536082474227%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines"><em class="alert">Interval</em></th>
+<th scope="col" class="c m b1 r1 l0 t1 lines"><em class="alert">Frequency</em></th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">120-134</td>
+<td class="c m b1 r1 l0 t0 lines">4</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">135-149</td>
+<td class="c m b1 r1 l0 t0 lines">14</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">150-164</td>
+<td class="c m b1 r1 l0 t0 lines">16</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">165-179</td>
+<td class="c m b1 r1 l0 t0 lines">28</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">180-194</td>
+<td class="c m b1 r1 l0 t0 lines">12</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">195-209</td>
+<td class="c m b1 r1 l0 t0 lines">8</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">210-224</td>
+<td class="c m b1 r1 l0 t0 lines">7</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">225-239</td>
+<td class="c m b1 r1 l0 t0 lines">6</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">240-254</td>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">255-269</td>
+<td class="c m b1 r1 l0 t0 lines">3</td>
+</tr>
+</table></div>
+<div class="sbspanel bottom" style="width:48.4536082474227%;"><img src="external/statistics/3_2/class_intervals.png" class="contained" alt="This is a histogram of the data in the table; the x-axis is labeled weights(pounds) and goes from 120 to 270, with a scale of 15; The y-axis is labeled frequency and goes from 0 to 30 with a scale of 5. There are no spaces between the bars."></div>
+</div></div></article><span class="incontext"><a href="sec-4-2-describing-data.html#example-66" class="internal">in-context</a></span>
 </body>
 </html>

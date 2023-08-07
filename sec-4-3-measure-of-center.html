@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Summary Statistics: Measures of Center</title>
@@ -14,48 +14,79 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Quantitative Wisdom">
 <meta property="book:author" content=" Dr. Ryan Johnson ">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.88,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-},
+  }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script async="" src="https://cse.google.com/cse.js?cx=015103900096539427448:ngwuia10qci"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.13/pretext_search.js"></script><link href="https://pretextbook.org/css/0.4/pretext_search.css" rel="stylesheet" type="text/css">
-<script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
-</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/colors_blue_grey.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script async="" src="https://cse.google.com/cse.js?cx=015103900096539427448:ngwuia10qci"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.7/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/setcolors.css" rel="stylesheet" type="text/css">
 <!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
@@ -78,18 +109,134 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '5.0.1';
+eBookConfig.runestone_version = '7.0.7';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.6.2/runtime.66b619f51b746382.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.6.2/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.6.2/runestone.ecc6dff5cad8b815.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.6.2/637.0fa6cababf056764.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.6.2/runestone.3eb60bc006ae9a54.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.7/prefix-runtime.fd9ce61c3c71cb22.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.7/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.7/prefix-runestone.89acb6c6122954e4.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.7/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.7/prefix-runestone.8d2f742bc74f4a41.css">
 </head>
-<body class="pretext-book ignore-math has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\degree}[0]{^{\circ}}
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="qw.html"><span class="title">Quantitative Wisdom:</span> <span class="subtitle">Numerical literacy from the perspective of Biblical wisdom</span></a></h1>
+<p class="byline">Dr. Ryan Johnson</p>
+</div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" class="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms" class="searchterms"></span>
+</h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><a class="index-button button" href="index-1.html" title="Index"><span class="name">Index</span></a><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="sec-4-2-describing-data.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="data.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="sec-4-4-measure-of-variation.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
+<div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\degree}[0]{^{\circ}}
 \newcommand{\Ccancel}[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
 \newcommand{\bluetext}[1]{\color{blue}{#1}} 
 \delimitershortfall-1sp
@@ -101,135 +248,371 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \newcommand{\sfrac}[2]{{#1}/{#2}}
 \)</span></div>
-<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
-<a id="logo-link" href=""></a><div class="title-container">
-<h1 class="heading"><a href="qw.html"><span class="title">Quantitative Wisdom:</span> <span class="subtitle">Numerical literacy from the perspective of Biblical wisdom</span></a></h1>
-<p class="byline">Dr. Ryan Johnson</p>
-</div>
-<div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
-<div class="searchbox"><div class="searchwidget">
-<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
-</div></div>
-<div id="searchresultsplaceholder" style="display: none">
-<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
-</h2>
-<div id="searchempty"><span>No results.</span></div>
-<ol id="searchresults"></ol>
-</div>
-</div></div>
-<nav id="primary-navbar" class="navbar"><div class="container">
-<div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-4-2-describing-data.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="data.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-4-4-measure-of-variation.html" title="Next">Next</a></span>
-</div>
-</div>
-<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-4-2-describing-data.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="data.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-4-4-measure-of-variation.html" title="Next">Next</a>
-</div>
-</div></nav></header><div class="page">
-<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
-<nav id="toc"><ul>
-<li class="link frontmatter">
-<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
-<li><a href="dedication-1.html" data-scroll="dedication-1" class="internal">Dedication</a></li>
-<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1" class="internal">Acknowledgements</a></li>
-<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
-<li><a href="preface-1.html" data-scroll="preface-1" class="internal">Our goals</a></li>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural">
+<li>
+<div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="dedication-1.html" class="internal"><span class="title">Dedication</span></a></div></li>
+<li><div class="toc-item"><a href="acknowledgement-1.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li><div class="toc-item"><a href="preface-1.html" class="internal"><span class="title">Our goals</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="ch-introduction.html" data-scroll="ch-introduction" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a><ul><li><a href="time.html" data-scroll="time" class="internal">Time Management Lab</a></li></ul>
-</li>
-<li class="link">
-<a href="ch-numbers.html" data-scroll="ch-numbers" class="internal"><span class="codenumber">2</span> <span class="title">Numbers</span></a><ul><li><a href="sec-problem-solving.html" data-scroll="sec-problem-solving" class="internal">Problem Solving</a></li></ul>
-</li>
-<li class="link">
-<a href="financial_math.html" data-scroll="financial_math" class="internal"><span class="codenumber">3</span> <span class="title">Finance</span></a><ul>
-<li><a href="sec-finance-intro-spreadsheet.html" data-scroll="sec-finance-intro-spreadsheet" class="internal">Introduction to Spreadsheets</a></li>
-<li><a href="sec-finance-simple-compound.html" data-scroll="sec-finance-simple-compound" class="internal">Simple and Compound Interest</a></li>
-<li><a href="sec-finance-savings-plan.html" data-scroll="sec-finance-savings-plan" class="internal">Savings Plans</a></li>
-<li><a href="sec-3-4-loans.html" data-scroll="sec-3-4-loans" class="internal">Loan Payments</a></li>
-<li><a href="chap_two_income_taxes.html" data-scroll="chap_two_income_taxes" class="internal">Income Taxes</a></li>
+<li>
+<div class="toc-item"><a href="ch-introduction.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="time.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Time Management Lab</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="time.html#subsec-Rule-of-60" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Rule of 60</span></a></div></li>
+<li><div class="toc-item"><a href="time.html#subsec-Master-Calendar" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Master Calendar</span></a></div></li>
+<li><div class="toc-item"><a href="time.html#subsec-Schedule" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Schedule</span></a></div></li>
+<li><div class="toc-item"><a href="time.html#subsec-" class="internal"><span class="codenumber">1.1.4</span> <span class="title">20 Tips for Managing Your Time</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="data.html" data-scroll="data" class="internal"><span class="codenumber">4</span> <span class="title">Data</span></a><ul>
-<li><a href="sec-4-1-statistical-process.html" data-scroll="sec-4-1-statistical-process" class="internal">Overview of the Statistical Process</a></li>
-<li><a href="sec-4-2-describing-data.html" data-scroll="sec-4-2-describing-data" class="internal">Describing Data</a></li>
-<li><a href="sec-4-3-measure-of-center.html" data-scroll="sec-4-3-measure-of-center" class="active">Summary Statistics: Measures of Center</a></li>
-<li><a href="sec-4-4-measure-of-variation.html" data-scroll="sec-4-4-measure-of-variation" class="internal">Summary Statistics: Measures of Variation</a></li>
+<li><div class="toc-item"><a href="mindset.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Mindset Lab</span></a></div></li>
+<li><div class="toc-item"><a href="sec-math-theology.html" class="internal"><span class="codenumber">1.3</span> <span class="title">God and Math</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="ch-models.html" data-scroll="ch-models" class="internal"><span class="codenumber">5</span> <span class="title">Math Models</span></a><ul>
-<li><a href="sec-models-linear.html" data-scroll="sec-models-linear" class="internal">Function Notation and Linear Functions</a></li>
-<li><a href="sec-models-exponential.html" data-scroll="sec-models-exponential" class="internal">Exponential Growth and Decay</a></li>
-<li><a href="sec-models-exponential-2.html" data-scroll="sec-models-exponential-2" class="internal">Exponential Models</a></li>
-<li><a href="sec-5-4-periodic-functions.html" data-scroll="sec-5-4-periodic-functions" class="internal">Periodic Functions</a></li>
+<li>
+<div class="toc-item"><a href="ch-numbers.html" class="internal"><span class="codenumber">2</span> <span class="title">Numbers</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-problem-solving.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Problem Solving</span></a></div></li>
+<li><div class="toc-item"><a href="sec_orders_of_mag.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Orders of Magnitude</span></a></div></li>
+<li><div class="toc-item"><a href="sec_water_footprint.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Proportional Reasoning</span></a></div></li>
+<li>
+<div class="toc-item"><a href="unit-conversion.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Unit Conversion</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="unit-conversion.html#subsection-5" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Equivalences Table</span></a></div></li>
+<li><div class="toc-item"><a href="unit-conversion.html#subsection-6" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Metric Prefixes</span></a></div></li>
+<li><div class="toc-item"><a href="unit-conversion.html#subsection-7" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Rates</span></a></div></li>
+<li><div class="toc-item"><a href="unit-conversion.html#subsection-8" class="internal"><span class="codenumber">2.4.4</span> <span class="title">Using Dimensional Analysis for Area and Volume units</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="democracy.html" data-scroll="democracy" class="internal"><span class="codenumber">6</span> <span class="title">Democracy</span></a><ul>
-<li><a href="sec-democracy-apportionment.html" data-scroll="sec-democracy-apportionment" class="internal">Apportionment</a></li>
-<li><a href="sec-democracy-voting.html" data-scroll="sec-democracy-voting" class="internal">Voting Methods</a></li>
-<li><a href="sec-democracy-popular-vote.html" data-scroll="sec-democracy-popular-vote" class="internal">The Popular Vote, Electoral College and Electoral Power</a></li>
-<li><a href="sec-democracy-gerrymandering.html" data-scroll="sec-democracy-gerrymandering" class="internal">Gerrymandering and How to Measure It</a></li>
+<li><div class="toc-item"><a href="cost-of-driving.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Cost of Driving</span></a></div></li>
+<li><div class="toc-item"><a href="home-improvements.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Home Improvements</span></a></div></li>
+<li><div class="toc-item"><a href="sec_numbers_percentages.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Percentages</span></a></div></li>
 </ul>
 </li>
-<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Back Matter</span></a></li>
-<li class="link"><a href="solutions-1.html" data-scroll="solutions-1" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></li>
-<li class="link"><a href="solutions-2.html" data-scroll="solutions-2" class="internal"><span class="codenumber">B</span> <span class="title">Solutions to Odd Exercises</span></a></li>
-<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
-<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
-</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
-</div></div>
-<main class="main"><div id="content" class="pretext-content">
+<li>
+<div class="toc-item"><a href="financial_math.html" class="internal"><span class="codenumber">3</span> <span class="title">Finance</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="sec-finance-intro-spreadsheet.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Introduction to Spreadsheets</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-finance-intro-spreadsheet.html#subsection-9" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Basic Calculations</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-intro-spreadsheet.html#subsection-10" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Cell References</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-intro-spreadsheet.html#subsection-11" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Cell Formatting</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-intro-spreadsheet.html#subsection-12" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Fill-Down Feature</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-intro-spreadsheet.html#subsection-13" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Formulas</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-intro-spreadsheet.html#exercises-1" class="internal"><span class="codenumber">3.1.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-finance-simple-compound.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Simple and Compound Interest</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-14" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Simple Interest</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-15" class="internal"><span class="codenumber">3.2.2</span> <span class="title">APR – Annual Percentage Rate</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-16" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Compound Interest</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-17" class="internal"><span class="codenumber">3.2.4</span> <span class="title">The Future Value Spreadsheet Formula</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-18" class="internal"><span class="codenumber">3.2.5</span> <span class="title">Comparing Simple and Compound Interest</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-19" class="internal"><span class="codenumber">3.2.6</span> <span class="title">Finding the Principal, or Present Value</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-20" class="internal"><span class="codenumber">3.2.7</span> <span class="title">The Present Value Spreadsheet Formula</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-21" class="internal"><span class="codenumber">3.2.8</span> <span class="title">Continuously Compounded Interest</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-22" class="internal"><span class="codenumber">3.2.9</span> <span class="title">Finding the Amount of Interest Earned and the Percentage</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-23" class="internal"><span class="codenumber">3.2.10</span> <span class="title">Effective Rate</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#exercises-2" class="internal"><span class="codenumber">3.2.11</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-finance-savings-plan.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Savings Plans</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-finance-savings-plan.html#subsec-Warmup" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Warmup</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-savings-plan.html#subsection-25" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Savings Plan Formulas</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-savings-plan.html#subsection-26" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Finding Payment Amounts Usings Spreadsheets and Formulas</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-savings-plan.html#subsection-27" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Comparing Lump Sum and Regular Savings Payments</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-savings-plan.html#subsection-28" class="internal"><span class="codenumber">3.3.5</span> <span class="title">Deriving the Savings Plan Formula (Optional)</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-savings-plan.html#exercises-3" class="internal"><span class="codenumber">3.3.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-3-4-loans.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Loan Payments</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-3-4-loans.html#subsection-29" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Installment Loans</span></a></div></li>
+<li><div class="toc-item"><a href="sec-3-4-loans.html#subsection-30" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Loan Formulas</span></a></div></li>
+<li><div class="toc-item"><a href="sec-3-4-loans.html#subsection-31" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Remaining Loan Balance</span></a></div></li>
+<li><div class="toc-item"><a href="sec-3-4-loans.html#subsection-32" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Credit Cards</span></a></div></li>
+<li><div class="toc-item"><a href="sec-3-4-loans.html#subsection-33" class="internal"><span class="codenumber">3.4.5</span> <span class="title">Summary of Spreadsheet Formulas</span></a></div></li>
+<li><div class="toc-item"><a href="sec-3-4-loans.html#subsection-34" class="internal"><span class="codenumber">3.4.6</span> <span class="title">When to use the formulas: What is the question asking?</span></a></div></li>
+<li><div class="toc-item"><a href="sec-3-4-loans.html#subsection-35" class="internal"><span class="codenumber">3.4.7</span> <span class="title">Summary of Mathematical Formulas</span></a></div></li>
+<li><div class="toc-item"><a href="sec-3-4-loans.html#subsection-36" class="internal"><span class="codenumber">3.4.8</span> <span class="title">When to use the formulas: What is the question asking?</span></a></div></li>
+<li><div class="toc-item"><a href="sec-3-4-loans.html#exercises-4" class="internal"><span class="codenumber">3.4.9</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="chap_two_income_taxes.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Income Taxes</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-37" class="internal"><span class="codenumber">3.5.1</span> <span class="title">A Very Brief History of Taxes</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-38" class="internal"><span class="codenumber">3.5.2</span> <span class="title">Types of Income Tax</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-39" class="internal"><span class="codenumber">3.5.3</span> <span class="title">Federal Income Tax</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-40" class="internal"><span class="codenumber">3.5.4</span> <span class="title">State Income Tax</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-41" class="internal"><span class="codenumber">3.5.5</span> <span class="title">Municipal Income Tax</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-42" class="internal"><span class="codenumber">3.5.6</span> <span class="title">Calculating Federal Income Tax</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-43" class="internal"><span class="codenumber">3.5.7</span> <span class="title">Gross Income</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-44" class="internal"><span class="codenumber">3.5.8</span> <span class="title">Adjusted Gross Income</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-45" class="internal"><span class="codenumber">3.5.9</span> <span class="title">Taxable Income</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-46" class="internal"><span class="codenumber">3.5.10</span> <span class="title">Filing Status</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-47" class="internal"><span class="codenumber">3.5.11</span> <span class="title">Tax Tables</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-48" class="internal"><span class="codenumber">3.5.12</span> <span class="title">Tax Credits</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-49" class="internal"><span class="codenumber">3.5.13</span> <span class="title">Calculating a Refund or Payment Due</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#exercises-5" class="internal"><span class="codenumber">3.5.14</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="data.html" class="internal"><span class="codenumber">4</span> <span class="title">Data</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="sec-4-1-statistical-process.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Overview of the Statistical Process</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-50" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Statistical Process</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-51" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Population</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-52" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Parameter</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-53" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Sample</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-54" class="internal"><span class="codenumber">4.1.5</span> <span class="title">Statistic</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-55" class="internal"><span class="codenumber">4.1.6</span> <span class="title">Sampling</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-56" class="internal"><span class="codenumber">4.1.7</span> <span class="title">Sampling Methods</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-57" class="internal"><span class="codenumber">4.1.8</span> <span class="title">Simple random sample (SRS)</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-58" class="internal"><span class="codenumber">4.1.9</span> <span class="title">Stratified sampling</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-59" class="internal"><span class="codenumber">4.1.10</span> <span class="title">Systematic sampling</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-60" class="internal"><span class="codenumber">4.1.11</span> <span class="title">Convenience sampling</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-61" class="internal"><span class="codenumber">4.1.12</span> <span class="title">Statistical Bias</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-62" class="internal"><span class="codenumber">4.1.13</span> <span class="title">Types of bias</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-63" class="internal"><span class="codenumber">4.1.14</span> <span class="title">Observational Studies</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-64" class="internal"><span class="codenumber">4.1.15</span> <span class="title">Experiments</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-65" class="internal"><span class="codenumber">4.1.16</span> <span class="title">Confounding</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-66" class="internal"><span class="codenumber">4.1.17</span> <span class="title">Control group</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-67" class="internal"><span class="codenumber">4.1.18</span> <span class="title">Placebo effect</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-68" class="internal"><span class="codenumber">4.1.19</span> <span class="title">Placebo and Placebo-controlled experiments</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-69" class="internal"><span class="codenumber">4.1.20</span> <span class="title">Blind studies</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-70" class="internal"><span class="codenumber">4.1.21</span> <span class="title">Margin of Error and Confidence Intervals</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#exercises-6" class="internal"><span class="codenumber">4.1.22</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-4-2-describing-data.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Describing Data</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-71" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Types of Data</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-72" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Presenting Categorical Data</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-73" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Frequency Tables</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-74" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Relative Frequency Tables</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-75" class="internal"><span class="codenumber">4.2.5</span> <span class="title">Bar graphs</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-76" class="internal"><span class="codenumber">4.2.6</span> <span class="title">Pie Charts</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-77" class="internal"><span class="codenumber">4.2.7</span> <span class="title">Using a Spreadsheet to Make Bar Charts and Pie Charts</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-78" class="internal"><span class="codenumber">4.2.8</span> <span class="title">Misleading Graphs</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-79" class="internal"><span class="codenumber">4.2.9</span> <span class="title">Perceptual Distortion</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-80" class="internal"><span class="codenumber">4.2.10</span> <span class="title">Misleading Scale</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-81" class="internal"><span class="codenumber">4.2.11</span> <span class="title">Stacked Bar Graphs</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-82" class="internal"><span class="codenumber">4.2.12</span> <span class="title">Presenting Quantitative Data</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-83" class="internal"><span class="codenumber">4.2.13</span> <span class="title">Histograms</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-84" class="internal"><span class="codenumber">4.2.14</span> <span class="title">Class Intervals</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-85" class="internal"><span class="codenumber">4.2.15</span> <span class="title">Histograms Using Technology</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-86" class="internal"><span class="codenumber">4.2.16</span> <span class="title">The Shape of a Distribution</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-87" class="internal"><span class="codenumber">4.2.17</span> <span class="title">Modality</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-88" class="internal"><span class="codenumber">4.2.18</span> <span class="title">Symmetry</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-89" class="internal"><span class="codenumber">4.2.19</span> <span class="title">Skewness</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-90" class="internal"><span class="codenumber">4.2.20</span> <span class="title">Skewed to the Left</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-91" class="internal"><span class="codenumber">4.2.21</span> <span class="title">Skewed to the Right</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-92" class="internal"><span class="codenumber">4.2.22</span> <span class="title">The Normal Distribution</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-93" class="internal"><span class="codenumber">4.2.23</span> <span class="title">Outlier</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#exercises-7" class="internal"><span class="codenumber">4.2.24</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="active">
+<div class="toc-item"><a href="sec-4-3-measure-of-center.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Summary Statistics: Measures of Center</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-4-3-measure-of-center.html#subsection-94" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Calculating Summary Statistics</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-3-measure-of-center.html#subsection-95" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Measures of Center</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-3-measure-of-center.html#subsection-96" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Mode</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-3-measure-of-center.html#subsection-97" class="internal"><span class="codenumber">4.3.4</span> <span class="title">Mean</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-3-measure-of-center.html#subsection-98" class="internal"><span class="codenumber">4.3.5</span> <span class="title">Median</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-3-measure-of-center.html#subsection-99" class="internal"><span class="codenumber">4.3.6</span> <span class="title">The Relationship Between the Mean and the Median</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-3-measure-of-center.html#exercises-8" class="internal"><span class="codenumber">4.3.7</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-4-4-measure-of-variation.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Summary Statistics: Measures of Variation</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#subsection-100" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Measures of Variation</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#subsection-101" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Standard Deviation</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#subsection-102" class="internal"><span class="codenumber">4.4.3</span> <span class="title">Range</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#subsection-103" class="internal"><span class="codenumber">4.4.4</span> <span class="title">Quartiles and the Interquartile Range</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#subsection-104" class="internal"><span class="codenumber">4.4.5</span> <span class="title">The Five-Number Summary and Boxplots</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#subsection-105" class="internal"><span class="codenumber">4.4.6</span> <span class="title">Modified Boxplot (Optional)</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#subsection-106" class="internal"><span class="codenumber">4.4.7</span> <span class="title">Percentiles</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#subsection-107" class="internal"><span class="codenumber">4.4.8</span> <span class="title">Comparing Distributions</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#subsection-108" class="internal"><span class="codenumber">4.4.9</span> <span class="title">Z-Scores</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#exercises-9" class="internal"><span class="codenumber">4.4.10</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-models.html" class="internal"><span class="codenumber">5</span> <span class="title">Math Models</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="sec-models-linear.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Function Notation and Linear Functions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-models-linear.html#subsection-109" class="internal"><span class="codenumber">5.1.1</span> <span class="title">What is a Function?</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-linear.html#subsection-110" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Math as a Language</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-linear.html#subsection-111" class="internal"><span class="codenumber">5.1.3</span> <span class="title">The Grammar of Function Notation</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-linear.html#subsection-112" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Average Rate of Change, Inuitive Knowledge</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-linear.html#subsection-113" class="internal"><span class="codenumber">5.1.5</span> <span class="title">Three Representations of a Relationship</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-linear.html#subsection-114" class="internal"><span class="codenumber">5.1.6</span> <span class="title">Linear Equations and Slope</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-linear.html#subsection-115" class="internal"><span class="codenumber">5.1.7</span> <span class="title">Slope Intercept Equation of a Line</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-linear.html#exercises-10" class="internal"><span class="codenumber">5.1.8</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-models-exponential.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Exponential Growth and Decay</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-models-exponential.html#subsection-116" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Exponential Growth</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-exponential.html#subsection-117" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Growth Factors</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-exponential.html#subsection-118" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Percent Increase</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-exponential.html#subsection-119" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Exponential Decay</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-exponential.html#subsection-120" class="internal"><span class="codenumber">5.2.5</span> <span class="title">Decay Factors</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-exponential.html#subsection-121" class="internal"><span class="codenumber">5.2.6</span> <span class="title">Comparing Linear Growth and Exponential Growth</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-exponential.html#sec-5-2-exponential-exercises" class="internal"><span class="codenumber">5.2.7</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-models-exponential-2.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Exponential Models</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-models-exponential-2.html#subsection-122" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Fitting an Exponential Function through Two Points</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-exponential-2.html#subsection-123" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Doubling Time</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-exponential-2.html#subsection-124" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Half-Life</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-exponential-2.html#section-4-5-exercises" class="internal"><span class="codenumber">5.3.4</span> <span class="title">Homework 4.5</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="sec-5-4-periodic-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Periodic Functions</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="democracy.html" class="internal"><span class="codenumber">6</span> <span class="title">Democracy</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="sec-democracy-apportionment.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Apportionment</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#subsection-125" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Historical Context for This Chapter</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#subsection-126" class="internal"><span class="codenumber">6.1.2</span> <span class="title">What is Apportionment?</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#subsection-127" class="internal"><span class="codenumber">6.1.3</span> <span class="title">Hamilton’s Method</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#subsection-128" class="internal"><span class="codenumber">6.1.4</span> <span class="title">Problems with Hamilton’s Method</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#subsection-129" class="internal"><span class="codenumber">6.1.5</span> <span class="title">Jefferson’s Method</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#subsection-130" class="internal"><span class="codenumber">6.1.6</span> <span class="title">Webster’s Method</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#subsection-131" class="internal"><span class="codenumber">6.1.7</span> <span class="title">Land Rights, Citizenship and Voting Rights</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#subsection-132" class="internal"><span class="codenumber">6.1.8</span> <span class="title">Huntington-Hill Method</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#subsection-133" class="internal"><span class="codenumber">6.1.9</span> <span class="title">What is the Geometric Mean?</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#exercises-13" class="internal"><span class="codenumber">6.1.10</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-democracy-voting.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Voting Methods</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-134" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Voting Rights</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-135" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Ranked Choice Ballots</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-136" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Preference Schedule</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-137" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Plurality Method</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-138" class="internal"><span class="codenumber">6.2.5</span> <span class="title">How Many Votes are Needed to Win?</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-139" class="internal"><span class="codenumber">6.2.6</span> <span class="title">Insincere Voting</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-140" class="internal"><span class="codenumber">6.2.7</span> <span class="title">Instant Runoff Method</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-141" class="internal"><span class="codenumber">6.2.8</span> <span class="title">Borda Count (Point System)</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-142" class="internal"><span class="codenumber">6.2.9</span> <span class="title">Pairwise Comparison: Copeland’s Method</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-143" class="internal"><span class="codenumber">6.2.10</span> <span class="title">Which Method is the Most Fair?</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-144" class="internal"><span class="codenumber">6.2.11</span> <span class="title">Primaries and Sequential Voting</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#exercises-14" class="internal"><span class="codenumber">6.2.12</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-democracy-popular-vote.html" class="internal"><span class="codenumber">6.3</span> <span class="title">The Popular Vote, Electoral College and Electoral Power</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-democracy-popular-vote.html#subsection-145" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Choosing the U.S. President</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-popular-vote.html#subsection-146" class="internal"><span class="codenumber">6.3.2</span> <span class="title">How Electoral Votes are Determined</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-popular-vote.html#subsection-147" class="internal"><span class="codenumber">6.3.3</span> <span class="title">Electoral Power</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-popular-vote.html#exercises-15" class="internal"><span class="codenumber">6.3.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-democracy-gerrymandering.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Gerrymandering and How to Measure It</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-democracy-gerrymandering.html#subsection-148" class="internal"><span class="codenumber">6.4.1</span> <span class="title">Forming State Legislative Districts</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-gerrymandering.html#subsection-149" class="internal"><span class="codenumber">6.4.2</span> <span class="title">Proportionality and Fairness</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-gerrymandering.html#subsection-150" class="internal"><span class="codenumber">6.4.3</span> <span class="title">How to Gerrymander</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-gerrymandering.html#subsection-151" class="internal"><span class="codenumber">6.4.4</span> <span class="title">The Efficiency Gap</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-gerrymandering.html#exercises-16" class="internal"><span class="codenumber">6.4.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Back Matter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="solutions-1.html" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></div></li>
+<li><div class="toc-item"><a href="solutions-2.html" class="internal"><span class="codenumber">B</span> <span class="title">Solutions to Odd Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="index-1.html" class="internal"><span class="title">Index</span></a></div></li>
+<li><div class="toc-item"><a href="colophon-2.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
 <section class="section" id="sec-4-3-measure-of-center"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">4.3</span> <span class="title">Summary Statistics: Measures of Center</span>
 </h2>
-<article class="objectives goal-like" id="objectives-9"><h3 class="heading">
+<article class="objectives goal-like" id="objectives-16"><h3 class="heading">
 <span class="type">Objectives:</span><span class="space"> </span><span class="title">Section 4.3 Summary Statistics: Measures of Center</span>
 </h3>
-<div class="introduction" id="introduction-22"><p id="p-2023">Students will be able to:</p></div>
+<div class="introduction" id="introduction-40"><div class="para" id="p-2326">Students will be able to:</div></div>
 <ul class="disc">
-<li id="li-805"><p id="p-2024">Calculate and describe the measures of center: mean and median</p></li>
-<li id="li-806"><p id="p-2025">Analyze the relationship of the mean and median to the shape of the data</p></li>
-</ul></article><section class="subsection" id="subsection-90"><h3 class="heading hide-type">
+<li id="li-997"><div class="para" id="p-2327">Calculate and describe the measures of center: mean and median</div></li>
+<li id="li-998"><div class="para" id="p-2328">Analyze the relationship of the mean and median to the shape of the data</div></li>
+</ul></article><section class="subsection" id="subsection-94"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.3.1</span> <span class="title">Calculating Summary Statistics</span>
 </h3>
-<p id="p-2026">In addition to graphical and verbal descriptions, we can use numbers to summarize quantitative distributions. We want to know what an “average” value is (where the data is centered), and how spread out the values are. Together, the center and spread provide important information which can be used to estimate our population parameters. In this section we will discuss the measures of center and in the next section we will discuss the measures of spread.</p></section><section class="subsection" id="subsection-91"><h3 class="heading hide-type">
+<div class="para" id="p-2329">In addition to graphical and verbal descriptions, we can use numbers to summarize quantitative distributions. We want to know what an “average” value is (where the data is centered), and how spread out the values are. Together, the center and spread provide important information which can be used to estimate our population parameters. In this section we will discuss the measures of center and in the next section we will discuss the measures of spread.</div></section><section class="subsection" id="subsection-95"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.3.2</span> <span class="title">Measures of Center</span>
 </h3>
-<p id="p-2027">There are a few different types of “averages” that measure the center, and the one we use will depend on the shape of the distribution. We will mention the mode but focus mainly on the two most common “averages”: the <em class="alert">mean</em> and the <em class="alert">median</em>.</p></section><section class="subsection" id="subsection-92"><h3 class="heading hide-type">
+<div class="para" id="p-2330">There are a few different types of “averages” that measure the center, and the one we use will depend on the shape of the distribution. We will mention the mode but focus mainly on the two most common “averages”: the <em class="alert">mean</em> and the <em class="alert">median</em>.</div></section><section class="subsection" id="subsection-96"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.3.3</span> <span class="title">Mode</span>
 </h3>
-<p id="p-2028">In the previous section, we saw that the modes are related to the peaks where similar values are grouped. The mode is the value with the highest frequency (A mode is the value where a peak occurs. One additional way to calculate the mode(s) is to take the midpoint of each peak in the histogram.)</p></section><section class="subsection" id="subsection-93"><h3 class="heading hide-type">
+<div class="para" id="p-2331">In the previous section, we saw that the modes are related to the peaks where similar values are grouped. The mode is the value with the highest frequency (A mode is the value where a peak occurs. One additional way to calculate the mode(s) is to take the midpoint of each peak in the histogram.)</div></section><section class="subsection" id="subsection-97"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.3.4</span> <span class="title">Mean</span>
 </h3>
-<p id="p-2029">The <em class="alert">mean</em>, or more formally the arithmetic mean, is what probably comes to mind when you hear the word average. The calculation of the mean uses every data value in the distribution and is therefore strongly affected by skew and outliers.</p>
-<p id="p-2030">To calculate the mean of a distribution, we divide the sum of the data values by the number of data values we have. The sample mean is usually represented by, a lower-case with a bar over it, read-bar. The lower-case letter n is used to represent the number of data values or <em class="alert">sample size</em>.</p>
+<div class="para" id="p-2332">The <em class="alert">mean</em>, or more formally the arithmetic mean, is what probably comes to mind when you hear the word average. The calculation of the mean uses every data value in the distribution and is therefore strongly affected by skew and outliers.</div>
+<div class="para" id="p-2333">To calculate the mean of a distribution, we divide the sum of the data values by the number of data values we have. The sample mean is usually represented by, a lower-case with a bar over it, read-bar. The lower-case letter n is used to represent the number of data values or <em class="alert">sample size</em>.</div>
 <article class="assemblage assemblage-like" id="assemblage-18"><h4 class="heading"><span class="title">Mean.</span></h4>
-<div class="displaymath process-math" data-contains-math-knowls="" id="p-2031">
+<div class="para logical" id="p-2334"><div class="displaymath process-math">
 \begin{equation*}
 \bar{x}=\frac{\text{sum of data values}}{n}
 \end{equation*}
-</div></article><article class="example example-like" id="example-60"><h4 class="heading">
+</div></div></article><article class="example example-like" id="example-70"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.1</span><span class="period">.</span>
 </h4>
-<p id="p-2032">Mirabel’s exam scores for her last math class were: 79, 86, 82, 94. What is her mean test score?</p>
+<div class="para" id="p-2335">Mirabel’s exam scores for her last math class were: 79, 86, 82, 94. What is her mean test score?</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-183" id="solution-183"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-183"><div class="solution solution-like">
-<p id="p-2033">To find the mean test score we need to find the sum of her test scores, then divide the sum by the number of test scores (<span class="process-math">\(n=4\)</span>). The mean is:</p> <p id="p-2034"><span class="process-math">\(\bar{x}=\frac{79+86+82+94}{4}=85.25\)</span> points</p> <p id="p-2035">We will round the sample mean to one more decimal place than the original data. In this case, we would round 85.25 to 85.3 points. Also notice that the mean has the same units as the data and it is important to label it.</p>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-201" id="solution-201"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-201"><div class="solution solution-like">
+<div class="para" id="p-2336">To find the mean test score we need to find the sum of her test scores, then divide the sum by the number of test scores (<span class="process-math">\(n=4\)</span>). The mean is:</div> <div class="para" id="p-2337">
+<span class="process-math">\(\bar{x}=\frac{79+86+82+94}{4}=85.25\)</span> points</div> <div class="para" id="p-2338">We will round the sample mean to one more decimal place than the original data. In this case, we would round 85.25 to 85.3 points. Also notice that the mean has the same units as the data and it is important to label it.</div>
 </div></div>
-</div></article><p id="p-2036">It is reasonable to calculate the mean by hand when the data set is small, but if the data set is large, or if you will be finding additional statistics, then technology is the way to go. We can find the mean of a data set using the spreadsheet formula <code class="code-inline tex2jax_ignore">=AVERAGE</code>.</p>
-<article class="example example-like" id="example-61"><h4 class="heading">
+</div></article><div class="para" id="p-2339">It is reasonable to calculate the mean by hand when the data set is small, but if the data set is large, or if you will be finding additional statistics, then technology is the way to go. We can find the mean of a data set using the spreadsheet formula <code class="code-inline tex2jax_ignore">=AVERAGE</code>.</div>
+<article class="example example-like" id="example-71"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.2</span><span class="period">.</span>
 </h4>
-<p id="p-2037">The price of peanut butter at 5 stores was $3.29, $3.59, $3.79, $3.75, and $3.99. Find the mean price using a spreadsheet. There are two ways to use the <code class="code-inline tex2jax_ignore">=AVERAGE</code> formula. If your data set is not too large, you can enter each value directly into the formula. Using this method, we write</p> <pre class="code-display tex2jax_ignore" id="p-2038">=AVERAGE(3.29 3.59, 3.79, 3.75, 3.99)</pre> <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/statistics/3_3/mean1.png" class="contained" alt="A screenshot of Excel showing the =AVERAGE formula typed in with the values."></div></div></div> <p id="p-2039">and we get an answer of $3.68.</p> <p id="p-2040">The other method is to enter the data values into a single column (or row) of the spreadsheet and reference the column (or row) range in the formula. We can enter the range by highlighting the data values. As illustrated below, if we enter the data into column A, the formula is</p> <pre class="code-display tex2jax_ignore" id="p-2041">=AVERAGE(A1:A5)</pre> <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/statistics/3_3/mean2.png" class="contained" alt="A screenshot of Excel showing the =AVERAGE formula typed in with the cell references. The data is in column A"></div></div></div> <p id="p-2042">and we also get an answer of $3.68.</p></article><p id="p-2043">Sometimes when there is a lot of data with repeated values we are given a frequency table.</p>
-<article class="example example-like" id="example-62"><h4 class="heading">
+<div class="para" id="p-2340">The price of peanut butter at 5 stores was $3.29, $3.59, $3.79, $3.75, and $3.99. Find the mean price using a spreadsheet. There are two ways to use the <code class="code-inline tex2jax_ignore">=AVERAGE</code> formula. If your data set is not too large, you can enter each value directly into the formula. Using this method, we write</div> <div class="para logical" id="p-2341"><pre class="code-display tex2jax_ignore">=AVERAGE(3.29 3.59, 3.79, 3.75, 3.99)</pre></div> <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/statistics/3_3/mean1.png" class="contained" alt="A screenshot of Excel showing the =AVERAGE formula typed in with the values."></div></div></div> <div class="para" id="p-2342">and we get an answer of $3.68.</div> <div class="para" id="p-2343">The other method is to enter the data values into a single column (or row) of the spreadsheet and reference the column (or row) range in the formula. We can enter the range by highlighting the data values. As illustrated below, if we enter the data into column A, the formula is</div> <div class="para logical" id="p-2344"><pre class="code-display tex2jax_ignore">=AVERAGE(A1:A5)</pre></div> <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/statistics/3_3/mean2.png" class="contained" alt="A screenshot of Excel showing the =AVERAGE formula typed in with the cell references. The data is in column A"></div></div></div> <div class="para" id="p-2345">and we also get an answer of $3.68.</div></article><div class="para" id="p-2346">Sometimes when there is a lot of data with repeated values we are given a frequency table.</div>
+<article class="example example-like" id="example-72"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.3</span><span class="period">.</span>
 </h4>
-<p id="p-2044">One hundred families from a particular neighborhood are randomly selected and asked to give their annual household income rounded to the nearest $5,000. The results are shown in the frequency table below.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<div class="para" id="p-2347">One hundred families from a particular neighborhood are randomly selected and asked to give their annual household income rounded to the nearest $5,000. The results are shown in the frequency table below.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">Income<br>(thousands of dollars)</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Frequency</th>
@@ -266,110 +649,112 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l1 t0 lines">$50</td>
 <td class="c m b1 r1 l0 t0 lines">7</td>
 </tr>
-</table></div></div></div> <p id="p-2045">Calculating the mean by hand could get tedious if we try to type in all 100 values:</p> <div class="displaymath process-math" data-contains-math-knowls="" id="md-71">
+</table></div></div></div> <div class="para" id="p-2348">Calculating the mean by hand could get tedious if we try to type in all 100 values:</div> <div class="para logical" id="p-2349"><div class="displaymath process-math" id="md-74">
 \begin{gather*}
 \bar{x}=\frac{\overbrace{15+ \cdot + 15}^{6 \text{ terms}} + \overbrace{20+ \cdot + 20}^{8 \text{ terms}} + \overbrace{25 + \cdot + 25}^{11 \text{ terms}} + \cdot}{100}
 \end{gather*}
-</div> <p id="p-2047">We could calculate this more easily by noticing that adding 15 to itself six times is the same as <span class="process-math">\((15)(6)=90\text{.}\)</span> Using this simplification, we get</p> <div class="displaymath process-math" data-contains-math-knowls="" id="md-72">
+</div></div> <div class="para" id="p-2350">We could calculate this more easily by noticing that adding 15 to itself six times is the same as <span class="process-math">\((15)(6)=90\text{.}\)</span> Using this simplification, we get</div> <div class="para logical" id="p-2351"><div class="displaymath process-math" id="md-75">
 \begin{align*}
 \bar{x}\amp=\frac{(15)(6)+(20)(8)+(25)(11)+(30)(17)+(35)(19)+(40)(20)+(45)(21)+(50)(7)}{100}\\
 \amp=\frac{3390}{100}\\
 \amp=33.9
 \end{align*}
-</div> <p id="p-2049">The mean household income of our sample is 33.9 thousand dollars or $33,900.</p></article><p id="p-2050">We could also use <code class="code-inline tex2jax_ignore">=AVERAGE</code> to find the mean for this example, but it would require entering each repeated value individually. If the mean is all we need, then taking advantage of multiplication as repeated addition is the more straightforward way to go. We could also enter the frequency table and the calculation above in a spreadsheet.</p>
-<article class="example example-like" id="example-63"><h4 class="heading">
+</div></div> <div class="para" id="p-2352">The mean household income of our sample is 33.9 thousand dollars or $33,900.</div></article><div class="para" id="p-2353">We could also use <code class="code-inline tex2jax_ignore">=AVERAGE</code> to find the mean for this example, but it would require entering each repeated value individually. If the mean is all we need, then taking advantage of multiplication as repeated addition is the more straightforward way to go. We could also enter the frequency table and the calculation above in a spreadsheet.</div>
+<article class="example example-like" id="example-73"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.4</span><span class="period">.</span>
 </h4>
-<p id="p-2051">Extending the last example, suppose a new family moves into the neighborhood and has a household income of $5 million ($5000 thousand). Adding this to our sample, our mean becomes:</p> <div class="displaymath process-math" data-contains-math-knowls="" id="md-73">
+<div class="para" id="p-2354">Extending the last example, suppose a new family moves into the neighborhood and has a household income of $5 million ($5000 thousand). Adding this to our sample, our mean becomes:</div> <div class="para logical" id="p-2355"><div class="displaymath process-math" id="md-76">
 \begin{align*}
 \bar{x}\amp=\frac{(15)(6)+(20)(8)+(25)(11)+(30)(17)+(35)(19)+(40)(20)+(45)(12)+(50)(7)+(5000)(1)}{100}\\
 \amp=\frac{8390}{101}\\
 \amp=83.069
 \end{align*}
-</div> <p id="p-2053">While 83.1 thousand dollars, or $83,100 is the correct mean household income for the new sample, it is no longer representative of the neighborhood – in fact, it is greater than every income in the sample aside from the new one we added!</p></article><p id="p-2054">Imagine the data values on a see-saw or balance scale. The mean is the value at the tip of the triangle that keeps the data in balance, like in the picture below.</p>
+</div></div> <div class="para" id="p-2356">While 83.1 thousand dollars, or $83,100 is the correct mean household income for the new sample, it is no longer representative of the neighborhood – in fact, it is greater than every income in the sample aside from the new one we added!</div></article><div class="para" id="p-2357">Imagine the data values on a see-saw or balance scale. The mean is the value at the tip of the triangle that keeps the data in balance, like in the picture below.</div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel top" style="width:100%;"><img src="external/statistics/3_3/mean3.png" class="contained" alt="A drawing of a see-saw with rectangles to indicate the data values. Most of the data values are to the left of the fulcrum; the two values to the right are spread out which causes the data to be balanced."></div></div></div>
-<p id="p-2055">If we graph our household data, the $5 million value is so far out to the right that the mean has to adjust to keep things in balance.</p>
+<div class="para" id="p-2358">If we graph our household data, the $5 million value is so far out to the right that the mean has to adjust to keep things in balance.</div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel top" style="width:100%;"><img src="external/statistics/3_3/mean4.png" class="contained" alt="With the outlier data value added, the see-saw is extended with that value far to the right. Now all of the original data values are to the left of the fulcrum."></div></div></div>
-<p id="p-2056">For this reason, when working with data that is skewed or has outliers, it is common to use a different measure of center, the median.</p></section><section class="subsection" id="subsection-94"><h3 class="heading hide-type">
+<div class="para" id="p-2359">For this reason, when working with data that is skewed or has outliers, it is common to use a different measure of center, the median.</div></section><section class="subsection" id="subsection-98"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.3.5</span> <span class="title">Median</span>
 </h3>
-<p id="p-2057">The <em class="alert">median</em> of a data set is the “middle” value, when the data are listed in order from smallest to largest. We can also think of the median as the value that has 50% of the data below it and 50% of data above it. As we will discover later, the median is also the <em class="alert">50th percentile</em>.</p>
+<div class="para" id="p-2360">The <em class="alert">median</em> of a data set is the “middle” value, when the data are listed in order from smallest to largest. We can also think of the median as the value that has 50% of the data below it and 50% of data above it. As we will discover later, the median is also the <em class="alert">50th percentile</em>.</div>
 <article class="assemblage assemblage-like" id="assemblage-19"><h4 class="heading"><span class="title">Median.</span></h4>
-<p id="p-2058">If the number of data values is odd, then the median is the middle data value If the number of data values is even, then the median is the mean of the middle pair</p></article><article class="example example-like" id="example-64"><h4 class="heading">
+<div class="para" id="p-2361">If the number of data values is odd, then the median is the middle data value If the number of data values is even, then the median is the mean of the middle pair</div></article><article class="example example-like" id="example-74"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.5</span><span class="period">.</span>
 </h4>
-<p id="p-2059">When finding the median of an odd number of values.</p> <p id="p-2060">Use the following quiz scores: 5, 10, 8, 6, 4, 8, 2, 5, 7, 7, 6</p> <p id="p-2061">We must start by listing the data in order: 2, 4, 5, 5, 6, 6, 7, 7, 8, 8, 10.</p> <p id="p-2062">It is helpful to mark or cross off the numbers as you list them to make sure you don’t miss any. Also, be sure to count the number of data values in your ordered list to make sure it matches the number of data values in the original list.</p> <p id="p-2063">In this example there are 11 quiz scores. When the distribution contains an odd number of data values there will be a single number in the middle and that is the median. For small data sets, we can “walk” one value at a time from the ends of the ordered list towards the center to find the median</p> <div class="displaymath process-math" data-contains-math-knowls="" id="md-74">
+<div class="para" id="p-2362">When finding the median of an odd number of values.</div> <div class="para" id="p-2363">Use the following quiz scores: 5, 10, 8, 6, 4, 8, 2, 5, 7, 7, 6</div> <div class="para" id="p-2364">We must start by listing the data in order: 2, 4, 5, 5, 6, 6, 7, 7, 8, 8, 10.</div> <div class="para" id="p-2365">It is helpful to mark or cross off the numbers as you list them to make sure you don’t miss any. Also, be sure to count the number of data values in your ordered list to make sure it matches the number of data values in the original list.</div> <div class="para" id="p-2366">In this example there are 11 quiz scores. When the distribution contains an odd number of data values there will be a single number in the middle and that is the median. For small data sets, we can “walk” one value at a time from the ends of the ordered list towards the center to find the median</div> <div class="para logical" id="p-2367"><div class="displaymath process-math" id="md-77">
 \begin{gather*}
 \overbrace{2,4,5,5,6}^{\text{Lower Half}} \overbrace{6}^{\text{Median}} \overbrace{7,7,8,8,10}^{\text{Upper Half}}
 \end{gather*}
-</div> <p id="p-2065">The median test score is 6 points.</p></article><article class="example example-like" id="example-65"><h4 class="heading">
+</div></div> <div class="para" id="p-2368">The median test score is 6 points.</div></article><article class="example example-like" id="example-75"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.6</span><span class="period">.</span>
 </h4>
-<p id="p-2066">When finding the median of an even number of values.</p> <p id="p-2067">Use the following quiz scores: 2, 4, 5, 5, 6, 6, 7, 7, 8, 8, 10, 20.</p> <p id="p-2068">There are now 12 quiz scores in our sample. When the distribution contains an even number of data values there will be a pair of values in the middle rather than a single value. Then we take the average of the middle two values.</p> <div class="displaymath process-math" data-contains-math-knowls="" id="md-75">
+<div class="para" id="p-2369">When finding the median of an even number of values.</div> <div class="para" id="p-2370">Use the following quiz scores: 2, 4, 5, 5, 6, 6, 7, 7, 8, 8, 10, 20.</div> <div class="para" id="p-2371">There are now 12 quiz scores in our sample. When the distribution contains an even number of data values there will be a pair of values in the middle rather than a single value. Then we take the average of the middle two values.</div> <div class="para logical" id="p-2372"><div class="displaymath process-math" id="md-78">
 \begin{gather*}
 \overbrace{2,4,5,5,6}^{\text{Lower Half}} \overbrace{6, 7}^{\text{Middle Pair}} \overbrace{7,8,8,10,20}^{\text{Upper Half}}
 \end{gather*}
-</div> <p id="p-2070">Median<span class="process-math">\(=\frac{6+7}{2}=6.5\)</span> points</p> <p id="p-2071">What is important to notice is that despite adding an outlier to our data set, the median is largely unaffected. The median quiz score for the new distribution is 6.5 points.</p> <p id="p-2072">We can also find the median using the spreadsheet formula <code class="code-inline tex2jax_ignore">=MEDIAN</code>. Just like the spreadsheet function <code class="code-inline tex2jax_ignore">=AVERAGE</code>, we can either list the individual data values in the formula, or we can enter the data values into a row (or column) and use the row range (or column range) in the formula.</p> <p id="p-2073">Using the data values of the original distribution, we can write function as</p> <pre class="code-display tex2jax_ignore" id="p-2074">=MEDIAN(2, 4, 5, 6, 6, 7, 7, 8, 8, 10)</pre>
-<p class="continuation">or</p> <pre class="code-display tex2jax_ignore" id="p-2075">=MEDIAN(A1:AK)</pre> <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/statistics/3_3/median1.png" class="contained" alt="A screenshot of Excel showing the =MEDIAN formula typed in with the cell references. The data is in row 1"></div></div></div> <p id="p-2076">and we get 6 points for the median test score.</p></article><article class="example example-like" id="example-66"><h4 class="heading">
+</div></div> <div class="para" id="p-2373">Median<span class="process-math">\(=\frac{6+7}{2}=6.5\)</span> points</div> <div class="para" id="p-2374">What is important to notice is that despite adding an outlier to our data set, the median is largely unaffected. The median quiz score for the new distribution is 6.5 points.</div> <div class="para" id="p-2375">We can also find the median using the spreadsheet formula <code class="code-inline tex2jax_ignore">=MEDIAN</code>. Just like the spreadsheet function <code class="code-inline tex2jax_ignore">=AVERAGE</code>, we can either list the individual data values in the formula, or we can enter the data values into a row (or column) and use the row range (or column range) in the formula.</div> <div class="para" id="p-2376">Using the data values of the original distribution, we can write function as</div> <div class="para logical" id="p-2377">
+<pre class="code-display tex2jax_ignore">=MEDIAN(2, 4, 5, 6, 6, 7, 7, 8, 8, 10)</pre>
+<div class="para">or</div>
+</div> <div class="para logical" id="p-2378"><pre class="code-display tex2jax_ignore">=MEDIAN(A1:AK)</pre></div> <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/statistics/3_3/median1.png" class="contained" alt="A screenshot of Excel showing the =MEDIAN formula typed in with the cell references. The data is in row 1"></div></div></div> <div class="para" id="p-2379">and we get 6 points for the median test score.</div></article><article class="example example-like" id="example-76"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.7</span><span class="period">.</span>
 </h4>
-<p id="p-2077">Let’s continue with our peanut butter example and find the median both by hand and with a spreadsheet. The price of peanut butter at 5 stores was $3.29, $3.59, $3.79, $3.75, and $3.99.</p> <p id="p-2078">To find the median by hand, we must first list the prices in order. This give us: $3.29, $3.59, $3.75, $3.79, $3.99</p> <p id="p-2079">Since there are an odd number of data values in the sample (<span class="process-math">\(n=5\)</span>), we know that the median will be the single data value in the middle of the ordered list.</p> <div class="displaymath process-math" data-contains-math-knowls="" id="md-76">
+<div class="para" id="p-2380">Let’s continue with our peanut butter example and find the median both by hand and with a spreadsheet. The price of peanut butter at 5 stores was $3.29, $3.59, $3.79, $3.75, and $3.99.</div> <div class="para" id="p-2381">To find the median by hand, we must first list the prices in order. This give us: $3.29, $3.59, $3.75, $3.79, $3.99</div> <div class="para" id="p-2382">Since there are an odd number of data values in the sample (<span class="process-math">\(n=5\)</span>), we know that the median will be the single data value in the middle of the ordered list.</div> <div class="para logical" id="p-2383"><div class="displaymath process-math" id="md-79">
 \begin{gather*}
 \overbrace{3.29, 3.59}^{\text{Lower Half}} \overbrace{3.75}^{\text{Median}} \overbrace{3.79, 3.99}^{\text{Upper Half}}
 \end{gather*}
-</div> <p id="p-2081">The median price of peanut butter at these five stores is $3.75.</p> <p id="p-2082">Using a spreadsheet, we write</p> <pre class="code-display tex2jax_ignore" id="p-2083">=MEDIAN(3.29, 3.59, 3.79, 3.75, 3.99)</pre> <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/statistics/3_3/median2.png" class="contained" alt="A screenshot of Excel showing the =MEDIAN formula with all the data values typed in."></div></div></div> <p id="p-2084">and we get a median price of $3.75.</p></article><p id="p-2085">It is worth noting that when you use a spreadsheet to find the median you do not have to order the data first. You can enter the data values in the order they are given to you.</p></section><section class="subsection" id="subsection-95"><h3 class="heading hide-type">
+</div></div> <div class="para" id="p-2384">The median price of peanut butter at these five stores is $3.75.</div> <div class="para" id="p-2385">Using a spreadsheet, we write</div> <div class="para logical" id="p-2386"><pre class="code-display tex2jax_ignore">=MEDIAN(3.29, 3.59, 3.79, 3.75, 3.99)</pre></div> <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/statistics/3_3/median2.png" class="contained" alt="A screenshot of Excel showing the =MEDIAN formula with all the data values typed in."></div></div></div> <div class="para" id="p-2387">and we get a median price of $3.75.</div></article><div class="para" id="p-2388">It is worth noting that when you use a spreadsheet to find the median you do not have to order the data first. You can enter the data values in the order they are given to you.</div></section><section class="subsection" id="subsection-99"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.3.6</span> <span class="title">The Relationship Between the Mean and the Median</span>
 </h3>
-<p id="p-2086">If a distribution is skewed, the mean is pulled in the direction of the skew, as we saw in the see-saw diagram. In a right skewed distribution, the mean is greater than the median, while in a left skewed distribution, the mean is less than the median. If the distribution is symmetric, the mean and the median will be approximately equal.</p>
-<p id="p-2087">To demonstrate this, we have entered some data in GeoGebra, as previously explained, and made histograms. To see the statistics that GeoGebra calculates, we click on the summation symbol <span class="process-math">\((\sum x)\)</span> on the right-hand menu bar.</p>
-<article class="example example-like" id="example-67"><h4 class="heading">
+<div class="para" id="p-2389">If a distribution is skewed, the mean is pulled in the direction of the skew, as we saw in the see-saw diagram. In a right skewed distribution, the mean is greater than the median, while in a left skewed distribution, the mean is less than the median. If the distribution is symmetric, the mean and the median will be approximately equal.</div>
+<div class="para" id="p-2390">To demonstrate this, we have entered some data in GeoGebra, as previously explained, and made histograms. To see the statistics that GeoGebra calculates, we click on the summation symbol <span class="process-math">\((\sum x)\)</span> on the right-hand menu bar.</div>
+<article class="example example-like" id="example-77"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.8</span><span class="period">.</span>
 </h4>
-<p id="p-2088">Fifty people from the Portland Metro area who are employed full time were sampled and their annual salaries were recorded (to the nearest thousand dollars). The histogram and summary statistics from GeoGebra are shown below.</p> <p id="p-2089">From the histogram we can see that the shape of the distribution is unimodal and skewed to the right. We can see from the statistics output on the left that the mean is greater than the median. This is because the few people with higher incomes bring the average up.</p> <figure class="figure figure-like" id="figure-12"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/statistics/3_3/mean_vs_median1.png" class="contained" alt="A screenshot of GeoGebra showing the histogram is skewed to the right. The statistics output shows the mean is $67,160 and the Median is $53,500."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.9<span class="period">.</span></span><span class="space"> </span>Mean <span class="process-math">\(=\$67,160\text{,}\)</span> Median <span class="process-math">\(=\$53,500\text{,}\)</span> Mean <span class="process-math">\(\gt\)</span> Median</figcaption></figure></article><article class="example example-like" id="example-68"><h4 class="heading">
+<div class="para" id="p-2391">Fifty people from the Portland Metro area who are employed full time were sampled and their annual salaries were recorded (to the nearest thousand dollars). The histogram and summary statistics from GeoGebra are shown below.</div> <div class="para" id="p-2392">From the histogram we can see that the shape of the distribution is unimodal and skewed to the right. We can see from the statistics output on the left that the mean is greater than the median. This is because the few people with higher incomes bring the average up.</div> <figure class="figure figure-like" id="figure-13"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/statistics/3_3/mean_vs_median1.png" class="contained" alt="A screenshot of GeoGebra showing the histogram is skewed to the right. The statistics output shows the mean is $67,160 and the Median is $53,500."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.9<span class="period">.</span></span><span class="space"> </span>Mean <span class="process-math">\(=\$67,160\text{,}\)</span> Median <span class="process-math">\(=\$53,500\text{,}\)</span> Mean <span class="process-math">\(\gt\)</span> Median</figcaption></figure></article><article class="example example-like" id="example-78"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.10</span><span class="period">.</span>
 </h4>
-<p id="p-2090">A random selection of 30 math 105 exams at PCC were sampled and their scores were recorded. The histogram of the resulting distribution is shown below.</p> <p id="p-2091">The shape of the distribution is unimodal and skewed to the left. There also appears to be an outlier between 20 and 30. We can see from the statistics output that the mean is less than the median. This is because the low test score brought the average down. points points</p> <figure class="figure figure-like" id="figure-13"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/statistics/3_3/mean_vs_median2.png" class="contained" alt="A screenshot of GeoGebra showing the histogram is skewed to the left. The statistics output shows the mean is 81.7 points and the Median is 87.5 points."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.11<span class="period">.</span></span><span class="space"> </span>Mean <span class="process-math">\(=81.7\)</span> points, Median <span class="process-math">\(=87.5\)</span> points, Mean <span class="process-math">\(\lt\)</span> Median</figcaption></figure></article><article class="example example-like" id="example-69"><h4 class="heading">
+<div class="para" id="p-2393">A random selection of 30 math 105 exams at PCC were sampled and their scores were recorded. The histogram of the resulting distribution is shown below.</div> <div class="para" id="p-2394">The shape of the distribution is unimodal and skewed to the left. There also appears to be an outlier between 20 and 30. We can see from the statistics output that the mean is less than the median. This is because the low test score brought the average down. points points</div> <figure class="figure figure-like" id="figure-14"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/statistics/3_3/mean_vs_median2.png" class="contained" alt="A screenshot of GeoGebra showing the histogram is skewed to the left. The statistics output shows the mean is 81.7 points and the Median is 87.5 points."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.11<span class="period">.</span></span><span class="space"> </span>Mean <span class="process-math">\(=81.7\)</span> points, Median <span class="process-math">\(=87.5\)</span> points, Mean <span class="process-math">\(\lt\)</span> Median</figcaption></figure></article><article class="example example-like" id="example-79"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.12</span><span class="period">.</span>
 </h4>
-<p id="p-2092">Nineteen people identifying as female were sampled and their heights (in inches) were recorded. The histogram of the resulting distribution is shown below.</p> <p id="p-2093">The shape of the distribution is unimodal and roughly symmetric. We can also see from the statistics output that the mean and the median are approximately equal. inches inches</p> <figure class="figure figure-like" id="figure-14"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/statistics/3_3/mean_vs_median3.png" class="contained" alt="A screenshot of GeoGebra showing the histogram is approximately symmetric. The statistics output shows the mean is 62.6 inches and the Median is 62 inches."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.13<span class="period">.</span></span><span class="space"> </span>Mean <span class="process-math">\(=62.6\)</span> inches, Median <span class="process-math">\(=62\)</span> inches Mean <span class="process-math">\(\approx\)</span> Median</figcaption></figure></article><p id="p-2094">We can use these observations in reverse as well. If we know the mean is greater than the median, then we can expect the distribution to be skewed to the right. If the mean is less than the median, then we can expect the distribution to be skewed to the left. When the mean and the median are approximately equal, the distribution is likely to be symmetric.</p>
-<article class="example example-like" id="example-70"><h4 class="heading">
+<div class="para" id="p-2395">Nineteen people identifying as female were sampled and their heights (in inches) were recorded. The histogram of the resulting distribution is shown below.</div> <div class="para" id="p-2396">The shape of the distribution is unimodal and roughly symmetric. We can also see from the statistics output that the mean and the median are approximately equal. inches inches</div> <figure class="figure figure-like" id="figure-15"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/statistics/3_3/mean_vs_median3.png" class="contained" alt="A screenshot of GeoGebra showing the histogram is approximately symmetric. The statistics output shows the mean is 62.6 inches and the Median is 62 inches."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.13<span class="period">.</span></span><span class="space"> </span>Mean <span class="process-math">\(=62.6\)</span> inches, Median <span class="process-math">\(=62\)</span> inches Mean <span class="process-math">\(\approx\)</span> Median</figcaption></figure></article><div class="para" id="p-2397">We can use these observations in reverse as well. If we know the mean is greater than the median, then we can expect the distribution to be skewed to the right. If the mean is less than the median, then we can expect the distribution to be skewed to the left. When the mean and the median are approximately equal, the distribution is likely to be symmetric.</div>
+<article class="example example-like" id="example-80"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.14</span><span class="period">.</span>
 </h4>
-<p id="p-2095">Recent college graduates were asked how much student loan debt they have. The data has a mean of $46,265 and a median of $33,652. Just based on this information, do you expect the distribution to be symmetric, skewed to the left, or skewed to the right?</p>
+<div class="para" id="p-2398">Recent college graduates were asked how much student loan debt they have. The data has a mean of $46,265 and a median of $33,652. Just based on this information, do you expect the distribution to be symmetric, skewed to the left, or skewed to the right?</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-184" id="solution-184"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-184"><div class="solution solution-like"><p id="p-2096">Since the mean is greater than the median, we can expect the distribution to be skewed to the right.</p></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-202" id="solution-202"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-202"><div class="solution solution-like"><div class="para" id="p-2399">Since the mean is greater than the median, we can expect the distribution to be skewed to the right.</div></div></div>
 </div></article></section><section class="exercises" id="exercises-8"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber">4.3.7</span> <span class="title">Exercises</span>
 </h3>
 <article class="exercise exercise-like" id="diners_example"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
-<p id="p-2097">A group of diners were asked how much they would pay for a meal. Their responses were: $7.50, $25.00, $10.00, $10.00, $7.50, $8.25, $9.00, $5.00, $15.00, $8.00, $7.25, $7.50, $8.00, $7.00. $12.00.</p> <ol id="p-2098" class="lower-alpha">
-<li id="li-807"><p id="p-2099">Find the mean, including units.</p></li>
-<li id="li-808"><p id="p-2100">Find the median, including units.</p></li>
-<li id="li-809"><p id="p-2101">Based on the mean and the median, would you expect the distribution to be symmetric, skewed left, or skewed right? Explain.</p></li>
-</ol></article><article class="exercise exercise-like" id="commercials_example"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
-<p id="p-2115">The amount of commercials in an hour of television varies by channel. The total length (in minutes) of all commercials from 8 pm to 9 pm in for some selected broadcast and cable channels on a weekday evening were: 10, 12.75, 7, 9, 9.75, 6.5, 12.5, 12.5, 8.75, 17, 10.5, 2.</p> <ol id="p-2116" class="lower-alpha">
-<li id="li-813"><p id="p-2117">Find the mean, inluding units.</p></li>
-<li id="li-814"><p id="p-2118">Find the median, including units.</p></li>
-<li id="li-815"><p id="p-2119">Based on the mean and median, would you expect the distribution to be symmetric, skewed left, or skewed right?</p></li>
-</ol></article><article class="exercise exercise-like" id="puzzle_example"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
-<p id="p-2133">You recorded the time in seconds it took for 8 participants to solve a puzzle. The times were: 15.2, 18.8, 19.3, 19.7, 20.2, 21.8, 22.1, 29.4.</p> <ol id="p-2134" class="lower-alpha">
-<li id="li-819"><p id="p-2135">Find the mean, including units.</p></li>
-<li id="li-820"><p id="p-2136">Find the median, including units.</p></li>
-<li id="li-821"><p id="p-2137">Based on the mean and the median, would you expect the distribution to be symmetric, skewed left, or skewed right? Explain.</p></li>
-</ol></article><article class="exercise exercise-like" id="oreo_example"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
-<p id="p-2151">You weigh 9 Oreo cookies, and you find the weights (in grams) are: 3.49, 3.51, 3.51, 3.51, 3.52, 3.54, 3.55, 3.58, 3.61.</p> <ol id="p-2152" class="lower-alpha">
-<li id="li-825"><p id="p-2153">Find the mean, including units.</p></li>
-<li id="li-826"><p id="p-2154">Find the median, including units.</p></li>
-<li id="li-827"><p id="p-2155">Based on the mean and the median, would you expect the distribution to be symmetric, skewed left, or skewed right? Explain.</p></li>
-</ol></article><article class="exercise exercise-like" id="car_example"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
-<p id="p-2169">Use the following table is the cost of purchasing a car at a local dealership.  Some of the cars sold were new and some were used.</p> <ol id="p-2170" class="lower-alpha">
-<li id="li-831"><p id="p-2171">Calculate find the mean, including units.</p></li>
-<li id="li-832"><p id="p-2172">Can you figure out how to find the median using the frequency table? See if you can do it without listing out all the data values.</p></li>
-<li id="li-833">
-<p id="p-2173">Based on the mean and the median, would you expect the distribution to be symmetric skewed left or skewed right? Explain.</p>
+<div class="para" id="p-2400">A group of diners were asked how much they would pay for a meal. Their responses were: $7.50, $25.00, $10.00, $10.00, $7.50, $8.25, $9.00, $5.00, $15.00, $8.00, $7.25, $7.50, $8.00, $7.00. $12.00.</div> <div class="para logical" id="p-2401"><ol class="lower-alpha">
+<li id="li-999"><div class="para" id="p-2402">Find the mean, including units.</div></li>
+<li id="li-1000"><div class="para" id="p-2403">Find the median, including units.</div></li>
+<li id="li-1001"><div class="para" id="p-2404">Based on the mean and the median, would you expect the distribution to be symmetric, skewed left, or skewed right? Explain.</div></li>
+</ol></div></article><article class="exercise exercise-like" id="commercials_example"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<div class="para" id="p-2418">The amount of commercials in an hour of television varies by channel. The total length (in minutes) of all commercials from 8 pm to 9 pm in for some selected broadcast and cable channels on a weekday evening were: 10, 12.75, 7, 9, 9.75, 6.5, 12.5, 12.5, 8.75, 17, 10.5, 2.</div> <div class="para logical" id="p-2419"><ol class="lower-alpha">
+<li id="li-1005"><div class="para" id="p-2420">Find the mean, inluding units.</div></li>
+<li id="li-1006"><div class="para" id="p-2421">Find the median, including units.</div></li>
+<li id="li-1007"><div class="para" id="p-2422">Based on the mean and median, would you expect the distribution to be symmetric, skewed left, or skewed right?</div></li>
+</ol></div></article><article class="exercise exercise-like" id="puzzle_example"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<div class="para" id="p-2436">You recorded the time in seconds it took for 8 participants to solve a puzzle. The times were: 15.2, 18.8, 19.3, 19.7, 20.2, 21.8, 22.1, 29.4.</div> <div class="para logical" id="p-2437"><ol class="lower-alpha">
+<li id="li-1011"><div class="para" id="p-2438">Find the mean, including units.</div></li>
+<li id="li-1012"><div class="para" id="p-2439">Find the median, including units.</div></li>
+<li id="li-1013"><div class="para" id="p-2440">Based on the mean and the median, would you expect the distribution to be symmetric, skewed left, or skewed right? Explain.</div></li>
+</ol></div></article><article class="exercise exercise-like" id="oreo_example"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div class="para" id="p-2454">You weigh 9 Oreo cookies, and you find the weights (in grams) are: 3.49, 3.51, 3.51, 3.51, 3.52, 3.54, 3.55, 3.58, 3.61.</div> <div class="para logical" id="p-2455"><ol class="lower-alpha">
+<li id="li-1017"><div class="para" id="p-2456">Find the mean, including units.</div></li>
+<li id="li-1018"><div class="para" id="p-2457">Find the median, including units.</div></li>
+<li id="li-1019"><div class="para" id="p-2458">Based on the mean and the median, would you expect the distribution to be symmetric, skewed left, or skewed right? Explain.</div></li>
+</ol></div></article><article class="exercise exercise-like" id="car_example"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
+<div class="para" id="p-2472">Use the following table is the cost of purchasing a car at a local dealership.  Some of the cars sold were new and some were used.</div> <div class="para logical" id="p-2473"><ol class="lower-alpha">
+<li id="li-1023"><div class="para" id="p-2474">Calculate find the mean, including units.</div></li>
+<li id="li-1024"><div class="para" id="p-2475">Can you figure out how to find the median using the frequency table? See if you can do it without listing out all the data values.</div></li>
+<li id="li-1025">
+<div class="para" id="p-2476">Based on the mean and the median, would you expect the distribution to be symmetric skewed left or skewed right? Explain.</div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">Cost<br>(Thousands of dollars)</th>
@@ -409,12 +794,13 @@ eBookConfig.enable_chatcodes =  false;
 </tr>
 </table></div></div></div>
 </li>
-</ol></article><article class="exercise exercise-like" id="email_example"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
-<p id="p-2183">As part of a study of email, a researcher counted the length of 34 emails. The lengths of the emails are shown below, rounded to the nearest thousand characters (so a length 0 means that the numbers of characters rounded to 0, not that the message was blank).<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-20" id="fn-20"><sup> 1 </sup></a></p> <ol id="p-2184" class="lower-alpha">
-<li id="li-837"><p id="p-2185">Calculate and find the mean, including units.</p></li>
-<li id="li-838"><p id="p-2186">Can you figure out how to find the median using the frequency table? See if you can do it without listing all the data values.</p></li>
-<li id="li-839"><p id="p-2187">Based on the mean and the median, would you expect the distribution to be symmetric, skewed left, or skewed right?</p></li>
-</ol> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+</ol></div></article><article class="exercise exercise-like" id="email_example"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+<div class="para" id="p-2486">As part of a study of email, a researcher counted the length of 34 emails. The lengths of the emails are shown below, rounded to the nearest thousand characters (so a length 0 means that the numbers of characters rounded to 0, not that the message was blank).<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-18" id="fn-18"><sup> 1 </sup></a>
+</div> <div class="para logical" id="p-2487"><ol class="lower-alpha">
+<li id="li-1029"><div class="para" id="p-2488">Calculate and find the mean, including units.</div></li>
+<li id="li-1030"><div class="para" id="p-2489">Can you figure out how to find the median using the frequency table? See if you can do it without listing all the data values.</div></li>
+<li id="li-1031"><div class="para" id="p-2490">Based on the mean and the median, would you expect the distribution to be symmetric, skewed left, or skewed right?</div></li>
+</ol></div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">Length of an email<br>(Thousands of characters)</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Frequency</th>
@@ -480,30 +866,32 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines">2</td>
 </tr>
 </table></div></div></div></article><article class="exercise exercise-like" id="exercise-151"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
-<p id="p-2197">Studies are often done by pharmaceutical companies to determine the effectiveness of a treatment. Suppose that a new cancer drug is currently under study. Of interest is the average length of time in months patients live once starting the treatment. Two researchers each follow a different set of 40 cancer patients throughout their treatment. The following data (in months) are collected.</p> <ol id="p-2198" class="lower-alpha">
-<li id="li-843"><p id="p-2199">Find the mean and median of each group.</p></li>
-<li id="li-844">
-<p id="p-2200">Compare and contrast the two groups.</p>
-<ul id="p-2201" class="disc">
-<li id="li-845"><p id="p-2202">Researcher 1: 3, 4, 11, 15, 16, 17, 22, 44, 37, 16, 14, 24, 25, 15, 26, 27, 33, 29, 35, 44, 13, 21, 22, 10, 12, 8, 40, 32, 26, 27, 31, 34, 29, 17, 8, 24, 18, 47, 33, 34</p></li>
-<li id="li-846"><p id="p-2203">Researcher 2: 3, 14, 11, 5, 16, 17, 28, 41, 31, 18, 14, 14, 26, 25, 21, 22, 31, 2, 35, 44, 23, 21, 21, 16, 12, 18, 41, 22, 16, 25, 33, 34, 29, 13, 18, 24, 23, 42, 33, 29 5.</p></li>
-</ul>
+<div class="para" id="p-2500">Studies are often done by pharmaceutical companies to determine the effectiveness of a treatment. Suppose that a new cancer drug is currently under study. Of interest is the average length of time in months patients live once starting the treatment. Two researchers each follow a different set of 40 cancer patients throughout their treatment. The following data (in months) are collected.</div> <div class="para logical" id="p-2501"><ol class="lower-alpha">
+<li id="li-1035"><div class="para" id="p-2502">Find the mean and median of each group.</div></li>
+<li id="li-1036">
+<div class="para" id="p-2503">Compare and contrast the two groups.</div>
+<div class="para logical" id="p-2504"><ul class="disc">
+<li id="li-1037"><div class="para" id="p-2505">Researcher 1: 3, 4, 11, 15, 16, 17, 22, 44, 37, 16, 14, 24, 25, 15, 26, 27, 33, 29, 35, 44, 13, 21, 22, 10, 12, 8, 40, 32, 26, 27, 31, 34, 29, 17, 8, 24, 18, 47, 33, 34</div></li>
+<li id="li-1038"><div class="para" id="p-2506">Researcher 2: 3, 14, 11, 5, 16, 17, 28, 41, 31, 18, 14, 14, 26, 25, 21, 22, 31, 2, 35, 44, 23, 21, 21, 16, 12, 18, 41, 22, 16, 25, 33, 34, 29, 13, 18, 24, 23, 42, 33, 29 5.</div></li>
+</ul></div>
 </li>
-</ol></article><article class="exercise exercise-like" id="exercise-152"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
-<p id="p-2220">The US Census Bureau, in addition to counting the population of the US every 10 years, conducts yearly informational surveys, such as the American Community Survey (ACS). For the 2012 ACS, a randomly chosen group of 20 respondents (10 males, 10 females) answered a question about their incomes.<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-22" id="fn-22"><sup> 3 </sup></a></p> <ul id="p-2221" class="disc">
-<li id="li-849"><p id="p-2222">Males: $53,000; $70,000; $12,800; 30,000; $4,500; $42,000; $48,000; $60,000; $108,000; $11,000</p></li>
-<li id="li-850"><p id="p-2223">Females: $1,600; $1,200; $20,000; $25,000; $670; $29,000; $44,000; $30,000; $5,800; $50,000</p></li>
-</ul> <ol id="p-2224" class="lower-alpha">
-<li id="li-851"><p id="p-2225">Find the mean and median of each group.</p></li>
-<li id="li-852"><p id="p-2226">Compare and contrast the two groups.</p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-153"><h4 class="heading"><span class="codenumber">9<span class="period">.</span></span></h4>
-<p id="p-2242">An experiment compared the ability of three groups of participants to remember briefly-presented chess positions. The data are shown below. The numbers represent the average number of pieces correctly remembered from three chess positions.</p>
+</ol></div></article><article class="exercise exercise-like" id="exercise-152"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
+<div class="para" id="p-2523">The US Census Bureau, in addition to counting the population of the US every 10 years, conducts yearly informational surveys, such as the American Community Survey (ACS). For the 2012 ACS, a randomly chosen group of 20 respondents (10 males, 10 females) answered a question about their incomes.<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-19" id="fn-19"><sup> 2 </sup></a>
+</div> <div class="para logical" id="p-2524"><ul class="disc">
+<li id="li-1041"><div class="para" id="p-2525">Males: $53,000; $70,000; $12,800; 30,000; $4,500; $42,000; $48,000; $60,000; $108,000; $11,000</div></li>
+<li id="li-1042"><div class="para" id="p-2526">Females: $1,600; $1,200; $20,000; $25,000; $670; $29,000; $44,000; $30,000; $5,800; $50,000</div></li>
+</ul></div> <div class="para logical" id="p-2527"><ol class="lower-alpha">
+<li id="li-1043"><div class="para" id="p-2528">Find the mean and median of each group.</div></li>
+<li id="li-1044"><div class="para" id="p-2529">Compare and contrast the two groups.</div></li>
+</ol></div></article><article class="exercise exercise-like" id="exercise-153"><h4 class="heading"><span class="codenumber">9<span class="period">.</span></span></h4>
+<div class="para logical" id="p-2545">
+<div class="para">An experiment compared the ability of three groups of participants to remember briefly-presented chess positions. The data are shown below. The numbers represent the average number of pieces correctly remembered from three chess positions.</div>
 <ol class="lower-alpha">
-<li id="li-855"><p id="p-2243">Make a histogram for each group.</p></li>
-<li id="li-856"><p id="p-2244">Find the mean of each group.</p></li>
-<li id="li-857"><p id="p-2245">Find the median of each group</p></li>
-<li id="li-858">
-<p id="p-2246">Compare the shapes of the distributions as well as the centers of the three groups.</p>
+<li id="li-1047"><div class="para" id="p-2546">Make a histogram for each group.</div></li>
+<li id="li-1048"><div class="para" id="p-2547">Find the mean of each group.</div></li>
+<li id="li-1049"><div class="para" id="p-2548">Find the median of each group</div></li>
+<li id="li-1050">
+<div class="para" id="p-2549">Compare the shapes of the distributions as well as the centers of the three groups.</div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">Non-players</th>
@@ -567,14 +955,16 @@ eBookConfig.enable_chatcodes =  false;
 </tr>
 </table></div></div></div>
 </li>
-</ol></article><article class="exercise exercise-like" id="exercise-154"><h4 class="heading"><span class="codenumber">10<span class="period">.</span></span></h4>
-<p id="p-2256">There is evidence that smiling can attenuate judgments of possible wrongdoing. This phenomenon termed the "smile-leniency effect" was the focus of a study by Marianne LaFrance &amp; Marvin Hecht in 1995<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-24" id="fn-24"><sup> 5 </sup></a>. The following data are measurements of how lenient the sentences were for three different types of smiles and one neutral control. A higher number indicates greater leniency. The same subject was used for all of the conditions so that may affect the results.</p>
+</ol>
+</div></article><article class="exercise exercise-like" id="exercise-154"><h4 class="heading"><span class="codenumber">10<span class="period">.</span></span></h4>
+<div class="para logical" id="p-2559">
+<div class="para">There is evidence that smiling can attenuate judgments of possible wrongdoing. This phenomenon termed the "smile-leniency effect" was the focus of a study by Marianne LaFrance &amp; Marvin Hecht in 1995<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-20" id="fn-20"><sup> 3 </sup></a>. The following data are measurements of how lenient the sentences were for three different types of smiles and one neutral control. A higher number indicates greater leniency. The same subject was used for all of the conditions so that may affect the results.</div>
 <ol class="lower-alpha">
-<li id="li-863"><p id="p-2257">Make a histogram for each smile type and the neutral control.</p></li>
-<li id="li-864"><p id="p-2258">Find the mean for each type of smile and the neutral control.</p></li>
-<li id="li-865"><p id="p-2259">Find the median for each type of smile and the neutral control.</p></li>
-<li id="li-866">
-<p id="p-2260">Compare the shapes of the distributions as well as the centers for each type of smile and control.</p>
+<li id="li-1055"><div class="para" id="p-2560">Make a histogram for each smile type and the neutral control.</div></li>
+<li id="li-1056"><div class="para" id="p-2561">Find the mean for each type of smile and the neutral control.</div></li>
+<li id="li-1057"><div class="para" id="p-2562">Find the median for each type of smile and the neutral control.</div></li>
+<li id="li-1058">
+<div class="para" id="p-2563">Compare the shapes of the distributions as well as the centers for each type of smile and control.</div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">False Smile</th>
@@ -788,17 +1178,20 @@ eBookConfig.enable_chatcodes =  false;
 </tr>
 </table></div></div></div>
 </li>
-</ol></article><article class="exercise exercise-like" id="exercise-155"><h4 class="heading"><span class="codenumber">11<span class="period">.</span></span></h4>
-<p id="p-2271">Make up three data sets with 5 values each that have:</p>
+</ol>
+</div></article><article class="exercise exercise-like" id="exercise-155"><h4 class="heading"><span class="codenumber">11<span class="period">.</span></span></h4>
+<div class="para logical" id="p-2574">
+<div class="para">Make up three data sets with 5 values each that have:</div>
 <ol class="lower-alpha">
-<li id="li-871"><p id="p-2272">The same mean but different medians</p></li>
-<li id="li-872"><p id="p-2273">The same median but different means.</p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-156"><h4 class="heading"><span class="codenumber">12<span class="period">.</span></span></h4>
-<p id="p-2277">The frequency table below shows the number of women’s shoes that were sold in an hour at a local shoe store.</p> <ol id="p-2278" class="lower-alpha">
-<li id="li-875"><p id="p-2279">Would you treat this data as categorical or quantitative?</p></li>
-<li id="li-876"><p id="p-2280">How would the bar graph be different from the histogram?</p></li>
-<li id="li-877">
-<p id="p-2281">Treat the data as quantitative and find the mean and the median. Are these useful statistics?</p>
+<li id="li-1063"><div class="para" id="p-2575">The same mean but different medians</div></li>
+<li id="li-1064"><div class="para" id="p-2576">The same median but different means.</div></li>
+</ol>
+</div></article><article class="exercise exercise-like" id="exercise-156"><h4 class="heading"><span class="codenumber">12<span class="period">.</span></span></h4>
+<div class="para" id="p-2580">The frequency table below shows the number of women’s shoes that were sold in an hour at a local shoe store.</div> <div class="para logical" id="p-2581"><ol class="lower-alpha">
+<li id="li-1067"><div class="para" id="p-2582">Would you treat this data as categorical or quantitative?</div></li>
+<li id="li-1068"><div class="para" id="p-2583">How would the bar graph be different from the histogram?</div></li>
+<li id="li-1069">
+<div class="para" id="p-2584">Treat the data as quantitative and find the mean and the median. Are these useful statistics?</div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">Shoe Size</th>
@@ -826,33 +1219,35 @@ eBookConfig.enable_chatcodes =  false;
 </tr>
 </table></div></div></div>
 </li>
-</ol></article><article class="exercise exercise-like" id="exercise-157"><h4 class="heading"><span class="codenumber">13<span class="period">.</span></span></h4>
-<p id="p-2291">At the end of the term, 400 students take a final exam, and their scores (as percentages) are plotted in a histogram.<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-27" id="fn-27"><sup> 8 </sup></a></p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel top" style="width:50%;"><img src="external/statistics/3_3/400_exams.png" class="contained"></div></div></div> <ol id="p-2292" class="lower-alpha">
-<li id="li-881"><p id="p-2293">Is the graph shown above skewed right, skewed left, or symmetric? Explain why you chose your answer.</p></li>
-<li id="li-882"><p id="p-2294">Based on your answer to part (a), which would you expect: that the mean is less than the median, the mean is greater than the median, or that the mean and median are equal?</p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-158"><h4 class="heading"><span class="codenumber">14<span class="period">.</span></span></h4>
-<p id="p-2298">The following graph shows the distribution of yearly incomes of 40 patrons at a college coffee shop.<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-29" id="fn-29"><sup> 10 </sup></a></p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel top" style="width:50%;"><img src="external/statistics/3_3/40_coffee.png" class="contained"></div></div></div> <ol id="p-2299" class="lower-alpha">
-<li id="li-885"><p id="p-2300">Is the graph shown above skewed right, skewed right, or symmetric? Explain why you chose your answer.</p></li>
-<li id="li-886"><p id="p-2301">Based on your answer to part (a), which would you expect: that the mean is less than the median, the mean is greater than the median, or that the mean and median are equal?</p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-159"><h4 class="heading"><span class="codenumber">15<span class="period">.</span></span></h4>
-<p id="p-2305">For each of the following distributions, would you expect that the mean is less than the median, less than the median, or equal to the median? Explain your reasoning.</p> <ol id="p-2306" class="lower-alpha">
-<li id="li-889"><p id="p-2307">Household incomes in the US</p></li>
-<li id="li-890"><p id="p-2308">Weights of newborn babies</p></li>
-<li id="li-891"><p id="p-2309">The number of children in a household in the US</p></li>
-<li id="li-892"><p id="p-2310">Medical costs for all adults</p></li>
-<li id="li-893"><p id="p-2311">Medical costs for adults in the US older than 65</p></li>
-</ol></article></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-20"><div class="fn">The data is from Advanced High School Statistics, 2nd Ed. (<a class="external" href="https://www.openintro.org/stat/textbook.php?stat_book=aps" target="_blank">https://www.openintro.org/stat/textbook.php?stat_book=aps</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-21" id="fn-21"><sup> 2 </sup></a>).</div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-21"><div class="fn"><code class="code-inline tex2jax_ignore">www.openintro.org/stat/textbook.php?stat_book=aps</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-22"><div class="fn">Data from Advanced High School Statistics, 2nd Ed. Section 2.1 Exercise #1. (<a class="external" href="https://www.openintro.org/stat/textbook.php?stat_book=aps" target="_blank">https://www.openintro.org/stat/textbook.php?stat_book=aps</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-23" id="fn-23"><sup> 4 </sup></a>).</div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-23"><div class="fn"><code class="code-inline tex2jax_ignore">www.openintro.org/stat/textbook.php?stat_book=aps</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-24"><div class="fn">LaFrance, M., &amp; Hecht, M. A. (1995) Why smiles generate leniency. Personality and Social Psychology Bulletin, 21, 207-214. Adapted from <a class="external" href="http://www.onlinestatbook.com/" target="_blank">www.onlinestatbook.com</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-25" id="fn-25"><sup> 6 </sup></a>, by David M. Lane, et al, used under <a class="external" href="https://creativecommons.org/licenses/by-sa/3.0/us/" target="_blank">CC-BY-SA 3.0</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-26" id="fn-26"><sup> 7 </sup></a>.</div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-25"><div class="fn"><code class="code-inline tex2jax_ignore">www.onlinestatbook.com/</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-26"><div class="fn"><code class="code-inline tex2jax_ignore">creativecommons.org/licenses/by-sa/3.0/us/</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-27"><div class="fn">Graph and description from Advanced High School Statistics, 2nd Ed. Section 2.2 Exercise. (<a class="external" href="https://www.openintro.org/stat/textbook.php?stat_book=aps" target="_blank">https://www.openintro.org/stat/textbook.php?stat_book=aps</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-28" id="fn-28"><sup> 9 </sup></a>)</div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-28"><div class="fn"><code class="code-inline tex2jax_ignore">www.openintro.org/stat/textbook.php?stat_book=aps</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-29"><div class="fn">Graph and description from Advanced High School Statistics, 2nd Ed. Section 2.2 Exercise. (<a class="external" href="https://www.openintro.org/stat/textbook.php?stat_book=aps" target="_blank">https://www.openintro.org/stat/textbook.php?stat_book=aps</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-30" id="fn-30"><sup> 11 </sup></a>)</div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-30"><div class="fn"><code class="code-inline tex2jax_ignore">www.openintro.org/stat/textbook.php?stat_book=aps</code></div></div>
+</ol></div></article><article class="exercise exercise-like" id="exercise-157"><h4 class="heading"><span class="codenumber">13<span class="period">.</span></span></h4>
+<div class="para" id="p-2594">At the end of the term, 400 students take a final exam, and their scores (as percentages) are plotted in a histogram.<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-21" id="fn-21"><sup> 4 </sup></a>
+</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel top" style="width:50%;"><img src="external/statistics/3_3/400_exams.png" class="contained"></div></div></div> <div class="para logical" id="p-2595"><ol class="lower-alpha">
+<li id="li-1073"><div class="para" id="p-2596">Is the graph shown above skewed right, skewed left, or symmetric? Explain why you chose your answer.</div></li>
+<li id="li-1074"><div class="para" id="p-2597">Based on your answer to part (a), which would you expect: that the mean is less than the median, the mean is greater than the median, or that the mean and median are equal?</div></li>
+</ol></div></article><article class="exercise exercise-like" id="exercise-158"><h4 class="heading"><span class="codenumber">14<span class="period">.</span></span></h4>
+<div class="para" id="p-2601">The following graph shows the distribution of yearly incomes of 40 patrons at a college coffee shop.<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-22" id="fn-22"><sup> 5 </sup></a>
+</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel top" style="width:50%;"><img src="external/statistics/3_3/40_coffee.png" class="contained"></div></div></div> <div class="para logical" id="p-2602"><ol class="lower-alpha">
+<li id="li-1077"><div class="para" id="p-2603">Is the graph shown above skewed right, skewed right, or symmetric? Explain why you chose your answer.</div></li>
+<li id="li-1078"><div class="para" id="p-2604">Based on your answer to part (a), which would you expect: that the mean is less than the median, the mean is greater than the median, or that the mean and median are equal?</div></li>
+</ol></div></article><article class="exercise exercise-like" id="exercise-159"><h4 class="heading"><span class="codenumber">15<span class="period">.</span></span></h4>
+<div class="para" id="p-2608">For each of the following distributions, would you expect that the mean is less than the median, less than the median, or equal to the median? Explain your reasoning.</div> <div class="para logical" id="p-2609"><ol class="lower-alpha">
+<li id="li-1081"><div class="para" id="p-2610">Household incomes in the US</div></li>
+<li id="li-1082"><div class="para" id="p-2611">Weights of newborn babies</div></li>
+<li id="li-1083"><div class="para" id="p-2612">The number of children in a household in the US</div></li>
+<li id="li-1084"><div class="para" id="p-2613">Medical costs for all adults</div></li>
+<li id="li-1085"><div class="para" id="p-2614">Medical costs for adults in the US older than 65</div></li>
+</ol></div></article></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-18"><div class="fn">The data is from Advanced High School Statistics, 2nd Ed. (<a class="external" href="https://www.openintro.org/stat/textbook.php?stat_book=aps" target="_blank">https://www.openintro.org/stat/textbook.php?stat_book=aps</a>).</div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-19"><div class="fn">Data from Advanced High School Statistics, 2nd Ed. Section 2.1 Exercise #1. (<a class="external" href="https://www.openintro.org/stat/textbook.php?stat_book=aps" target="_blank">https://www.openintro.org/stat/textbook.php?stat_book=aps</a>).</div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-20"><div class="fn">LaFrance, M., &amp; Hecht, M. A. (1995) Why smiles generate leniency. Personality and Social Psychology Bulletin, 21, 207-214. Adapted from <a class="external" href="http://www.onlinestatbook.com/" target="_blank">www.onlinestatbook.com</a>, by David M. Lane, et al, used under <a class="external" href="https://creativecommons.org/licenses/by-sa/3.0/us/" target="_blank">CC-BY-SA 3.0</a>.</div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-21"><div class="fn">Graph and description from Advanced High School Statistics, 2nd Ed. Section 2.2 Exercise. (<a class="external" href="https://www.openintro.org/stat/textbook.php?stat_book=aps" target="_blank">https://www.openintro.org/stat/textbook.php?stat_book=aps</a>)</div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-22"><div class="fn">Graph and description from Advanced High School Statistics, 2nd Ed. Section 2.2 Exercise. (<a class="external" href="https://www.openintro.org/stat/textbook.php?stat_book=aps" target="_blank">https://www.openintro.org/stat/textbook.php?stat_book=aps</a>)</div></div>
+</div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="sec-4-2-describing-data.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec-4-4-measure-of-variation.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
 </div>
 </body>
 </html>

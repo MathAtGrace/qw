@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -11,18 +11,14 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math"><div class="solution solution-like">
-<p>To calculate this with a spreadsheet, we will use the <code class="code-inline tex2jax_ignore">=PMT</code> function and enter 0 for the present value and $500,000 for the future value. We cannot enter commas within the numbers however, because spreadsheets use commas to separate the inputs. We enter:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel middle" style="width:40%;">
-<pre class="code-display tex2jax_ignore">=PMT(0.08/12, 12*30, 0, 500000)</pre>
-<p>and get a result of $335.49.</p>
-</div>
-<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_3/finding_payments1.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
-</div></div> <p>To see how this works with the formulas, we use the one solved for <em class="alert">d</em>, the regular deposit amount.</p> <p><span class="process-math">\(r=0.08\text{,}\)</span> 8% annual rate</p> <p><span class="process-math">\(n=12\text{,}\)</span> since we're depositing monthly</p> <p><span class="process-math">\(t=30\text{,}\)</span> 30 years</p> <p><span class="process-math">\(A=\$500,000\text{,}\)</span> the amount we want to have in 30 years</p> <p></p> <div class="displaymath process-math" data-contains-math-knowls="">
+<div class="para logical"><div class="displaymath process-math">
 \begin{align*}
-d\amp=\frac{A\left(\frac{r}{n}\right)}{\left(\left(1+\frac{r}{n}\right)^{nt}-1\right)}\\
-\amp=\frac{500000\left(\frac{0.08}{12}\right)}{\left(\left(1+\frac{0.08}{12}\right)^{12\cdot 30}-1\right)}\\
-\amp\approx\$335.49
+A\amp=1000\left(1+\frac{0.07}{52}\right)^{52*20}\\
+\amp\approx \$4051.38
 \end{align*}
-</div> <p>So, you would need to deposit $335.49 each month to have $500,000 in 30 years if your account earns 8% interest.</p>
+</div></div> <div class="para">The account balance is $4,051.38 in 20 years.</div> <div class="para logical">
+<div class="para">Or,</div>
+<pre class="code-display tex2jax_ignore">=FV(0.07/52,52*20,0,1000)</pre>
+</div>
 </div></body>
 </html>

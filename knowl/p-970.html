@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -12,7 +12,28 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<p>To use a spreadsheet, we use the <code class="code-inline tex2jax_ignore">=PMT</code> formula. For a loan, the loan amount is the present value and the future value is 0, indicating that the loan will be paid off. Teresa is making a down payment, so we also need to subtract that from the cost of the car to find the loan amount:</p>
-<span class="incontext"><a href="sec-3-4-loans.html#p-970" class="internal">in-context</a></span>
+<div class="para logical"><ol class="lower-alpha">
+<li>
+<div class="para">=PMT(0.0725/12, (65-34)*12, 0, 1000000)</div>
+<div class="para">= $719.22</div>
+<div class="para">She would need to deposit $719.22 each month to have a million dollars when she retires.</div>
+</li>
+<li>
+<div class="para"><code class="code-inline tex2jax_ignore">=PMT(0.0725/12, (65-21)*12, 0, 1000000)</code></div>
+<div class="para">= $262.04</div>
+<div class="para">She would need to deposit $262.04 each month to have a million dollars when she retires.</div>
+</li>
+<li>
+<div class="para"><code class="code-inline tex2jax_ignore">=FV(0.0725/12, (65-21)*12, 719.22)</code></div>
+<div class="para">= $2,744,713.35</div>
+<div class="para">She would have over $2.7 million dollars when she retired.</div>
+</li>
+<li>
+<div class="para"><code class="code-inline tex2jax_ignore">=PV(0.0725/12, (65-21)*12, 0, 1000000)</code></div>
+<div class="para">= $41,568.93</div>
+<div class="para">She would need to deposit $41,568.93 at age 21 to have a million dollars when she retires.</div>
+</li>
+</ol></div>
+<span class="incontext"><a href="sec-finance-savings-plan.html#p-970" class="internal">in-context</a></span>
 </body>
 </html>

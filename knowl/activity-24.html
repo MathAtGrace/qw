@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -9,43 +9,19 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
-<script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
-// Their results will be linked, only within language type
-sagecell.makeSagecell({inputLocation: 'pre.sagecell-sage',
-                       linked: true,
-                       languages: ['sage'],
-                       evalButtonText: 'Evaluate (Sage)'});
-</script>
 </head>
 <body class="ignore-math">
-<article class="activity project-like"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.5</span><span class="period">.</span>
-</h4>
-<p>Suppose we run a company that has two warehouses, which we will call <span class="process-math">\(P\)</span> and <span class="process-math">\(Q\text{,}\)</span> and a fleet of 1000 delivery trucks. Every morning, a delivery truck goes out from one of the warehouses and returns in the evening to one of the warehouses.  It is observed that</p>
-<ul class="disc">
-<li><p>70% of the trucks that leave <span class="process-math">\(P\)</span> return to <span class="process-math">\(P\text{.}\)</span>  The other 30% return to <span class="process-math">\(Q\text{.}\)</span></p></li>
-<li><p>50% of the trucks that leave <span class="process-math">\(Q\)</span> return to <span class="process-math">\(Q\)</span> and 50% return to <span class="process-math">\(P\text{.}\)</span></p></li>
-</ul> <p>The distribution of trucks is represented by the vector <span class="process-math">\(\xvec=\twovec{x_1}{x_2}\)</span> when there are <span class="process-math">\(x_1\)</span> trucks at location <span class="process-math">\(P\)</span> and <span class="process-math">\(x_2\)</span> trucks at <span class="process-math">\(Q\text{.}\)</span>  If <span class="process-math">\(\xvec\)</span> describes the distribution of trucks in the morning, then the matrix transformation <span class="process-math">\(T(\xvec)\)</span> will describe the distribution in the evening. <pre class="ptx-sagecell sagecell-sage" id="sage-71"><script type="text/x-sage">
-</script></pre></p>
-<ol class="lower-alpha">
-<li>
-<p>Suppose that all 1000 trucks begin the day at location <span class="process-math">\(P\)</span> and none at <span class="process-math">\(Q\text{.}\)</span>  How many trucks are at each location that evening?  Using our vector representation, what is <span class="process-math">\(T\left(\ctwovec{1000}{0}\right)\text{?}\)</span></p>
-<p>So that we can find the matrix <span class="process-math">\(A\)</span> associated to <span class="process-math">\(T\text{,}\)</span> what does this tell us about <span class="process-math">\(T\left(\twovec{1}{0}\right)\text{?}\)</span></p>
-</li>
-<li><p>In the same way, suppose that all 1000 trucks begin the day at location <span class="process-math">\(Q\)</span> and none at <span class="process-math">\(P\text{.}\)</span>  How many trucks are at each location that evening? What is the result <span class="process-math">\(T\left(\ctwovec{0}{1000}\right)\)</span> and what is <span class="process-math">\(T\left(\twovec01\right)\text{?}\)</span></p></li>
-<li><p>Find the matrix <span class="process-math">\(A\)</span> such that <span class="process-math">\(T(\xvec) =
-A\xvec\text{.}\)</span></p></li>
-<li><p>Suppose that there are 100 trucks at <span class="process-math">\(P\)</span> and 900 at <span class="process-math">\(Q\)</span> in the morning.  How many are there at the two locations in the evening?</p></li>
-<li><p>Suppose that there are 550 trucks at <span class="process-math">\(P\)</span> and 450 at <span class="process-math">\(Q\)</span> in the evening.  How many trucks were there at the two locations that morning?</p></li>
-<li>
-<p>Suppose that all of the trucks are at location <span class="process-math">\(Q\)</span> on Monday morning.</p>
-<ol class="decimal">
-<li><p>How many trucks are at each location Monday evening?</p></li>
-<li><p>How many trucks are at each location Tuesday evening?</p></li>
-<li><p>How many trucks are at each location Wednesday evening?</p></li>
-</ol>
-</li>
-<li><p>Suppose that <span class="process-math">\(S\)</span> is the matrix transformation that transforms the distribution of trucks <span class="process-math">\(\xvec\)</span> one morning into the distribution of trucks in the morning one week (seven days) later.  What is the matrix that defines the transformation <span class="process-math">\(S\text{?}\)</span></p></li>
-</ol></article><span class="incontext"><a href="sec-linear-trans.html#activity-24" class="internal">in-context</a></span>
+<article class="activity project-like"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Thousand, Million, Billion, and Trillion.</span>
+</h3> <div class="para logical"><ol class="lower-alpha">
+<li><div class="para">What is a simpler way to express 2000 billion dollars?</div></li>
+<li><div class="para">Imagine a stack of 1,000 one-dollar bills, which is about 4.3 inches tall. Imagine combining 1,000 stacks of 1,000 one-dollar bills. How much money is in the stack, and how tall (in feet) would it be?</div></li>
+<li><div class="para">Try to come up with a well-known or common thing that is basically the same height or length as your answer to <a href="" class="xref" data-knowl="./knowl/activity-million.html" title="Item b">Item b</a>.  Feel free to use the internet.</div></li>
+<li><div class="para">Now imagine combining 1000 stacks like the one above in <a href="" class="xref" data-knowl="./knowl/activity-million.html" title="Item b">Item b</a>. How much money is in the stack, and how tall (in miles) would it be?</div></li>
+<li><div class="para">Try to come up with a well-known or common thing that is basically the same height or length as your answer to <a href="" class="xref" data-knowl="./knowl/activity-billion.html" title="Item d">Item d</a>.  Feel free to use the internet.</div></li>
+<li><div class="para">Now imagine combining 1000 stacks like the one above in <a href="" class="xref" data-knowl="./knowl/activity-billion.html" title="Item d">Item d</a>. How much money is in the stack, and how tall (in miles) would it be?</div></li>
+<li><div class="para">Since the circumference of the earth is a litte less then 25,000 miles, how many times would this stack from <a href="" class="xref" data-knowl="./knowl/activity-trillion.html" title="Item f">Item f</a> go around the world?</div></li>
+<li><div class="para">Your friends are discussing an entertainment strike (actor’s guild, baseball, hockey, whatever your friends care about most) where the professionals, who are generally millionaires, are against the owners, who are generaly billionaires.  Try to to explain the difference between a million and a billion in a simple but also insightful way to your friends.</div></li>
+</ol></div></article><span class="incontext"><a href="sec_orders_of_mag.html#activity-24" class="internal">in-context</a></span>
 </body>
 </html>

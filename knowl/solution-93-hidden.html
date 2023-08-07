@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -10,5 +10,23 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like"><p><code class="code-inline tex2jax_ignore">=PV(0.028/12,4*12,100,0)</code> = $4,535.96. Miao can finance $4,535.96 in equipment to have a monthly loan payment of $100 for 4 years.</p></div></body>
+<body class="ignore-math"><div class="solution solution-like">
+<div class="para">To determine this, we need to think backwards. We are looking for the amount of the loan that can be paid off by $1,000 per month in the remaining 25 years. In other words, we’re looking for <span class="process-math">\(P\)</span> when:</div> <div class="para">
+<span class="process-math">\(d=\$1,000\text{,}\)</span> for the monthly loan payment</div> <div class="para">
+<span class="process-math">\(r=0.06\text{,}\)</span> for 6% annual rate</div> <div class="para">
+<span class="process-math">\(n=12\text{,}\)</span> since we’re doing monthly payments, we’ll compound monthly</div> <div class="para">
+<span class="process-math">\(t=25\text{,}\)</span> since we’d be making monthly payments for 25 more years</div> <div class="para">To use a spreadsheet for this problem, we use the <code class="code-inline tex2jax_ignore">=PV</code> formula because we want to know what the present value would be at the time you want to sell in 5 years. We enter:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:40%;"><div class="para logical">
+<pre class="code-display tex2jax_ignore">=PV(0.06/12, 12*25, 1000,0)</pre>
+<div class="para">which gives us $155,206.86.</div>
+</div></div>
+<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_4/remaining_balance.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
+</div></div> <div class="para">To check this with the formula we have:</div> <div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+P\amp=\frac{1000\left(1-\left(1+\frac{0.06}{12}\right)^{-12\cdot 25}\right)}{\frac{0.06}{12}}\\
+\amp=\frac{1000(1-(1.005)^{-300})}{0.005}\\
+\amp\approx\$155,206.86
+\end{align*}
+</div></div> <div class="para">The loan balance with 25 years remaining on the loan will be $155,206.86</div>
+</div></body>
 </html>

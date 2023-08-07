@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -13,25 +13,41 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.3.4.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.2.11.9.1</span><span class="period">.</span>
 </h4>
-<p>In this example we are given the regular deposit amount and we are looking for the future value. In a spreadsheet we use the <code class="code-inline tex2jax_ignore">=FV</code> function and enter:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel middle" style="width:40%;">
-<pre class="code-display tex2jax_ignore">=FV(0.03/365, 365*10, 5,0)</pre>
-<p>which gives a result of $21,282.07.</p>
-</div>
-<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_3/finding_payments2.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
-</div></div> <p>To use a mathematical formula, we choose the one solved for <em class="alert">A</em>:</p> <p><span class="process-math">\(d=\$5\text{,}\)</span> the daily deposit</p> <p><span class="process-math">\(r=0.03\text{,}\)</span> 3% annual rate</p> <p><span class="process-math">\(n=365\text{,}\)</span> since we're doing daily deposits, we'll compound daily</p> <p><span class="process-math">\(t=10\text{,}\)</span> we want the amount after 10 years</p> <div class="displaymath process-math" data-contains-math-knowls="">
+<div class="para logical"><ol class="lower-alpha">
+<li>
+<div class="para logical"><div class="displaymath process-math">
 \begin{align*}
-A\amp=\frac{5\left(\left(1+\frac{0.03}{365}\right)^{365\cdot 10}-1\right)}{\left(\frac{0.03}{365}\right)}\\
-\amp\approx\$21,282.07
+A\amp=300\left(1+\frac{0.05}{1}\right)^{1*10}\\
+\amp\approx \$488.67
 \end{align*}
-</div> <p>To find the amount of interest, we will calculate how much was deposited in the account. Since you put in $5 a day for 10 years we get</p> <div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\$5(365)(10)=\$18,250\text{.}
-\end{equation*}
-</div> <p>The interest earned is <span class="process-math">\(\$21,282.07-\$18,250=\$3,032.07\text{.}\)</span></p> <p>To find the percentage we divide by the total balance to get <span class="process-math">\(\frac{\$3,032.07}{\$21,282.07}\approx0.1425\)</span> or 14.25%.</p> <p>After 10 years, about 14.25% of the account is interest.</p>
+</div></div>
+<div class="para">There will be $488.67 in the account in 10 years.</div>
+<div class="para logical">
+<div class="para">Or,</div>
+<pre class="code-display tex2jax_ignore">=FV(0.05/1,1*10,0,300)</pre>
 </div>
-<span class="incontext"><a href="sec-finance-savings-plan.html#solution-50" class="internal">in-context</a></span>
+</li>
+<li>
+<div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+I\amp=488.67-300\\
+\amp=\$188.67
+\end{align*}
+</div></div>
+<div class="para">$188.67 of the balance will be interest.</div>
+</li>
+<li>
+<div class="para logical"><div class="displaymath process-math">
+\begin{gather*}
+\frac{188.67}{488.67} \approx 0.3861 \text{ or } 38.61\%
+\end{gather*}
+</div></div>
+<div class="para">The interest makes up 38.61% of the balance.</div>
+</li>
+</ol></div>
+</div>
+<span class="incontext"><a href="sec-finance-simple-compound.html#solution-50" class="internal">in-context</a></span>
 </body>
 </html>

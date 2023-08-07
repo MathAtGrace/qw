@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -12,20 +12,15 @@
 </head>
 <body class="ignore-math">
 <article class="example example-like"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.4.5</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.6</span><span class="period">.</span>
 </h4>
-<p>(odd number of data values): Suppose we added one more height (68 inches) to the data set from the previous example. We will again find the interquartile range of the heights.</p> <p>59 60 61 63 64 64 66 66 67 68 69 70 72</p> <p>The data are already in order, but we have an odd number of values. To deal with this we do not use the median in the upper or lower halves. The lower half will include the values strictly below the median, and the upper half will include the values strictly above the median.</p> <div class="displaymath process-math" data-contains-math-knowls="">
+<div class="para">When finding the median of an even number of values.</div> <div class="para">Use the following quiz scores: 2, 4, 5, 5, 6, 6, 7, 7, 8, 8, 10, 20.</div> <div class="para">There are now 12 quiz scores in our sample. When the distribution contains an even number of data values there will be a pair of values in the middle rather than a single value. Then we take the average of the middle two values.</div> <div class="para logical"><div class="displaymath process-math">
 \begin{gather*}
-\overbrace{59,60, \underbrace{61, 63,}^{Q1 =\frac{61+63}{2}=62} 64, 64,}^{\text{Lower Half}} \overbrace{66}^{\text{Median(Ignore)}} \overbrace{66, 67, \underbrace{68, 69,}^{Q3 =\frac{68+69}{2}=68.5} 70, 72}^{\text{Upper Half}}
+\overbrace{2,4,5,5,6}^{\text{Lower Half}} \overbrace{6, 7}^{\text{Middle Pair}} \overbrace{7,8,8,10,20}^{\text{Upper Half}}
 \end{gather*}
-</div> <p>Then the interquartile range is:</p> <div class="displaymath process-math" data-contains-math-knowls="">
-\begin{gather*}
-IQR=Q_{3}-Q_{1}=68.5-62=6.5\text{ inches}
-\end{gather*}
-</div> <p>If the data set is small, we can find the first and third quartiles by hand, but we have also seen that they are part of the output from GeoGebra. Here is the output for this data.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/statistics/3_4/quartile.png" class="contained" alt="A screenshot of GeoGebra showing the data and the summary statistics."></div></div></div> <p>From the list of summary statistics we can see that <span class="process-math">\(=Q_{1}=62\)</span> and <span class="process-math">\(=Q_{3}=68.5\)</span> inches. Now we can calculate the interquartile range.</p> <div class="displaymath process-math" data-contains-math-knowls="">
-\begin{gather*}
-IQR=68.5-62=6.5\text{ inches}
-\end{gather*}
-</div></article><span class="incontext"><a href="sec-4-4-measure-of-variation.html#example-75" class="internal">in-context</a></span>
+</div></div> <div class="para">Median<span class="process-math">\(=\frac{6+7}{2}=6.5\)</span> points</div> <div class="para">What is important to notice is that despite adding an outlier to our data set, the median is largely unaffected. The median quiz score for the new distribution is 6.5 points.</div> <div class="para">We can also find the median using the spreadsheet formula <code class="code-inline tex2jax_ignore">=MEDIAN</code>. Just like the spreadsheet function <code class="code-inline tex2jax_ignore">=AVERAGE</code>, we can either list the individual data values in the formula, or we can enter the data values into a row (or column) and use the row range (or column range) in the formula.</div> <div class="para">Using the data values of the original distribution, we can write function as</div> <div class="para logical">
+<pre class="code-display tex2jax_ignore">=MEDIAN(2, 4, 5, 6, 6, 7, 7, 8, 8, 10)</pre>
+<div class="para">or</div>
+</div> <div class="para logical"><pre class="code-display tex2jax_ignore">=MEDIAN(A1:AK)</pre></div> <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/statistics/3_3/median1.png" class="contained" alt="A screenshot of Excel showing the =MEDIAN formula typed in with the cell references. The data is in row 1"></div></div></div> <div class="para">and we get 6 points for the median test score.</div></article><span class="incontext"><a href="sec-4-3-measure-of-center.html#example-75" class="internal">in-context</a></span>
 </body>
 </html>

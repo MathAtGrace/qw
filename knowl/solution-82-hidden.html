@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -10,15 +10,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like"><ol class="lower-alpha">
+<body class="ignore-math"><div class="solution solution-like"><div class="para logical"><ol class="lower-alpha">
 <li>
-<p><span class="process-math">\(d = \frac{270000\left(\frac{6.5\%}{12}\right)}{\left(1-\left(1+\frac{6.5\%}{12}\right)^{-12 \times 30}\right)}\text{,}\)</span> which gives <span class="process-math">\(d \approx 1,706.58\)</span></p>
-<p>or <code class="code-inline tex2jax_ignore">=PMT(6.5%/12,12*30,270000)</code></p>
+<div class="para"><span class="process-math">\(1000\left(1+\frac{0.045}{12}\right)^{12*10}+\frac{100\left(\left(1+\frac{0.045}{12}\right)^{12*10}-1\right)}{\frac{0.045}{12}}\)</span></div>
+<div class="para">Or, <code class="code-inline tex2jax_ignore">=FV(0.045/12,12*10,100,1000)</code>
+</div>
+<div class="para">Sylvin will have a final balance of $16,686.80.</div>
 </li>
-<li>
-<p>The total of all loan payments will be <span class="process-math">\((12 * 30 * \$1,706.58) = \$614,368.80\text{.}\)</span></p>
-<p>So the total interest paid will be <span class="process-math">\(\$614,368.80 – \$270,000.00 = \$344,368.80\text{.}\)</span></p>
-</li>
-<li><p><span class="process-math">\((\$344,368.80 / \$614,368.80)\text{,}\)</span> or <span class="process-math">\(\approx 56.0525\%\)</span></p></li>
-</ol></div></body>
+<li><div class="para">
+<span class="process-math">\(16686.8 - (1000 + 100*12*10)\text{.}\)</span> Sylvin will earn $3,686.80 in interest.</div></li>
+<li><div class="para">
+<span class="process-math">\(3686.8/16686.8\text{.}\)</span> The final balance will be about 22.1% interest.</div></li>
+</ol></div></div></body>
 </html>

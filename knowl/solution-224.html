@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -13,21 +13,177 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">4.4.10.19.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">4.4.10.1.1</span><span class="period">.</span>
 </h4>
-<div class="displaymath process-math" data-contains-math-knowls="">
+<div class="para logical"><ol class="lower-alpha">
+<li>
+<div class="para">In Excel:</div>
+<div class="para">Entering the data values into cells A1 through A15.</div>
+<div class="para logical"><div class="displaymath process-math">
 \begin{align*}
-Z_{Math}\amp=\frac{\text{data value}-\text{mean}}{\text{standard deviation}}\\
-\amp=\frac{89-75}{7}\\
-\amp=2 \text{ standard deviations}
+s\amp=stdev.s(A1:A15)\\
+\amp=\$4.82
 \end{align*}
-</div> <div class="displaymath process-math" data-contains-math-knowls="">
+</div></div>
+<div class="para">From <a href="" class="xref" data-knowl="./knowl/diners_example.html" title="Exercise 4.3.7.1">Exercise 4.3.7.1</a>, the mean is $9.80. There are 15 data values, so <span class="process-math">\(n=15\text{.}\)</span>
+</div>
+<div class="para">We will make a table of data values, their deviations from the mean, and the squared deviations:</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b1 r1 l1 t1 lines">Data Value</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Deviation</th>
+<th scope="col" class="l m b1 r1 l0 t1 lines">Deviation Squared</th>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines"><span class="process-math">\(7.5\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\(7.5-9.8=-2.3\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\((-2.3)^2=5.29\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines"><span class="process-math">\(25\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\(25-9.8=15.2\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\((15.2)^2=231.04\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines"><span class="process-math">\(10\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\(10-9.8=0.2\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\((0.2)^2=0.04\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines"><span class="process-math">\(10\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\(10-9.8=0.2\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\((0.2)^2=0.04\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines"><span class="process-math">\(7.5\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\(7.5-9.8=-2.3\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\((-2.3)^2=5.29\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines"><span class="process-math">\(8.25\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\(8.25-9.8=-1.55\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\((-1.55)^2=2.4\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines"><span class="process-math">\(9\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\(9-9.8=-0.8\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\((-0.8)^2=0.64\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines"><span class="process-math">\(5\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\(5-9.8=-4.8\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\((-4.8)^2=23.04\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines"><span class="process-math">\(15\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\(15-9.8=5.2\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\((5.2)^2=27.04\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines"><span class="process-math">\(8\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\(8-9.8=-1.8\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\((-1.8)^2=3.24\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines"><span class="process-math">\(7.25\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\(7.25-9.8=-2.55\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\((-2.55)^2=6.5\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines"><span class="process-math">\(7.5\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\(7.5-9.8=-2.3\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\((-2.3)^2=5.29\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines"><span class="process-math">\(8\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\(8-9.8=-1.8\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\((-1.8)^2=3.24\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines"><span class="process-math">\(7\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\(7-9.8=-2.8\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\((-2.8)^2=7.84\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines"><span class="process-math">\(12\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\(12-9.8=2.2\)</span></td>
+<td class="l m b1 r1 l0 t0 lines"><span class="process-math">\((2.2)^2=4.84\)</span></td>
+</tr>
+</table></div></div></div>
+<div class="para">Next, we add the squared deviations and get <span class="process-math">\(5.29 + 231.04 + 0.04 + 0.04 + 5.29 + 2.4 + 0.64 + 23.04 + 27.04 + 3.24 + 6.5 + 5.29 + 3.24 + 7.84 + 4.84 = 325.78\)</span> dollars-squared.</div>
+<div class="para">The sample standard deviation is:</div>
+<div class="para logical"><div class="displaymath process-math">
 \begin{align*}
-Z_{English}\amp=\frac{\text{data value}-\text{mean}}{\text{standard deviation}}\\
-\amp=\frac{65-53}{4}\\
-\amp=3 \text{ standard deviations}
+s\amp=\sqrt{\frac{325.78}{14}}\\
+\amp=\$4.82
 \end{align*}
-</div> <p>Because the <span class="process-math">\(Z\)</span>-score of my English test is greater than the <span class="process-math">\(Z\)</span>-score of my math test, I did better on the English test than I did on the math test.</p>
+</div></div>
+</li>
+<li>
+<div class="para">In GeoGebra:</div>
+<div class="para">In GeoGebra Classic, enter the data values into the column A of the spreadsheet and use the “One Variable Analysis” function. Then use the “Show Statistics” option to find the five-number summary.</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines">Min</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Q1</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Median</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Q3</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Max</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">$5</td>
+<td class="c m b1 r1 l0 t0 lines">$7.50</td>
+<td class="c m b1 r1 l0 t0 lines">$8</td>
+<td class="c m b1 r1 l0 t0 lines">$10</td>
+<td class="c m b1 r1 l0 t0 lines">$25</td>
+</tr>
+</table></div></div></div>
+<div class="para">From <a href="" class="xref" data-knowl="./knowl/diners_example.html" title="Exercise 4.3.7.1">Exercise 4.3.7.1</a>, the data listed in order is:</div>
+<div class="para">$5.00, $7.00, $7.25, $7.50, $7.50, $7.50, $8.00, $8.00, $8.25, $9.00, $10.00, $10.00, $12.00, $15.00, $25.00</div>
+<div class="para">Also from <a href="" class="xref" data-knowl="./knowl/diners_example.html" title="Exercise 4.3.7.1">Exercise 4.3.7.1</a>, there are 15 data values (<span class="process-math">\(n=15\)</span>), and the median is $8.00. The lower half of the data is:</div>
+<div class="para">$5.00, $7.00, $7.25, $7.50, $7.50, $7.50, $8.00</div>
+<div class="para">The median of the lower half is $7.50, so the lower quartile <span class="process-math">\(Q_{1}\)</span> is $7.50.</div>
+<div class="para">The upper half of the data is:</div>
+<div class="para">$8.25, $9.00, $10.00, $10.00, $12.00, $15.00, $25.00</div>
+<div class="para">The median of the upper half is $10.00, so the upper quartile <span class="process-math">\(Q_{3}\)</span> is $10.00.</div>
+<div class="para">The smallest and largest data values are $5.00 and 25.00, respectively, so the min and max are $5.00 and $25.00. The five-number summary is:</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r1 l1 t1 lines">Min</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Q1</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Median</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Q3</th>
+<th scope="col" class="c m b1 r1 l0 t1 lines">Max</th>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">$5</td>
+<td class="c m b1 r1 l0 t0 lines">$7.50</td>
+<td class="c m b1 r1 l0 t0 lines">$8</td>
+<td class="c m b1 r1 l0 t0 lines">$10</td>
+<td class="c m b1 r1 l0 t0 lines">$25</td>
+</tr>
+</table></div></div></div>
+</li>
+<li>
+<div class="para">The range is:</div>
+<div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+Range \amp= Max - Min\\
+\amp=25-5\\
+\amp=\$20
+\end{align*}
+</div></div>
+<div class="para">The interquartile range (IQR) is:</div>
+<div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+IQR \amp= Q_{3} - Q_{1}\\
+\amp=10-7.5\\
+\amp=\$2.50
+\end{align*}
+</div></div>
+</li>
+<li><div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/statistics/3_4/solution_mean_prices.png" class="contained"></div></div></div></li>
+</ol></div>
 </div>
 <span class="incontext"><a href="sec-4-4-measure-of-variation.html#solution-224" class="internal">in-context</a></span>
 </body>

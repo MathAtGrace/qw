@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -11,33 +11,84 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<article class="activity project-like"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.2.3</span><span class="period">.</span>
-</h4>
-<p>In this activity, we will find the eigenvectors of a matrix as the null space of the matrix <span class="process-math">\(A-\lambda I\text{.}\)</span></p>
-<ol class="lower-alpha">
-<li><p>Let's begin with the matrix <span class="process-math">\(A = \left[\begin{array}{rr}
-1 \amp 2 \\
-2 \amp 1 \\
-\end{array}\right]
-\text{.}\)</span>  We have seen that <span class="process-math">\(\lambda = 3\)</span> is an eigenvalue. Form the matrix <span class="process-math">\(A-3I\)</span> and find a basis for the eigenspace <span class="process-math">\(E_3 = \nul(A-3I)\text{.}\)</span> What is the dimension of this eigenspace? For each of the basis vectors <span class="process-math">\(\vvec\text{,}\)</span> verify that <span class="process-math">\(A\vvec = 3\vvec\text{.}\)</span></p></li>
-<li><p>We also saw that <span class="process-math">\(\lambda = -1\)</span> is an eigenvalue.  Form the matrix <span class="process-math">\(A-(-1)I\)</span> and find a basis for the eigenspace <span class="process-math">\(E_{-1}\text{.}\)</span>  What is the dimension of this eigenspace? For each of the basis vectors <span class="process-math">\(\vvec\text{,}\)</span> verify that <span class="process-math">\(A\vvec = -\vvec\text{.}\)</span></p></li>
-<li><p>Is it possible to form a basis of <span class="process-math">\(\real^2\)</span> consisting of eigenvectors of <span class="process-math">\(A\text{?}\)</span></p></li>
-<li><p>Now consider the matrix <span class="process-math">\(A = \left[\begin{array}{rr}
-3 \amp 0 \\
-0 \amp 3 \\
-\end{array}\right]
-\text{.}\)</span>  Write the characteristic equation for <span class="process-math">\(A\)</span> and use it to find the eigenvalues of <span class="process-math">\(A\text{.}\)</span>  For each eigenvalue, find a basis for its eigenspace <span class="process-math">\(E_\lambda\text{.}\)</span>  Is it possible to form a basis of <span class="process-math">\(\real^2\)</span> consisting of eigenvectors of <span class="process-math">\(A\text{?}\)</span></p></li>
-<li><p>Next, consider the matrix <span class="process-math">\(A = \left[\begin{array}{rr}
-2 \amp 1 \\
-0 \amp 2 \\
-\end{array}\right]
-\text{.}\)</span>  Write the characteristic equation for <span class="process-math">\(A\)</span> and use it to find the eigenvalues of <span class="process-math">\(A\text{.}\)</span>  For each eigenvalue, find a basis for its eigenspace <span class="process-math">\(E_\lambda\text{.}\)</span>  Is it possible to form a basis of <span class="process-math">\(\real^2\)</span> consisting of eigenvectors of <span class="process-math">\(A\text{?}\)</span></p></li>
-<li><p>Finally, find the eigenvalues and eigenvectors of the diagonal matrix <span class="process-math">\(A = \left[\begin{array}{rr}
-4 \amp 0 \\
-0 \amp -1 \\
-\end{array}\right]
-\text{.}\)</span>  Explain your result by considering the geometric effect of the matrix transformation defined by <span class="process-math">\(A\text{.}\)</span></p></li>
-</ol></article><span class="incontext"><a href="sec-eigen-find.html#activity-45" class="internal">in-context</a></span>
+<article class="activity project-like"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.5</span><span class="period">.</span>
+</h3>
+<div class="introduction">
+<div class="para">A teacher has collected data on the grades his students received in his two classes. The following tables show two different ways to represent the same data.</div> <figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.7.3<span class="period">.</span></span><span class="space"> </span>Table 1</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines" colspan="5">Grades</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">A</td>
+<td class="l m b0 r0 l0 t0 lines">B</td>
+<td class="l m b0 r0 l0 t0 lines">C</td>
+<td class="l m b0 r0 l0 t0 lines">D</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Morning Class</td>
+<td class="l m b0 r0 l0 t0 lines">12.50%</td>
+<td class="l m b0 r0 l0 t0 lines">25.00%</td>
+<td class="l m b0 r0 l0 t0 lines">37.50%</td>
+<td class="l m b0 r0 l0 t0 lines">6.30%</td>
+<td class="l m b0 r0 l0 t0 lines">18.80%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Afternoon Class</td>
+<td class="l m b0 r0 l0 t0 lines">14.30%</td>
+<td class="l m b0 r0 l0 t0 lines">20.00%</td>
+<td class="l m b0 r0 l0 t0 lines">37.10%</td>
+<td class="l m b0 r0 l0 t0 lines">8.60%</td>
+<td class="l m b0 r0 l0 t0 lines">20.00%</td>
+</tr>
+</table></div></figure> <figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.7.4<span class="period">.</span></span><span class="space"> </span>Table 2</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">Grades</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">A</td>
+<td class="l m b0 r0 l0 t0 lines">B</td>
+<td class="l m b0 r0 l0 t0 lines">C</td>
+<td class="l m b0 r0 l0 t0 lines">D</td>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Morning Class</td>
+<td class="l m b0 r0 l0 t0 lines">44.4%</td>
+<td class="l m b0 r0 l0 t0 lines">53.3%</td>
+<td class="l m b0 r0 l0 t0 lines">48.0%</td>
+<td class="l m b0 r0 l0 t0 lines">40.0%</td>
+<td class="l m b0 r0 l0 t0 lines">46.2%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Afternoon Class</td>
+<td class="l m b0 r0 l0 t0 lines">55.6%</td>
+<td class="l m b0 r0 l0 t0 lines">46.7%</td>
+<td class="l m b0 r0 l0 t0 lines">52.0%</td>
+<td class="l m b0 r0 l0 t0 lines">60.0%</td>
+<td class="l m b0 r0 l0 t0 lines">53.8%</td>
+</tr>
+</table></div></figure>
+</div>
+<article class="task exercise-like"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para">Which table could be used to answer the following question: “What percentage of the students who received an A are in the morning class?”</div> <div class="para logical"><ul class="disc">
+<li><div class="para">Table 1</div></li>
+<li><div class="para">Table 2</div></li>
+<li><div class="para">Neither table</div></li>
+</ul></div></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para">Which table could be used to answer the following question: “What percentage of the students in the morning class received an A?”</div> <div class="para logical"><ul class="disc">
+<li><div class="para">Table 1</div></li>
+<li><div class="para">Table 2</div></li>
+<li><div class="para">Neither table</div></li>
+</ul></div></article></article><span class="incontext"><a href="sec_numbers_percentages.html#activity-45" class="internal">in-context</a></span>
 </body>
 </html>

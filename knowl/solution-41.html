@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -13,37 +13,21 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.2.11.18.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.2.10.1</span><span class="period">.</span>
 </h4>
-<ol class="lower-alpha">
-<li>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{align*}
-A\amp= 1000e^{0.0575*15}\\
-\amp\approx \$2,369.08
-\end{align*}
+<div class="para">Using the effective rate formula for each, we have:</div> <div class="para">For the 6% APR account compounded quarterly:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:40%;">
+<div class="para logical"><pre class="code-display tex2jax_ignore">=EFFECT(0.06,4)</pre></div>
+<div class="para">which gives 0.06136 or 6.14%</div>
 </div>
-<p>Or, <code class="code-inline tex2jax_ignore">=1000*EXP(0.0575*15)</code></p>
-<p>The account balance is $2,369.08</p>
-</li>
-<li>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{align*}
-I \amp= 2368.08-1000\\
-\amp= \$1,368.08
-\end{align*}
+<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_2/effective_rate3.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
+</div></div> <div class="para">For the 5.975% APR account compounded daily:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:40%;">
+<div class="para logical"><pre class="code-display tex2jax_ignore">=EFFECT(0.05975,365)</pre></div>
+<div class="para">which gives 0.06157 or 6.16%</div>
 </div>
-<p>The interest earned is $1,368.08</p>
-</li>
-<li>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{gather*}
-\frac{1368.08}{2368.08} \approx 0.5777 \rightarrow 57.77\%
-\end{gather*}
-</div>
-<p>The interest is 57.77% of the account balance.</p>
-</li>
-</ol>
+<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_2/effective_rate4.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
+</div></div> <div class="para">The account that was compounded more often has a slightly higher rate in this case.</div>
 </div>
 <span class="incontext"><a href="sec-finance-simple-compound.html#solution-41" class="internal">in-context</a></span>
 </body>

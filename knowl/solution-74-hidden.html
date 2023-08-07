@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -10,27 +10,20 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like"><ol class="lower-alpha">
+<body class="ignore-math"><div class="solution solution-like"><div class="para logical"><ol class="lower-alpha">
 <li>
-<p>Amount of down payment: 0.10(350,000) = $35,000</p>
-<p>Loan amount = $350,000 – $35,000 = $315,000</p>
-<p>The loan amount is $315,000.</p>
+<div class="para">In 5 years: <span class="process-math">\(\frac{130\left(\left(1+\frac{0.09}{12}\right)^{12*5}-1\right)}{\left(\frac{0.09}{12}\right)}\)</span>
+</div>
+<div class="para">Or, <code class="code-inline tex2jax_ignore">=FV(0.09/12,12*5,130)</code>
+</div>
+<div class="para">In 25 more years: <span class="process-math">\(9805.14(1+\frac{0.09}{12})^{12*25}\)</span>
+</div>
+<div class="para"><code class="code-inline tex2jax_ignore">=FV(0.09/12,12*25,0,9805.14)</code></div>
+<div class="para">Your final balance will be $92,250.82.</div>
 </li>
-<li>
-<p><code class="code-inline tex2jax_ignore">=PMT(0.045/12, 30*12, 315000, 0)</code></p>
-<p>= $1,596.06</p>
-<p>My monthly mortgage payment would be $1,596.06.</p>
-</li>
-<li>
-<p>=$1,596.06*30*12</p>
-<p>= $574,581.14</p>
-<p>If I owned the house for 30 years I would pay $574,581.14.</p>
-</li>
-<li>
-<p>=PMT(0.045/12, 30*12, 0, 315000)</p>
-<p>= $414.81</p>
-<p>In Exercise 9, we are making loan payments that include interest in addition to the principal of $315,000. The present value is $315,000 and the future value is $0.</p>
-<p>This is different because we switched the present value to $0 and the future value to $315,000. In this case we would be depositing $414.81 per month to save up to $315,000. Interest is working with us instead of against us.</p>
-</li>
-</ol></div></body>
+<li><div class="para">
+<span class="process-math">\(92250.82 - 130*5*12\text{.}\)</span> You will earn $84,450.82 in interest.</div></li>
+<li><div class="para">
+<span class="process-math">\(84450.82/92250.82\text{.}\)</span> The final balance will be about 91.5% interest.</div></li>
+</ol></div></div></body>
 </html>

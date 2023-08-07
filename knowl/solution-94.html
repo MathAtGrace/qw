@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -12,10 +12,28 @@
 </head>
 <body class="ignore-math">
 <div class="solution solution-like">
-<h5 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.4.9.18.1</span><span class="period">.</span>
-</h5>
-<p><code class="code-inline tex2jax_ignore">=PMT(0.041/12,2*12,0,5000)</code> = $200.26. You would need to save $200.26 every month to have $5,000 in 2 years.</p>
+<h4 class="heading">
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.4.5.1</span><span class="period">.</span>
+</h4>
+<div class="para">First we will see what she owes with the 17.99% APR using the compound interest formula for 35 days:</div> <div class="para logical"><div class="displaymath process-math">
+\begin{equation*}
+900\left(1+\frac{0.1799}{365}\right)^{35} \approx 915.66
+\end{equation*}
+</div></div> <div class="para logical">
+<div class="para">The spreadsheet formula for this computation is</div>
+<pre class="code-display tex2jax_ignore">=FV(0.1799/365,35,0,900)</pre>
+</div> <div class="para">With interest, Bilqis now owes $915.66.</div> <div class="para logical">
+<div class="para">Now we will find one percent of the new balance which is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\$915.66(0.01) \approx \$9.16\text{.}
+\end{equation*}
+</div>
+</div> <div class="para">$25 is larger than $9.16, so her first payment must be at least $25. If she makes the minimum payment we can subtract to find her new balance:</div> <div class="para logical"><div class="displaymath process-math">
+\begin{equation*}
+\$915.66-\$25 = \$890.66\text{.}
+\end{equation*}
+</div></div> <div class="para">Her new balance will be $890.66.</div>
 </div>
 <span class="incontext"><a href="sec-3-4-loans.html#solution-94" class="internal">in-context</a></span>
 </body>

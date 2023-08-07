@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -13,10 +13,39 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">4.4.8.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">4.3.7.2.1</span><span class="period">.</span>
 </h4>
-<p>Store 2 has a slightly shorter median service time (2.1 minutes vs. 2.3 minutes), but the service times are less consistent, with a wider spread of the data.</p> <p>The 75th percentiles are 2.9 and 5.7 minutes. That means at store 1, 75% of customers were served within 2.9 minutes, while at store 2, 75% of customers were served within 5.7 minutes.</p> <p>Which store should you go to in a hurry? That depends upon your opinion about luck – 25% of customers at store 2 had to wait between 5.7 and 9.6 minutes.</p>
+<div class="para logical"><ol class="lower-alpha">
+<li>
+<div class="para">In Excel:</div>
+<div class="para"><code class="code-inline tex2jax_ignore">=average(10, 12.75, 7, 9, 9.75, 6.5, 12.5, 12.5, 8.75, 17, 10.5, 2)</code></div>
+<div class="para">
+<span class="process-math">\(=9.85\)</span> minutes</div>
+<div class="para">There are 12 times shown, so <span class="process-math">\(n=12\text{.}\)</span> The mean is:</div>
+<div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+\bar{x} \amp= \frac{(10+ 12.75+7+9+9.75+6.5+12.5 + 12.5+ 8.75+ 17+ 10.5+ 2)}{12}\\
+\amp=9.85 \text{ minutes}
+\end{align*}
+</div></div>
+</li>
+<li>
+<div class="para">In Excel:</div>
+<div class="para"><code class="code-inline tex2jax_ignore">=median(10, 12.75, 7, 9, 9.75, 6.5, 12.5, 12.5, 8.75, 17, 10.5, 2)</code></div>
+<div class="para">
+<span class="process-math">\(=9.88\)</span> minutes</div>
+<div class="para">There are 12 times shown, so <span class="process-math">\(n=12\text{.}\)</span> We start by listing the data in order:</div>
+<div class="para">2, 6.5, 7, 8.75, 9, 9.75, 10, 10.5, 12.5, 12.5, 12.75, 17</div>
+<div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+Median\amp=\frac{9.75+10}{2}\\
+\amp=9.88 \text{ minutes}
+\end{align*}
+</div></div>
+</li>
+<li><div class="para">Because the mean and median are approximately equal, we would expect that the distribution is symmetric.</div></li>
+</ol></div>
 </div>
-<span class="incontext"><a href="sec-4-4-measure-of-variation.html#solution-204" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec-4-3-measure-of-center.html#solution-204" class="internal">in-context</a></span>
 </body>
 </html>

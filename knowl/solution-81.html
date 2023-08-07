@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -13,28 +13,36 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.4.9.5.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.3.6.12.1</span><span class="period">.</span>
 </h4>
-<ol class="lower-alpha">
+<div class="para logical"><ol class="lower-alpha">
 <li>
-<p>The loan amount will be 90% of $200,000.00</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{gather*}
-= (0.9 * \$200,000.00)\\
-= \$180,000.00
-\end{gather*}
+<div class="para">Akiko: <span class="process-math">\(45000\left(1+\frac{0.078}{12}\right)^{12*30}\)</span>
 </div>
-</li>
-<li>
-<p><span class="process-math">\(d = \frac{180000\left(\frac{5\%}{12}\right)}{\left(1-\left(1+\frac{5\%}{12}\right)^{-12 \times 30}\right)}\text{,}\)</span> which gives <span class="process-math">\(d \approx \$966.28\)</span></p>
-<p>or <code class="code-inline tex2jax_ignore">=PMT(5%/12,12*30,180000)</code></p>
-</li>
-<li>
-<p><span class="process-math">\(d = \frac{180000\left(\frac{6\%}{12}\right)}{\left(1-\left(1+\frac{6\%}{12}\right)^{-12 \times 30}\right)}\text{,}\)</span> which gives <span class="process-math">\(d \approx \$1,079.19\)</span></p>
-<p>or <code class="code-inline tex2jax_ignore">=PMT(6%/12,12*30,180000)</code></p>
-</li>
-</ol>
+<div class="para">Or, <code class="code-inline tex2jax_ignore">=FV(0.078/12,12*30,0,45000)</code>
 </div>
-<span class="incontext"><a href="sec-3-4-loans.html#solution-81" class="internal">in-context</a></span>
+<div class="para">Her spouse: <span class="process-math">\(\frac{200\left(\left(1+\frac{0.078}{12}\right)^{12*30}-1\right)}{\left(\frac{0.078}{12}\right)}\)</span>
+</div>
+<div class="para">Or, <code class="code-inline tex2jax_ignore">=FV(0.078/12,12*30,200)</code>
+</div>
+<div class="para">Akiko will have $463,631.61 and her spouse will have $286,243.83.</div>
+</li>
+<li>
+<div class="para">Akiko: <span class="process-math">\(463631.61 - 45000\)</span>
+</div>
+<div class="para">Her spouse: <span class="process-math">\(286243.83 - 200*12*30\)</span>
+</div>
+<div class="para">Akiko will earn $418,631.61 and her spouse will earn $214,243.83 in interest.</div>
+</li>
+<li>
+<div class="para">Akiko: <span class="process-math">\(418631.61/463631.61\)</span>
+</div>
+<div class="para">Her spouse: <span class="process-math">\(214243.83/286243.83\)</span>
+</div>
+<div class="para">Akiko’s final balance will be about 90.3% interest and her spouse’s final balance will be about 74.8% interest.</div>
+</li>
+</ol></div>
+</div>
+<span class="incontext"><a href="sec-finance-savings-plan.html#solution-81" class="internal">in-context</a></span>
 </body>
 </html>

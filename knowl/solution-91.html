@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -12,10 +12,40 @@
 </head>
 <body class="ignore-math">
 <div class="solution solution-like">
-<h5 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.4.9.15.1</span><span class="period">.</span>
-</h5>
-<p><code class="code-inline tex2jax_ignore">=FV(0.035/12,3*12,200,0)</code> = $7,579.95. Paul will have $7,579.95 in 3 years.</p>
+<h4 class="heading">
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.4.3.1</span><span class="period">.</span>
+</h4>
+<div class="para">To use a spreadsheet for this problem, we use the <code class="code-inline tex2jax_ignore">=PMT</code> formula because we want to know the payment amount. The amount of the loan is the present value and to pay off the loan the future value is 0. We enter</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:40%;"><div class="para logical">
+<pre class="code-display tex2jax_ignore">=PMT(0.06/12, 12*30, 140000,0)</pre>
+<div class="para">which gives us $839.37.</div>
+</div></div>
+<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_4/loan_formulas4.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
+</div></div> <div class="para">To use the formula, we have:</div> <div class="para">
+<span class="process-math">\(r=0.06\text{,}\)</span> 6% annual rate</div> <div class="para">
+<span class="process-math">\(n=12\text{,}\)</span> since we’re paying monthly</div> <div class="para">
+<span class="process-math">\(t=30\text{,}\)</span> 30 years</div> <div class="para">
+<span class="process-math">\(P=\$140,000\text{,}\)</span> the starting loan amount</div> <div class="para">In this case, we’re going to use the equation that is solved for <span class="process-math">\(d\text{.}\)</span>
+</div> <div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+d\amp=\frac{P\left(\frac{r}{n}\right)}{\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}\\
+\amp=\frac{140000\left(\frac{0.06}{12}\right)}{\left(1-\left(1+\frac{0.06}{12}\right)^{-12\cdot 30}\right)}\\
+\amp=\frac{700}{(1-(1.005)^{-360})}\\
+\amp\approx\$839.37
+\end{align*}
+</div></div> <div class="para">You would make payments of $839.37 per month for 30 years. To find out what percentage of the total will go towards interest, we need to total up all of the payments.</div> <div class="para logical"><div class="displaymath process-math">
+\begin{equation*}
+\$839.37(30)(12)=\$302,173.20
+\end{equation*}
+</div></div> <div class="para">Then take the difference between the total payments and the loan amount.</div> <div class="para logical"><div class="displaymath process-math">
+\begin{equation*}
+\$302,173.20-\$140,000=\$162,173.20
+\end{equation*}
+</div></div> <div class="para">In this case, you would be paying $162,173.20 in interest over the life of the loan. To find the percentage, we divide the interest by the total amount paid.</div> <div class="para logical"><div class="displaymath process-math">
+\begin{equation*}
+\frac{\$162,173.20}{\$302,173.20} \approx 0.5367
+\end{equation*}
+</div></div> <div class="para">About 53.7% of the total is being paid towards interest.</div>
 </div>
 <span class="incontext"><a href="sec-3-4-loans.html#solution-91" class="internal">in-context</a></span>
 </body>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -13,18 +13,54 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.3.6.4.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.2.11.14.1</span><span class="period">.</span>
 </h4>
-<ol class="lower-alpha">
+<div class="para logical"><ol class="lower-alpha">
 <li>
-<p><span class="process-math">\(\frac{20\left(\left(1+\frac{0.0235}{365}\right)^{365*25}-1\right)}{\left(\frac{0.0235}{365}\right)}\)</span></p>
-<p>Or, <code class="code-inline tex2jax_ignore">=FV(0.0235/365,365*25,20)</code></p>
-<p>In 25 years you will have $248,339.80 in your retirement plan.</p>
-</li>
-<li><p><span class="process-math">\(248339.8 - 365*25*20\text{.}\)</span> You will have earned $65,839.80 in interest.</p></li>
-<li><p><span class="process-math">\(65839.8 /248339.8\text{.}\)</span> The final balance will be about 26.5% interest.</p></li>
-</ol>
+<div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+A_{Breylan} \amp= 1200\left(1+\frac{0.046}{4}\right)^{52\times 15}\\
+\amp\approx \$2,383.06
+\end{align*}
+</div></div>
+<div class="para">Or, <code class="code-inline tex2jax_ignore">=FV(0.046/4,15*4,0,1200)</code>
 </div>
-<span class="incontext"><a href="sec-finance-savings-plan.html#solution-55" class="internal">in-context</a></span>
+<div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+A_{Angad} \amp= 1200\left(1+\frac{0.0455}{52}\right)^{52*15}\\
+\amp\approx \$2,373.87
+\end{align*}
+</div></div>
+<div class="para">Or, <code class="code-inline tex2jax_ignore">=FV(0.0455/52,15*52,0,1200)</code>
+</div>
+<div class="para">Breylan has an account balance of $2,383.06 and Angad has a balance of $2,373.87</div>
+</li>
+<li>
+<div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+A_{Breylan} \amp= 1200\left(1+\frac{0.046}{4}\right)^{4\times 30}\\
+\amp\approx \$4,732.47
+\end{align*}
+</div></div>
+<div class="para">Or, <code class="code-inline tex2jax_ignore">=FV(0.046/4,30*4,0,1200)</code>
+</div>
+<div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+A_{Angad} \amp= 1200\left(1+\frac{0.0455}{52}\right)^{52*30}\\
+\amp\approx \$4,696.06
+\end{align*}
+</div></div>
+<div class="para">Or, <code class="code-inline tex2jax_ignore">=FV(0.0455/52,30*52,0,1200)</code>
+</div>
+<div class="para">Breylan has an account balance of $4,732.47 and Angad has a balance of $4,696.06</div>
+</li>
+<li>
+<div class="para">Breylan <code class="code-inline tex2jax_ignore">=EFFECT(0.046,4)</code>, which gives 4.68%</div>
+<div class="para">Angad <code class="code-inline tex2jax_ignore">=EFFECT(0.0455,52)</code>, which gives 4.65%</div>
+<div class="para">Breylan has an effective rate of 4.68% and Angad has an effective rate of 4.65%.</div>
+</li>
+</ol></div>
+</div>
+<span class="incontext"><a href="sec-finance-simple-compound.html#solution-55" class="internal">in-context</a></span>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -13,37 +13,21 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.2.11.17.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.2.9.1</span><span class="period">.</span>
 </h4>
-<ol class="lower-alpha">
-<li>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{align*}
-A\amp=2500e^{0.04*10}\\
-\amp\approx \$3,729.56
-\end{align*}
+<div class="para">It is hard to tell whether the higher interest rate will be better or the higher compounding rate in this case. We will find the effective rate of both accounts.</div> <div class="para">For the 5.25% APR account compounded monthly:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:40%;">
+<div class="para logical"><pre class="code-display tex2jax_ignore">=EFFECT(0.0525,12)</pre></div>
+<div class="para">which gives 0.05378 or 5.38%</div>
 </div>
-<p>Or, <code class="code-inline tex2jax_ignore">2500*EXP(0.04*10)</code></p>
-<p>The account balance is $3,729.56.</p>
-</li>
-<li>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{align*}
-I \amp= 3729.56-2500\\
-\amp= \$1229.56
-\end{align*}
+<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_2/effective_rate1.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
+</div></div> <div class="para">For the 5% APR account compounded daily:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:40%;">
+<div class="para logical"><pre class="code-display tex2jax_ignore">=EFFECT(0.05,365)</pre></div>
+<div class="para">which gives 0.05127 or 5.13%</div>
 </div>
-<p>The interest earned is $1,229.56.</p>
-</li>
-<li>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{gather*}
-\frac{1229.56}{3729.56} \approx 0.3297 \rightarrow 32.97\%
-\end{gather*}
-</div>
-<p>32.97% of the balance is interest.</p>
-</li>
-</ol>
+<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_2/effective_rate2.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
+</div></div> <div class="para">Now we can compare the effective rates of 5.38% and 5.13% and see that the account with the higher interest rate will earn more interest in this case. This is not always true, so we will show another example.</div>
 </div>
 <span class="incontext"><a href="sec-finance-simple-compound.html#solution-40" class="internal">in-context</a></span>
 </body>

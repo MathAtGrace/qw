@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -11,12 +11,12 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math"><div class="solution solution-like">
-<p>Using the simplified tax table for single filing status, we see that Adira’s taxable income puts her in the 24% tax bracket. The simplified table tells us that her taxes will be equal to $15,213.50 plus 24% of the amount over $89,075. To find the excess over $89,075, we subtract $89,075 from her taxable income. Thus, her taxes are:</p> <div class="displaymath process-math" data-contains-math-knowls="">
-\begin{align*}
-\$15,213.50+0.24(\$96,450-\$89,075)\amp=\$15,213.50+0.24(\$7,375)\\
-\amp=\$15,213.50+\$1770\\
-\amp=\$16,983.50
-\end{align*}
+<div class="para">First, we need to find out the amount of the monthly payments for this loan.</div> <div class="para">
+<span class="process-math">\(d = \frac{24000\left(\frac{3\%}{12}\right)}{\left(1-\left(1+\frac{3\%}{12}\right)^{-12 \times 5}\right)}\text{,}\)</span> which gives <span class="process-math">\(d \approx \$431.25\)</span>
+</div> <div class="para">or <code class="code-inline tex2jax_ignore">=PMT(3%/12,12*5,24000)</code>
+</div> <div class="para">The amount still owed three years later, is the present value of the two years of remaining payments on the loan.</div> <div class="para">
+<span class="process-math">\(P = \frac{\left(1-\left(1+\frac{3\%}{12}\right)^{-12 \times 2}\right)}{\frac{3\%}{12}}\text{,}\)</span> which gives <span class="process-math">\(P \approx \$10,033.45\)</span>
+</div> <div class="para">or <code class="code-inline tex2jax_ignore">=PV(3%/12,12*2,-431.25)</code>
 </div>
 </div></body>
 </html>

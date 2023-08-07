@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -9,43 +9,23 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
-<script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
-// Their results will be linked, only within language type
-sagecell.makeSagecell({inputLocation: 'pre.sagecell-sage',
-                       linked: true,
-                       languages: ['sage'],
-                       evalButtonText: 'Evaluate (Sage)'});
-</script>
 </head>
 <body class="ignore-math">
 <article class="activity project-like"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.3.2</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.3.4</span><span class="period">.</span><span class="space"> </span><span class="title">Sal, Cal, and Val.</span>
 </h4>
-<p>Suppose that <span class="process-math">\(A\)</span> is a <span class="process-math">\(2\times2\)</span> matrix having eigenvectors <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\)</span> with associated eigenvalues <span class="process-math">\(\lambda_1=3\)</span> and <span class="process-math">\(\lambda_2 = -6\text{.}\)</span> Because the eigenvalues are real and distinct, we know by <a href="" class="xref" data-knowl="./knowl/prop-eigen-basis.html" title="Proposition 4.2.9">Proposition 4.2.9</a> that these eigenvectors form a basis of <span class="process-math">\(\real^2\text{.}\)</span></p>
-<ol class="lower-alpha">
-<li><p>What are the products <span class="process-math">\(A\vvec_1\)</span> and <span class="process-math">\(A\vvec_2\)</span> in terms of <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\text{?}\)</span></p></li>
-<li><p>If we form the matrix <span class="process-math">\(P = \begin{bmatrix}
-\vvec_1 \amp \vvec_2
-\end{bmatrix}
-\text{,}\)</span> what is the product <span class="process-math">\(AP\)</span> in terms of <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\text{?}\)</span></p></li>
-<li><p>Use the eigenvalues to form the diagonal matrix <span class="process-math">\(D
-= \begin{bmatrix}
-3 \amp 0 \\
-0 \amp -6 
-\end{bmatrix}\)</span> and determine the product <span class="process-math">\(PD\)</span> in terms of <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\text{.}\)</span></p></li>
-<li><p>The results from the previous two parts of this activity demonstrate that <span class="process-math">\(AP=PD\text{.}\)</span> Using the fact that the eigenvectors <span class="process-math">\(\vvec_1\)</span> and <span class="process-math">\(\vvec_2\)</span> form a basis of <span class="process-math">\(\real^2\text{,}\)</span> explain why <span class="process-math">\(P\)</span> is invertible and that we must have <span class="process-math">\(A=PDP^{-1}\text{.}\)</span></p></li>
-<li><p>Suppose that <span class="process-math">\(A=\begin{bmatrix}
--3 \amp 6 \\
-3 \amp 0 \\
-\end{bmatrix}\text{.}\)</span>  Verify that <span class="process-math">\(\vvec_1=\twovec11\)</span> and <span class="process-math">\(\vvec_2=\twovec2{-1}\)</span> are eigenvectors of <span class="process-math">\(A\)</span> with eigenvalues <span class="process-math">\(\lambda_1 = 3\)</span> and <span class="process-math">\(\lambda_2=-6\text{.}\)</span></p></li>
-<li>
-<p>Use the Sage cell below to define the matrices <span class="process-math">\(P\)</span> and <span class="process-math">\(D\)</span> and then verify that <span class="process-math">\(A=PDP^{-1}\text{.}\)</span></p>
-<pre class="ptx-sagecell sagecell-sage" id="sage-114"><script type="text/x-sage"># enter the matrices P and D below	    
-P =
-D =	    
-P*D*P.inverse()
-</script></pre>
-</li>
-</ol></article><span class="incontext"><a href="sec-eigen-diag.html#activity-48" class="internal">in-context</a></span>
+<div class="para logical">
+<div class="para">Sal, Cal and Val are triplets.</div>
+<ul class="disc">
+<li><div class="para">Sal gets a paper route at age 14 and decides to invest $150 each month in a mutual fund which averages a 10% annual return. Sal only makes deposits for 5 years and then leaves the balance to compound until retirement at age 65.</div></li>
+<li><div class="para">Cal is impressed by Sal’s bank account, and gets a job in college at age 19 and dutifully makes deposits of $150 each month into the same mutual fund for 9 years and then leaves the balance to compound until retirement at age 65.</div></li>
+<li><div class="para">Val partied a lot growing up, but then gets a good job at the age of 27 and diligently makes deposits of $150 each month all the way to retirement at the age of 65.</div></li>
+</ul>
+</div> <div class="para">Answer the following questions:</div> <div class="para logical"><ol class="lower-alpha">
+<li><div class="para">How much money did each brother invest?</div></li>
+<li><div class="para">How much does each brother have saved for retirement at age 65?</div></li>
+<li><div class="para">Put the interest rate of 10% into a cell in your spreadsheet, then redo your formulas for <a href="" class="xref" data-knowl="./knowl/activity-sal-cal-val-b.html" title="Item b">Item b</a> so that they reference this cell.  Try changing the interest rate until Sal and Cal end up with the same amount at age 65.  What is this interest rate?</div></li>
+<li><div class="para">What interest rate causes Cal and Val to end up with the same amount at age 65?</div></li>
+</ol></div></article><span class="incontext"><a href="sec-finance-savings-plan.html#activity-48" class="internal">in-context</a></span>
 </body>
 </html>

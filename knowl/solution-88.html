@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -12,20 +12,54 @@
 </head>
 <body class="ignore-math">
 <div class="solution solution-like">
-<h5 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.4.9.12.1</span><span class="period">.</span>
-</h5>
-<ol class="lower-alpha">
-<li><p><code class="code-inline tex2jax_ignore">=PV(3.5%/4,4*12,1500)</code> which gives $58,586.02.</p></li>
-<li><p><code class="code-inline tex2jax_ignore">=PMT(3.5%/4,4*12,0,100000)</code> which gives $1,685.34.</p></li>
-<li>
-<p><code class="code-inline tex2jax_ignore">=PMT(3.5%/4,4*12,-8000,100000)</code> which gives $1,480.51.</p>
-<p>(Note 8000 is input as negative, to signify a payment.)</p>
-<p>Note this answer can also be found by subtracting the future value of $8000 here, which equals $12,153.47, from the required ending balance of $100,000 (which leaves $87,846.47) and then using the PMT function:</p>
-<p><code class="code-inline tex2jax_ignore">=PMT(3.5%/4,4*12,0,100000-12153.47)</code> which again gives $1,480.51.</p>
-<p>This can also be done in nested fashion (be careful to add the negative FV quantity): <code class="code-inline tex2jax_ignore">=PMT(3.5%/4,4*12,0,100000+FV(3.5%/4,4*12,0,8000))</code>.</p>
-</li>
-</ol>
+<h4 class="heading">
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.4.1.1</span><span class="period">.</span>
+</h4>
+<div class="para">To use a spreadsheet, we use the <code class="code-inline tex2jax_ignore">=PMT</code> formula. For a loan, the loan amount is the present value and the future value is 0, indicating that the loan will be paid off. Teresa is making a down payment, so we also need to subtract that from the cost of the car to find the loan amount:</div> <div class="para"><span class="process-math">\(\$15,000 – \$3,000 = \$12,000\)</span></div> <div class="para">Her loan amount is $12,000. For the <ins class="insert">3-year</ins> loan at 2.75% APR, we enter:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:40%;">
+<div class="para logical"><pre class="code-display tex2jax_ignore">=PMT(0.0275/12, 12*3, 12000, 0)</pre></div>
+<div class="para">and get a result of $347.65.</div>
+</div>
+<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_4/loan_formulas1.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
+</div></div> <div class="para">For the formula, we use the one solved for <span class="process-math">\(d\text{:}\)</span>
+</div> <div class="para">
+<span class="process-math">\(r=.0275\text{,}\)</span> for 2.75% annual rate</div> <div class="para">
+<span class="process-math">\(n=12\text{,}\)</span> monthly payments</div> <div class="para">
+<span class="process-math">\(t=3\text{,}\)</span> for 3 years</div> <div class="para">
+<span class="process-math">\(P=12000\text{,}\)</span> since she can pay $3,000 of the $15,000</div> <div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+d\amp=\frac{P\left(\frac{r}{n}\right)}{\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}\\
+\amp=\frac{12000\left(\frac{0.0275}{12}\right)}{\left(1-\left(1+\frac{0.0275}{12}\right)^{-12\cdot 3}\right)}\\
+\amp\approx\$347.65
+\end{align*}
+</div></div> <div class="para">Teresa’s car payment would be $347.65.</div> <div class="para">Now for the <ins class="insert">5-year loan</ins> at 4% APR, we enter:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:40%;">
+<div class="para logical"><pre class="code-display tex2jax_ignore">=PMT(0.04/12, 12*5, 12000, 0)</pre></div>
+<div class="para">and we get $221.00.</div>
+</div>
+<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_4/loan_formulas2.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
+</div></div> <div class="para">To use the formula, we have:</div> <div class="para">
+<span class="process-math">\(r=.04\text{,}\)</span> for 4% annual rate</div> <div class="para">
+<span class="process-math">\(n=12\text{,}\)</span> monthly payments</div> <div class="para">
+<span class="process-math">\(t=5\text{,}\)</span> for 5 years</div> <div class="para">
+<span class="process-math">\(P=12000\text{,}\)</span> the loan amount</div> <div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+d\amp=\frac{P\left(\frac{r}{n}\right)}{\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}\\
+\amp=\frac{12000\left(\frac{0.04}{12}\right)}{\left(1-\left(1+\frac{0.04}{12}\right)^{-12\cdot 3}\right)}\\
+\amp\approx\$221.00
+\end{align*}
+</div></div> <div class="para">Now let’s compare the loans by finding out how much Teresa would pay in interest for each loan.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:46%;">
+<div class="para">For the <ins class="insert">3-year loan</ins> at 2.75% APR, her payments would total:</div>
+<div class="para">
+<span class="process-math">\(\$347.65(12)(3)=\$12,515.40\text{.}\)</span> Her interest would be $515.40.</div>
+</div>
+<div class="sbspanel top" style="width:46%;">
+<div class="para">For the <ins class="insert">5-year loan</ins> at 4% APR, her payments would total:</div>
+<div class="para">
+<span class="process-math">\(\$221.00(12)(5)=\$13,260.00\text{.}\)</span> Her interest would be $1,260.00.</div>
+</div>
+</div></div> <div class="para">There are two main differences between these two loans: the monthly payments and the total paid over the life of the loans. The first loan has a higher monthly payment by $126.65 per month. However, she would pay $744.60 less in interest.</div>
 </div>
 <span class="incontext"><a href="sec-3-4-loans.html#solution-88" class="internal">in-context</a></span>
 </body>

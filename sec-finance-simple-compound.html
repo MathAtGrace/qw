@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Simple and Compound Interest</title>
@@ -14,48 +14,79 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Quantitative Wisdom">
 <meta property="book:author" content=" Dr. Ryan Johnson ">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.88,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-},
+  }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script async="" src="https://cse.google.com/cse.js?cx=015103900096539427448:ngwuia10qci"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.13/pretext_search.js"></script><link href="https://pretextbook.org/css/0.4/pretext_search.css" rel="stylesheet" type="text/css">
-<script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
-</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/colors_blue_grey.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script async="" src="https://cse.google.com/cse.js?cx=015103900096539427448:ngwuia10qci"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.7/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/setcolors.css" rel="stylesheet" type="text/css">
 <!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
@@ -78,18 +109,134 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '5.0.1';
+eBookConfig.runestone_version = '7.0.7';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.6.2/runtime.66b619f51b746382.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.6.2/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.6.2/runestone.ecc6dff5cad8b815.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.6.2/637.0fa6cababf056764.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.6.2/runestone.3eb60bc006ae9a54.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.7/prefix-runtime.fd9ce61c3c71cb22.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.7/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.7/prefix-runestone.89acb6c6122954e4.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.7/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.7/prefix-runestone.8d2f742bc74f4a41.css">
 </head>
-<body class="pretext-book ignore-math has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\degree}[0]{^{\circ}}
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="qw.html"><span class="title">Quantitative Wisdom:</span> <span class="subtitle">Numerical literacy from the perspective of Biblical wisdom</span></a></h1>
+<p class="byline">Dr. Ryan Johnson</p>
+</div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" class="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms" class="searchterms"></span>
+</h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><a class="index-button button" href="index-1.html" title="Index"><span class="name">Index</span></a><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="sec-finance-intro-spreadsheet.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="financial_math.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="sec-finance-savings-plan.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
+<div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\degree}[0]{^{\circ}}
 \newcommand{\Ccancel}[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
 \newcommand{\bluetext}[1]{\color{blue}{#1}} 
 \delimitershortfall-1sp
@@ -101,300 +248,548 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \newcommand{\sfrac}[2]{{#1}/{#2}}
 \)</span></div>
-<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
-<a id="logo-link" href=""></a><div class="title-container">
-<h1 class="heading"><a href="qw.html"><span class="title">Quantitative Wisdom:</span> <span class="subtitle">Numerical literacy from the perspective of Biblical wisdom</span></a></h1>
-<p class="byline">Dr. Ryan Johnson</p>
-</div>
-<div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
-<div class="searchbox"><div class="searchwidget">
-<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
-</div></div>
-<div id="searchresultsplaceholder" style="display: none">
-<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
-</h2>
-<div id="searchempty"><span>No results.</span></div>
-<ol id="searchresults"></ol>
-</div>
-</div></div>
-<nav id="primary-navbar" class="navbar"><div class="container">
-<div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-finance-intro-spreadsheet.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="financial_math.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-finance-savings-plan.html" title="Next">Next</a></span>
-</div>
-</div>
-<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-finance-intro-spreadsheet.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="financial_math.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-finance-savings-plan.html" title="Next">Next</a>
-</div>
-</div></nav></header><div class="page">
-<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
-<nav id="toc"><ul>
-<li class="link frontmatter">
-<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
-<li><a href="dedication-1.html" data-scroll="dedication-1" class="internal">Dedication</a></li>
-<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1" class="internal">Acknowledgements</a></li>
-<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
-<li><a href="preface-1.html" data-scroll="preface-1" class="internal">Our goals</a></li>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural">
+<li>
+<div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="dedication-1.html" class="internal"><span class="title">Dedication</span></a></div></li>
+<li><div class="toc-item"><a href="acknowledgement-1.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li><div class="toc-item"><a href="preface-1.html" class="internal"><span class="title">Our goals</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="ch-introduction.html" data-scroll="ch-introduction" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a><ul><li><a href="time.html" data-scroll="time" class="internal">Time Management Lab</a></li></ul>
-</li>
-<li class="link">
-<a href="ch-numbers.html" data-scroll="ch-numbers" class="internal"><span class="codenumber">2</span> <span class="title">Numbers</span></a><ul><li><a href="sec-problem-solving.html" data-scroll="sec-problem-solving" class="internal">Problem Solving</a></li></ul>
-</li>
-<li class="link">
-<a href="financial_math.html" data-scroll="financial_math" class="internal"><span class="codenumber">3</span> <span class="title">Finance</span></a><ul>
-<li><a href="sec-finance-intro-spreadsheet.html" data-scroll="sec-finance-intro-spreadsheet" class="internal">Introduction to Spreadsheets</a></li>
-<li><a href="sec-finance-simple-compound.html" data-scroll="sec-finance-simple-compound" class="active">Simple and Compound Interest</a></li>
-<li><a href="sec-finance-savings-plan.html" data-scroll="sec-finance-savings-plan" class="internal">Savings Plans</a></li>
-<li><a href="sec-3-4-loans.html" data-scroll="sec-3-4-loans" class="internal">Loan Payments</a></li>
-<li><a href="chap_two_income_taxes.html" data-scroll="chap_two_income_taxes" class="internal">Income Taxes</a></li>
+<li>
+<div class="toc-item"><a href="ch-introduction.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="time.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Time Management Lab</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="time.html#subsec-Rule-of-60" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Rule of 60</span></a></div></li>
+<li><div class="toc-item"><a href="time.html#subsec-Master-Calendar" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Master Calendar</span></a></div></li>
+<li><div class="toc-item"><a href="time.html#subsec-Schedule" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Schedule</span></a></div></li>
+<li><div class="toc-item"><a href="time.html#subsec-" class="internal"><span class="codenumber">1.1.4</span> <span class="title">20 Tips for Managing Your Time</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="data.html" data-scroll="data" class="internal"><span class="codenumber">4</span> <span class="title">Data</span></a><ul>
-<li><a href="sec-4-1-statistical-process.html" data-scroll="sec-4-1-statistical-process" class="internal">Overview of the Statistical Process</a></li>
-<li><a href="sec-4-2-describing-data.html" data-scroll="sec-4-2-describing-data" class="internal">Describing Data</a></li>
-<li><a href="sec-4-3-measure-of-center.html" data-scroll="sec-4-3-measure-of-center" class="internal">Summary Statistics: Measures of Center</a></li>
-<li><a href="sec-4-4-measure-of-variation.html" data-scroll="sec-4-4-measure-of-variation" class="internal">Summary Statistics: Measures of Variation</a></li>
+<li><div class="toc-item"><a href="mindset.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Mindset Lab</span></a></div></li>
+<li><div class="toc-item"><a href="sec-math-theology.html" class="internal"><span class="codenumber">1.3</span> <span class="title">God and Math</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="ch-models.html" data-scroll="ch-models" class="internal"><span class="codenumber">5</span> <span class="title">Math Models</span></a><ul>
-<li><a href="sec-models-linear.html" data-scroll="sec-models-linear" class="internal">Function Notation and Linear Functions</a></li>
-<li><a href="sec-models-exponential.html" data-scroll="sec-models-exponential" class="internal">Exponential Growth and Decay</a></li>
-<li><a href="sec-models-exponential-2.html" data-scroll="sec-models-exponential-2" class="internal">Exponential Models</a></li>
-<li><a href="sec-5-4-periodic-functions.html" data-scroll="sec-5-4-periodic-functions" class="internal">Periodic Functions</a></li>
+<li>
+<div class="toc-item"><a href="ch-numbers.html" class="internal"><span class="codenumber">2</span> <span class="title">Numbers</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-problem-solving.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Problem Solving</span></a></div></li>
+<li><div class="toc-item"><a href="sec_orders_of_mag.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Orders of Magnitude</span></a></div></li>
+<li><div class="toc-item"><a href="sec_water_footprint.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Proportional Reasoning</span></a></div></li>
+<li>
+<div class="toc-item"><a href="unit-conversion.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Unit Conversion</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="unit-conversion.html#subsection-5" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Equivalences Table</span></a></div></li>
+<li><div class="toc-item"><a href="unit-conversion.html#subsection-6" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Metric Prefixes</span></a></div></li>
+<li><div class="toc-item"><a href="unit-conversion.html#subsection-7" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Rates</span></a></div></li>
+<li><div class="toc-item"><a href="unit-conversion.html#subsection-8" class="internal"><span class="codenumber">2.4.4</span> <span class="title">Using Dimensional Analysis for Area and Volume units</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="democracy.html" data-scroll="democracy" class="internal"><span class="codenumber">6</span> <span class="title">Democracy</span></a><ul>
-<li><a href="sec-democracy-apportionment.html" data-scroll="sec-democracy-apportionment" class="internal">Apportionment</a></li>
-<li><a href="sec-democracy-voting.html" data-scroll="sec-democracy-voting" class="internal">Voting Methods</a></li>
-<li><a href="sec-democracy-popular-vote.html" data-scroll="sec-democracy-popular-vote" class="internal">The Popular Vote, Electoral College and Electoral Power</a></li>
-<li><a href="sec-democracy-gerrymandering.html" data-scroll="sec-democracy-gerrymandering" class="internal">Gerrymandering and How to Measure It</a></li>
+<li><div class="toc-item"><a href="cost-of-driving.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Cost of Driving</span></a></div></li>
+<li><div class="toc-item"><a href="home-improvements.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Home Improvements</span></a></div></li>
+<li><div class="toc-item"><a href="sec_numbers_percentages.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Percentages</span></a></div></li>
 </ul>
 </li>
-<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Back Matter</span></a></li>
-<li class="link"><a href="solutions-1.html" data-scroll="solutions-1" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></li>
-<li class="link"><a href="solutions-2.html" data-scroll="solutions-2" class="internal"><span class="codenumber">B</span> <span class="title">Solutions to Odd Exercises</span></a></li>
-<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
-<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
-</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
-</div></div>
-<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-finance-simple-compound"><h2 class="heading hide-type">
+<li>
+<div class="toc-item"><a href="financial_math.html" class="internal"><span class="codenumber">3</span> <span class="title">Finance</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="sec-finance-intro-spreadsheet.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Introduction to Spreadsheets</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-finance-intro-spreadsheet.html#subsection-9" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Basic Calculations</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-intro-spreadsheet.html#subsection-10" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Cell References</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-intro-spreadsheet.html#subsection-11" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Cell Formatting</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-intro-spreadsheet.html#subsection-12" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Fill-Down Feature</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-intro-spreadsheet.html#subsection-13" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Formulas</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-intro-spreadsheet.html#exercises-1" class="internal"><span class="codenumber">3.1.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="active">
+<div class="toc-item"><a href="sec-finance-simple-compound.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Simple and Compound Interest</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-14" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Simple Interest</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-15" class="internal"><span class="codenumber">3.2.2</span> <span class="title">APR – Annual Percentage Rate</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-16" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Compound Interest</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-17" class="internal"><span class="codenumber">3.2.4</span> <span class="title">The Future Value Spreadsheet Formula</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-18" class="internal"><span class="codenumber">3.2.5</span> <span class="title">Comparing Simple and Compound Interest</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-19" class="internal"><span class="codenumber">3.2.6</span> <span class="title">Finding the Principal, or Present Value</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-20" class="internal"><span class="codenumber">3.2.7</span> <span class="title">The Present Value Spreadsheet Formula</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-21" class="internal"><span class="codenumber">3.2.8</span> <span class="title">Continuously Compounded Interest</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-22" class="internal"><span class="codenumber">3.2.9</span> <span class="title">Finding the Amount of Interest Earned and the Percentage</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-23" class="internal"><span class="codenumber">3.2.10</span> <span class="title">Effective Rate</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#exercises-2" class="internal"><span class="codenumber">3.2.11</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-finance-savings-plan.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Savings Plans</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-finance-savings-plan.html#subsec-Warmup" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Warmup</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-savings-plan.html#subsection-25" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Savings Plan Formulas</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-savings-plan.html#subsection-26" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Finding Payment Amounts Usings Spreadsheets and Formulas</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-savings-plan.html#subsection-27" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Comparing Lump Sum and Regular Savings Payments</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-savings-plan.html#subsection-28" class="internal"><span class="codenumber">3.3.5</span> <span class="title">Deriving the Savings Plan Formula (Optional)</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-savings-plan.html#exercises-3" class="internal"><span class="codenumber">3.3.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-3-4-loans.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Loan Payments</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-3-4-loans.html#subsection-29" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Installment Loans</span></a></div></li>
+<li><div class="toc-item"><a href="sec-3-4-loans.html#subsection-30" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Loan Formulas</span></a></div></li>
+<li><div class="toc-item"><a href="sec-3-4-loans.html#subsection-31" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Remaining Loan Balance</span></a></div></li>
+<li><div class="toc-item"><a href="sec-3-4-loans.html#subsection-32" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Credit Cards</span></a></div></li>
+<li><div class="toc-item"><a href="sec-3-4-loans.html#subsection-33" class="internal"><span class="codenumber">3.4.5</span> <span class="title">Summary of Spreadsheet Formulas</span></a></div></li>
+<li><div class="toc-item"><a href="sec-3-4-loans.html#subsection-34" class="internal"><span class="codenumber">3.4.6</span> <span class="title">When to use the formulas: What is the question asking?</span></a></div></li>
+<li><div class="toc-item"><a href="sec-3-4-loans.html#subsection-35" class="internal"><span class="codenumber">3.4.7</span> <span class="title">Summary of Mathematical Formulas</span></a></div></li>
+<li><div class="toc-item"><a href="sec-3-4-loans.html#subsection-36" class="internal"><span class="codenumber">3.4.8</span> <span class="title">When to use the formulas: What is the question asking?</span></a></div></li>
+<li><div class="toc-item"><a href="sec-3-4-loans.html#exercises-4" class="internal"><span class="codenumber">3.4.9</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="chap_two_income_taxes.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Income Taxes</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-37" class="internal"><span class="codenumber">3.5.1</span> <span class="title">A Very Brief History of Taxes</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-38" class="internal"><span class="codenumber">3.5.2</span> <span class="title">Types of Income Tax</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-39" class="internal"><span class="codenumber">3.5.3</span> <span class="title">Federal Income Tax</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-40" class="internal"><span class="codenumber">3.5.4</span> <span class="title">State Income Tax</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-41" class="internal"><span class="codenumber">3.5.5</span> <span class="title">Municipal Income Tax</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-42" class="internal"><span class="codenumber">3.5.6</span> <span class="title">Calculating Federal Income Tax</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-43" class="internal"><span class="codenumber">3.5.7</span> <span class="title">Gross Income</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-44" class="internal"><span class="codenumber">3.5.8</span> <span class="title">Adjusted Gross Income</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-45" class="internal"><span class="codenumber">3.5.9</span> <span class="title">Taxable Income</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-46" class="internal"><span class="codenumber">3.5.10</span> <span class="title">Filing Status</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-47" class="internal"><span class="codenumber">3.5.11</span> <span class="title">Tax Tables</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-48" class="internal"><span class="codenumber">3.5.12</span> <span class="title">Tax Credits</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-49" class="internal"><span class="codenumber">3.5.13</span> <span class="title">Calculating a Refund or Payment Due</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#exercises-5" class="internal"><span class="codenumber">3.5.14</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="data.html" class="internal"><span class="codenumber">4</span> <span class="title">Data</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="sec-4-1-statistical-process.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Overview of the Statistical Process</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-50" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Statistical Process</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-51" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Population</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-52" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Parameter</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-53" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Sample</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-54" class="internal"><span class="codenumber">4.1.5</span> <span class="title">Statistic</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-55" class="internal"><span class="codenumber">4.1.6</span> <span class="title">Sampling</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-56" class="internal"><span class="codenumber">4.1.7</span> <span class="title">Sampling Methods</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-57" class="internal"><span class="codenumber">4.1.8</span> <span class="title">Simple random sample (SRS)</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-58" class="internal"><span class="codenumber">4.1.9</span> <span class="title">Stratified sampling</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-59" class="internal"><span class="codenumber">4.1.10</span> <span class="title">Systematic sampling</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-60" class="internal"><span class="codenumber">4.1.11</span> <span class="title">Convenience sampling</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-61" class="internal"><span class="codenumber">4.1.12</span> <span class="title">Statistical Bias</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-62" class="internal"><span class="codenumber">4.1.13</span> <span class="title">Types of bias</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-63" class="internal"><span class="codenumber">4.1.14</span> <span class="title">Observational Studies</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-64" class="internal"><span class="codenumber">4.1.15</span> <span class="title">Experiments</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-65" class="internal"><span class="codenumber">4.1.16</span> <span class="title">Confounding</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-66" class="internal"><span class="codenumber">4.1.17</span> <span class="title">Control group</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-67" class="internal"><span class="codenumber">4.1.18</span> <span class="title">Placebo effect</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-68" class="internal"><span class="codenumber">4.1.19</span> <span class="title">Placebo and Placebo-controlled experiments</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-69" class="internal"><span class="codenumber">4.1.20</span> <span class="title">Blind studies</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-70" class="internal"><span class="codenumber">4.1.21</span> <span class="title">Margin of Error and Confidence Intervals</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#exercises-6" class="internal"><span class="codenumber">4.1.22</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-4-2-describing-data.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Describing Data</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-71" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Types of Data</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-72" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Presenting Categorical Data</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-73" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Frequency Tables</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-74" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Relative Frequency Tables</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-75" class="internal"><span class="codenumber">4.2.5</span> <span class="title">Bar graphs</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-76" class="internal"><span class="codenumber">4.2.6</span> <span class="title">Pie Charts</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-77" class="internal"><span class="codenumber">4.2.7</span> <span class="title">Using a Spreadsheet to Make Bar Charts and Pie Charts</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-78" class="internal"><span class="codenumber">4.2.8</span> <span class="title">Misleading Graphs</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-79" class="internal"><span class="codenumber">4.2.9</span> <span class="title">Perceptual Distortion</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-80" class="internal"><span class="codenumber">4.2.10</span> <span class="title">Misleading Scale</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-81" class="internal"><span class="codenumber">4.2.11</span> <span class="title">Stacked Bar Graphs</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-82" class="internal"><span class="codenumber">4.2.12</span> <span class="title">Presenting Quantitative Data</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-83" class="internal"><span class="codenumber">4.2.13</span> <span class="title">Histograms</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-84" class="internal"><span class="codenumber">4.2.14</span> <span class="title">Class Intervals</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-85" class="internal"><span class="codenumber">4.2.15</span> <span class="title">Histograms Using Technology</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-86" class="internal"><span class="codenumber">4.2.16</span> <span class="title">The Shape of a Distribution</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-87" class="internal"><span class="codenumber">4.2.17</span> <span class="title">Modality</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-88" class="internal"><span class="codenumber">4.2.18</span> <span class="title">Symmetry</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-89" class="internal"><span class="codenumber">4.2.19</span> <span class="title">Skewness</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-90" class="internal"><span class="codenumber">4.2.20</span> <span class="title">Skewed to the Left</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-91" class="internal"><span class="codenumber">4.2.21</span> <span class="title">Skewed to the Right</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-92" class="internal"><span class="codenumber">4.2.22</span> <span class="title">The Normal Distribution</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-93" class="internal"><span class="codenumber">4.2.23</span> <span class="title">Outlier</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#exercises-7" class="internal"><span class="codenumber">4.2.24</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-4-3-measure-of-center.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Summary Statistics: Measures of Center</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-4-3-measure-of-center.html#subsection-94" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Calculating Summary Statistics</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-3-measure-of-center.html#subsection-95" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Measures of Center</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-3-measure-of-center.html#subsection-96" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Mode</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-3-measure-of-center.html#subsection-97" class="internal"><span class="codenumber">4.3.4</span> <span class="title">Mean</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-3-measure-of-center.html#subsection-98" class="internal"><span class="codenumber">4.3.5</span> <span class="title">Median</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-3-measure-of-center.html#subsection-99" class="internal"><span class="codenumber">4.3.6</span> <span class="title">The Relationship Between the Mean and the Median</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-3-measure-of-center.html#exercises-8" class="internal"><span class="codenumber">4.3.7</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-4-4-measure-of-variation.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Summary Statistics: Measures of Variation</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#subsection-100" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Measures of Variation</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#subsection-101" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Standard Deviation</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#subsection-102" class="internal"><span class="codenumber">4.4.3</span> <span class="title">Range</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#subsection-103" class="internal"><span class="codenumber">4.4.4</span> <span class="title">Quartiles and the Interquartile Range</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#subsection-104" class="internal"><span class="codenumber">4.4.5</span> <span class="title">The Five-Number Summary and Boxplots</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#subsection-105" class="internal"><span class="codenumber">4.4.6</span> <span class="title">Modified Boxplot (Optional)</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#subsection-106" class="internal"><span class="codenumber">4.4.7</span> <span class="title">Percentiles</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#subsection-107" class="internal"><span class="codenumber">4.4.8</span> <span class="title">Comparing Distributions</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#subsection-108" class="internal"><span class="codenumber">4.4.9</span> <span class="title">Z-Scores</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#exercises-9" class="internal"><span class="codenumber">4.4.10</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-models.html" class="internal"><span class="codenumber">5</span> <span class="title">Math Models</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="sec-models-linear.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Function Notation and Linear Functions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-models-linear.html#subsection-109" class="internal"><span class="codenumber">5.1.1</span> <span class="title">What is a Function?</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-linear.html#subsection-110" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Math as a Language</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-linear.html#subsection-111" class="internal"><span class="codenumber">5.1.3</span> <span class="title">The Grammar of Function Notation</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-linear.html#subsection-112" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Average Rate of Change, Inuitive Knowledge</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-linear.html#subsection-113" class="internal"><span class="codenumber">5.1.5</span> <span class="title">Three Representations of a Relationship</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-linear.html#subsection-114" class="internal"><span class="codenumber">5.1.6</span> <span class="title">Linear Equations and Slope</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-linear.html#subsection-115" class="internal"><span class="codenumber">5.1.7</span> <span class="title">Slope Intercept Equation of a Line</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-linear.html#exercises-10" class="internal"><span class="codenumber">5.1.8</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-models-exponential.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Exponential Growth and Decay</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-models-exponential.html#subsection-116" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Exponential Growth</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-exponential.html#subsection-117" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Growth Factors</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-exponential.html#subsection-118" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Percent Increase</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-exponential.html#subsection-119" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Exponential Decay</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-exponential.html#subsection-120" class="internal"><span class="codenumber">5.2.5</span> <span class="title">Decay Factors</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-exponential.html#subsection-121" class="internal"><span class="codenumber">5.2.6</span> <span class="title">Comparing Linear Growth and Exponential Growth</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-exponential.html#sec-5-2-exponential-exercises" class="internal"><span class="codenumber">5.2.7</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-models-exponential-2.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Exponential Models</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-models-exponential-2.html#subsection-122" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Fitting an Exponential Function through Two Points</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-exponential-2.html#subsection-123" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Doubling Time</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-exponential-2.html#subsection-124" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Half-Life</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-exponential-2.html#section-4-5-exercises" class="internal"><span class="codenumber">5.3.4</span> <span class="title">Homework 4.5</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="sec-5-4-periodic-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Periodic Functions</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="democracy.html" class="internal"><span class="codenumber">6</span> <span class="title">Democracy</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="sec-democracy-apportionment.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Apportionment</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#subsection-125" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Historical Context for This Chapter</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#subsection-126" class="internal"><span class="codenumber">6.1.2</span> <span class="title">What is Apportionment?</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#subsection-127" class="internal"><span class="codenumber">6.1.3</span> <span class="title">Hamilton’s Method</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#subsection-128" class="internal"><span class="codenumber">6.1.4</span> <span class="title">Problems with Hamilton’s Method</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#subsection-129" class="internal"><span class="codenumber">6.1.5</span> <span class="title">Jefferson’s Method</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#subsection-130" class="internal"><span class="codenumber">6.1.6</span> <span class="title">Webster’s Method</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#subsection-131" class="internal"><span class="codenumber">6.1.7</span> <span class="title">Land Rights, Citizenship and Voting Rights</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#subsection-132" class="internal"><span class="codenumber">6.1.8</span> <span class="title">Huntington-Hill Method</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#subsection-133" class="internal"><span class="codenumber">6.1.9</span> <span class="title">What is the Geometric Mean?</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#exercises-13" class="internal"><span class="codenumber">6.1.10</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-democracy-voting.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Voting Methods</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-134" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Voting Rights</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-135" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Ranked Choice Ballots</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-136" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Preference Schedule</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-137" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Plurality Method</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-138" class="internal"><span class="codenumber">6.2.5</span> <span class="title">How Many Votes are Needed to Win?</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-139" class="internal"><span class="codenumber">6.2.6</span> <span class="title">Insincere Voting</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-140" class="internal"><span class="codenumber">6.2.7</span> <span class="title">Instant Runoff Method</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-141" class="internal"><span class="codenumber">6.2.8</span> <span class="title">Borda Count (Point System)</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-142" class="internal"><span class="codenumber">6.2.9</span> <span class="title">Pairwise Comparison: Copeland’s Method</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-143" class="internal"><span class="codenumber">6.2.10</span> <span class="title">Which Method is the Most Fair?</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-144" class="internal"><span class="codenumber">6.2.11</span> <span class="title">Primaries and Sequential Voting</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#exercises-14" class="internal"><span class="codenumber">6.2.12</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-democracy-popular-vote.html" class="internal"><span class="codenumber">6.3</span> <span class="title">The Popular Vote, Electoral College and Electoral Power</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-democracy-popular-vote.html#subsection-145" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Choosing the U.S. President</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-popular-vote.html#subsection-146" class="internal"><span class="codenumber">6.3.2</span> <span class="title">How Electoral Votes are Determined</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-popular-vote.html#subsection-147" class="internal"><span class="codenumber">6.3.3</span> <span class="title">Electoral Power</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-popular-vote.html#exercises-15" class="internal"><span class="codenumber">6.3.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-democracy-gerrymandering.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Gerrymandering and How to Measure It</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-democracy-gerrymandering.html#subsection-148" class="internal"><span class="codenumber">6.4.1</span> <span class="title">Forming State Legislative Districts</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-gerrymandering.html#subsection-149" class="internal"><span class="codenumber">6.4.2</span> <span class="title">Proportionality and Fairness</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-gerrymandering.html#subsection-150" class="internal"><span class="codenumber">6.4.3</span> <span class="title">How to Gerrymander</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-gerrymandering.html#subsection-151" class="internal"><span class="codenumber">6.4.4</span> <span class="title">The Efficiency Gap</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-gerrymandering.html#exercises-16" class="internal"><span class="codenumber">6.4.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Back Matter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="solutions-1.html" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></div></li>
+<li><div class="toc-item"><a href="solutions-2.html" class="internal"><span class="codenumber">B</span> <span class="title">Solutions to Odd Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="index-1.html" class="internal"><span class="title">Index</span></a></div></li>
+<li><div class="toc-item"><a href="colophon-2.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-finance-simple-compound"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">3.2</span> <span class="title">Simple and Compound Interest</span>
 </h2>
-<article class="objectives goal-like" id="objectives-3"><h3 class="heading">
+<article class="objectives goal-like" id="objectives-10"><h3 class="heading">
 <span class="type">Objectives:</span><span class="space"> </span><span class="title">Section 3.2 Simple and Compound Interest</span>
 </h3>
-<div class="introduction" id="introduction-8"><p id="p-148">Students will be able to:</p></div>
+<div class="introduction" id="introduction-26"><div class="para" id="p-451">Students will be able to:</div></div>
 <ul class="disc">
-<li id="li-100"><p id="p-149">Use spreadsheet functions and/or mathematical formulas to calculate simple, compound, and continuously compounded interest</p></li>
-<li id="li-101"><p id="p-150">Understand the difference between simple and compound interest</p></li>
-<li id="li-102"><p id="p-151">Use a spreadsheet to calculate the effective rate and compare accounts</p></li>
-<li id="li-103"><p id="p-152">Use a spreadsheet and/or formula to calculate the present value needed to reach a desired future value</p></li>
-</ul></article><section class="introduction" id="introduction-9"><p id="p-153"><em class="emphasis">Note: Spreadsheets are emphasized in this chapter, but the formulas are also presented so you can understand what the spreadsheet is doing. Be sure to check with your instructor for which method to use.</em></p> <p id="p-154">Working with money is a very important skill for everyday life. While balancing a checkbook or calculating our monthly expenditures on espresso requires only arithmetic, when we start saving money, planning for retirement, or need a loan, we need more mathematics and tools. In this section we will calculate and compare simple and compound interest.</p> <article class="exploration project-like" id="exploration-1"><h3 class="heading">
+<li id="li-292"><div class="para" id="p-452">Use spreadsheet functions and/or mathematical formulas to calculate simple, compound, and continuously compounded interest</div></li>
+<li id="li-293"><div class="para" id="p-453">Understand the difference between simple and compound interest</div></li>
+<li id="li-294"><div class="para" id="p-454">Use a spreadsheet to calculate the effective rate and compare accounts</div></li>
+<li id="li-295"><div class="para" id="p-455">Use a spreadsheet and/or formula to calculate the present value needed to reach a desired future value</div></li>
+</ul></article><section class="introduction" id="introduction-27"><div class="para" id="p-456"><em class="emphasis">Note: Spreadsheets are emphasized in this chapter, but the formulas are also presented so you can understand what the spreadsheet is doing. Be sure to check with your instructor for which method to use.</em></div> <div class="para" id="p-457">Working with money is a very important skill for everyday life. While balancing a checkbook or calculating our monthly expenditures on espresso requires only arithmetic, when we start saving money, planning for retirement, or need a loan, we need more mathematics and tools. In this section we will calculate and compare simple and compound interest.</div> <article class="exploration project-like" id="exploration-1"><h3 class="heading">
 <span class="type">Preview Activity</span><span class="space"> </span><span class="codenumber">3.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Personal Finance Reflections.</span>
 </h3>
-<p id="p-155">In this chapter we'll discuss finances, so this preview activity will include three reflection questions.</p> <ol class="lower-alpha">
-<li id="li-104"><p id="p-156">Do you use a budget? Why or why not?</p></li>
-<li id="li-105"><p id="p-157">List some places in your finances where you might be able to save a few dollars or more per week or per month.</p></li>
-<li id="li-106">
-<p id="p-158">Consider this Bible passage below</p>
-<article class="poem" id="poem-1"><h4 class="heading"><span class="title">Proverbs 6:1-5</span></h4>
+<div class="para" id="p-458">In this chapter we’ll discuss finances, so this preview activity will include three reflection questions.</div> <ol class="lower-alpha">
+<li id="li-296"><div class="para" id="p-459">Do you use a budget? Why or why not?</div></li>
+<li id="li-297"><div class="para" id="p-460">List some places in your finances where you might be able to save a few dollars or more per week or per month.</div></li>
+<li id="li-298">
+<div class="para" id="p-461">Consider this Bible passage below</div>
+<article class="poem" id="poem-2"><h4 class="heading"><span class="title">Proverbs 6:1-5</span></h4>
 <div class="stanza">
-<div class="line left">My son, don't promise to pay for what your neighbor owes.</div>
+<div class="line left">My son, don’t promise to pay for what your neighbor owes.</div>
 <div class="line left">
-<span class="tab"></span>Don't agree to pay a stranger's bill.</div>
-<div class="line left">Don't be trapped by what you have said.</div>
+<span class="tab"></span>Don’t agree to pay a stranger’s bill.</div>
+<div class="line left">Don’t be trapped by what you have said.</div>
 <div class="line left">
-<span class="tab"></span>Don't be caught by the words of your mouth.</div>
+<span class="tab"></span>Don’t be caught by the words of your mouth.</div>
 <div class="line left">Instead, my son, do something to free yourself.</div>
 <div class="line left">
-<span class="tab"></span>Don't fall into your neighbor's hands.</div>
-<div class="line left">Go until you can't go anymore.</div>
+<span class="tab"></span>Don’t fall into your neighbor’s hands.</div>
+<div class="line left">Go until you can’t go anymore.</div>
 <div class="line left">
-<span class="tab"></span>Don't let your neighbor rest.</div>
-<div class="line left">Don't let your eyes go to sleep.</div>
+<span class="tab"></span>Don’t let your neighbor rest.</div>
+<div class="line left">Don’t let your eyes go to sleep.</div>
 <div class="line left">
-<span class="tab"></span>Don't let your eyelids close.</div>
+<span class="tab"></span>Don’t let your eyelids close.</div>
 <div class="line left">As a deer frees itself from a hunter, free yourself.</div>
 <div class="line left">
 <span class="tab"></span>As a bird frees itself from a trapper, free yourself.</div>
 </div>
-<div class="author left">New International Readers Version (NIRV)</div></article><p id="p-159">How does this passage relate to personal finance?  Is there any way for you to apply this to your own life?</p>
+<div class="author left">New International Readers Version (NIRV)</div></article><div class="para" id="p-462">How does this passage relate to personal finance?  Is there any way for you to apply this to your own life?</div>
 </li>
 </ol></article> <article class="exploration project-like" id="exploration-2"><h3 class="heading">
 <span class="type">Preview Activity</span><span class="space"> </span><span class="codenumber">3.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Compound Interest.</span>
 </h3>
-<ol id="p-160" class="lower-alpha">
-<li id="li-107"><p id="p-161">What is 5% of $1000?</p></li>
-<li id="pa-compound-1"><p id="p-162">Add your answer to the original $1000</p></li>
-<li id="li-109"><p id="p-163">Compute <span class="process-math">\(\$1000 \times (1 + 0.05)\text{.}\)</span>  Is your answer the same as <a href="" class="xref" data-knowl="./knowl/pa-compound-1.html" title="Item b">Item b</a>?</p></li>
-<li id="pa-compound-2"><p id="p-164">Compute 5% of your answer from <a href="" class="xref" data-knowl="./knowl/pa-compound-1.html" title="Item b">Item b</a></p></li>
-<li id="pa-compound-3"><p id="p-165">Add your answers from <a href="" class="xref" data-knowl="./knowl/pa-compound-1.html" title="Item b">Item b</a> and <a href="" class="xref" data-knowl="./knowl/pa-compound-2.html" title="Item d">Item d</a></p></li>
-<li id="li-112"><p id="p-166">Compute <span class="process-math">\(\$1000 \times (1 + 0.05)^2\text{.}\)</span>  Does your answer match <a href="" class="xref" data-knowl="./knowl/pa-compound-3.html" title="Item e">Item e</a>?</p></li>
-</ol></article> </section><section class="subsection" id="subsection-10"><h3 class="heading hide-type">
+<div class="para logical" id="p-463"><ol class="lower-alpha">
+<li id="li-299"><div class="para" id="p-464">What is 5% of $1000?</div></li>
+<li id="pa-compound-1"><div class="para" id="p-465">Add your answer to the original $1000</div></li>
+<li id="li-301"><div class="para" id="p-466">Compute <span class="process-math">\(\$1000 \times (1 + 0.05)\text{.}\)</span>  Is your answer the same as <a href="" class="xref" data-knowl="./knowl/pa-compound-1.html" title="Item b">Item b</a>?</div></li>
+<li id="pa-compound-2"><div class="para" id="p-467">Compute 5% of your answer from <a href="" class="xref" data-knowl="./knowl/pa-compound-1.html" title="Item b">Item b</a>
+</div></li>
+<li id="pa-compound-3"><div class="para" id="p-468">Add your answers from <a href="" class="xref" data-knowl="./knowl/pa-compound-1.html" title="Item b">Item b</a> and <a href="" class="xref" data-knowl="./knowl/pa-compound-2.html" title="Item d">Item d</a>
+</div></li>
+<li id="li-304"><div class="para" id="p-469">Compute <span class="process-math">\(\$1000 \times (1 + 0.05)^2\text{.}\)</span>  Does your answer match <a href="" class="xref" data-knowl="./knowl/pa-compound-3.html" title="Item e">Item e</a>?</div></li>
+</ol></div></article> </section><section class="subsection" id="subsection-14"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.2.1</span> <span class="title">Simple Interest</span>
 </h3>
-<p id="p-167">Calculating interest starts with the <dfn class="terminology">principal</dfn>, <dfn class="terminology">P</dfn>, or the beginning amount in your account. This is also called the <dfn class="terminology">present value</dfn>. This could be a starting investment, or the starting amount of a loan. The <dfn class="terminology">interest rate</dfn>, <dfn class="terminology">I</dfn>, in its most simple form, is a percentage of the principal.</p>
-<p id="p-168">For example, if you borrowed $100 from a friend and agree to repay it with 5% interest, then the amount of interest you would pay would be 5% of 100. It is very important to remember to change the interest <dfn class="terminology">rate</dfn>, r, of 5% into a decimal by moving the decimal two places to the left.</p>
-<div class="displaymath process-math" data-contains-math-knowls="" id="p-169">
+<div class="para" id="p-470">Calculating interest starts with the <dfn class="terminology">principal</dfn>, <dfn class="terminology">P</dfn>, or the beginning amount in your account. This is also called the <dfn class="terminology">present value</dfn>. This could be a starting investment, or the starting amount of a loan. The <dfn class="terminology">interest rate</dfn>, <dfn class="terminology">I</dfn>, in its most simple form, is a percentage of the principal.</div>
+<div class="para" id="p-471">For example, if you borrowed $100 from a friend and agree to repay it with 5% interest, then the amount of interest you would pay would be 5% of 100. It is very important to remember to change the interest <dfn class="terminology">rate</dfn>, r, of 5% into a decimal by moving the decimal two places to the left.</div>
+<div class="para logical" id="p-472"><div class="displaymath process-math">
 \begin{equation*}
 (0.05)\$100=\$5
 \end{equation*}
-</div>
-<p id="p-170">The total amount you would repay is called the <dfn class="terminology">future value</dfn> and would be $105, the original principal plus the interest.</p>
-<div class="displaymath process-math" data-contains-math-knowls="" id="p-171">
+</div></div>
+<div class="para" id="p-473">The total amount you would repay is called the <dfn class="terminology">future value</dfn> and would be $105, the original principal plus the interest.</div>
+<div class="para logical" id="p-474"><div class="displaymath process-math">
 \begin{equation*}
 \$100+\$5=\$105
 \end{equation*}
-</div>
-<p id="p-172">Here are the formulas to represent the calculations we just did.</p>
+</div></div>
+<div class="para" id="p-475">Here are the formulas to represent the calculations we just did.</div>
 <article class="assemblage assemblage-like" id="assemblage-1"><h4 class="heading"><span class="title">Simple One-time Interest.</span></h4>
-<div class="displaymath process-math" data-contains-math-knowls="" id="p-173">
+<div class="para logical" id="p-476"><div class="displaymath process-math">
 \begin{equation*}
 I=Pr
 \end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="" id="p-174">
+</div></div>
+<div class="para logical" id="p-477"><div class="displaymath process-math">
 \begin{equation*}
 A=P+I \text{ or } A=P+Pr
 \end{equation*}
-</div>
-<dl id="p-175" class="description-list narrow">
-<dt id="li-113"><span class="process-math">\(I\)</span></dt>
-<dd><p id="p-176">is the interest</p></dd>
-<dt id="li-114"><span class="process-math">\(P\)</span></dt>
-<dd><p id="p-177">is the principal, starting amount or <dfn class="terminology">present value</dfn></p></dd>
-<dt id="li-115"><span class="process-math">\(r\)</span></dt>
-<dd><p id="p-178">is the <dfn class="terminology">interest rate</dfn> in decimal form</p></dd>
-<dt id="li-116"><span class="process-math">\(A\)</span></dt>
-<dd><p id="p-179">is the end amount: principal plus interest. This is also called the <dfn class="terminology">future value</dfn></p></dd>
-</dl></article><article class="example example-like" id="example-3"><h4 class="heading">
+</div></div>
+<div class="para logical" id="p-478"><dl class="description-list narrow">
+<dt id="li-305"><span class="process-math">\(I\)</span></dt>
+<dd><div class="para" id="p-479">is the interest</div></dd>
+<dt id="li-306"><span class="process-math">\(P\)</span></dt>
+<dd><div class="para" id="p-480">is the principal, starting amount or <dfn class="terminology">present value</dfn>
+</div></dd>
+<dt id="li-307"><span class="process-math">\(r\)</span></dt>
+<dd><div class="para" id="p-481">is the <dfn class="terminology">interest rate</dfn> in decimal form</div></dd>
+<dt id="li-308"><span class="process-math">\(A\)</span></dt>
+<dd><div class="para" id="p-482">is the end amount: principal plus interest. This is also called the <dfn class="terminology">future value</dfn>
+</div></dd>
+</dl></div></article><article class="example example-like" id="example-13"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.1</span><span class="period">.</span>
 </h4>
-<p id="p-180">A friend asks to borrow $300 and agrees to repay it in 30 days with 3% simple interest. How much interest will you earn?</p>
+<div class="para" id="p-483">A friend asks to borrow $300 and agrees to repay it in 30 days with 3% simple interest. How much interest will you earn?</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-16" id="solution-16"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-16"><div class="solution solution-like">
-<p id="p-181"><span class="process-math">\(P = \$300\text{,}\)</span> the principal or present value</p> <p id="p-182"><span class="process-math">\(r = 0.03\text{,}\)</span> 3% rate</p> <p id="p-183">Using the formula,</p> <div class="displaymath process-math" data-contains-math-knowls="" id="md-2">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-34" id="solution-34"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-34"><div class="solution solution-like">
+<div class="para" id="p-484">
+<span class="process-math">\(P = \$300\text{,}\)</span> the principal or present value</div> <div class="para" id="p-485">
+<span class="process-math">\(r = 0.03\text{,}\)</span> 3% rate</div> <div class="para" id="p-486">Using the formula,</div> <div class="para logical" id="p-487"><div class="displaymath process-math" id="md-5">
 \begin{align*}
 I\amp=Pr\\
 \amp=\$300(0.03)\\
 \amp=\$9
 \end{align*}
-</div> <p id="p-185">To calculate this in a spreadsheet, you would enter</p>
+</div></div> <div class="para logical" id="p-488">
+<div class="para">To calculate this in a spreadsheet, you would enter</div>
 <pre class="code-display tex2jax_ignore">=300*0.03</pre>
-<p class="continuation">and get a result of $9. You will earn $9 in interest when your friend pays you back.</p>
+<div class="para">and get a result of $9. You will earn $9 in interest when your friend pays you back.</div>
+</div>
 </div></div>
-</div></article><p id="p-186">One-time simple interest is only common for extremely short-term or informal loans. For longer term loans or investments, it is common for interest to be paid on a daily, monthly, quarterly, or annual basis. In that case, interest would be earned regularly. Bonds are an example of this type of investment. Bonds are issued by the federal, state or local governments to cover their expenses.</p>
-<article class="example example-like" id="example-4"><h4 class="heading">
+</div></article><div class="para" id="p-489">One-time simple interest is only common for extremely short-term or informal loans. For longer term loans or investments, it is common for interest to be paid on a daily, monthly, quarterly, or annual basis. In that case, interest would be earned regularly. Bonds are an example of this type of investment. Bonds are issued by the federal, state or local governments to cover their expenses.</div>
+<article class="example example-like" id="example-14"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.2</span><span class="period">.</span>
 </h4>
-<p id="p-187">Suppose your city is building a new park, and issues bonds to raise the money to build it. You buy a $1,000 bond that pays 5% simple interest annually and matures in 5 years. How much interest will you earn? What is the future value of the bond?</p>
+<div class="para" id="p-490">Suppose your city is building a new park, and issues bonds to raise the money to build it. You buy a $1,000 bond that pays 5% simple interest annually and matures in 5 years. How much interest will you earn? What is the future value of the bond?</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-17" id="solution-17"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-17"><div class="solution solution-like">
-<p id="p-188">Each year, you would earn 5% interest so over the course of five years, you would earn:</p> <div class="displaymath process-math" data-contains-math-knowls="" id="p-189">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-35" id="solution-35"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-35"><div class="solution solution-like">
+<div class="para" id="p-491">Each year, you would earn 5% interest so over the course of five years, you would earn:</div> <div class="para logical" id="p-492"><div class="displaymath process-math">
 \begin{equation*}
 \$1000(0.05)(5)=\$250
 \end{equation*}
-</div> <p id="p-190">When the bond matures, you would receive back the $1,000 you originally paid and the $250 in interest, so we could also put that into a single calculation:</p> <div class="displaymath process-math" data-contains-math-knowls="" id="p-191">
+</div></div> <div class="para" id="p-493">When the bond matures, you would receive back the $1,000 you originally paid and the $250 in interest, so we could also put that into a single calculation:</div> <div class="para logical" id="p-494"><div class="displaymath process-math">
 \begin{equation*}
 \$1000+\$1000(0.05)(5)=\$1250
 \end{equation*}
-</div> <p id="p-192">Using a spreadsheet, you would enter</p>
+</div></div> <div class="para logical" id="p-495">
+<div class="para">Using a spreadsheet, you would enter</div>
 <pre class="code-display tex2jax_ignore">=1000+1000*0.05</pre>
-<p class="continuation">and get a result of $1,250. The future value of the bond is $1,250.</p>
+<div class="para">and get a result of $1,250. The future value of the bond is $1,250.</div>
+</div>
 </div></div>
-</div></article><p id="p-193">We can generalize this idea of simple interest over time.</p>
+</div></article><div class="para" id="p-496">We can generalize this idea of simple interest over time.</div>
 <article class="assemblage assemblage-like" id="assemblage-2"><h4 class="heading"><span class="title">Simple Interest over Time.</span></h4>
-<div class="displaymath process-math" data-contains-math-knowls="" id="p-194">
+<div class="para logical" id="p-497"><div class="displaymath process-math">
 \begin{equation*}
 I=Prt
 \end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="" id="p-195">
+</div></div>
+<div class="para logical" id="p-498"><div class="displaymath process-math">
 \begin{equation*}
 A=P+I \text{ or } A=P+Prt
 \end{equation*}
-</div>
-<dl id="p-196" class="description-list narrow">
-<dt id="li-117"><span class="process-math">\(I\)</span></dt>
-<dd><p id="p-197">is the interest</p></dd>
-<dt id="li-118"><span class="process-math">\(P\)</span></dt>
-<dd><p id="p-198">is the principal, starting amount, or present value</p></dd>
-<dt id="li-119"><span class="process-math">\(r\)</span></dt>
-<dd><p id="p-199">is the interest rate in decimal form</p></dd>
-<dt id="li-120"><span class="process-math">\(t\)</span></dt>
-<dd><p id="p-200">is time, where the increment of time (years, months, etc.) matches the time period for the interest rate</p></dd>
-<dt id="li-121"><span class="process-math">\(A\)</span></dt>
-<dd><p id="p-201">is the end amount, principal plus interest, or future value</p></dd>
-</dl></article></section><section class="subsection" id="subsection-11"><h3 class="heading hide-type">
+</div></div>
+<div class="para logical" id="p-499"><dl class="description-list narrow">
+<dt id="li-309"><span class="process-math">\(I\)</span></dt>
+<dd><div class="para" id="p-500">is the interest</div></dd>
+<dt id="li-310"><span class="process-math">\(P\)</span></dt>
+<dd><div class="para" id="p-501">is the principal, starting amount, or present value</div></dd>
+<dt id="li-311"><span class="process-math">\(r\)</span></dt>
+<dd><div class="para" id="p-502">is the interest rate in decimal form</div></dd>
+<dt id="li-312"><span class="process-math">\(t\)</span></dt>
+<dd><div class="para" id="p-503">is time, where the increment of time (years, months, etc.) matches the time period for the interest rate</div></dd>
+<dt id="li-313"><span class="process-math">\(A\)</span></dt>
+<dd><div class="para" id="p-504">is the end amount, principal plus interest, or future value</div></dd>
+</dl></div></article></section><section class="subsection" id="subsection-15"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.2.2</span> <span class="title">APR – Annual Percentage Rate</span>
 </h3>
-<p id="p-202">Interest rates are usually stated as an annual percentage rate (APR) – the total interest that will be paid in the year. If not stated otherwise, assume that the interest rate is an annual rate or APR. If the interest is paid in smaller time increments, the APR will be divided by the number of time periods.</p>
-<p id="p-203">Note: The Federal Truth in Lending Act requires that every consumer be given the true APR which includes the interest and any fees included.</p>
-<p id="p-204">For example, a 6% APR paid monthly, would be divided by 12, because you would get one twelfth of the rate per month, which is half a percent per month.</p>
-<div class="displaymath process-math" data-contains-math-knowls="" id="p-205">
+<div class="para" id="p-505">Interest rates are usually stated as an annual percentage rate (APR) – the total interest that will be paid in the year. If not stated otherwise, assume that the interest rate is an annual rate or APR. If the interest is paid in smaller time increments, the APR will be divided by the number of time periods.</div>
+<div class="para" id="p-506">Note: The Federal Truth in Lending Act requires that every consumer be given the true APR which includes the interest and any fees included.</div>
+<div class="para" id="p-507">For example, a 6% APR paid monthly, would be divided by 12, because you would get one twelfth of the rate per month, which is half a percent per month.</div>
+<div class="para logical" id="p-508"><div class="displaymath process-math">
 \begin{equation*}
 \frac{0.06}{12}=0.005
 \end{equation*}
-</div>
-<p id="p-206">A 4% annual rate paid quarterly, would be divided by 4 to get 1% per quarter.</p>
-<div class="displaymath process-math" data-contains-math-knowls="" id="p-207">
+</div></div>
+<div class="para" id="p-509">A 4% annual rate paid quarterly, would be divided by 4 to get 1% per quarter.</div>
+<div class="para logical" id="p-510"><div class="displaymath process-math">
 \begin{equation*}
 \frac{0.04}{4}=0.01
 \end{equation*}
-</div>
-<p id="p-208">Here is an example of a semi-annual rate.</p>
-<article class="example example-like" id="example-5"><h4 class="heading">
+</div></div>
+<div class="para" id="p-511">Here is an example of a semi-annual rate.</div>
+<article class="example example-like" id="example-15"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.3</span><span class="period">.</span>
 </h4>
-<p id="p-209">Suppose you buy a $1,000 federal bond with a 4% annual simple interest rate, paid semi-annually, with a maturity in 4 years. How much interest will you earn? What will be the future value of the bond?</p>
+<div class="para" id="p-512">Suppose you buy a $1,000 federal bond with a 4% annual simple interest rate, paid semi-annually, with a maturity in 4 years. How much interest will you earn? What will be the future value of the bond?</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-18" id="solution-18"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-18"><div class="solution solution-like">
-<p id="p-210"><span class="process-math">\(P = \$1000\text{,}\)</span> the principal</p> <p id="p-211"><span class="process-math">\(r=\frac{0.04}{2}=0.02\text{,}\)</span> interest is being paid semi-annually (twice a year), so the 4% interest will be divided into two 2% payments.</p> <p id="p-212"><span class="process-math">\(t = 8\text{,}\)</span> 4 years compounded twice a year gives <span class="process-math">\(t=4\cdot 2=8\)</span> half-years</p> <div class="displaymath process-math" data-contains-math-knowls="" id="md-3">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-36" id="solution-36"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-36"><div class="solution solution-like">
+<div class="para" id="p-513">
+<span class="process-math">\(P = \$1000\text{,}\)</span> the principal</div> <div class="para" id="p-514">
+<span class="process-math">\(r=\frac{0.04}{2}=0.02\text{,}\)</span> interest is being paid semi-annually (twice a year), so the 4% interest will be divided into two 2% payments.</div> <div class="para" id="p-515">
+<span class="process-math">\(t = 8\text{,}\)</span> 4 years compounded twice a year gives <span class="process-math">\(t=4\cdot 2=8\)</span> half-years</div> <div class="para logical" id="p-516"><div class="displaymath process-math" id="md-6">
 \begin{align*}
 I\amp=PRT\\
 \amp=\$1000(0.02)(8)\\
 \amp=\$160
 \end{align*}
-</div> <p id="p-214">You will earn $160 in interest over the four years. The future value of the loan is</p> <div class="displaymath process-math" data-contains-math-knowls="" id="md-4">
+</div></div> <div class="para" id="p-517">You will earn $160 in interest over the four years. The future value of the loan is</div> <div class="para logical" id="p-518"><div class="displaymath process-math" id="md-7">
 \begin{align*}
 A\amp=P+I\\
 \amp=\$1000+\$160\\
 \amp=\$1160
 \end{align*}
-</div> <p id="p-216">We could also use a spreadsheet to do this calculation and enter:</p> <pre class="code-display tex2jax_ignore" id="p-217">=1000+1000*(0.04/2)*(4*2)</pre> <p id="p-218">which also gives $1,160. The future value of the bond is $1,160. Remember that spreadsheets don't interpret parentheses as multiplication. We need the asterisks as well as the parentheses.</p>
+</div></div> <div class="para" id="p-519">We could also use a spreadsheet to do this calculation and enter:</div> <div class="para logical" id="p-520"><pre class="code-display tex2jax_ignore">=1000+1000*(0.04/2)*(4*2)</pre></div> <div class="para" id="p-521">which also gives $1,160. The future value of the bond is $1,160. Remember that spreadsheets don’t interpret parentheses as multiplication. We need the asterisks as well as the parentheses.</div>
 </div></div>
-</div></article></section><section class="subsection" id="subsection-12"><h3 class="heading hide-type">
+</div></article></section><section class="subsection" id="subsection-16"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.2.3</span> <span class="title">Compound Interest</span>
 </h3>
-<p id="p-219">In a standard bank account, any interest we earn is automatically added to our balance, and we earn interest on that interest. This reinvestment of interest is called <dfn class="terminology">compounding</dfn>. We will develop the mathematical formula for <dfn class="terminology">compound interest</dfn> and then show the equivalent spreadsheet function.</p>
-<p id="p-220">Suppose that we deposit $1000 in a bank account offering 3% interest, compounded monthly. How will our money grow?</p>
-<p id="p-221">The 3% interest is an annual percentage rate (APR) – the total interest to be paid during the year. Since interest is being paid monthly, each month, we will earn <span class="process-math">\(\frac{0.03}{12}=0.0025\)</span> per month.</p>
-<p id="p-222">In the first month,</p>
-<div class="displaymath process-math" data-contains-math-knowls="" id="md-5">
+<div class="para" id="p-522">In a standard bank account, any interest we earn is automatically added to our balance, and we earn interest on that interest. This reinvestment of interest is called <dfn class="terminology">compounding</dfn>. We will develop the mathematical formula for <dfn class="terminology">compound interest</dfn> and then show the equivalent spreadsheet function.</div>
+<div class="para" id="p-523">Suppose that we deposit $1000 in a bank account offering 3% interest, compounded monthly. How will our money grow?</div>
+<div class="para" id="p-524">The 3% interest is an annual percentage rate (APR) – the total interest to be paid during the year. Since interest is being paid monthly, each month, we will earn <span class="process-math">\(\frac{0.03}{12}=0.0025\)</span> per month.</div>
+<div class="para" id="p-525">In the first month,</div>
+<div class="para logical" id="p-526"><div class="displaymath process-math" id="md-8">
 \begin{align*}
 P\amp= \$1000\\
 r\amp=0.0025\\
 I\amp= \$1000 (0.0025)= \$2.50\\
 A\amp= \$1000 + \$2.50 = \$1002.50
 \end{align*}
-</div>
-<p id="p-224">In the first month, we will earn $2.50 in interest, raising our account balance to $1002.50.</p>
-<p id="p-225">In the second month,</p>
-<div class="displaymath process-math" data-contains-math-knowls="" id="md-6">
+</div></div>
+<div class="para" id="p-527">In the first month, we will earn $2.50 in interest, raising our account balance to $1002.50.</div>
+<div class="para" id="p-528">In the second month,</div>
+<div class="para logical" id="p-529"><div class="displaymath process-math" id="md-9">
 \begin{align*}
 P\amp=\$1002.50\\
 I\amp=\$1002.50(0.0025)=\$2.51 \text{ (rounded)}\\
 A\amp=\$1002.50+\$2.51=\$1005.01
 \end{align*}
-</div>
-<p id="p-227">Notice that in the second month we earned more interest than we did in the first month. This is because we earned interest not only on the original $1000 we deposited, but we also earned interest on the $2.50 of interest we earned the first month. This is the key advantage that compounding gives us.</p>
-<p id="p-228">Calculating out a few more months in a table or a spreadsheet we have:</p>
+</div></div>
+<div class="para" id="p-530">Notice that in the second month we earned more interest than we did in the first month. This is because we earned interest not only on the original $1000 we deposited, but we also earned interest on the $2.50 of interest we earned the first month. This is the key advantage that compounding gives us.</div>
+<div class="para" id="p-531">Calculating out a few more months in a table or a spreadsheet we have:</div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="l m b1 r1 l1 t1 lines">Month</th>
@@ -475,84 +870,100 @@ A\amp=\$1002.50+\$2.51=\$1005.01
 <td class="l m b1 r1 l0 t0 lines">1030.42</td>
 </tr>
 </table></div></div></div>
-<p id="p-229">To find an equation to represent this, we will go through a few months to see the pattern:</p>
-<p id="p-230">Initial Amount: <span class="process-math">\(P=\$1000\)</span></p>
-<p id="p-231"><span class="process-math">\(1^{\text{st}} \text{ Month } A=1.0025(\$1000)\)</span></p>
-<p id="p-232"><span class="process-math">\(2^{\text{nd}} \text{ Month } A=1.0025(1.0025(\$1000))=1.0025^{2}(\$1000)\)</span></p>
-<p id="p-233"><span class="process-math">\(3^{\text{rd}} \text{ Month } A=1.0025(1.0025^{2}(\$1000))=1.0025^{3}(\$1000)\)</span></p>
-<p id="p-234"><span class="process-math">\(4^{\text{th}} \text{ Month } A=1.0025(1.0025^{3}(\$1000))=1.0025^{4}(\$1000)\)</span></p>
-<p id="p-235">Observing a pattern, we could conclude</p>
-<p id="p-236"><span class="process-math">\(n^{\text{th}} \text{ Month } A=1.0025^{n}(\$1000)\)</span></p>
-<p id="p-237">Notice that the $1000 in the equation was P, the starting amount. We found 1.0025 by adding one to the interest rate divided by 12, since we were compounding 12 times per year. Generalizing our result, we could write</p>
+<div class="para" id="p-532">To find an equation to represent this, we will go through a few months to see the pattern:</div>
+<div class="para" id="p-533">Initial Amount: <span class="process-math">\(P=\$1000\)</span>
+</div>
+<div class="para" id="p-534"><span class="process-math">\(1^{\text{st}} \text{ Month } A=1.0025(\$1000)\)</span></div>
+<div class="para" id="p-535"><span class="process-math">\(2^{\text{nd}} \text{ Month } A=1.0025(1.0025(\$1000))=1.0025^{2}(\$1000)\)</span></div>
+<div class="para" id="p-536"><span class="process-math">\(3^{\text{rd}} \text{ Month } A=1.0025(1.0025^{2}(\$1000))=1.0025^{3}(\$1000)\)</span></div>
+<div class="para" id="p-537"><span class="process-math">\(4^{\text{th}} \text{ Month } A=1.0025(1.0025^{3}(\$1000))=1.0025^{4}(\$1000)\)</span></div>
+<div class="para" id="p-538">Observing a pattern, we could conclude</div>
+<div class="para" id="p-539"><span class="process-math">\(n^{\text{th}} \text{ Month } A=1.0025^{n}(\$1000)\)</span></div>
+<div class="para" id="p-540">Notice that the $1000 in the equation was P, the starting amount. We found 1.0025 by adding one to the interest rate divided by 12, since we were compounding 12 times per year. Generalizing our result, we could write</div>
 <article class="assemblage assemblage-like" id="assemblage-3"><h4 class="heading"><span class="title">Compound Interest.</span></h4>
-<div class="displaymath process-math" data-contains-math-knowls="" id="p-238">
+<div class="para logical" id="p-541"><div class="displaymath process-math">
 \begin{equation*}
 A=P\left(1+\frac{r}{n}\right)^{nt} \text{ or } P=\frac{A}{\left(1+\frac{r}{n}\right)^{nt}}
 \end{equation*}
+</div></div>
+<div class="para logical" id="p-542"><dl class="description-list narrow">
+<dt id="li-314">A</dt>
+<dd><div class="para" id="p-543">is the future value balance in the account after <span class="process-math">\(n\)</span> years</div></dd>
+<dt id="li-315">P</dt>
+<dd><div class="para" id="p-544">is the principal or present value</div></dd>
+<dt id="li-316">r</dt>
+<dd><div class="para" id="p-545">is the annual interest rate in decimal form</div></dd>
+<dt id="li-317">n</dt>
+<dd><div class="para" id="p-546">is the number of compounding periods in one year</div></dd>
+<dt id="li-318">t</dt>
+<dd><div class="para" id="p-547">is the number of years</div></dd>
+</dl></div></article><div class="para" id="p-548">If the compounding is done annually (once a year), <span class="process-math">\(n = 1\text{.}\)</span>
 </div>
-<dl id="p-239" class="description-list narrow">
-<dt id="li-122">A</dt>
-<dd><p id="p-240">is the future value balance in the account after <span class="process-math">\(n\)</span> years</p></dd>
-<dt id="li-123">P</dt>
-<dd><p id="p-241">is the principal or present value</p></dd>
-<dt id="li-124">r</dt>
-<dd><p id="p-242">is the annual interest rate in decimal form</p></dd>
-<dt id="li-125">n</dt>
-<dd><p id="p-243">is the number of compounding periods in one year</p></dd>
-<dt id="li-126">t</dt>
-<dd><p id="p-244">is the number of years</p></dd>
-</dl></article><p id="p-245">If the compounding is done annually (once a year), <span class="process-math">\(n = 1\text{.}\)</span></p>
-<p id="p-246">If the compounding is done quarterly, <span class="process-math">\(n = 4\text{.}\)</span></p>
-<p id="p-247">If the compounding is done monthly, <span class="process-math">\(n = 12\text{.}\)</span></p>
-<p id="p-248">If the compounding is done weekly, <span class="process-math">\(n = 52\text{.}\)</span></p>
-<p id="p-249">If the compounding is done daily, <span class="process-math">\(n = 365\text{.}\)</span></p>
-<p id="p-250">The most important thing to remember about using this formula is that it assumes that we put money in the account <em class="emphasis">once</em> and let it sit there earning interest.</p></section><section class="subsection" id="subsection-13"><h3 class="heading hide-type">
+<div class="para" id="p-549">If the compounding is done quarterly, <span class="process-math">\(n = 4\text{.}\)</span>
+</div>
+<div class="para" id="p-550">If the compounding is done monthly, <span class="process-math">\(n = 12\text{.}\)</span>
+</div>
+<div class="para" id="p-551">If the compounding is done weekly, <span class="process-math">\(n = 52\text{.}\)</span>
+</div>
+<div class="para" id="p-552">If the compounding is done daily, <span class="process-math">\(n = 365\text{.}\)</span>
+</div>
+<div class="para" id="p-553">The most important thing to remember about using this formula is that it assumes that we put money in the account <em class="emphasis">once</em> and let it sit there earning interest.</div></section><section class="subsection" id="subsection-17"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.2.4</span> <span class="title">The Future Value Spreadsheet Formula</span>
 </h3>
-<p id="p-251">The compound interest formula is built into spreadsheets and is called the future value formula.</p>
+<div class="para" id="p-554">The compound interest formula is built into spreadsheets and is called the future value formula.</div>
 <article class="assemblage assemblage-like" id="assemblage-4"><h4 class="heading"><span class="title">Future Value Spreadsheet Formula.</span></h4>
-<pre class="code-display tex2jax_ignore" id="p-252">=FV(rate per period, number of periods, payment amount, present value)</pre>
-<dl id="p-253" class="description-list narrow">
-<dt id="li-127">rate per period</dt>
-<dd><p id="p-254">is the interest rate per compounding period, <span class="process-math">\(\sfrac{r}{n}\)</span></p></dd>
-<dt id="li-128">number of periods</dt>
-<dd><p id="p-255">is the total number of periods, <span class="process-math">\(n*t\)</span></p></dd>
-<dt id="li-129">payment amount</dt>
-<dd><p id="p-256">is the amount of regular payments. If none, enter <span class="process-math">\(0\)</span></p></dd>
-<dt id="li-130">present value</dt>
-<dd><p id="p-257">is the amount deposited or principal, <span class="process-math">\(P\)</span></p></dd>
-</dl></article><p id="p-258">We will use the payment amount in a future section, for now that will be 0. There is also an optional input at the end to specify making payments at the beginning or end of the period, but we will not use it in this book.</p>
-<p id="p-259">Now let's look at an example and calculate the compound interest using the spreadsheet and the mathematical formula.</p>
-<article class="example example-like" id="example-6"><h4 class="heading">
+<div class="para logical" id="p-555"><pre class="code-display tex2jax_ignore">=FV(rate per period, number of periods, payment amount, present value)</pre></div>
+<div class="para logical" id="p-556"><dl class="description-list narrow">
+<dt id="li-319">rate per period</dt>
+<dd><div class="para" id="p-557">is the interest rate per compounding period, <span class="process-math">\(\sfrac{r}{n}\)</span>
+</div></dd>
+<dt id="li-320">number of periods</dt>
+<dd><div class="para" id="p-558">is the total number of periods, <span class="process-math">\(n*t\)</span>
+</div></dd>
+<dt id="li-321">payment amount</dt>
+<dd><div class="para" id="p-559">is the amount of regular payments. If none, enter <span class="process-math">\(0\)</span>
+</div></dd>
+<dt id="li-322">present value</dt>
+<dd><div class="para" id="p-560">is the amount deposited or principal, <span class="process-math">\(P\)</span>
+</div></dd>
+</dl></div></article><div class="para" id="p-561">We will use the payment amount in a future section, for now that will be 0. There is also an optional input at the end to specify making payments at the beginning or end of the period, but we will not use it in this book.</div>
+<div class="para" id="p-562">Now let’s look at an example and calculate the compound interest using the spreadsheet and the mathematical formula.</div>
+<article class="example example-like" id="example-16"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.4</span><span class="period">.</span>
 </h4>
-<p id="p-260">A certificate of deposit (CD) is a savings instrument that many banks offer. It usually gives a higher interest rate, but you cannot access your investment for a specified length of time. Suppose you deposit $3000 in a CD paying 6% APR, compounded monthly. How much will you have in the account after 20 years?</p>
+<div class="para" id="p-563">A certificate of deposit (CD) is a savings instrument that many banks offer. It usually gives a higher interest rate, but you cannot access your investment for a specified length of time. Suppose you deposit $3000 in a CD paying 6% APR, compounded monthly. How much will you have in the account after 20 years?</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-19" id="solution-19"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-19"><div class="solution solution-like">
-<p id="p-261"><span class="process-math">\(P = \$3000\text{,}\)</span> the initial deposit</p> <p id="p-262"><span class="process-math">\(r = 0.06\text{,}\)</span> 6% annual rate</p> <p id="p-263"><span class="process-math">\(n = 12\text{,}\)</span> 12 months in 1 year</p> <p id="p-264"><span class="process-math">\(t = 20\text{,}\)</span> since we're looking for how much we'll have after 20 years</p> <p id="p-265">To use a spreadsheet, we will use the formula like this</p>
-<pre class="code-display tex2jax_ignore">=FV(rate per period, number of periods, payment amount, present value)</pre> <pre class="code-display tex2jax_ignore" id="p-266">=FV(0.06/12, 12*20, 0, 3000)</pre> <p id="p-267">and get a result of $9,930.61, rounded to the nearest cent.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/financial_math/2_2/future_value.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div></div></div> <p id="p-268">Note that the output of the formula gives the answer with the opposite sign as the principal and payments. A negative number may be denoted with a negative sign or with the color red or parentheses. The signs may be used in accounting, but we will ignore them in this book.</p> <p id="p-269">To use a formula, we are looking for the future value, so we use the formula solved for A:</p> <div class="displaymath process-math" data-contains-math-knowls="" id="md-7">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-37" id="solution-37"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-37"><div class="solution solution-like">
+<div class="para" id="p-564">
+<span class="process-math">\(P = \$3000\text{,}\)</span> the initial deposit</div> <div class="para" id="p-565">
+<span class="process-math">\(r = 0.06\text{,}\)</span> 6% annual rate</div> <div class="para" id="p-566">
+<span class="process-math">\(n = 12\text{,}\)</span> 12 months in 1 year</div> <div class="para" id="p-567">
+<span class="process-math">\(t = 20\text{,}\)</span> since we’re looking for how much we’ll have after 20 years</div> <div class="para logical" id="p-568">
+<div class="para">To use a spreadsheet, we will use the formula like this</div>
+<pre class="code-display tex2jax_ignore">=FV(rate per period, number of periods, payment amount, present value)</pre>
+</div> <div class="para logical" id="p-569"><pre class="code-display tex2jax_ignore">=FV(0.06/12, 12*20, 0, 3000)</pre></div> <div class="para" id="p-570">and get a result of $9,930.61, rounded to the nearest cent.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/financial_math/2_2/future_value.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div></div></div> <div class="para" id="p-571">Note that the output of the formula gives the answer with the opposite sign as the principal and payments. A negative number may be denoted with a negative sign or with the color red or parentheses. The signs may be used in accounting, but we will ignore them in this book.</div> <div class="para" id="p-572">To use a formula, we are looking for the future value, so we use the formula solved for A:</div> <div class="para logical" id="p-573"><div class="displaymath process-math" id="md-10">
 \begin{align*}
 A\amp=3000\left(1+\frac{0.06}{12}\right)^{12\cdot20}\\
 \amp=\$9930.61
 \end{align*}
-</div> <p id="p-271">To use a calculator, you would enter the formulas including parentheses around any inside operations. You would enter</p> <pre class="code-display tex2jax_ignore" id="p-272">3000(1+(0.06/12))^(12*20)=9930.61</pre>
+</div></div> <div class="para" id="p-574">To use a calculator, you would enter the formulas including parentheses around any inside operations. You would enter</div> <div class="para logical" id="p-575"><pre class="code-display tex2jax_ignore">3000(1+(0.06/12))^(12*20)=9930.61</pre></div>
 </div></div>
-</div></article><article class="activity project-like" id="activity-8"><h4 class="heading">
+</div></article><article class="activity project-like" id="activity-46"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.2.3</span><span class="period">.</span>
 </h4>
-<p id="p-273">If you invest $500 at 6% interest, calculate the balance after 5 years for each compounding interval. Write the formula used and inputs in proper syntax.</p> <ol id="p-274" class="lower-alpha">
-<li id="li-131"><p id="p-275">Simple Interest</p></li>
-<li id="li-132"><p id="p-276">Compounded Yearly</p></li>
-<li id="li-133"><p id="p-277">Compounded Quarterly</p></li>
-<li id="li-134"><p id="p-278">Compounded Monthly</p></li>
-<li id="li-135"><p id="p-279">Compounded Daily (365)</p></li>
-<li id="li-136"><p id="p-280">Compounded Continuously</p></li>
-</ol></article></section><section class="subsection" id="subsection-14"><h3 class="heading hide-type">
+<div class="para" id="p-576">If you invest $500 at 6% interest, calculate the balance after 5 years for each compounding interval. Write the formula used and inputs in proper syntax.</div> <div class="para logical" id="p-577"><ol class="lower-alpha">
+<li id="li-323"><div class="para" id="p-578">Simple Interest</div></li>
+<li id="li-324"><div class="para" id="p-579">Compounded Yearly</div></li>
+<li id="li-325"><div class="para" id="p-580">Compounded Quarterly</div></li>
+<li id="li-326"><div class="para" id="p-581">Compounded Monthly</div></li>
+<li id="li-327"><div class="para" id="p-582">Compounded Daily (365)</div></li>
+<li id="li-328"><div class="para" id="p-583">Compounded Continuously</div></li>
+</ol></div></article></section><section class="subsection" id="subsection-18"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.2.5</span> <span class="title">Comparing Simple and Compound Interest</span>
 </h3>
-<p id="p-281">Let us compare the amount of money earned from compounding in the previous example against the amount you would earn from simple interest. From the table and graph below we can see that over a long period of time, compounding makes a large difference in the account balance. You may recognize this as the difference between linear growth and exponential growth.</p>
+<div class="para" id="p-584">Let us compare the amount of money earned from compounding in the previous example against the amount you would earn from simple interest. From the table and graph below we can see that over a long period of time, compounding makes a large difference in the account balance. You may recognize this as the difference between linear growth and exponential growth.</div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel fixed-width bottom" style="width:60%;"><figure class="table table-like" id="table-4"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.2.5<span class="period">.</span></span><span class="space"> </span></figcaption><table class="tabular">
+<div class="sbspanel fixed-width bottom" style="width:60%;"><figure class="table table-like" id="table-16"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="l m b1 r1 l1 t1 lines">Year</th>
 <th scope="col" class="l m b1 r1 l0 t1 lines">Simple Interest<br>($15 per month)</th>
@@ -598,226 +1009,249 @@ A\amp=3000\left(1+\frac{0.06}{12}\right)^{12\cdot20}\\
 <td class="l m b1 r1 l0 t0 lines">$9300</td>
 <td class="l m b1 r1 l0 t0 lines">$24370.65</td>
 </tr>
-</table></figure></div>
+</table>
+<figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">3.2.5<span class="period">.</span></span><span class="space"> </span></figcaption></figure></div>
 <div class="sbspanel bottom" style="width:36%;"><img src="external/financial_math/2_2/comparing_interest.png" class="contained" alt="A coordinate graph with years on the x-axis and account balance on the y-axis. The simple interest increases in a straight line; the compound interest curves up faster because it is an exponential function."></div>
-</div></div></section><section class="subsection" id="subsection-15"><h3 class="heading hide-type">
+</div></div></section><section class="subsection" id="subsection-19"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.2.6</span> <span class="title">Finding the Principal, or Present Value</span>
 </h3>
-<p id="p-282">When we know the amount of money we want to have in the future, we can use the formula that is solved for <em class="alert">P</em>. It requires a little algebra to divide both sides of the formula by the quantity that was multiplied by <em class="alert">P</em>. There is also a spreadsheet formula which we will introduce now, and then do an example using both methods.</p></section><section class="subsection" id="subsection-16"><h3 class="heading hide-type">
+<div class="para" id="p-585">When we know the amount of money we want to have in the future, we can use the formula that is solved for <em class="alert">P</em>. It requires a little algebra to divide both sides of the formula by the quantity that was multiplied by <em class="alert">P</em>. There is also a spreadsheet formula which we will introduce now, and then do an example using both methods.</div></section><section class="subsection" id="subsection-20"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.2.7</span> <span class="title">The Present Value Spreadsheet Formula</span>
 </h3>
-<p id="p-283">The present value spreadsheet formula will calculate how much you need to deposit in the present to get a specified future value.</p>
+<div class="para" id="p-586">The present value spreadsheet formula will calculate how much you need to deposit in the present to get a specified future value.</div>
 <article class="assemblage assemblage-like" id="assemblage-5"><h4 class="heading"><span class="title">Present Value Spreadsheet Formula.</span></h4>
-<pre class="code-display tex2jax_ignore" id="p-284">=PV(rate per period, number of periods, payment amount, future value)</pre>
-<dl id="p-285" class="description-list narrow">
-<dt id="li-137">rate per period</dt>
-<dd><p id="p-286">is the interest rate per compounding period, <span class="process-math">\(r/n\)</span></p></dd>
-<dt id="li-138">number of periods</dt>
-<dd><p id="p-287">is the total number of periods, <span class="process-math">\(n*t\)</span></p></dd>
-<dt id="li-139">payment amount</dt>
-<dd><p id="p-288">is the amount of regular payments. If none, enter <span class="process-math">\(0\)</span></p></dd>
-<dt id="li-140">future value</dt>
-<dd><p id="p-289">is the amount desired in the future, <span class="process-math">\(A\)</span></p></dd>
-</dl></article><article class="example example-like" id="example-7"><h4 class="heading">
+<div class="para logical" id="p-587"><pre class="code-display tex2jax_ignore">=PV(rate per period, number of periods, payment amount, future value)</pre></div>
+<div class="para logical" id="p-588"><dl class="description-list narrow">
+<dt id="li-329">rate per period</dt>
+<dd><div class="para" id="p-589">is the interest rate per compounding period, <span class="process-math">\(r/n\)</span>
+</div></dd>
+<dt id="li-330">number of periods</dt>
+<dd><div class="para" id="p-590">is the total number of periods, <span class="process-math">\(n*t\)</span>
+</div></dd>
+<dt id="li-331">payment amount</dt>
+<dd><div class="para" id="p-591">is the amount of regular payments. If none, enter <span class="process-math">\(0\)</span>
+</div></dd>
+<dt id="li-332">future value</dt>
+<dd><div class="para" id="p-592">is the amount desired in the future, <span class="process-math">\(A\)</span>
+</div></dd>
+</dl></div></article><article class="example example-like" id="example-17"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.6</span><span class="period">.</span>
 </h4>
-<p id="p-290">You know that you will need $40,000 for your child's education in 18 years. If your account earns 4% APR compounded quarterly, how much would you need to deposit now to reach your goal?</p>
+<div class="para" id="p-593">You know that you will need $40,000 for your child’s education in 18 years. If your account earns 4% APR compounded quarterly, how much would you need to deposit now to reach your goal?</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-20" id="solution-20"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-20"><div class="solution solution-like">
-<p id="p-291">We are looking for what we need to deposit now so we will use the present value formula. We type the formula and inputs the same way we used the future value formula.</p> <pre class="code-display tex2jax_ignore" id="p-292">=PV(rate per period, number of periods, payment amount, future value)</pre> <pre class="code-display tex2jax_ignore" id="p-293">=PV(0.04/4, 4*18, 0, 40000)</pre> <p id="p-294">which gives a value of $19,539.84. You would need to deposit $19,539.84 now and keep the same interest rate to have $40,000 in 18 years.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/financial_math/2_2/present_value.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div></div></div> <p id="p-295">Note that we cannot enter commas in numbers in a spreadsheet. Commas are used to separate the input values, so we would not get the same answer if we put in $40,000 for an input.</p> <p id="p-296">To use the mathematical formula, we use the one that is solved for <em class="alert">P</em>.</p> <p id="p-297"><span class="process-math">\(r = 0.04\text{,}\)</span> 4% APR</p> <p id="p-298"><span class="process-math">\(n = 4\text{,}\)</span> 4 quarters in 1 year</p> <p id="p-299"><span class="process-math">\(t = 18\text{,}\)</span> since we know the balance in 18 years</p> <p id="p-300"><span class="process-math">\(A = \$40,000\text{,}\)</span> the amount we have in 18 years</p> <p id="p-301">In this case, we're going to have to set up the equation, and solve for P.</p> <div class="displaymath process-math" data-contains-math-knowls="" id="md-8">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-38" id="solution-38"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-38"><div class="solution solution-like">
+<div class="para" id="p-594">We are looking for what we need to deposit now so we will use the present value formula. We type the formula and inputs the same way we used the future value formula.</div> <div class="para logical" id="p-595"><pre class="code-display tex2jax_ignore">=PV(rate per period, number of periods, payment amount, future value)</pre></div> <div class="para logical" id="p-596"><pre class="code-display tex2jax_ignore">=PV(0.04/4, 4*18, 0, 40000)</pre></div> <div class="para" id="p-597">which gives a value of $19,539.84. You would need to deposit $19,539.84 now and keep the same interest rate to have $40,000 in 18 years.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/financial_math/2_2/present_value.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div></div></div> <div class="para" id="p-598">Note that we cannot enter commas in numbers in a spreadsheet. Commas are used to separate the input values, so we would not get the same answer if we put in $40,000 for an input.</div> <div class="para" id="p-599">To use the mathematical formula, we use the one that is solved for <em class="alert">P</em>.</div> <div class="para" id="p-600">
+<span class="process-math">\(r = 0.04\text{,}\)</span> 4% APR</div> <div class="para" id="p-601">
+<span class="process-math">\(n = 4\text{,}\)</span> 4 quarters in 1 year</div> <div class="para" id="p-602">
+<span class="process-math">\(t = 18\text{,}\)</span> since we know the balance in 18 years</div> <div class="para" id="p-603">
+<span class="process-math">\(A = \$40,000\text{,}\)</span> the amount we have in 18 years</div> <div class="para" id="p-604">In this case, we’re going to have to set up the equation, and solve for P.</div> <div class="para logical" id="p-605"><div class="displaymath process-math" id="md-11">
 \begin{align*}
 P\amp=\frac{40000}{\left(1+\frac{0.04}{4}\right)^{4\cdot 18}}\\
 \amp\approx19539.84
 \end{align*}
-</div> <p id="p-303">You would need to deposit $19,539.84 now to have $40,000 in 18 years.</p>
+</div></div> <div class="para" id="p-606">You would need to deposit $19,539.84 now to have $40,000 in 18 years.</div>
 </div></div>
-</div></article></section><section class="subsection" id="subsection-17"><h3 class="heading hide-type">
+</div></article></section><section class="subsection" id="subsection-21"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.2.8</span> <span class="title">Continuously Compounded Interest</span>
 </h3>
-<p id="p-304">In many bank accounts your interest is compounded continuously, or at each moment in time. The number of times per year, n, is infinite. As n approaches infinity the compound interest formula changes to the continuously compounded interest formula.</p>
+<div class="para" id="p-607">In many bank accounts your interest is compounded continuously, or at each moment in time. The number of times per year, n, is infinite. As n approaches infinity the compound interest formula changes to the continuously compounded interest formula.</div>
 <article class="assemblage assemblage-like" id="assemblage-6"><h4 class="heading"><span class="title">Continuously Compounded Interest.</span></h4>
-<div class="displaymath process-math" data-contains-math-knowls="" id="p-305">
+<div class="para logical" id="p-608"><div class="displaymath process-math">
 \begin{equation*}
 A=Pe^{rt} \text{ or } P=\frac{A}{e^{rt}}
 \end{equation*}
-</div>
-<dl id="p-306" class="description-list narrow">
-<dt id="li-141">A</dt>
-<dd><p id="p-307">is the future value or desired balance in the account</p></dd>
-<dt id="li-142">P</dt>
-<dd><p id="p-308">is the principal or present value</p></dd>
-<dt id="li-143">r</dt>
-<dd><p id="p-309">is the annual interest rate in decimal form</p></dd>
-<dt id="li-144">t</dt>
-<dd><p id="p-310">is the number of years</p></dd>
-<dt id="li-145">e</dt>
-<dd><p id="p-311">is an irrational number that is approximately 2.718281828… Find <span class="process-math">\(e\)</span> on your calculator to use this formula</p></dd>
-</dl>
-<p id="p-312">To calculate this on a spreadsheet we use the <code class="code-inline tex2jax_ignore">=EXP</code> function. The spreadsheet formulas are</p>
-<pre class="code-display tex2jax_ignore" id="p-313">=Principal*EXP(r*t) or =A/EXP(r*t)</pre></article><article class="example example-like" id="example-8"><h4 class="heading">
+</div></div>
+<div class="para logical" id="p-609"><dl class="description-list narrow">
+<dt id="li-333">A</dt>
+<dd><div class="para" id="p-610">is the future value or desired balance in the account</div></dd>
+<dt id="li-334">P</dt>
+<dd><div class="para" id="p-611">is the principal or present value</div></dd>
+<dt id="li-335">r</dt>
+<dd><div class="para" id="p-612">is the annual interest rate in decimal form</div></dd>
+<dt id="li-336">t</dt>
+<dd><div class="para" id="p-613">is the number of years</div></dd>
+<dt id="li-337">e</dt>
+<dd><div class="para" id="p-614">is an irrational number that is approximately 2.718281828… Find <span class="process-math">\(e\)</span> on your calculator to use this formula</div></dd>
+</dl></div>
+<div class="para" id="p-615">To calculate this on a spreadsheet we use the <code class="code-inline tex2jax_ignore">=EXP</code> function. The spreadsheet formulas are</div>
+<div class="para logical" id="p-616"><pre class="code-display tex2jax_ignore">=Principal*EXP(r*t) or =A/EXP(r*t)</pre></div></article><article class="example example-like" id="example-18"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.7</span><span class="period">.</span>
 </h4>
-<p id="p-314">You deposit $4000 in an account that earns 2.75% APR compounded continuously. How much will you have after 7 years? How much interest did you earn? What percentage of the final balance is interest?</p>
+<div class="para" id="p-617">You deposit $4000 in an account that earns 2.75% APR compounded continuously. How much will you have after 7 years? How much interest did you earn? What percentage of the final balance is interest?</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-21" id="solution-21"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-21"><div class="solution solution-like">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-39" id="solution-39"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-39"><div class="solution solution-like">
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
 <div class="sbspanel middle" style="width:40%;">
-<p id="p-315">To use a spreadsheet, we look at the formula solved for A, the future value. We enter</p>
-<pre class="code-display tex2jax_ignore" id="p-316">=4000*EXP(0.0275*7)</pre>
-<p id="p-317">and get a result of $4849.11.</p>
+<div class="para" id="p-618">To use a spreadsheet, we look at the formula solved for A, the future value. We enter</div>
+<div class="para logical" id="p-619"><pre class="code-display tex2jax_ignore">=4000*EXP(0.0275*7)</pre></div>
+<div class="para" id="p-620">and get a result of $4849.11.</div>
 </div>
 <div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_2/continuous_interest.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
-</div></div> <p id="p-318">To use the formula, we have:</p> <p id="p-319"><span class="process-math">\(A=Pe^{rt}\)</span></p> <p id="p-320"><span class="process-math">\(P = 4000\text{,}\)</span> amount invested</p> <p id="p-321"><span class="process-math">\(r = 0.0275\text{,}\)</span> interest rate</p> <p id="p-322"><span class="process-math">\(t = 7\text{,}\)</span> number of years</p> <div class="displaymath process-math" data-contains-math-knowls="" id="md-9">
+</div></div> <div class="para" id="p-621">To use the formula, we have:</div> <div class="para" id="p-622"><span class="process-math">\(A=Pe^{rt}\)</span></div> <div class="para" id="p-623">
+<span class="process-math">\(P = 4000\text{,}\)</span> amount invested</div> <div class="para" id="p-624">
+<span class="process-math">\(r = 0.0275\text{,}\)</span> interest rate</div> <div class="para" id="p-625">
+<span class="process-math">\(t = 7\text{,}\)</span> number of years</div> <div class="para logical" id="p-626"><div class="displaymath process-math" id="md-12">
 \begin{align*}
 A\amp=4000e^{(0.0275\cdot 7)}\\
 \amp\approx\$4849.11
 \end{align*}
-</div> <p id="p-324">After 7 years your account would be worth $4,849.11. Next, we will calculate the amount of interest earned and the percentage.</p>
+</div></div> <div class="para" id="p-627">After 7 years your account would be worth $4,849.11. Next, we will calculate the amount of interest earned and the percentage.</div>
 </div></div>
-</div></article></section><section class="subsection" id="subsection-18"><h3 class="heading hide-type">
+</div></article></section><section class="subsection" id="subsection-22"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.2.9</span> <span class="title">Finding the Amount of Interest Earned and the Percentage</span>
 </h3>
-<p id="p-325">In the previous example we also want to know how much interest was earned and what percentage of the final balance is from interest. The future value of the investment is $4,849.11. Now to figure out how much of that was interest, we need to subtract the amount initially deposited.</p>
-<article class="example example-like" id="example-9"><h4 class="heading">
+<div class="para" id="p-628">In the previous example we also want to know how much interest was earned and what percentage of the final balance is from interest. The future value of the investment is $4,849.11. Now to figure out how much of that was interest, we need to subtract the amount initially deposited.</div>
+<article class="example example-like" id="example-19"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.8</span><span class="period">.</span>
 </h4>
-<p id="p-326">Continued: To find the total amount of interest earned, we subtract the principal from the total balance.</p> <div class="displaymath process-math" data-contains-math-knowls="" id="p-327">
+<div class="para" id="p-629">Continued: To find the total amount of interest earned, we subtract the principal from the total balance.</div> <div class="para logical" id="p-630"><div class="displaymath process-math">
 \begin{equation*}
 \$4849.11-\$4000=\$849.11
 \end{equation*}
-</div> <p id="p-328">The spreadsheet calculation is</p> <pre class="code-display tex2jax_ignore" id="p-329">=4849.11-4000</pre> <p id="p-330">which gives a result of $849.11. You would earn $849.11 in interest.</p> <p id="p-331">To find the percentage that is interest, divide the amount of interest by the total amount.</p> <div class="displaymath process-math" data-contains-math-knowls="" id="p-332">
+</div></div> <div class="para" id="p-631">The spreadsheet calculation is</div> <div class="para logical" id="p-632"><pre class="code-display tex2jax_ignore">=4849.11-4000</pre></div> <div class="para" id="p-633">which gives a result of $849.11. You would earn $849.11 in interest.</div> <div class="para" id="p-634">To find the percentage that is interest, divide the amount of interest by the total amount.</div> <div class="para logical" id="p-635"><div class="displaymath process-math">
 \begin{equation*}
 \frac{\$849.11}{4849.11}=0.1751\text{ or } 17.5\%
 \end{equation*}
-</div> <p id="p-333">The spreadsheet calculation is the same:</p> <pre class="code-display tex2jax_ignore" id="p-334">=849.11/4849.11</pre> <p id="p-335">which is 0.1751 or 17.5%. This tells us that after 7 years, 17.5% of the account was earned as interest.</p></article></section><section class="subsection" id="subsection-19"><h3 class="heading hide-type">
+</div></div> <div class="para" id="p-636">The spreadsheet calculation is the same:</div> <div class="para logical" id="p-637"><pre class="code-display tex2jax_ignore">=849.11/4849.11</pre></div> <div class="para" id="p-638">which is 0.1751 or 17.5%. This tells us that after 7 years, 17.5% of the account was earned as interest.</div></article></section><section class="subsection" id="subsection-23"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.2.10</span> <span class="title">Effective Rate</span>
 </h3>
-<p id="p-336">If you are shopping around for different investments, you might need to compare different rates that have different compounding periods. If the rate and period are different, it's hard to know which account will give the better result. There is a spreadsheet formula called <code class="code-inline tex2jax_ignore">=EFFECT</code> which will allow us to compare accounts. This is also sometimes called the annual percentage yield, or APY.</p>
+<div class="para" id="p-639">If you are shopping around for different investments, you might need to compare different rates that have different compounding periods. If the rate and period are different, it’s hard to know which account will give the better result. There is a spreadsheet formula called <code class="code-inline tex2jax_ignore">=EFFECT</code> which will allow us to compare accounts. This is also sometimes called the annual percentage yield, or APY.</div>
 <article class="assemblage assemblage-like" id="assemblage-7"><h4 class="heading"><span class="title">Effective Rate Formula.</span></h4>
-<pre class="code-display tex2jax_ignore" id="p-337">=EFFECT(stated rate, number of compounding periods)</pre>
-<dl id="p-338" class="description-list narrow">
-<dt id="li-146">stated rate</dt>
-<dd><p id="p-339">is the interest rate given (APR)</p></dd>
-<dt id="li-147">number of compounding periods</dt>
-<dd><p id="p-340">is the number of times the account is compounded per year, <span class="process-math">\(n\)</span></p></dd>
-</dl></article><article class="example example-like" id="example-10"><h4 class="heading">
+<div class="para logical" id="p-640"><pre class="code-display tex2jax_ignore">=EFFECT(stated rate, number of compounding periods)</pre></div>
+<div class="para logical" id="p-641"><dl class="description-list narrow">
+<dt id="li-338">stated rate</dt>
+<dd><div class="para" id="p-642">is the interest rate given (APR)</div></dd>
+<dt id="li-339">number of compounding periods</dt>
+<dd><div class="para" id="p-643">is the number of times the account is compounded per year, <span class="process-math">\(n\)</span>
+</div></dd>
+</dl></div></article><article class="example example-like" id="example-20"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.9</span><span class="period">.</span>
 </h4>
-<p id="p-341">You are comparing an account that pays 5.25% APR compounded monthly, with an account that pays 5% APR compounded daily. Which account will earn you more interest?</p>
+<div class="para" id="p-644">You are comparing an account that pays 5.25% APR compounded monthly, with an account that pays 5% APR compounded daily. Which account will earn you more interest?</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-22" id="solution-22"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-22"><div class="solution solution-like">
-<p id="p-342">It is hard to tell whether the higher interest rate will be better or the higher compounding rate in this case. We will find the effective rate of both accounts.</p> <p id="p-343">For the 5.25% APR account compounded monthly:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-40" id="solution-40"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-40"><div class="solution solution-like">
+<div class="para" id="p-645">It is hard to tell whether the higher interest rate will be better or the higher compounding rate in this case. We will find the effective rate of both accounts.</div> <div class="para" id="p-646">For the 5.25% APR account compounded monthly:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
 <div class="sbspanel middle" style="width:40%;">
-<pre class="code-display tex2jax_ignore" id="p-344">=EFFECT(0.0525,12)</pre>
-<p id="p-345">which gives 0.05378 or 5.38%</p>
+<div class="para logical" id="p-647"><pre class="code-display tex2jax_ignore">=EFFECT(0.0525,12)</pre></div>
+<div class="para" id="p-648">which gives 0.05378 or 5.38%</div>
 </div>
 <div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_2/effective_rate1.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
-</div></div> <p id="p-346">For the 5% APR account compounded daily:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+</div></div> <div class="para" id="p-649">For the 5% APR account compounded daily:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
 <div class="sbspanel middle" style="width:40%;">
-<pre class="code-display tex2jax_ignore" id="p-347">=EFFECT(0.05,365)</pre>
-<p id="p-348">which gives 0.05127 or 5.13%</p>
+<div class="para logical" id="p-650"><pre class="code-display tex2jax_ignore">=EFFECT(0.05,365)</pre></div>
+<div class="para" id="p-651">which gives 0.05127 or 5.13%</div>
 </div>
 <div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_2/effective_rate2.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
-</div></div> <p id="p-349">Now we can compare the effective rates of 5.38% and 5.13% and see that the account with the higher interest rate will earn more interest in this case. This is not always true, so we will show another example.</p>
+</div></div> <div class="para" id="p-652">Now we can compare the effective rates of 5.38% and 5.13% and see that the account with the higher interest rate will earn more interest in this case. This is not always true, so we will show another example.</div>
 </div></div>
-</div></article><article class="example example-like" id="example-11"><h4 class="heading">
+</div></article><article class="example example-like" id="example-21"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.10</span><span class="period">.</span>
 </h4>
-<p id="p-350">Find the effective rates to compare an account that earns 6% APR compounded quarterly with an account that earns 5.975% APR compounded daily. Which one would you choose?</p>
+<div class="para" id="p-653">Find the effective rates to compare an account that earns 6% APR compounded quarterly with an account that earns 5.975% APR compounded daily. Which one would you choose?</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-23" id="solution-23"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-23"><div class="solution solution-like">
-<p id="p-351">Using the effective rate formula for each, we have:</p> <p id="p-352">For the 6% APR account compounded quarterly:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-41" id="solution-41"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-41"><div class="solution solution-like">
+<div class="para" id="p-654">Using the effective rate formula for each, we have:</div> <div class="para" id="p-655">For the 6% APR account compounded quarterly:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
 <div class="sbspanel middle" style="width:40%;">
-<pre class="code-display tex2jax_ignore" id="p-353">=EFFECT(0.06,4)</pre>
-<p id="p-354">which gives 0.06136 or 6.14%</p>
+<div class="para logical" id="p-656"><pre class="code-display tex2jax_ignore">=EFFECT(0.06,4)</pre></div>
+<div class="para" id="p-657">which gives 0.06136 or 6.14%</div>
 </div>
 <div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_2/effective_rate3.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
-</div></div> <p id="p-355">For the 5.975% APR account compounded daily:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+</div></div> <div class="para" id="p-658">For the 5.975% APR account compounded daily:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
 <div class="sbspanel middle" style="width:40%;">
-<pre class="code-display tex2jax_ignore" id="p-356">=EFFECT(0.05975,365)</pre>
-<p id="p-357">which gives 0.06157 or 6.16%</p>
+<div class="para logical" id="p-659"><pre class="code-display tex2jax_ignore">=EFFECT(0.05975,365)</pre></div>
+<div class="para" id="p-660">which gives 0.06157 or 6.16%</div>
 </div>
 <div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_2/effective_rate4.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
-</div></div> <p id="p-358">The account that was compounded more often has a slightly higher rate in this case.</p>
+</div></div> <div class="para" id="p-661">The account that was compounded more often has a slightly higher rate in this case.</div>
 </div></div>
 </div></article></section><section class="exercises" id="exercises-2"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber">3.2.11</span> <span class="title">Exercises</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-14"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
-<p id="p-359">A friend lends you $200 for a week, which you agree to repay with 5% one-time interest. How much will you have to repay?</p></article><article class="exercise exercise-like" id="exercise-15"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
-<p id="p-362">You loan your friend $100. They agree to pay an annual interest rate of 3%, simple interest. Six months later they repay that loan.</p>
+<div class="para" id="p-662">A friend lends you $200 for a week, which you agree to repay with 5% one-time interest. How much will you have to repay?</div></article><article class="exercise exercise-like" id="exercise-15"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<div class="para logical" id="p-665">
+<div class="para">You loan your friend $100. They agree to pay an annual interest rate of 3%, simple interest. Six months later they repay that loan.</div>
 <ol class="lower-alpha">
-<li id="li-148"><p id="p-363">How much did they pay you?</p></li>
-<li id="li-149"><p id="p-364">How much was interest?</p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-16"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
-<p id="p-369">Consider a simple interest loan of $200 with an annual interest rate of 6%. If that loan is paid off 1 year and 3 months later, how much was repaid?</p></article><article class="exercise exercise-like" id="exercise-17"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
-<p id="p-372">You deposit $1,000 in an account that earns simple interest. The annual interest rate is 2.5%.</p> <ol id="p-373" class="lower-alpha">
-<li id="li-152"><p id="p-374">How much interest will you earn in 5 years?</p></li>
-<li id="li-153"><p id="p-375">How much will you have in the account in 5 years?</p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-18"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
-<p id="p-379">Consider an investment of $20000 with an annual interest rate of 5%.</p>
+<li id="li-340"><div class="para" id="p-666">How much did they pay you?</div></li>
+<li id="li-341"><div class="para" id="p-667">How much was interest?</div></li>
+</ol>
+</div></article><article class="exercise exercise-like" id="exercise-16"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<div class="para" id="p-672">Consider a simple interest loan of $200 with an annual interest rate of 6%. If that loan is paid off 1 year and 3 months later, how much was repaid?</div></article><article class="exercise exercise-like" id="exercise-17"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div class="para" id="p-675">You deposit $1,000 in an account that earns simple interest. The annual interest rate is 2.5%.</div> <div class="para logical" id="p-676"><ol class="lower-alpha">
+<li id="li-344"><div class="para" id="p-677">How much interest will you earn in 5 years?</div></li>
+<li id="li-345"><div class="para" id="p-678">How much will you have in the account in 5 years?</div></li>
+</ol></div></article><article class="exercise exercise-like" id="exercise-18"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
+<div class="para logical" id="p-682">
+<div class="para">Consider an investment of $20000 with an annual interest rate of 5%.</div>
 <ol class="lower-alpha">
-<li id="li-156"><p id="p-380">If that investment is earning simple interest, how much will the investment be worth in 10 years?</p></li>
-<li id="li-157"><p id="p-381">If that investment is getting annually compounding interest, how much will the investment be worth in 10 years?</p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-19"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
-<p id="p-386">Nico invests $4,500 into an account that has an annual interest rate of 8.5%. The interest is compounding monthly. Twenty years later what is the account balance?</p></article><article class="exercise exercise-like" id="exercise-20"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
-<p id="p-390">How much will $1,000 deposited in an account earning 7% APR compounded weekly be worth in 20 years?</p></article><article class="exercise exercise-like" id="exercise-21"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
-<p id="p-394">Suppose you obtain a $3,000 Certificate of Deposit (CD) with a 3% APR, paid quarterly, with maturity in 5 years.</p> <ol id="p-395" class="lower-alpha">
-<li id="li-160"><p id="p-396">What is the future value of the CD in 5 years?</p></li>
-<li id="li-161"><p id="p-397">How much interest will you earn?</p></li>
-<li id="li-162"><p id="p-398">What percent of the balance is interest?</p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-22"><h4 class="heading"><span class="codenumber">9<span class="period">.</span></span></h4>
-<p id="p-407">You deposit $300 in an account earning 5% APR compounded annually. How much will you have in the account in 10 years?</p> <ol id="p-408" class="lower-alpha">
-<li id="li-166"><p id="p-409">How much will you have in the account in 10 years?</p></li>
-<li id="li-167"><p id="p-410">How much interest will you earn?</p></li>
-<li id="li-168"><p id="p-411">What percent of the balance is interest?</p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-23"><h4 class="heading"><span class="codenumber">10<span class="period">.</span></span></h4>
-<p id="p-420">You deposit $2,000 in an account earning 3% APR compounded monthly.</p> <ol id="p-421" class="lower-alpha">
-<li id="li-172"><p id="p-422">How much will you have in the account in 20 years?</p></li>
-<li id="li-173"><p id="p-423">How much interest will you earn?</p></li>
-<li id="li-174"><p id="p-424">What percent of the balance is interest?</p></li>
-<li id="li-175"><p id="p-425">What percent of the balance is the principal?</p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-24"><h4 class="heading"><span class="codenumber">11<span class="period">.</span></span></h4>
-<p id="p-436">You deposit $10,000 in an account earning 4% APR compounded weekly.</p> <ol id="p-437" class="lower-alpha">
-<li id="li-180"><p id="p-438">How much will you have in the account in 25 years?</p></li>
-<li id="li-181"><p id="p-439">How much interest will you earn?</p></li>
-<li id="li-182"><p id="p-440">What percent of the balance is interest?</p></li>
-<li id="li-183"><p id="p-441">What percent of the balance is the principal?</p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-25"><h4 class="heading"><span class="codenumber">12<span class="period">.</span></span></h4>
-<p id="p-452">How much would you need to deposit in an account now in order to have $6,000 in the account in 8 years? Assume the account earns 6% APR compounded monthly.</p></article><article class="exercise exercise-like" id="exercise-26"><h4 class="heading"><span class="codenumber">13<span class="period">.</span></span></h4>
-<p id="p-456">How much would you need to deposit in an account now in order to have $20,000 in the account in 4 years? Assume the account earns 5% APR compounded quarterly.</p></article><article class="exercise exercise-like" id="exercise-27"><h4 class="heading"><span class="codenumber">14<span class="period">.</span></span></h4>
-<p id="p-460">Breylan invests $1,200 in an account that earns 4.6% APR compounded quarterly and Angad invests the same amount in an account that earns 4.55% APR compounded weekly.</p> <ol id="p-461" class="lower-alpha">
-<li id="li-188"><p id="p-462">What will their balances be after 15 years?</p></li>
-<li id="li-189"><p id="p-463">What will their balances be after 30 years?</p></li>
-<li id="li-190"><p id="p-464">What is the effective rate for each account?</p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-28"><h4 class="heading"><span class="codenumber">15<span class="period">.</span></span></h4>
-<p id="p-479">Bill invests $6,700 in a savings account that compounds interest monthly at 3.75% APR. Ted invests $6,500 in a savings account that compound interest annually at 3.8% APR.</p> <ol id="p-480" class="lower-alpha">
-<li id="li-194"><p id="p-481">Find the effective rate for each account.</p></li>
-<li id="li-195"><p id="p-482">Who will have the higher accumulated balance after 5 years?</p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-29"><h4 class="heading"><span class="codenumber">16<span class="period">.</span></span></h4>
-<p id="p-490">Bassel is comparing two accounts where one pays 3.45% APR quarterly and the second pays 3.4% APR daily.</p> <ol id="p-491" class="lower-alpha">
-<li id="li-198"><p id="p-492">What is the effect rate for each?</p></li>
-<li id="li-199"><p id="p-493">If he has $5,000 to deposit how much will the balance be in 10 years?</p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-30"><h4 class="heading"><span class="codenumber">17<span class="period">.</span></span></h4>
-<p id="p-501">You deposit $2,500 into an account earning 4% APR compounded continuously.</p> <ol id="p-502" class="lower-alpha">
-<li id="li-202"><p id="p-503">How much will you have in the account in 10 years?</p></li>
-<li id="li-203"><p id="p-504">How much total interest will you earn?</p></li>
-<li id="li-204"><p id="p-505">What percent of the balance is interest?</p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-31"><h4 class="heading"><span class="codenumber">18<span class="period">.</span></span></h4>
-<p id="p-514">You deposit $1,000 into an account earning 5.75% APR compounded continuously.</p> <ol id="p-515" class="lower-alpha">
-<li id="li-208"><p id="p-516">How much will you have in the account in 15 years?</p></li>
-<li id="li-209"><p id="p-517">How much total interest will you earn?</p></li>
-<li id="li-210"><p id="p-518">What percent of the balance is interest?</p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-32"><h4 class="heading"><span class="codenumber">19<span class="period">.</span></span></h4>
-<p id="p-527">You deposit $5,000 in an account earning 4.5% APR compounded continuously.</p> <ol id="p-528" class="lower-alpha">
-<li id="li-214"><p id="p-529">How much will you have in the account in 5 years?</p></li>
-<li id="li-215"><p id="p-530">How much total interest will you earn?</p></li>
-<li id="li-216"><p id="p-531">What percent of the balance is interest?</p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-33"><h4 class="heading"><span class="codenumber">20<span class="period">.</span></span></h4>
-<p id="p-540">You deposit $10,000 in an account that earns 5.5% APR compounded continuously and your friend deposits $10,000 in an account that earns 5.5% APR compounded annually.</p> <ol id="p-541" class="lower-alpha">
-<li id="li-220"><p id="p-542">How much more will you have in the account in 10 years?</p></li>
-<li id="li-221"><p id="p-543">How much more interest did you earn in the 10 years?</p></li>
-</ol></article></section></section></div></main>
+<li id="li-348"><div class="para" id="p-683">If that investment is earning simple interest, how much will the investment be worth in 10 years?</div></li>
+<li id="li-349"><div class="para" id="p-684">If that investment is getting annually compounding interest, how much will the investment be worth in 10 years?</div></li>
+</ol>
+</div></article><article class="exercise exercise-like" id="exercise-19"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+<div class="para" id="p-689">Nico invests $4,500 into an account that has an annual interest rate of 8.5%. The interest is compounding monthly. Twenty years later what is the account balance?</div></article><article class="exercise exercise-like" id="exercise-20"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
+<div class="para" id="p-693">How much will $1,000 deposited in an account earning 7% APR compounded weekly be worth in 20 years?</div></article><article class="exercise exercise-like" id="exercise-21"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
+<div class="para" id="p-697">Suppose you obtain a $3,000 Certificate of Deposit (CD) with a 3% APR, paid quarterly, with maturity in 5 years.</div> <div class="para logical" id="p-698"><ol class="lower-alpha">
+<li id="li-352"><div class="para" id="p-699">What is the future value of the CD in 5 years?</div></li>
+<li id="li-353"><div class="para" id="p-700">How much interest will you earn?</div></li>
+<li id="li-354"><div class="para" id="p-701">What percent of the balance is interest?</div></li>
+</ol></div></article><article class="exercise exercise-like" id="exercise-22"><h4 class="heading"><span class="codenumber">9<span class="period">.</span></span></h4>
+<div class="para" id="p-710">You deposit $300 in an account earning 5% APR compounded annually. How much will you have in the account in 10 years?</div> <div class="para logical" id="p-711"><ol class="lower-alpha">
+<li id="li-358"><div class="para" id="p-712">How much will you have in the account in 10 years?</div></li>
+<li id="li-359"><div class="para" id="p-713">How much interest will you earn?</div></li>
+<li id="li-360"><div class="para" id="p-714">What percent of the balance is interest?</div></li>
+</ol></div></article><article class="exercise exercise-like" id="exercise-23"><h4 class="heading"><span class="codenumber">10<span class="period">.</span></span></h4>
+<div class="para" id="p-723">You deposit $2,000 in an account earning 3% APR compounded monthly.</div> <div class="para logical" id="p-724"><ol class="lower-alpha">
+<li id="li-364"><div class="para" id="p-725">How much will you have in the account in 20 years?</div></li>
+<li id="li-365"><div class="para" id="p-726">How much interest will you earn?</div></li>
+<li id="li-366"><div class="para" id="p-727">What percent of the balance is interest?</div></li>
+<li id="li-367"><div class="para" id="p-728">What percent of the balance is the principal?</div></li>
+</ol></div></article><article class="exercise exercise-like" id="exercise-24"><h4 class="heading"><span class="codenumber">11<span class="period">.</span></span></h4>
+<div class="para" id="p-739">You deposit $10,000 in an account earning 4% APR compounded weekly.</div> <div class="para logical" id="p-740"><ol class="lower-alpha">
+<li id="li-372"><div class="para" id="p-741">How much will you have in the account in 25 years?</div></li>
+<li id="li-373"><div class="para" id="p-742">How much interest will you earn?</div></li>
+<li id="li-374"><div class="para" id="p-743">What percent of the balance is interest?</div></li>
+<li id="li-375"><div class="para" id="p-744">What percent of the balance is the principal?</div></li>
+</ol></div></article><article class="exercise exercise-like" id="exercise-25"><h4 class="heading"><span class="codenumber">12<span class="period">.</span></span></h4>
+<div class="para" id="p-755">How much would you need to deposit in an account now in order to have $6,000 in the account in 8 years? Assume the account earns 6% APR compounded monthly.</div></article><article class="exercise exercise-like" id="exercise-26"><h4 class="heading"><span class="codenumber">13<span class="period">.</span></span></h4>
+<div class="para" id="p-759">How much would you need to deposit in an account now in order to have $20,000 in the account in 4 years? Assume the account earns 5% APR compounded quarterly.</div></article><article class="exercise exercise-like" id="exercise-27"><h4 class="heading"><span class="codenumber">14<span class="period">.</span></span></h4>
+<div class="para" id="p-763">Breylan invests $1,200 in an account that earns 4.6% APR compounded quarterly and Angad invests the same amount in an account that earns 4.55% APR compounded weekly.</div> <div class="para logical" id="p-764"><ol class="lower-alpha">
+<li id="li-380"><div class="para" id="p-765">What will their balances be after 15 years?</div></li>
+<li id="li-381"><div class="para" id="p-766">What will their balances be after 30 years?</div></li>
+<li id="li-382"><div class="para" id="p-767">What is the effective rate for each account?</div></li>
+</ol></div></article><article class="exercise exercise-like" id="exercise-28"><h4 class="heading"><span class="codenumber">15<span class="period">.</span></span></h4>
+<div class="para" id="p-782">Bill invests $6,700 in a savings account that compounds interest monthly at 3.75% APR. Ted invests $6,500 in a savings account that compound interest annually at 3.8% APR.</div> <div class="para logical" id="p-783"><ol class="lower-alpha">
+<li id="li-386"><div class="para" id="p-784">Find the effective rate for each account.</div></li>
+<li id="li-387"><div class="para" id="p-785">Who will have the higher accumulated balance after 5 years?</div></li>
+</ol></div></article><article class="exercise exercise-like" id="exercise-29"><h4 class="heading"><span class="codenumber">16<span class="period">.</span></span></h4>
+<div class="para" id="p-793">Bassel is comparing two accounts where one pays 3.45% APR quarterly and the second pays 3.4% APR daily.</div> <div class="para logical" id="p-794"><ol class="lower-alpha">
+<li id="li-390"><div class="para" id="p-795">What is the effect rate for each?</div></li>
+<li id="li-391"><div class="para" id="p-796">If he has $5,000 to deposit how much will the balance be in 10 years?</div></li>
+</ol></div></article><article class="exercise exercise-like" id="exercise-30"><h4 class="heading"><span class="codenumber">17<span class="period">.</span></span></h4>
+<div class="para" id="p-804">You deposit $2,500 into an account earning 4% APR compounded continuously.</div> <div class="para logical" id="p-805"><ol class="lower-alpha">
+<li id="li-394"><div class="para" id="p-806">How much will you have in the account in 10 years?</div></li>
+<li id="li-395"><div class="para" id="p-807">How much total interest will you earn?</div></li>
+<li id="li-396"><div class="para" id="p-808">What percent of the balance is interest?</div></li>
+</ol></div></article><article class="exercise exercise-like" id="exercise-31"><h4 class="heading"><span class="codenumber">18<span class="period">.</span></span></h4>
+<div class="para" id="p-817">You deposit $1,000 into an account earning 5.75% APR compounded continuously.</div> <div class="para logical" id="p-818"><ol class="lower-alpha">
+<li id="li-400"><div class="para" id="p-819">How much will you have in the account in 15 years?</div></li>
+<li id="li-401"><div class="para" id="p-820">How much total interest will you earn?</div></li>
+<li id="li-402"><div class="para" id="p-821">What percent of the balance is interest?</div></li>
+</ol></div></article><article class="exercise exercise-like" id="exercise-32"><h4 class="heading"><span class="codenumber">19<span class="period">.</span></span></h4>
+<div class="para" id="p-830">You deposit $5,000 in an account earning 4.5% APR compounded continuously.</div> <div class="para logical" id="p-831"><ol class="lower-alpha">
+<li id="li-406"><div class="para" id="p-832">How much will you have in the account in 5 years?</div></li>
+<li id="li-407"><div class="para" id="p-833">How much total interest will you earn?</div></li>
+<li id="li-408"><div class="para" id="p-834">What percent of the balance is interest?</div></li>
+</ol></div></article><article class="exercise exercise-like" id="exercise-33"><h4 class="heading"><span class="codenumber">20<span class="period">.</span></span></h4>
+<div class="para" id="p-843">You deposit $10,000 in an account that earns 5.5% APR compounded continuously and your friend deposits $10,000 in an account that earns 5.5% APR compounded annually.</div> <div class="para logical" id="p-844"><ol class="lower-alpha">
+<li id="li-412"><div class="para" id="p-845">How much more will you have in the account in 10 years?</div></li>
+<li id="li-413"><div class="para" id="p-846">How much more interest did you earn in the 10 years?</div></li>
+</ol></div></article></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="sec-finance-intro-spreadsheet.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec-finance-savings-plan.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
 </div>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -9,46 +9,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
-<script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
-// Their results will be linked, only within language type
-sagecell.makeSagecell({inputLocation: 'pre.sagecell-sage',
-                       linked: true,
-                       languages: ['sage'],
-                       evalButtonText: 'Evaluate (Sage)'});
-</script>
 </head>
 <body class="ignore-math">
 <article class="activity project-like"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.5.3</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.1.4</span><span class="period">.</span>
 </h4>
-<p>Consider the matrices</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-A=\left[\begin{array}{rr}
-0 \amp 1 \\
-1 \amp 0 \\
-\end{array}\right],\qquad
-B=\left[\begin{array}{rr}
-0.4 \amp 0.3 \\
-0.6 \amp 0.7 \\
-\end{array}\right]\text{.}
-\end{equation*}
-</div>
-<ol class="lower-alpha">
-<li><p>Verify that both <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are stochastic matrices.</p></li>
-<li><p>Find the eigenvalues of <span class="process-math">\(A\)</span> and then find a steady-state vector for <span class="process-math">\(A\text{.}\)</span></p></li>
-<li><p>We will form the Markov chain beginning with the vector <span class="process-math">\(\xvec_0 = \twovec{1}{0}\)</span> and defining <span class="process-math">\(\xvec_{k+1} = A\xvec_k\text{.}\)</span>  The Sage cell below constructs the first <span class="process-math">\(N\)</span> terms of the Markov chain with the command <code class="code-inline tex2jax_ignore">markov_chain(A, x0, N)</code>.  Define the matrix <code class="code-inline tex2jax_ignore">A</code> and vector <code class="code-inline tex2jax_ignore">x0</code> and evaluate the cell to find the first 10 terms of the Markov chain. <pre class="ptx-sagecell sagecell-sage" id="sage-123"><script type="text/x-sage">def markov_chain(A, x0, N):
-    for i in range(N):
-        x0 = A*x0
-        print (x0)
-## define the matrix A and x0
-A =
-x0 =
-markov_chain(A, x0, 10)
-</script></pre> What do you notice about the Markov chain?  Does it converge to the steady-state vector for <span class="process-math">\(A\text{?}\)</span></p></li>
-<li><p>Now find the eigenvalues of <span class="process-math">\(B\)</span> along with a steady-state vector for <span class="process-math">\(B\text{.}\)</span></p></li>
-<li><p>As before, find the first 10 terms in the Markov chain beginning with <span class="process-math">\(\xvec_0 = \twovec{1}{0}\)</span> and <span class="process-math">\(\xvec_{k+1} = B\xvec_k\text{.}\)</span>  What do you notice about the Markov chain?  Does it converge to the steady-state vector for <span class="process-math">\(B\text{?}\)</span></p></li>
-<li><p>What condition on the eigenvalues of a stochastic matrix will guarantee that a Markov chain will converge to a steady-state vector?</p></li>
-</ol></article><span class="incontext"><a href="sec-stochastic.html#activity-57" class="internal">in-context</a></span>
+<div class="para">The graph below is a function that illustrates a train’s distance from downtown, in miles, as a function of time in hours after <span class="process-math">\(8\)</span> <abbr class="initialism">a.m.</abbr> When using a graph the best you can do is estimate. Since <span class="process-math">\(f(0)\)</span> represents a distance at <span class="process-math">\(8\)</span> <abbr class="initialism">a.m.</abbr>, we can use the graph to find what the distance is.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/train.png" class="contained"></div></div></div> <ul class="disc">
+<li><div class="para">What is <span class="process-math">\(f(0) \)</span> approximately equal to?</div></li>
+<li><div class="para">What time is <span class="process-math">\(f(0)\)</span> referring to?</div></li>
+<li><div class="para">The notation <span class="process-math">\(f(0)\)</span> is read as “<span class="process-math">\(f\)</span> of zero.”  What do you think <span class="process-math">\(f(0)\)</span> means in the context of this train story?</div></li>
+<li><div class="para">How would you represent the statement “train’s distance at 10 a.m.” using function notation?</div></li>
+</ul></article><span class="incontext"><a href="sec-models-linear.html#activity-57" class="internal">in-context</a></span>
 </body>
 </html>

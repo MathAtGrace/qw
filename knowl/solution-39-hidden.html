@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -10,24 +10,22 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like"><ol class="lower-alpha">
-<li><p><code class="code-inline tex2jax_ignore">=EFFECT(0.0345,4)</code>= 3.49% and <code class="code-inline tex2jax_ignore">=EFFECT(0.034,365)</code>= 3.46%. The effective rates are 3.49% and 3.46%.</p></li>
-<li>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{align*}
-A\amp=5000\left(1+\frac{0.0345}{4}\right)^{4*10}\\
-\amp\approx \$7,049.51
-\end{align*}
+<body class="ignore-math"><div class="solution solution-like">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:40%;">
+<div class="para">To use a spreadsheet, we look at the formula solved for A, the future value. We enter</div>
+<div class="para logical"><pre class="code-display tex2jax_ignore">=4000*EXP(0.0275*7)</pre></div>
+<div class="para">and get a result of $4849.11.</div>
 </div>
-<p>Or, <code class="code-inline tex2jax_ignore">=FV(0.0345/4,10*4,0,5000)</code></p>
-<div class="displaymath process-math" data-contains-math-knowls="">
+<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_2/continuous_interest.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
+</div></div> <div class="para">To use the formula, we have:</div> <div class="para"><span class="process-math">\(A=Pe^{rt}\)</span></div> <div class="para">
+<span class="process-math">\(P = 4000\text{,}\)</span> amount invested</div> <div class="para">
+<span class="process-math">\(r = 0.0275\text{,}\)</span> interest rate</div> <div class="para">
+<span class="process-math">\(t = 7\text{,}\)</span> number of years</div> <div class="para logical"><div class="displaymath process-math">
 \begin{align*}
-A\amp=5000\left(1+\frac{0.034}{365}\right)^{365*10}\\
-\amp\approx \$7,024.63
+A\amp=4000e^{(0.0275\cdot 7)}\\
+\amp\approx\$4849.11
 \end{align*}
-</div>
-<p>Or, <code class="code-inline tex2jax_ignore">=FV(0.034/365,10*365,0,5000)</code></p>
-<p>The account balances are $7,049.51 and $7,024.63.</p>
-</li>
-</ol></div></body>
+</div></div> <div class="para">After 7 years your account would be worth $4,849.11. Next, we will calculate the amount of interest earned and the percentage.</div>
+</div></body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -10,25 +10,19 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like"><ol class="lower-alpha">
-<li><div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-C2 = B2 - 25100
-\end{equation*}
-</div></li>
+<body class="ignore-math"><div class="solution solution-like"><div class="para logical"><ol class="lower-alpha">
+<li><div class="para">
+<code class="code-inline tex2jax_ignore">=PMT(4.5%/12,12*30,250000)</code> which gives $1,266.71.</div></li>
 <li>
-<p>Tax is $1,990 plus 12% of the amount over $19,900.</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-D2 = 1990 + 0.12*(C2 - 19900)
-\end{equation*}
-</div>
-<p class="continuation">alternately, they could have simplified:</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-D2 = 0.12*C2 - 398
-\end{equation*}
-</div>
+<div class="para">This will be the present value of the remaining 240 loan payments:</div>
+<div class="para">
+<code class="code-inline tex2jax_ignore">=PV(4.5%/12,12*20,1266.71)</code> which gives $200,223.07.</div>
 </li>
-</ol></div></body>
+<li>
+<div class="para">This will be the present value of the remaining 120 loan payments:</div>
+<div class="para">
+<code class="code-inline tex2jax_ignore">=PV(4.5%/12,12*10,1266.71)</code> which gives $122,223.99.</div>
+</li>
+<li><div class="para">At the beginning of the repayment period, most of each payment goes to interest (thus the loan balance reduces very slowly at first). Over time, more of each payment shifts to principal, and less to interest.  At the end of the loan repayment period, nearly all the payment is going to principal.</div></li>
+</ol></div></div></body>
 </html>

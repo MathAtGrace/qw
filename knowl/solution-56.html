@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -13,20 +13,31 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.3.6.5.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.2.11.15.1</span><span class="period">.</span>
 </h4>
-<ol class="lower-alpha">
+<div class="para logical"><ol class="lower-alpha">
+<li><div class="para">Bill <code class="code-inline tex2jax_ignore">=EFFECT(0.0375,12)</code> =3.82% and Ted <code class="code-inline tex2jax_ignore">=EFFECT(0.038,1)</code> =3.8%. Bill has an effective rate of 3.82% and Ted has a rate of 3.8%.</div></li>
 <li>
-<p>In 5 years: <span class="process-math">\(\frac{130\left(\left(1+\frac{0.09}{12}\right)^{12*5}-1\right)}{\left(\frac{0.09}{12}\right)}\)</span></p>
-<p>Or, <code class="code-inline tex2jax_ignore">=FV(0.09/12,12*5,130)</code></p>
-<p>In 25 more years: <span class="process-math">\(9805.14(1+\frac{0.09}{12})^{12*25}\)</span></p>
-<p><code class="code-inline tex2jax_ignore">=FV(0.09/12,12*25,0,9805.14)</code></p>
-<p>Your final balance will be $92,250.82.</p>
-</li>
-<li><p><span class="process-math">\(92250.82 - 130*5*12\text{.}\)</span> You will earn $84,450.82 in interest.</p></li>
-<li><p><span class="process-math">\(84450.82/92250.82\text{.}\)</span> The final balance will be about 91.5% interest.</p></li>
-</ol>
+<div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+A\amp=6700\left(1+\frac{0.0375}{12}\right)^{12*5}\\
+\amp\approx \$8,079.38
+\end{align*}
+</div></div>
+<div class="para">Or, <code class="code-inline tex2jax_ignore">=FV(0.0375/12,5*12,0,6700)</code>
 </div>
-<span class="incontext"><a href="sec-finance-savings-plan.html#solution-56" class="internal">in-context</a></span>
+<div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+A\amp=6500\left(1+\frac{0.038}{1}\right)^{1*5}\\
+\amp\approx \$7,832.49
+\end{align*}
+</div></div>
+<div class="para">Or, <code class="code-inline tex2jax_ignore">=FV(0.038,5,0,6500)</code>
+</div>
+<div class="para">The account balances are $8,079.38 and $7,832.49. So, Bill’s balance is higher.</div>
+</li>
+</ol></div>
+</div>
+<span class="incontext"><a href="sec-finance-simple-compound.html#solution-56" class="internal">in-context</a></span>
 </body>
 </html>

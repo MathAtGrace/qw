@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -11,12 +11,12 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math"><div class="solution solution-like">
-<p>Since Phyl and Gladys are married and filing jointly, their taxable income puts them in the 22% tax bracket. Using the simplified 2022 tax table, their taxes are $9,615 plus 22% of the amount over $83,550:</p> <div class="displaymath process-math" data-contains-math-knowls="">
-\begin{align*}
-\$9,615+0.22(\$112,000-\$83,550)\amp=\$8,907+0.22(\$28,450)\\
-\amp=\$9,615+\$6,259\\
-\amp=\$15,874
-\end{align*}
-</div> <p>Phyl and Gladys owe $15,874 in taxes.</p>
+<div class="para">First, we need to find out the amount of the monthly payments for this loan.</div> <div class="para">
+<span class="process-math">\(d = \frac{120000\left(\frac{6\%}{12}\right)}{\left(1-\left(1+\frac{6\%}{12}\right)^{-12 \times 30}\right)}\text{,}\)</span> which gives <span class="process-math">\(d \approx \$719.46\)</span>
+</div> <div class="para">or <code class="code-inline tex2jax_ignore">=PMT(6%/12,12*30,120000)</code>
+</div> <div class="para">The amount still owed fifteen years later, is the present value of the fifteen years of remaining payments on the loan.</div> <div class="para">
+<span class="process-math">\(P = \frac{719.46\left(1-\left(1+\frac{6\%}{12}\right)^{-12 \times 15}\right)}{\frac{6\%}{12}}\text{,}\)</span> which gives <span class="process-math">\(P \approx \$85,258.54\)</span>
+</div> <div class="para">or <code class="code-inline tex2jax_ignore">=PV(6%/12,12*15,-719.46)</code>
+</div>
 </div></body>
 </html>

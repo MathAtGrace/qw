@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -13,49 +13,21 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.2.11.14.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.2.4.1</span><span class="period">.</span>
 </h4>
-<ol class="lower-alpha">
-<li>
-<div class="displaymath process-math" data-contains-math-knowls="">
+<div class="para">
+<span class="process-math">\(P = \$3000\text{,}\)</span> the initial deposit</div> <div class="para">
+<span class="process-math">\(r = 0.06\text{,}\)</span> 6% annual rate</div> <div class="para">
+<span class="process-math">\(n = 12\text{,}\)</span> 12 months in 1 year</div> <div class="para">
+<span class="process-math">\(t = 20\text{,}\)</span> since we’re looking for how much we’ll have after 20 years</div> <div class="para logical">
+<div class="para">To use a spreadsheet, we will use the formula like this</div>
+<pre class="code-display tex2jax_ignore">=FV(rate per period, number of periods, payment amount, present value)</pre>
+</div> <div class="para logical"><pre class="code-display tex2jax_ignore">=FV(0.06/12, 12*20, 0, 3000)</pre></div> <div class="para">and get a result of $9,930.61, rounded to the nearest cent.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:25%;margin-right:25%;"><div class="sbspanel top" style="width:100%;"><img src="external/financial_math/2_2/future_value.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div></div></div> <div class="para">Note that the output of the formula gives the answer with the opposite sign as the principal and payments. A negative number may be denoted with a negative sign or with the color red or parentheses. The signs may be used in accounting, but we will ignore them in this book.</div> <div class="para">To use a formula, we are looking for the future value, so we use the formula solved for A:</div> <div class="para logical"><div class="displaymath process-math">
 \begin{align*}
-A_{Breylan} \amp= 1200\left(1+\frac{0.046}{4}\right)^{52\times 15}\\
-\amp\approx \$2,383.06
+A\amp=3000\left(1+\frac{0.06}{12}\right)^{12\cdot20}\\
+\amp=\$9930.61
 \end{align*}
-</div>
-<p>Or, <code class="code-inline tex2jax_ignore">=FV(0.046/4,15*4,0,1200)</code></p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{align*}
-A_{Angad} \amp= 1200\left(1+\frac{0.0455}{52}\right)^{52*15}\\
-\amp\approx \$2,373.87
-\end{align*}
-</div>
-<p>Or, <code class="code-inline tex2jax_ignore">=FV(0.0455/52,15*52,0,1200)</code></p>
-<p>Breylan has an account balance of $2,383.06 and Angad has a balance of $2,373.87</p>
-</li>
-<li>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{align*}
-A_{Breylan} \amp= 1200\left(1+\frac{0.046}{4}\right)^{4\times 30}\\
-\amp\approx \$4,732.47
-\end{align*}
-</div>
-<p>Or, <code class="code-inline tex2jax_ignore">=FV(0.046/4,30*4,0,1200)</code></p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{align*}
-A_{Angad} \amp= 1200\left(1+\frac{0.0455}{52}\right)^{52*30}\\
-\amp\approx \$4,696.06
-\end{align*}
-</div>
-<p>Or, <code class="code-inline tex2jax_ignore">=FV(0.0455/52,30*52,0,1200)</code></p>
-<p>Breylan has an account balance of $4,732.47 and Angad has a balance of $4,696.06</p>
-</li>
-<li>
-<p>Breylan <code class="code-inline tex2jax_ignore">=EFFECT(0.046,4)</code>, which gives 4.68%</p>
-<p>Angad <code class="code-inline tex2jax_ignore">=EFFECT(0.0455,52)</code>, which gives 4.65%</p>
-<p>Breylan has an effective rate of 4.68% and Angad has an effective rate of 4.65%.</p>
-</li>
-</ol>
+</div></div> <div class="para">To use a calculator, you would enter the formulas including parentheses around any inside operations. You would enter</div> <div class="para logical"><pre class="code-display tex2jax_ignore">3000(1+(0.06/12))^(12*20)=9930.61</pre></div>
 </div>
 <span class="incontext"><a href="sec-finance-simple-compound.html#solution-37" class="internal">in-context</a></span>
 </body>

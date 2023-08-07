@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -10,7 +10,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like">
-<p>First, we need to find out the amount of the monthly payments for this loan.</p> <p><span class="process-math">\(d = \frac{120000\left(\frac{6\%}{12}\right)}{\left(1-\left(1+\frac{6\%}{12}\right)^{-12 \times 30}\right)}\text{,}\)</span> which gives <span class="process-math">\(d \approx \$719.46\)</span></p> <p>or <code class="code-inline tex2jax_ignore">=PMT(6%/12,12*30,120000)</code></p> <p>The amount still owed fifteen years later, is the present value of the fifteen years of remaining payments on the loan.</p> <p><span class="process-math">\(P = \frac{719.46\left(1-\left(1+\frac{6\%}{12}\right)^{-12 \times 15}\right)}{\frac{6\%}{12}}\text{,}\)</span> which gives <span class="process-math">\(P \approx \$85,258.54\)</span></p> <p>or <code class="code-inline tex2jax_ignore">=PV(6%/12,12*15,-719.46)</code></p>
-</div></body>
+<body class="ignore-math"><div class="solution solution-like"><div class="para logical"><ol class="lower-alpha">
+<li>
+<div class="para"><span class="process-math">\(\frac{100\left(\left(1+\frac{0.04}{12}\right)^{12*25}-1\right)}{\frac{0.04}{12}}\)</span></div>
+<div class="para">Or, <code class="code-inline tex2jax_ignore">=FV(0.04/12,12*25,100)</code>
+</div>
+<div class="para">Vanessa will have $51,412.95 when she turns 65.</div>
+</li>
+<li>
+<div class="para"><span class="process-math">\(\frac{100\left(\left(1+\frac{0.04}{12}\right)^{12*40}-1\right)}{\frac{0.04}{12}}\)</span></div>
+<div class="para"><code class="code-inline tex2jax_ignore">=FV(0.04/12,12*40,100)</code></div>
+<div class="para">Vanessa would have $118,196.13 if she had started saving when she was 25.</div>
+</li>
+</ol></div></div></body>
 </html>

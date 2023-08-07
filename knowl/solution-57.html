@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -13,23 +13,32 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.3.6.6.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.2.11.16.1</span><span class="period">.</span>
 </h4>
-<ol class="lower-alpha">
+<div class="para logical"><ol class="lower-alpha">
+<li><div class="para">
+<code class="code-inline tex2jax_ignore">=EFFECT(0.0345,4)</code>= 3.49% and <code class="code-inline tex2jax_ignore">=EFFECT(0.034,365)</code>= 3.46%. The effective rates are 3.49% and 3.46%.</div></li>
 <li>
-<p><span class="process-math">\(\frac{200\left(\left(1+\frac{0.05}{12}\right)^{12*20}-1\right)}{\left(\frac{0.05}{12}\right)}\)</span></p>
-<p>Or, <code class="code-inline tex2jax_ignore">=FV(0.05/12, 12*10, 200)</code></p>
-<p>After 10 years the balance will be $31,056.46.</p>
-</li>
-<li>
-<p>In 20 more years: <span class="process-math">\(31056.46\left(1+\frac{0.05}{12}\right)^{12*20}\)</span></p>
-<p>Or, <code class="code-inline tex2jax_ignore">=FV(0.05/12,12*20,0,31056.46)</code></p>
-<p>The final balance will be $84,245.00.</p>
-</li>
-<li><p><span class="process-math">\(84245 - 200*12*10\text{.}\)</span> You will earn $60,245 in interest.</p></li>
-<li><p><span class="process-math">\(60245/84245\text{.}\)</span> Your final balance will be about 71.5%. interest.</p></li>
-</ol>
+<div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+A\amp=5000\left(1+\frac{0.0345}{4}\right)^{4*10}\\
+\amp\approx \$7,049.51
+\end{align*}
+</div></div>
+<div class="para">Or, <code class="code-inline tex2jax_ignore">=FV(0.0345/4,10*4,0,5000)</code>
 </div>
-<span class="incontext"><a href="sec-finance-savings-plan.html#solution-57" class="internal">in-context</a></span>
+<div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+A\amp=5000\left(1+\frac{0.034}{365}\right)^{365*10}\\
+\amp\approx \$7,024.63
+\end{align*}
+</div></div>
+<div class="para">Or, <code class="code-inline tex2jax_ignore">=FV(0.034/365,10*365,0,5000)</code>
+</div>
+<div class="para">The account balances are $7,049.51 and $7,024.63.</div>
+</li>
+</ol></div>
+</div>
+<span class="incontext"><a href="sec-finance-simple-compound.html#solution-57" class="internal">in-context</a></span>
 </body>
 </html>

@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Apportionment</title>
@@ -14,48 +14,79 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Quantitative Wisdom">
 <meta property="book:author" content=" Dr. Ryan Johnson ">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
   },
-  chtml: {
-    scale: 0.88,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-},
+  }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script async="" src="https://cse.google.com/cse.js?cx=015103900096539427448:ngwuia10qci"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.13/pretext_search.js"></script><link href="https://pretextbook.org/css/0.4/pretext_search.css" rel="stylesheet" type="text/css">
-<script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
-</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/colors_blue_grey.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script async="" src="https://cse.google.com/cse.js?cx=015103900096539427448:ngwuia10qci"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.7/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/setcolors.css" rel="stylesheet" type="text/css">
 <!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
@@ -78,18 +109,134 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '5.0.1';
+eBookConfig.runestone_version = '7.0.7';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.6.2/runtime.66b619f51b746382.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.6.2/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.6.2/runestone.ecc6dff5cad8b815.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.6.2/637.0fa6cababf056764.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.6.2/runestone.3eb60bc006ae9a54.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.7/prefix-runtime.fd9ce61c3c71cb22.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.7/prefix-347.193e36c07abd0197.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.0.7/prefix-runestone.89acb6c6122954e4.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.7/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.0.7/prefix-runestone.8d2f742bc74f4a41.css">
 </head>
-<body class="pretext-book ignore-math has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\degree}[0]{^{\circ}}
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="qw.html"><span class="title">Quantitative Wisdom:</span> <span class="subtitle">Numerical literacy from the perspective of Biblical wisdom</span></a></h1>
+<p class="byline">Dr. Ryan Johnson</p>
+</div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" class="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms" class="searchterms"></span>
+</h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><a class="index-button button" href="index-1.html" title="Index"><span class="name">Index</span></a><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="democracy.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="democracy.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="sec-democracy-voting.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
+<div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\degree}[0]{^{\circ}}
 \newcommand{\Ccancel}[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
 \newcommand{\bluetext}[1]{\color{blue}{#1}} 
 \delimitershortfall-1sp
@@ -101,150 +248,388 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \newcommand{\sfrac}[2]{{#1}/{#2}}
 \)</span></div>
-<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
-<a id="logo-link" href=""></a><div class="title-container">
-<h1 class="heading"><a href="qw.html"><span class="title">Quantitative Wisdom:</span> <span class="subtitle">Numerical literacy from the perspective of Biblical wisdom</span></a></h1>
-<p class="byline">Dr. Ryan Johnson</p>
-</div>
-<div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
-<div class="searchbox"><div class="searchwidget">
-<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
-</div></div>
-<div id="searchresultsplaceholder" style="display: none">
-<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
-</h2>
-<div id="searchempty"><span>No results.</span></div>
-<ol id="searchresults"></ol>
-</div>
-</div></div>
-<nav id="primary-navbar" class="navbar"><div class="container">
-<div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="democracy.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="democracy.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-democracy-voting.html" title="Next">Next</a></span>
-</div>
-</div>
-<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="democracy.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="democracy.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-democracy-voting.html" title="Next">Next</a>
-</div>
-</div></nav></header><div class="page">
-<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
-<nav id="toc"><ul>
-<li class="link frontmatter">
-<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
-<li><a href="dedication-1.html" data-scroll="dedication-1" class="internal">Dedication</a></li>
-<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1" class="internal">Acknowledgements</a></li>
-<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
-<li><a href="preface-1.html" data-scroll="preface-1" class="internal">Our goals</a></li>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural">
+<li>
+<div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="dedication-1.html" class="internal"><span class="title">Dedication</span></a></div></li>
+<li><div class="toc-item"><a href="acknowledgement-1.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li><div class="toc-item"><a href="preface-1.html" class="internal"><span class="title">Our goals</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="ch-introduction.html" data-scroll="ch-introduction" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a><ul><li><a href="time.html" data-scroll="time" class="internal">Time Management Lab</a></li></ul>
-</li>
-<li class="link">
-<a href="ch-numbers.html" data-scroll="ch-numbers" class="internal"><span class="codenumber">2</span> <span class="title">Numbers</span></a><ul><li><a href="sec-problem-solving.html" data-scroll="sec-problem-solving" class="internal">Problem Solving</a></li></ul>
-</li>
-<li class="link">
-<a href="financial_math.html" data-scroll="financial_math" class="internal"><span class="codenumber">3</span> <span class="title">Finance</span></a><ul>
-<li><a href="sec-finance-intro-spreadsheet.html" data-scroll="sec-finance-intro-spreadsheet" class="internal">Introduction to Spreadsheets</a></li>
-<li><a href="sec-finance-simple-compound.html" data-scroll="sec-finance-simple-compound" class="internal">Simple and Compound Interest</a></li>
-<li><a href="sec-finance-savings-plan.html" data-scroll="sec-finance-savings-plan" class="internal">Savings Plans</a></li>
-<li><a href="sec-3-4-loans.html" data-scroll="sec-3-4-loans" class="internal">Loan Payments</a></li>
-<li><a href="chap_two_income_taxes.html" data-scroll="chap_two_income_taxes" class="internal">Income Taxes</a></li>
+<li>
+<div class="toc-item"><a href="ch-introduction.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="time.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Time Management Lab</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="time.html#subsec-Rule-of-60" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Rule of 60</span></a></div></li>
+<li><div class="toc-item"><a href="time.html#subsec-Master-Calendar" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Master Calendar</span></a></div></li>
+<li><div class="toc-item"><a href="time.html#subsec-Schedule" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Schedule</span></a></div></li>
+<li><div class="toc-item"><a href="time.html#subsec-" class="internal"><span class="codenumber">1.1.4</span> <span class="title">20 Tips for Managing Your Time</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="data.html" data-scroll="data" class="internal"><span class="codenumber">4</span> <span class="title">Data</span></a><ul>
-<li><a href="sec-4-1-statistical-process.html" data-scroll="sec-4-1-statistical-process" class="internal">Overview of the Statistical Process</a></li>
-<li><a href="sec-4-2-describing-data.html" data-scroll="sec-4-2-describing-data" class="internal">Describing Data</a></li>
-<li><a href="sec-4-3-measure-of-center.html" data-scroll="sec-4-3-measure-of-center" class="internal">Summary Statistics: Measures of Center</a></li>
-<li><a href="sec-4-4-measure-of-variation.html" data-scroll="sec-4-4-measure-of-variation" class="internal">Summary Statistics: Measures of Variation</a></li>
+<li><div class="toc-item"><a href="mindset.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Mindset Lab</span></a></div></li>
+<li><div class="toc-item"><a href="sec-math-theology.html" class="internal"><span class="codenumber">1.3</span> <span class="title">God and Math</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="ch-models.html" data-scroll="ch-models" class="internal"><span class="codenumber">5</span> <span class="title">Math Models</span></a><ul>
-<li><a href="sec-models-linear.html" data-scroll="sec-models-linear" class="internal">Function Notation and Linear Functions</a></li>
-<li><a href="sec-models-exponential.html" data-scroll="sec-models-exponential" class="internal">Exponential Growth and Decay</a></li>
-<li><a href="sec-models-exponential-2.html" data-scroll="sec-models-exponential-2" class="internal">Exponential Models</a></li>
-<li><a href="sec-5-4-periodic-functions.html" data-scroll="sec-5-4-periodic-functions" class="internal">Periodic Functions</a></li>
+<li>
+<div class="toc-item"><a href="ch-numbers.html" class="internal"><span class="codenumber">2</span> <span class="title">Numbers</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-problem-solving.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Problem Solving</span></a></div></li>
+<li><div class="toc-item"><a href="sec_orders_of_mag.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Orders of Magnitude</span></a></div></li>
+<li><div class="toc-item"><a href="sec_water_footprint.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Proportional Reasoning</span></a></div></li>
+<li>
+<div class="toc-item"><a href="unit-conversion.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Unit Conversion</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="unit-conversion.html#subsection-5" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Equivalences Table</span></a></div></li>
+<li><div class="toc-item"><a href="unit-conversion.html#subsection-6" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Metric Prefixes</span></a></div></li>
+<li><div class="toc-item"><a href="unit-conversion.html#subsection-7" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Rates</span></a></div></li>
+<li><div class="toc-item"><a href="unit-conversion.html#subsection-8" class="internal"><span class="codenumber">2.4.4</span> <span class="title">Using Dimensional Analysis for Area and Volume units</span></a></div></li>
 </ul>
 </li>
-<li class="link">
-<a href="democracy.html" data-scroll="democracy" class="internal"><span class="codenumber">6</span> <span class="title">Democracy</span></a><ul>
-<li><a href="sec-democracy-apportionment.html" data-scroll="sec-democracy-apportionment" class="active">Apportionment</a></li>
-<li><a href="sec-democracy-voting.html" data-scroll="sec-democracy-voting" class="internal">Voting Methods</a></li>
-<li><a href="sec-democracy-popular-vote.html" data-scroll="sec-democracy-popular-vote" class="internal">The Popular Vote, Electoral College and Electoral Power</a></li>
-<li><a href="sec-democracy-gerrymandering.html" data-scroll="sec-democracy-gerrymandering" class="internal">Gerrymandering and How to Measure It</a></li>
+<li><div class="toc-item"><a href="cost-of-driving.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Cost of Driving</span></a></div></li>
+<li><div class="toc-item"><a href="home-improvements.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Home Improvements</span></a></div></li>
+<li><div class="toc-item"><a href="sec_numbers_percentages.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Percentages</span></a></div></li>
 </ul>
 </li>
-<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Back Matter</span></a></li>
-<li class="link"><a href="solutions-1.html" data-scroll="solutions-1" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></li>
-<li class="link"><a href="solutions-2.html" data-scroll="solutions-2" class="internal"><span class="codenumber">B</span> <span class="title">Solutions to Odd Exercises</span></a></li>
-<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
-<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
-</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
-</div></div>
-<main class="main"><div id="content" class="pretext-content">
+<li>
+<div class="toc-item"><a href="financial_math.html" class="internal"><span class="codenumber">3</span> <span class="title">Finance</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="sec-finance-intro-spreadsheet.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Introduction to Spreadsheets</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-finance-intro-spreadsheet.html#subsection-9" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Basic Calculations</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-intro-spreadsheet.html#subsection-10" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Cell References</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-intro-spreadsheet.html#subsection-11" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Cell Formatting</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-intro-spreadsheet.html#subsection-12" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Fill-Down Feature</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-intro-spreadsheet.html#subsection-13" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Formulas</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-intro-spreadsheet.html#exercises-1" class="internal"><span class="codenumber">3.1.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-finance-simple-compound.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Simple and Compound Interest</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-14" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Simple Interest</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-15" class="internal"><span class="codenumber">3.2.2</span> <span class="title">APR – Annual Percentage Rate</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-16" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Compound Interest</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-17" class="internal"><span class="codenumber">3.2.4</span> <span class="title">The Future Value Spreadsheet Formula</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-18" class="internal"><span class="codenumber">3.2.5</span> <span class="title">Comparing Simple and Compound Interest</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-19" class="internal"><span class="codenumber">3.2.6</span> <span class="title">Finding the Principal, or Present Value</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-20" class="internal"><span class="codenumber">3.2.7</span> <span class="title">The Present Value Spreadsheet Formula</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-21" class="internal"><span class="codenumber">3.2.8</span> <span class="title">Continuously Compounded Interest</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-22" class="internal"><span class="codenumber">3.2.9</span> <span class="title">Finding the Amount of Interest Earned and the Percentage</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#subsection-23" class="internal"><span class="codenumber">3.2.10</span> <span class="title">Effective Rate</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-simple-compound.html#exercises-2" class="internal"><span class="codenumber">3.2.11</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-finance-savings-plan.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Savings Plans</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-finance-savings-plan.html#subsec-Warmup" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Warmup</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-savings-plan.html#subsection-25" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Savings Plan Formulas</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-savings-plan.html#subsection-26" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Finding Payment Amounts Usings Spreadsheets and Formulas</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-savings-plan.html#subsection-27" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Comparing Lump Sum and Regular Savings Payments</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-savings-plan.html#subsection-28" class="internal"><span class="codenumber">3.3.5</span> <span class="title">Deriving the Savings Plan Formula (Optional)</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finance-savings-plan.html#exercises-3" class="internal"><span class="codenumber">3.3.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-3-4-loans.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Loan Payments</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-3-4-loans.html#subsection-29" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Installment Loans</span></a></div></li>
+<li><div class="toc-item"><a href="sec-3-4-loans.html#subsection-30" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Loan Formulas</span></a></div></li>
+<li><div class="toc-item"><a href="sec-3-4-loans.html#subsection-31" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Remaining Loan Balance</span></a></div></li>
+<li><div class="toc-item"><a href="sec-3-4-loans.html#subsection-32" class="internal"><span class="codenumber">3.4.4</span> <span class="title">Credit Cards</span></a></div></li>
+<li><div class="toc-item"><a href="sec-3-4-loans.html#subsection-33" class="internal"><span class="codenumber">3.4.5</span> <span class="title">Summary of Spreadsheet Formulas</span></a></div></li>
+<li><div class="toc-item"><a href="sec-3-4-loans.html#subsection-34" class="internal"><span class="codenumber">3.4.6</span> <span class="title">When to use the formulas: What is the question asking?</span></a></div></li>
+<li><div class="toc-item"><a href="sec-3-4-loans.html#subsection-35" class="internal"><span class="codenumber">3.4.7</span> <span class="title">Summary of Mathematical Formulas</span></a></div></li>
+<li><div class="toc-item"><a href="sec-3-4-loans.html#subsection-36" class="internal"><span class="codenumber">3.4.8</span> <span class="title">When to use the formulas: What is the question asking?</span></a></div></li>
+<li><div class="toc-item"><a href="sec-3-4-loans.html#exercises-4" class="internal"><span class="codenumber">3.4.9</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="chap_two_income_taxes.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Income Taxes</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-37" class="internal"><span class="codenumber">3.5.1</span> <span class="title">A Very Brief History of Taxes</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-38" class="internal"><span class="codenumber">3.5.2</span> <span class="title">Types of Income Tax</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-39" class="internal"><span class="codenumber">3.5.3</span> <span class="title">Federal Income Tax</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-40" class="internal"><span class="codenumber">3.5.4</span> <span class="title">State Income Tax</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-41" class="internal"><span class="codenumber">3.5.5</span> <span class="title">Municipal Income Tax</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-42" class="internal"><span class="codenumber">3.5.6</span> <span class="title">Calculating Federal Income Tax</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-43" class="internal"><span class="codenumber">3.5.7</span> <span class="title">Gross Income</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-44" class="internal"><span class="codenumber">3.5.8</span> <span class="title">Adjusted Gross Income</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-45" class="internal"><span class="codenumber">3.5.9</span> <span class="title">Taxable Income</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-46" class="internal"><span class="codenumber">3.5.10</span> <span class="title">Filing Status</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-47" class="internal"><span class="codenumber">3.5.11</span> <span class="title">Tax Tables</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-48" class="internal"><span class="codenumber">3.5.12</span> <span class="title">Tax Credits</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#subsection-49" class="internal"><span class="codenumber">3.5.13</span> <span class="title">Calculating a Refund or Payment Due</span></a></div></li>
+<li><div class="toc-item"><a href="chap_two_income_taxes.html#exercises-5" class="internal"><span class="codenumber">3.5.14</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="data.html" class="internal"><span class="codenumber">4</span> <span class="title">Data</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="sec-4-1-statistical-process.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Overview of the Statistical Process</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-50" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Statistical Process</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-51" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Population</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-52" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Parameter</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-53" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Sample</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-54" class="internal"><span class="codenumber">4.1.5</span> <span class="title">Statistic</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-55" class="internal"><span class="codenumber">4.1.6</span> <span class="title">Sampling</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-56" class="internal"><span class="codenumber">4.1.7</span> <span class="title">Sampling Methods</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-57" class="internal"><span class="codenumber">4.1.8</span> <span class="title">Simple random sample (SRS)</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-58" class="internal"><span class="codenumber">4.1.9</span> <span class="title">Stratified sampling</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-59" class="internal"><span class="codenumber">4.1.10</span> <span class="title">Systematic sampling</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-60" class="internal"><span class="codenumber">4.1.11</span> <span class="title">Convenience sampling</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-61" class="internal"><span class="codenumber">4.1.12</span> <span class="title">Statistical Bias</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-62" class="internal"><span class="codenumber">4.1.13</span> <span class="title">Types of bias</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-63" class="internal"><span class="codenumber">4.1.14</span> <span class="title">Observational Studies</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-64" class="internal"><span class="codenumber">4.1.15</span> <span class="title">Experiments</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-65" class="internal"><span class="codenumber">4.1.16</span> <span class="title">Confounding</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-66" class="internal"><span class="codenumber">4.1.17</span> <span class="title">Control group</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-67" class="internal"><span class="codenumber">4.1.18</span> <span class="title">Placebo effect</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-68" class="internal"><span class="codenumber">4.1.19</span> <span class="title">Placebo and Placebo-controlled experiments</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-69" class="internal"><span class="codenumber">4.1.20</span> <span class="title">Blind studies</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#subsection-70" class="internal"><span class="codenumber">4.1.21</span> <span class="title">Margin of Error and Confidence Intervals</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-1-statistical-process.html#exercises-6" class="internal"><span class="codenumber">4.1.22</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-4-2-describing-data.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Describing Data</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-71" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Types of Data</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-72" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Presenting Categorical Data</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-73" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Frequency Tables</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-74" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Relative Frequency Tables</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-75" class="internal"><span class="codenumber">4.2.5</span> <span class="title">Bar graphs</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-76" class="internal"><span class="codenumber">4.2.6</span> <span class="title">Pie Charts</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-77" class="internal"><span class="codenumber">4.2.7</span> <span class="title">Using a Spreadsheet to Make Bar Charts and Pie Charts</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-78" class="internal"><span class="codenumber">4.2.8</span> <span class="title">Misleading Graphs</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-79" class="internal"><span class="codenumber">4.2.9</span> <span class="title">Perceptual Distortion</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-80" class="internal"><span class="codenumber">4.2.10</span> <span class="title">Misleading Scale</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-81" class="internal"><span class="codenumber">4.2.11</span> <span class="title">Stacked Bar Graphs</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-82" class="internal"><span class="codenumber">4.2.12</span> <span class="title">Presenting Quantitative Data</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-83" class="internal"><span class="codenumber">4.2.13</span> <span class="title">Histograms</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-84" class="internal"><span class="codenumber">4.2.14</span> <span class="title">Class Intervals</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-85" class="internal"><span class="codenumber">4.2.15</span> <span class="title">Histograms Using Technology</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-86" class="internal"><span class="codenumber">4.2.16</span> <span class="title">The Shape of a Distribution</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-87" class="internal"><span class="codenumber">4.2.17</span> <span class="title">Modality</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-88" class="internal"><span class="codenumber">4.2.18</span> <span class="title">Symmetry</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-89" class="internal"><span class="codenumber">4.2.19</span> <span class="title">Skewness</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-90" class="internal"><span class="codenumber">4.2.20</span> <span class="title">Skewed to the Left</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-91" class="internal"><span class="codenumber">4.2.21</span> <span class="title">Skewed to the Right</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-92" class="internal"><span class="codenumber">4.2.22</span> <span class="title">The Normal Distribution</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#subsection-93" class="internal"><span class="codenumber">4.2.23</span> <span class="title">Outlier</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-2-describing-data.html#exercises-7" class="internal"><span class="codenumber">4.2.24</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-4-3-measure-of-center.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Summary Statistics: Measures of Center</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-4-3-measure-of-center.html#subsection-94" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Calculating Summary Statistics</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-3-measure-of-center.html#subsection-95" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Measures of Center</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-3-measure-of-center.html#subsection-96" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Mode</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-3-measure-of-center.html#subsection-97" class="internal"><span class="codenumber">4.3.4</span> <span class="title">Mean</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-3-measure-of-center.html#subsection-98" class="internal"><span class="codenumber">4.3.5</span> <span class="title">Median</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-3-measure-of-center.html#subsection-99" class="internal"><span class="codenumber">4.3.6</span> <span class="title">The Relationship Between the Mean and the Median</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-3-measure-of-center.html#exercises-8" class="internal"><span class="codenumber">4.3.7</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-4-4-measure-of-variation.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Summary Statistics: Measures of Variation</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#subsection-100" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Measures of Variation</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#subsection-101" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Standard Deviation</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#subsection-102" class="internal"><span class="codenumber">4.4.3</span> <span class="title">Range</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#subsection-103" class="internal"><span class="codenumber">4.4.4</span> <span class="title">Quartiles and the Interquartile Range</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#subsection-104" class="internal"><span class="codenumber">4.4.5</span> <span class="title">The Five-Number Summary and Boxplots</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#subsection-105" class="internal"><span class="codenumber">4.4.6</span> <span class="title">Modified Boxplot (Optional)</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#subsection-106" class="internal"><span class="codenumber">4.4.7</span> <span class="title">Percentiles</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#subsection-107" class="internal"><span class="codenumber">4.4.8</span> <span class="title">Comparing Distributions</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#subsection-108" class="internal"><span class="codenumber">4.4.9</span> <span class="title">Z-Scores</span></a></div></li>
+<li><div class="toc-item"><a href="sec-4-4-measure-of-variation.html#exercises-9" class="internal"><span class="codenumber">4.4.10</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-models.html" class="internal"><span class="codenumber">5</span> <span class="title">Math Models</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="sec-models-linear.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Function Notation and Linear Functions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-models-linear.html#subsection-109" class="internal"><span class="codenumber">5.1.1</span> <span class="title">What is a Function?</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-linear.html#subsection-110" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Math as a Language</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-linear.html#subsection-111" class="internal"><span class="codenumber">5.1.3</span> <span class="title">The Grammar of Function Notation</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-linear.html#subsection-112" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Average Rate of Change, Inuitive Knowledge</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-linear.html#subsection-113" class="internal"><span class="codenumber">5.1.5</span> <span class="title">Three Representations of a Relationship</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-linear.html#subsection-114" class="internal"><span class="codenumber">5.1.6</span> <span class="title">Linear Equations and Slope</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-linear.html#subsection-115" class="internal"><span class="codenumber">5.1.7</span> <span class="title">Slope Intercept Equation of a Line</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-linear.html#exercises-10" class="internal"><span class="codenumber">5.1.8</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-models-exponential.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Exponential Growth and Decay</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-models-exponential.html#subsection-116" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Exponential Growth</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-exponential.html#subsection-117" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Growth Factors</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-exponential.html#subsection-118" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Percent Increase</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-exponential.html#subsection-119" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Exponential Decay</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-exponential.html#subsection-120" class="internal"><span class="codenumber">5.2.5</span> <span class="title">Decay Factors</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-exponential.html#subsection-121" class="internal"><span class="codenumber">5.2.6</span> <span class="title">Comparing Linear Growth and Exponential Growth</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-exponential.html#sec-5-2-exponential-exercises" class="internal"><span class="codenumber">5.2.7</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-models-exponential-2.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Exponential Models</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-models-exponential-2.html#subsection-122" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Fitting an Exponential Function through Two Points</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-exponential-2.html#subsection-123" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Doubling Time</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-exponential-2.html#subsection-124" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Half-Life</span></a></div></li>
+<li><div class="toc-item"><a href="sec-models-exponential-2.html#section-4-5-exercises" class="internal"><span class="codenumber">5.3.4</span> <span class="title">Homework 4.5</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="sec-5-4-periodic-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Periodic Functions</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="democracy.html" class="internal"><span class="codenumber">6</span> <span class="title">Democracy</span></a></div>
+<ul class="structural">
+<li class="active">
+<div class="toc-item"><a href="sec-democracy-apportionment.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Apportionment</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#subsection-125" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Historical Context for This Chapter</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#subsection-126" class="internal"><span class="codenumber">6.1.2</span> <span class="title">What is Apportionment?</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#subsection-127" class="internal"><span class="codenumber">6.1.3</span> <span class="title">Hamilton’s Method</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#subsection-128" class="internal"><span class="codenumber">6.1.4</span> <span class="title">Problems with Hamilton’s Method</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#subsection-129" class="internal"><span class="codenumber">6.1.5</span> <span class="title">Jefferson’s Method</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#subsection-130" class="internal"><span class="codenumber">6.1.6</span> <span class="title">Webster’s Method</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#subsection-131" class="internal"><span class="codenumber">6.1.7</span> <span class="title">Land Rights, Citizenship and Voting Rights</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#subsection-132" class="internal"><span class="codenumber">6.1.8</span> <span class="title">Huntington-Hill Method</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#subsection-133" class="internal"><span class="codenumber">6.1.9</span> <span class="title">What is the Geometric Mean?</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-apportionment.html#exercises-13" class="internal"><span class="codenumber">6.1.10</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-democracy-voting.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Voting Methods</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-134" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Voting Rights</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-135" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Ranked Choice Ballots</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-136" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Preference Schedule</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-137" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Plurality Method</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-138" class="internal"><span class="codenumber">6.2.5</span> <span class="title">How Many Votes are Needed to Win?</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-139" class="internal"><span class="codenumber">6.2.6</span> <span class="title">Insincere Voting</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-140" class="internal"><span class="codenumber">6.2.7</span> <span class="title">Instant Runoff Method</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-141" class="internal"><span class="codenumber">6.2.8</span> <span class="title">Borda Count (Point System)</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-142" class="internal"><span class="codenumber">6.2.9</span> <span class="title">Pairwise Comparison: Copeland’s Method</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-143" class="internal"><span class="codenumber">6.2.10</span> <span class="title">Which Method is the Most Fair?</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#subsection-144" class="internal"><span class="codenumber">6.2.11</span> <span class="title">Primaries and Sequential Voting</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-voting.html#exercises-14" class="internal"><span class="codenumber">6.2.12</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-democracy-popular-vote.html" class="internal"><span class="codenumber">6.3</span> <span class="title">The Popular Vote, Electoral College and Electoral Power</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-democracy-popular-vote.html#subsection-145" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Choosing the U.S. President</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-popular-vote.html#subsection-146" class="internal"><span class="codenumber">6.3.2</span> <span class="title">How Electoral Votes are Determined</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-popular-vote.html#subsection-147" class="internal"><span class="codenumber">6.3.3</span> <span class="title">Electoral Power</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-popular-vote.html#exercises-15" class="internal"><span class="codenumber">6.3.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-democracy-gerrymandering.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Gerrymandering and How to Measure It</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-democracy-gerrymandering.html#subsection-148" class="internal"><span class="codenumber">6.4.1</span> <span class="title">Forming State Legislative Districts</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-gerrymandering.html#subsection-149" class="internal"><span class="codenumber">6.4.2</span> <span class="title">Proportionality and Fairness</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-gerrymandering.html#subsection-150" class="internal"><span class="codenumber">6.4.3</span> <span class="title">How to Gerrymander</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-gerrymandering.html#subsection-151" class="internal"><span class="codenumber">6.4.4</span> <span class="title">The Efficiency Gap</span></a></div></li>
+<li><div class="toc-item"><a href="sec-democracy-gerrymandering.html#exercises-16" class="internal"><span class="codenumber">6.4.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Back Matter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="solutions-1.html" class="internal"><span class="codenumber">A</span> <span class="title">Selected Hints</span></a></div></li>
+<li><div class="toc-item"><a href="solutions-2.html" class="internal"><span class="codenumber">B</span> <span class="title">Solutions to Odd Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="index-1.html" class="internal"><span class="title">Index</span></a></div></li>
+<li><div class="toc-item"><a href="colophon-2.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
 <section class="section" id="sec-democracy-apportionment"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">6.1</span> <span class="title">Apportionment</span>
 </h2>
-<article class="objectives goal-like" id="objectives-12"><h3 class="heading">
+<article class="objectives goal-like" id="objectives-19"><h3 class="heading">
 <span class="type">Objectives:</span><span class="space"> </span><span class="title">Section 6.1</span>
 </h3>
-<div class="introduction" id="introduction-44"><p id="p-3603">Students will be able to:</p></div>
+<div class="introduction" id="introduction-62"><div class="para" id="p-3906">Students will be able to:</div></div>
 <ul class="disc">
-<li id="li-1551"><p id="p-3604">Apportion representatives using Hamilton's method</p></li>
-<li id="li-1552"><p id="p-3605">Apportion representatives using Jefferson's method</p></li>
-<li id="li-1553"><p id="p-3606">Apportion representatives using Webster's method</p></li>
-<li id="li-1554"><p id="p-3607">Apportion representatives using the Hill-Huntington Method</p></li>
-</ul></article><section class="subsection" id="subsection-121"><h3 class="heading hide-type">
+<li id="li-1743"><div class="para" id="p-3907">Apportion representatives using Hamilton’s method</div></li>
+<li id="li-1744"><div class="para" id="p-3908">Apportion representatives using Jefferson’s method</div></li>
+<li id="li-1745"><div class="para" id="p-3909">Apportion representatives using Webster’s method</div></li>
+<li id="li-1746"><div class="para" id="p-3910">Apportion representatives using the Hill-Huntington Method</div></li>
+</ul></article><section class="subsection" id="subsection-125"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.1.1</span> <span class="title">Historical Context for This Chapter</span>
 </h3>
-<p id="p-3608">The U.S. government was officially formed in 1787. During the <em class="alert">Constitutional Convention</em>, the framers were tasked with making decisions on the three branches of government and how people (or those considered to be people) would be represented. At that time only white men with property were allowed to vote.</p>
-<p id="p-3609">In creating the Legislative Branch of government, it was decided that Congress would be made up of the Senate and the House of Representatives. Representation for the <em class="alert">Senate</em> would be <em class="alert">equal</em> with two senators per state. To account for the different sizes of the states, the representation in the <em class="alert">House of Representatives</em> would be <em class="alert">proportional</em> to the state's population, but there was a controversy over how to count the population.</p>
-<blockquote class="blockquote" id="blockquote-7">
-<p id="p-3610">Representatives and direct Taxes shall be apportioned among the several States which may be included within this Union, according to their respective Numbers, which shall be determined by adding to the whole Number of free Persons, including those bound to Service for a Term of Years, and excluding Indians not taxed, three fifths of all other Persons.1 The actual Enumeration shall be made within three Years after the first Meeting of the Congress of the United States, and within every subsequent Term of ten Years, in such Manner as they shall by Law direct. The Number of Representatives shall not exceed one for every thirty Thousand, but each State shall have at Least one Representative; and until such enumeration shall be made, the State of New Hampshire shall be entitled to chuse three, Massachusetts eight, Rhode Island and Providence Plantations one, Connecticut five, New-York six, New Jersey four, Pennsylvania eight, Delaware one, Maryland six, Virginia ten, North Carolina five, South Carolina five, and Georgia three.</p> <p id="p-3611"><cite class="attribution">United States Constitution, Article I, Section 2, Clause 3</cite></p>
-</blockquote></section><section class="subsection" id="subsection-122"><h3 class="heading hide-type">
+<div class="para" id="p-3911">The U.S. government was officially formed in 1787. During the <em class="alert">Constitutional Convention,</em> the framers were tasked with making decisions on the three branches of government and how people (or those considered to be people) would be represented. At that time only white men with property were allowed to vote.</div>
+<div class="para" id="p-3912">In creating the Legislative Branch of government, it was decided that Congress would be made up of the Senate and the House of Representatives. Representation for the <em class="alert">Senate</em> would be <em class="alert">equal</em> with two senators per state. To account for the different sizes of the states, the representation in the <em class="alert">House of Representatives</em> would be <em class="alert">proportional</em> to the state’s population, but there was a controversy over how to count the population.</div>
+<blockquote class="blockquote" id="blockquote-25">
+<div class="para" id="p-3913">Representatives and direct Taxes shall be apportioned among the several States which may be included within this Union, according to their respective Numbers, which shall be determined by adding to the whole Number of free Persons, including those bound to Service for a Term of Years, and excluding Indians not taxed, three fifths of all other Persons. The actual Enumeration shall be made within three Years after the first Meeting of the Congress of the United States, and within every subsequent Term of ten Years, in such Manner as they shall by Law direct. The Number of Representatives shall not exceed one for every thirty Thousand, but each State shall have at Least one Representative; and until such enumeration shall be made, the State of New Hampshire shall be entitled to chuse three, Massachusetts eight, Rhode Island and Providence Plantations one, Connecticut five, New-York six, New Jersey four, Pennsylvania eight, Delaware one, Maryland six, Virginia ten, North Carolina five, South Carolina five, and Georgia three.</div> <cite class="attribution">―United States Constitution, Article I, Section 2, Clause 3</cite>
+</blockquote></section><section class="subsection" id="subsection-126"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.1.2</span> <span class="title">What is Apportionment?</span>
 </h3>
-<p id="p-3612">The number of representatives each state gets is based on its population, so once the framers decided how to count the population, they had to figure out how to divide up the representatives. This math problem is called apportionment.</p>
-<p id="p-3613"><em class="alert">Apportionment</em> is the problem of dividing up a fixed number of things among groups of different sizes. In the United States, there is a certain number of representatives as stated in the constitution, currently 435, and they need to be divided fairly among the 50 states. Since the states are different sizes, and we cannot use fractions of people, this is not an easy task. In addition, the population in each state may change over time. Every 10 years after the census is taken, the representatives are reapportioned.</p>
-<p id="p-3614">The apportionment problem comes up in a variety of non-political areas too. Here are the rules for apportionment in general.</p>
+<div class="para" id="p-3914">The number of representatives each state gets is based on its population, so once the framers decided how to count the population, they had to figure out how to divide up the representatives. This math problem is called apportionment.</div>
+<div class="para" id="p-3915">
+<em class="alert">Apportionment</em> is the problem of dividing up a fixed number of things among groups of different sizes. In the United States, there is a certain number of representatives as stated in the constitution, currently 435, and they need to be divided fairly among the 50 states. Since the states are different sizes, and we cannot use fractions of people, this is not an easy task. In addition, the population in each state may change over time. Every 10 years after the census is taken, the representatives are reapportioned.</div>
+<div class="para" id="p-3916">The apportionment problem comes up in a variety of non-political areas too. Here are the rules for apportionment in general.</div>
 <article class="assemblage assemblage-like" id="assemblage-33"><h4 class="heading"><span class="title">Apportionment rules.</span></h4>
-<ol id="p-3615" class="decimal">
-<li id="li-1555"><p id="p-3616">The things being divided up can exist only in whole numbers.</p></li>
-<li id="li-1556"><p id="p-3617">We must use all of the things being divided up, and we cannot use any more.</p></li>
-<li id="li-1557"><p id="p-3618">Each group must get at least one of the things being divided up.</p></li>
-<li id="li-1558"><p id="p-3619">The number of things assigned to each group should be at least approximately proportional to the population of the group. (Exact proportionality isn't possible because of the whole number requirement, but we should try to be close.)</p></li>
-</ol></article><p id="p-3620">In terms of the apportionment of the United States House of Representatives, these rules imply:</p>
+<div class="para logical" id="p-3917"><ol class="decimal">
+<li id="li-1747"><div class="para" id="p-3918">The things being divided up can exist only in whole numbers.</div></li>
+<li id="li-1748"><div class="para" id="p-3919">We must use all of the things being divided up, and we cannot use any more.</div></li>
+<li id="li-1749"><div class="para" id="p-3920">Each group must get at least one of the things being divided up.</div></li>
+<li id="li-1750"><div class="para" id="p-3921">The number of things assigned to each group should be at least approximately proportional to the population of the group. (Exact proportionality isn’t possible because of the whole number requirement, but we should try to be close.)</div></li>
+</ol></div></article><div class="para logical" id="p-3922">
+<div class="para">In terms of the apportionment of the United States House of Representatives, these rules imply:</div>
 <ol class="decimal">
-<li id="li-1559"><p id="p-3621">We can only have whole representatives (a state can't have 3.4 representatives).</p></li>
-<li id="li-1560"><p id="p-3622">We can only use the 435 representatives available.</p></li>
-<li id="li-1561"><p id="p-3623">Every state gets at least one representative.</p></li>
-<li id="li-1562"><p id="p-3624">The number of representatives each state gets should be approximately proportional to the state population. This way, the number of constituents each representative has should be approximately equal.</p></li>
+<li id="li-1751"><div class="para" id="p-3923">We can only have whole representatives (a state can’t have 3.4 representatives).</div></li>
+<li id="li-1752"><div class="para" id="p-3924">We can only use the 435 representatives available.</div></li>
+<li id="li-1753"><div class="para" id="p-3925">Every state gets at least one representative.</div></li>
+<li id="li-1754"><div class="para" id="p-3926">The number of representatives each state gets should be approximately proportional to the state population. This way, the number of constituents each representative has should be approximately equal.</div></li>
 </ol>
-<p id="p-3625">We will look at four ways of solving the apportionment problem, developed by different people: Hamilton, Jefferson, Webster, and the Huntington-Hill method that is used today. We will continue to look at U.S. history throughout this section including Hamilton, Jefferson and Webster's relationship to slavery.</p></section><section class="subsection" id="subsection-123"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">6.1.3</span> <span class="title">Hamilton's Method</span>
+</div>
+<div class="para" id="p-3927">We will look at four ways of solving the apportionment problem, developed by different people: Hamilton, Jefferson, Webster, and the Huntington-Hill method that is used today. We will continue to look at U.S. history throughout this section including Hamilton, Jefferson and Webster’s relationship to slavery.</div></section><section class="subsection" id="subsection-127"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">6.1.3</span> <span class="title">Hamilton’s Method</span>
 </h3>
-<p id="p-3626">Alexander Hamilton (1755 - 1804) was raised in St. Croix in the U.S. Virgin Islands by a poor family. He was motivated by his low socioeconomic status to work himself into a higher social standing. He eventually came to the colonies and worked himself into circles of wealth and influence. While Hamilton wasn't pro-slavery and considered himself an abolitionist, when choosing between his societal status and moral obligation, he chose the former.</p>
-<p id="p-3627">He wed Elizabeth Schuyler, who was from a prominent family who owned slaves. He was involved with the transactions of slaves for his in-laws which further muddled his anti-slavery stance. Furthermore, Hamilton also traded and sold slaves as part of his duties for the Continental Army.</p>
-<p id="p-3628">Alexander Hamilton proposed the method that now bears his name. His method was approved by Congress in 1791 but was vetoed by President Washington. It was later adopted in 1852 and used through 1910. He begins by determining, to several decimal places, how many people each representative should represent (the divisor).</p>
-<article class="assemblage assemblage-like" id="assemblage-34"><h4 class="heading"><span class="title">Hamilton's Method.</span></h4>
-<ol id="p-3629" class="decimal">
-<li id="li-1563"><p id="p-3630">Determine how many people each representative should represent. Do this by dividing the total population of all the states by the total number of representatives. This answer is called the <em class="alert">divisor</em>.</p></li>
-<li id="li-1564">
-<p id="p-3631">Divide each state's population by the divisor to determine how many representatives it should have. Record this answer to several decimal places. This answer is called the <em class="alert">quota</em>.</p>
-<p id="p-3632"><em class="emphasis">Since we can only allocate whole representatives, Hamilton resolved the whole number problem as follows:</em></p>
+<div class="para" id="p-3928">Alexander Hamilton (1755 - 1804) was raised in St. Croix in the U.S. Virgin Islands by a poor family. He was motivated by his low socioeconomic status to work himself into a higher social standing. He eventually came to the colonies and worked himself into circles of wealth and influence. While Hamilton wasn’t pro-slavery and considered himself an abolitionist, when choosing between his societal status and moral obligation, he chose the former.</div>
+<div class="para" id="p-3929">He wed Elizabeth Schuyler, who was from a prominent family who owned slaves. He was involved with the transactions of slaves for his in-laws which further muddled his anti-slavery stance. Furthermore, Hamilton also traded and sold slaves as part of his duties for the Continental Army.</div>
+<div class="para" id="p-3930">Alexander Hamilton proposed the method that now bears his name. His method was approved by Congress in 1791 but was vetoed by President Washington. It was later adopted in 1852 and used through 1910. He begins by determining, to several decimal places, how many people each representative should represent (the divisor).</div>
+<article class="assemblage assemblage-like" id="assemblage-34"><h4 class="heading"><span class="title">Hamilton’s Method.</span></h4>
+<div class="para logical" id="p-3931"><ol class="decimal">
+<li id="li-1755"><div class="para" id="p-3932">Determine how many people each representative should represent. Do this by dividing the total population of all the states by the total number of representatives. This answer is called the <em class="alert">divisor</em>.</div></li>
+<li id="li-1756">
+<div class="para" id="p-3933">Divide each state’s population by the divisor to determine how many representatives it should have. Record this answer to several decimal places. This answer is called the <em class="alert">quota</em>.</div>
+<div class="para" id="p-3934"><em class="emphasis">Since we can only allocate whole representatives, Hamilton resolved the whole number problem as follows:</em></div>
 </li>
-<li id="li-1565"><p id="p-3633">Cut off all the decimal parts of all the quotas (but don't forget what the decimals were). This is the <em class="alert">initial</em> apportionment and will always be less than or equal to the total number of representatives. Add up the whole numbers.</p></li>
-<li id="li-1566">
-<p id="p-3634">If the total from Step 3 is less than the total number of representatives, assign the remaining representatives, one each, to the states whose decimal parts of the quota were largest, until the desired total is reached.</p>
-<p id="p-3635">Make sure that each state ends up with at least one representative.</p>
+<li id="li-1757"><div class="para" id="p-3935">Cut off all the decimal parts of all the quotas (but don’t forget what the decimals were). This is the <em class="alert">initial</em> apportionment and will always be less than or equal to the total number of representatives. Add up the whole numbers.</div></li>
+<li id="li-1758">
+<div class="para" id="p-3936">If the total from Step 3 is less than the total number of representatives, assign the remaining representatives, one each, to the states whose decimal parts of the quota were largest, until the desired total is reached.</div>
+<div class="para" id="p-3937">Make sure that each state ends up with at least one representative.</div>
 </li>
-</ol></article><p id="p-3636">Let's see how this works in an example.</p>
-<article class="example example-like" id="example-96"><h4 class="heading">
+</ol></div></article><div class="para" id="p-3938">Let’s see how this works in an example.</div>
+<article class="example example-like" id="example-106"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.1.1</span><span class="period">.</span>
 </h4>
-<p id="p-3637">A new state called Graceland has three counties: A, B and C. The State House of Representatives has 41 members. If the legislature wants to divide this representation along county lines (which is <em class="emphasis">not</em> required, but let's pretend they do), let's use Hamilton's method to apportion them. The populations of the counties are as follows:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<div class="para" id="p-3939">A new state called Graceland has three counties: A, B and C. The State House of Representatives has 41 members. If the legislature wants to divide this representation along county lines (which is <em class="emphasis">not</em> required, but let’s pretend they do), let’s use Hamilton’s method to apportion them. The populations of the counties are as follows:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">County</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
@@ -265,7 +650,8 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l1 t0 lines">Total</td>
 <td class="c m b1 r1 l0 t0 lines">897,934</td>
 </tr>
-</table></div></div></div> <p id="p-3638">Step 1: First, we divide the total population by the number of representatives to find the divisor: <span class="process-math">\(897934/41 = 21900.82927\text{.}\)</span></p> <p id="p-3639">Step 2: Now we determine each county's quota by dividing the county's population by the divisor: For example, for A, we take <span class="process-math">\(162,310/21,900.82927\)</span> which equals 7.4111.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+</table></div></div></div> <div class="para" id="p-3940">Step 1: First, we divide the total population by the number of representatives to find the divisor: <span class="process-math">\(897934/41 = 21900.82927\text{.}\)</span>
+</div> <div class="para" id="p-3941">Step 2: Now we determine each county’s quota by dividing the county’s population by the divisor: For example, for A, we take <span class="process-math">\(162,310/21,900.82927\)</span> which equals 7.4111.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">County</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
@@ -291,7 +677,7 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines">897,934</td>
 <td class="c m b1 r1 l0 t0 lines"></td>
 </tr>
-</table></div></div></div> <p id="p-3640">Step 3: Removing the decimal parts of the quotas gives our initial apportionment and we add those numbers up.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+</table></div></div></div> <div class="para" id="p-3942">Step 3: Removing the decimal parts of the quotas gives our initial apportionment and we add those numbers up.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">County</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
@@ -322,7 +708,7 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines"></td>
 <td class="c m b1 r1 l0 t0 lines">40</td>
 </tr>
-</table></div></div></div> <p id="p-3641">Step 4: We need 41 representatives, and right now we only have 40. The remaining one goes to the county with the largest decimal part, which is B:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+</table></div></div></div> <div class="para" id="p-3943">Step 4: We need 41 representatives, and right now we only have 40. The remaining one goes to the county with the largest decimal part, which is B:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">County</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
@@ -360,13 +746,14 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines">40</td>
 <td class="c m b1 r1 l0 t0 lines">41</td>
 </tr>
-</table></div></div></div> <p id="p-3642">Our final apportionment is A: 7, B: 25, C: 9, for a total of 41 representatives.</p></article><article class="example example-like" id="example-97"><h4 class="heading">
+</table></div></div></div> <div class="para" id="p-3944">Our final apportionment is A: 7, B: 25, C: 9, for a total of 41 representatives.</div></article><article class="example example-like" id="example-107"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.1.2</span><span class="period">.</span>
 </h4>
-<p id="p-3643">We will use Hamilton's method again, to apportion 75 seats for a new state of Lewis, which has five counties. Lewis and its counties are named for civil rights leaders John Lewis, Rosa Parks, Dr. Martin Luther King Jr., Ella Baker, Daisy Bates and Roy Wilkins.</p>
+<div class="para" id="p-3945">We will use Hamilton’s method again, to apportion 75 seats for a new state of Lewis, which has five counties. Lewis and its counties are named for civil rights leaders John Lewis, Rosa Parks, Dr. Martin Luther King Jr., Ella Baker, Daisy Bates and Roy Wilkins.</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original has-tabular" data-refid="hk-solution-255" id="solution-255"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-255"><div class="solution solution-like">
-<p id="p-3644">Step 1: The divisor is <span class="process-math">\(1,052,567/75 = 14,034.22667\text{.}\)</span></p> <p id="p-3645">Step 2: Determine each county's quota by dividing its population by the divisor:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-tabular" data-refid="hk-solution-273" id="solution-273"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-273"><div class="solution solution-like">
+<div class="para" id="p-3946">Step 1: The divisor is <span class="process-math">\(1,052,567/75 = 14,034.22667\text{.}\)</span>
+</div> <div class="para" id="p-3947">Step 2: Determine each county’s quota by dividing its population by the divisor:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">County</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
@@ -402,7 +789,7 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines">1,052,567</td>
 <td class="c m b1 r1 l0 t0 lines"></td>
 </tr>
-</table></div></div></div> <p id="p-3646">Step 3: Remove the decimal part of each quota and add up the initial apportionment:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+</table></div></div></div> <div class="para" id="p-3948">Step 3: Remove the decimal part of each quota and add up the initial apportionment:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">County</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
@@ -445,7 +832,7 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines"></td>
 <td class="c m b1 r1 l0 t0 lines">72</td>
 </tr>
-</table></div></div></div> <p id="p-3647">Step 4: We need 75 representatives and we only have 72, so we assign the remaining three, one each, to the three counties with the largest decimal parts, which are Baker, King, and Bates in that order:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+</table></div></div></div> <div class="para" id="p-3949">Step 4: We need 75 representatives and we only have 72, so we assign the remaining three, one each, to the three counties with the largest decimal parts, which are Baker, King, and Bates in that order:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">County</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
@@ -501,33 +888,38 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines">72</td>
 <td class="c m b1 r1 l0 t0 lines">75</td>
 </tr>
-</table></div></div></div> <p id="p-3648">Our final apportionment is Parks: 3, King: 12, Baker: 6, Bates: 45, and Wilkins: 9 for a total of 75 representatives.</p> <p id="p-3649">Note that even though Parks County's decimal part is greater than .5, it isn't big enough to get an additional representative, because three other counties have greater decimal parts.</p>
+</table></div></div></div> <div class="para" id="p-3950">Our final apportionment is Parks: 3, King: 12, Baker: 6, Bates: 45, and Wilkins: 9 for a total of 75 representatives.</div> <div class="para" id="p-3951">Note that even though Parks County’s decimal part is greater than .5, it isn’t big enough to get an additional representative, because three other counties have greater decimal parts.</div>
 </div></div>
-</div></article><p id="p-3650">Hamilton's method obeys something called the Quota Rule. The Quota Rule isn't a law, but an idea that some people think is a good one.</p>
+</div></article><div class="para" id="p-3952">Hamilton’s method obeys something called the Quota Rule. The Quota Rule isn’t a law, but an idea that some people think is a good one.</div>
 <article class="assemblage assemblage-like" id="assemblage-35"><h4 class="heading"><span class="title">Quota Rule.</span></h4>
-<p id="p-3651">The <em class="alert">Quota Rule</em> says that the final number of representatives a state gets should be within one of that state's quota. Since we're dealing with whole numbers for our final answers, that means that each state should either go up to the next whole number above its quota, or down to the next whole number below its quota.</p></article></section><section class="subsection" id="subsection-124"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">6.1.4</span> <span class="title">Problems with Hamilton's Method</span>
+<div class="para" id="p-3953">The <em class="alert">Quota Rule</em> says that the final number of representatives a state gets should be within one of that state’s quota. Since we’re dealing with whole numbers for our final answers, that means that each state should either go up to the next whole number above its quota, or down to the next whole number below its quota.</div></article></section><section class="subsection" id="subsection-128"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">6.1.4</span> <span class="title">Problems with Hamilton’s Method</span>
 </h3>
-<p id="p-3652">After using Hamilton's method for many years, three paradoxes happened, on separate occasions, where unfair things happened in new apportionments. This led to other methods being needed.</p>
-<p id="p-3653"><dfn class="terminology">The Alabama Paradox</dfn> is named for an incident that happened during the apportionment that took place after the 1880 census. (A similar incident happened ten years earlier involving the state of Rhode Island, but the paradox is named after Alabama.) The post-1880 apportionment had been completed, using Hamilton's method and the new population numbers from the census. Then it was decided that because of the country's growing population, the House of Representatives should be made larger. That meant that the apportionment would need to be done again, still using Hamilton's method and the same 1880 census numbers, but with more representatives. The assumption was that some states would gain another representative and others would stay with the same number they already had (since there weren't enough new representatives being added to give one more to every state). The paradox is that Alabama ended up <em class="emphasis">losing</em> a representative in the process, even though no populations were changed, and the total number of representatives increased.</p>
-<p id="p-3654"><dfn class="terminology">The New States Paradox</dfn> happened when Oklahoma became a state in 1907. Oklahoma had enough population to qualify for five representatives in Congress. Those five representatives would need to come from somewhere, though, so five states, presumably, would lose one representative each. That happened, but another thing also happened: Maine gained a representative (from New York).</p>
-<p id="p-3655"><dfn class="terminology">The Population Paradox</dfn> happened between the apportionments after the census of 1900 and of 1910. In those ten years, Virginia's population grew at an average annual rate of 1.07%, while Maine's grew at an average annual rate of 0.67%. Virginia started with more people, grew at a faster rate, grew by more people, and ended up with more people than Maine. By itself, that doesn't mean that Virginia should gain representatives or Maine shouldn't, because there are lots of other states involved. But Virginia ended up losing a representative <em class="emphasis">to Maine</em>.</p></section><section class="subsection" id="subsection-125"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">6.1.5</span> <span class="title">Jefferson's Method</span>
+<div class="para" id="p-3954">After using Hamilton’s method for many years, three paradoxes happened, on separate occasions, where unfair things happened in new apportionments. This led to other methods being needed.</div>
+<div class="para" id="p-3955">
+<dfn class="terminology">The Alabama Paradox</dfn> is named for an incident that happened during the apportionment that took place after the 1880 census. (A similar incident happened ten years earlier involving the state of Rhode Island, but the paradox is named after Alabama.) The post-1880 apportionment had been completed, using Hamilton’s method and the new population numbers from the census. Then it was decided that because of the country’s growing population, the House of Representatives should be made larger. That meant that the apportionment would need to be done again, still using Hamilton’s method and the same 1880 census numbers, but with more representatives. The assumption was that some states would gain another representative and others would stay with the same number they already had (since there weren’t enough new representatives being added to give one more to every state). The paradox is that Alabama ended up <em class="emphasis">losing</em> a representative in the process, even though no populations were changed, and the total number of representatives increased.</div>
+<div class="para" id="p-3956">
+<dfn class="terminology">The New States Paradox</dfn> happened when Oklahoma became a state in 1907. Oklahoma had enough population to qualify for five representatives in Congress. Those five representatives would need to come from somewhere, though, so five states, presumably, would lose one representative each. That happened, but another thing also happened: Maine gained a representative (from New York).</div>
+<div class="para" id="p-3957">
+<dfn class="terminology">The Population Paradox</dfn> happened between the apportionments after the census of 1900 and of 1910. In those ten years, Virginia’s population grew at an average annual rate of 1.07%, while Maine’s grew at an average annual rate of 0.67%. Virginia started with more people, grew at a faster rate, grew by more people, and ended up with more people than Maine. By itself, that doesn’t mean that Virginia should gain representatives or Maine shouldn’t, because there are lots of other states involved. But Virginia ended up losing a representative <em class="emphasis">to Maine</em>.</div></section><section class="subsection" id="subsection-129"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">6.1.5</span> <span class="title">Jefferson’s Method</span>
 </h3>
-<p id="p-3656">Thomas Jefferson proposed a different method for apportionment. After Washington vetoed Hamilton's method, Jefferson's method was adopted, and used in Congress from 1791 through 1842. Jefferson, of course, had political reasons for wanting his method to be used rather than Hamilton's. Primarily, his method favors larger states, and his own home state of Virginia was the largest at the time. He would also argue that it's the ratio of people to representatives that is the critical thing, and apportionment methods should be based on that.</p>
-<p id="p-3657">The first three steps of Jefferson's method are the same as Hamilton's. He found the same divisor and the same quota and cut off the decimal parts in the same way, giving the same initial apportionment that is less than the required total.</p>
-<p id="p-3658">What changes is how Jefferson assigned the remaining representatives. He said that since we ended up with an answer that is too small, our divisor must have been too big. He changed the divisor by making it smaller and looked at the new total. He would raise or lower the divisor until he found one that produced the required total. This is a trial and error process that takes some patience.</p>
-<article class="assemblage assemblage-like" id="assemblage-36"><h4 class="heading"><span class="title">Jefferson's Method.</span></h4>
-<p id="p-3659"><em class="emphasis">The first three steps are the same as Hamilton's</em></p>
+<div class="para" id="p-3958">Thomas Jefferson proposed a different method for apportionment. After Washington vetoed Hamilton’s method, Jefferson’s method was adopted, and used in Congress from 1791 through 1842. Jefferson, of course, had political reasons for wanting his method to be used rather than Hamilton’s. Primarily, his method favors larger states, and his own home state of Virginia was the largest at the time. He would also argue that it’s the ratio of people to representatives that is the critical thing, and apportionment methods should be based on that.</div>
+<div class="para" id="p-3959">The first three steps of Jefferson’s method are the same as Hamilton’s. He found the same divisor and the same quota and cut off the decimal parts in the same way, giving the same initial apportionment that is less than the required total.</div>
+<div class="para" id="p-3960">What changes is how Jefferson assigned the remaining representatives. He said that since we ended up with an answer that is too small, our divisor must have been too big. He changed the divisor by making it smaller and looked at the new total. He would raise or lower the divisor until he found one that produced the required total. This is a trial and error process that takes some patience.</div>
+<article class="assemblage assemblage-like" id="assemblage-36"><h4 class="heading"><span class="title">Jefferson’s Method.</span></h4>
+<div class="para logical" id="p-3961">
+<div class="para"><em class="emphasis">The first three steps are the same as Hamilton’s</em></div>
 <ol class="decimal">
-<li id="li-1567"><p id="p-3660">Determine how many people each representative should represent. Do this by dividing the total population of all the states by the total number of representatives. This answer is called the <em class="alert">divisor</em>.</p></li>
-<li id="li-1568"><p id="p-3661">Divide each state's population by the divisor to determine how many representatives it should have. Record this answer to several decimal places. This answer is called the <em class="alert">quota</em>.</p></li>
-<li id="li-1569"><p id="p-3662">Cut off all the decimal parts of all the quotas (but don't forget what the decimals were). This is the <em class="alert">initial</em> apportionment and will always be less than or equal to the total number of representatives. Add up the whole numbers.</p></li>
-<li id="li-1570"><p id="p-3663">If the total from Step 3 was less than the total number of representatives, reduce the divisor and recalculate the quota and allocation. If you lower it too far, increase it. Continue doing this until the total in Step 3 is equal to the total number of representatives. The divisor you end up using is called the <em class="alert">modified divisor</em>. This is a trial-and-error process.</p></li>
-</ol></article><article class="example example-like" id="example-98"><h4 class="heading">
+<li id="li-1759"><div class="para" id="p-3962">Determine how many people each representative should represent. Do this by dividing the total population of all the states by the total number of representatives. This answer is called the <em class="alert">divisor</em>.</div></li>
+<li id="li-1760"><div class="para" id="p-3963">Divide each state’s population by the divisor to determine how many representatives it should have. Record this answer to several decimal places. This answer is called the <em class="alert">quota</em>.</div></li>
+<li id="li-1761"><div class="para" id="p-3964">Cut off all the decimal parts of all the quotas (but don’t forget what the decimals were). This is the <em class="alert">initial</em> apportionment and will always be less than or equal to the total number of representatives. Add up the whole numbers.</div></li>
+<li id="li-1762"><div class="para" id="p-3965">If the total from Step 3 was less than the total number of representatives, reduce the divisor and recalculate the quota and allocation. If you lower it too far, increase it. Continue doing this until the total in Step 3 is equal to the total number of representatives. The divisor you end up using is called the <em class="alert">modified divisor</em>. This is a trial-and-error process.</div></li>
+</ol>
+</div></article><article class="example example-like" id="example-108"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.1.3</span><span class="period">.</span>
 </h4>
-<p id="p-3664">We'll return to the state of Graceland and apply Jefferson's method. We begin, as we did with Hamilton's method, by finding the quotas with the original divisor, 21,900.82927.</p> <p id="p-3665">Steps 1-3 are the same as Hamilton's Method. Since we will be using different divisors, we will write the divisor at the bottom of the population column to be clear what we are dividing each number in that column by. You can also write it above that column if you prefer.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<div class="para" id="p-3966">We’ll return to the state of Graceland and apply Jefferson’s method. We begin, as we did with Hamilton’s method, by finding the quotas with the original divisor, 21,900.82927.</div> <div class="para" id="p-3967">Steps 1-3 are the same as Hamilton’s Method. Since we will be using different divisors, we will write the divisor at the bottom of the population column to be clear what we are dividing each number in that column by. You can also write it above that column if you prefer.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">County</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
@@ -564,7 +956,7 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines"></td>
 <td class="c m b1 r1 l0 t0 lines"></td>
 </tr>
-</table></div></div></div> <p id="p-3666">We need 41 representatives, and this divisor gives only 40. We must reduce the divisor until we get 41 representatives. Let's try 21,500 as the divisor</p> <p id="p-3667">Step 4:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+</table></div></div></div> <div class="para" id="p-3968">We need 41 representatives, and this divisor gives only 40. We must reduce the divisor until we get 41 representatives. Let’s try 21,500 as the divisor</div> <div class="para" id="p-3969">Step 4:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">County</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
@@ -601,10 +993,10 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines"></td>
 <td class="c m b1 r1 l0 t0 lines"></td>
 </tr>
-</table></div></div></div> <p id="p-3668">That worked and our final apportionment is A: 7, B: 25, and C: 9.</p> <p id="p-3669">Notice that with the new, lower divisor, the quota for B County (the largest county in the state) increased by much more than those of A County or C County.</p> <p id="p-3670">In this example, we got lucky and found the modified divisor on the first try. If we still had 40, we would reduce the divisor more. If we had more than 41, we would need to raise it. We will show how to do the trial-and-error part in the next example.</p></article><article class="example example-like" id="example-99"><h4 class="heading">
+</table></div></div></div> <div class="para" id="p-3970">That worked and our final apportionment is A: 7, B: 25, and C: 9.</div> <div class="para" id="p-3971">Notice that with the new, lower divisor, the quota for B County (the largest county in the state) increased by much more than those of A County or C County.</div> <div class="para" id="p-3972">In this example, we got lucky and found the modified divisor on the first try. If we still had 40, we would reduce the divisor more. If we had more than 41, we would need to raise it. We will show how to do the trial-and-error part in the next example.</div></article><article class="example example-like" id="example-109"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.1.4</span><span class="period">.</span>
 </h4>
-<p id="p-3671">We'll apply Jefferson's method for Lewis. The original divisor of 14,034.22667 gave these results:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<div class="para" id="p-3973">We’ll apply Jefferson’s method for Lewis. The original divisor of 14,034.22667 gave these results:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">County</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
@@ -653,7 +1045,7 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines"></td>
 <td class="c m b1 r1 l0 t0 lines"></td>
 </tr>
-</table></div></div></div> <p id="p-3672">We need 75 representatives and we only have 72, so we need to use a smaller divisor. Let's try lowering it to 13,500:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+</table></div></div></div> <div class="para" id="p-3974">We need 75 representatives and we only have 72, so we need to use a smaller divisor. Let’s try lowering it to 13,500:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">County</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
@@ -702,7 +1094,7 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines"></td>
 <td class="c m b1 r1 l0 t0 lines"></td>
 </tr>
-</table></div></div></div> <p id="p-3673">We got a total of 76 representatives which is too many, so we lowered it too far. We need a divisor that's greater than 13,500 but less than 14,034.22667. Let's try 13,700:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+</table></div></div></div> <div class="para" id="p-3975">We got a total of 76 representatives which is too many, so we lowered it too far. We need a divisor that’s greater than 13,500 but less than 14,034.22667. Let’s try 13,700:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">County</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
@@ -751,7 +1143,7 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines"></td>
 <td class="c m b1 r1 l0 t0 lines"></td>
 </tr>
-</table></div></div></div> <p id="p-3674">Using a modified divisor of 13,700 gives us exactly 75 representatives. Note there is usually more than one modified divisor that will work.</p> <p id="p-3675">This can take a lot of writing, so in practice, we can write this all out in one table. With each try we are dividing the population by the new divisor to get the new quotas.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+</table></div></div></div> <div class="para" id="p-3976">Using a modified divisor of 13,700 gives us exactly 75 representatives. Note there is usually more than one modified divisor that will work.</div> <div class="para" id="p-3977">This can take a lot of writing, so in practice, we can write this all out in one table. With each try we are dividing the population by the new divisor to get the new quotas.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">County</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
@@ -832,23 +1224,25 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines"><em class="emphasis">÷13,700</em></td>
 <td class="c m b1 r1 l0 t0 lines"></td>
 </tr>
-</table></div></div></div> <p id="p-3676">Notice, in comparison to Hamilton's method, that although the results were the same, they came about in a different way, and the outcome was almost different. Bates County (the largest) almost went up to 46 representatives before King (which is much smaller) got to 12. Although that didn't happen here, it can. Divisor-adjusting methods like Jefferson's are not guaranteed to follow the quota rule.</p></article></section><section class="subsection" id="subsection-126"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">6.1.6</span> <span class="title">Webster's Method</span>
+</table></div></div></div> <div class="para" id="p-3978">Notice, in comparison to Hamilton’s method, that although the results were the same, they came about in a different way, and the outcome was almost different. Bates County (the largest) almost went up to 46 representatives before King (which is much smaller) got to 12. Although that didn’t happen here, it can. Divisor-adjusting methods like Jefferson’s are not guaranteed to follow the quota rule.</div></article></section><section class="subsection" id="subsection-130"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">6.1.6</span> <span class="title">Webster’s Method</span>
 </h3>
-<p id="p-3677">Daniel Webster (1782-1852) was a lawyer, congressman, Senator of Massachusetts and also served as the U.S. Secretary of State. He was from the North and did not own slaves. He was an opponent of slavery extension and he spoke against annexing Texas and against going to war with Mexico. He argued, however, that no law was needed to prevent the further extension of slavery in new states and he supported the Compromise of 1850, which disappointed his abolitionist supporters (History.com Editors, 2018b).</p>
-<p id="p-3678">Webster proposed a method similar to Jefferson's in 1832. It was adopted by Congress in 1842 but replaced by Hamilton's method in 1852. It was then adopted again in 1911. The difference is that Webster rounded the quotas to the nearest whole number rather than dropping the decimal parts. If that didn't produce the exact number of representatives, he adjusted the divisor like in Jefferson's method. (In Jefferson's case, the first adjustment will always be to make the divisor smaller. That is not always the case with Webster's method because some numbers may be rounded up.)</p>
-<article class="assemblage assemblage-like" id="assemblage-37"><h4 class="heading"><span class="title">Webster's Method.</span></h4>
-<p id="p-3679"><em class="emphasis">Steps 1-2 are the same as Hamilton and Jefferson</em></p>
+<div class="para" id="p-3979">Daniel Webster (1782-1852) was a lawyer, congressman, Senator of Massachusetts and also served as the U.S. Secretary of State. He was from the North and did not own slaves. He was an opponent of slavery extension and he spoke against annexing Texas and against going to war with Mexico. He argued, however, that no law was needed to prevent the further extension of slavery in new states and he supported the Compromise of 1850, which disappointed his abolitionist supporters (History.com Editors, 2018b).</div>
+<div class="para" id="p-3980">Webster proposed a method similar to Jefferson’s in 1832. It was adopted by Congress in 1842 but replaced by Hamilton’s method in 1852. It was then adopted again in 1911. The difference is that Webster rounded the quotas to the nearest whole number rather than dropping the decimal parts. If that didn’t produce the exact number of representatives, he adjusted the divisor like in Jefferson’s method. (In Jefferson’s case, the first adjustment will always be to make the divisor smaller. That is not always the case with Webster’s method because some numbers may be rounded up.)</div>
+<article class="assemblage assemblage-like" id="assemblage-37"><h4 class="heading"><span class="title">Webster’s Method.</span></h4>
+<div class="para logical" id="p-3981">
+<div class="para"><em class="emphasis">Steps 1-2 are the same as Hamilton and Jefferson</em></div>
 <ol class="decimal">
-<li id="li-1571"><p id="p-3680">Determine how many people each representative should represent. Do this by dividing the total population of all the states by the total number of representatives. This answer is called the <em class="alert">divisor</em>.</p></li>
-<li id="li-1572"><p id="p-3681">Divide each state's population by the divisor to determine how many representatives it should have. Record this answer to several decimal places. This answer is called the <em class="alert">quota</em>.</p></li>
-<li id="li-1573"><p id="p-3682">Round all the quotas to the nearest whole number (but don't forget what the decimals were). This is the <em class="alert">initial</em> apportionment. Add up the whole numbers.</p></li>
-<li id="li-1574"><p id="p-3683">If the total from Step 3 is less than the total number of representatives, reduce the divisor and recalculate the quota and allocation. If the total from step 3 is larger than the total number of representatives, increase the divisor and recalculate the quota and allocation. Continue doing this until the total in Step 3 is equal to the total number of representatives. The divisor we end up using is called the <em class="alert">modified divisor</em>. This is a trial-and-error process.</p></li>
-</ol></article><p id="p-3684">Let's see how Webster's method works in this example:</p>
-<article class="example example-like" id="example-100"><h4 class="heading">
+<li id="li-1763"><div class="para" id="p-3982">Determine how many people each representative should represent. Do this by dividing the total population of all the states by the total number of representatives. This answer is called the <em class="alert">divisor</em>.</div></li>
+<li id="li-1764"><div class="para" id="p-3983">Divide each state’s population by the divisor to determine how many representatives it should have. Record this answer to several decimal places. This answer is called the <em class="alert">quota</em>.</div></li>
+<li id="li-1765"><div class="para" id="p-3984">Round all the quotas to the nearest whole number (but don’t forget what the decimals were). This is the <em class="alert">initial</em> apportionment. Add up the whole numbers.</div></li>
+<li id="li-1766"><div class="para" id="p-3985">If the total from Step 3 is less than the total number of representatives, reduce the divisor and recalculate the quota and allocation. If the total from step 3 is larger than the total number of representatives, increase the divisor and recalculate the quota and allocation. Continue doing this until the total in Step 3 is equal to the total number of representatives. The divisor we end up using is called the <em class="alert">modified divisor</em>. This is a trial-and-error process.</div></li>
+</ol>
+</div></article><div class="para" id="p-3986">Let’s see how Webster’s method works in this example:</div>
+<article class="example example-like" id="example-110"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.1.5</span><span class="period">.</span>
 </h4>
-<p id="p-3685">We will look at Graceland again, with an initial divisor of 21,900.82927 and 41 representatives:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<div class="para" id="p-3987">We will look at Graceland again, with an initial divisor of 21,900.82927 and 41 representatives:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">County</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
@@ -885,10 +1279,10 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines"></td>
 <td class="c m b1 r1 l0 t0 lines"></td>
 </tr>
-</table></div></div></div> <p id="p-3686">This time B is the only county with a decimal of 0.5 or higher, so it gets rounded up. This gives the required total, so we're done.</p></article><article class="example example-like" id="example-101"><h4 class="heading">
+</table></div></div></div> <div class="para" id="p-3988">This time B is the only county with a decimal of 0.5 or higher, so it gets rounded up. This gives the required total, so we’re done.</div></article><article class="example example-like" id="example-111"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.1.6</span><span class="period">.</span>
 </h4>
-<p id="p-3687">Let's look at Lewis again, with an initial divisor of 14,034.22667 and 75 representatives:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<div class="para" id="p-3989">Let’s look at Lewis again, with an initial divisor of 14,034.22667 and 75 representatives:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">County</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
@@ -937,7 +1331,7 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines"></td>
 <td class="c m b1 r1 l0 t0 lines"></td>
 </tr>
-</table></div></div></div> <p id="p-3688">This is one too many, so we need to increase the divisor. Let's try 14,100:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+</table></div></div></div> <div class="para" id="p-3990">This is one too many, so we need to increase the divisor. Let’s try 14,100:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">County</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
@@ -986,7 +1380,7 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines"></td>
 <td class="c m b1 r1 l0 t0 lines"></td>
 </tr>
-</table></div></div></div> <p id="p-3689">This gives us exactly 75, so we're done. This is how it would look all in one table:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+</table></div></div></div> <div class="para" id="p-3991">This gives us exactly 75, so we’re done. This is how it would look all in one table:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">County</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
@@ -1051,31 +1445,33 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines"><em class="emphasis">÷14,100</em></td>
 <td class="c m b1 r1 l0 t0 lines"></td>
 </tr>
-</table></div></div></div></article><p id="p-3690">Like Jefferson's method, Webster's method carries a bias in favor of larger states but rounding the quotas to the nearest whole number greatly reduces this bias. Notice that Bates County, the largest, is the one that gets a representative trimmed because of the increased quota.</p>
-<p id="p-3691">Also, like Jefferson's method, Webster's method does not always follow the quota rule, but it follows the quota rule much more often than Jefferson's method does. In fact, if Webster's method had been applied to every apportionment of Congress in all of U.S. history, it would have followed the quota rule every single time.</p></section><section class="subsection" id="subsection-127"><h3 class="heading hide-type">
+</table></div></div></div></article><div class="para" id="p-3992">Like Jefferson’s method, Webster’s method carries a bias in favor of larger states but rounding the quotas to the nearest whole number greatly reduces this bias. Notice that Bates County, the largest, is the one that gets a representative trimmed because of the increased quota.</div>
+<div class="para" id="p-3993">Also, like Jefferson’s method, Webster’s method does not always follow the quota rule, but it follows the quota rule much more often than Jefferson’s method does. In fact, if Webster’s method had been applied to every apportionment of Congress in all of U.S. history, it would have followed the quota rule every single time.</div></section><section class="subsection" id="subsection-131"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.1.7</span> <span class="title">Land Rights, Citizenship and Voting Rights</span>
 </h3>
-<p id="p-3692">In 1830 the <em class="alert">Indian Removal Act</em> was signed by President Jackson. The Act relocated Native Americans to land west of the Mississippi and the forced journey is known as the <em class="alert">Trail of Tears</em>. To learn more, here is a link to an online museum exhibit with a timeline of Native American history and artifacts<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-40" id="fn-40"><sup> 1 </sup></a>.</p>
-<p id="p-3693">Toward the end of the Civil War, slaves were freed by Abraham Lincoln's <em class="alert">Emancipation Proclamation</em> on January 1st, 1863, but it was not until June 19th, 1865 that the last group of slaves in Texas learned they had been freed. This is now celebrated as Juneteenth<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-41" id="fn-41"><sup> 2 </sup></a>. You can read more about the timeline of slavery in this Jim Crow Museum of Racist Memorabilia<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-43" id="fn-43"><sup> 4 </sup></a>.</p>
-<p id="p-3694">Although they were technically free, Black people still faced unequal and unjust treatment. After Black men were granted the right to vote in 1869, <em class="alert">voter suppression</em> laws like poll taxes and literacy tests were implemented barriers to voting (American Civil Liberties Union, 2020).</p>
-<p id="p-3695">In 1887, the <em class="alert">Dawes Act</em> was passed, which allotted Native American land to individuals and 60 million acres were taken by the government or non-Indian homesteaders (Indian Land Trust Tenure Foundation, 2020). This act also provided citizenship under certain restrictions which theoretically allowed native men to vote. All women were granted the right to vote in 1920, but the barriers enacted for men of color applied to women of color as well. You can read more about voting rights and suppression in this online timeline<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-44" id="fn-44"><sup> 5 </sup></a>.</p></section><section class="subsection" id="subsection-128"><h3 class="heading hide-type">
+<div class="para" id="p-3994">In 1830 the <em class="alert">Indian Removal Act</em> was signed by President Jackson. The Act relocated Native Americans to land west of the Mississippi and the forced journey is known as the <em class="alert">Trail of Tears</em>. To learn more, here is a link to an online museum exhibit with a timeline of Native American history and artifacts<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-28" id="fn-28"><sup> 1 </sup></a>.</div>
+<div class="para" id="p-3995">Toward the end of the Civil War, slaves were freed by Abraham Lincoln’s <em class="alert">Emancipation Proclamation</em> on January 1st, 1863, but it was not until June 19th, 1865 that the last group of slaves in Texas learned they had been freed. This is now celebrated as Juneteenth<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-29" id="fn-29"><sup> 2 </sup></a>. You can read more about the timeline of slavery in this Jim Crow Museum of Racist Memorabilia<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-30" id="fn-30"><sup> 3 </sup></a>.</div>
+<div class="para" id="p-3996">Although they were technically free, Black people still faced unequal and unjust treatment. After Black men were granted the right to vote in 1869, <em class="alert">voter suppression</em> laws like poll taxes and literacy tests were implemented barriers to voting (American Civil Liberties Union, 2020).</div>
+<div class="para" id="p-3997">In 1887, the <em class="alert">Dawes Act</em> was passed, which allotted Native American land to individuals and 60 million acres were taken by the government or non-Indian homesteaders (Indian Land Trust Tenure Foundation, 2020). This act also provided citizenship under certain restrictions which theoretically allowed native men to vote. All women were granted the right to vote in 1920, but the barriers enacted for men of color applied to women of color as well. You can read more about voting rights and suppression in this online timeline<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-31" id="fn-31"><sup> 4 </sup></a>.</div></section><section class="subsection" id="subsection-132"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.1.8</span> <span class="title">Huntington-Hill Method</span>
 </h3>
-<p id="p-3696">In 1920, no new apportionment was done, because Congress couldn't agree on the method to be used. They appointed a committee of mathematicians to investigate, and they recommended the Huntington-Hill Method. They continued to use Webster's method in 1931, but after a second report recommending Huntington-Hill, it was adopted in 1941 and is the method of apportionment still used today.</p>
-<p id="p-3697">The Huntington-Hill Method is similar to Webster's method, but attempts to minimize the difference in the percentage of how many people each representative will represent.</p>
+<div class="para" id="p-3998">In 1920, no new apportionment was done, because Congress couldn’t agree on the method to be used. They appointed a committee of mathematicians to investigate, and they recommended the Huntington-Hill Method. They continued to use Webster’s method in 1931, but after a second report recommending Huntington-Hill, it was adopted in 1941 and is the method of apportionment still used today.</div>
+<div class="para" id="p-3999">The Huntington-Hill Method is similar to Webster’s method, but attempts to minimize the difference in the percentage of how many people each representative will represent.</div>
 <article class="assemblage assemblage-like" id="assemblage-38"><h4 class="heading"><span class="title">Huntington-Hill Method.</span></h4>
-<p id="p-3698"><em class="emphasis">The first two steps are the same as the previous methods</em></p>
+<div class="para logical" id="p-4000">
+<div class="para"><em class="emphasis">The first two steps are the same as the previous methods</em></div>
 <ol class="decimal">
-<li id="li-1575"><p id="p-3699">Determine how many people each representative should represent. Do this by dividing the total population of all the states by the total number of representatives. This answer is called the <em class="alert">divisor</em>.</p></li>
-<li id="li-1576"><p id="p-3700">Divide each state's population by the divisor to determine how many representatives it should have. Record this answer to several decimal places. This answer is called the <em class="alert">quota</em>.</p></li>
-<li id="li-1577"><p id="p-3701">Cut off the decimal part of the quota to obtain the <em class="alert">lower quota</em>, which we'll call <span class="process-math">\(n\text{.}\)</span> Compute <span class="process-math">\(\sqrt{n(n+1)}\text{,}\)</span> which is the geometric mean of the lower quota and one value higher.</p></li>
-<li id="li-1578"><p id="p-3702">Instead of using 0.5 to round like we are used to, we use the geometric mean. If the quota is as large or larger than the geometric mean, round up; if the quota is smaller than the geometric mean, round down. This is the <em class="alert">initial</em> allocation. Add up the resulting whole numbers.</p></li>
-<li id="li-1579"><p id="p-3703">If the total from Step 4 is less than the total number of representatives, reduce the divisor and recalculate the quota and allocation. If the total from step 4 is larger than the total number of representatives, increase the divisor and recalculate. Continue doing this until the total is equal to the exact number of representatives. The divisor we end up using is called the <em class="alert">modified divisor</em>. This is a trial-and-error process.</p></li>
-</ol></article></section><section class="subsection" id="subsection-129"><h3 class="heading hide-type">
+<li id="li-1767"><div class="para" id="p-4001">Determine how many people each representative should represent. Do this by dividing the total population of all the states by the total number of representatives. This answer is called the <em class="alert">divisor</em>.</div></li>
+<li id="li-1768"><div class="para" id="p-4002">Divide each state’s population by the divisor to determine how many representatives it should have. Record this answer to several decimal places. This answer is called the <em class="alert">quota</em>.</div></li>
+<li id="li-1769"><div class="para" id="p-4003">Cut off the decimal part of the quota to obtain the <em class="alert">lower quota</em>, which we’ll call <span class="process-math">\(n\text{.}\)</span> Compute <span class="process-math">\(\sqrt{n(n+1)}\text{,}\)</span> which is the geometric mean of the lower quota and one value higher.</div></li>
+<li id="li-1770"><div class="para" id="p-4004">Instead of using 0.5 to round like we are used to, we use the geometric mean. If the quota is as large or larger than the geometric mean, round up; if the quota is smaller than the geometric mean, round down. This is the <em class="alert">initial</em> allocation. Add up the resulting whole numbers.</div></li>
+<li id="li-1771"><div class="para" id="p-4005">If the total from Step 4 is less than the total number of representatives, reduce the divisor and recalculate the quota and allocation. If the total from step 4 is larger than the total number of representatives, increase the divisor and recalculate. Continue doing this until the total is equal to the exact number of representatives. The divisor we end up using is called the <em class="alert">modified divisor</em>. This is a trial-and-error process.</div></li>
+</ol>
+</div></article></section><section class="subsection" id="subsection-133"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.1.9</span> <span class="title">What is the Geometric Mean?</span>
 </h3>
-<p id="p-3704">Let's look at why Hill and Huntington decided to use the geometric mean for rounding instead of the arithmetic mean of 0.5, which is halfway between two numbers. By calculating some geometric means and looking at them in a table we can see a pattern:</p>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><figure class="table table-like" id="table-12"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">6.1.7<span class="period">.</span></span><span class="space"> </span>Geometric Mean Pattern</figcaption><table class="tabular">
+<div class="para" id="p-4006">Let’s look at why Hill and Huntington decided to use the geometric mean for rounding instead of the arithmetic mean of 0.5, which is halfway between two numbers. By calculating some geometric means and looking at them in a table we can see a pattern:</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><figure class="table table-like" id="table-24"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(n\)</span></th>
 <th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\sqrt{n(n+1)}\)</span></th>
@@ -1112,13 +1508,14 @@ eBookConfig.enable_chatcodes =  false;
 <td class="l m b0 r0 l0 t0 lines">100</td>
 <td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\sqrt{(100(100+1)}=\sqrt{100(101)}\approx 100.499\)</span></td>
 </tr>
-</table></figure></div></div></div>
-<p id="p-3705">Notice that each geometric mean is between <span class="process-math">\(n\)</span> and <span class="process-math">\(n+1\text{.}\)</span> For smaller numbers, the decimal part is less than 0.5 and as n gets larger, the decimal part gets closer and closer to 0.5. This gives smaller states a chance to round up before larger states. That's how the Hill-Huntington method reduces the bias in favor of larger states.</p>
-<p id="p-3706">Now let's see how to use the geometric mean in an example.</p>
-<article class="example example-like" id="example-102"><h4 class="heading">
+</table>
+<figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">6.1.7<span class="period">.</span></span><span class="space"> </span>Geometric Mean Pattern</figcaption></figure></div></div></div>
+<div class="para" id="p-4007">Notice that each geometric mean is between <span class="process-math">\(n\)</span> and <span class="process-math">\(n+1\text{.}\)</span> For smaller numbers, the decimal part is less than 0.5 and as n gets larger, the decimal part gets closer and closer to 0.5. This gives smaller states a chance to round up before larger states. That’s how the Hill-Huntington method reduces the bias in favor of larger states.</div>
+<div class="para" id="p-4008">Now let’s see how to use the geometric mean in an example.</div>
+<article class="example example-like" id="example-112"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.1.8</span><span class="period">.</span>
 </h4>
-<p id="p-3707">Again, we will practice with Graceland, with an initial divisor of 21,900.82927 and 41 representatives:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<div class="para" id="p-4009">Again, we will practice with Graceland, with an initial divisor of 21,900.82927 and 41 representatives:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">County</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
@@ -1167,10 +1564,10 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines"></td>
 <td class="c m b1 r1 l0 t0 lines"></td>
 </tr>
-</table></div></div></div> <p id="p-3708">Notice that for B, the quota of 24.5872 is above the geometric mean of 24.49, so we round up to 25. This gives the required total, so we're done.</p></article><article class="example example-like" id="example-103"><h4 class="heading">
+</table></div></div></div> <div class="para" id="p-4010">Notice that for B, the quota of 24.5872 is above the geometric mean of 24.49, so we round up to 25. This gives the required total, so we’re done.</div></article><article class="example example-like" id="example-113"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.1.9</span><span class="period">.</span>
 </h4>
-<p id="p-3709">Again, here is Lewis, with an initial divisor of 14,034.22667:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<div class="para" id="p-4011">Again, here is Lewis, with an initial divisor of 14,034.22667:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">County</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
@@ -1235,7 +1632,7 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines"></td>
 <td class="c m b1 r1 l0 t0 lines"></td>
 </tr>
-</table></div></div></div> <p id="p-3710">We end up with 76 which is too many, so we need to increase the divisor. Let's try 14,100:</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+</table></div></div></div> <div class="para" id="p-4012">We end up with 76 which is too many, so we need to increase the divisor. Let’s try 14,100:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">County</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
@@ -1300,12 +1697,12 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines"></td>
 <td class="c m b1 r1 l0 t0 lines"></td>
 </tr>
-</table></div></div></div> <p id="p-3711">This time Bates had a quota less than its geometric mean, so it did not get rounded up and we have exactly 75 representatives.</p> <p id="p-3712">In both these cases, the apportionment produced by the Huntington-Hill method was the same as those from Webster's method, but that will not always be the case.</p></article><p id="p-3713">In 1980, two mathematicians, Peyton Young and Mike Balinski, proved what we now call the Balinski-Young Impossibility Theorem.</p>
+</table></div></div></div> <div class="para" id="p-4013">This time Bates had a quota less than its geometric mean, so it did not get rounded up and we have exactly 75 representatives.</div> <div class="para" id="p-4014">In both these cases, the apportionment produced by the Huntington-Hill method was the same as those from Webster’s method, but that will not always be the case.</div></article><div class="para" id="p-4015">In 1980, two mathematicians, Peyton Young and Mike Balinski, proved what we now call the Balinski-Young Impossibility Theorem.</div>
 <article class="assemblage assemblage-like" id="assemblage-39"><h4 class="heading"><span class="title">Balinski-Young Impossibility Theorem.</span></h4>
-<p id="p-3714">The Balinski-Young Impossibility Theorem shows that any apportionment method which always follows the quota rule will be subject to the possibility of paradoxes like the Alabama, New States, or Population paradoxes. In other words, we can choose a method that avoids those paradoxes, but only if we are willing to give up the guarantee of following the quota rule.</p></article><article class="example example-like" id="example-104"><h4 class="heading">
+<div class="para" id="p-4016">The Balinski-Young Impossibility Theorem shows that any apportionment method which always follows the quota rule will be subject to the possibility of paradoxes like the Alabama, New States, or Population paradoxes. In other words, we can choose a method that avoids those paradoxes, but only if we are willing to give up the guarantee of following the quota rule.</div></article><article class="example example-like" id="example-114"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.1.10</span><span class="period">.</span>
 </h4>
-<p id="p-3715">Consider a small country with 5 states, two of which are much larger than the others. We need to apportion 70 representatives. Apportion the representatives using both Webster's method and the Huntington-Hill method.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<div class="para" id="p-4017">Consider a small country with 5 states, two of which are much larger than the others. We need to apportion 70 representatives. Apportion the representatives using both Webster’s method and the Huntington-Hill method.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">State</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
@@ -1332,8 +1729,8 @@ eBookConfig.enable_chatcodes =  false;
 </tr>
 </table></div></div></div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original has-tabular" data-refid="hk-solution-256" id="solution-256"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-256"><div class="solution solution-like">
-<p id="p-3716">Step 1: The total population is 610,000. Dividing this by the 70 representatives gives the divisor: 8714.286.</p> <p id="p-3717">Step 2: Dividing each state's population by the divisor gives the quotas.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-tabular" data-refid="hk-solution-274" id="solution-274"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-274"><div class="solution solution-like">
+<div class="para" id="p-4018">Step 1: The total population is 610,000. Dividing this by the 70 representatives gives the divisor: 8714.286.</div> <div class="para" id="p-4019">Step 2: Dividing each state’s population by the divisor gives the quotas.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">State</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
@@ -1374,7 +1771,7 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines"><em class="emphasis">÷8714.286</em></td>
 <td class="c m b1 r1 l0 t0 lines"></td>
 </tr>
-</table></div></div></div> <p id="p-3718"><em class="alert">Webster's Method</em></p> <p id="p-3719">Step 3: Using Webster's method, we round each quota to the nearest whole number using the rounding rule of 0.5 or higher to round up.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+</table></div></div></div> <div class="para" id="p-4020"><em class="alert">Webster’s Method</em></div> <div class="para" id="p-4021">Step 3: Using Webster’s method, we round each quota to the nearest whole number using the rounding rule of 0.5 or higher to round up.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">State</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
@@ -1423,7 +1820,7 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines"></td>
 <td class="c m b1 r1 l0 t0 lines"></td>
 </tr>
-</table></div></div></div> <p id="p-3720">Step 4: Adding these up only gives us 69 representatives, so we adjust the divisor down. We try 8,700, which gives us 70 representatives. Notice that State A, the largest state, is the one that got rounded up the second time.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+</table></div></div></div> <div class="para" id="p-4022">Step 4: Adding these up only gives us 69 representatives, so we adjust the divisor down. We try 8,700, which gives us 70 representatives. Notice that State A, the largest state, is the one that got rounded up the second time.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">State</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
@@ -1472,7 +1869,7 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines"></td>
 <td class="c m b1 r1 l0 t0 lines"></td>
 </tr>
-</table></div></div></div> <p id="p-3721"><em class="alert">Huntington-Hill Method</em></p> <p id="p-3722">Step 3: Using the Huntington-Hill method, we cut off the decimal to find the lower quota, then calculate the geometric mean based on each lower quota. If the quota is less than the geometric mean, we round down; if the quota is more than the geometric mean, we round up.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+</table></div></div></div> <div class="para" id="p-4023"><em class="alert">Huntington-Hill Method</em></div> <div class="para" id="p-4024">Step 3: Using the Huntington-Hill method, we cut off the decimal to find the lower quota, then calculate the geometric mean based on each lower quota. If the quota is less than the geometric mean, we round down; if the quota is more than the geometric mean, we round up.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">State</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Population</th>
@@ -1537,25 +1934,25 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines"></td>
 <td class="c m b1 r1 l0 t0 lines"></td>
 </tr>
-</table></div></div></div> <p id="p-3723">These allocations add up to 70. Notice that this allocation is different than that produced by Webster's method. In this case, state E, which is smaller, got one more seat and state A got one less.</p>
+</table></div></div></div> <div class="para" id="p-4025">These allocations add up to 70. Notice that this allocation is different than that produced by Webster’s method. In this case, state E, which is smaller, got one more seat and state A got one less.</div>
 </div></div>
-</div></article><p id="p-3724">In this section we have learned four different methods of apportionment used in U.S. history, intertwined with the U.S. treatment of women, Native Americans and Black people. In the next section we will continue with our brief history of voting rights and look at different methods used for voting.</p></section><section class="exercises" id="exercises-13"><h3 class="heading hide-type">
+</div></article><div class="para" id="p-4026">In this section we have learned four different methods of apportionment used in U.S. history, intertwined with the U.S. treatment of women, Native Americans and Black people. In the next section we will continue with our brief history of voting rights and look at different methods used for voting.</div></section><section class="exercises" id="exercises-13"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber">6.1.10</span> <span class="title">Exercises</span>
 </h3>
 <div class="exercisegroup" id="exercisegroup-17">
 <h4 class="heading"><span class="title">Exercise Group.</span></h4>
-<div class="introduction" id="introduction-45">
-<p id="p-3725">In exercises 1-14, determine the apportionment using</p>
+<div class="introduction" id="introduction-63"><div class="para logical" id="p-4027">
+<div class="para">In exercises 1-14, determine the apportionment using</div>
 <ol class="lower-alpha">
-<li id="li-1580"><p id="p-3726">Hamilton's Method</p></li>
-<li id="li-1581"><p id="p-3727">Jefferson's Method</p></li>
-<li id="li-1582"><p id="p-3728">Webster's Method</p></li>
-<li id="li-1583"><p id="p-3729">Huntington-Hill Method</p></li>
+<li id="li-1772"><div class="para" id="p-4028">Hamilton’s Method</div></li>
+<li id="li-1773"><div class="para" id="p-4029">Jefferson’s Method</div></li>
+<li id="li-1774"><div class="para" id="p-4030">Webster’s Method</div></li>
+<li id="li-1775"><div class="para" id="p-4031">Huntington-Hill Method</div></li>
 </ol>
-</div>
+</div></div>
 <div class="exercisegroup-exercises">
 <article class="exercise exercise-like" id="exercise-297"><h5 class="heading"><span class="codenumber">1<span class="period">.</span></span></h5>
-<p id="p-3730">A college offers tutoring in Math, English, Chemistry, and Biology. The number of students enrolled in each subject is listed below. If the college can only afford to hire 15 tutors, determine how many tutors should be assigned to each subject.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<div class="para" id="p-4032">A college offers tutoring in Math, English, Chemistry, and Biology. The number of students enrolled in each subject is listed below. If the college can only afford to hire 15 tutors, determine how many tutors should be assigned to each subject.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">Math</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">English</th>
@@ -1569,8 +1966,8 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines">70</td>
 </tr>
 </table></div></div></div></article><article class="exercise exercise-like" id="exercise-298"><h5 class="heading"><span class="codenumber">2<span class="period">.</span></span></h5>
-<p id="p-3736">Reapportion the previous problem if the college can hire 20 tutors.</p></article><article class="exercise exercise-like" id="exercise-299"><h5 class="heading"><span class="codenumber">3<span class="period">.</span></span></h5>
-<p id="p-3742">The number of salespeople assigned to work during a shift is apportioned based on the average number of customers during that shift. Apportion 20 salespeople given the information below.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<div class="para" id="p-4038">Reapportion the previous problem if the college can hire 20 tutors.</div></article><article class="exercise exercise-like" id="exercise-299"><h5 class="heading"><span class="codenumber">3<span class="period">.</span></span></h5>
+<div class="para" id="p-4044">The number of salespeople assigned to work during a shift is apportioned based on the average number of customers during that shift. Apportion 20 salespeople given the information below.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">Shift</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Morning</th>
@@ -1586,8 +1983,8 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines">515</td>
 </tr>
 </table></div></div></div></article><article class="exercise exercise-like" id="exercise-300"><h5 class="heading"><span class="codenumber">4<span class="period">.</span></span></h5>
-<p id="p-3748">Reapportion the previous problem if the store has 25 salespeople.</p></article><article class="exercise exercise-like" id="exercise-301"><h5 class="heading"><span class="codenumber">5<span class="period">.</span></span></h5>
-<p id="p-3754">Three people invest in a treasure dive, each investing the amount listed below. The dive results in 36 gold coins. Apportion those coins to the investor.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<div class="para" id="p-4050">Reapportion the previous problem if the store has 25 salespeople.</div></article><article class="exercise exercise-like" id="exercise-301"><h5 class="heading"><span class="codenumber">5<span class="period">.</span></span></h5>
+<div class="para" id="p-4056">Three people invest in a treasure dive, each investing the amount listed below. The dive results in 36 gold coins. Apportion those coins to the investor.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">Aisha</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Basir</th>
@@ -1599,8 +1996,8 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines">$1,400</td>
 </tr>
 </table></div></div></div></article><article class="exercise exercise-like" id="exercise-302"><h5 class="heading"><span class="codenumber">6<span class="period">.</span></span></h5>
-<p id="p-3760">Reapportion the previous problem if 37 gold coins are recovered.</p></article><article class="exercise exercise-like" id="exercise-303"><h5 class="heading"><span class="codenumber">7<span class="period">.</span></span></h5>
-<p id="p-3766">A small country consists of four states, whose populations are listed below. If the legislature has 116 seats, apportion the seats.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<div class="para" id="p-4062">Reapportion the previous problem if 37 gold coins are recovered.</div></article><article class="exercise exercise-like" id="exercise-303"><h5 class="heading"><span class="codenumber">7<span class="period">.</span></span></h5>
+<div class="para" id="p-4068">A small country consists of four states, whose populations are listed below. If the legislature has 116 seats, apportion the seats.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">A</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">B</th>
@@ -1614,8 +2011,8 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines">89,100</td>
 </tr>
 </table></div></div></div></article><article class="exercise exercise-like" id="exercise-304"><h5 class="heading"><span class="codenumber">8<span class="period">.</span></span></h5>
-<p id="p-3772">Reapportion the previous problem with 124 seats.</p></article><article class="exercise exercise-like" id="example7"><h5 class="heading"><span class="codenumber">9<span class="period">.</span></span></h5>
-<p id="p-3778">A small country consists of five states, whose populations are listed below. If the legislature has 119 seats, apportion the seats.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<div class="para" id="p-4074">Reapportion the previous problem with 124 seats.</div></article><article class="exercise exercise-like" id="example7"><h5 class="heading"><span class="codenumber">9<span class="period">.</span></span></h5>
+<div class="para" id="p-4080">A small country consists of five states, whose populations are listed below. If the legislature has 119 seats, apportion the seats.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">A</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">B</th>
@@ -1631,8 +2028,8 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines">211,000</td>
 </tr>
 </table></div></div></div></article><article class="exercise exercise-like" id="exercise-306"><h5 class="heading"><span class="codenumber">10<span class="period">.</span></span></h5>
-<p id="p-3784">Reapportion the previous problem with 126 seats.</p></article><article class="exercise exercise-like" id="exercise-307"><h5 class="heading"><span class="codenumber">11<span class="period">.</span></span></h5>
-<p id="p-3790">A small country consists of six states, whose populations are listed below. If the legislature has 200 seats, apportion the seats.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<div class="para" id="p-4086">Reapportion the previous problem with 126 seats.</div></article><article class="exercise exercise-like" id="exercise-307"><h5 class="heading"><span class="codenumber">11<span class="period">.</span></span></h5>
+<div class="para" id="p-4092">A small country consists of six states, whose populations are listed below. If the legislature has 200 seats, apportion the seats.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">A</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">B</th>
@@ -1650,8 +2047,8 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines">4,962</td>
 </tr>
 </table></div></div></div></article><article class="exercise exercise-like" id="exercise-308"><h5 class="heading"><span class="codenumber">12<span class="period">.</span></span></h5>
-<p id="p-3796">Reapportion the previous problem with 180 seats</p></article><article class="exercise exercise-like" id="exercise-309"><h5 class="heading"><span class="codenumber">13<span class="period">.</span></span></h5>
-<p id="p-3802">A small country consists of six states, whose populations are listed below. If the legislature has 250 seats, apportion the seats.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<div class="para" id="p-4098">Reapportion the previous problem with 180 seats</div></article><article class="exercise exercise-like" id="exercise-309"><h5 class="heading"><span class="codenumber">13<span class="period">.</span></span></h5>
+<div class="para" id="p-4104">A small country consists of six states, whose populations are listed below. If the legislature has 250 seats, apportion the seats.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">A</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">B</th>
@@ -1669,11 +2066,11 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines">382,500</td>
 </tr>
 </table></div></div></div></article><article class="exercise exercise-like" id="exercise-310"><h5 class="heading"><span class="codenumber">14<span class="period">.</span></span></h5>
-<p id="p-3808">Reapportion the previous problem with 240 seats.</p></article>
+<div class="para" id="p-4110">Reapportion the previous problem with 240 seats.</div></article>
 </div>
 </div>
 <article class="exercise exercise-like" id="exercise-311"><h4 class="heading"><span class="codenumber">15<span class="period">.</span></span></h4>
-<p id="p-3814">A small country consists of three states, whose populations are listed below.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<div class="para" id="p-4116">A small country consists of three states, whose populations are listed below.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">A</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">B</th>
@@ -1684,13 +2081,13 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines">6,000</td>
 <td class="c m b1 r1 l0 t0 lines">2,000</td>
 </tr>
-</table></div></div></div> <ol id="p-3815" class="lower-alpha">
-<li id="li-1640"><p id="p-3816">If the legislature has 10 seats, use Hamilton's method to apportion the seats.</p></li>
-<li id="li-1641"><p id="p-3817">If the legislature grows to 11 seats, use Hamilton's method to apportion the seats.</p></li>
-<li id="li-1642"><p id="p-3818">Explain what happened in part b. What do you think would be a fair solution?</p></li>
-<li id="li-1643"><p id="p-3819">Try Jefferson's method for 11 seats. Does that solve the problem?</p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-312"><h4 class="heading"><span class="codenumber">16<span class="period">.</span></span></h4>
-<p id="p-3825">A small country consists of three states, whose populations are listed below.</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+</table></div></div></div> <div class="para logical" id="p-4117"><ol class="lower-alpha">
+<li id="li-1832"><div class="para" id="p-4118">If the legislature has 10 seats, use Hamilton’s method to apportion the seats.</div></li>
+<li id="li-1833"><div class="para" id="p-4119">If the legislature grows to 11 seats, use Hamilton’s method to apportion the seats.</div></li>
+<li id="li-1834"><div class="para" id="p-4120">Explain what happened in part b. What do you think would be a fair solution?</div></li>
+<li id="li-1835"><div class="para" id="p-4121">Try Jefferson’s method for 11 seats. Does that solve the problem?</div></li>
+</ol></div></article><article class="exercise exercise-like" id="exercise-312"><h4 class="heading"><span class="codenumber">16<span class="period">.</span></span></h4>
+<div class="para" id="p-4127">A small country consists of three states, whose populations are listed below.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">A</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">B</th>
@@ -1701,12 +2098,12 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines">10,000</td>
 <td class="c m b1 r1 l0 t0 lines">1,000</td>
 </tr>
-</table></div></div></div> <ol id="p-3826" class="lower-alpha">
-<li id="li-1648"><p id="p-3827">If the legislature has 10 seats, use Hamilton's method to apportion the seats. Which rule is not met in this case?</p></li>
-<li id="li-1649"><p id="p-3828">If the legislature grows to 11 seats, use Hamilton's method to apportion the seats.</p></li>
-<li id="li-1650"><p id="p-3829">If there could only be 10 seats, what do you think would be a fair solution?</p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-313"><h4 class="heading"><span class="codenumber">17<span class="period">.</span></span></h4>
-<p id="p-3834">A state with five counties has 50 seats in their legislature. Using Hamilton's method, apportion the seats based on the 2010 census, then again using the 2020 census. Explain what happened in 2020 apportionment. Do you think it is fair?</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+</table></div></div></div> <div class="para logical" id="p-4128"><ol class="lower-alpha">
+<li id="li-1840"><div class="para" id="p-4129">If the legislature has 10 seats, use Hamilton’s method to apportion the seats. Which rule is not met in this case?</div></li>
+<li id="li-1841"><div class="para" id="p-4130">If the legislature grows to 11 seats, use Hamilton’s method to apportion the seats.</div></li>
+<li id="li-1842"><div class="para" id="p-4131">If there could only be 10 seats, what do you think would be a fair solution?</div></li>
+</ol></div></article><article class="exercise exercise-like" id="exercise-313"><h4 class="heading"><span class="codenumber">17<span class="period">.</span></span></h4>
+<div class="para" id="p-4136">A state with five counties has 50 seats in their legislature. Using Hamilton’s method, apportion the seats based on the 2010 census, then again using the 2020 census. Explain what happened in 2020 apportionment. Do you think it is fair?</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">County</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">2000 Population</th>
@@ -1738,7 +2135,7 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines">118,400</td>
 </tr>
 </table></div></div></div></article><article class="exercise exercise-like" id="exercise-314"><h4 class="heading"><span class="codenumber">18<span class="period">.</span></span></h4>
-<p id="p-3838">A state with five counties has 62 seats in their legislature. Using Hamilton's method, apportion the seats based on the 2010 census, then again using the 2010 census. Explain what happened in 2020 apportionment. Do you think it is fair?</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<div class="para" id="p-4140">A state with five counties has 62 seats in their legislature. Using Hamilton’s method, apportion the seats based on the 2010 census, then again using the 2010 census. Explain what happened in 2020 apportionment. Do you think it is fair?</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines">County</th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">2000 Population</th>
@@ -1770,27 +2167,34 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines">112,000</td>
 </tr>
 </table></div></div></div></article><article class="exercise exercise-like" id="exercise-315"><h4 class="heading"><span class="codenumber">19<span class="period">.</span></span></h4>
-<p id="p-3842">A school district has two high schools:  Clatsop, serving 1715 students, and Siletz, serving 7364. The district could only afford to hire 13 guidance counselors.</p>
+<div class="para logical" id="p-4144">
+<div class="para">A school district has two high schools:  Clatsop, serving 1715 students, and Siletz, serving 7364. The district could only afford to hire 13 guidance counselors.</div>
 <ol class="lower-alpha">
-<li id="li-1654"><p id="p-3843">Determine how many counselors should be assigned to each school using Hamilton's method.</p></li>
-<li id="li-1655"><p id="p-3844">The following year, the district expands to include a third school, Cayuse, serving an additional 2989 students. Based on the divisor from above, how many additional counselors should be hired for Cayuse?</p></li>
-<li id="li-1656"><p id="p-3845">After hiring that many new counselors, the district recalculates the reapportion using Hamilton's method. Determine the outcome.</p></li>
-<li id="li-1657"><p id="p-3846">Explain what happened in the new apportionment. Do you think the outcome from part c is fair? Why or why not.</p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-316"><h4 class="heading"><span class="codenumber">20<span class="period">.</span></span></h4>
-<p id="p-3852">A school district has two middle schools: Tubman, serving 451 students, and Blackshear, serving 176. The district could afford to hire 8 art teachers.</p>
+<li id="li-1846"><div class="para" id="p-4145">Determine how many counselors should be assigned to each school using Hamilton’s method.</div></li>
+<li id="li-1847"><div class="para" id="p-4146">The following year, the district expands to include a third school, Cayuse, serving an additional 2989 students. Based on the divisor from above, how many additional counselors should be hired for Cayuse?</div></li>
+<li id="li-1848"><div class="para" id="p-4147">After hiring that many new counselors, the district recalculates the reapportion using Hamilton’s method. Determine the outcome.</div></li>
+<li id="li-1849"><div class="para" id="p-4148">Explain what happened in the new apportionment. Do you think the outcome from part c is fair? Why or why not.</div></li>
+</ol>
+</div></article><article class="exercise exercise-like" id="exercise-316"><h4 class="heading"><span class="codenumber">20<span class="period">.</span></span></h4>
+<div class="para logical" id="p-4154">
+<div class="para">A school district has two middle schools: Tubman, serving 451 students, and Blackshear, serving 176. The district could afford to hire 8 art teachers.</div>
 <ol class="lower-alpha">
-<li id="li-1662"><p id="p-3853">Determine how many art teachers should be assigned to each school using Hamilton's method.</p></li>
-<li id="li-1663"><p id="p-3854">The following year, the district expands to include a third school, Banneker, serving 231 additional students. Based on the divisor from above, how many additional art teachers should be hired for the new school?</p></li>
-<li id="li-1664"><p id="p-3855">After hiring that many new art teachers, the district recalculates the reapportion using Hamilton's method. Determine the outcome.</p></li>
-<li id="li-1665"><p id="p-3856">Explain what happened in the new apportionment. Do you think the outcome from part c is fair? Why or why not.</p></li>
-</ol></article></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-40"><div class="fn"><a class="external" href="http://recordsofrights.org/themes/4/rights-of-native-americans" target="_blank"><code class="code-inline tex2jax_ignore">http://recordsofrights.org/themes/4/rights-of-native-americans</code></a></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-41"><div class="fn">
-<a class="external" href="https://www.juneteenth.com/history.htm" target="_blank">https://www.juneteenth.com/history.htm</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-42" id="fn-42"><sup> 3 </sup></a>
-</div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-42"><div class="fn"><code class="code-inline tex2jax_ignore">www.juneteenth.com/history.htm</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-43"><div class="fn"><a class="external" href="https://www.ferris.edu/htmls/news/jimcrow/timeline/slavery.htm" target="_blank"><code class="code-inline tex2jax_ignore">https://www.ferris.edu/htmls/news/jimcrow/timeline/slavery.htm</code></a></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-44"><div class="fn"><a class="external" href="https://www.carnegie.org/topics/topic-articles/voting-rights/voting-rights-timeline/" target="_blank"><code class="code-inline tex2jax_ignore">https://www.carnegie.org/topics/topic-articles/voting-rights/voting-rights-timeline/</code></a></div></div>
+<li id="li-1854"><div class="para" id="p-4155">Determine how many art teachers should be assigned to each school using Hamilton’s method.</div></li>
+<li id="li-1855"><div class="para" id="p-4156">The following year, the district expands to include a third school, Banneker, serving 231 additional students. Based on the divisor from above, how many additional art teachers should be hired for the new school?</div></li>
+<li id="li-1856"><div class="para" id="p-4157">After hiring that many new art teachers, the district recalculates the reapportion using Hamilton’s method. Determine the outcome.</div></li>
+<li id="li-1857"><div class="para" id="p-4158">Explain what happened in the new apportionment. Do you think the outcome from part c is fair? Why or why not.</div></li>
+</ol>
+</div></article></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-28"><div class="fn"><a class="external" href="http://recordsofrights.org/themes/4/rights-of-native-americans" target="_blank"><code class="code-inline tex2jax_ignore">http://recordsofrights.org/themes/4/rights-of-native-americans</code></a></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-29"><div class="fn"><a class="external" href="https://www.juneteenth.com/history.htm" target="_blank">https://www.juneteenth.com/history.htm</a></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-30"><div class="fn"><a class="external" href="https://www.ferris.edu/htmls/news/jimcrow/timeline/slavery.htm" target="_blank"><code class="code-inline tex2jax_ignore">https://www.ferris.edu/htmls/news/jimcrow/timeline/slavery.htm</code></a></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-31"><div class="fn"><a class="external" href="https://www.carnegie.org/topics/topic-articles/voting-rights/voting-rights-timeline/" target="_blank"><code class="code-inline tex2jax_ignore">https://www.carnegie.org/topics/topic-articles/voting-rights/voting-rights-timeline/</code></a></div></div>
+</div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="democracy.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec-democracy-voting.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
 </div>
 </body>
 </html>

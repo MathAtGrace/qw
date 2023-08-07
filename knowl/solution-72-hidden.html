@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -10,20 +10,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like">
-<p>To use a spreadsheet for this problem, we use the <code class="code-inline tex2jax_ignore">=PV</code> formula because we want to know the present value, which is the value of the loan right now. We enter</p> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel middle" style="width:40%;">
-<pre class="code-display tex2jax_ignore">=PV(0.03/12, 12*5, 200,0)</pre>
-<p class="continuation">which gives $11,130.47.</p>
+<body class="ignore-math"><div class="solution solution-like"><div class="para logical"><ol class="lower-alpha">
+<li>
+<div class="para"><span class="process-math">\(\frac{750\left(1+\frac{0.0775}{4})^{4*30}-1\right)}{\left(frac{0.0775}{4}\right)}\)</span></div>
+<div class="para">Or, <code class="code-inline tex2jax_ignore">=FV(0.0775/4,4*30,750)</code>
 </div>
-<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_4/loan_formulas3.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
-</div></div> <p>To use a formula, we are looking for <span class="process-math">\(P\text{,}\)</span> the starting amount of the loan.</p> <p><span class="process-math">\(d=\$200\text{,}\)</span> the monthly loan payment</p> <p><span class="process-math">\(r=0.03\text{,}\)</span> 3% annual rate</p> <p><span class="process-math">\(n=12\text{,}\)</span> since we’re doing monthly payments, we’ll compound monthly</p> <p><span class="process-math">\(t=5\text{,}\)</span> since we’re making monthly payments for 5 years</p> <div class="displaymath process-math" data-contains-math-knowls="">
-\begin{align*}
-P\amp=\frac{d\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}{\frac{r}{n}}\\
-\amp=\frac{200\left(1-\left(1+\frac{0.03}{12}\right)^{-12\cdot 5}\right)}{\frac{0.03}{12}}\\
-\amp=\frac{200(1-(1.0025)^{-60})}{0.0025}\\
-\amp\approx\$11,130.47
-\end{align*}
-</div> <p>You can afford a maximum loan of $11,130.47. If you have a down payment you can add that to get the value of the car you can buy. If there are any closing costs for the loan you also need to take that into consideration.</p> <p>To find the amount of interest you will pay for this loan, calculate the total of all your payments.</p> <p><span class="process-math">\(\$200(5)(12)=\$12,000\)</span></p> <p>Then take the difference between the total payments and the loan amount.</p> <p><span class="process-math">\(\$12,000-\$11,130.47=\$869.53\)</span></p> <p>In this case, you would be paying $869.53 in interest.</p>
-</div></body>
+<div class="para">In 30 years you will have $348,456.10 in your retirement plan.</div>
+</li>
+<li><div class="para">
+<span class="process-math">\(348456.1 - 4*30*750\text{.}\)</span> You will have earned $258,456.10 in interest.</div></li>
+<li><div class="para">
+<span class="process-math">\(258456.1 /348456.1\text{.}\)</span> The final balance will be about 74.2% interest.</div></li>
+</ol></div></div></body>
 </html>

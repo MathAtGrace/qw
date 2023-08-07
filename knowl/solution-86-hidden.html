@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -10,11 +10,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like"><ol class="lower-alpha">
+<body class="ignore-math"><div class="solution solution-like"><div class="para logical"><ol class="lower-alpha">
 <li>
-<p><code class="code-inline tex2jax_ignore">=PMT(2.95%/12,12*15,180000,0)</code> which gives $1,238.72.</p>
-<p>You cannot afford this home.</p>
+<div class="para"><span class="process-math">\(\frac{50\left(\left(1+\frac{0.035}{52}\right)^{52*18}-1\right)}{\frac{0.035}{52}}\)</span></div>
+<div class="para">Or, <code class="code-inline tex2jax_ignore">=FV(0.035/52,52*18,50)</code>
+</div>
+<div class="para">They will have saved $65,164.37 after 18 years.</div>
 </li>
-<li><p>Using trial-and-error: The minimum number of additional years is 8. There is a 23 year loan period, 3.35% APR, and $936.24 monthly payment.</p></li>
-</ol></div></body>
+<li>
+<div class="para"><span class="process-math">\(\frac{65164.37}{(1+\frac{0.035}{52})^{52*18}}\)</span></div>
+<div class="para">Or, <code class="code-inline tex2jax_ignore">=PV(0.035/52,52*18,0,65164.37)</code>
+</div>
+<div class="para">They would have needed an deposit of $34,713.37.</div>
+</li>
+</ol></div></div></body>
 </html>

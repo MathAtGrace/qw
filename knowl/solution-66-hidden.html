@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -10,16 +10,23 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like"><ol class="lower-alpha">
-<li>
-<p><span class="process-math">\(\frac{100\left(\left(1+\frac{0.04}{12}\right)^{12*25}-1\right)}{\frac{0.04}{12}}\)</span></p>
-<p>Or, <code class="code-inline tex2jax_ignore">=FV(0.04/12,12*25,100)</code></p>
-<p>Vanessa will have $51,412.95 when she turns 65.</p>
-</li>
-<li>
-<p><span class="process-math">\(\frac{100\left(\left(1+\frac{0.04}{12}\right)^{12*40}-1\right)}{\frac{0.04}{12}}\)</span></p>
-<p><code class="code-inline tex2jax_ignore">=FV(0.04/12,12*40,100)</code></p>
-<p>Vanessa would have $118,196.13 if she had started saving when she was 25.</p>
-</li>
-</ol></div></body>
+<body class="ignore-math"><div class="solution solution-like">
+<div class="para">To calculate this with a spreadsheet, we will use the <code class="code-inline tex2jax_ignore">=PMT</code> function and enter 0 for the present value and $500,000 for the future value. We cannot enter commas within the numbers however, because spreadsheets use commas to separate the inputs. We enter:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel middle" style="width:40%;">
+<div class="para logical"><pre class="code-display tex2jax_ignore">=PMT(0.08/12, 12*30, 0, 500000)</pre></div>
+<div class="para">and get a result of $335.49.</div>
+</div>
+<div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_3/finding_payments1.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
+</div></div> <div class="para">To see how this works with the formulas, we use the one solved for <em class="alert">d</em>, the regular deposit amount.</div> <div class="para">
+<span class="process-math">\(r=0.08\text{,}\)</span> 8% annual rate</div> <div class="para">
+<span class="process-math">\(n=12\text{,}\)</span> since we’re depositing monthly</div> <div class="para">
+<span class="process-math">\(t=30\text{,}\)</span> 30 years</div> <div class="para">
+<span class="process-math">\(A=\$500,000\text{,}\)</span> the amount we want to have in 30 years</div> <div class="para"></div> <div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+d\amp=\frac{A\left(\frac{r}{n}\right)}{\left(\left(1+\frac{r}{n}\right)^{nt}-1\right)}\\
+\amp=\frac{500000\left(\frac{0.08}{12}\right)}{\left(\left(1+\frac{0.08}{12}\right)^{12\cdot 30}-1\right)}\\
+\amp\approx\$335.49
+\end{align*}
+</div></div> <div class="para">So, you would need to deposit $335.49 each month to have $500,000 in 30 years if your account earns 8% interest.</div>
+</div></body>
 </html>
