@@ -152,7 +152,7 @@
       </task>
     </introduction>
   </exercise>
-  
+   
   <exercise>
     <introduction>
       <p>
@@ -200,6 +200,53 @@
       <solution>
         <p>
           The <m>CO_2</m> levels repeat periodically every 260 years. (3 points)
+        </p>
+      </solution>
+    </task>
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        For each hypothetical scientist, use your best quantitative reasoning skills, your knowledge of the world, 
+        and your common sense to make educated guesses about each scientists' assumptions.  Specifically, what do 
+        you suppose each scientist is assuming about human causes of carbon dioxide versus natural causes of 
+        carbon dioxide?
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Linear
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Answers will vary.  For each model, grade 2 points for an answer that makes sense and 3 points for their explanation of their reasoning.
+        </p>
+      </solution>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Exponential
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Answers will vary.  For each model, grade 2 points for an answer that makes sense and 3 points for their explanation of their reasoning.
+        </p>
+      </solution>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Periodic
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Answers will vary.  For each model, grade 2 points for an answer that makes sense and 3 points for their explanation of their reasoning.
         </p>
       </solution>
     </task>
@@ -400,7 +447,7 @@
     <statement>
       <p>
         Read: the two page summary of this internal memo from the Exxon company from 1982
-        <url href="https://drive.google.com/file/d/1EbZKcJ_IkfR5gkJ81y5ik0IkVCuvQ45o/view?usp=sharing">1982-Exxon-Memo-to-Management-About-CO2.pdf</url>
+        <url href="https://mathatgrace.github.io/qw/external/1982-Exxon-Memo-to-Management-About-CO2.pdf">1982-Exxon-Memo-to-Management-About-CO2.pdf</url>
       </p>
       <p>
         Then compare their math model of temperature (Figure 3 on page 7) with the actual global average temperature given at the top of this site
