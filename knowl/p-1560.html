@@ -12,7 +12,7 @@
 </head>
 <body class="ignore-math">
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<div class="para">At the beginning of the repayment period, most of each payment goes to interest (thus the loan balance reduces very slowly at first). Over time, more of each payment shifts to principal, and less to interest.  At the end of the loan repayment period, nearly all the payment is going to principal.</div>
+<div class="para">This can also be done in nested fashion (be careful to add the negative FV quantity): <code class="code-inline tex2jax_ignore">=PMT(3.5%/4,4*12,0,100000+FV(3.5%/4,4*12,0,8000))</code>.</div>
 <span class="incontext"><a href="sec-3-4-loans.html#p-1560" class="internal">in-context</a></span>
 </body>
 </html>

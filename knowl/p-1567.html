@@ -12,8 +12,21 @@
 </head>
 <body class="ignore-math">
 <h6 class="heading"><span class="type">Paragraph</span></h6>
+<div class="para logical"><ol class="lower-alpha">
+<li><div class="para">
+<code class="code-inline tex2jax_ignore">=PMT(4.5%/12,12*30,250000)</code> which gives $1,266.71.</div></li>
+<li>
+<div class="para">This will be the present value of the remaining 240 loan payments:</div>
 <div class="para">
-<code class="code-inline tex2jax_ignore">=PV(0.05/1,6*1,0,30000)</code> = $22,386.46. Sol should deposit $22,386.46 to have $30,000 in 6 years.</div>
+<code class="code-inline tex2jax_ignore">=PV(4.5%/12,12*20,1266.71)</code> which gives $200,223.07.</div>
+</li>
+<li>
+<div class="para">This will be the present value of the remaining 120 loan payments:</div>
+<div class="para">
+<code class="code-inline tex2jax_ignore">=PV(4.5%/12,12*10,1266.71)</code> which gives $122,223.99.</div>
+</li>
+<li><div class="para">At the beginning of the repayment period, most of each payment goes to interest (thus the loan balance reduces very slowly at first). Over time, more of each payment shifts to principal, and less to interest.  At the end of the loan repayment period, nearly all the payment is going to principal.</div></li>
+</ol></div>
 <span class="incontext"><a href="sec-3-4-loans.html#p-1567" class="internal">in-context</a></span>
 </body>
 </html>

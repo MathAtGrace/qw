@@ -10,13 +10,47 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like"><div class="para logical"><ol class="lower-alpha">
-<li>
-<div class="para">Plot the data points and fit a sinusoidal curve by eye, as shown in <a href="" class="xref" data-knowl="./knowl/fig-chap2-proj-example2.html" title="Figure 5.4.5">Figure 5.4.5</a>.</div>
-<figure class="figure figure-like"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/models/fig-chap2-proj-example2.svg" role="img" class="contained" alt="sinusoidal length of day"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.4.5<span class="period">.</span></span><span class="space"> </span></figcaption></figure>
-</li>
-<li><div class="para">The period of the graph is <span class="process-math">\(12\)</span> months. The midline is approximately <span class="process-math">\(y = 12.25\text{,}\)</span> and the amplitude is approximately <span class="process-math">\(5.25\text{.}\)</span>
-</div></li>
-</ol></div></div></body>
+<body class="ignore-math"><div class="solution solution-like"><div class="para logical">
+<div class="para">We would like to find values of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> so that the given function values satisfy <span class="process-math">\(f (x) = ab^x\)</span> . By substituting the function values into the formula, we can write two equations.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}[t]
+f (2) \amp= 4.5~~~ \text{ means }~~~x = 2, y = 4.5, \amp\amp\text{so }ab^2 = 4.5\\
+f (5) \amp= 121.5~~~ \text{ means }~~~x = 5, y = 121.5, \amp\amp\text{so }ab^5 = 121.5
+\end{aligned}
+\end{equation*}
+</div>
+<div class="para">This is a system of equations in the two unknowns, <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> but it is not a linear system. We can solve the system by the method of elimination, but we will divide one of the equations by the other.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}[t]
+\frac{ab^5}{ab^2}\amp= \frac{121.5}{4.5}\\
+b^3 \amp = 27
+\end{aligned}
+\end{equation*}
+</div>
+<div class="para">Note that by dividing the two equations, we eliminated <span class="process-math">\(a\text{,}\)</span> and we can now solve for <span class="process-math">\(b\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}[t]
+b^3 \amp = 27 \\
+b \amp = \sqrt[3]{27} = 3
+\end{aligned}
+\end{equation*}
+</div>
+<div class="para">Next we substitute <span class="process-math">\(b = 3\)</span> into either of the two equations and solve for <span class="process-math">\(a\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{aligned}[t]
+a(3)^2 \amp = 4.5 \\
+a \amp= \frac{4.5}{9} \\
+\amp = 0.5
+\end{aligned}
+\end{equation*}
+</div>
+<div class="para">Thus, <span class="process-math">\(a = 0.5\)</span> and <span class="process-math">\(b = 3\text{,}\)</span> so the function is <span class="process-math">\(f (x) = 0.5(3^ x )\text{.}\)</span>
+</div>
+</div></div></body>
 </html>

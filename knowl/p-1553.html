@@ -12,7 +12,21 @@
 </head>
 <body class="ignore-math">
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<div class="para">Notice that the amount of the loan balance reduction during the second ten years, was very considerably bigger than the amount of the loan balance reduction during the first ten years. Why does the loan balance decrease at a faster and faster pace, the longer that the loan has been in repayment?</div>
+<div class="para logical"><ol class="lower-alpha">
+<li><div class="para">
+<code class="code-inline tex2jax_ignore">=PV(3.5%/4,4*12,1500)</code> which gives $58,586.02.</div></li>
+<li><div class="para">
+<code class="code-inline tex2jax_ignore">=PMT(3.5%/4,4*12,0,100000)</code> which gives $1,685.34.</div></li>
+<li>
+<div class="para">
+<code class="code-inline tex2jax_ignore">=PMT(3.5%/4,4*12,-8000,100000)</code> which gives $1,480.51.</div>
+<div class="para">(Note 8000 is input as negative, to signify a payment.)</div>
+<div class="para">Note this answer can also be found by subtracting the future value of $8000 here, which equals $12,153.47, from the required ending balance of $100,000 (which leaves $87,846.47) and then using the PMT function:</div>
+<div class="para">
+<code class="code-inline tex2jax_ignore">=PMT(3.5%/4,4*12,0,100000-12153.47)</code> which again gives $1,480.51.</div>
+<div class="para">This can also be done in nested fashion (be careful to add the negative FV quantity): <code class="code-inline tex2jax_ignore">=PMT(3.5%/4,4*12,0,100000+FV(3.5%/4,4*12,0,8000))</code>.</div>
+</li>
+</ol></div>
 <span class="incontext"><a href="sec-3-4-loans.html#p-1553" class="internal">in-context</a></span>
 </body>
 </html>

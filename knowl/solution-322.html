@@ -13,10 +13,119 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">6.3.4.4.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">6.2.7.1</span><span class="period">.</span>
 </h4>
-<div class="para">The term of a U.S. Senator is 6 years.</div>
+<div class="para">
+<em class="alert">Plurality Method:</em> We tally the first-place votes:</div>  <div class="sidebyside"><div class="sbsrow" style="margin-left:3%;margin-right:3%;">
+<div class="sbspanel top" style="width:20.2127659574468%;"><div class="para">A: <span class="process-math">\(3+2=5\)</span>
+</div></div>
+<div class="sbspanel top" style="width:20.2127659574468%;"><div class="para">B: <span class="process-math">\(4\)</span>
+</div></div>
+<div class="sbspanel top" style="width:20.2127659574468%;"><div class="para">C: <span class="process-math">\(6\)</span>
+</div></div>
+<div class="sbspanel top" style="width:20.2127659574468%;"><div class="para">D: <span class="process-math">\(5\)</span>
+</div></div>
+</div></div> <div class="para">C wins the plurality method.</div> <div class="para">
+<em class="alert">Instant Runoff Method:</em> We start with the plurality tallies. Then we look for the slogan with the least first-choice votes, and that is B. Looking in the preference schedule at the 4 people who voted for B, we see their second choice is D. So we transfer those 4 votes to D, which now has 9.</div>  <div class="sidebyside"><div class="sbsrow" style="margin-left:3%;margin-right:3%;">
+<div class="sbspanel top" style="width:20.2127659574468%;"><div class="para">A: <span class="process-math">\(5\)</span>
+</div></div>
+<div class="sbspanel top" style="width:20.2127659574468%;"><div class="para"><del class="delete">B: <span class="process-math">\(4\)</span></del></div></div>
+<div class="sbspanel top" style="width:20.2127659574468%;"><div class="para">C: <span class="process-math">\(6\)</span>
+</div></div>
+<div class="sbspanel top" style="width:20.2127659574468%;"><div class="para">D: <span class="process-math">\(5+4=9\)</span>
+</div></div>
+</div></div> <div class="para">Now A has the least number of votes with 5, so we look at the voters who chose A for their first choice. There are two columns, so three of those votes will be transferred to C and 2 will be transferred to D.</div>  <div class="sidebyside"><div class="sbsrow" style="margin-left:3%;margin-right:3%;">
+<div class="sbspanel top" style="width:20.2127659574468%;"><div class="para"><del class="delete">A: <span class="process-math">\(5\)</span></del></div></div>
+<div class="sbspanel top" style="width:20.2127659574468%;"><div class="para"><del class="delete">B: <span class="process-math">\(4\)</span></del></div></div>
+<div class="sbspanel top" style="width:20.2127659574468%;"><div class="para">C: <span class="process-math">\(6+3=9\)</span>
+</div></div>
+<div class="sbspanel top" style="width:20.2127659574468%;"><div class="para">D: <span class="process-math">\(9+2=11\)</span>
+</div></div>
+</div></div> <div class="para">D is the winner of the instant runoff method.</div> <div class="para">
+<em class="alert">Borda Count:</em> We add a column on the left for the points, starting with 1 point for last place and counting up. Then we multiply the points by the number of votes and add them all up.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Points</td>
+<td class="c m b1 r1 l0 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">5</td>
+<td class="c m b1 r1 l0 t1 lines">3</td>
+<td class="c m b1 r1 l0 t1 lines">6</td>
+<td class="c m b1 r1 l0 t1 lines">4</td>
+<td class="c m b1 r1 l0 t1 lines">2</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">4</td>
+<td class="c m b1 r1 l0 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3</td>
+<td class="c m b1 r1 l0 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1</td>
+<td class="c m b1 r1 l0 t0 lines">4th choice</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">D</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+</tr>
+</table></div></div></div> <div class="para logical"><ul class="disc">
+<li><div class="para">A: <span class="process-math">\(1 \cdot 0 + 2 \cdot 10 + 3 \cdot 5 + 4 \cdot 5 = 55\)</span> points</div></li>
+<li><div class="para">B: <span class="process-math">\(1 \cdot 7 + 2 \cdot 3 + 3 \cdot 6 + 4 \cdot 4 = 47\)</span> points</div></li>
+<li><div class="para">C: <span class="process-math">\(1 \cdot 4 + 2 \cdot 7 + 3 \cdot 3 + 4 \cdot 6 = 51\)</span> points</div></li>
+<li><div class="para">D: <span class="process-math">\(1 \cdot 9 + 2 \cdot 0 + 3 \cdot 6 + 4 \cdot 5 = 47\)</span> points</div></li>
+</ul></div> <div class="para">A is the winner of the Borda count method.</div> <div class="para"><em class="alert">Pairwise Comparison:</em></div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><div class="para logical">
+<div class="para">First we list all the possible pairs:</div>
+<ul class="disc">
+<li><div class="para">A vs B</div></li>
+<li><div class="para">A vs C</div></li>
+<li><div class="para">A vs D</div></li>
+<li><div class="para">B vs C</div></li>
+<li><div class="para">B vs D</div></li>
+<li><div class="para">C vs D</div></li>
+</ul>
+</div></div>
+<div class="sbspanel top" style="width:50%;"><div class="para logical">
+<div class="para">Then we count the number of voters who would choose each candidate if they were the only two in the race.</div>
+<ul class="disc">
+<li><div class="para">A-10 vs B-10</div></li>
+<li><div class="para">A-14 vs C-6</div></li>
+<li><div class="para">A-11 vs D-9</div></li>
+<li><div class="para">B–4 vs C-16</div></li>
+<li><div class="para">B-13 vs D-7</div></li>
+<li><div class="para">C-9 vs D-11</div></li>
+</ul>
+</div></div>
+</div></div> <div class="para logical">
+<div class="para">Totaling one point for each win and half a point for each tie gives us:</div>
+<ul class="disc">
+<li><div class="para">A has 2.5 points</div></li>
+<li><div class="para">B has 1.5 points</div></li>
+<li><div class="para">C has 1 point</div></li>
+<li><div class="para">D has 1 point</div></li>
+</ul>
+</div> <div class="para">A is the winner of the pairwise comparison method.</div>
 </div>
-<span class="incontext"><a href="sec-democracy-popular-vote.html#solution-322" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec-democracy-voting.html#solution-322" class="internal">in-context</a></span>
 </body>
 </html>

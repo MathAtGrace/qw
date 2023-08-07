@@ -13,18 +13,37 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">4.4.4.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">4.3.7.6.1</span><span class="period">.</span>
 </h4>
-<div class="para">Just like when finding the median, we must first order the data.</div> <div class="para">59 60 61 63 64 64 66 66 67 69 70 72</div> <div class="para">Then we divide the data into two halves. In the case of an even sample size, we split the distribution down the middle. The first 6 data values are the lower half and the next 6 data values are the upper half. Then we find the median of each. The median of the lower half is Q1 and the median of the upper half is Q3.</div> <div class="para logical"><div class="displaymath process-math">
+<div class="para logical"><ol class="lower-alpha">
+<li>
+<div class="para">In GeoGebra Classic, enter the costs into the column A and frequencies into column B of the spreadsheet and use the “One Variable Analysis” function. Then use the “Show Statistics” option.</div>
+<div class="para logical"><div class="displaymath process-math">
 \begin{gather*}
-\overbrace{59,60, \underbrace{61, 63,}^{Q1 =\frac{61+63}{2}=62} 64, 64,}^{\text{Lower Half}} \overbrace{66, 66, \underbrace{67, 69,}^{Q3 =\frac{67+69}{2}=68} 70, 72}^{\text{Upper Half}}
+Mean=5.3 \text { thousand characters}
 \end{gather*}
-</div></div> <div class="para">In this data <span class="process-math">\(Q_{1}=62\)</span> inches, and <span class="process-math">\(Q_{3}=68\)</span> inches. Then we subtract to find the IQR.</div> <div class="para logical"><div class="displaymath process-math">
-\begin{gather*}
-IQR=Q_{3}-Q_{1}=68-62=6\text{ inches}
-\end{gather*}
-</div></div> <div class="para">This tells us the that the middle 50% of the women’s heights lie within an interval of 6 inches.</div>
+</div></div>
+<div class="para">The sum of the frequencies is 34, so <span class="process-math">\(n=34\)</span>
 </div>
-<span class="incontext"><a href="sec-4-4-measure-of-variation.html#solution-219" class="internal">in-context</a></span>
+<div class="para logical"><div class="displaymath process-math">
+\begin{align*}
+\bar{x}\amp=\frac{(0⋅4+1⋅5+2⋅2+3⋅3+4⋅3+5⋅1+6⋅3+7⋅3+9⋅3+10⋅3+11⋅2+14⋅2)}{34}\\
+\amp=5.3 \text{ thousand characters}
+\end{align*}
+</div></div>
+</li>
+<li>
+<div class="para">In GeoGebra Classic, enter the costs into the column A and frequencies into column B of the spreadsheet and use the “One Variable Analysis” function. Then use the “Show Statistics” option.</div>
+<div class="para logical"><div class="displaymath process-math">
+\begin{gather*}
+Median=4.5 \text{ thousand characters}
+\end{gather*}
+</div></div>
+<div class="para">Since there are 34 values (an even number), we know that the median will be the mean of the two middle values. Because <span class="process-math">\(\frac{34}{2}=17\text{,}\)</span> we know the two middle values are the 17th and 18th values. The 17th value is 4, and the 18th value is 5, so the median is 4.5 thousand characters.</div>
+</li>
+<li><div class="para">Since the mean is greater than the median, we expect the distribution to be skewed right.</div></li>
+</ol></div>
+</div>
+<span class="incontext"><a href="sec-4-3-measure-of-center.html#solution-219" class="internal">in-context</a></span>
 </body>
 </html>

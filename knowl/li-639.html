@@ -11,15 +11,12 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<article class="li"><h6 class="heading">
-<span class="type">Item</span><span class="space"> </span><span class="codenumber">3.4.9.12.c</span><span class="period">.</span>
-</h6>
-<div class="para">
-<code class="code-inline tex2jax_ignore">=PMT(3.5%/4,4*12,-8000,100000)</code> which gives $1,480.51.</div>
-<div class="para">(Note 8000 is input as negative, to signify a payment.)</div>
-<div class="para">Note this answer can also be found by subtracting the future value of $8000 here, which equals $12,153.47, from the required ending balance of $100,000 (which leaves $87,846.47) and then using the PMT function:</div>
-<div class="para">
-<code class="code-inline tex2jax_ignore">=PMT(3.5%/4,4*12,0,100000-12153.47)</code> which again gives $1,480.51.</div>
-<div class="para">This can also be done in nested fashion (be careful to add the negative FV quantity): <code class="code-inline tex2jax_ignore">=PMT(3.5%/4,4*12,0,100000+FV(3.5%/4,4*12,0,8000))</code>.</div></article><span class="incontext"><a href="sec-3-4-loans.html#li-639" class="internal">in-context</a></span>
+<article class="li"><h5 class="heading">
+<span class="type">Item</span><span class="space"> </span><span class="codenumber">3.4.9.6.b</span><span class="period">.</span>
+</h5>
+<div class="para">The total of all loan payments will be <span class="process-math">\((12 * 30 * \$1,706.58) = \$614,368.80\text{.}\)</span>
+</div>
+<div class="para">So the total interest paid will be <span class="process-math">\(\$614,368.80 – \$270,000.00 = \$344,368.80\text{.}\)</span>
+</div></article><span class="incontext"><a href="sec-3-4-loans.html#li-639" class="internal">in-context</a></span>
 </body>
 </html>
