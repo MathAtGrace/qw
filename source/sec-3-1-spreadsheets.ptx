@@ -221,6 +221,114 @@
   </p>
 </subsection>
 
+<subsection xml:id="subsec-budget">
+  <title>Using a Spreadsheet for a Personal Budget</title>
+  <activity>
+    <title>Budget Project</title>
+    <introduction>
+      <p>
+        In this lab, you will create a budget spreadsheet to keep track of monthly income, 
+        expences, and savings, and you will use several spreadsheet functions and formulas.
+      </p>
+    </introduction>
+    
+    <task xml:id="task-budget-1">
+      <statement>
+        <p>
+          Create a new spreadsheet in Goolge Sheets, Microsoft Excel or Apple Numbers.  This
+          lab will refer to functions and formulas in Google sheets.
+        </p>
+      </statement>
+    </task>
+    <task xml:id="task-budget-2">
+      <statement>
+        <p>
+          Gracie wants to save for a summer vacation with her friends.  She estimates that 
+          her vacation will cost $2000.  Can she afford to go?  To find out, she decides to 
+          buget her income and expenses for the spring semester to determine if she'll have 
+          enough money saved in order to go.  Set up your spreadsheet so that it matches the 
+          picture below.
+        </p>
+        <image source="gracie_budget.png" width="100%"/>
+      </statement>
+    </task>
+    <task xml:id="task-budget-3">
+      <statement>
+        <p>
+          Fill in the bugdget with the following information
+          <ul>
+            <li> Gracie's first job makes $500 a month.</li>
+            <li> Gracie only works her second job during March, April, and May.  She makes 
+              $200 each of those months.</li>
+            <li> Gracie receives birthday money from some of her relatives in February 
+              totally $75.</li>
+            <li> Gracie pays for $35 of school supplies in January and $15 in March.</li>
+            <li> Gracie spends $100 a month on groceries.</li>
+            <li> Gracie spends $10 a month on toiletries (toothpaste, shampoo, etc.)</li>
+            <li> Gracie spends $25 a month on streaming services.</li>
+            <li> Gracie spends $70 a month on eating out and getting coffee.</li>
+            <li> Gracie spends $20 on birthday gifts for her family in the months of 
+              January (her mom), March (her brother), and May (her dad).</li>
+            <li> Gracie spends $45 on gasoline each month because she visits her family 
+              many weekends during the school year.</li>
+          </ul>
+        </p>
+      </statement>
+    </task>
+    <task xml:id="task-budget-4">
+      <statement>
+        <p>
+          Create formulas for the <q>Total</q> column, the <q>Month Total</q> rows, and 
+          the <q>Savings</q> row.          
+        </p>
+      </statement>
+    </task>
+    <task xml:id="task-budget-5">
+      <statement>
+        <p>
+          You should end up computing Gracie's total savings as a number less than her goal 
+          of $2000.  How much money does she save up in this scenario?  How much is she 
+          short of her goal?
+        </p>        
+      </statement>
+    </task>
+    <task xml:id="task-budget-6">
+      <statement>
+        <p>
+          Help Gracie decide what expenses to cut in order to reach her goal.  Precisely list 
+          everything she should change, and what her new total savings will be after making 
+          your suggested changes.
+        </p>
+      </statement>
+    </task>
+    <task xml:id="task-budget-7">
+      <statement>
+        <p>
+          Copy and paste your spreadsheet into the space below.
+        </p>
+      </statement>
+    </task>
+    <task xml:id="task-budget-8">
+      <statement>
+        <p>Use moral, ethical, and/or biblical reaons to explain why the changes you suggested 
+          above were the best choices for Gracie.  Feel free to use your imagination to fill 
+          in necessary details about her life.  Write 1-3 paragraphs.</p>
+        <p>This question will be graded according to your use of ethical, moral, or Biblical 
+          principles in your reasoning, and your use of numbers in your reasoning, such as:</p>
+        <p>
+          <ol>
+            <li>Interpretation: Ability to explain information presented in mathematical forms (e.g., equations, graphs, diagrams, tables, words)</li>
+            <li>Application / Analysis: Ability to make judgments and draw appropriate conclusions based on the quantitative analysis of data, while recognizing the limits of this analysis</li>
+            <li>Communication: Expressing quantitative evidence in support of the argument or purpose of the work (in terms of what evidence is used and how it is formatted, presented, and contextualized)</li>
+          </ol>
+        </p>        
+      </statement>
+    </task>
+  </activity>
+</subsection>
+
+
+
 <exercises>
   <title>Exercises</title>
   <introduction>

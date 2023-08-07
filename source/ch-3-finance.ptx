@@ -6,8 +6,8 @@
 <xi:include href="sec-3-1-spreadsheets.ptx"/>
 <xi:include href="sec-3-2-interest.ptx"/>
 <xi:include href="sec-3-3-savings.ptx" />
-<xi:include href="sec-3-4-loans.ptx" /><!--
-<xi:include href="sec-3-5-mortgage-lab.ptx" />-->
+<xi:include href="sec-3-4-loans.ptx" />
 <xi:include href="sec-3-5-taxes.ptx" />
+<xi:include href="sec-3-6-project.ptx" />
 
 </chapter>

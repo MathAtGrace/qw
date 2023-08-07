@@ -166,7 +166,7 @@
           To use a spreadsheet, we use the <c>=PMT</c> formula. For a loan, the loan amount is the present value and the future value is 0, indicating that the loan will be paid off. Teresa is making a down payment, so we also need to subtract that from the cost of the car to find the loan amount:
         </p>
         <p>
-          <m>\$15,000 – \$3,000 = \$12,000</m>
+          <m>\$15,000 - \$3,000 = \$12,000</m>
         </p>
         <p>
           Her loan amount is $12,000. For the <insert>3-year</insert> loan at 2.75% APR, we enter:
@@ -209,7 +209,7 @@
         </p>
     
         <p>
-          Teresa’s car payment would be $347.65.
+          Teresa's car payment would be $347.65.
         </p>
         <p>
           Now for the <insert>5-year loan</insert> at 4% APR, we enter:
@@ -252,7 +252,7 @@
           </md>
         </p>
         <p>
-          Now let’s compare the loans by finding out how much Teresa would pay in interest for each loan.
+          Now let's compare the loans by finding out how much Teresa would pay in interest for each loan.
         </p>
         <sidebyside widths="46% 46%" margins="0%">
           <stack>
@@ -707,6 +707,114 @@
       </solution>
     </example>
    -->
+
+    <activity>
+      <introduction>
+        <p>
+          In this activity you will get a chance to let a computer do most of the math for you.  It will be your job to interpret what is going on.
+        </p>
+        <p>
+          In this figure below, we have sliders to change the original principle of the loan <c>P</c>, the annual percentage rate <c>r</c>, the number of years of the loan <c>Y</c>, and the property tax <c>p_tax</c>.  The blue horizontal line is the amount of each monthly payment needed.  The red line is the amount of each of those payments going toward interest.  Thus, the blue area is the total payments towards principle, and the red area is the total payments towards interest.  The orange area represents escrow payments for property taxes and insurance.
+        </p>
+        <figure>
+          <interactive desmos="1d0bkp9jh7" width="100%" aspect="2:3" />
+          <caption>
+            If the embedded Desmos page above is too small, you can go to the <url href="https://www.desmos.com/calculator/1d0bkp9jh7">Desmos page</url>.
+          </caption>
+        </figure>
+      </introduction>
+      <task xml:id="task-mortgage-lab-blue-area">
+        <statement>
+          Set <c>P</c> equal to $130,000.  What number does the area of the blue region correspond to?
+        </statement>
+        <solution>
+          The area of the blue region corresponds to <c>P</c>, the principle of the loan, or $130,000. (2 points)
+        </solution>
+      </task>
+      <task xml:id="task-mortgage-lab-area-change">
+        <statement>
+          Try moving the <c>r</c> and <c>Y</c> sliders around.  Does the area of the blue region tend to stay the same, get larger, or get smaller as you make these changes?
+        </statement>
+        <solution>
+          The area of the blue region stays the same. (2 points)
+        </solution>
+      </task>
+      <task xml:id="task-mortgage-lab-area-why">
+        <statement>
+          Given what you know about how loans work, why would this be the case?
+        </statement>
+        <solution>
+          For their explanation, mark correct if you can tell that they know that this is because the area of the blue region corresponds to the original principle. (2 points)
+        </solution>
+      </task>
+      <task xml:id="task-mortgage-lab-budget-700">
+        <statement>
+          Suppose you have a budget for $700 a month for a home.  Also suppose that you can get an interest rate of 4%, and that you are looking for a 30 year loan.  Move the Principle <c>P</c> around to find the maximum house price you can afford.  What is it?  For this question, you will get full credit as long as you are close enough.  In order to get full credit, you need to be within $1,000 of the correct answer.  Make sure that you factor in that you will have to make escrow payments.
+        </statement>
+        <solution>
+          Answer should be $120,000. (4 points) Mark off for every $1000 they are off by, unless their answer is about $111,000, in which case take off 1 point becaused that means they were confused by escrow payments.
+        </solution>
+      </task>
+      <task xml:id="task-mortgage-lab-budget-700-percent-interest">
+        <statement>
+          In the situation from the last part, what percentage of your money goes towards interest over the life of the loan?
+        </statement>
+        <solution>
+          The amount of money going toward interest is 41.77% (2 point).  It is okay if they round to a different number of decimals or their number is close enough.
+        </solution>
+      </task>
+      <task xml:id="task-mortgage-lab-budget-15-year">
+        <statement>
+          Use the same information from <xref ref="task-mortgage-lab-budget-700" text="hybrid">part</xref>, but change the length of the loan to 15 years.  Now what is the maximum house price you can afford?  What now is the percentage of your money going towards interest?
+        </statement>
+        <solution>
+          <ol>
+            <li>Answer should be $81,000 or $82,000. (4 points) Mark off for every $1000 they are off by.</li>
+            <li>The amount of money going toward interest is 24.80% (2 points).  It is okay if they round to a different number of decimals or are close enough.</li>
+          </ol>
+        </solution>
+      </task>
+      <task xml:id="task-mortgage-lab-difference-15-30">
+        <statement>
+          Given your answer to the task above, how would you explain to someone that a 15-year loan has less than twice the monthly payments of a 30 year loan?
+        </statement>
+        <solution>
+          (6 points) Give at least 3 points for an answer that is coherent.  Give full credit for an explanation that basically says that paying off the loan faster means that less money goes toward interest.
+        </solution>
+      </task>
+      <task xml:id="task-mortgage-lab-rising-interest">
+        <statement>
+          Keeping everything else constant, change the annual percentage rate <c>r</c>.  Explain how a rising interest rate could be considered to make all home buyers a little poorer.
+        </statement>
+        <solution>
+          (6 points) Give at least 3 points for an answer that is coherent.  Give full credit for an explanation that basically says anything similar to, <q>Rising interest rates cause mortgages to be more expensive, thus causing homes to be more expensive.</q>
+        </solution>
+      </task>
+      <task xml:id="task-mortgage-lab-credit-card-1">
+        <statement>
+          Imagine that you have $4,000 in credit card debt, and you'd like to pay it off in 10 years.  Your credit card company charges 20% on your debt.  How much per month will you have to pay?  (For this problem and problem 7 ignore the escrow payments).
+        </statement>
+        <solution>
+          $77.30 (3 points) Give full credit if they are within $5.
+        </solution>
+      </task>
+      <task xml:id="task-mortgage-lab-credit-card-2">
+        <statement>
+          Given the credit card situation from the last part, how much will you have to pay if you try to pay it off in 5 years?
+        </statement>
+        <solution>
+          $105.98 (3 points) Give full credit if they are within $6.
+        </solution>
+      </task>
+      <task xml:id="task-mortgage-lab-credit-card-3">
+        <statement>
+          Given your answer to the last two parts, explain to your friend why it is important to pay credit card debt off as soon as possible.
+        </statement>
+        <solution>
+          (6 points) Give at least 3 points for anything coherent.  Give full credit for an explanation that mentions the relatively small increase in monthly payments to cut the length of the loan in half.
+        </solution>
+      </task>
+    </activity>
   </subsection>
   
   <subsection>

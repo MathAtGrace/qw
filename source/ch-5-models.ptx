@@ -10,4 +10,5 @@
   <xi:include href="./sec-5-2-exponential.ptx"/>
   <xi:include href="./sec-5-3-exponential-models.ptx"/>
   <xi:include href="./sec-5-4-periodic.ptx"/>
+  <xi:include href="./sec-5-5-carbon.ptx"/>
 </chapter>
