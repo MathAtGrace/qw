@@ -6,7 +6,7 @@
     <p>This chapter will focus on learning strategies and how our Christian theology relates to mathematics.</p>
   </introduction>
 
-  <xi:include href="./lab-time.ptx"/>
-  <!--<xi:include href="./lab-mindset.ptx"/>
-  <xi:include href="./sec-introduction-math-theology.ptx"/>-->
+  <xi:include href="./sec-1-1-time.ptx"/>
+  <xi:include href="./sec-1-2-mindset.ptx"/>
+  <xi:include href="./sec-1-3-math-theology.ptx"/>
 </chapter>

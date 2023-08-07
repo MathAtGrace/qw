@@ -13,10 +13,10 @@
   </introduction>
 
   <xi:include href="./sec-2-1-qr.ptx"/>
-  <!--<xi:include href="./sec-numbers-orders-of-mag.ptx"/>-->
- <!-- <xi:include href="./sec-numbers-prop-reasoning.ptx"/>
-  <xi:include href="./sec-numbers-unit-conversion.ptx"/>-->
-  <!--<xi:include href="./sec-numbers-cost-of-driving.ptx"/>    -->
-  <!--<xi:include href="./sec-numbers-home-improvements.ptx"/>  -->
-  <!--<xi:include href="./sec-numbers-percentages.ptx"/>        -->
+  <xi:include href="./sec-2-2-magnitude.ptx"/>
+  <xi:include href="./sec-2-3-prop-reasoning.ptx"/>
+  <xi:include href="./sec-2-4-units.ptx"/>
+  <xi:include href="./sec-2-5-cost-of-driving.ptx"/>
+  <xi:include href="./sec-2-6-home-improvement.ptx"/>
+  <xi:include href="./sec-2-7-percentages.ptx"/>
 </chapter>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="mindset" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Mindset Lab</title>
+  <introduction>
+    <p>
+      This lab is based on a worksheet created by Quantway and the Carnegie Foundation for the Advancement of Teaching.
+    </p>
+    <p>
+      The questions refer to the article <url href="https://github.com/MathAtGrace/Quantitative_Wisdom/raw/main/assets/you_can_grow_your_brain.pdf"><c>you_can_grow_your_brain.pdf</c></url>
+    </p>
+  </introduction>
+
+  <worksheet xml:id="worksheet-mindset">
+    <page xml:id="worksheet-mindset-p1">
+      <exercise xml:id="exercise-mindset-1" workspace="3 in">
+        <statement>
+          <p>
+            Think about the article that you just read. What are all the reasons why scientists say that people's math ability can grow and get better with effort and practice?
+          </p>
+          <p>
+            Please summarize them in your own words below.
+          </p>
+        </statement>
+      </exercise>
+      <exercise xml:id="exercise-mindset-2" workspace="3 in">
+        <statement>
+          <p>
+            In the article, you learned 3 things:
+          </p>
+          <ul>
+            <li>When you work hard and learn new things, your brain grows new connections and you get smarter.</li>
+            <li>The more you challenge yourself, the smarter you will become.</li>
+            <li>Smart kids are the kids who have practiced more—they have built up their reading and math "muscles."</li>
+          </ul>
+          <p>
+            Think about an example from your own life. What is something you weren’t good at at first? Then you practiced it using a good strategy and became really good at it. Write about it and explain how you became good at it.
+          </p>
+        </statement>
+      </exercise>
+    </page>
+
+
+    <page xml:id="worksheet-mindset-p2">
+      <exercise xml:id="exercise-mindset-3" workspace="5 in">
+        <statement>
+          <p>
+            Not all math students know that the brain can get smarter, even though it may help them have success. And we want to get your help, so we can learn more about how to explain it to them. We're hoping you can explain--in your own words--that the brain gets smarter when people use good strategies and try hard.
+          </p>
+          <p>
+            Imagine a friend who is struggling in school. This friend used to do pretty well in school but now is having a hard time and is starting to feel dumb. Write a letter to your friend to encourage him or her—tell them about what you just learned about the brain and why they shouldn’t be discouraged.
+          </p>
+          <p>
+            For example, you can tell them:
+          </p>
+          <ul>
+            <li>How they can get smarter if they work hard and use a good strategy.
+            </li>
+            <li>How they should work hard to build their reading and math muscles.</li>
+            <li>How they are not dumb, they just need to practice using a good strategy.</li>
+            <li>How they can ask the teacher or other students to help them learn better ways to study. Or any other tips you have for learning in school and getting smarter.</li>
+          </ul>
+          <p>
+            (Don't worry about writing a perfect final draft. We just want to know how you would say this to another student in your own words.)
+          </p>
+        </statement>
+      </exercise>
+    </page>
+  </worksheet>
+</section>
