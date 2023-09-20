@@ -16,7 +16,7 @@
 
 <figure width="100%" xml:id="muana-loa-carbon">
   <image source="models/co2_data_mlo.png" width="100%">
-    <description>Atmospheric <m>CO_2</m> at Mauna Loa Observatory from 1958 to 2022</description>
+    <description>Atmospheric <m>\chem{CO_2}</m> at Mauna Loa Observatory from 1958 to 2022</description>
   </image>
 </figure>
 
@@ -26,13 +26,7 @@
   <exercise>
     <introduction>
       <p>
-        Imagine that three scientists look at the graph above and each scientist tries to fit a 
-        different model to the data.  The first scientist tries to fit a linear model to the data.  
-        The second scientist tries to fit an exponential model to the data.  The third scientist 
-        tries to fit a periodic model to the data.  Follow this link: 
-        <url href="https://www.desmos.com/calculator/byz3z1gibq"/> 
-        and help them fit their 
-        models to the data to the best of your ability using the sliders.
+        Imagine that three scientists look at the graph above and each scientist tries to fit a different model to the data.  The first scientist tries to fit a linear model to the data.  The second scientist tries to fit an exponential model to the data.  The third scientist tries to fit a periodic model to the data.  Follow this link: <url href="https://www.desmos.com/calculator/byz3z1gibq"/> and help them fit their models to the data to the best of your ability using the sliders.
       </p>
     </introduction>
     <task>
@@ -53,7 +47,7 @@
     <task>
       <statement>
         <p>
-          Adjust the <q>c</q> and <q>d</q> to give the best linear model.  Tell me your values of c and d.
+          Adjust the <q>c</q> and <q>d</q> to give the best exponential model.  Tell me your values of c and d.
         </p>
       </statement>
       <solution>
@@ -68,7 +62,7 @@
     <task>
       <statement>
         <p>
-          Adjust the <q>f</q> and <q>g</q> to give the best linear model.  Tell me your values of f and g.
+          Adjust the <q>f</q> and <q>g</q> to give the best periodic model.  Tell me your values of f and g.
         </p>
       </statement>
       <solution>
@@ -168,7 +162,7 @@
       </statement>
       <solution>
         <p>
-          The <m>CO_2</m> increases by about 1.5 (or their <m>a</m>) ppm every year. (3 points)
+          The <m>\chem{CO_2}</m> increases by about 1.5 (or their <m>a</m>) ppm every year. (3 points)
         </p>
       </solution>
     </task>
@@ -180,7 +174,7 @@
       </statement>
       <solution>
         <p>
-          The <m>CO_2</m> ppm increases exponentially by about 2.2% (or their <m>d \times 100\%</m>) every year. (4 points)
+          The <m>\chem{CO_2}</m> ppm increases exponentially by about 2.2% (or their <m>d \times 100\%</m>) every year. (4 points)
         </p>
       </solution>
     </task>
@@ -199,7 +193,7 @@
       </hint>
       <solution>
         <p>
-          The <m>CO_2</m> levels repeat periodically every 260 years. (3 points)
+          The <m>\chem{CO_2}</m> levels repeat periodically every 260 years. (3 points)
         </p>
       </solution>
     </task>
@@ -253,8 +247,8 @@
   </exercise>
 
   <p>
-    Scientists have only been measuring <m>CO_2</m> at Mauna Loa since 1960.  However, scientists are able to drill 
-    ice cores from glaciers to estimate the amount of <m>CO_2</m> over the last 1000 years.  On the main graph below, 
+    Scientists have only been measuring <m>\chem{CO_2}</m> at Mauna Loa since 1960.  However, scientists are able to drill 
+    ice cores from glaciers to estimate the amount of <m>\chem{CO_2}</m> over the last 1000 years.  On the main graph below, 
     the red, solid line is the Mauna Loa data, and the black line is the data from ice cores of a glacier in Antartica.
   </p>
 
@@ -353,7 +347,7 @@
       <hint>
         <p>
           Think about how they are measured.  The main source for temperature is tree ring data.  Is it as easy to tell the
-          temperature from tree rings as it is to measure <m>CO_2</m> trapped in layers of a glacier?
+          temperature from tree rings as it is to measure <m>\chem{CO_2}</m> trapped in layers of a glacier?
         </p>
       </hint>
       <solution>
@@ -421,9 +415,7 @@
     <task>
       <statement>
         <p>
-          Because of the controversy the scientists were investigated by the EPA, Pennsylvania Univeersity (where Mann was a professor),
-          the Inspector General of the Department of Commerce, and the Office of the Inspector General of the National Science Foundation.
-          All of these institutions cleared them of any wrongdoing.
+          Because of the controversy the scientists were investigated by the EPA, Pennsylvania University (where Mann was a professor), the Inspector General of the Department of Commerce, and the Office of the Inspector   General of the National Science Foundation. All of these institutions cleared them of any wrongdoing.
         </p>
         <p>
           Why does it matter that these institutions cleared the scientists of any wrongdoing?

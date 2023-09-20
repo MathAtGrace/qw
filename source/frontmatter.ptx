@@ -26,6 +26,9 @@
     <p>
       I would also like to thank Heidi, my wife, for her support and insightful feedback.
     </p>
+    <p>
+      And finally, thank you mom for helping me find so many typos, just like old times.
+    </p>
   </acknowledgement>
 
   <colophon>
@@ -53,6 +56,6 @@
     </copyright>
   </colophon>
 
-  <xi:include href="./preface.ptx" />
+  <!--<xi:include href="./preface.ptx" />-->
 
 </frontmatter>

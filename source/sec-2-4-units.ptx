@@ -386,20 +386,20 @@
           <ol marker="a.">
             <li>
               <p>
-                In the US we measure height in feet and inches.  In other parts of the world height is measured in meters.
-                Use dimensional analysis convert the height of a person who is 5 feet, 10 inches into meters.
+                In the US, we measure height in feet and inches.  In other parts of the world, height is measured in meters.
+                Use dimensional analysis to convert the height of a person who is 5 feet, 10 inches into meters.
               </p>
             </li>
             <li>
               <p>
-                In the US we measure weight in pounds.  In other parts of the world weight is measured in kilograms.
-                Use dimensional analysis convert the weight of a person who is 180 pounds into kilograms.
+                In the US, we measure weight in pounds.  In other parts of the world, weight is measured in kilograms.
+                Use dimensional analysis to convert the weight of a person who is 180 pounds into kilograms.
               </p>
             </li>
             <li>
               <p>
                 A pesticide is supposed to be diluted in water at the rate of 2 pounds per gallon. Use dimensional
-                analysis convert this to ounces per quart.
+                analysis to convert this to ounces per quart.
               </p>
             </li>
           </ol>
@@ -491,7 +491,7 @@
           <ol marker = "a.">
             <li>
               <p>
-                Suppose a car is traveling at 35 miles per hour.  Before calculating, given an <em>educated guess</em> 
+                Suppose a car is traveling at 35 miles per hour.  Before calculating, give an <em>educated guess</em> 
                 for the distance, in feet, the car will travel in 4 seconds.
               </p>
             </li>
@@ -510,7 +510,7 @@
             <li>
               <p>Suppose the typical texting response time is between 2 seconds and 6 seconds.  That could 
                 be written as a compound inequality for time t as:<m>2\leq t \leq6</m> seconds.</p>
-              <p>If a car is travelling at 35 mph what is the typical distance a car would travel during 
+              <p>If a car is travelling at 35 mph, what is the typical distance a car would travel during 
                 a typical texting response?</p>
             </li>
           </ol>
