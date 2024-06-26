@@ -1,0 +1,147 @@
+INFO    : PreTeXt-CLI version: 2.3.9
+
+INFO    : PreTeXt project found in `C:\Users\johnsor\OneDrive - grace.edu\qw`.
+WARNING : Using CLI version 2.3.9 but project's `requirements.txt`
+WARNING : is configured to use 1.0.4. Consider either installing
+WARNING : CLI version 1.0.4 or running `pretext init --refresh`
+WARNING : to update `requirements.txt` to match 2.3.9.
+INFO    : Building with custom xsl C:\Users\johnsor\OneDrive - grace.edu\qw\xsl\acs-html.xsl
+INFO    : Preparing to build into C:\Users\johnsor\OneDrive - grace.edu\qw\output\html.
+INFO    : discovering source file's directory name: C:\Users\johnsor\OneDrive - grace.edu\qw\source
+INFO    : verifying and expanding input directory: C:\Users\johnsor\OneDrive - grace.edu\qw\source\../generated-assets
+INFO    : input directory expanded to absolute path: C:\Users\johnsor\OneDrive - grace.edu\qw\generated-assets
+INFO    : verifying and expanding input directory: C:\Users\johnsor\OneDrive - grace.edu\qw\source\../assets
+INFO    : input directory expanded to absolute path: C:\Users\johnsor\OneDrive - grace.edu\qw\assets
+INFO    : Runestone Services (via PreTeXt repository): version 7.2.9
+INFO    : Runestone Services (using newer, via online CDN query): version 7.3.0
+INFO    : converting C:\Users\johnsor\OneDrive - grace.edu\qw\source\main.ptx to HTML in C:\Users\johnsor\AppData\Local\Temp\tmpknkxw21w
+INFO    : XSL conversion of C:\Users\johnsor\OneDrive - grace.edu\qw\source\main.ptx by C:\Users\johnsor\AppData\Local\Temp\tmpppd1bkc8\acs-html.xsl
+INFO    : comprehensive messages, warnings, and errors:
+INFO    :     * PTX:WARNING: the stringparam "latex.pageref" is deprecated. Your value, "no" will be used. However you should move to using a publisher file entry for  $publication/latex/@pageref  instead.
+INFO    :     * PTX:DEPRECATE: (2017-08-04) the "task" element is no longer used as a child of a top-level division, but is instead being used to divide the other "project-like" elements.  It can be replaced by a functional equivalent: "project", "activity", "exploration", or "investigation" (4 times)
+INFO    :     *              located within: "sec-5-5-carbon-ex" (xml:id), "" (title)
+INFO    :     *              located within: "sec-5-5-carbon-ex" (xml:id), "" (title)
+INFO    :     *              located within: "sec-5-5-carbon-ex" (xml:id), "" (title)
+INFO    :     *              located within: "sec-5-5-carbon-ex" (xml:id), "" (title)
+INFO    :     * --------------
+INFO    :     * PTX:DEPRECATE: (2019-02-06) the "percent" element is no longer necessary, simply replace with a bare "%" character (20 times)
+INFO    :     *              located within: "table-percentages-3" (xml:id), "Table 1" (title)
+INFO    :     *              located within: "table-percentages-3" (xml:id), "Table 1" (title)
+INFO    :     *              located within: "table-percentages-3" (xml:id), "Table 1" (title)
+INFO    :     *              located within: "table-percentages-3" (xml:id), "Table 1" (title)
+INFO    :     *              located within: "table-percentages-3" (xml:id), "Table 1" (title)
+INFO    :     *              located within: "table-percentages-3" (xml:id), "Table 1" (title)
+INFO    :     *              located within: "table-percentages-3" (xml:id), "Table 1" (title)
+INFO    :     *              located within: "table-percentages-3" (xml:id), "Table 1" (title)
+INFO    :     *              located within: "table-percentages-3" (xml:id), "Table 1" (title)
+INFO    :     *              located within: "table-percentages-3" (xml:id), "Table 1" (title)
+INFO    :     *              located within: "table-percentages-4" (xml:id), "Table 2" (title)
+INFO    :     *              located within: "table-percentages-4" (xml:id), "Table 2" (title)
+INFO    :     *              located within: "table-percentages-4" (xml:id), "Table 2" (title)
+INFO    :     *              located within: "table-percentages-4" (xml:id), "Table 2" (title)
+INFO    :     *              located within: "table-percentages-4" (xml:id), "Table 2" (title)
+INFO    :     *              located within: "table-percentages-4" (xml:id), "Table 2" (title)
+INFO    :     *              located within: "table-percentages-4" (xml:id), "Table 2" (title)
+INFO    :     *              located within: "table-percentages-4" (xml:id), "Table 2" (title)
+INFO    :     *              located within: "table-percentages-4" (xml:id), "Table 2" (title)
+INFO    :     *              located within: "table-percentages-4" (xml:id), "Table 2" (title)
+INFO    :     * --------------
+INFO    :     * PTX:DEPRECATE: (2022-04-25) a "@label" attribute (on a "ul" or "ol" element) has been deprecated and should be replaced by the functionally equivalent "@marker".  We will attempt to honor your request (80 times)
+INFO    :     *              located within: "Apportionment rules" (title)
+INFO    :     *              located within: "What is Apportionment?" (title)
+INFO    :     *              located within: "Hamilton's Method" (title)
+INFO    :     *              located within: "Jefferson's Method" (title)
+INFO    :     *              located within: "Webster's Method" (title)
+INFO    :     *              located within: "Huntington-Hill Method" (title)
+INFO    :     *              located within: "sec-democracy-apportionment" (xml:id), "Apportionment" (title)
+INFO    :     *              located within: "sec-democracy-apportionment" (xml:id), "Apportionment" (title)
+INFO    :     *              located within: "sec-democracy-apportionment" (xml:id), "Apportionment" (title)
+INFO    :     *              located within: "sec-democracy-apportionment" (xml:id), "Apportionment" (title)
+INFO    :     *              located within: "sec-democracy-apportionment" (xml:id), "Apportionment" (title)
+INFO    :     *              located within: "sec-democracy-apportionment" (xml:id), "Apportionment" (title)
+INFO    :     *              located within: "sec-democracy-apportionment" (xml:id), "Apportionment" (title)
+INFO    :     *              located within: "sec-democracy-apportionment" (xml:id), "Apportionment" (title)
+INFO    :     *              located within: "sec-democracy-apportionment" (xml:id), "Apportionment" (title)
+INFO    :     *              located within: "example7" (xml:id)
+INFO    :     *              located within: "sec-democracy-apportionment" (xml:id), "Apportionment" (title)
+INFO    :     *              located within: "sec-democracy-apportionment" (xml:id), "Apportionment" (title)
+INFO    :     *              located within: "sec-democracy-apportionment" (xml:id), "Apportionment" (title)
+INFO    :     *              located within: "sec-democracy-apportionment" (xml:id), "Apportionment" (title)
+INFO    :     *              located within: "sec-democracy-apportionment" (xml:id), "Apportionment" (title)
+INFO    :     *              located within: "sec-democracy-apportionment" (xml:id), "Apportionment" (title)
+INFO    :     *              located within: "sec-democracy-apportionment" (xml:id), "Apportionment" (title)
+INFO    :     *              located within: "sec-democracy-apportionment" (xml:id), "Apportionment" (title)
+INFO    :     *              located within: "sec-democracy-apportionment" (xml:id), "Apportionment" (title)
+INFO    :     *              located within: "sec-democracy-apportionment" (xml:id), "Apportionment" (title)
+INFO    :     *              located within: "sec-democracy-apportionment" (xml:id), "Apportionment" (title)
+INFO    :     *              located within: "sec-democracy-apportionment" (xml:id), "Apportionment" (title)
+INFO    :     *              located within: "sec-democracy-apportionment" (xml:id), "Apportionment" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Choosing the U.S. President" (title)
+INFO    :     *              located within: "How Electoral Votes are Determined" (title)
+INFO    :     *              located within: "How Electoral Votes are Determined" (title)
+INFO    :     *              located within: "sec-democracy-popular-vote" (xml:id), "The Popular Vote, Electoral College and Electoral Power" (title)
+INFO    :     *              located within: "sec-democracy-popular-vote" (xml:id), "The Popular Vote, Electoral College and Electoral Power" (title)
+INFO    :     *              located within: "sec-democracy-popular-vote" (xml:id), "The Popular Vote, Electoral College and Electoral Power" (title)
+INFO    :     *              located within: "sec-democracy-popular-vote" (xml:id), "The Popular Vote, Electoral College and Electoral Power" (title)
+INFO    :     *              located within: "sec-democracy-popular-vote" (xml:id), "The Popular Vote, Electoral College and Electoral Power" (title)
+INFO    :     *              located within: "sec-democracy-popular-vote" (xml:id), "The Popular Vote, Electoral College and Electoral Power" (title)
+INFO    :     *              located within: "sec-democracy-popular-vote" (xml:id), "The Popular Vote, Electoral College and Electoral Power" (title)
+INFO    :     *              located within: "sec-democracy-popular-vote" (xml:id), "The Popular Vote, Electoral College and Electoral Power" (title)
+INFO    :     *              located within: "sec-democracy-popular-vote" (xml:id), "The Popular Vote, Electoral College and Electoral Power" (title)
+INFO    :     *              located within: "sec-democracy-popular-vote" (xml:id), "The Popular Vote, Electoral College and Electoral Power" (title)
+INFO    :     *              located within: "sec-democracy-popular-vote" (xml:id), "The Popular Vote, Electoral College and Electoral Power" (title)
+INFO    :     *              located within: "sec-democracy-popular-vote" (xml:id), "The Popular Vote, Electoral College and Electoral Power" (title)
+INFO    :     *              located within: "sec-democracy-popular-vote" (xml:id), "The Popular Vote, Electoral College and Electoral Power" (title)
+INFO    :     *              located within: "sec-democracy-popular-vote" (xml:id), "The Popular Vote, Electoral College and Electoral Power" (title)
+INFO    :     *              located within: "sec-democracy-popular-vote" (xml:id), "The Popular Vote, Electoral College and Electoral Power" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     *              located within: "Exercises" (title)
+INFO    :     * --------------
+INFO    :     * PTX:DEPRECATE: (2023-08-08) a "website" element with "address" and "name" children has changed.  Continue to use the "website" element as before, but replace the "address" and "name" children with a single "url" element, which is more flexible and reliable.  We will try to honor your intent, but you may prefer your own adjustments. (1 time)
+INFO    :     *              located within: "frontmatter" (xml:id), "Front Matter" (title)
+INFO    :     * --------------
+INFO    :     * PTX:DEPRECATE: (2023-02-13) the string parameter "commentary" will be removed on, or after, 2024-02-13 (but not yet).  Any "commentary" elements present should be adjusted to have their visibility controlled by version support, specifically by first being placed in a "component", and then controlled by entries of a publisher file.  Then "commentary" elements can be hidden just with version support.  To be visible you will need to use version support AND continue to use the string parameter.  On, or after, 2024-02-13, this warning will become a fatal error. (1 time)
+INFO    :     *              located within: "sec-math-theology" (xml:id), "God and Math" (title)
+INFO    :     * --------------
+INFO    :     * PTX:DEPRECATE: (2024-02-16) a "commentary" element without a @component attribute is now routinely visible in all conversions.  This is unlikely to be what you want since the same effect can be had with no "commentary" element at all.  This message expands on the warning of 2023-02-13, and you might also be getting messages about the deprecation of the string parameter also named "commentary".   Remove the "commentary" element, or consult the PreTeXt Guide to learn about version support and place the "commentary" element into a component using the attribute of the same name. (1 time)
+INFO    :     *              located within: "sec-math-theology" (xml:id), "God and Math" (title)
+INFO    :     * --------------
+INFO    :     * PTX:FATAL:    a "commentary" without a @component attribute is a fatal error from 2024-02-16 onward.  Read prior error messages and make the suggested changes.  Quitting...
+INFO    : processing with C:\Users\johnsor\AppData\Local\Temp\tmpppd1bkc8\acs-html.xsl has failed
+
+CRITICAL: PTX:FATAL:    a "commentary" without a @component attribute is a fatal error from 2024-02-16 onward.  Read prior error messages and make the suggested changes.  Quitting...
+INFO    : ------------------------
+CRITICAL: Failed to build.  Exiting...
+INFO    : While running pretext, the following errors occurred:
+

@@ -12,7 +12,7 @@
     <p>
       This section is based on a lesson created by the Kuyers Institute.
     </p>
-    <commentary>
+    <commentary component="instructor">
       <p>In class, ask students to pair up and tell each other their math autobiographies.</p>
       <p>Then ask for students to summarize (i.e. bullet points) their partner's math autobiography in writing.</p>
       <p>Then ask the partners to check with each other that their summaries are okay.  They may need to fix something.</p>
