@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <runestone-services version="7.3.0"/>
+  <library-metadata publisher="pretext">
+    <title>Quantitative Wisdom</title>
+    <subtitle>Numerical literacy from the perspective of Biblical wisdom</subtitle>
+    <document-id edition=""/>
+    <shelf/>
+    <blurb/>
+  </library-metadata>
+  <latex-macros>
+\newcommand{\degree}[0]{^{\circ}}
+\newcommand{\Ccancel}[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
+\newcommand{\bluetext}[1]{\color{blue}{#1}} 
+\delimitershortfall-1sp
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand*\chem[1]{\ensuremath{\mathrm{#1}}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+</latex-macros>
+  <webwork-version major="" minor=""/>
+  <chapter>
+    <id>ch-introduction</id>
+    <title>Introduction</title>
+    <subchapter>
+      <id>time</id>
+      <title>Time Management Lab</title>
+    </subchapter>
+    <subchapter>
+      <id>mindset</id>
+      <title>Mindset Lab</title>
+    </subchapter>
+    <subchapter>
+      <id>sec-math-theology</id>
+      <title>God and Math</title>
+    </subchapter>
+  </chapter>
+  <chapter>
+    <id>ch-numbers</id>
+    <title>Numbers</title>
+    <subchapter>
+      <id>sec-problem-solving</id>
+      <title>Problem Solving</title>
+    </subchapter>
+    <subchapter>
+      <id>sec_orders_of_mag</id>
+      <title>Orders of Magnitude</title>
+    </subchapter>
+    <subchapter>
+      <id>sec_water_footprint</id>
+      <title>Proportional Reasoning</title>
+    </subchapter>
+    <subchapter>
+      <id>unit-conversion</id>
+      <title>Unit Conversion</title>
+    </subchapter>
+    <subchapter>
+      <id>cost-of-driving</id>
+      <title>Cost of Driving</title>
+    </subchapter>
+    <subchapter>
+      <id>home-improvements</id>
+      <title>Home Improvements</title>
+    </subchapter>
+    <subchapter>
+      <id>sec_numbers_percentages</id>
+      <title>Percentages</title>
+    </subchapter>
+  </chapter>
+  <chapter>
+    <id>financial_math</id>
+    <title>Finance</title>
+    <subchapter>
+      <id>sec-finance-intro-spreadsheet</id>
+      <title>Introduction to Spreadsheets</title>
+    </subchapter>
+    <subchapter>
+      <id>sec-finance-simple-compound</id>
+      <title>Simple and Compound Interest</title>
+    </subchapter>
+    <subchapter>
+      <id>sec-finance-savings-plan</id>
+      <title>Savings Plans</title>
+    </subchapter>
+    <subchapter>
+      <id>sec-3-4-loans</id>
+      <title>Loan Payments</title>
+    </subchapter>
+    <subchapter>
+      <id>chap_two_income_taxes</id>
+      <title>Income Taxes</title>
+    </subchapter>
+    <subchapter>
+      <id>finance-final-project</id>
+      <title>Planning and Budget Project</title>
+    </subchapter>
+  </chapter>
+  <chapter>
+    <id>data</id>
+    <title>Data</title>
+    <subchapter>
+      <id>sec-4-1-statistical-process</id>
+      <title>Overview of the Statistical Process</title>
+    </subchapter>
+    <subchapter>
+      <id>sec-4-2-describing-data</id>
+      <title>Describing Data</title>
+    </subchapter>
+    <subchapter>
+      <id>sec-4-3-measure-of-center</id>
+      <title>Summary Statistics: Measures of Center</title>
+    </subchapter>
+    <subchapter>
+      <id>sec-4-4-measure-of-variation</id>
+      <title>Summary Statistics: Measures of Variation</title>
+    </subchapter>
+  </chapter>
+  <chapter>
+    <id>ch-models</id>
+    <title>Math Models</title>
+    <subchapter>
+      <id>sec-models-linear</id>
+      <title>Function Notation and Linear Functions</title>
+    </subchapter>
+    <subchapter>
+      <id>sec-models-exponential</id>
+      <title>Exponential Growth and Decay</title>
+    </subchapter>
+    <subchapter>
+      <id>sec-models-exponential-2</id>
+      <title>Exponential Models</title>
+      <question>
+        <label>Activity 5.3.3 </label>
+        <htmlsrc>
+          <div class="ptx-runestone-container">
+            <div class="runestone fillintheblank_section">
+              <div data-component="fillintheblank" data-question_label="" id="__"><div class="para" id="sec-models-exponential-2-3-6-1-1">In 2005, the population of Uganda was 26.9 million people and was growing by 3.2% per year.</div> <div class="para logical" id="sec-models-exponential-2-3-6-1-2"><ol class="lower-alpha"><li id="sec-models-exponential-2-3-6-1-2-1-1"><div class="para" id="sec-models-exponential-2-3-6-1-2-1-1-1">Write a formula for the population of Uganda as a function of years since 2005.</div><div class="para" id="sec-models-exponential-2-3-6-1-2-1-1-2"><span class="process-math">\(P(t)=\)</span> million</div></li><li id="sec-models-exponential-2-3-6-1-2-1-2"><div class="para" id="sec-models-exponential-2-3-6-1-2-1-2-1">How long will it take the population of Uganda to double?</div><div class="para" id="sec-models-exponential-2-3-6-1-2-1-2-2"> years</div></li><li id="sec-models-exponential-2-3-6-1-2-1-3"><div class="para" id="sec-models-exponential-2-3-6-1-2-1-3-1">Use your formula from part (a) to verify the doubling time for three doubling periods.</div></li><li id="sec-models-exponential-2-3-6-1-2-1-4"><div class="para logical" id="sec-models-exponential-2-3-6-1-2-1-4-1"><div class="para">Which statement is true?</div><ol class="lower-roman"><li id="sec-models-exponential-2-3-6-1-2-1-4-1-1-1"><div class="para" id="sec-models-exponential-2-3-6-1-2-1-4-1-1-1-1">The doubling time of a population depends on its initial value.</div></li><li id="sec-models-exponential-2-3-6-1-2-1-4-1-1-2"><div class="para" id="sec-models-exponential-2-3-6-1-2-1-4-1-1-2-1">An increasing exponential function has a constant doubling time.</div></li><li id="sec-models-exponential-2-3-6-1-2-1-4-1-1-3"><div class="para" id="sec-models-exponential-2-3-6-1-2-1-4-1-1-3-1">The doubling time is twice the percent growth rate.</div></li><li id="sec-models-exponential-2-3-6-1-2-1-4-1-1-4"><div class="para" id="sec-models-exponential-2-3-6-1-2-1-4-1-1-4-1">The doubling time is half the percent growth rate.</div></li></ol></div></li></ol></div><script type="application/json"/></div>
+            </div>
+          </div>
+        </htmlsrc>
+      </question>
+    </subchapter>
+    <subchapter>
+      <id>sec-5-4-periodic-functions</id>
+      <title>Periodic Functions</title>
+    </subchapter>
+    <subchapter>
+      <id>sec-5-5-carbon</id>
+      <title>Carbon Dioxide Lab</title>
+    </subchapter>
+  </chapter>
+  <chapter>
+    <id>democracy</id>
+    <title>Democracy</title>
+    <subchapter>
+      <id>sec-democracy-apportionment</id>
+      <title>Apportionment</title>
+    </subchapter>
+    <subchapter>
+      <id>sec-democracy-voting</id>
+      <title>Voting Methods</title>
+    </subchapter>
+    <subchapter>
+      <id>sec-democracy-popular-vote</id>
+      <title>The Popular Vote, Electoral College and Electoral Power</title>
+    </subchapter>
+    <subchapter>
+      <id>sec-democracy-gerrymandering</id>
+      <title>Gerrymandering and How to Measure It</title>
+    </subchapter>
+  </chapter>
+</manifest>
