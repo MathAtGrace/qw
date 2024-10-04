@@ -11,7 +11,6 @@
 <title>Function Notation and Linear Functions</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="canonical" href="https://runestone.academy/ns/books/published//sec-models-linear.html">
 <meta property="og:type" content="book">
 <meta property="book:title" content="Quantitative Wisdom">
 <meta property="book:author" content=" Dr. Ryan Johnson ">
@@ -70,7 +69,7 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="_static/lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
 <script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -79,7 +78,7 @@ window.MathJax = {
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-<link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script><link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
@@ -87,41 +86,47 @@ window.MathJax = {
 <link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
 <script type="text/javascript">
 eBookConfig = {};
-eBookConfig.useRunestoneServices = true;
-eBookConfig.host = '';
-eBookConfig.app = eBookConfig.host + '/runestone';
-eBookConfig.course = '~._ course_name _.~';
-eBookConfig.basecourse = '~._ base_course _.~';
-eBookConfig.isLoggedIn = ~._ is_logged_in _.~;
-eBookConfig.email = '~._ user_email _.~';
-eBookConfig.isInstructor = ~._ is_instructor _.~;
-eBookConfig.logLevel = 10;
-eBookConfig.ajaxURL = eBookConfig.app + "/ajax/";
-eBookConfig.username = '~._ user_id _.~';
-eBookConfig.readings = ~._ readings|safe _.~;
-eBookConfig.activities = ~._ activity_info|safe _.~;
-eBookConfig.downloadsEnabled = ~._ downloads_enabled _.~;
-eBookConfig.allow_pairs = ~._ allow_pairs _.~;
-eBookConfig.enableScratchAC = true;
-eBookConfig.acDefaultLanguage = 'python';
-eBookConfig.new_server_prefix = "/ns";
-eBookConfig.runestone_version = '7.3.0';
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.4.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
 </script>
-<script src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script><!--*** Runestone Services ***-->
-<script type="text/javascript" src="_static/prefix-runtime.fd90d8f564bee81c.bundle.js"></script><script type="text/javascript" src="_static/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="_static/prefix-runestone.0dbb743224ea5679.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.f64dcc3632d7a0c3.css">
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.4.1/prefix-runtime.00db6230172ad960.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.4.1/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.4.1/prefix-runestone.04737dc219c2d2eb.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.4.1/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.4.1/prefix-runestone.f64dcc3632d7a0c3.css">
 </head>
-<body class="pretext book ignore-math">
+<body id="qw2" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" target="_blank" href=""></a><div class="title-container">
+<a id="logo-link" class="logo-link" target="_blank" href="https://mathatgrace.github.io/qw2"><img src="external/Lady-Wisdom.jpg" alt="Logo image"></a><div class="title-container">
 <h1 class="heading"><a href="qw.html"><span class="title">Quantitative Wisdom:</span> <span class="subtitle">Numerical literacy from the perspective of Biblical wisdom</span></a></h1>
 <p class="byline">Dr. Ryan Johnson</p>
 </div>
-</div></header><nav id="ptx-navbar" class="ptx-navbar navbar ptx-runestone-container"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-4.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-4.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
 <div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
 <div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
 <div class="search-results-controls">
@@ -132,25 +137,24 @@ eBookConfig.runestone_version = '7.3.0';
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="ch-models.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-models.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-models-exponential.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><span class="nav-runestone-controls"><button onclick="runestoneComponents.popupScratchAC()" class="activecode-toggle button" title="Open Scratch ActiveCode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf097;</span><span class="name">Scratch ActiveCode</span></button><button class="runestone-profile dropdown button" title="Profile"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf0d3;</span><span class="name">Profile</span><div class="dropdown-content">
-{% if settings.academy_mode: %}
-<a href="/ns/course/index">Course Home</a><a href="/runestone/assignments/chooseAssignment">Assignments</a><a href="/runestone/assignments/practice">Practice</a><hr>
-<a id="inst_peer_link" href="/runestone/peer/instructor.html">Peer Instruction (Instructor)</a><a href="/runestone/peer/student.html">Peer Instruction (Student)</a><hr>
-<a href="/runestone/default/courses">Change Course</a><hr>
-<a id="ip_dropdown_link" href="/runestone/admin/index">Instructor's Page</a><hr>
-{% endif %}
-<a href="/runestone/dashboard/studentreport">Progress Page</a><hr>
-{% if is_logged_in %}
-<a href="/runestone/default/user/profile">Edit Profile</a><a href="/runestone/default/user/change_password">Change Password</a><a href="/runestone/default/user/logout">Log Out</a>
-{% else %}
-<a href="/runestone/default/user/register">Register</a><a href="/runestone/default/user/login">Login</a>
-{% endif %}
-</div></button></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\degree}[0]{^{\circ}}
-\newcommand{\Ccancel}[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
-\newcommand{\bluetext}[1]{\color{blue}{#1}} 
-\delimitershortfall-1sp
+<span class="nav-other-controls"><button id="calculator-toggle" class="calculator-toggle button" title="Show calculator" aria-expanded="false" aria-controls="calculator-container"><span class="icon material-symbols-outlined" aria-hidden="true">&#xea5f;</span><span class="name">Calc</span></button><div id="calculator-container" class="calculator-container" style="display: none; z-index:100;"><div id="geogebra-calculator"></div></div>
+<script>
+var ggbApp = new GGBApplet({"appName": "classic",
+    "width": 330,
+    "height": 600,
+    "showToolBar": true,
+    "showAlgebraInput": true,
+    "perspective": "G/A",
+    "algebraInputPosition": "bottom",
+    "scaleContainerClass": "calculator-container",
+    "allowUpscale": true,
+    "autoHeight": true,
+    "disableAutoScale": false},
+true);
+</script></span><span class="treebuttons"><a class="previous-button button" href="ch-models.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-models.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-models-exponential.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\usepackage{cancel}
+\def\d{\displaystyle} 
+\newcommand{\degree}{^{\circ}}
 \newcommand{\abs}[1]{\left|#1\right|}
-\newcommand*\chem[1]{\ensuremath{\mathrm{#1}}}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -163,9 +167,10 @@ eBookConfig.runestone_version = '7.3.0';
 <li class="toc-item toc-frontmatter">
 <div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-dedication"><div class="toc-title-box"><a href="frontmatter-3.html" class="internal"><span class="title">Dedication</span></a></div></li>
-<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
-<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-biography"><div class="toc-title-box"><a href="author-bio-RTJ.html" class="internal"><span class="title">Author Biography</span></a></div></li>
+<li class="toc-item toc-dedication"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Dedication</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-6.html" class="internal"><span class="title">Colophon</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -521,7 +526,12 @@ eBookConfig.runestone_version = '7.3.0';
 <li id="sec-models-linear-4-7-2-7-1-3"><div class="para" id="sec-models-linear-4-7-2-7-1-3-1">The temperature of <span class="process-math">\(32\)</span> degrees Fahrenheit to degrees Celsius</div></li>
 <li id="sec-models-linear-4-7-2-7-1-4"><div class="para" id="sec-models-linear-4-7-2-7-1-4-1">What temperature in Fahrenheit is the same as <span class="process-math">\(10\)</span> degrees Celsius?</div></li>
 </ol>
-</div></article><div class="para" id="sec-models-linear-4-8">This brings up some good questions:</div>
+</div>
+<div class="solutions"><details id="sec-models-linear-4-7-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sec-models-linear-4-7-3-1">The first two are shown as ordered pairs.  If you recognize that 77 is an input value and -20 is an output value, then you can see that <span class="process-math">\(77 \text{degrees Fahrenheit} = 25 \text{degrees Celsius}\)</span> and <span class="process-math">\(-4 \text{degrees Fahrenheit} = -20 \text{degrees Celsius}\text{.}\)</span>
+</div> <div class="para" id="sec-models-linear-4-7-3-2">For the last two, you must pay attention to the horizontal and vertical axes.  Recognize that the tick-marks go by 2’s, so <span class="process-math">\(32 \text{degrees Fahrenheit} = 0 \text{degrees Celsius}\)</span> and <span class="process-math">\(50 \text{degrees Fahrenheit} = 10 \text{degrees Celsius}\text{.}\)</span>
+</div>
+</div></details></div></article><div class="para" id="sec-models-linear-4-8">This brings up some good questions:</div>
 <div class="para logical" id="sec-models-linear-4-9"><ul class="disc">
 <li id="sec-models-linear-4-9-1-1"><div class="para" id="sec-models-linear-4-9-1-1-1">How do we communicate that we have a function? There has to be a simple or quick way to communicate we have a function.</div></li>
 <li id="sec-models-linear-4-9-1-2"><div class="para" id="sec-models-linear-4-9-1-2-1">What kinds of inputs can the function use? The temperature function in the previous exercise could only accept temperatures between <span class="process-math">\(-60\)</span> and <span class="process-math">\(110\)</span> degrees Fahrenheit. The input of <span class="process-math">\(150\)</span> degrees <span class="process-math">\(F\)</span> is not usable because it is not available to choose.</div></li>
@@ -535,7 +545,7 @@ eBookConfig.runestone_version = '7.3.0';
 <div class="para" id="sec-models-linear-5-3">In this next exercise we learn to communicate the position of a train as time passes and develop the notation to express where the train is at different times. We will assume that this train runs on time, every day and the conditions every day are the same. You know, an alternate universe called “example land”.</div>
 <article class="activity project-like" id="sec-models-linear-5-4"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.1.2</span><span class="period">.</span>
-</h4>Consider the graph below. The dot on the graph represents the position of a train at a particular time. The cross-hairs represent the time. Notice that the train’s distance, in miles, from downtown depends on the time, in hours, after 8 a.m. <div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/train.png" class="contained"></div></div></div> How far from downtown is the train at 10 a.m.?</article><div class="para" id="sec-models-linear-5-5">In English you can communicate information about time and position in a simple sentence like</div>
+</h4>Consider the graph below. The dot on the graph represents the position of a train at a particular time. The cross-hairs represent the time. Notice that the train’s distance, in miles, from downtown depends on the time, in hours, after 8 a.m. <div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/train.png" class="contained"></div></div></div> How far from downtown is the train at 10 a.m.?<div class="solutions"><details id="sec-models-linear-5-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">Since 10 a.m. is 8 a.m. + 2 hours, and we have the point (2,30) labelled on the graph, we see that the train is 30 miles from downtown at 10am.</div></details></div></article><div class="para" id="sec-models-linear-5-5">In English you can communicate information about time and position in a simple sentence like</div>
 <blockquote class="blockquote" id="sec-models-linear-5-6"><div class="para" id="sec-models-linear-5-6-1">
 <span class="process-math">\(2\)</span> hours after <span class="process-math">\(8\)</span> <abbr class="initialism">a.m.</abbr> the train is <span class="process-math">\(30\)</span> miles from downtown.</div></blockquote>
 <div class="para" id="sec-models-linear-5-7">Here is what that same sentence looks like in Spanish.</div>
@@ -621,7 +631,12 @@ f(\text{input}) = \mathit{output}
 <li id="sec-models-linear-6-23-1-4-1"><div class="para" id="p-derived-sec-models-linear-6-23-1-4-1">What is the area of the house?</div></li>
 <li id="sec-models-linear-6-23-1-4-2"><div class="para" id="p-derived-sec-models-linear-6-23-1-4-2">What is the value of the house?</div></li>
 <li id="sec-models-linear-6-23-1-4-3"><div class="para" id="p-derived-sec-models-linear-6-23-1-4-3">Interpret the meaning of <span class="process-math">\(f(900)=209700\)</span> in English.</div></li>
-</ul></article></section><section class="subsection" id="sec-models-linear-7"><h3 class="heading hide-type">
+</ul>
+<div class="solutions"><details id="sec-models-linear-6-23-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><ul class="disc">
+<li id="sec-models-linear-6-23-2-1-1"><div class="para" id="p-derived-sec-models-linear-6-23-2-1-1">900 square feet</div></li>
+<li id="sec-models-linear-6-23-2-1-2"><div class="para" id="p-derived-sec-models-linear-6-23-2-1-2">$209,700</div></li>
+<li id="sec-models-linear-6-23-2-1-3"><div class="para" id="p-derived-sec-models-linear-6-23-2-1-3">A 900 square foot house has a value of $209,700.</div></li>
+</ul></div></details></div></article></section><section class="subsection" id="sec-models-linear-7"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.1.4</span><span class="space"> </span><span class="title">Average Rate of Change, Inuitive Knowledge</span>
 </h3>
 <section class="introduction" id="sec-models-linear-7-2"><div class="para" id="sec-models-linear-7-2-1">In this activity we introduce the Greek letter <span class="process-math">\(\Delta\)</span> that represents change, and we develop the concept of <dfn class="terminology">average rate of change</dfn>.</div> <div class="para" id="sec-models-linear-7-2-2">The prerequisites for this lesson are knowing how to calculate the slope of a line and understanding the meaning of slope.</div> <div class="para" id="sec-models-linear-7-2-3">Let’s start by realizing you already understand the concept of average rate of change, but maybe you have never heard the phrase before.</div></section><div class="para" id="sec-models-linear-7-3">It turns out, <dfn class="terminology">average rate of change</dfn> is just another way to talk about slope. As the name implies, it measures how quickly things change, on average.</div>
@@ -642,7 +657,15 @@ f(\text{input}) = \mathit{output}
 <li id="sec-models-linear-7-9-2-3-2"><div class="para" id="sec-models-linear-7-9-2-3-2-1">What is the change in time between the <span class="process-math">\(9{:}00\)</span> and <span class="process-math">\(11{:}00\)</span> <abbr class="initialism">A.M.</abbr>?</div></li>
 <li id="sec-models-linear-7-9-2-3-3"><div class="para" id="sec-models-linear-7-9-2-3-3-1">What is the average speed (rate of change) between <span class="process-math">\(9{:}00\)</span> and <span class="process-math">\(11{:}00\)</span> <abbr class="initialism">A.M.</abbr>?</div></li>
 <li id="sec-models-linear-7-9-2-3-4"><div class="para" id="sec-models-linear-7-9-2-3-4-1">Use function notation (as in part a) to write an expression that represents the <em class="emphasis">change in distance</em> between the <span class="process-math">\(10{:}00\)</span> <abbr class="initialism">A.M.</abbr> and <span class="process-math">\(1{:}00\)</span> <abbr class="initialism">P.M.</abbr>.</div></li>
-</ol></article><div class="para" id="sec-models-linear-7-10">In math we use the Greek letter <span class="process-math">\(\Delta\)</span> to mean “change in”. Change between two values is typically measured by subtracting an old value from a new value.</div>
+</ol>
+<div class="solutions"><details id="sec-models-linear-7-9-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-models-linear-7-9-3-1"><ol class="lower-alpha">
+<li id="sec-models-linear-7-9-3-1-1-1"><div class="para" id="sec-models-linear-7-9-3-1-1-1-1">
+<span class="process-math">\(f(3) - f(1) \approx 34.468\)</span> miles.</div></li>
+<li id="sec-models-linear-7-9-3-1-1-2"><div class="para" id="sec-models-linear-7-9-3-1-1-2-1">The change in time is 2 hour(s).</div></li>
+<li id="sec-models-linear-7-9-3-1-1-3"><div class="para" id="sec-models-linear-7-9-3-1-1-3-1">The average speed is <span class="process-math">\(17.234\)</span> miles per hour.</div></li>
+<li id="sec-models-linear-7-9-3-1-1-4"><div class="para" id="sec-models-linear-7-9-3-1-1-4-1">The change in distance can be expressed as <span class="process-math">\(f(5)-f(2)\)</span>
+</div></li>
+</ol></div></div></details></div></article><div class="para" id="sec-models-linear-7-10">In math we use the Greek letter <span class="process-math">\(\Delta\)</span> to mean “change in”. Change between two values is typically measured by subtracting an old value from a new value.</div>
 <div class="para" id="sec-models-linear-7-11">In our train story where <span class="process-math">\(D = f(t)\text{,}\)</span> the expression <span class="process-math">\(\Delta f\)</span> means “change in miles from downtown”. As the train travels away from downtown, the distance from downtown increases. New distance is greater than old distance, so traveling away from downtown is a positive change in distance.</div>
 <div class="para" id="sec-models-linear-7-12">However, the distance from downtown decreases as the train travels towards downtown. New distance is less than old distance, therefore traveling toward downtown is a negative change in distance.</div>
 <article class="activity project-like" id="sec-models-linear-7-13"><h4 class="heading">
@@ -656,7 +679,11 @@ f(\text{input}) = \mathit{output}
 <li id="sec-models-linear-7-13-1-3-2-3"><div class="para" id="p-derived-sec-models-linear-7-13-1-3-2-3">Delta times t</div></li>
 <li id="sec-models-linear-7-13-1-3-2-4"><div class="para" id="p-derived-sec-models-linear-7-13-1-3-2-4">There is no meaning to this expression</div></li>
 </ol>
-</div></article></section><section class="subsection" id="sec-models-linear-8"><h3 class="heading hide-type">
+</div>
+<div class="solutions"><details id="sec-models-linear-7-13-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sec-models-linear-7-13-2-1">
+<span class="process-math">\(\Delta f \approx 30\)</span> miles</div> <div class="para" id="sec-models-linear-7-13-2-2">Change in hours since 8 a.m.</div>
+</div></details></div></article></section><section class="subsection" id="sec-models-linear-8"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.1.5</span><span class="space"> </span><span class="title">Three Representations of a Relationship</span>
 </h3>
 <div class="para" id="sec-models-linear-8-2">In 2002, the poverty rate of each state in the United States of America (plus D.C. and Puerto Rico) were recorded, as well as the number of births performed by teenage mothers ages 15-17.  The data is plotted below, along with a trend line of best fit.</div>
@@ -744,10 +771,9 @@ T = 1.3733 \times P + 4.2673
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.1.6</span><span class="space"> </span><span class="title">Linear Equations and Slope</span>
 </h3>
 <div class="para" id="sec-models-linear-9-2">The type of equation we looked at for poverty and teen pregnany is a linear equation, or a linear model.  Recall that the graph of a linear equation is a line.  The primary characteristic of a linear equation is that it has a constant rate of change, meaning that each time the input increases by one, the output changes by a fixed amount.  In the example above, if one state as 1 more person per 100 below the poverty line than another state, then we expect the first state to have 1.3733 more pregnancies per 1000 girls 15-17 years old.  This constant rate of change is also called slope.</div>
-<article class="example example-like" id="sec-models-linear-9-3"><h4 class="heading">
+<details id="sec-models-linear-9-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.1.4</span><span class="period">.</span>
-</h4>
-<div class="para" id="sec-models-linear-9-3-1-1">If I were walking at a constant speed, my distance would change 6 miles in 2 hours. We could compute the slope or rate of change as</div>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="sec-models-linear-9-3-1-1">If I were walking at a constant speed, my distance would change 6 miles in 2 hours. We could compute the slope or rate of change as</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \frac{6 \text{ miles}}{2 \text{ hours}} = \frac{3 \text{ miles}}{1 \text{ hour}}
@@ -762,7 +788,7 @@ T = 1.3733 \times P + 4.2673
 <div class="sidebyside"><div class="sbsrow" style="margin-left:1.25%;margin-right:1.25%;">
 <div class="sbspanel top" style="width:25.6410256410256%;"><div class="para" id="sec-models-linear-9-3-1-5-1">In the graph shown, we can see that the graph is a line, so the equation is linear.  We can compute the slope using any two pairs of points by counting how much the input and output change, and divide them.  Notice that we get the same slope regardless of which points we use.</div></div>
 <div class="sbspanel top" style="width:71.7948717948718%;"><img src="external/M96-L3-2-g2.svg" role="img" class="contained"></div>
-</div></div> <div class="para" id="sec-models-linear-9-3-1-6">If the output increases as the input increases, we consider that a positive change.  If the output decreases as the input increases, that is a negative change, and the slope will be negative.</div></article><div class="para" id="sec-models-linear-9-4">Some people call the calculation of slope <em class="emphasis">"rise over run"</em>, where "rise" refers to the vertical change in output, and "run" refers to the horizontal change of input.</div>
+</div></div> <div class="para" id="sec-models-linear-9-3-1-6">If the output increases as the input increases, we consider that a positive change.  If the output decreases as the input increases, that is a negative change, and the slope will be negative.</div></article></details><div class="para" id="sec-models-linear-9-4">Some people call the calculation of slope <em class="emphasis">"rise over run"</em>, where "rise" refers to the vertical change in output, and "run" refers to the horizontal change of input.</div>
 <div class="para" id="sec-models-linear-9-5">The units on slope will be a rate based on the units of the output and input variables.  It will have units of "output units per input units".  For example,</div>
 <ul class="disc">
 <li id="sec-models-linear-9-6-1"><div class="para" id="p-derived-sec-models-linear-9-6-1">Input: hours.  Output:  miles.   Slope:  miles per hour</div></li>
@@ -796,7 +822,8 @@ T = 1.3733 \times P + 4.2673
 \end{equation*}
 </div>
 <div class="para">What units are the numbers 4.2673 and 1.3733 in?  Describe what each number means in terms of the model.</div>
-</div></article></section><section class="exercises" id="sec-models-linear-11"><h3 class="heading hide-type">
+</div>
+<div class="solutions"><details id="sec-models-linear-10-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="sec-models-linear-10-8-2-1">According to our model, we would expect a state with no poverty to have a pregnancy rate among 1000 girls 15-17 at about 4.2673.  And for any state whose poverty rate increases by 1 person per 100, the pregnancy rate for 1000 girls ages 15-17 is expected to go up 1.3733.  So we could verbally describe the relationship as:  A state’s expected pregnancy rate per 1000 girls ages 15-17 is 4.2673 plus 1.3733 for every person per 100 living in a household below the poverty line.</div></div></details></div></article></section><section class="exercises" id="sec-models-linear-11"><h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber">5.1.8</span><span class="space"> </span><span class="title">Exercises</span>
 </h3>
 <article class="subexercises" id="sec-models-linear-11-1"><h4 class="heading"><span class="title">Evaluate, apply and interpret function notation, including the notation for inverse functions and composition of Functions</span></h4>
@@ -845,13 +872,13 @@ T = 1.3733 \times P + 4.2673
 <li id="sec-models-linear-11-2-3-1-1-1"><div class="para" id="p-derived-sec-models-linear-11-2-3-1-1-1">$19.95 plus $0.79 per mile for a cargo van with inside dimensions: 9’2" x 5’7-1/2" x 4’5"</div></li>
 <li id="sec-models-linear-11-2-3-1-1-2"><div class="para" id="p-derived-sec-models-linear-11-2-3-1-1-2">$29.95 plus $0.99 per mile for a 14’ truck with inside dimensions: 14’6" x 7’8" x 7’2"</div></li>
 <li id="sec-models-linear-11-2-3-1-1-3"><div class="para" id="p-derived-sec-models-linear-11-2-3-1-1-3">$39.95 plus $0.99 per mile for a 20’ truck with inside dimensions: 19’6" x 7’8" x 7’2"</div></li>
-</ol> You estimate that you and your roommates have three rooms full of furniture and boxes, equivalent to about 1,000 cubic feet. Your new apartment is about 10 miles (one way) from your old apartment. As a group, decide which vehicle size is a better deal to rent. Provide work to support your answer.</article></article></section><div id="scprogresscontainer">You have attempted <span id="scprogresstotal"></span> of <span id="scprogressposs"></span> activities on this page.<div id="subchapterprogress" aria-label="Page progress"></div>
-</div></section></div>
+</ol> You estimate that you and your roommates have three rooms full of furniture and boxes, equivalent to about 1,000 cubic feet. Your new apartment is about 10 miles (one way) from your old apartment. As a group, decide which vehicle size is a better deal to rent. Provide work to support your answer.</article></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch-models.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-models-exponential.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
 <a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
-</div>{% if show_ethical_ad %}<div style="width: 100%"><div data-ea-publisher="runestoneacademy" data-ea-type="image" style="display: flex; justify-content: center"></div></div>{% endif %}</body>
+</div>
+</body>
 </html>

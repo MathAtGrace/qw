@@ -11,7 +11,6 @@
 <title>Voting Methods</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="canonical" href="https://runestone.academy/ns/books/published//sec-democracy-voting.html">
 <meta property="og:type" content="book">
 <meta property="book:title" content="Quantitative Wisdom">
 <meta property="book:author" content=" Dr. Ryan Johnson ">
@@ -70,7 +69,7 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="_static/lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
 <script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -79,7 +78,7 @@ window.MathJax = {
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-<link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script><link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
@@ -87,41 +86,47 @@ window.MathJax = {
 <link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
 <script type="text/javascript">
 eBookConfig = {};
-eBookConfig.useRunestoneServices = true;
-eBookConfig.host = '';
-eBookConfig.app = eBookConfig.host + '/runestone';
-eBookConfig.course = '~._ course_name _.~';
-eBookConfig.basecourse = '~._ base_course _.~';
-eBookConfig.isLoggedIn = ~._ is_logged_in _.~;
-eBookConfig.email = '~._ user_email _.~';
-eBookConfig.isInstructor = ~._ is_instructor _.~;
-eBookConfig.logLevel = 10;
-eBookConfig.ajaxURL = eBookConfig.app + "/ajax/";
-eBookConfig.username = '~._ user_id _.~';
-eBookConfig.readings = ~._ readings|safe _.~;
-eBookConfig.activities = ~._ activity_info|safe _.~;
-eBookConfig.downloadsEnabled = ~._ downloads_enabled _.~;
-eBookConfig.allow_pairs = ~._ allow_pairs _.~;
-eBookConfig.enableScratchAC = true;
-eBookConfig.acDefaultLanguage = 'python';
-eBookConfig.new_server_prefix = "/ns";
-eBookConfig.runestone_version = '7.3.0';
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.4.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
 </script>
-<script src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script><!--*** Runestone Services ***-->
-<script type="text/javascript" src="_static/prefix-runtime.fd90d8f564bee81c.bundle.js"></script><script type="text/javascript" src="_static/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="_static/prefix-runestone.0dbb743224ea5679.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.f64dcc3632d7a0c3.css">
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.4.1/prefix-runtime.00db6230172ad960.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.4.1/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.4.1/prefix-runestone.04737dc219c2d2eb.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.4.1/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.4.1/prefix-runestone.f64dcc3632d7a0c3.css">
 </head>
-<body class="pretext book ignore-math">
+<body id="qw2" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" target="_blank" href=""></a><div class="title-container">
+<a id="logo-link" class="logo-link" target="_blank" href="https://mathatgrace.github.io/qw2"><img src="external/Lady-Wisdom.jpg" alt="Logo image"></a><div class="title-container">
 <h1 class="heading"><a href="qw.html"><span class="title">Quantitative Wisdom:</span> <span class="subtitle">Numerical literacy from the perspective of Biblical wisdom</span></a></h1>
 <p class="byline">Dr. Ryan Johnson</p>
 </div>
-</div></header><nav id="ptx-navbar" class="ptx-navbar navbar ptx-runestone-container"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-4.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-4.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchbox">
 <div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
 <div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
 <div class="search-results-controls">
@@ -132,25 +137,24 @@ eBookConfig.runestone_version = '7.3.0';
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-democracy-apportionment.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="democracy.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-democracy-popular-vote.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><span class="nav-runestone-controls"><button onclick="runestoneComponents.popupScratchAC()" class="activecode-toggle button" title="Open Scratch ActiveCode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf097;</span><span class="name">Scratch ActiveCode</span></button><button class="runestone-profile dropdown button" title="Profile"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf0d3;</span><span class="name">Profile</span><div class="dropdown-content">
-{% if settings.academy_mode: %}
-<a href="/ns/course/index">Course Home</a><a href="/runestone/assignments/chooseAssignment">Assignments</a><a href="/runestone/assignments/practice">Practice</a><hr>
-<a id="inst_peer_link" href="/runestone/peer/instructor.html">Peer Instruction (Instructor)</a><a href="/runestone/peer/student.html">Peer Instruction (Student)</a><hr>
-<a href="/runestone/default/courses">Change Course</a><hr>
-<a id="ip_dropdown_link" href="/runestone/admin/index">Instructor's Page</a><hr>
-{% endif %}
-<a href="/runestone/dashboard/studentreport">Progress Page</a><hr>
-{% if is_logged_in %}
-<a href="/runestone/default/user/profile">Edit Profile</a><a href="/runestone/default/user/change_password">Change Password</a><a href="/runestone/default/user/logout">Log Out</a>
-{% else %}
-<a href="/runestone/default/user/register">Register</a><a href="/runestone/default/user/login">Login</a>
-{% endif %}
-</div></button></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\degree}[0]{^{\circ}}
-\newcommand{\Ccancel}[2][black]{\renewcommand\CancelColor{\color{#1}}\cancel{#2}}
-\newcommand{\bluetext}[1]{\color{blue}{#1}} 
-\delimitershortfall-1sp
+<span class="nav-other-controls"><button id="calculator-toggle" class="calculator-toggle button" title="Show calculator" aria-expanded="false" aria-controls="calculator-container"><span class="icon material-symbols-outlined" aria-hidden="true">&#xea5f;</span><span class="name">Calc</span></button><div id="calculator-container" class="calculator-container" style="display: none; z-index:100;"><div id="geogebra-calculator"></div></div>
+<script>
+var ggbApp = new GGBApplet({"appName": "classic",
+    "width": 330,
+    "height": 600,
+    "showToolBar": true,
+    "showAlgebraInput": true,
+    "perspective": "G/A",
+    "algebraInputPosition": "bottom",
+    "scaleContainerClass": "calculator-container",
+    "allowUpscale": true,
+    "autoHeight": true,
+    "disableAutoScale": false},
+true);
+</script></span><span class="treebuttons"><a class="previous-button button" href="sec-democracy-apportionment.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="democracy.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-democracy-popular-vote.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\usepackage{cancel}
+\def\d{\displaystyle} 
+\newcommand{\degree}{^{\circ}}
 \newcommand{\abs}[1]{\left|#1\right|}
-\newcommand*\chem[1]{\ensuremath{\mathrm{#1}}}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -163,9 +167,10 @@ eBookConfig.runestone_version = '7.3.0';
 <li class="toc-item toc-frontmatter">
 <div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-dedication"><div class="toc-title-box"><a href="frontmatter-3.html" class="internal"><span class="title">Dedication</span></a></div></li>
-<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
-<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-biography"><div class="toc-title-box"><a href="author-bio-RTJ.html" class="internal"><span class="title">Author Biography</span></a></div></li>
+<li class="toc-item toc-dedication"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Dedication</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-6.html" class="internal"><span class="title">Colophon</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -517,10 +522,9 @@ eBookConfig.runestone_version = '7.3.0';
 </div></details>. Ranked choice ballots can be used in elections by mail or in person at polling places. Let’s see how to tally the results from a ranked choice election.</div></div>
 <div class="sbspanel middle" style="width:47%;"><img src="external/democracy/5_2/voter_card.png" class="contained" alt="A ranked choice ballot with three candidates for favorite flavor of ice cream: strawberry, chocolate and vanilla. There is a grid for voters to select their first, second and third choice."></div>
 </div></div>
-<article class="example example-like" id="sec-democracy-voting-4-4"><h4 class="heading">
+<details id="sec-democracy-voting-4-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.1</span><span class="period">.</span>
-</h4>
-<div class="para" id="sec-democracy-voting-4-4-1-1">Students are voting for their class president and the candidates are Omar (O), Ana (A), and Helena (H). They have ranked the candidates according to their preference.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="sec-democracy-voting-4-4-1-1">Students are voting for their class president and the candidates are Omar (O), Ana (A), and Helena (H). They have ranked the candidates according to their preference.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b1 r1 l1 t1 lines"></th>
 <th scope="col" class="c m b1 r1 l0 t1 lines">Vien</th>
@@ -573,7 +577,7 @@ eBookConfig.runestone_version = '7.3.0';
 <td class="c m b1 r1 l0 t0 lines">O</td>
 <td class="c m b1 r1 l0 t0 lines">O</td>
 </tr>
-</table></div></div></div></article></section><section class="subsection" id="sec-democracy-voting-5"><h3 class="heading hide-type">
+</table></div></div></div></article></details></section><section class="subsection" id="sec-democracy-voting-5"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.2.3</span><span class="space"> </span><span class="title">Preference Schedule</span>
 </h3>
 <div class="para" id="sec-democracy-voting-5-2">To simplify this data, we create a <em class="alert">preference schedule</em> which combines all the people who voted with the exact same ranking. For example, Tasha, Lupe, and Helena, all voted in the same way, HAO. So, we will list that combination once, with the number 3 at the top of that column. Three students also voted for AHO, and OHA. One student voted for the ranking AOH. Below is the preference schedule.</div>
@@ -614,10 +618,9 @@ eBookConfig.runestone_version = '7.3.0';
 </h3>
 <div class="para" id="sec-democracy-voting-6-2">The voting method you may be most familiar with in the United States is the <em class="alert">plurality method</em>. In the plurality method, the candidate with the most first-choice votes is declared the winner.</div>
 <div class="para" id="sec-democracy-voting-6-3">There is a difference between a <em class="alert">majority</em> and a plurality. For a majority, a candidate must have over 50% of the votes. There are some states that require a majority in order to win an election. In more cases, though, only a plurality is required, which means having more votes than any other candidate. If a tie occurs without using ranked choice voting, then a new run-off election would be required.</div>
-<article class="example example-like" id="example_2"><h4 class="heading">
+<details id="example_2" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.2</span><span class="period">.</span>
-</h4>
-<div class="para" id="example_2-1-1">In our election from above, we had this preference table:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="example_2-1-1">In our election from above, we had this preference table:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l1 t1 lines">Number of voters</td>
 <td class="c m b1 r1 l0 t1 lines">1</td>
@@ -653,7 +656,7 @@ eBookConfig.runestone_version = '7.3.0';
 <li id="example_2-1-3-1-2"><div class="para" id="example_2-1-3-1-2-1">Omar: <span class="process-math">\(3\)</span> votes</div></li>
 <li id="example_2-1-3-1-3"><div class="para" id="example_2-1-3-1-3-1">Helena: <span class="process-math">\(3\)</span> votes</div></li>
 </ul>
-</div> <div class="para" id="example_2-1-4">Ana is the winner using the plurality voting method.</div> <div class="para" id="example_2-1-5">Notice that Ana won with 4 out of 10 votes, or 40% of the votes, which is a plurality of the votes, but not a majority.</div></article></section><section class="subsection" id="sec-democracy-voting-7"><h3 class="heading hide-type">
+</div> <div class="para" id="example_2-1-4">Ana is the winner using the plurality voting method.</div> <div class="para" id="example_2-1-5">Notice that Ana won with 4 out of 10 votes, or 40% of the votes, which is a plurality of the votes, but not a majority.</div></article></details></section><section class="subsection" id="sec-democracy-voting-7"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.2.5</span><span class="space"> </span><span class="title">How Many Votes are Needed to Win?</span>
 </h3>
 <div class="para" id="sec-democracy-voting-7-2">If we know how many voters there are, we can calculate the minimum number of votes needed for a majority win.</div>
@@ -667,10 +670,9 @@ eBookConfig.runestone_version = '7.3.0';
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.2.6</span><span class="space"> </span><span class="title">Insincere Voting</span>
 </h3>
 <div class="para" id="sec-democracy-voting-8-2">In a system with only two major political parties like the United States, it can be nearly impossible for third-party candidates to break through. You may feel like you would be wasting your vote if you voted for a third-party candidate. Consider this example.</div>
-<article class="example example-like" id="sec-democracy-voting-8-3"><h4 class="heading">
+<details id="sec-democracy-voting-8-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.3</span><span class="period">.</span>
-</h4>
-<div class="para" id="sec-democracy-voting-8-3-1-1">Here is a two-party election with preferences shown below. It is a close race, but candidate B would win.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="sec-democracy-voting-8-3-1-1">Here is a two-party election with preferences shown below. It is a close race, but candidate B would win.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l1 t1 lines">Number of voters</td>
 <td class="c m b1 r1 l0 t1 lines">96</td>
@@ -711,15 +713,14 @@ eBookConfig.runestone_version = '7.3.0';
 <td class="c m b1 r1 l0 t0 lines">C</td>
 <td class="c m b1 r1 l0 t0 lines">A</td>
 </tr>
-</table></div></div></div> <div class="para" id="sec-democracy-voting-8-3-1-5">The ten people who prefer candidate C are in a bind because if they vote for C, then A will win, but they prefer B over A. It is likely that they will vote for B, their second choice, to keep A from winning.</div></article><div class="para" id="sec-democracy-voting-8-4">Situations like this can lead to insincere voting. <em class="alert">Insincere voting</em> is when a person doesn’t vote according to their actual preference for strategic purposes. In the case above, a person who wants to vote for a third-party candidate realizes it would take a vote away from their major party candidate. Not wanting to see their party lose the election, they vote for the major party candidate.</div></section><section class="subsection" id="sec-democracy-voting-9"><h3 class="heading hide-type">
+</table></div></div></div> <div class="para" id="sec-democracy-voting-8-3-1-5">The ten people who prefer candidate C are in a bind because if they vote for C, then A will win, but they prefer B over A. It is likely that they will vote for B, their second choice, to keep A from winning.</div></article></details><div class="para" id="sec-democracy-voting-8-4">Situations like this can lead to insincere voting. <em class="alert">Insincere voting</em> is when a person doesn’t vote according to their actual preference for strategic purposes. In the case above, a person who wants to vote for a third-party candidate realizes it would take a vote away from their major party candidate. Not wanting to see their party lose the election, they vote for the major party candidate.</div></section><section class="subsection" id="sec-democracy-voting-9"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.2.7</span><span class="space"> </span><span class="title">Instant Runoff Method</span>
 </h3>
 <div class="para" id="sec-democracy-voting-9-2">The <em class="alert">Instant Runoff Method</em> is a modification of the plurality method that attempts to address the issue of insincere voting.</div>
 <div class="para" id="sec-democracy-voting-9-3">The voting is done with ranked choice ballots and a preference schedule is generated. Then we tally all the first-choice votes. The candidate with the <em class="emphasis">least</em> first-place votes is eliminated, but any votes for that candidate are transferred to the voters’ next choice. The process continues until one candidate has a majority. We will show you how it works with an example.</div>
-<article class="example example-like" id="sec-democracy-voting-9-4"><h4 class="heading">
+<details id="sec-democracy-voting-9-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.4</span><span class="period">.</span>
-</h4>
-<div class="para" id="sec-democracy-voting-9-4-1-1">Consider the preference schedule below, in which a committee is choosing a chairperson. The candidates are labeled A, B, C, D, and E for simplicity. Here is the preference schedule:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="sec-democracy-voting-9-4-1-1">Consider the preference schedule below, in which a committee is choosing a chairperson. The candidates are labeled A, B, C, D, and E for simplicity. Here is the preference schedule:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l1 t1 lines">Number of voters</td>
 <td class="c m b1 r1 l0 t1 lines">3</td>
@@ -818,15 +819,14 @@ eBookConfig.runestone_version = '7.3.0';
 <div class="sbspanel top" style="width:19.1919191919192%;"><div class="para" id="sec-democracy-voting-9-4-1-9-3-4">D: <span class="process-math">\(8+5=13\)</span>
 </div></div>
 <div class="sbspanel top" style="width:19.1919191919192%;"><div class="para" id="sec-democracy-voting-9-4-1-9-3-5"><del class="delete">E: <span class="process-math">\(1\)</span></del></div></div>
-</div></div> <div class="para" id="sec-democracy-voting-9-4-1-9-4">Now we can see that D is the winner of the instant runoff method with 13 votes. We can stop this method earlier if a candidate reaches a majority.</div></section></article><div class="para" id="sec-democracy-voting-9-5">The Instant Runoff Method is similar to the idea of holding runoff elections, but since every voter’s order of preference is recorded on the ballot, the runoff can be computed quickly without requiring a second costly election. It also makes it safe to vote for a third-party candidate knowing that your vote will go to your second choice if your first choice can’t win.</div>
+</div></div> <div class="para" id="sec-democracy-voting-9-4-1-9-4">Now we can see that D is the winner of the instant runoff method with 13 votes. We can stop this method earlier if a candidate reaches a majority.</div></section></article></details><div class="para" id="sec-democracy-voting-9-5">The Instant Runoff Method is similar to the idea of holding runoff elections, but since every voter’s order of preference is recorded on the ballot, the runoff can be computed quickly without requiring a second costly election. It also makes it safe to vote for a third-party candidate knowing that your vote will go to your second choice if your first choice can’t win.</div>
 <div class="para" id="sec-democracy-voting-9-6">This voting method is used in several places around the world, including the election of members of the Australian House of Representatives, statewide elections in Maine, and local elections in Benton County, Oregon (Ranked Choice Voting Resource Center, 2020).</div></section><section class="subsection" id="sec-democracy-voting-10"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.2.8</span><span class="space"> </span><span class="title">Borda Count (Point System)</span>
 </h3>
 <div class="para" id="sec-democracy-voting-10-2">Borda Count is another voting method, named for Jean-Charles de Borda, who developed the system in 1770. In this method, points are assigned to each candidate based on their ranking; 1 point for last choice, 2 points for second-to-last choice, and so on. The point values are totaled, and the candidate with the largest point total is the winner. We’ll show you how to do it in the next example.</div>
-<article class="example example-like" id="sec-democracy-voting-10-3"><h4 class="heading">
+<details id="sec-democracy-voting-10-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.5</span><span class="period">.</span>
-</h4>
-<div class="para" id="sec-democracy-voting-10-3-1-1">A group of PCC students are getting together for a student leadership conference and they need to decide where to meet. Their members are from four campuses: Sylvania, Rock Creek, Cascade and Southeast. The votes for where to hold the conference were:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="sec-democracy-voting-10-3-1-1">A group of PCC students are getting together for a student leadership conference and they need to decide where to meet. Their members are from four campuses: Sylvania, Rock Creek, Cascade and Southeast. The votes for where to hold the conference were:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l1 t1 lines">Number of voters</td>
 <td class="c m b1 r1 l0 t1 lines">31</td>
@@ -908,17 +908,16 @@ eBookConfig.runestone_version = '7.3.0';
 <li id="sec-democracy-voting-10-3-1-6-1-2"><div class="para" id="sec-democracy-voting-10-3-1-6-1-2-1">Rock Creek: <span class="process-math">\(1 \cdot 10 + 2 \cdot 31 + 3 \cdot 14 + 4 \cdot 25= 214\)</span> points</div></li>
 <li id="sec-democracy-voting-10-3-1-6-1-3"><div class="para" id="sec-democracy-voting-10-3-1-6-1-3-1">Cascade: <span class="process-math">\(1 \cdot 31 + 2 \cdot 0 + 3 \cdot 35 + 4 \cdot 14= 192\)</span> points</div></li>
 <li id="sec-democracy-voting-10-3-1-6-1-4"><div class="para" id="sec-democracy-voting-10-3-1-6-1-4-1">Southwest: <span class="process-math">\(1 \cdot 25 + 2 \cdot 14 + 3 \cdot 31 + 4 \cdot 10 = 186\)</span> points</div></li>
-</ul></div> <div class="para" id="sec-democracy-voting-10-3-1-7">Using the Borda count method, Rock Creek is the winning location.</div></article><div class="para" id="sec-democracy-voting-10-4">Note that Sylvania would have won with the plurality method. Borda count is sometimes described as a consensus-based voting system, since it can be used to choose a more broadly acceptable option over the one with the most first-choice support. This is a different approach than plurality and instant runoff voting that focus on first-choice votes; Borda Count considers every voter’s entire ranking to determine the outcome.</div>
+</ul></div> <div class="para" id="sec-democracy-voting-10-3-1-7">Using the Borda count method, Rock Creek is the winning location.</div></article></details><div class="para" id="sec-democracy-voting-10-4">Note that Sylvania would have won with the plurality method. Borda count is sometimes described as a consensus-based voting system, since it can be used to choose a more broadly acceptable option over the one with the most first-choice support. This is a different approach than plurality and instant runoff voting that focus on first-choice votes; Borda Count considers every voter’s entire ranking to determine the outcome.</div>
 <div class="para" id="sec-democracy-voting-10-5">Because of this consensus behavior, Borda Count, or some variation of it, is commonly used in awarding sports awards. Variations are used to determine the Most Valuable Player in baseball, to rank teams in NCAA sports, and to award the Heisman trophy.</div></section><section class="subsection" id="sec-democracy-voting-11"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.2.9</span><span class="space"> </span><span class="title">Pairwise Comparison: Copeland’s Method</span>
 </h3>
 <div class="para" id="sec-democracy-voting-11-2">Another method, called <em class="alert">pairwise comparison</em>, the <em class="alert">Condorcet method</em> or <em class="alert">Copeland’s method</em>, attempts to be fair by looking at each pair of candidates separately.</div>
 <div class="para" id="sec-democracy-voting-11-3">In this method, we look at each pair as if they were the only two candidates running and determine which of the two is more preferred. In Copeland’s method, the more preferred candidate is awarded 1 point. If there is a tie, each candidate is awarded <span class="process-math">\(\frac{1}{2}\)</span> point. After all the pairwise comparisons are made, the candidate with the most points, and hence the most pairwise wins, is declared the winner.</div>
 <div class="para" id="sec-democracy-voting-11-4">Variations of Copeland’s Method are used in many professional organizations, including election of the Board of Trustees for the Wikimedia Foundation that runs Wikipedia.</div>
-<article class="example example-like" id="sec-democracy-voting-11-5"><h4 class="heading">
+<details id="sec-democracy-voting-11-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.6</span><span class="period">.</span>
-</h4>
-<div class="para" id="sec-democracy-voting-11-5-1-1">Consider our class president example from the beginning of the chapter. Determine the winner using Copeland’s Method.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="sec-democracy-voting-11-5-1-1">Consider our class president example from the beginning of the chapter. Determine the winner using Copeland’s Method.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l1 t1 lines">Number of voters</td>
 <td class="c m b1 r1 l0 t1 lines">1</td>
@@ -990,11 +989,10 @@ eBookConfig.runestone_version = '7.3.0';
 <li id="sec-democracy-voting-11-5-1-8-1-2"><div class="para" id="sec-democracy-voting-11-5-1-8-1-2-1">Helena-6 vs Ana-4 (Helena gets 1 point)</div></li>
 <li id="sec-democracy-voting-11-5-1-8-1-3"><div class="para" id="sec-democracy-voting-11-5-1-8-1-3-1">Ana-7 vs Omar-3 (Ana gets 1 point)</div></li>
 </ul>
-</div> <div class="para" id="sec-democracy-voting-11-5-1-9">Ana has a total of 1 point and Helena has 2 points, so Helena is the winner under Copeland’s Method. This method gave us a different winner than the plurality method where Ana won, because more people preferred Helena to Ana, even though they didn’t choose Helena for their first choice.</div></article><div class="para" id="sec-democracy-voting-11-6">Now that we’ve seen an example of each voting method, let’s run through each method for the same scenario.</div>
-<article class="example example-like" id="sec-democracy-voting-11-7"><h4 class="heading">
+</div> <div class="para" id="sec-democracy-voting-11-5-1-9">Ana has a total of 1 point and Helena has 2 points, so Helena is the winner under Copeland’s Method. This method gave us a different winner than the plurality method where Ana won, because more people preferred Helena to Ana, even though they didn’t choose Helena for their first choice.</div></article></details><div class="para" id="sec-democracy-voting-11-6">Now that we’ve seen an example of each voting method, let’s run through each method for the same scenario.</div>
+<details id="sec-democracy-voting-11-7" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.7</span><span class="period">.</span>
-</h4>
-<div class="para" id="sec-democracy-voting-11-7-1-1">Consider an advertising team voting to choose one of four different slogans, labeled A, B, C and D. Determine the winner using each method we have learned.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="sec-democracy-voting-11-7-1-1">Consider an advertising team voting to choose one of four different slogans, labeled A, B, C and D. Determine the winner using each method we have learned.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l1 t1 lines">Number of voters</td>
 <td class="c m b1 r1 l0 t1 lines">5</td>
@@ -1133,7 +1131,7 @@ eBookConfig.runestone_version = '7.3.0';
 <li id="sec-democracy-voting-11-7-2-14-2-1-1"><div class="para" id="sec-democracy-voting-11-7-2-14-2-1-1-1">A-10 vs B-10</div></li>
 <li id="sec-democracy-voting-11-7-2-14-2-1-2"><div class="para" id="sec-democracy-voting-11-7-2-14-2-1-2-1">A-14 vs C-6</div></li>
 <li id="sec-democracy-voting-11-7-2-14-2-1-3"><div class="para" id="sec-democracy-voting-11-7-2-14-2-1-3-1">A-11 vs D-9</div></li>
-<li id="sec-democracy-voting-11-7-2-14-2-1-4"><div class="para" id="sec-democracy-voting-11-7-2-14-2-1-4-1">B–4 vs C-16</div></li>
+<li id="sec-democracy-voting-11-7-2-14-2-1-4"><div class="para" id="sec-democracy-voting-11-7-2-14-2-1-4-1">B-4 vs C-16</div></li>
 <li id="sec-democracy-voting-11-7-2-14-2-1-5"><div class="para" id="sec-democracy-voting-11-7-2-14-2-1-5-1">B-13 vs D-7</div></li>
 <li id="sec-democracy-voting-11-7-2-14-2-1-6"><div class="para" id="sec-democracy-voting-11-7-2-14-2-1-6-1">C-9 vs D-11</div></li>
 </ul>
@@ -1147,7 +1145,7 @@ eBookConfig.runestone_version = '7.3.0';
 <li id="sec-democracy-voting-11-7-2-15-1-4"><div class="para" id="sec-democracy-voting-11-7-2-15-1-4-1">D has 1 point</div></li>
 </ul>
 </div> <div class="para" id="sec-democracy-voting-11-7-2-16">A is the winner of the pairwise comparison method.</div>
-</div></details></div></article></section><section class="subsection" id="sec-democracy-voting-12"><h3 class="heading hide-type">
+</div></details></div></article></details></section><section class="subsection" id="sec-democracy-voting-12"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.2.10</span><span class="space"> </span><span class="title">Which Method is the Most Fair?</span>
 </h3>
 <div class="para" id="sec-democracy-voting-12-2">To see a very simple example of how difficult voting can be, consider the election below:</div>
@@ -1191,8 +1189,76 @@ eBookConfig.runestone_version = '7.3.0';
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber">6.2.12</span><span class="space"> </span><span class="title">Exercises</span>
 </h3>
 <article class="exercise exercise-like" id="sec-democracy-voting-14-2"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
-<div class="para" id="sec-democracy-voting-14-2-1-1">To decide on a new website design, the designer asks people to rank three designs that have been created (labeled A, B, and C). The individual ballots are shown below. Create a preference table.</div> <div class="para" id="sec-democracy-voting-14-2-1-2">ABC, ABC, ACB, BAC, BCA, BCA, ACB, CAB, CAB, BCA, ACB, ABC</div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-3"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
-<div class="para" id="sec-democracy-voting-14-3-1-1">To decide on a movie to watch, a group of friends all vote for one of the choices (labeled A, B, and C). The individual ballots are shown below. Create a preference table.</div> <div class="para" id="sec-democracy-voting-14-3-1-2">CAB, CBA, BAC, BCA, CBA, ABC, ABC, CBA, BCA, CAB, CAB, BAC</div></article><div class="exercisegroup" id="sec-democracy-voting-14-4">
+<div class="para" id="sec-democracy-voting-14-2-1-1">To decide on a new website design, the designer asks people to rank three designs that have been created (labeled A, B, and C). The individual ballots are shown below. Create a preference table.</div> <div class="para" id="sec-democracy-voting-14-2-1-2">ABC, ABC, ACB, BAC, BCA, BCA, ACB, CAB, CAB, BCA, ACB, ABC</div>
+<div class="solutions"><details id="sec-democracy-voting-14-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">3</td>
+<td class="c m b1 r1 l0 t1 lines">3</td>
+<td class="c m b1 r1 l0 t1 lines">1</td>
+<td class="c m b1 r1 l0 t1 lines">3</td>
+<td class="c m b1 r1 l0 t1 lines">2</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+</tr>
+</table></div></div></div></div></details></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-3"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<div class="para" id="sec-democracy-voting-14-3-1-1">To decide on a movie to watch, a group of friends all vote for one of the choices (labeled A, B, and C). The individual ballots are shown below. Create a preference table.</div> <div class="para" id="sec-democracy-voting-14-3-1-2">CAB, CBA, BAC, BCA, CBA, ABC, ABC, CBA, BCA, CAB, CAB, BAC</div>
+<div class="solutions"><details id="sec-democracy-voting-14-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Number of voters</td>
+<td class="c m b1 r1 l0 t1 lines">2</td>
+<td class="c m b1 r1 l0 t1 lines">2</td>
+<td class="c m b1 r1 l0 t1 lines">2</td>
+<td class="c m b1 r1 l0 t1 lines">3</td>
+<td class="c m b1 r1 l0 t1 lines">3</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">1st choice</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">2nd choice</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">3rd choice</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">C</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+<td class="c m b1 r1 l0 t0 lines">B</td>
+<td class="c m b1 r1 l0 t0 lines">A</td>
+</tr>
+</table></div></div></div></div></details></div></article><div class="exercisegroup" id="sec-democracy-voting-14-4">
 <h4 class="heading"><span class="title">Exercise Group.</span></h4>
 <div class="introduction" id="sec-democracy-voting-14-4-1"><div class="para logical" id="sec-democracy-voting-14-4-1-1">
 <div class="para">In exercises 3-18, complete the following:</div>
@@ -1236,7 +1302,15 @@ eBookConfig.runestone_version = '7.3.0';
 <td class="c m b1 r1 l0 t0 lines">Atlanta</td>
 <td class="c m b1 r1 l0 t0 lines">Atlanta</td>
 </tr>
-</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-3"><h5 class="heading"><span class="codenumber">4<span class="period">.</span></span></h5>
+</table></div></div></div>
+<div class="solutions"><details id="sec-democracy-voting-14-4-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-democracy-voting-14-4-2-2-1"><ol class="lower-alpha">
+<li id="sec-democracy-voting-14-4-2-2-1-1-1"><div class="para" id="sec-democracy-voting-14-4-2-2-1-1-1-1">There are 47 voters.</div></li>
+<li id="sec-democracy-voting-14-4-2-2-1-1-2"><div class="para" id="sec-democracy-voting-14-4-2-2-1-1-2-1">A majority is 24 votes.</div></li>
+<li id="sec-democracy-voting-14-4-2-2-1-1-3"><div class="para" id="sec-democracy-voting-14-4-2-2-1-1-3-1">Atlanta wins the plurality method with 19 votes.</div></li>
+<li id="sec-democracy-voting-14-4-2-2-1-1-4"><div class="para" id="sec-democracy-voting-14-4-2-2-1-1-4-1">Buffalo wins the Instant Runoff Method with 28 votes.</div></li>
+<li id="sec-democracy-voting-14-4-2-2-1-1-5"><div class="para" id="sec-democracy-voting-14-4-2-2-1-1-5-1">The points are: Atlanta 94, Buffalo 111 and Chicago 77. Buffalo wins the Borda Count Method.</div></li>
+<li id="sec-democracy-voting-14-4-2-2-1-1-6"><div class="para" id="sec-democracy-voting-14-4-2-2-1-1-6-1">The points are: Buffalo 2, Atlanta 1. Buffalo wins with Copeland’s method.</div></li>
+</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-3"><h5 class="heading"><span class="codenumber">4<span class="period">.</span></span></h5>
 <div class="para" id="sec-democracy-voting-14-4-3-1-1">A non-profit agency is electing a new chair of the board. The votes are shown below.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l1 t1 lines">Number of voters</td>
@@ -1270,7 +1344,15 @@ eBookConfig.runestone_version = '7.3.0';
 <td class="c m b1 r1 l0 t0 lines">Beck</td>
 <td class="c m b1 r1 l0 t0 lines">Cantos</td>
 </tr>
-</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-4"><h5 class="heading"><span class="codenumber">5<span class="period">.</span></span></h5>
+</table></div></div></div>
+<div class="solutions"><details id="sec-democracy-voting-14-4-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-democracy-voting-14-4-3-2-1"><ol class="lower-alpha">
+<li id="sec-democracy-voting-14-4-3-2-1-1-1"><div class="para" id="sec-democracy-voting-14-4-3-2-1-1-1-1">There are 33 voters.</div></li>
+<li id="sec-democracy-voting-14-4-3-2-1-1-2"><div class="para" id="sec-democracy-voting-14-4-3-2-1-1-2-1">A majority is 17 votes.</div></li>
+<li id="sec-democracy-voting-14-4-3-2-1-1-3"><div class="para" id="sec-democracy-voting-14-4-3-2-1-1-3-1">Abdulla wins the plurality method with 14 votes.</div></li>
+<li id="sec-democracy-voting-14-4-3-2-1-1-4"><div class="para" id="sec-democracy-voting-14-4-3-2-1-1-4-1">Abdulla wins the Instant Runoff Method with 18 votes.</div></li>
+<li id="sec-democracy-voting-14-4-3-2-1-1-5"><div class="para" id="sec-democracy-voting-14-4-3-2-1-1-5-1">The points are: Abdulla 65, Beck 61 and Cantos 72. Cantos wins the Borda Count Method.</div></li>
+<li id="sec-democracy-voting-14-4-3-2-1-1-6"><div class="para" id="sec-democracy-voting-14-4-3-2-1-1-6-1">The points are: Abdulla 1, Cantos 2. Cantos wins with Copeland’s method.</div></li>
+</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-4"><h5 class="heading"><span class="codenumber">5<span class="period">.</span></span></h5>
 <div class="para" id="sec-democracy-voting-14-4-4-1-1">A group of students is deciding which class to take together. The votes are shown below.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l1 t1 lines">Number of voters</td>
@@ -1308,7 +1390,15 @@ eBookConfig.runestone_version = '7.3.0';
 <td class="c m b1 r1 l0 t0 lines">Biology</td>
 <td class="c m b1 r1 l0 t0 lines">Art</td>
 </tr>
-</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-5"><h5 class="heading"><span class="codenumber">6<span class="period">.</span></span></h5>
+</table></div></div></div>
+<div class="solutions"><details id="sec-democracy-voting-14-4-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-democracy-voting-14-4-4-2-1"><ol class="lower-alpha">
+<li id="sec-democracy-voting-14-4-4-2-1-1-1"><div class="para" id="sec-democracy-voting-14-4-4-2-1-1-1-1">There are 12 voters.</div></li>
+<li id="sec-democracy-voting-14-4-4-2-1-1-2"><div class="para" id="sec-democracy-voting-14-4-4-2-1-1-2-1">A majority is 7 votes.</div></li>
+<li id="sec-democracy-voting-14-4-4-2-1-1-3"><div class="para" id="sec-democracy-voting-14-4-4-2-1-1-3-1">Biology wins the plurality method with 5 votes.</div></li>
+<li id="sec-democracy-voting-14-4-4-2-1-1-4"><div class="para" id="sec-democracy-voting-14-4-4-2-1-1-4-1">Biology wins the Instant Runoff Method with 7 votes.</div></li>
+<li id="sec-democracy-voting-14-4-4-2-1-1-5"><div class="para" id="sec-democracy-voting-14-4-4-2-1-1-5-1">The points are: Art 22, Biology 26 and Calculus 24. Biology wins the Borda Count Method.</div></li>
+<li id="sec-democracy-voting-14-4-4-2-1-1-6"><div class="para" id="sec-democracy-voting-14-4-4-2-1-1-6-1">The points are: Biology 2, Calculus 1. Biology wins with Copeland’s method.</div></li>
+</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-5"><h5 class="heading"><span class="codenumber">6<span class="period">.</span></span></h5>
 <div class="para" id="sec-democracy-voting-14-4-5-1-1">A professional psychology association is deciding where to hold their next conference. The votes are shown below.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l1 t1 lines">Number of voters</td>
@@ -1346,7 +1436,15 @@ eBookConfig.runestone_version = '7.3.0';
 <td class="c m b1 r1 l0 t0 lines">Barbados</td>
 <td class="c m b1 r1 l0 t0 lines">Alaska</td>
 </tr>
-</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-6"><h5 class="heading"><span class="codenumber">7<span class="period">.</span></span></h5>
+</table></div></div></div>
+<div class="solutions"><details id="sec-democracy-voting-14-4-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-democracy-voting-14-4-5-2-1"><ol class="lower-alpha">
+<li id="sec-democracy-voting-14-4-5-2-1-1-1"><div class="para" id="sec-democracy-voting-14-4-5-2-1-1-1-1">There are 26 voters.</div></li>
+<li id="sec-democracy-voting-14-4-5-2-1-1-2"><div class="para" id="sec-democracy-voting-14-4-5-2-1-1-2-1">A majority is 14 votes.</div></li>
+<li id="sec-democracy-voting-14-4-5-2-1-1-3"><div class="para" id="sec-democracy-voting-14-4-5-2-1-1-3-1">California wins the plurality method with 11 votes.</div></li>
+<li id="sec-democracy-voting-14-4-5-2-1-1-4"><div class="para" id="sec-democracy-voting-14-4-5-2-1-1-4-1">There is a tie between Barbados and California in the Instant Runoff Method with 13 votes each.</div></li>
+<li id="sec-democracy-voting-14-4-5-2-1-1-5"><div class="para" id="sec-democracy-voting-14-4-5-2-1-1-5-1">The points are: Alaska 49, Barbados 54 and California 53. Barbados wins the Borda Count Method.</div></li>
+<li id="sec-democracy-voting-14-4-5-2-1-1-6"><div class="para" id="sec-democracy-voting-14-4-5-2-1-1-6-1">The points are: Barbados 1, California 2. California wins with Copeland’s method.</div></li>
+</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-6"><h5 class="heading"><span class="codenumber">7<span class="period">.</span></span></h5>
 <div class="para" id="sec-democracy-voting-14-4-6-1-1">The Hillsboro City Council has an election with three candidates, D, E, F. The votes are:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l1 t1 lines">Number of voters</td>
@@ -1384,7 +1482,15 @@ eBookConfig.runestone_version = '7.3.0';
 <td class="c m b1 r1 l0 t0 lines">D</td>
 <td class="c m b1 r1 l0 t0 lines">E</td>
 </tr>
-</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-7"><h5 class="heading"><span class="codenumber">8<span class="period">.</span></span></h5>
+</table></div></div></div>
+<div class="solutions"><details id="sec-democracy-voting-14-4-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-democracy-voting-14-4-6-2-1"><ol class="lower-alpha">
+<li id="sec-democracy-voting-14-4-6-2-1-1-1"><div class="para" id="sec-democracy-voting-14-4-6-2-1-1-1-1">There are 31 votes.</div></li>
+<li id="sec-democracy-voting-14-4-6-2-1-1-2"><div class="para" id="sec-democracy-voting-14-4-6-2-1-1-2-1">A majority is 16 votes.</div></li>
+<li id="sec-democracy-voting-14-4-6-2-1-1-3"><div class="para" id="sec-democracy-voting-14-4-6-2-1-1-3-1">F wins the plurality method with 12 votes.</div></li>
+<li id="sec-democracy-voting-14-4-6-2-1-1-4"><div class="para" id="sec-democracy-voting-14-4-6-2-1-1-4-1">E wins the Instant Runoff Method with 16 votes.</div></li>
+<li id="sec-democracy-voting-14-4-6-2-1-1-5"><div class="para" id="sec-democracy-voting-14-4-6-2-1-1-5-1">The points are: D 66, E 59 and F 61. D wins the Borda Count Method.</div></li>
+<li id="sec-democracy-voting-14-4-6-2-1-1-6"><div class="para" id="sec-democracy-voting-14-4-6-2-1-1-6-1">The points are: D 2, E 1. D wins with Copeland’s method.</div></li>
+</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-7"><h5 class="heading"><span class="codenumber">8<span class="period">.</span></span></h5>
 <div class="para" id="sec-democracy-voting-14-4-7-1-1">The Vancouver mayor’s race has three candidates, G, H, I. The votes are:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l1 t1 lines">Number of voters</td>
@@ -1422,7 +1528,15 @@ eBookConfig.runestone_version = '7.3.0';
 <td class="c m b1 r1 l0 t0 lines">H</td>
 <td class="c m b1 r1 l0 t0 lines">G</td>
 </tr>
-</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-8"><h5 class="heading"><span class="codenumber">9<span class="period">.</span></span></h5>
+</table></div></div></div>
+<div class="solutions"><details id="sec-democracy-voting-14-4-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-democracy-voting-14-4-7-2-1"><ol class="lower-alpha">
+<li id="sec-democracy-voting-14-4-7-2-1-1-1"><div class="para" id="sec-democracy-voting-14-4-7-2-1-1-1-1">There are 51 voters.</div></li>
+<li id="sec-democracy-voting-14-4-7-2-1-1-2"><div class="para" id="sec-democracy-voting-14-4-7-2-1-1-2-1">A majority is 26 votes.</div></li>
+<li id="sec-democracy-voting-14-4-7-2-1-1-3"><div class="para" id="sec-democracy-voting-14-4-7-2-1-1-3-1">G wins the plurality method with 18 votes.</div></li>
+<li id="sec-democracy-voting-14-4-7-2-1-1-4"><div class="para" id="sec-democracy-voting-14-4-7-2-1-1-4-1">H wins the Instant Runoff Method with 26 votes.</div></li>
+<li id="sec-democracy-voting-14-4-7-2-1-1-5"><div class="para" id="sec-democracy-voting-14-4-7-2-1-1-5-1">The points are: G 97, H 106 and I 103. H wins the Borda Count Method.</div></li>
+<li id="sec-democracy-voting-14-4-7-2-1-1-6"><div class="para" id="sec-democracy-voting-14-4-7-2-1-1-6-1">The points are: H 2, I 1. H wins with Copeland’s method.</div></li>
+</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-8"><h5 class="heading"><span class="codenumber">9<span class="period">.</span></span></h5>
 <div class="para" id="sec-democracy-voting-14-4-8-1-1">The Beaverton City Council has an election for one open position. There are four candidates (labeled A, B, C, and D for convenience). The preference schedule for the election is:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l1 t1 lines">Number of voters</td>
@@ -1469,7 +1583,15 @@ eBookConfig.runestone_version = '7.3.0';
 <td class="c m b1 r1 l0 t0 lines">B</td>
 <td class="c m b1 r1 l0 t0 lines">C</td>
 </tr>
-</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-9"><h5 class="heading"><span class="codenumber">10<span class="period">.</span></span></h5>
+</table></div></div></div>
+<div class="solutions"><details id="sec-democracy-voting-14-4-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-democracy-voting-14-4-8-2-1"><ol class="lower-alpha">
+<li id="sec-democracy-voting-14-4-8-2-1-1-1"><div class="para" id="sec-democracy-voting-14-4-8-2-1-1-1-1">There are 460 voters.</div></li>
+<li id="sec-democracy-voting-14-4-8-2-1-1-2"><div class="para" id="sec-democracy-voting-14-4-8-2-1-1-2-1">A majority is 231 votes.</div></li>
+<li id="sec-democracy-voting-14-4-8-2-1-1-3"><div class="para" id="sec-democracy-voting-14-4-8-2-1-1-3-1">A wins the plurality method with 150 votes.</div></li>
+<li id="sec-democracy-voting-14-4-8-2-1-1-4"><div class="para" id="sec-democracy-voting-14-4-8-2-1-1-4-1">A wins the Instant Runoff Method with 290 votes.</div></li>
+<li id="sec-democracy-voting-14-4-8-2-1-1-5"><div class="para" id="sec-democracy-voting-14-4-8-2-1-1-5-1">The points are: A 1140, B 1060, C 1160 and D 1240. D wins the Borda Count method.</div></li>
+<li id="sec-democracy-voting-14-4-8-2-1-1-6"><div class="para" id="sec-democracy-voting-14-4-8-2-1-1-6-1">The points are: A 1, B 1, C 2, D 2. C and D tie with Copeland’s method.</div></li>
+</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-9"><h5 class="heading"><span class="codenumber">10<span class="period">.</span></span></h5>
 <div class="para" id="sec-democracy-voting-14-4-9-1-1">Portland City Council has an election for one open position. There are four candidates (labeled E, F, G, H for convenience). The preference schedule for the election is:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l1 t1 lines">Number of voters</td>
@@ -1521,7 +1643,15 @@ eBookConfig.runestone_version = '7.3.0';
 <td class="c m b1 r1 l0 t0 lines">G</td>
 <td class="c m b1 r1 l0 t0 lines">H</td>
 </tr>
-</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-10"><h5 class="heading"><span class="codenumber">11<span class="period">.</span></span></h5>
+</table></div></div></div>
+<div class="solutions"><details id="sec-democracy-voting-14-4-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-democracy-voting-14-4-9-2-1"><ol class="lower-alpha">
+<li id="sec-democracy-voting-14-4-9-2-1-1-1"><div class="para" id="sec-democracy-voting-14-4-9-2-1-1-1-1">There are 70 voters.</div></li>
+<li id="sec-democracy-voting-14-4-9-2-1-1-2"><div class="para" id="sec-democracy-voting-14-4-9-2-1-1-2-1">A majority is 36 votes.</div></li>
+<li id="sec-democracy-voting-14-4-9-2-1-1-3"><div class="para" id="sec-democracy-voting-14-4-9-2-1-1-3-1">E wins the plurality method with 27 votes.</div></li>
+<li id="sec-democracy-voting-14-4-9-2-1-1-4"><div class="para" id="sec-democracy-voting-14-4-9-2-1-1-4-1">F wins the Instant Runoff Method with 40 votes.</div></li>
+<li id="sec-democracy-voting-14-4-9-2-1-1-5"><div class="para" id="sec-democracy-voting-14-4-9-2-1-1-5-1">The points are: E 180, F 187, G 166 and H 167. F wins the Borda Count Method.</div></li>
+<li id="sec-democracy-voting-14-4-9-2-1-1-6"><div class="para" id="sec-democracy-voting-14-4-9-2-1-1-6-1">The points are: E 1.5, F 2, G 1, H 1.5. F wins with Copeland’s method.</div></li>
+</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-10"><h5 class="heading"><span class="codenumber">11<span class="period">.</span></span></h5>
 <div class="para" id="sec-democracy-voting-14-4-10-1-1">The Portland mayor’s race has four candidates, I, J, K, L. The votes are:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l1 t1 lines">Number of voters</td>
@@ -1578,7 +1708,15 @@ eBookConfig.runestone_version = '7.3.0';
 <td class="c m b1 r1 l0 t0 lines">J</td>
 <td class="c m b1 r1 l0 t0 lines">K</td>
 </tr>
-</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-11"><h5 class="heading"><span class="codenumber">12<span class="period">.</span></span></h5>
+</table></div></div></div>
+<div class="solutions"><details id="sec-democracy-voting-14-4-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-democracy-voting-14-4-10-2-1"><ol class="lower-alpha">
+<li id="sec-democracy-voting-14-4-10-2-1-1-1"><div class="para" id="sec-democracy-voting-14-4-10-2-1-1-1-1">There are 92 voters.</div></li>
+<li id="sec-democracy-voting-14-4-10-2-1-1-2"><div class="para" id="sec-democracy-voting-14-4-10-2-1-1-2-1">A majority is 47 votes.</div></li>
+<li id="sec-democracy-voting-14-4-10-2-1-1-3"><div class="para" id="sec-democracy-voting-14-4-10-2-1-1-3-1">K wins the plurality method with 38 votes.</div></li>
+<li id="sec-democracy-voting-14-4-10-2-1-1-4"><div class="para" id="sec-democracy-voting-14-4-10-2-1-1-4-1">K wins the Instant Runoff Method with 54 votes.</div></li>
+<li id="sec-democracy-voting-14-4-10-2-1-1-5"><div class="para" id="sec-democracy-voting-14-4-10-2-1-1-5-1">The points are: I 273, J 152, K 267 and L 228. I wins the Borda Count Method.</div></li>
+<li id="sec-democracy-voting-14-4-10-2-1-1-6"><div class="para" id="sec-democracy-voting-14-4-10-2-1-1-6-1">The points are: I 2, K 3, L2. K wins with Copeland’s method.</div></li>
+</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-11"><h5 class="heading"><span class="codenumber">12<span class="period">.</span></span></h5>
 <div class="para" id="sec-democracy-voting-14-4-11-1-1">A Reynolds School Board position has four candidates, M, N, O, P. The votes are:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l1 t1 lines">Number of voters</td>
@@ -1640,7 +1778,15 @@ eBookConfig.runestone_version = '7.3.0';
 <td class="c m b1 r1 l0 t0 lines">N</td>
 <td class="c m b1 r1 l0 t0 lines">P</td>
 </tr>
-</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-12"><h5 class="heading"><span class="codenumber">13<span class="period">.</span></span></h5>
+</table></div></div></div>
+<div class="solutions"><details id="sec-democracy-voting-14-4-11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-democracy-voting-14-4-11-2-1"><ol class="lower-alpha">
+<li id="sec-democracy-voting-14-4-11-2-1-1-1"><div class="para" id="sec-democracy-voting-14-4-11-2-1-1-1-1">There are 157 voters.</div></li>
+<li id="sec-democracy-voting-14-4-11-2-1-1-2"><div class="para" id="sec-democracy-voting-14-4-11-2-1-1-2-1">A majority is 79 votes.</div></li>
+<li id="sec-democracy-voting-14-4-11-2-1-1-3"><div class="para" id="sec-democracy-voting-14-4-11-2-1-1-3-1">M wins the plurality method with 70 votes.</div></li>
+<li id="sec-democracy-voting-14-4-11-2-1-1-4"><div class="para" id="sec-democracy-voting-14-4-11-2-1-1-4-1">O wins the Instant Runoff Method with 87 votes.</div></li>
+<li id="sec-democracy-voting-14-4-11-2-1-1-5"><div class="para" id="sec-democracy-voting-14-4-11-2-1-1-5-1">The points are: M 472, N 345, O 420, P 331. M wins the Borda Count Method.</div></li>
+<li id="sec-democracy-voting-14-4-11-2-1-1-6"><div class="para" id="sec-democracy-voting-14-4-11-2-1-1-6-1">The points are: M 2, N 1, O 2, P 1. M and O tie with Copeland’s method.</div></li>
+</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-12"><h5 class="heading"><span class="codenumber">13<span class="period">.</span></span></h5>
 <div class="para" id="sec-democracy-voting-14-4-12-1-1">The Gresham mayor’s race has four candidates, Q, R, S, T. The votes are:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l1 t1 lines">Number of voters</td>
@@ -1697,7 +1843,15 @@ eBookConfig.runestone_version = '7.3.0';
 <td class="c m b1 r1 l0 t0 lines">T</td>
 <td class="c m b1 r1 l0 t0 lines">Q</td>
 </tr>
-</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-13"><h5 class="heading"><span class="codenumber">14<span class="period">.</span></span></h5>
+</table></div></div></div>
+<div class="solutions"><details id="sec-democracy-voting-14-4-12-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-democracy-voting-14-4-12-2-1"><ol class="lower-alpha">
+<li id="sec-democracy-voting-14-4-12-2-1-1-1"><div class="para" id="sec-democracy-voting-14-4-12-2-1-1-1-1">There are 90 voters.</div></li>
+<li id="sec-democracy-voting-14-4-12-2-1-1-2"><div class="para" id="sec-democracy-voting-14-4-12-2-1-1-2-1">A majority is 46 votes.</div></li>
+<li id="sec-democracy-voting-14-4-12-2-1-1-3"><div class="para" id="sec-democracy-voting-14-4-12-2-1-1-3-1">Q wins the plurality method with 26 votes.</div></li>
+<li id="sec-democracy-voting-14-4-12-2-1-1-4"><div class="para" id="sec-democracy-voting-14-4-12-2-1-1-4-1">S wins the Instant Runoff Method with 50 votes.</div></li>
+<li id="sec-democracy-voting-14-4-12-2-1-1-5"><div class="para" id="sec-democracy-voting-14-4-12-2-1-1-5-1">The points are: Q 250, R 201, S 243 and T 206. Q wins the Borda Count Method.</div></li>
+<li id="sec-democracy-voting-14-4-12-2-1-1-6"><div class="para" id="sec-democracy-voting-14-4-12-2-1-1-6-1">The points are: Q 2, R 1 and S 3. S wins with Copeland’s method.</div></li>
+</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-13"><h5 class="heading"><span class="codenumber">14<span class="period">.</span></span></h5>
 <div class="para" id="sec-democracy-voting-14-4-13-1-1">The Parkrose School Board has an election for an open position with four candidates, U, V, W, X. The votes are:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l1 t1 lines">Number of voters</td>
@@ -1759,7 +1913,15 @@ eBookConfig.runestone_version = '7.3.0';
 <td class="c m b1 r1 l0 t0 lines">W</td>
 <td class="c m b1 r1 l0 t0 lines">X</td>
 </tr>
-</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-14"><h5 class="heading"><span class="codenumber">15<span class="period">.</span></span></h5>
+</table></div></div></div>
+<div class="solutions"><details id="sec-democracy-voting-14-4-13-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-democracy-voting-14-4-13-2-1"><ol class="lower-alpha">
+<li id="sec-democracy-voting-14-4-13-2-1-1-1"><div class="para" id="sec-democracy-voting-14-4-13-2-1-1-1-1">There are 110 voters.</div></li>
+<li id="sec-democracy-voting-14-4-13-2-1-1-2"><div class="para" id="sec-democracy-voting-14-4-13-2-1-1-2-1">A majorty is 56 votes.</div></li>
+<li id="sec-democracy-voting-14-4-13-2-1-1-3"><div class="para" id="sec-democracy-voting-14-4-13-2-1-1-3-1">W wins the plurality method with 30 votes.</div></li>
+<li id="sec-democracy-voting-14-4-13-2-1-1-4"><div class="para" id="sec-democracy-voting-14-4-13-2-1-1-4-1">X wins the Instant Runoff Method with 66 votes.</div></li>
+<li id="sec-democracy-voting-14-4-13-2-1-1-5"><div class="para" id="sec-democracy-voting-14-4-13-2-1-1-5-1">The points are: U 262, V 285, w 255 and X 298. X wins the Borda Count Method.</div></li>
+<li id="sec-democracy-voting-14-4-13-2-1-1-6"><div class="para" id="sec-democracy-voting-14-4-13-2-1-1-6-1">The points are: U 1, V 1, W 1 and X 3. X wins with Copeland’s method.</div></li>
+</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-14"><h5 class="heading"><span class="codenumber">15<span class="period">.</span></span></h5>
 <div class="para" id="sec-democracy-voting-14-4-14-1-1">A Multnomah county commissioner’s race has five candidates, A, B, C, D, E. The votes are:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l1 t1 lines">Number of voters</td>
@@ -1815,7 +1977,15 @@ eBookConfig.runestone_version = '7.3.0';
 <td class="c m b1 r1 l0 t0 lines">E</td>
 <td class="c m b1 r1 l0 t0 lines">A</td>
 </tr>
-</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-15"><h5 class="heading"><span class="codenumber">16<span class="period">.</span></span></h5>
+</table></div></div></div>
+<div class="solutions"><details id="sec-democracy-voting-14-4-14-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-democracy-voting-14-4-14-2-1"><ol class="lower-alpha">
+<li id="sec-democracy-voting-14-4-14-2-1-1-1"><div class="para" id="sec-democracy-voting-14-4-14-2-1-1-1-1">There are 107 voters.</div></li>
+<li id="sec-democracy-voting-14-4-14-2-1-1-2"><div class="para" id="sec-democracy-voting-14-4-14-2-1-1-2-1">A majority is 54 votes.</div></li>
+<li id="sec-democracy-voting-14-4-14-2-1-1-3"><div class="para" id="sec-democracy-voting-14-4-14-2-1-1-3-1">E wins the plurality method with 39 votes.</div></li>
+<li id="sec-democracy-voting-14-4-14-2-1-1-4"><div class="para" id="sec-democracy-voting-14-4-14-2-1-1-4-1">B wins the Instant Runoff Method with 54 votes.</div></li>
+<li id="sec-democracy-voting-14-4-14-2-1-1-5"><div class="para" id="sec-democracy-voting-14-4-14-2-1-1-5-1">The points are: A 357, B 398, C 305, D 219, E 326. B wins the Borda Count Method.</div></li>
+<li id="sec-democracy-voting-14-4-14-2-1-1-6"><div class="para" id="sec-democracy-voting-14-4-14-2-1-1-6-1">The points are: A 2, B 4, C 2, D 1, E 1. B wins with Copeland’s method.</div></li>
+</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-15"><h5 class="heading"><span class="codenumber">16<span class="period">.</span></span></h5>
 <div class="para" id="sec-democracy-voting-14-4-15-1-1">The Oregon State governor’s race has five candidates, F, G, H, I, J. The votes are:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l1 t1 lines">Number of voters</td>
@@ -1877,7 +2047,15 @@ eBookConfig.runestone_version = '7.3.0';
 <td class="c m b1 r1 l0 t0 lines">H</td>
 <td class="c m b1 r1 l0 t0 lines">I</td>
 </tr>
-</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-16"><h5 class="heading"><span class="codenumber">17<span class="period">.</span></span></h5>
+</table></div></div></div>
+<div class="solutions"><details id="sec-democracy-voting-14-4-15-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-democracy-voting-14-4-15-2-1"><ol class="lower-alpha">
+<li id="sec-democracy-voting-14-4-15-2-1-1-1"><div class="para" id="sec-democracy-voting-14-4-15-2-1-1-1-1">There are 92 voters.</div></li>
+<li id="sec-democracy-voting-14-4-15-2-1-1-2"><div class="para" id="sec-democracy-voting-14-4-15-2-1-1-2-1">A majority is 47 votes.</div></li>
+<li id="sec-democracy-voting-14-4-15-2-1-1-3"><div class="para" id="sec-democracy-voting-14-4-15-2-1-1-3-1">F and G tie in the plurality method with 28 votes each.</div></li>
+<li id="sec-democracy-voting-14-4-15-2-1-1-4"><div class="para" id="sec-democracy-voting-14-4-15-2-1-1-4-1">I wins the Instant Runoff Method with 47 votes.</div></li>
+<li id="sec-democracy-voting-14-4-15-2-1-1-5"><div class="para" id="sec-democracy-voting-14-4-15-2-1-1-5-1">The points are: F 324, G 296, H 236, I 296, J 228. F wins the Borda Count Method.</div></li>
+<li id="sec-democracy-voting-14-4-15-2-1-1-6"><div class="para" id="sec-democracy-voting-14-4-15-2-1-1-6-1">The points are: F 3, G 2.5, I 3.5, J 1. I wins with Copeland’s method.</div></li>
+</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-16"><h5 class="heading"><span class="codenumber">17<span class="period">.</span></span></h5>
 <div class="para" id="sec-democracy-voting-14-4-16-1-1">A Washington county commissioner’s race has five candidates, K, L, M, N, O. The votes are:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l1 t1 lines">Number of voters</td>
@@ -1945,7 +2123,15 @@ eBookConfig.runestone_version = '7.3.0';
 <td class="c m b1 r1 l0 t0 lines">L</td>
 <td class="c m b1 r1 l0 t0 lines">N</td>
 </tr>
-</table></div></div></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-17"><h5 class="heading"><span class="codenumber">18<span class="period">.</span></span></h5>
+</table></div></div></div>
+<div class="solutions"><details id="sec-democracy-voting-14-4-16-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-democracy-voting-14-4-16-2-1"><ol class="lower-alpha">
+<li id="sec-democracy-voting-14-4-16-2-1-1-1"><div class="para" id="sec-democracy-voting-14-4-16-2-1-1-1-1">There are 127 voters.</div></li>
+<li id="sec-democracy-voting-14-4-16-2-1-1-2"><div class="para" id="sec-democracy-voting-14-4-16-2-1-1-2-1">A majority is 64 votes.</div></li>
+<li id="sec-democracy-voting-14-4-16-2-1-1-3"><div class="para" id="sec-democracy-voting-14-4-16-2-1-1-3-1">K wins the plurality method with 35 votes.</div></li>
+<li id="sec-democracy-voting-14-4-16-2-1-1-4"><div class="para" id="sec-democracy-voting-14-4-16-2-1-1-4-1">M wins the Instant Runoff Method with 79 votes.</div></li>
+<li id="sec-democracy-voting-14-4-16-2-1-1-5"><div class="para" id="sec-democracy-voting-14-4-16-2-1-1-5-1">The points are: K 430, L 402, M 376, N 375, O 322. K wins the Borda Count Method.</div></li>
+<li id="sec-democracy-voting-14-4-16-2-1-1-6"><div class="para" id="sec-democracy-voting-14-4-16-2-1-1-6-1">The points are: K 4, L 2, M 2, N 2. K wins with Copeland’s method.</div></li>
+</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-democracy-voting-14-4-17"><h5 class="heading"><span class="codenumber">18<span class="period">.</span></span></h5>
 <div class="para" id="sec-democracy-voting-14-4-17-1-1">A Clackamas county commissioner’s race has five candidates, P, Q, R, S, T. The votes are:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l1 t1 lines">Number of voters</td>
@@ -2019,15 +2205,23 @@ eBookConfig.runestone_version = '7.3.0';
 <td class="c m b1 r1 l0 t0 lines">P</td>
 <td class="c m b1 r1 l0 t0 lines">Q</td>
 </tr>
-</table></div></div></div></article>
+</table></div></div></div>
+<div class="solutions"><details id="sec-democracy-voting-14-4-17-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-democracy-voting-14-4-17-2-1"><ol class="lower-alpha">
+<li id="sec-democracy-voting-14-4-17-2-1-1-1"><div class="para" id="sec-democracy-voting-14-4-17-2-1-1-1-1">There are 198 voters.</div></li>
+<li id="sec-democracy-voting-14-4-17-2-1-1-2"><div class="para" id="sec-democracy-voting-14-4-17-2-1-1-2-1">A majority is 100 votes.</div></li>
+<li id="sec-democracy-voting-14-4-17-2-1-1-3"><div class="para" id="sec-democracy-voting-14-4-17-2-1-1-3-1">Q wins the plurality method with 52 votes.</div></li>
+<li id="sec-democracy-voting-14-4-17-2-1-1-4"><div class="para" id="sec-democracy-voting-14-4-17-2-1-1-4-1">Q and R tie in the Instant Runoff Method with 99 votes each.</div></li>
+<li id="sec-democracy-voting-14-4-17-2-1-1-5"><div class="para" id="sec-democracy-voting-14-4-17-2-1-1-5-1">The points are: P 408, Q 606, R 654, S 693, T 609. S wins the Borda Count Method.</div></li>
+<li id="sec-democracy-voting-14-4-17-2-1-1-6"><div class="para" id="sec-democracy-voting-14-4-17-2-1-1-6-1">The points are: Q 2.5, R 2.5, S 3, T 2. S wins with Copeland’s method.</div></li>
+</ol></div></div></details></div></article>
 </div>
-</div></section><div id="scprogresscontainer">You have attempted <span id="scprogresstotal"></span> of <span id="scprogressposs"></span> activities on this page.<div id="subchapterprogress" aria-label="Page progress"></div>
-</div></section></div>
+</div></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-democracy-apportionment.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-democracy-popular-vote.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
 <a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
-</div>{% if show_ethical_ad %}<div style="width: 100%"><div data-ea-publisher="runestoneacademy" data-ea-type="image" style="display: flex; justify-content: center"></div></div>{% endif %}</body>
+</div>
+</body>
 </html>
