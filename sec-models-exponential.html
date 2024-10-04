@@ -122,7 +122,7 @@ eBookConfig.enable_chatcodes =  false;
 </head>
 <body id="qw2" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" target="_blank" href="https://mathatgrace.github.io/qw2"><img src="external/Lady-Wisdom.jpg" alt="Logo image"></a><div class="title-container">
+<a id="logo-link" class="logo-link" target="_blank" href="https://mathatgrace.github.io/qw"><img src="external/Lady-Wisdom.jpg" alt="Logo image"></a><div class="title-container">
 <h1 class="heading"><a href="qw.html"><span class="title">Quantitative Wisdom:</span> <span class="subtitle">Numerical literacy from the perspective of Biblical wisdom</span></a></h1>
 <p class="byline">Dr. Ryan Johnson</p>
 </div>
@@ -726,9 +726,10 @@ P(t) = 100 \cdot 3^t
 <div class="para">so <span class="process-math">\(P_0 = 100\)</span> and <span class="process-math">\(b = 3\text{.}\)</span>
 </div>
 </div>
-<details id="example-bacteria" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="example example-like" id="example-bacteria"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.1</span><span class="period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para logical" id="example-bacteria-1-1">
+</h4>
+<div class="para logical" id="example-bacteria-1-1">
 <div class="para">A colony of bacteria starts with <span class="process-math">\(300\)</span> organisms and doubles every week.</div>
 <ol class="lower-alpha">
 <li id="example-bacteria-1-1-2-1"><div class="para" id="example-bacteria-1-1-2-1-1">Write a formula for the population of the bacteria colony after <span class="process-math">\(t\)</span> weeks.</div></li>
@@ -760,7 +761,7 @@ P\left(\frac{5}{7}\right)= 300 \cdot 2^{5/7} = 492.2
 <div class="para">We cannot have a fraction of a bacterium, so we round to the nearest whole number, <span class="process-math">\(492\text{.}\)</span>
 </div>
 </div></li>
-</ol></div></div></details></div></article></details><article class="warning remark-like" id="sec-models-exponential-3-8"><h4 class="heading">
+</ol></div></div></details></div></article><article class="warning remark-like" id="sec-models-exponential-3-8"><h4 class="heading">
 <span class="type">Warning</span><span class="space"> </span><span class="codenumber">5.2.2</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="sec-models-exponential-3-8-1">
@@ -816,9 +817,10 @@ P(t) = 60 \cdot \left(2^{1/3}\right)^t
 <div class="para">The initial value of the function is <span class="process-math">\(P_0 = 60\text{,}\)</span> and the growth factor is <span class="process-math">\(b = 2^{1/3}\text{,}\)</span> or approximately <span class="process-math">\(1.26\text{.}\)</span> The rabbit population grows by a factor of about <span class="process-math">\(1.26\)</span> every month.</div>
 </div>
 <div class="para" id="sec-models-exponential-4-5">If the units are the same, a population with a larger growth factor grows faster than one with a smaller growth factor.</div>
-<details id="example-compare-growth-factors" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="example example-like" id="example-compare-growth-factors"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.3</span><span class="period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para" id="example-compare-growth-factors-1-1">A lab technician compares the growth of <span class="process-math">\(2\)</span> species of bacteria. She starts <span class="process-math">\(2\)</span> colonies of <span class="process-math">\(50\)</span> bacteria each. Species A doubles in population every <span class="process-math">\(2\)</span> days, and species B triples every <span class="process-math">\(3\)</span> days. Find the growth factor for each species.</div>
+</h4>
+<div class="para" id="example-compare-growth-factors-1-1">A lab technician compares the growth of <span class="process-math">\(2\)</span> species of bacteria. She starts <span class="process-math">\(2\)</span> colonies of <span class="process-math">\(50\)</span> bacteria each. Species A doubles in population every <span class="process-math">\(2\)</span> days, and species B triples every <span class="process-math">\(3\)</span> days. Find the growth factor for each species.</div>
 <div class="solutions"><details id="example-compare-growth-factors-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-compare-growth-factors-2-1">
 <div class="para">A function describing the growth of species A is</div>
 <div class="displaymath process-math">
@@ -833,7 +835,7 @@ P(t) = 50 \cdot 3^{t/3} = 50 \cdot \left(3^{1/3}\right)^t
 \end{equation*}
 </div>
 <div class="para">so the growth factor for species B is <span class="process-math">\(3^{1/3}\text{,}\)</span> or approximately <span class="process-math">\(1.44\text{.}\)</span> Species B grows faster than species A.</div>
-</div></div></details></div></article></details><article class="activity project-like" id="sec-models-exponential-4-7"><h4 class="heading">
+</div></div></details></div></article><article class="activity project-like" id="sec-models-exponential-4-7"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.2.4</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="sec-models-exponential-4-7-1-1"><ol class="lower-alpha">
@@ -977,9 +979,10 @@ A(t) = P(1 + r)^t
 <span class="type">Note</span><span class="space"> </span><span class="codenumber">5.2.4</span><span class="period">.</span>
 </h4>
 <div class="para" id="sec-models-exponential-5-9-1">The notion of <dfn class="terminology">percent increase</dfn> is often used to describe the growth factor for quantities that grow exponentially. Note carefully the distinction between the percent increase, <span class="process-math">\(r\text{,}\)</span> and the growth factor, <span class="process-math">\(b=1+r\text{.}\)</span>
-</div></article><details id="example-inflation" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+</div></article><article class="example example-like" id="example-inflation"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.5</span><span class="period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para logical" id="example-inflation-1-1">
+</h4>
+<div class="para logical" id="example-inflation-1-1">
 <div class="para">During a period of rapid inflation, prices rose by <span class="process-math">\(12\)</span>% over <span class="process-math">\(6\)</span> months. At the beginning of the inflationary period, a pound of butter cost $<span class="process-math">\(2\text{.}\)</span>
 </div>
 <ol class="lower-alpha">
@@ -1066,7 +1069,7 @@ P(t) = 2(1.12)^{2t}
 <div class="sbspanel middle" style="width:41.1764705882353%;"><img src="external/models/fig-inflation.svg" role="img" class="contained" alt="graph of inflation"></div>
 </div></div>
 </li>
-</ol></div></div></details></div></article></details><div class="para logical" id="sec-models-exponential-5-11">
+</ol></div></div></details></div></article><div class="para logical" id="sec-models-exponential-5-11">
 <div class="para">In <a href="sec-models-exponential.html#example-inflation" class="xref" data-knowl="./knowl/xref/example-inflation.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 5.2.5">Example 5.2.5</a>, we can rewrite the formula for <span class="process-math">\(P(t)\)</span> as follows:</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example-inflation.html">
 \begin{equation*}
@@ -1268,9 +1271,10 @@ b \amp = 1 - r \\
 <li id="sec-models-exponential-7-3-1-2-2"><div class="para" id="p-derived-sec-models-exponential-7-3-1-2-2">A percent decrease of <span class="process-math">\(r\)</span> produces a decay factor of <span class="process-math">\(b=1-r\text{.}\)</span>
 </div></li>
 </ul>
-</div></article><details id="example-computing-prices" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+</div></article><article class="example example-like" id="example-computing-prices"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.7</span><span class="period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para logical" id="example-computing-prices-1-1">
+</h4>
+<div class="para logical" id="example-computing-prices-1-1">
 <div class="para">David Reed writes in Context magazine: "Computing prices have been falling exponentially—50% every 18 months—for the past 30 years and will probably stay on that curve for another couple of decades." An accounting firm invests $50,000 in new computer equipment.</div>
 <ol class="lower-alpha">
 <li id="example-computing-prices-1-1-1-1"><div class="para" id="example-computing-prices-1-1-1-1-1">Write a formula for the value of the equipment <span class="process-math">\(t\)</span> years from now.</div></li>
@@ -1311,7 +1315,7 @@ V(5) = 50,000(0.50)^{5/1.5} = 4960.628
 </div>
 <div class="para">To the nearest dollar, the equipment is worth $4961.</div>
 </div></li>
-</ol></div></div></details></div></article></details><article class="activity project-like" id="sec-models-exponential-7-5"><h4 class="heading">
+</ol></div></div></details></div></article><article class="activity project-like" id="sec-models-exponential-7-5"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.2.8</span><span class="period">.</span>
 </h4>
 <div class="para" id="sec-models-exponential-7-5-1-1">The number of butterflies visiting a nature station is declining by 18% per year. In 2012, 3600 butterflies visited the nature station.</div> <div class="para logical" id="sec-models-exponential-7-5-1-2"><ol class="lower-alpha">
@@ -1439,9 +1443,10 @@ L(t) = 5 + 2t ~\text{ and } ~ E(t) = 5 \cdot 2^t ~~~ (t \ge 0)
 <div class="para" id="sec-models-exponential-8-4">
 <span class="process-math">\(L\)</span> is a linear function with initial value <span class="process-math">\(5\)</span> and slope <span class="process-math">\(2\text{;}\)</span> <span class="process-math">\(E\)</span> is an exponential function with initial value <span class="process-math">\(5\)</span> and growth factor <span class="process-math">\(2\text{.}\)</span> In a way, the growth factor of an exponential function is analogous to the slope of a linear function: Each measures how quickly the function is increasing (or decreasing).</div>
 <div class="para" id="sec-models-exponential-8-5">However, for each unit increase in <span class="process-math">\(t\text{,}\)</span> <span class="process-math">\(2\)</span> units are <em class="emphasis">added</em> to the value of <span class="process-math">\(L(t)\text{,}\)</span> whereas the value of <span class="process-math">\(E(t)\)</span> is <em class="emphasis">multiplied</em> by <span class="process-math">\(2\text{.}\)</span> An exponential function with growth factor <span class="process-math">\(2\)</span> eventually grows much more rapidly than a linear function with slope <span class="process-math">\(2\text{,}\)</span> as you can see by comparing the graphs in the figure or the function values in the tables.</div>
-<details id="example-compare-linear-vs-exponential" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="example example-like" id="example-compare-linear-vs-exponential"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.8</span><span class="period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para logical" id="example-compare-linear-vs-exponential-1-1">
+</h4>
+<div class="para logical" id="example-compare-linear-vs-exponential-1-1">
 <div class="para">A solar energy company sold $<span class="process-math">\(80,000\)</span> worth of solar collectors last year, its first year of operation. This year its sales rose to $<span class="process-math">\(88,000\text{,}\)</span> an increase of <span class="process-math">\(10\)</span>%. The marketing department must estimate its projected sales for the next <span class="process-math">\(3\)</span> years.</div>
 <ol class="lower-alpha">
 <li id="example-compare-linear-vs-exponential-1-1-5-1"><div class="para" id="example-compare-linear-vs-exponential-1-1-5-1-1">If the marketing department predicts that sales will grow linearly, what should it expect the sales total to be next year? Graph the projected sales figures over the next <span class="process-math">\(3\)</span> years, assuming that sales will grow linearly.</div></li>
@@ -1515,7 +1520,7 @@ E(2) = 80,000(1.10)^2= 96,800
 </table></div>
 <div class="sbspanel top" style="width:47.3684210526316%;"><img src="external/models/fig-linear-vs-exponential2.svg" role="img" class="contained" alt="linear and exponential growth"></div>
 </div></div>
-</div></details></div></article></details><article class="activity project-like" id="sec-models-exponential-8-7"><h4 class="heading">
+</div></details></div></article><article class="activity project-like" id="sec-models-exponential-8-7"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.2.9</span><span class="period">.</span>
 </h4>
 <div class="para" id="sec-models-exponential-8-7-1-1">A new car begins to depreciate in value as soon as you drive it off the lot. Some models depreciate linearly, and others depreciate exponentially. Suppose you buy a new car for $20,000, and <span class="process-math">\(1\)</span> year later its value has decreased to $17,000.</div> <div class="para logical" id="sec-models-exponential-8-7-1-2"><ol class="lower-alpha">
@@ -1540,19 +1545,12 @@ E(2) = 80,000(1.10)^2= 96,800
 <div class="para logical" id="sec-5-2-exponential-exercises-2-1-1"><ol class="lower-alpha">
 <li id="sec-5-2-exponential-exercises-2-1-1-1-1"><div class="para" id="sec-5-2-exponential-exercises-2-1-1-1-1-1">A parking permit at Huron College cost $<span class="process-math">\(25\)</span> last year, but this year the price increased by <span class="process-math">\(12\%\text{.}\)</span> What is the price this year?</div></li>
 <li id="sec-5-2-exponential-exercises-2-1-1-1-2"><div class="para" id="sec-5-2-exponential-exercises-2-1-1-1-2-1">If the price of a parking permit increases by <span class="process-math">\(12\%\)</span> again next year, what will the price be then?</div></li>
-</ol></div>
-<div class="solutions"><details id="sec-5-2-exponential-exercises-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-5-2-exponential-exercises-2-2-1"><ol class="lower-alpha cols2">
-<li id="sec-5-2-exponential-exercises-2-2-1-1-1"><div class="para" id="sec-5-2-exponential-exercises-2-2-1-1-1-1">$<span class="process-math">\(28\)</span>
-</div></li>
-<li id="sec-5-2-exponential-exercises-2-2-1-1-2"><div class="para" id="sec-5-2-exponential-exercises-2-2-1-1-2-1">$<span class="process-math">\(31.36\)</span>
-</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-3"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+</ol></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-3"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
 <div class="para logical" id="sec-5-2-exponential-exercises-3-1-1"><ol class="lower-alpha">
 <li id="sec-5-2-exponential-exercises-3-1-1-1-1"><div class="para" id="sec-5-2-exponential-exercises-3-1-1-1-1-1">The computer you want cost $<span class="process-math">\(1200\)</span> when it first came on the market, but after <span class="process-math">\(3\)</span> months the price was reduced by <span class="process-math">\(15\%\text{.}\)</span> What was the price then?</div></li>
 <li id="sec-5-2-exponential-exercises-3-1-1-1-2"><div class="para" id="sec-5-2-exponential-exercises-3-1-1-1-2-1">If the price falls by another <span class="process-math">\(15\%\)</span> next month, what will the price be then?</div></li>
 </ol></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-4"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
-<div class="para" id="sec-5-2-exponential-exercises-4-1-1">The value of your stock portfolio fell <span class="process-math">\(10\%\)</span> last year, but this year it increased by <span class="process-math">\(10\%\text{.}\)</span> How does the current value of your portfolio compare to what it was two years ago?</div>
-<div class="solutions"><details id="sec-5-2-exponential-exercises-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-5-2-exponential-exercises-4-2-1">It is <span class="process-math">\(99\%\)</span> of what it was <span class="process-math">\(2\)</span> years ago.</div></div></details></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-5"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div class="para" id="sec-5-2-exponential-exercises-4-1-1">The value of your stock portfolio fell <span class="process-math">\(10\%\)</span> last year, but this year it increased by <span class="process-math">\(10\%\text{.}\)</span> How does the current value of your portfolio compare to what it was two years ago?</div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-5"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
 <div class="para" id="sec-5-2-exponential-exercises-5-1-1">You got a <span class="process-math">\(5\%\)</span> raise in January, but then in March everyone took a pay cut of <span class="process-math">\(5\%\text{.}\)</span> How does your new salary compare to what it was last December?</div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-6"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
 <div class="para logical" id="sec-5-2-exponential-exercises-6-1-1">
 <div class="para">The population of Summerville is currently <span class="process-math">\(12\)</span> hundred people.</div>
@@ -1560,15 +1558,7 @@ E(2) = 80,000(1.10)^2= 96,800
 <li id="sec-5-2-exponential-exercises-6-1-1-2-1"><div class="para" id="sec-5-2-exponential-exercises-6-1-1-2-1-1">Write a formula for the population if it grows at a constant rate of <span class="process-math">\(1.5\)</span> hundred people per year. What is the population after <span class="process-math">\(3\)</span> years?</div></li>
 <li id="sec-5-2-exponential-exercises-6-1-1-2-2"><div class="para" id="sec-5-2-exponential-exercises-6-1-1-2-2-1">Write a formula for the population if it has a constant growth factor of <span class="process-math">\(1.5\)</span> per year. What is the population after <span class="process-math">\(3\)</span> years?</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="sec-5-2-exponential-exercises-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-5-2-exponential-exercises-6-2-1"><ol class="lower-alpha cols2">
-<li id="sec-5-2-exponential-exercises-6-2-1-1-1"><div class="para" id="sec-5-2-exponential-exercises-6-2-1-1-1-1">
-<span class="process-math">\(P = 1200 + 150t\text{;}\)</span>  <span class="process-math">\(1650\)</span>
-</div></li>
-<li id="sec-5-2-exponential-exercises-6-2-1-1-2"><div class="para" id="sec-5-2-exponential-exercises-6-2-1-1-2-1">
-<span class="process-math">\(P = 1200\cdot 1.5^t\text{;}\)</span>  <span class="process-math">\(4050\)</span>
-</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-7"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+</div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-7"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
 <div class="para logical" id="sec-5-2-exponential-exercises-7-1-1">
 <div class="para">Delbert’s sports car was worth  $<span class="process-math">\(45,000\)</span> when he bought it.</div>
 <ol class="lower-alpha">
@@ -1582,15 +1572,7 @@ E(2) = 80,000(1.10)^2= 96,800
 <li id="sec-5-2-exponential-exercises-8-1-1-2-1"><div class="para" id="sec-5-2-exponential-exercises-8-1-1-2-1-1">Write a formula for the value of the truck if it depreciates by $<span class="process-math">\(2000\)</span> per year. What is the value of the truck after <span class="process-math">\(5\)</span> years?</div></li>
 <li id="sec-5-2-exponential-exercises-8-1-1-2-2"><div class="para" id="sec-5-2-exponential-exercises-8-1-1-2-2-1">Write a formula for the value of the truck if it depreciates by <span class="process-math">\(20\%\)</span> per year. What is the value of the truck after <span class="process-math">\(5\)</span> years?</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="sec-5-2-exponential-exercises-8-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-5-2-exponential-exercises-8-2-1"><ol class="lower-alpha cols2">
-<li id="sec-5-2-exponential-exercises-8-2-1-1-1"><div class="para" id="sec-5-2-exponential-exercises-8-2-1-1-1-1">
-<span class="process-math">\(V = 18,000 - 2000t\text{;}\)</span> $<span class="process-math">\(8000\)</span>
-</div></li>
-<li id="sec-5-2-exponential-exercises-8-2-1-1-2"><div class="para" id="sec-5-2-exponential-exercises-8-2-1-1-2-1">
-<span class="process-math">\(V = 18,000\cdot 0.8^t\text{;}\)</span> $<span class="process-math">\(5898.24\)</span>
-</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-9"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
+</div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-9"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
 <div class="para logical" id="sec-5-2-exponential-exercises-9-1-1">
 <div class="para">The population of Lakeview is currently <span class="process-math">\(150,000\)</span> people.</div>
 <ol class="lower-alpha">
@@ -1623,9 +1605,7 @@ E(2) = 80,000(1.10)^2= 96,800
 <td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\hphantom{00000}\)</span></td>
 <td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\hphantom{00000}\)</span></td>
 </tr>
-</table></div></div></div>
-<div class="solutions"><details id="sec-5-2-exponential-exercises-10-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-5-2-exponential-exercises-10-2-1">A: <span class="process-math">\(20\%\text{;}\)</span> B: <span class="process-math">\(2\%\text{;}\)</span> C: <span class="process-math">\(7.5\%\text{;}\)</span> D: <span class="process-math">\(100\%\text{;}\)</span> E: <span class="process-math">\(115\%\)</span>
-</div></div></details></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-11"><h4 class="heading"><span class="codenumber">10<span class="period">.</span></span></h4>
+</table></div></div></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-11"><h4 class="heading"><span class="codenumber">10<span class="period">.</span></span></h4>
 <div class="para" id="sec-5-2-exponential-exercises-11-1-1">The table shows the decay factor for a number of different populations. For each population, find the percent growth rate.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr>
 <td class="l m b1 r1 l1 t1 lines">Population</td>
@@ -1663,29 +1643,11 @@ E(2) = 80,000(1.10)^2= 96,800
 </div></div>
 <div class="exercisegroup-exercises">
 <article class="exercise exercise-like" id="sec-5-2-exponential-exercises-12-2"><h5 class="heading"><span class="codenumber">11<span class="period">.</span></span></h5>
-<div class="para" id="sec-5-2-exponential-exercises-12-2-1-1">A typical beehive contains <span class="process-math">\(20,000\)</span> insects. The population can increase in size by a factor of <span class="process-math">\(2.5\)</span> every <span class="process-math">\(6\)</span> weeks. How many bees could there be after <span class="process-math">\(4\)</span> weeks? After <span class="process-math">\(20\)</span> weeks?</div>
-<div class="solutions"><details id="sec-5-2-exponential-exercises-12-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-5-2-exponential-exercises-12-2-2-1"><ol class="lower-alpha cols2">
-<li id="sec-5-2-exponential-exercises-12-2-2-1-1-1"><div class="para" id="sec-5-2-exponential-exercises-12-2-2-1-1-1-1"><span class="process-math">\(\displaystyle P = 20,000\cdot 2.5^{t/6}\)</span></div></li>
-<li id="sec-5-2-exponential-exercises-12-2-2-1-1-2"><div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/fig-ans-4-1-11.svg" role="img" class="contained" alt="exponential growth"></div></div></div></li>
-<li id="sec-5-2-exponential-exercises-12-2-2-1-1-3"><div class="para" id="sec-5-2-exponential-exercises-12-2-2-1-1-3-1">
-<span class="process-math">\(36,840\)</span> bees; <span class="process-math">\(424,128\)</span> bees</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-12-3"><h5 class="heading"><span class="codenumber">12<span class="period">.</span></span></h5>
+<div class="para" id="sec-5-2-exponential-exercises-12-2-1-1">A typical beehive contains <span class="process-math">\(20,000\)</span> insects. The population can increase in size by a factor of <span class="process-math">\(2.5\)</span> every <span class="process-math">\(6\)</span> weeks. How many bees could there be after <span class="process-math">\(4\)</span> weeks? After <span class="process-math">\(20\)</span> weeks?</div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-12-3"><h5 class="heading"><span class="codenumber">12<span class="period">.</span></span></h5>
 <div class="para" id="sec-5-2-exponential-exercises-12-3-1-1">A rancher who started with <span class="process-math">\(800\)</span> head of cattle finds that his herd increases by a factor of <span class="process-math">\(1.8\)</span> every <span class="process-math">\(3\)</span> years. How many head of cattle will he have after <span class="process-math">\(1\)</span> year? After <span class="process-math">\(10\)</span> years?</div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-12-4"><h5 class="heading"><span class="codenumber">13<span class="period">.</span></span></h5>
-<div class="para" id="sec-5-2-exponential-exercises-12-4-1-1">A sum of $<span class="process-math">\(4000\)</span> is invested in an account that pays <span class="process-math">\(8\%\)</span> interest compounded annually. How much is in the account after <span class="process-math">\(2\)</span> years? After <span class="process-math">\(10\)</span> years?</div>
-<div class="solutions"><details id="sec-5-2-exponential-exercises-12-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-5-2-exponential-exercises-12-4-2-1"><ol class="lower-alpha cols2">
-<li id="sec-5-2-exponential-exercises-12-4-2-1-1-1"><div class="para" id="sec-5-2-exponential-exercises-12-4-2-1-1-1-1"><span class="process-math">\(\displaystyle A = 4000\cdot 1.08^t\)</span></div></li>
-<li id="sec-5-2-exponential-exercises-12-4-2-1-1-2"><div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/fig-ans-4-1-13.svg" role="img" class="contained" alt="exponential growth"></div></div></div></li>
-<li id="sec-5-2-exponential-exercises-12-4-2-1-1-3"><div class="para" id="sec-5-2-exponential-exercises-12-4-2-1-1-3-1">$<span class="process-math">\(4665.60\text{;}\)</span> $<span class="process-math">\(8635.70\)</span>
-</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-12-5"><h5 class="heading"><span class="codenumber">14<span class="period">.</span></span></h5>
+<div class="para" id="sec-5-2-exponential-exercises-12-4-1-1">A sum of $<span class="process-math">\(4000\)</span> is invested in an account that pays <span class="process-math">\(8\%\)</span> interest compounded annually. How much is in the account after <span class="process-math">\(2\)</span> years? After <span class="process-math">\(10\)</span> years?</div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-12-5"><h5 class="heading"><span class="codenumber">14<span class="period">.</span></span></h5>
 <div class="para" id="sec-5-2-exponential-exercises-12-5-1-1">Otto invests $<span class="process-math">\(600\)</span> in an account that pays <span class="process-math">\(7.3\%\)</span> interest compounded annually. How much is in Otto’s account after <span class="process-math">\(3\)</span> years? After <span class="process-math">\(6\)</span> years?</div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-12-6"><h5 class="heading"><span class="codenumber">15<span class="period">.</span></span></h5>
-<div class="para" id="sec-5-2-exponential-exercises-12-6-1-1">Paul bought a house for $<span class="process-math">\(200,000\)</span> in <span class="process-math">\(2003\text{.}\)</span> Since <span class="process-math">\(2003\text{,}\)</span> housing prices have risen an average of <span class="process-math">\(5\%\)</span> per year. How much was the house worth in <span class="process-math">\(2015\text{?}\)</span> How much will it be worth in 2030?</div>
-<div class="solutions"><details id="sec-5-2-exponential-exercises-12-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-5-2-exponential-exercises-12-6-2-1"><ol class="lower-alpha cols2">
-<li id="sec-5-2-exponential-exercises-12-6-2-1-1-1"><div class="para" id="sec-5-2-exponential-exercises-12-6-2-1-1-1-1"><span class="process-math">\(\displaystyle P = 200,000\cdot 1.05^t\)</span></div></li>
-<li id="sec-5-2-exponential-exercises-12-6-2-1-1-2"><div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/fig-ans-4-1-15.svg" role="img" class="contained" alt="exponential growth"></div></div></div></li>
-<li id="sec-5-2-exponential-exercises-12-6-2-1-1-3"><div class="para" id="sec-5-2-exponential-exercises-12-6-2-1-1-3-1">$<span class="process-math">\(359,171\text{;}\)</span> $<span class="process-math">\(746,691\)</span>
-</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-12-7"><h5 class="heading"><span class="codenumber">16<span class="period">.</span></span></h5>
+<div class="para" id="sec-5-2-exponential-exercises-12-6-1-1">Paul bought a house for $<span class="process-math">\(200,000\)</span> in <span class="process-math">\(2003\text{.}\)</span> Since <span class="process-math">\(2003\text{,}\)</span> housing prices have risen an average of <span class="process-math">\(5\%\)</span> per year. How much was the house worth in <span class="process-math">\(2015\text{?}\)</span> How much will it be worth in 2030?</div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-12-7"><h5 class="heading"><span class="codenumber">16<span class="period">.</span></span></h5>
 <div class="para" id="sec-5-2-exponential-exercises-12-7-1-1">Sales of Windsurfers have increased <span class="process-math">\(12\%\)</span> per year since <span class="process-math">\(2010\text{.}\)</span> If Sunsails sold <span class="process-math">\(1500\)</span> Windsurfers in <span class="process-math">\(2010\text{,}\)</span> how many did it sell in <span class="process-math">\(2015\text{?}\)</span> How many should it expect to sell in <span class="process-math">\(2022\text{?}\)</span>
 </div></article>
 </div>
@@ -1702,32 +1664,12 @@ E(2) = 80,000(1.10)^2= 96,800
 </div></div>
 <div class="exercisegroup-exercises">
 <article class="exercise exercise-like" id="sec-5-2-exponential-exercises-13-2"><h5 class="heading"><span class="codenumber">17<span class="period">.</span></span></h5>
-<div class="para" id="sec-5-2-exponential-exercises-13-2-1-1">During a vigorous spraying program, the mosquito population was reduced to <span class="process-math">\(\dfrac{3}{4} \)</span> of its previous size every <span class="process-math">\(2\)</span> weeks. If the mosquito population was originally estimated at <span class="process-math">\(250,000\text{,}\)</span> how many mosquitoes remained after <span class="process-math">\(3\)</span> weeks of spraying? After <span class="process-math">\(8\)</span> weeks?</div>
-<div class="solutions"><details id="sec-5-2-exponential-exercises-13-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-5-2-exponential-exercises-13-2-2-1"><ol class="lower-alpha cols2">
-<li id="sec-5-2-exponential-exercises-13-2-2-1-1-1"><div class="para" id="sec-5-2-exponential-exercises-13-2-2-1-1-1-1"><span class="process-math">\(\displaystyle P = 250,000\cdot 0.75^{t/2}\)</span></div></li>
-<li id="sec-5-2-exponential-exercises-13-2-2-1-1-2"><div class="sidebyside"><div class="sbsrow" style="margin-left:5%;margin-right:5%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/fig-ans-4-1-17.svg" role="img" class="contained" alt="exponential decay"></div></div></div></li>
-<li id="sec-5-2-exponential-exercises-13-2-2-1-1-3"><div class="para" id="sec-5-2-exponential-exercises-13-2-2-1-1-3-1">
-<span class="process-math">\(162,380\text{;}\)</span> <span class="process-math">\(79,102\)</span>
-</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-13-3"><h5 class="heading"><span class="codenumber">18<span class="period">.</span></span></h5>
+<div class="para" id="sec-5-2-exponential-exercises-13-2-1-1">During a vigorous spraying program, the mosquito population was reduced to <span class="process-math">\(\dfrac{3}{4} \)</span> of its previous size every <span class="process-math">\(2\)</span> weeks. If the mosquito population was originally estimated at <span class="process-math">\(250,000\text{,}\)</span> how many mosquitoes remained after <span class="process-math">\(3\)</span> weeks of spraying? After <span class="process-math">\(8\)</span> weeks?</div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-13-3"><h5 class="heading"><span class="codenumber">18<span class="period">.</span></span></h5>
 <div class="para" id="sec-5-2-exponential-exercises-13-3-1-1">The number of perch in Hidden Lake has declined to half of its previous value every <span class="process-math">\(5\)</span> years since 1985, when the perch population was estimated at <span class="process-math">\(8000\text{.}\)</span> How many perch were there in 1995? In 2013?</div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-13-4"><h5 class="heading"><span class="codenumber">19<span class="period">.</span></span></h5>
-<div class="para" id="sec-5-2-exponential-exercises-13-4-1-1">Scuba divers find that the water in Emerald Lake filters out <span class="process-math">\(15\%\)</span> of the sunlight for each <span class="process-math">\(4\)</span> feet that they descend. How much sunlight penetrates to a depth of <span class="process-math">\(20\)</span> feet? To a depth of <span class="process-math">\(45\)</span> feet?</div>
-<div class="solutions"><details id="sec-5-2-exponential-exercises-13-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-5-2-exponential-exercises-13-4-2-1"><ol class="lower-alpha cols2">
-<li id="sec-5-2-exponential-exercises-13-4-2-1-1-1"><div class="para" id="sec-5-2-exponential-exercises-13-4-2-1-1-1-1"><span class="process-math">\(\displaystyle L = 0.85^{d/4}\)</span></div></li>
-<li id="sec-5-2-exponential-exercises-13-4-2-1-1-2"><div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/fig-ans-4-1-19.svg" role="img" class="contained" alt="exponential decay"></div></div></div></li>
-<li id="sec-5-2-exponential-exercises-13-4-2-1-1-3"><div class="para" id="sec-5-2-exponential-exercises-13-4-2-1-1-3-1">
-<span class="process-math">\(44\%\text{;}\)</span> <span class="process-math">\(16\%\)</span>
-</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-13-5"><h5 class="heading"><span class="codenumber">20<span class="period">.</span></span></h5>
+<div class="para" id="sec-5-2-exponential-exercises-13-4-1-1">Scuba divers find that the water in Emerald Lake filters out <span class="process-math">\(15\%\)</span> of the sunlight for each <span class="process-math">\(4\)</span> feet that they descend. How much sunlight penetrates to a depth of <span class="process-math">\(20\)</span> feet? To a depth of <span class="process-math">\(45\)</span> feet?</div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-13-5"><h5 class="heading"><span class="codenumber">20<span class="period">.</span></span></h5>
 <div class="para" id="sec-5-2-exponential-exercises-13-5-1-1">Arch’s motorboat cost $<span class="process-math">\(15,000\)</span> in <span class="process-math">\(2005\)</span> and has depreciated by <span class="process-math">\(10\%\)</span> every <span class="process-math">\(3\)</span> years. How much was the boat worth in <span class="process-math">\(2014\text{?}\)</span> In <span class="process-math">\(2015\text{?}\)</span>
 </div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-13-6"><h5 class="heading"><span class="codenumber">21<span class="period">.</span></span></h5>
-<div class="para" id="sec-5-2-exponential-exercises-13-6-1-1">Plutonium-238 is a radioactive element that decays over time into a less harmful element at a rate of <span class="process-math">\(0.8\%\)</span> per year. A power plant has <span class="process-math">\(50\)</span> pounds of plutonium-238 to dispose of. How much plutonium-238 will be left after <span class="process-math">\(10\)</span> years? After <span class="process-math">\(100\)</span> years?</div>
-<div class="solutions"><details id="sec-5-2-exponential-exercises-13-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-5-2-exponential-exercises-13-6-2-1"><ol class="lower-alpha cols2">
-<li id="sec-5-2-exponential-exercises-13-6-2-1-1-1"><div class="para" id="sec-5-2-exponential-exercises-13-6-2-1-1-1-1"><span class="process-math">\(\displaystyle P = 50\cdot 0.992^t\)</span></div></li>
-<li id="sec-5-2-exponential-exercises-13-6-2-1-1-2"><div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/fig-ans-4-1-21.svg" role="img" class="contained" alt="exponential decay"></div></div></div></li>
-<li id="sec-5-2-exponential-exercises-13-6-2-1-1-3"><div class="para" id="sec-5-2-exponential-exercises-13-6-2-1-1-3-1">
-<span class="process-math">\(46.1\)</span> lb; <span class="process-math">\(22.4\)</span> lb</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-13-7"><h5 class="heading"><span class="codenumber">22<span class="period">.</span></span></h5>
+<div class="para" id="sec-5-2-exponential-exercises-13-6-1-1">Plutonium-238 is a radioactive element that decays over time into a less harmful element at a rate of <span class="process-math">\(0.8\%\)</span> per year. A power plant has <span class="process-math">\(50\)</span> pounds of plutonium-238 to dispose of. How much plutonium-238 will be left after <span class="process-math">\(10\)</span> years? After <span class="process-math">\(100\)</span> years?</div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-13-7"><h5 class="heading"><span class="codenumber">22<span class="period">.</span></span></h5>
 <div class="para" id="sec-5-2-exponential-exercises-13-7-1-1">Iodine-131 is a radioactive element that decays at a rate of <span class="process-math">\(8.3\%\)</span> per day. How much of a <span class="process-math">\(12\)</span>-gram sample will be left after <span class="process-math">\(1\)</span> week? After <span class="process-math">\(15\)</span> days?</div></article>
 </div>
 </div>
@@ -1757,31 +1699,7 @@ E(2) = 80,000(1.10)^2= 96,800
 </tr>
 </table></div></div></div>
 </li>
-</ol></div>
-<div class="solutions"><details id="sec-5-2-exponential-exercises-14-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-5-2-exponential-exercises-14-2-1"><ol class="lower-alpha">
-<li id="sec-5-2-exponential-exercises-14-2-1-1-1"><div class="para" id="sec-5-2-exponential-exercises-14-2-1-1-1-1">In the expression <span class="process-math">\(2\cdot 3^t\text{,}\)</span> only the <span class="process-math">\(3\)</span> is raised to a power <span class="process-math">\(t\text{,}\)</span> and the result is doubled, but if both the <span class="process-math">\(2\)</span> and the <span class="process-math">\(3\)</span> were raised to the power <span class="process-math">\(t\text{,}\)</span> the result would be <span class="process-math">\(6^t\text{.}\)</span>
-</div></li>
-<li id="sec-5-2-exponential-exercises-14-2-1-1-2"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
-<tr>
-<td class="l m b1 r1 l1 t1 lines"><span class="process-math">\(t\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(0\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(1\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2\)</span></td>
-</tr>
-<tr>
-<td class="l m b1 r1 l1 t0 lines"><span class="process-math">\(P(t)\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(2\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(6\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(18\)</span></td>
-</tr>
-<tr>
-<td class="l m b1 r1 l1 t0 lines"><span class="process-math">\(Q(t)\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(1\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(6\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(36\)</span></td>
-</tr>
-</table></div></div></div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-15"><h4 class="heading"><span class="codenumber">24<span class="period">.</span></span></h4>
+</ol></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-15"><h4 class="heading"><span class="codenumber">24<span class="period">.</span></span></h4>
 <div class="para logical" id="sec-5-2-exponential-exercises-15-1-1"><ol class="lower-alpha">
 <li id="sec-5-2-exponential-exercises-15-1-1-1-1"><div class="para" id="sec-5-2-exponential-exercises-15-1-1-1-1-1">Explain why <span class="process-math">\(P(t) = 4\cdot \left(\dfrac{1}{2}\right)^t\)</span> and <span class="process-math">\(Q(t) = 2^t\)</span> are not the same function.</div></li>
 <li id="sec-5-2-exponential-exercises-15-1-1-1-2">
@@ -1813,13 +1731,7 @@ E(2) = 80,000(1.10)^2= 96,800
 <li id="sec-5-2-exponential-exercises-16-1-1-1-2"><div class="para" id="sec-5-2-exponential-exercises-16-1-1-1-2-1">In <span class="process-math">\(2004\text{,}\)</span> the population had grown to <span class="process-math">\(1,871,950\text{.}\)</span> Find the growth factor and the percent rate of growth, rounded to the nearest tenth of a percent.</div></li>
 <li id="sec-5-2-exponential-exercises-16-1-1-1-3"><div class="para" id="sec-5-2-exponential-exercises-16-1-1-1-3-1">Estimate the population of Riverside County in <span class="process-math">\(2010\text{.}\)</span>
 </div></li>
-</ol></div>
-<div class="solutions"><details id="sec-5-2-exponential-exercises-16-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-5-2-exponential-exercises-16-2-1"><ol class="lower-alpha">
-<li id="sec-5-2-exponential-exercises-16-2-1-1-1"><div class="para" id="sec-5-2-exponential-exercises-16-2-1-1-1-1"><span class="process-math">\(\displaystyle P(t) = 1,545,387b^t\)</span></div></li>
-<li id="sec-5-2-exponential-exercises-16-2-1-1-2"><div class="para" id="sec-5-2-exponential-exercises-16-2-1-1-2-1">Growth factor <span class="process-math">\(1.049\text{;}\)</span> Percent rate of growth <span class="process-math">\(4.9\%\)</span>
-</div></li>
-<li id="sec-5-2-exponential-exercises-16-2-1-1-3"><div class="para" id="sec-5-2-exponential-exercises-16-2-1-1-3-1"><span class="process-math">\(\displaystyle 2,493,401\)</span></div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-17"><h4 class="heading"><span class="codenumber">26<span class="period">.</span></span></h4>
+</ol></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-17"><h4 class="heading"><span class="codenumber">26<span class="period">.</span></span></h4>
 <div class="para logical" id="sec-5-2-exponential-exercises-17-1-1"><ol class="lower-alpha">
 <li id="sec-5-2-exponential-exercises-17-1-1-1-1"><div class="para" id="sec-5-2-exponential-exercises-17-1-1-1-1-1">In <span class="process-math">\(2006\text{,}\)</span> a new Ford Focus cost <span class="process-math">\(\$15,574\text{.}\)</span> The value of a Focus decreases exponentially over time. Write a formula for the value of a Focus. (You do not know the value of the decay factor, <span class="process-math">\(b\text{,}\)</span> yet.)</div></li>
 <li id="sec-5-2-exponential-exercises-17-1-1-1-2"><div class="para" id="sec-5-2-exponential-exercises-17-1-1-1-2-1">A <span class="process-math">\(2\)</span>-year old Focus cost <span class="process-math">\(\$11,788\text{.}\)</span> Find the decay factor and the percent rate of depreciation, rounded to the nearest tenth of a percent.</div></li>
@@ -1833,14 +1745,7 @@ E(2) = 80,000(1.10)^2= 96,800
 <li id="sec-5-2-exponential-exercises-18-1-1-3-3"><div class="para" id="sec-5-2-exponential-exercises-18-1-1-3-3-1">Graph your function.</div></li>
 <li id="sec-5-2-exponential-exercises-18-1-1-3-4"><div class="para" id="sec-5-2-exponential-exercises-18-1-1-3-4-1">One of the original robins actually survived for <span class="process-math">\(9\)</span> years. How many robins does the model predict will survive for <span class="process-math">\(9\)</span> years?</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="sec-5-2-exponential-exercises-18-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-5-2-exponential-exercises-18-2-1"><ol class="lower-alpha cols2">
-<li id="sec-5-2-exponential-exercises-18-2-1-1-1"><div class="para" id="sec-5-2-exponential-exercises-18-2-1-1-1-1"><span class="process-math">\(\displaystyle 365\)</span></div></li>
-<li id="sec-5-2-exponential-exercises-18-2-1-1-2"><div class="para" id="sec-5-2-exponential-exercises-18-2-1-1-2-1"><span class="process-math">\(\displaystyle N(t) = 365(0.356)^t\)</span></div></li>
-<li id="sec-5-2-exponential-exercises-18-2-1-1-3"><div class="sidebyside"><div class="sbsrow" style="margin-left:10%;margin-right:10%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/fig-surviving-robins.svg" role="img" class="contained" alt="decay"></div></div></div></li>
-<li id="sec-5-2-exponential-exercises-18-2-1-1-4"><div class="para" id="sec-5-2-exponential-exercises-18-2-1-1-4-1">
-<span class="process-math">\(0.03\text{.}\)</span> (Therefore, none)</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-19"><h4 class="heading"><span class="codenumber">28<span class="period">.</span></span></h4>
+</div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-19"><h4 class="heading"><span class="codenumber">28<span class="period">.</span></span></h4>
 <div class="para logical" id="sec-5-2-exponential-exercises-19-1-1">
 <div class="para">Many insects grow by discrete amounts each time they shed their exoskeletons. Dyar’s rule says that the size of the insect increases by a constant ratio at each stage. (Source: Burton, 1998)</div>
 <ol class="lower-alpha">
@@ -1877,28 +1782,7 @@ E(2) = 80,000(1.10)^2= 96,800
 <td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\hphantom{000}\)</span></td>
 <td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\hphantom{000}\)</span></td>
 </tr>
-</table></div></div></div>
-<div class="solutions"><details id="sec-5-2-exponential-exercises-20-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
-<div class="para" id="sec-5-2-exponential-exercises-20-2-2-1">The growth factor is <span class="process-math">\(1.5\text{.}\)</span>
-</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
-<tr>
-<td class="c m b1 r1 l1 t1 lines"><span class="process-math">\(t\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(0\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(1\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(3\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(4\)</span></td>
-</tr>
-<tr>
-<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(P\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(~8~\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(12\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(18\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(27\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(40.5\)</span></td>
-</tr>
-</table></div></div></div>
-</div></details></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-20-3"><h5 class="heading"><span class="codenumber">30<span class="period">.</span></span></h5>
+</table></div></div></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-20-3"><h5 class="heading"><span class="codenumber">30<span class="period">.</span></span></h5>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l1 t1 lines"><span class="process-math">\(t\)</span></td>
@@ -1934,28 +1818,7 @@ E(2) = 80,000(1.10)^2= 96,800
 <td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\hphantom{000}\)</span></td>
 <td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\hphantom{000}\)</span></td>
 </tr>
-</table></div></div></div>
-<div class="solutions"><details id="sec-5-2-exponential-exercises-20-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
-<div class="para" id="sec-5-2-exponential-exercises-20-4-2-1">The growth factor is <span class="process-math">\(1.2\text{.}\)</span>
-</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
-<tr>
-<td class="c m b1 r1 l1 t1 lines"><span class="process-math">\(x\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(0\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(1\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(3\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(4\)</span></td>
-</tr>
-<tr>
-<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(Q\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(20\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(24\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(28.8\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(34.56\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(41.47\)</span></td>
-</tr>
-</table></div></div></div>
-</div></details></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-20-5"><h5 class="heading"><span class="codenumber">32<span class="period">.</span></span></h5>
+</table></div></div></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-20-5"><h5 class="heading"><span class="codenumber">32<span class="period">.</span></span></h5>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l1 t1 lines"><span class="process-math">\(x\)</span></td>
@@ -1991,28 +1854,7 @@ E(2) = 80,000(1.10)^2= 96,800
 <td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\hphantom{000}\)</span></td>
 <td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\hphantom{000}\)</span></td>
 </tr>
-</table></div></div></div>
-<div class="solutions"><details id="sec-5-2-exponential-exercises-20-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
-<div class="para" id="sec-5-2-exponential-exercises-20-6-2-1">The decay factor is <span class="process-math">\(0.8\text{.}\)</span>
-</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
-<tr>
-<td class="c m b1 r1 l1 t1 lines"><span class="process-math">\(w\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(0\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(1\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(3\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(4\)</span></td>
-</tr>
-<tr>
-<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(N\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(120\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(96\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(76.8\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(61.44\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(49.15\)</span></td>
-</tr>
-</table></div></div></div>
-</div></details></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-20-7"><h5 class="heading"><span class="codenumber">34<span class="period">.</span></span></h5>
+</table></div></div></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-20-7"><h5 class="heading"><span class="codenumber">34<span class="period">.</span></span></h5>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l1 t1 lines"><span class="process-math">\(w\)</span></td>
@@ -2048,28 +1890,7 @@ E(2) = 80,000(1.10)^2= 96,800
 <td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\hphantom{000}\)</span></td>
 <td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\hphantom{000}\)</span></td>
 </tr>
-</table></div></div></div>
-<div class="solutions"><details id="sec-5-2-exponential-exercises-20-8-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
-<div class="para" id="sec-5-2-exponential-exercises-20-8-2-1">The decay factor is <span class="process-math">\(0.8\text{.}\)</span>
-</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
-<tr>
-<td class="c m b1 r1 l1 t1 lines"><span class="process-math">\(t\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(0\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(1\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(3\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(4\)</span></td>
-</tr>
-<tr>
-<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(C\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(10\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(8\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(6.4\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(5.12\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(4.10\)</span></td>
-</tr>
-</table></div></div></div>
-</div></details></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-20-9"><h5 class="heading"><span class="codenumber">36<span class="period">.</span></span></h5>
+</table></div></div></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-20-9"><h5 class="heading"><span class="codenumber">36<span class="period">.</span></span></h5>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l1 t1 lines"><span class="process-math">\(t\)</span></td>
@@ -2105,28 +1926,7 @@ E(2) = 80,000(1.10)^2= 96,800
 <td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(266.2\)</span></td>
 <td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\hphantom{000}\)</span></td>
 </tr>
-</table></div></div></div>
-<div class="solutions"><details id="sec-5-2-exponential-exercises-20-10-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
-<div class="para" id="sec-5-2-exponential-exercises-20-10-2-1">The growth factor is <span class="process-math">\(1.1\text{.}\)</span>
-</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
-<tr>
-<td class="c m b1 r1 l1 t1 lines"><span class="process-math">\(n\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(0\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(1\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(3\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(4\)</span></td>
-</tr>
-<tr>
-<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(B\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(200\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(220\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(242\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(266.2\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(292.82\)</span></td>
-</tr>
-</table></div></div></div>
-</div></details></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-20-11"><h5 class="heading"><span class="codenumber">38<span class="period">.</span></span></h5>
+</table></div></div></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-20-11"><h5 class="heading"><span class="codenumber">38<span class="period">.</span></span></h5>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l1 t1 lines"><span class="process-math">\(n\)</span></td>
@@ -2158,31 +1958,16 @@ E(2) = 80,000(1.10)^2= 96,800
 </div></div>
 <div class="exercisegroup-exercises cols2">
 <article class="exercise exercise-like" id="sec-5-2-exponential-exercises-21-2"><h5 class="heading"><span class="codenumber">39<span class="period">.</span></span></h5>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/fig-ex-4-1-55.svg" role="img" class="contained" alt="growth"></div></div></div>
-<div class="solutions"><details id="sec-5-2-exponential-exercises-21-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-5-2-exponential-exercises-21-2-2-1"><ol class="lower-alpha">
-<li id="sec-5-2-exponential-exercises-21-2-2-1-1-1"><div class="para" id="sec-5-2-exponential-exercises-21-2-2-1-1-1-1">Initial value <span class="process-math">\(4\text{,}\)</span> growth factor <span class="process-math">\(2^{1/3}\)</span>
-</div></li>
-<li id="sec-5-2-exponential-exercises-21-2-2-1-1-2"><div class="para" id="sec-5-2-exponential-exercises-21-2-2-1-1-2-1"><span class="process-math">\(\displaystyle f (x) = 4\cdot 2^{x/3}\)</span></div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-21-3"><h5 class="heading"><span class="codenumber">40<span class="period">.</span></span></h5>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/fig-ex-4-1-55.svg" role="img" class="contained" alt="growth"></div></div></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-21-3"><h5 class="heading"><span class="codenumber">40<span class="period">.</span></span></h5>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/fig-ex-4-1-56.svg" role="img" class="contained" alt="growth"></div></div></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-21-4"><h5 class="heading"><span class="codenumber">41<span class="period">.</span></span></h5>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/fig-ex-4-1-57.svg" role="img" class="contained" alt="decay"></div></div></div>
-<div class="solutions"><details id="sec-5-2-exponential-exercises-21-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-5-2-exponential-exercises-21-4-2-1"><ol class="lower-alpha">
-<li id="sec-5-2-exponential-exercises-21-4-2-1-1-1"><div class="para" id="sec-5-2-exponential-exercises-21-4-2-1-1-1-1">Initial value <span class="process-math">\(80\text{,}\)</span> decay factor <span class="process-math">\(\frac{1}{2}\)</span>
-</div></li>
-<li id="sec-5-2-exponential-exercises-21-4-2-1-1-2"><div class="para" id="sec-5-2-exponential-exercises-21-4-2-1-1-2-1"><span class="process-math">\(\displaystyle f (x) = 80\cdot \left(\dfrac{1}{2} \right)^x \)</span></div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-21-5"><h5 class="heading"><span class="codenumber">42<span class="period">.</span></span></h5>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/fig-ex-4-1-57.svg" role="img" class="contained" alt="decay"></div></div></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-21-5"><h5 class="heading"><span class="codenumber">42<span class="period">.</span></span></h5>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/fig-ex-4-1-58.svg" role="img" class="contained" alt="decay"></div></div></div></article>
 </div>
 </div>
 <article class="exercise exercise-like" id="sec-5-2-exponential-exercises-22"><h4 class="heading"><span class="codenumber">43<span class="period">.</span></span></h4>
-<div class="para" id="sec-5-2-exponential-exercises-22-1-1">If <span class="process-math">\(8\%\)</span> of the air leaks out of Brian’s bicycle tire every day, what percent of the air will be left after <span class="process-math">\(2\)</span> days? After a week?</div>
-<div class="solutions"><details id="sec-5-2-exponential-exercises-22-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-5-2-exponential-exercises-22-2-1">
-<span class="process-math">\(84.6\%\text{,}\)</span> <span class="process-math">\(55.8\%\)</span>
-</div></div></details></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-23"><h4 class="heading"><span class="codenumber">44<span class="period">.</span></span></h4>
+<div class="para" id="sec-5-2-exponential-exercises-22-1-1">If <span class="process-math">\(8\%\)</span> of the air leaks out of Brian’s bicycle tire every day, what percent of the air will be left after <span class="process-math">\(2\)</span> days? After a week?</div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-23"><h4 class="heading"><span class="codenumber">44<span class="period">.</span></span></h4>
 <div class="para" id="sec-5-2-exponential-exercises-23-1-1">If housing prices are increasing by <span class="process-math">\(15\%\)</span> per year, by what percent will they increase in <span class="process-math">\(2\)</span> years? In <span class="process-math">\(3\)</span> years?</div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-24"><h4 class="heading"><span class="codenumber">45<span class="period">.</span></span></h4>
-<div class="para" id="sec-5-2-exponential-exercises-24-1-1">Francine says that if a population grew by <span class="process-math">\(48\%\)</span> in <span class="process-math">\(6\)</span> years, then it grew by <span class="process-math">\(8\%\)</span> per year. Is she correct? Either justify or correct her calculation.</div>
-<div class="solutions"><details id="sec-5-2-exponential-exercises-24-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-5-2-exponential-exercises-24-2-1">No, an increase of <span class="process-math">\(48\%\)</span> in <span class="process-math">\(6\)</span> years corresponds to a growth factor of <span class="process-math">\(1.48^{1/6}\approx 1.0675\text{,}\)</span> or an annual growth rate of about <span class="process-math">\(6.75\%\text{.}\)</span>
-</div></div></details></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-25"><h4 class="heading"><span class="codenumber">46<span class="period">.</span></span></h4>
+<div class="para" id="sec-5-2-exponential-exercises-24-1-1">Francine says that if a population grew by <span class="process-math">\(48\%\)</span> in <span class="process-math">\(6\)</span> years, then it grew by <span class="process-math">\(8\%\)</span> per year. Is she correct? Either justify or correct her calculation.</div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-25"><h4 class="heading"><span class="codenumber">46<span class="period">.</span></span></h4>
 <div class="para" id="sec-5-2-exponential-exercises-25-1-1">Delbert says that if a population decreased by <span class="process-math">\(60\%\)</span> in 5 years, then it decreased by <span class="process-math">\(12\%\)</span> per year. Is he correct? Either justify or correct his calculation.</div></article><div class="exercisegroup" id="sec-5-2-exponential-exercises-26">
 <h4 class="heading"><span class="title">Exercise Group.</span></h4>
 <div class="introduction" id="sec-5-2-exponential-exercises-26-1"><div class="para" id="sec-5-2-exponential-exercises-26-1-1">In Problems 63–66, assume that each population grows exponentially with constant annual percent increase, <span class="process-math">\(r\text{.}\)</span>
@@ -2192,11 +1977,7 @@ E(2) = 80,000(1.10)^2= 96,800
 <div class="para logical" id="sec-5-2-exponential-exercises-26-2-1-1"><ol class="lower-alpha">
 <li id="sec-5-2-exponential-exercises-26-2-1-1-1-1"><div class="para" id="sec-5-2-exponential-exercises-26-2-1-1-1-1-1">The population of the state of Texas was <span class="process-math">\(16,986,335\)</span> in <span class="process-math">\(1990\text{.}\)</span> Write a formula in terms of <span class="process-math">\(r\)</span> for the population of Texas <span class="process-math">\(t\)</span> years later.</div></li>
 <li id="sec-5-2-exponential-exercises-26-2-1-1-1-2"><div class="para" id="sec-5-2-exponential-exercises-26-2-1-1-1-2-1">In <span class="process-math">\(2000\text{,}\)</span> the population was <span class="process-math">\(20,851,820\text{.}\)</span> Write an equation and solve for <span class="process-math">\(r\text{.}\)</span> What was the annual percent increase to the nearest hundredth of a percent?</div></li>
-</ol></div>
-<div class="solutions"><details id="sec-5-2-exponential-exercises-26-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-5-2-exponential-exercises-26-2-2-1"><ol class="lower-alpha cols2">
-<li id="sec-5-2-exponential-exercises-26-2-2-1-1-1"><div class="para" id="sec-5-2-exponential-exercises-26-2-2-1-1-1-1"><span class="process-math">\(\displaystyle P(t) = 16,986,335(1 + r)^t\)</span></div></li>
-<li id="sec-5-2-exponential-exercises-26-2-2-1-1-2"><div class="para" id="sec-5-2-exponential-exercises-26-2-2-1-1-2-1"><span class="process-math">\(\displaystyle 2.07\%\)</span></div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-26-3"><h5 class="heading"><span class="codenumber">48<span class="period">.</span></span></h5>
+</ol></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-26-3"><h5 class="heading"><span class="codenumber">48<span class="period">.</span></span></h5>
 <div class="para logical" id="sec-5-2-exponential-exercises-26-3-1-1"><ol class="lower-alpha">
 <li id="sec-5-2-exponential-exercises-26-3-1-1-1-1"><div class="para" id="sec-5-2-exponential-exercises-26-3-1-1-1-1-1">The population of the state of Florida was <span class="process-math">\(12,937,926\)</span> in <span class="process-math">\(1990\text{.}\)</span> Write a formula in terms of <span class="process-math">\(r\)</span> for the population of Florida <span class="process-math">\(t\)</span> years later.</div></li>
 <li id="sec-5-2-exponential-exercises-26-3-1-1-1-2"><div class="para" id="sec-5-2-exponential-exercises-26-3-1-1-1-2-1">In <span class="process-math">\(2000\text{,}\)</span> the population was <span class="process-math">\(15,982,378\text{.}\)</span> Write an equation and solve for <span class="process-math">\(r\text{.}\)</span> What was the annual percent increase to the nearest hundredth of a percent?</div></li>
@@ -2206,13 +1987,7 @@ E(2) = 80,000(1.10)^2= 96,800
 <li id="sec-5-2-exponential-exercises-26-4-1-1-1-2"><div class="para" id="sec-5-2-exponential-exercises-26-4-1-1-1-2-1">The population of Elmira was <span class="process-math">\(350,000\)</span> in <span class="process-math">\(1990\)</span> and doubled in <span class="process-math">\(20\)</span> years. What was the annual percent increase to the nearest hundredth of a percent?</div></li>
 <li id="sec-5-2-exponential-exercises-26-4-1-1-1-3"><div class="para" id="sec-5-2-exponential-exercises-26-4-1-1-1-3-1">If a population doubles in <span class="process-math">\(20\)</span> years, does the percent increase depend on the size of the original population?</div></li>
 <li id="sec-5-2-exponential-exercises-26-4-1-1-1-4"><div class="para" id="sec-5-2-exponential-exercises-26-4-1-1-1-4-1">The population of Grayling doubled in <span class="process-math">\(20\)</span> years. What was the annual percent increase to the nearest hundredth of a percent?</div></li>
-</ol></div>
-<div class="solutions"><details id="sec-5-2-exponential-exercises-26-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-5-2-exponential-exercises-26-4-2-1"><ol class="lower-alpha cols4">
-<li id="sec-5-2-exponential-exercises-26-4-2-1-1-1"><div class="para" id="sec-5-2-exponential-exercises-26-4-2-1-1-1-1"><span class="process-math">\(\displaystyle 3.53\%\)</span></div></li>
-<li id="sec-5-2-exponential-exercises-26-4-2-1-1-2"><div class="para" id="sec-5-2-exponential-exercises-26-4-2-1-1-2-1"><span class="process-math">\(\displaystyle 3.53\%\)</span></div></li>
-<li id="sec-5-2-exponential-exercises-26-4-2-1-1-3"><div class="para" id="sec-5-2-exponential-exercises-26-4-2-1-1-3-1">No</div></li>
-<li id="sec-5-2-exponential-exercises-26-4-2-1-1-4"><div class="para" id="sec-5-2-exponential-exercises-26-4-2-1-1-4-1"><span class="process-math">\(\displaystyle 3.53\%\)</span></div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-26-5"><h5 class="heading"><span class="codenumber">50<span class="period">.</span></span></h5>
+</ol></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-26-5"><h5 class="heading"><span class="codenumber">50<span class="period">.</span></span></h5>
 <div class="para logical" id="sec-5-2-exponential-exercises-26-5-1-1"><ol class="lower-alpha">
 <li id="sec-5-2-exponential-exercises-26-5-1-1-1-1"><div class="para" id="sec-5-2-exponential-exercises-26-5-1-1-1-1-1">The population of Boomtown was <span class="process-math">\(300\)</span> in <span class="process-math">\(1908\)</span> and tripled in <span class="process-math">\(7\)</span> years. What was the annual percent increase to the nearest hundredth of a percent?</div></li>
 <li id="sec-5-2-exponential-exercises-26-5-1-1-1-2"><div class="para" id="sec-5-2-exponential-exercises-26-5-1-1-1-2-1">The population of Fairview was <span class="process-math">\(15,000\)</span> in <span class="process-math">\(1962\)</span> and tripled in <span class="process-math">\(7\)</span> years. What was the annual percent increase to the nearest hundredth of a percent?</div></li>
@@ -2226,16 +2001,7 @@ E(2) = 80,000(1.10)^2= 96,800
 <li id="sec-5-2-exponential-exercises-26-6-1-1-6-2"><div class="para" id="sec-5-2-exponential-exercises-26-6-1-1-6-2-1">What was the population of species B after <span class="process-math">\(4\)</span> days? Find the daily growth factor for species B.</div></li>
 <li id="sec-5-2-exponential-exercises-26-6-1-1-6-3"><div class="para" id="sec-5-2-exponential-exercises-26-6-1-1-6-3-1">Which species multiplies more rapidly?</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="sec-5-2-exponential-exercises-26-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-5-2-exponential-exercises-26-6-2-1"><ol class="lower-alpha cols3">
-<li id="sec-5-2-exponential-exercises-26-6-2-1-1-1"><div class="para" id="sec-5-2-exponential-exercises-26-6-2-1-1-1-1">
-<span class="process-math">\(39\text{;}\)</span> <span class="process-math">\(1.045\)</span>
-</div></li>
-<li id="sec-5-2-exponential-exercises-26-6-2-1-1-2"><div class="para" id="sec-5-2-exponential-exercises-26-6-2-1-1-2-1">
-<span class="process-math">\(35\text{;}\)</span> <span class="process-math">\(1.047\)</span>
-</div></li>
-<li id="sec-5-2-exponential-exercises-26-6-2-1-1-3"><div class="para" id="sec-5-2-exponential-exercises-26-6-2-1-1-3-1">Species B</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-26-7"><h5 class="heading"><span class="codenumber">52<span class="period">.</span></span></h5>
+</div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-26-7"><h5 class="heading"><span class="codenumber">52<span class="period">.</span></span></h5>
 <div class="para logical" id="sec-5-2-exponential-exercises-26-7-1-1">
 <div class="para">A biologist isolates two strains of a particular virus and monitors the growth of each, starting with samples of <span class="process-math">\(0.01\)</span> gram. Strain A increases by <span class="process-math">\(10\%\)</span> in <span class="process-math">\(8\)</span> hours and strain B increases by <span class="process-math">\(12\%\)</span> in <span class="process-math">\(9\)</span> hours.</div>
 <ol class="lower-alpha">
@@ -2298,51 +2064,7 @@ E(2) = 80,000(1.10)^2= 96,800
 </table></div></div></div>
 </li>
 </ol>
-</div>
-<div class="solutions"><details id="sec-5-2-exponential-exercises-27-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-5-2-exponential-exercises-27-2-2-1"><ol class="lower-alpha">
-<li id="sec-5-2-exponential-exercises-27-2-2-1-1-1">
-<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
-<tr>
-<td class="l m b1 r1 l1 t1 lines"><span class="process-math">\(t\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(0\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(4\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(6\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(8\)</span></td>
-</tr>
-<tr>
-<td class="l m b1 r1 l1 t0 lines"><span class="process-math">\(L(t)\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(3\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(6\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(9\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(12\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(15\)</span></td>
-</tr>
-</table></div></div></div>
-<div class="para" id="sec-5-2-exponential-exercises-27-2-2-1-1-1-2"><span class="process-math">\(\displaystyle L(t) = 3 + 1.5t\)</span></div>
-</li>
-<li id="sec-5-2-exponential-exercises-27-2-2-1-1-2">
-<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
-<tr>
-<td class="l m b1 r1 l1 t1 lines"><span class="process-math">\(t\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(0\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(4\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(6\)</span></td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(8\)</span></td>
-</tr>
-<tr>
-<td class="l m b1 r1 l1 t0 lines"><span class="process-math">\(E(t)\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(3\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(6\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(12\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(24\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(48\)</span></td>
-</tr>
-</table></div></div></div>
-<div class="para" id="sec-5-2-exponential-exercises-27-2-2-1-1-2-2"><span class="process-math">\(\displaystyle E(t) = 3\cdot 2^{t/2}\)</span></div>
-</li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-27-3"><h5 class="heading"><span class="codenumber">54<span class="period">.</span></span></h5>
+</div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-27-3"><h5 class="heading"><span class="codenumber">54<span class="period">.</span></span></h5>
 <div class="para logical" id="sec-5-2-exponential-exercises-27-3-1-1">
 <div class="para">Over the weekend the Midland Infirmary identifies four cases of Asian flu. Three days later it has treated a total of ten cases.</div>
 <ol class="lower-alpha">
@@ -2399,16 +2121,7 @@ E(2) = 80,000(1.10)^2= 96,800
 <li id="sec-5-2-exponential-exercises-27-4-1-1-5-2"><div class="para" id="sec-5-2-exponential-exercises-27-4-1-1-5-2-1">If the population declined exponentially, what was its annual decay factor? What was its annual percent decrease?</div></li>
 <li id="sec-5-2-exponential-exercises-27-4-1-1-5-3"><div class="para" id="sec-5-2-exponential-exercises-27-4-1-1-5-3-1">Predict the number of tigers in <span class="process-math">\(2010\)</span> under each assumption, linear or exponential decline.</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="sec-5-2-exponential-exercises-27-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-5-2-exponential-exercises-27-4-2-1"><ol class="lower-alpha cols2">
-<li id="sec-5-2-exponential-exercises-27-4-2-1-1-1"><div class="para" id="sec-5-2-exponential-exercises-27-4-2-1-1-1-1">
-<span class="process-math">\(244\)</span> tigers per year</div></li>
-<li id="sec-5-2-exponential-exercises-27-4-2-1-1-2"><div class="para" id="sec-5-2-exponential-exercises-27-4-2-1-1-2-1">
-<span class="process-math">\(0.97\text{;}\)</span> <span class="process-math">\(3\%\)</span>
-</div></li>
-<li id="sec-5-2-exponential-exercises-27-4-2-1-1-3"><div class="para" id="sec-5-2-exponential-exercises-27-4-2-1-1-3-1">Linear: <span class="process-math">\(3067\text{;}\)</span> Exponential: <span class="process-math">\(4170\)</span>
-</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-27-5"><h5 class="heading"><span class="codenumber">56<span class="period">.</span></span></h5>
+</div></article><article class="exercise exercise-like" id="sec-5-2-exponential-exercises-27-5"><h5 class="heading"><span class="codenumber">56<span class="period">.</span></span></h5>
 <div class="para logical" id="sec-5-2-exponential-exercises-27-5-1-1">
 <div class="para">In 2003, the Center for Biological Diversity filed a lawsuit against the federal government for failing to protect Alaskan sea otters. The population of sea otters, which numbered between 150,000 and 300,000 before hunting began in 1741, declined from about 20,000 in 1992 to 6000 in 2000. (Source: Center for Biological Diversity)</div>
 <ol class="lower-alpha">

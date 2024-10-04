@@ -122,7 +122,7 @@ eBookConfig.enable_chatcodes =  false;
 </head>
 <body id="qw2" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" target="_blank" href="https://mathatgrace.github.io/qw2"><img src="external/Lady-Wisdom.jpg" alt="Logo image"></a><div class="title-container">
+<a id="logo-link" class="logo-link" target="_blank" href="https://mathatgrace.github.io/qw"><img src="external/Lady-Wisdom.jpg" alt="Logo image"></a><div class="title-container">
 <h1 class="heading"><a href="qw.html"><span class="title">Quantitative Wisdom:</span> <span class="subtitle">Numerical literacy from the perspective of Biblical wisdom</span></a></h1>
 <p class="byline">Dr. Ryan Johnson</p>
 </div>
@@ -499,9 +499,10 @@ true);
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.3.1</span><span class="space"> </span><span class="title">Fitting an Exponential Function through Two Points</span>
 </h3>
 <div class="para" id="sec-models-exponential-2-2-2">To write a formula for an exponential function, we need to know the initial value, <span class="process-math">\(a\text{,}\)</span> and the growth or decay factor, <span class="process-math">\(b\text{.}\)</span> We can find these two parameters if we know any two function values.</div>
-<details id="example-fit-exponential" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="example example-like" id="example-fit-exponential"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.1</span><span class="period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para" id="example-fit-exponential-1-1">Find an exponential function that has the values <span class="process-math">\(f (2) = 4.5\)</span> and <span class="process-math">\(f (5) = 121.5\text{.}\)</span>
+</h4>
+<div class="para" id="example-fit-exponential-1-1">Find an exponential function that has the values <span class="process-math">\(f (2) = 4.5\)</span> and <span class="process-math">\(f (5) = 121.5\text{.}\)</span>
 </div>
 <div class="solutions"><details id="example-fit-exponential-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-fit-exponential-2-1">
 <div class="para">We would like to find values of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> so that the given function values satisfy <span class="process-math">\(f (x) = ab^x\)</span> . By substituting the function values into the formula, we can write two equations.</div>
@@ -545,7 +546,7 @@ a \amp= \frac{4.5}{9} \\
 </div>
 <div class="para">Thus, <span class="process-math">\(a = 0.5\)</span> and <span class="process-math">\(b = 3\text{,}\)</span> so the function is <span class="process-math">\(f (x) = 0.5(3^ x )\text{.}\)</span>
 </div>
-</div></div></details></div></article></details><article class="warning remark-like" id="sec-models-exponential-2-2-4"><h4 class="heading">
+</div></div></details></div></article><article class="warning remark-like" id="sec-models-exponential-2-2-4"><h4 class="heading">
 <span class="type">Warning</span><span class="space"> </span><span class="codenumber">5.3.2</span><span class="period">.</span>
 </h4>
 <div class="para" id="sec-models-exponential-2-2-4-1">Knowing only two points on the graph of f is not enough to tell us what <em class="emphasis">kind</em> of function <span class="process-math">\(f\)</span> is. Through the two points in <a href="sec-models-exponential-2.html#example-fit-exponential" class="xref" data-knowl="./knowl/xref/example-fit-exponential.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 5.3.1">Example 5.3.1</a>, we can also fit a linear function or a power function.</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:3.75%;margin-right:3.75%;">
@@ -579,9 +580,10 @@ E(x) \amp = 0.5(3^x ) \\
 <div class="para" id="sec-models-exponential-2-2-7-1-1">Use the ratio method to find an exponential function whose graph includes the points <span class="process-math">\((1, 20)\)</span> and <span class="process-math">\((3, 125)\text{.}\)</span>
 </div>
 <div class="solutions"><details id="sec-models-exponential-2-2-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="sec-models-exponential-2-2-7-2-1"><span class="process-math">\(f (x) = 8(2.5)^x\)</span></div></div></details></div></article><div class="para" id="sec-models-exponential-2-2-8">We can use the ratio method to find an exponential growth or decay model if we know two function values.</div>
-<details id="example-cedi-inflation" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="example example-like" id="example-cedi-inflation"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.3</span><span class="period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para" id="example-cedi-inflation-1-1">The unit of currency in Ghana is the cedi, denoted by ¢. Beginning in 1986, the cedi underwent a period of exponential inflation. In 1993, one U.S. dollar was worth ¢720, and in 1996, the dollar was worth about ¢1620. Find a formula for the number of cedi to the dollar as a function of time since 1986. What was the annual inflation rate?</div>
+</h4>
+<div class="para" id="example-cedi-inflation-1-1">The unit of currency in Ghana is the cedi, denoted by ¢. Beginning in 1986, the cedi underwent a period of exponential inflation. In 1993, one U.S. dollar was worth ¢720, and in 1996, the dollar was worth about ¢1620. Find a formula for the number of cedi to the dollar as a function of time since 1986. What was the annual inflation rate?</div>
 <div class="solutions"><details id="example-cedi-inflation-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-cedi-inflation-2-1">
 <div class="para">We want to find a function <span class="process-math">\(C(t) = ab^t\)</span> for the number of cedi to the dollar, where <span class="process-math">\(t = 0\)</span> in 1986. We have two function values, <span class="process-math">\(C(7) = 720\text{,}\)</span> and <span class="process-math">\(C(10) = 1620\text{,}\)</span> and with these values we can write two equations.</div>
 <div class="displaymath process-math">
@@ -613,7 +615,7 @@ a \amp = \frac{720}{1.317} \\
 \end{equation*}
 </div>
 <div class="para">Thus, <span class="process-math">\(C(t) = 108.75(1.31)^t\)</span> , and the annual inflation rate was <span class="process-math">\(31\)</span>%.</div>
-</div></div></details></div></article></details><article class="activity project-like" id="sec-models-exponential-2-2-10"><h4 class="heading">
+</div></div></details></div></article><article class="activity project-like" id="sec-models-exponential-2-2-10"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.3.2</span><span class="period">.</span>
 </h4>
 <div class="para" id="sec-models-exponential-2-2-10-1-1">The number of earthquakes that occur worldwide is a decreasing exponential function of their magnitude on the Richter scale. Between 2000 and 2005, there were 7480 earthquakes of magnitude 5 and 793 earthquakes of magnitude 6. (Source: National Earthquake Information Center, U.S. Geological Survey)</div> <div class="para logical" id="sec-models-exponential-2-2-10-1-2"><ol class="lower-alpha">
@@ -632,9 +634,10 @@ a \amp = \frac{720}{1.317} \\
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.3.2</span><span class="space"> </span><span class="title">Doubling Time</span>
 </h3>
 <div class="para" id="sec-models-exponential-2-3-3">Instead of giving the rate of growth of a population, we can specify its rate of growth by giving the time it takes for the population to double.</div>
-<details id="example-doubling-time" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="example example-like" id="example-doubling-time"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.4</span><span class="period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para logical" id="example-doubling-time-1-1">
+</h4>
+<div class="para logical" id="example-doubling-time-1-1">
 <div class="para">In 2005, the population of Egypt was <span class="process-math">\(74\)</span> million and was growing by <span class="process-math">\(2\)</span>% per year.</div>
 <ol class="lower-alpha">
 <li id="example-doubling-time-1-1-3-1"><div class="para" id="p-derived-example-doubling-time-1-1-3-1">If it continues to grow at the same rate, how long will it take the population of Egypt to double?</div></li>
@@ -677,7 +680,7 @@ t \amp= \frac{\log 2}{\log 1.02}\\
 <div class="para" id="example-doubling-time-2-1-1-3-1">A graph of <span class="process-math">\(P(t) = 74(1.02)^t\)</span> is shown below. Note that the population doubles every 35 years.</div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/fig-doubling-time.svg" role="img" class="contained" alt="graph showing doubling time"></div></div></div>
 </li>
-</ol></div></div></details></div></article></details><div class="para" id="sec-models-exponential-2-3-5">In <a href="sec-models-exponential-2.html#example-doubling-time" class="xref" data-knowl="./knowl/xref/example-doubling-time.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 5.3.4">Example 5.3.4</a>, it took the population <span class="process-math">\(35\)</span> years to double. Notice that the calculations in parts (a) and (b) are identical after the first step. In fact, we can start at any point, and it will take the population <span class="process-math">\(35\)</span> years to double. We say that <span class="process-math">\(35\)</span> years is the <dfn class="terminology">doubling time</dfn> for this population. In the Homework problems, you will show that any increasing exponential function has a constant doubling time.</div>
+</ol></div></div></details></div></article><div class="para" id="sec-models-exponential-2-3-5">In <a href="sec-models-exponential-2.html#example-doubling-time" class="xref" data-knowl="./knowl/xref/example-doubling-time.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 5.3.4">Example 5.3.4</a>, it took the population <span class="process-math">\(35\)</span> years to double. Notice that the calculations in parts (a) and (b) are identical after the first step. In fact, we can start at any point, and it will take the population <span class="process-math">\(35\)</span> years to double. We say that <span class="process-math">\(35\)</span> years is the <dfn class="terminology">doubling time</dfn> for this population. In the Homework problems, you will show that any increasing exponential function has a constant doubling time.</div>
 <article class="activity project-like" id="sec-models-exponential-2-3-6"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.3.3</span><span class="period">.</span>
 </h4>
@@ -733,9 +736,10 @@ P(t) = P_0 2^{t/D}
 \end{equation*}
 </div>
 </div></article><div class="para" id="sec-models-exponential-2-3-9">So, from knowing the doubling time, we can easily find the growth rate of a population.</div>
-<details id="example-US-population" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="example example-like" id="example-US-population"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.5</span><span class="period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para logical" id="example-US-population-1-1">
+</h4>
+<div class="para logical" id="example-US-population-1-1">
 <div class="para">At its current rate of growth, the population of the United States will double in <span class="process-math">\(115.87\)</span> years.</div>
 <ol class="lower-alpha">
 <li id="example-US-population-1-1-2-1"><div class="para" id="p-derived-example-US-population-1-1-2-1">Write a formula for the population of the United States as a function of time.</div></li>
@@ -750,7 +754,7 @@ P(t) = P_0 2^{t/115.87}
 </div>
 </div></li>
 <li id="example-US-population-2-1-1-2"><div class="para" id="p-derived-example-US-population-2-1-1-2">We write <span class="process-math">\(2^{t/115.87}\)</span> in the form <span class="process-math">\(\left(2^{1/115.87}\right)^t\)</span> to see that the growth factor is <span class="process-math">\(b = 2^{1/115.87}\text{,}\)</span> or <span class="process-math">\(1.006\text{.}\)</span> For exponential growth, <span class="process-math">\(b = 1 + r\text{,}\)</span> so <span class="process-math">\(r = 0.006\text{,}\)</span> or <span class="process-math">\(0.6\)</span>%.</div></li>
-</ol></div></div></details></div></article></details><article class="activity project-like" id="sec-models-exponential-2-3-11"><h4 class="heading">
+</ol></div></div></details></div></article><article class="activity project-like" id="sec-models-exponential-2-3-11"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.3.4</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="sec-models-exponential-2-3-11-1-1"><ol class="lower-alpha">
@@ -764,9 +768,10 @@ P(t) = P_0 2^{t/115.87}
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.3.3</span><span class="space"> </span><span class="title">Half-Life</span>
 </h3>
 <div class="para" id="sec-models-exponential-2-4-2">The <dfn class="terminology">half-life</dfn> of a decreasing exponential function is the time it takes for the output to decrease to half its original value. For example, the half-life of a radioactive isotope is the time it takes for half of the substance to decay. The half-life of a drug is the time it takes for half of the drug to be eliminated from the body. Like the doubling time, the half-life is constant for a particular function; no matter where you start, it takes the same amount of time to reach half that value.</div>
-<details id="example-ibuprofen" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="example example-like" id="example-ibuprofen"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.6</span><span class="period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para logical" id="example-ibuprofen-1-1">
+</h4>
+<div class="para logical" id="example-ibuprofen-1-1">
 <div class="para">If you take <span class="process-math">\(200\)</span> mg of ibuprofen to relieve sore muscles, the amount of the drug left in your body after <span class="process-math">\(t\)</span> hours is <span class="process-math">\(Q(t) = 200(0.73)^t\text{.}\)</span>
 </div>
 <ol class="lower-alpha">
@@ -813,7 +818,7 @@ t \amp= \frac{\log 0.5}{\log 0.73} \\
 </table></div>
 </div></div>
 </li>
-</ol></div></div></details></div></article></details><article class="activity project-like" id="sec-models-exponential-2-4-4"><h4 class="heading">
+</ol></div></div></details></div></article><article class="activity project-like" id="sec-models-exponential-2-4-4"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.3.5</span><span class="period">.</span>
 </h4>
 <div class="para" id="sec-models-exponential-2-4-4-1-1">Melatonin is an over the counter drug that can be used as a sleeping pill.  The half-life of melatonin in the human body is between 0.5 and 4 hours. (<a class="external" href="https://www.mind.org.uk/information-support/drugs-and-treatments/sleeping-pills-and-minor-tranquillisers/sleeping-pills/" target="_blank">source</a><details class="ptx-footnote" aria-live="polite" id="sec-models-exponential-2-4-4-1-1-2"><summary class="ptx-footnote__number" title="Footnote 5.3.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="sec-models-exponential-2-4-4-1-1-2"><code class="code-inline tex2jax_ignore">www.mind.org.uk/information-support/drugs-and-treatments/sleeping-pills-and-minor-tranquillisers/sleeping-pills/</code></div></details>)</div> <div class="para logical" id="sec-models-exponential-2-4-4-1-2"><ol class="lower-alpha">
@@ -841,9 +846,10 @@ Q(t)=Q_0 (0.5)^{t/H}
 \end{equation*}
 </div>
 </div></article><div class="para" id="sec-models-exponential-2-4-7">Radioactive isotopes are molecules that decay into more stable molecules, emitting radiation in the process. Although radiation in large doses is harmful to living things, radioactive isotopes are useful as tracers in medicine and industry, and as treatment against cancer. The decay laws for radioactive isotopes are often given in terms of their half-lives.</div>
-<details id="example-cobalt-60" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="example example-like" id="example-cobalt-60"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.3.7</span><span class="period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para logical" id="example-cobalt-60-1-1">
+</h4>
+<div class="para logical" id="example-cobalt-60-1-1">
 <div class="para">Cobalt-60 is used in cold pasteurization to sterilize certain types of food. Gamma rays emitted by the isotope during radioactive decay kill any bacteria present without damaging the food. The half-life of cobalt-60 is <span class="process-math">\(5.27\)</span> years.</div>
 <ol class="lower-alpha">
 <li id="example-cobalt-60-1-1-2-1"><div class="para" id="p-derived-example-cobalt-60-1-1-2-1">Write a decay law for cobalt-60.</div></li>
@@ -862,7 +868,7 @@ Q(t) = Q_0 (0.5)^{t/5.27}
 Q(t) = Q_0 (0.5)^{t/5.27}=Q_0 \left((0.5)^{1/5.27}\right)^t = Q_0 (0.8768)^t
 \end{equation*}
 </div>Thus, <span class="process-math">\(1 - r = 0.8768\text{,}\)</span> so <span class="process-math">\(r = 0.1232\text{,}\)</span> or <span class="process-math">\(12.32\)</span>%.</div></li>
-</ol></div></div></details></div></article></details></section><section class="exercises" id="section-4-5-exercises"><h3 class="heading hide-type">
+</ol></div></div></details></div></article></section><section class="exercises" id="section-4-5-exercises"><h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber">5.3.4</span><span class="space"> </span><span class="title">Homework 4.5</span>
 </h3>
 <div class="exercisegroup" id="section-4-5-exercises-2">
@@ -872,29 +878,25 @@ Q(t) = Q_0 (0.5)^{t/5.27}=Q_0 \left((0.5)^{1/5.27}\right)^t = Q_0 (0.8768)^t
 <article class="exercise exercise-like" id="section-4-5-exercises-2-2"><h5 class="heading"><span class="codenumber">1<span class="period">.</span></span></h5>
 <div class="para" id="section-4-5-exercises-2-2-1-1">
 <span class="process-math">\(A(0) = 0.14\text{,}\)</span> <span class="process-math">\(A(3) = 7\)</span>
-</div>
-<div class="solutions"><details id="section-4-5-exercises-2-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="section-4-5-exercises-2-2-2-1"><span class="process-math">\(A(x) = 0.14(50)^{x/3}\)</span></div></div></details></div></article><article class="exercise exercise-like" id="section-4-5-exercises-2-3"><h5 class="heading"><span class="codenumber">2<span class="period">.</span></span></h5>
+</div></article><article class="exercise exercise-like" id="section-4-5-exercises-2-3"><h5 class="heading"><span class="codenumber">2<span class="period">.</span></span></h5>
 <div class="para" id="section-4-5-exercises-2-3-1-1">
 <span class="process-math">\(B(0) = 28\text{,}\)</span> <span class="process-math">\(B(5) = 0.25\)</span>
 </div></article><article class="exercise exercise-like" id="section-4-5-exercises-2-4"><h5 class="heading"><span class="codenumber">3<span class="period">.</span></span></h5>
 <div class="para" id="section-4-5-exercises-2-4-1-1">
 <span class="process-math">\(f(7) = 12\text{,}\)</span> <span class="process-math">\(f(8) = 9\)</span>
-</div>
-<div class="solutions"><details id="section-4-5-exercises-2-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="section-4-5-exercises-2-4-2-1"><span class="process-math">\(f(x) = \dfrac{65,536}{729}\left(\dfrac{3}{4} \right)^x \)</span></div></div></details></div></article><article class="exercise exercise-like" id="section-4-5-exercises-2-5"><h5 class="heading"><span class="codenumber">4<span class="period">.</span></span></h5>
+</div></article><article class="exercise exercise-like" id="section-4-5-exercises-2-5"><h5 class="heading"><span class="codenumber">4<span class="period">.</span></span></h5>
 <div class="para" id="section-4-5-exercises-2-5-1-1">
 <span class="process-math">\(g(2) = 2.6\text{,}\)</span> <span class="process-math">\(g(3) = 3.9 \)</span>
 </div></article><article class="exercise exercise-like" id="section-4-5-exercises-2-6"><h5 class="heading"><span class="codenumber">5<span class="period">.</span></span></h5>
 <div class="para" id="section-4-5-exercises-2-6-1-1">
 <span class="process-math">\(M(4) = 100\text{,}\)</span> <span class="process-math">\(M(7) = 0.8\)</span>
-</div>
-<div class="solutions"><details id="section-4-5-exercises-2-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="section-4-5-exercises-2-6-2-1"><span class="process-math">\(M(x) = 62,500(0.2)^x \)</span></div></div></details></div></article><article class="exercise exercise-like" id="section-4-5-exercises-2-7"><h5 class="heading"><span class="codenumber">6<span class="period">.</span></span></h5>
+</div></article><article class="exercise exercise-like" id="section-4-5-exercises-2-7"><h5 class="heading"><span class="codenumber">6<span class="period">.</span></span></h5>
 <div class="para" id="section-4-5-exercises-2-7-1-1">
 <span class="process-math">\(N(12) = 512,000\text{,}\)</span> <span class="process-math">\(N(14) = 1,024,000 \)</span>
 </div></article><article class="exercise exercise-like" id="section-4-5-exercises-2-8"><h5 class="heading"><span class="codenumber">7<span class="period">.</span></span></h5>
 <div class="para" id="section-4-5-exercises-2-8-1-1">
 <span class="process-math">\(s(3.5) = 16.2\text{,}\)</span> <span class="process-math">\(s(6) = 3936.6\)</span>
-</div>
-<div class="solutions"><details id="section-4-5-exercises-2-8-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="section-4-5-exercises-2-8-2-1"><span class="process-math">\(s(x) = \dfrac{1}{135}(9)^x \)</span></div></div></details></div></article><article class="exercise exercise-like" id="section-4-5-exercises-2-9"><h5 class="heading"><span class="codenumber">8<span class="period">.</span></span></h5>
+</div></article><article class="exercise exercise-like" id="section-4-5-exercises-2-9"><h5 class="heading"><span class="codenumber">8<span class="period">.</span></span></h5>
 <div class="para" id="section-4-5-exercises-2-9-1-1">
 <span class="process-math">\(T(1.2) = 15\text{,}\)</span> <span class="process-math">\(T(1.8) = 1.875 \)</span>
 </div></article>
@@ -905,11 +907,9 @@ Q(t) = Q_0 (0.5)^{t/5.27}=Q_0 \left((0.5)^{1/5.27}\right)^t = Q_0 (0.8768)^t
 <div class="introduction" id="section-4-5-exercises-3-1"><div class="para" id="section-4-5-exercises-3-1-1">For Problems 9–12, find a formula for the exponential function shown.</div></div>
 <div class="exercisegroup-exercises cols2">
 <article class="exercise exercise-like" id="section-4-5-exercises-3-2"><h5 class="heading"><span class="codenumber">9<span class="period">.</span></span></h5>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/fig-4-5-9.svg" role="img" class="contained" alt="growth"></div></div></div>
-<div class="solutions"><details id="section-4-5-exercises-3-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="section-4-5-exercises-3-2-2-1"><span class="process-math">\(y=\dfrac{4}{3}(3)^{x/4}\)</span></div></div></details></div></article><article class="exercise exercise-like" id="section-4-5-exercises-3-3"><h5 class="heading"><span class="codenumber">10<span class="period">.</span></span></h5>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/fig-4-5-9.svg" role="img" class="contained" alt="growth"></div></div></div></article><article class="exercise exercise-like" id="section-4-5-exercises-3-3"><h5 class="heading"><span class="codenumber">10<span class="period">.</span></span></h5>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/fig-4-5-10.svg" role="img" class="contained" alt="decay"></div></div></div></article><article class="exercise exercise-like" id="section-4-5-exercises-3-4"><h5 class="heading"><span class="codenumber">11<span class="period">.</span></span></h5>
-<div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/fig-4-5-11.svg" role="img" class="contained" alt="decay"></div></div></div>
-<div class="solutions"><details id="section-4-5-exercises-3-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="section-4-5-exercises-3-4-2-1"><span class="process-math">\(y=50(2)^{-x/4} \)</span></div></div></details></div></article><article class="exercise exercise-like" id="section-4-5-exercises-3-5"><h5 class="heading"><span class="codenumber">12<span class="period">.</span></span></h5>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:20%;margin-right:20%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/fig-4-5-11.svg" role="img" class="contained" alt="decay"></div></div></div></article><article class="exercise exercise-like" id="section-4-5-exercises-3-5"><h5 class="heading"><span class="codenumber">12<span class="period">.</span></span></h5>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:15%;margin-right:15%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/fig-4-5-12.svg" role="img" class="contained" alt="growth"></div></div></div></article>
 </div>
 </div>
@@ -925,26 +925,11 @@ Q(t) = Q_0 (0.5)^{t/5.27}=Q_0 \left((0.5)^{1/5.27}\right)^t = Q_0 (0.8768)^t
 </div></div>
 <div class="exercisegroup-exercises cols2">
 <article class="exercise exercise-like" id="section-4-5-exercises-4-2"><h5 class="heading"><span class="codenumber">13<span class="period">.</span></span></h5>
-<div class="para" id="section-4-5-exercises-4-2-1-1"><span class="process-math">\((0, 2.6), ~(1, 1.3)\)</span></div>
-<div class="solutions"><details id="section-4-5-exercises-4-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="section-4-5-exercises-4-2-2-1"><ol class="lower-alpha">
-<li id="section-4-5-exercises-4-2-2-1-1-1"><div class="para" id="section-4-5-exercises-4-2-2-1-1-1-1"><span class="process-math">\(\displaystyle y= 2.6 -1.3x\)</span></div></li>
-<li id="section-4-5-exercises-4-2-2-1-1-2"><div class="para" id="section-4-5-exercises-4-2-2-1-1-2-1"><span class="process-math">\(\displaystyle y = 2.6(0.5)^x\)</span></div></li>
-<li id="section-4-5-exercises-4-2-2-1-1-3"><div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/fig-ans-4-5-13.svg" role="img" class="contained" alt="line and exponential decay"></div></div></div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="section-4-5-exercises-4-3"><h5 class="heading"><span class="codenumber">14<span class="period">.</span></span></h5>
+<div class="para" id="section-4-5-exercises-4-2-1-1"><span class="process-math">\((0, 2.6), ~(1, 1.3)\)</span></div></article><article class="exercise exercise-like" id="section-4-5-exercises-4-3"><h5 class="heading"><span class="codenumber">14<span class="period">.</span></span></h5>
 <div class="para" id="section-4-5-exercises-4-3-1-1"><span class="process-math">\((0, 0.48), ~(1, 0.16)\)</span></div></article><article class="exercise exercise-like" id="section-4-5-exercises-4-4"><h5 class="heading"><span class="codenumber">15<span class="period">.</span></span></h5>
-<div class="para" id="section-4-5-exercises-4-4-1-1"><span class="process-math">\((-6, 60), ~(-3, 12)\)</span></div>
-<div class="solutions"><details id="section-4-5-exercises-4-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="section-4-5-exercises-4-4-2-1"><ol class="lower-alpha">
-<li id="section-4-5-exercises-4-4-2-1-1-1"><div class="para" id="section-4-5-exercises-4-4-2-1-1-1-1"><span class="process-math">\(\displaystyle y= -36-16x \)</span></div></li>
-<li id="section-4-5-exercises-4-4-2-1-1-2"><div class="para" id="section-4-5-exercises-4-4-2-1-1-2-1"><span class="process-math">\(\displaystyle y = \dfrac{12}{5}(5)^{-x/3} \)</span></div></li>
-<li id="section-4-5-exercises-4-4-2-1-1-3"><div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/fig-ans-4-5-15.svg" role="img" class="contained" alt="line and exponential decay"></div></div></div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="section-4-5-exercises-4-5"><h5 class="heading"><span class="codenumber">16<span class="period">.</span></span></h5>
+<div class="para" id="section-4-5-exercises-4-4-1-1"><span class="process-math">\((-6, 60), ~(-3, 12)\)</span></div></article><article class="exercise exercise-like" id="section-4-5-exercises-4-5"><h5 class="heading"><span class="codenumber">16<span class="period">.</span></span></h5>
 <div class="para" id="section-4-5-exercises-4-5-1-1"><span class="process-math">\((2, 1.5), ~(4, 4.5)\)</span></div></article><article class="exercise exercise-like" id="section-4-5-exercises-4-6"><h5 class="heading"><span class="codenumber">17<span class="period">.</span></span></h5>
-<div class="para" id="section-4-5-exercises-4-6-1-1"><span class="process-math">\((-2, 0.75), ~(4,6)\)</span></div>
-<div class="solutions"><details id="section-4-5-exercises-4-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="section-4-5-exercises-4-6-2-1"><ol class="lower-alpha">
-<li id="section-4-5-exercises-4-6-2-1-1-1"><div class="para" id="section-4-5-exercises-4-6-2-1-1-1-1"><span class="process-math">\(\displaystyle y= 2.5+0.875x \)</span></div></li>
-<li id="section-4-5-exercises-4-6-2-1-1-2"><div class="para" id="section-4-5-exercises-4-6-2-1-1-2-1"><span class="process-math">\(\displaystyle y = 1.5(2)^{x/2} \)</span></div></li>
-<li id="section-4-5-exercises-4-6-2-1-1-3"><div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/fig-ans-4-5-17.svg" role="img" class="contained" alt="line and exponential growth"></div></div></div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="section-4-5-exercises-4-7"><h5 class="heading"><span class="codenumber">18<span class="period">.</span></span></h5>
+<div class="para" id="section-4-5-exercises-4-6-1-1"><span class="process-math">\((-2, 0.75), ~(4,6)\)</span></div></article><article class="exercise exercise-like" id="section-4-5-exercises-4-7"><h5 class="heading"><span class="codenumber">18<span class="period">.</span></span></h5>
 <div class="para" id="section-4-5-exercises-4-7-1-1"><span class="process-math">\((-1, 0.5), ~(1,1)\)</span></div></article>
 </div>
 </div>
@@ -960,15 +945,7 @@ Q(t) = Q_0 (0.5)^{t/5.27}=Q_0 \left((0.5)^{1/5.27}\right)^t = Q_0 (0.8768)^t
 </div></li>
 <li id="section-4-5-exercises-5-1-1-4-4"><div class="para" id="section-4-5-exercises-5-1-1-4-4-1">Use <dfn class="terminology">intersect</dfn> to verify that the population doubles from <span class="process-math">\(12\)</span> to <span class="process-math">\(24\text{,}\)</span> from <span class="process-math">\(24\)</span> to <span class="process-math">\(48\text{,}\)</span> and from <span class="process-math">\(48\)</span> to <span class="process-math">\(96\)</span> hundred thousand people in equal periods of time.</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="section-4-5-exercises-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="section-4-5-exercises-5-2-1"><ol class="lower-alpha">
-<li id="section-4-5-exercises-5-2-1-1-1"><div class="para" id="section-4-5-exercises-5-2-1-1-1-1">
-<span class="process-math">\(P = P_0(1.052)^t\text{;}\)</span> <span class="process-math">\(t\)</span> is the number of years since <span class="process-math">\(1990\text{.}\)</span>
-</div></li>
-<li id="section-4-5-exercises-5-2-1-1-2"><div class="para" id="section-4-5-exercises-5-2-1-1-2-1">
-<span class="process-math">\(\dfrac{\log 2}{\log 1.052}\approx 13.7 \)</span> years</div></li>
-<li id="section-4-5-exercises-5-2-1-1-3"><div class="sidebyside"><div class="sbsrow" style="margin-left:32.5%;margin-right:32.5%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/fig-ans-4-5-19.jpg" class="contained" alt="growth"></div></div></div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="section-4-5-exercises-6"><h4 class="heading"><span class="codenumber">20<span class="period">.</span></span></h4>
+</div></article><article class="exercise exercise-like" id="section-4-5-exercises-6"><h4 class="heading"><span class="codenumber">20<span class="period">.</span></span></h4>
 <div class="para logical" id="section-4-5-exercises-6-1-1">
 <div class="para">In 1986, the inflation rate in Bolivia was <span class="process-math">\(8000\%\)</span> annually. The unit of currency in Bolivia is the boliviano.</div>
 <ol class="lower-alpha">
@@ -988,16 +965,7 @@ Q(t) = Q_0 (0.5)^{t/5.27}=Q_0 \left((0.5)^{1/5.27}\right)^t = Q_0 (0.8768)^t
 <li id="section-4-5-exercises-7-1-1-4-3"><div class="para" id="section-4-5-exercises-7-1-1-4-3-1">How long should it take for the GDP to <span class="process-math">\(4\)</span> million pounds?</div></li>
 <li id="section-4-5-exercises-7-1-1-4-4"><div class="para" id="section-4-5-exercises-7-1-1-4-4-1">Using your answers to (b) and (c), make a rough sketch of the function.</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="section-4-5-exercises-7-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="section-4-5-exercises-7-2-1"><ol class="lower-alpha">
-<li id="section-4-5-exercises-7-2-1-1-1"><div class="para" id="section-4-5-exercises-7-2-1-1-1-1">
-<span class="process-math">\(GDP = 1.028^t\)</span> million pounds</div></li>
-<li id="section-4-5-exercises-7-2-1-1-2"><div class="para" id="section-4-5-exercises-7-2-1-1-2-1">
-<span class="process-math">\(\dfrac{\log 2}{\log 1.028}\approx 25.1 \)</span> years</div></li>
-<li id="section-4-5-exercises-7-2-1-1-3"><div class="para" id="section-4-5-exercises-7-2-1-1-3-1">
-<span class="process-math">\(50.2\)</span> years</div></li>
-<li id="section-4-5-exercises-7-2-1-1-4"><div class="sidebyside"><div class="sbsrow" style="margin-left:35%;margin-right:35%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/fig-ans-4-5-21.svg" role="img" class="contained" alt="growth"></div></div></div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="section-4-5-exercises-8"><h4 class="heading"><span class="codenumber">22<span class="period">.</span></span></h4>
+</div></article><article class="exercise exercise-like" id="section-4-5-exercises-8"><h4 class="heading"><span class="codenumber">22<span class="period">.</span></span></h4>
 <div class="para logical" id="section-4-5-exercises-8-1-1">
 <div class="para">The number of phishing Web sites (fraudulent Web sites designed to trick victims into revealing personal financial information) is growing by <span class="process-math">\(15\%\)</span> each month. In June <span class="process-math">\(2005\text{,}\)</span> there were <span class="process-math">\(4000\)</span> phishing Web sites. (Source: www.itnews.com.au/newsstory)</div>
 <ol class="lower-alpha">
@@ -1016,14 +984,7 @@ Q(t) = Q_0 (0.5)^{t/5.27}=Q_0 \left((0.5)^{1/5.27}\right)^t = Q_0 (0.8768)^t
 <li id="section-4-5-exercises-9-1-1-2-2"><div class="para" id="section-4-5-exercises-9-1-1-2-2-1">How long will it take for three-fourths of the sample to decay? For seven-eighths of the sample?</div></li>
 <li id="section-4-5-exercises-9-1-1-2-3"><div class="para" id="section-4-5-exercises-9-1-1-2-3-1">Suppose you start with <span class="process-math">\(400\)</span> milligrams of potassium-42. Using your answers to (a) and (b), make a rough sketch of the decay function.</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="section-4-5-exercises-9-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="section-4-5-exercises-9-2-1"><ol class="lower-alpha cols2">
-<li id="section-4-5-exercises-9-2-1-1-1"><div class="para" id="section-4-5-exercises-9-2-1-1-1-1">
-<span class="process-math">\(\dfrac{\log 0.5}{\log 0.946}\approx 12.5 \)</span> hours</div></li>
-<li id="section-4-5-exercises-9-2-1-1-2"><div class="para" id="section-4-5-exercises-9-2-1-1-2-1">
-<span class="process-math">\(25\)</span> hours</div></li>
-<li id="section-4-5-exercises-9-2-1-1-3"><div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/fig-ans-4-5-23.svg" role="img" class="contained" alt="decay"></div></div></div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="section-4-5-exercises-10"><h4 class="heading"><span class="codenumber">24<span class="period">.</span></span></h4>
+</div></article><article class="exercise exercise-like" id="section-4-5-exercises-10"><h4 class="heading"><span class="codenumber">24<span class="period">.</span></span></h4>
 <div class="para logical" id="section-4-5-exercises-10-1-1">
 <div class="para">In October 2005, the <span class="booktitle">Los Angeles Times</span> published an article about efforts to save the endangered Channel Island foxes. "Their population declined by <span class="process-math">\(95\%\)</span> to about <span class="process-math">\(120\)</span> between <span class="process-math">\(1994\)</span> and <span class="process-math">\(2000\text{,}\)</span> according to the park service."</div>
 <ol class="lower-alpha">
@@ -1041,14 +1002,7 @@ Q(t) = Q_0 (0.5)^{t/5.27}=Q_0 \left((0.5)^{1/5.27}\right)^t = Q_0 (0.8768)^t
 <li id="section-4-5-exercises-11-1-1-3-2"><div class="para" id="section-4-5-exercises-11-1-1-3-2-1">How long will it take before you have <span class="process-math">\(25\)</span> mg of that caffeine in your body?</div></li>
 <li id="section-4-5-exercises-11-1-1-3-3"><div class="para" id="section-4-5-exercises-11-1-1-3-3-1">Using your answers to (a) and (b), make a rough sketch of the decay function.</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="section-4-5-exercises-11-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="section-4-5-exercises-11-2-1"><ol class="lower-alpha cols2">
-<li id="section-4-5-exercises-11-2-1-1-1"><div class="para" id="section-4-5-exercises-11-2-1-1-1-1">
-<span class="process-math">\(\dfrac{\log 0.5}{\log 0.844}\approx 4.1 \)</span> hours</div></li>
-<li id="section-4-5-exercises-11-2-1-1-2"><div class="para" id="section-4-5-exercises-11-2-1-1-2-1">
-<span class="process-math">\(8.2\)</span> hours</div></li>
-<li id="section-4-5-exercises-11-2-1-1-3"><div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel top" style="width:100%;"><img src="external/models/fig-ans-4-5-25.svg" role="img" class="contained" alt="decay"></div></div></div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="section-4-5-exercises-12"><h4 class="heading"><span class="codenumber">26<span class="period">.</span></span></h4>
+</div></article><article class="exercise exercise-like" id="section-4-5-exercises-12"><h4 class="heading"><span class="codenumber">26<span class="period">.</span></span></h4>
 <div class="para logical" id="section-4-5-exercises-12-1-1">
 <div class="para">Pregnant women should monitor their intake of caffeine, because it leaves the body more slowly during pregnancy and can be absorbed by the unborn child through the bloodstream. Caffeine leaves a pregnant woman’s body at a rate of <span class="process-math">\(6.7\%\)</span> each hour.</div>
 <ol class="lower-alpha">
@@ -1067,17 +1021,9 @@ Q(t) = Q_0 (0.5)^{t/5.27}=Q_0 \left((0.5)^{1/5.27}\right)^t = Q_0 (0.8768)^t
 </div></div>
 <div class="exercisegroup-exercises">
 <article class="exercise exercise-like" id="section-4-5-exercises-13-2"><h5 class="heading"><span class="codenumber">27<span class="period">.</span></span></h5>
-<div class="para" id="section-4-5-exercises-13-2-1-1">A population starts with <span class="process-math">\(2000\)</span> and has a doubling time of <span class="process-math">\(5\)</span> years.</div>
-<div class="solutions"><details id="section-4-5-exercises-13-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="section-4-5-exercises-13-2-2-1"><ol class="lower-alpha cols2">
-<li id="section-4-5-exercises-13-2-2-1-1-1"><div class="para" id="section-4-5-exercises-13-2-2-1-1-1-1"><span class="process-math">\(\displaystyle P = 2000(2)^{t/5} \)</span></div></li>
-<li id="section-4-5-exercises-13-2-2-1-1-2"><div class="para" id="section-4-5-exercises-13-2-2-1-1-2-1"><span class="process-math">\(\displaystyle 14.87\% \)</span></div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="section-4-5-exercises-13-3"><h5 class="heading"><span class="codenumber">28<span class="period">.</span></span></h5>
+<div class="para" id="section-4-5-exercises-13-2-1-1">A population starts with <span class="process-math">\(2000\)</span> and has a doubling time of <span class="process-math">\(5\)</span> years.</div></article><article class="exercise exercise-like" id="section-4-5-exercises-13-3"><h5 class="heading"><span class="codenumber">28<span class="period">.</span></span></h5>
 <div class="para" id="section-4-5-exercises-13-3-1-1">You have <span class="process-math">\(10\)</span> grams of a radioactive isotope whose half-life is <span class="process-math">\(42\)</span> years.</div></article><article class="exercise exercise-like" id="section-4-5-exercises-13-4"><h5 class="heading"><span class="codenumber">29<span class="period">.</span></span></h5>
-<div class="para" id="section-4-5-exercises-13-4-1-1">A certain medication has a half-life of <span class="process-math">\(18\)</span> hours in the body. You are given an initial dose of <span class="process-math">\(D_0\)</span> mg.</div>
-<div class="solutions"><details id="section-4-5-exercises-13-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="section-4-5-exercises-13-4-2-1"><ol class="lower-alpha cols2">
-<li id="section-4-5-exercises-13-4-2-1-1-1"><div class="para" id="section-4-5-exercises-13-4-2-1-1-1-1"><span class="process-math">\(\displaystyle D = D_0 \left(\dfrac{1}{2} \right)^{t/18} \)</span></div></li>
-<li id="section-4-5-exercises-13-4-2-1-1-2"><div class="para" id="section-4-5-exercises-13-4-2-1-1-2-1"><span class="process-math">\(\displaystyle 3.78\% \)</span></div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="section-4-5-exercises-13-5"><h5 class="heading"><span class="codenumber">30<span class="period">.</span></span></h5>
+<div class="para" id="section-4-5-exercises-13-4-1-1">A certain medication has a half-life of <span class="process-math">\(18\)</span> hours in the body. You are given an initial dose of <span class="process-math">\(D_0\)</span> mg.</div></article><article class="exercise exercise-like" id="section-4-5-exercises-13-5"><h5 class="heading"><span class="codenumber">30<span class="period">.</span></span></h5>
 <div class="para" id="section-4-5-exercises-13-5-1-1">The doubling time of a certain financial investment is <span class="process-math">\(8\)</span> years. You invest an amount <span class="process-math">\(M_0\text{.}\)</span>
 </div></article>
 </div>
@@ -1089,11 +1035,7 @@ Q(t) = Q_0 (0.5)^{t/5.27}=Q_0 \left((0.5)^{1/5.27}\right)^t = Q_0 (0.8768)^t
 <li id="section-4-5-exercises-14-1-1-2-1"><div class="para" id="section-4-5-exercises-14-1-1-2-1-1">Write a decay law for radium-226.</div></li>
 <li id="section-4-5-exercises-14-1-1-2-2"><div class="para" id="section-4-5-exercises-14-1-1-2-2-1">What is the annual decay rate for radium-226?</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="section-4-5-exercises-14-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="section-4-5-exercises-14-2-1"><ol class="lower-alpha cols2">
-<li id="section-4-5-exercises-14-2-1-1-1"><div class="para" id="section-4-5-exercises-14-2-1-1-1-1"><span class="process-math">\(\displaystyle A = A_0 \left(\dfrac{1}{2} \right)^{t/1620 }\)</span></div></li>
-<li id="section-4-5-exercises-14-2-1-1-2"><div class="para" id="section-4-5-exercises-14-2-1-1-2-1"><span class="process-math">\(\displaystyle 0.043\%\)</span></div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="section-4-5-exercises-15"><h4 class="heading"><span class="codenumber">32<span class="period">.</span></span></h4>
+</div></article><article class="exercise exercise-like" id="section-4-5-exercises-15"><h4 class="heading"><span class="codenumber">32<span class="period">.</span></span></h4>
 <div class="para logical" id="section-4-5-exercises-15-1-1">
 <div class="para">Dichloro-diphenyl-trichloroethane (DDT) is a pesticide that was used in the middle decades of the twentieth century to control malaria. After 1945, it was also widely used on crops in the United States, and as much as one ton might be sprayed on a single cotton field. However, after the toxic effects of DDT on the environment began to appear, the chemical was banned in 1972.</div>
 <ol class="lower-alpha">
@@ -1107,11 +1049,7 @@ Q(t) = Q_0 (0.5)^{t/5.27}=Q_0 \left((0.5)^{1/5.27}\right)^t = Q_0 (0.8768)^t
 <li id="section-4-5-exercises-16-1-1-2-1"><div class="para" id="section-4-5-exercises-16-1-1-2-1-1">Write a growth law for human populations under these conditions.</div></li>
 <li id="section-4-5-exercises-16-1-1-2-2"><div class="para" id="section-4-5-exercises-16-1-1-2-2-1">What is the growth rate in unconstrained conditions?</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="section-4-5-exercises-16-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="section-4-5-exercises-16-2-1"><ol class="lower-alpha cols2">
-<li id="section-4-5-exercises-16-2-1-1-1"><div class="para" id="section-4-5-exercises-16-2-1-1-1-1"><span class="process-math">\(\displaystyle P = P_0 (2)^{t/25 }\)</span></div></li>
-<li id="section-4-5-exercises-16-2-1-1-2"><div class="para" id="section-4-5-exercises-16-2-1-1-2-1"><span class="process-math">\(\displaystyle 2.81\%\)</span></div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="section-4-5-exercises-17"><h4 class="heading"><span class="codenumber">34<span class="period">.</span></span></h4>
+</div></article><article class="exercise exercise-like" id="section-4-5-exercises-17"><h4 class="heading"><span class="codenumber">34<span class="period">.</span></span></h4>
 <div class="para logical" id="section-4-5-exercises-17-1-1">
 <div class="para">David Sifry observed in 2005 that over the previous two years, the number of Weblogs, or blogs, was doubling every <span class="process-math">\(5\)</span> months. (Source: www.sifry.com/alerts/archives)</div>
 <ol class="lower-alpha">
@@ -1139,13 +1077,7 @@ f (D) = 2\cdot f (0)
 </div></li>
 <li id="section-4-5-exercises-18-1-1-4-4"><div class="para" id="section-4-5-exercises-18-1-1-4-4-1">Explain why your result from (c) shows that the doubling time is constant.</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="section-4-5-exercises-18-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="section-4-5-exercises-18-2-1"><ol class="lower-alpha">
-<li id="section-4-5-exercises-18-2-1-1-1"><div class="para" id="section-4-5-exercises-18-2-1-1-1-1"><span class="process-math">\(\displaystyle ab^D = 2\cdot ab^0 = 2a\)</span></div></li>
-<li id="section-4-5-exercises-18-2-1-1-2"><div class="para" id="section-4-5-exercises-18-2-1-1-2-1"><span class="process-math">\(\displaystyle b^D=2\)</span></div></li>
-<li id="section-4-5-exercises-18-2-1-1-3"><div class="para" id="section-4-5-exercises-18-2-1-1-3-1"><span class="process-math">\(\displaystyle f (t + D) = ab^{t+D} = a\cdot b^t\cdot b^D = ab^t\cdot 2 = 2 f (t)\)</span></div></li>
-<li id="section-4-5-exercises-18-2-1-1-4"><div class="para" id="section-4-5-exercises-18-2-1-1-4-1">For any value of <span class="process-math">\(t\text{,}\)</span> after <span class="process-math">\(D\)</span> units of time, the new value of <span class="process-math">\(f\)</span> is <span class="process-math">\(2\)</span> times the old value.</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="section-4-5-exercises-19"><h4 class="heading"><span class="codenumber">36<span class="period">.</span></span></h4>
+</div></article><article class="exercise exercise-like" id="section-4-5-exercises-19"><h4 class="heading"><span class="codenumber">36<span class="period">.</span></span></h4>
 <div class="para logical" id="section-4-5-exercises-19-1-1">
 <div class="para">Let <span class="process-math">\(y = g(t) = ab^t\)</span> be an exponential decay function, with <span class="process-math">\(a \gt 0\)</span> and <span class="process-math">\(0\lt b\lt 1\text{.}\)</span>
 </div>
@@ -1178,13 +1110,7 @@ g(H) = \dfrac{1}{2}\cdot g(0)
 </div></li>
 <li id="section-4-5-exercises-20-1-1-8-4"><div class="para" id="section-4-5-exercises-20-1-1-8-4-1">Explain why your result from (c) shows that an exponential decay function has a constant "one-third-life."</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="section-4-5-exercises-20-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="section-4-5-exercises-20-2-1"><ol class="lower-alpha">
-<li id="section-4-5-exercises-20-2-1-1-1"><div class="para" id="section-4-5-exercises-20-2-1-1-1-1"><span class="process-math">\(\displaystyle ab^R = \frac{1}{3} \cdot ab^0 = \frac{1}{3} a\)</span></div></li>
-<li id="section-4-5-exercises-20-2-1-1-2"><div class="para" id="section-4-5-exercises-20-2-1-1-2-1"><span class="process-math">\(\displaystyle b^R=\frac{1}{3} \)</span></div></li>
-<li id="section-4-5-exercises-20-2-1-1-3"><div class="para" id="section-4-5-exercises-20-2-1-1-3-1"><span class="process-math">\(\displaystyle g(t + R) = ab^{t+R} = a\cdot b^t\cdot b^R = ab^t\cdot \frac{1}{3}  = \frac{1}{3}  g(t)\)</span></div></li>
-<li id="section-4-5-exercises-20-2-1-1-4"><div class="para" id="section-4-5-exercises-20-2-1-1-4-1">For any value of <span class="process-math">\(t\text{,}\)</span> after <span class="process-math">\(R\)</span> units of time, the new value of <span class="process-math">\(g\)</span> is <span class="process-math">\(\frac{1}{3} \)</span> times the old value.</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="section-4-5-exercises-21"><h4 class="heading"><span class="codenumber">38<span class="period">.</span></span></h4>
+</div></article><article class="exercise exercise-like" id="section-4-5-exercises-21"><h4 class="heading"><span class="codenumber">38<span class="period">.</span></span></h4>
 <div class="para logical" id="section-4-5-exercises-21-1-1">
 <div class="para">Let <span class="process-math">\(y = f(t) = ab^t\)</span> be an exponential decay function, with <span class="process-math">\(a \gt 0\)</span> and <span class="process-math">\(b\gt 1\text{.}\)</span> In this problem, we will show that there is a fixed value <span class="process-math">\(T\)</span> such that <span class="process-math">\(y\)</span> triples every <span class="process-math">\(T\)</span> units.</div>
 <ol class="lower-alpha">
@@ -1207,17 +1133,9 @@ g(H) = \dfrac{1}{2}\cdot g(0)
 </div></div>
 <div class="exercisegroup-exercises">
 <article class="exercise exercise-like" id="section-4-5-exercises-22-2"><h5 class="heading"><span class="codenumber">39<span class="period">.</span></span></h5>
-<div class="para" id="section-4-5-exercises-22-2-1-1">Carbon-14 occurs in living organisms with a fixed ratio to nonradioactive carbon-12. After a plant or animal dies, the carbon-14 decays into stable carbon with a halflife of <span class="process-math">\(5730\)</span> years. When samples from the Shroud of Turin were analyzed in 1988, they were found to have <span class="process-math">\(91.2\%\)</span> of their original carbon-14. How old were those samples in 1988?</div>
-<div class="solutions"><details id="section-4-5-exercises-22-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="section-4-5-exercises-22-2-2-1"><ol class="lower-alpha cols2">
-<li id="section-4-5-exercises-22-2-2-1-1-1"><div class="para" id="section-4-5-exercises-22-2-2-1-1-1-1"><span class="process-math">\(\displaystyle A = A_0 \left(\dfrac{1}{2} \right)^{t/5730}\)</span></div></li>
-<li id="section-4-5-exercises-22-2-2-1-1-2"><div class="para" id="section-4-5-exercises-22-2-2-1-1-2-1">About <span class="process-math">\(760\)</span> years old</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="section-4-5-exercises-22-3"><h5 class="heading"><span class="codenumber">40<span class="period">.</span></span></h5>
+<div class="para" id="section-4-5-exercises-22-2-1-1">Carbon-14 occurs in living organisms with a fixed ratio to nonradioactive carbon-12. After a plant or animal dies, the carbon-14 decays into stable carbon with a halflife of <span class="process-math">\(5730\)</span> years. When samples from the Shroud of Turin were analyzed in 1988, they were found to have <span class="process-math">\(91.2\%\)</span> of their original carbon-14. How old were those samples in 1988?</div></article><article class="exercise exercise-like" id="section-4-5-exercises-22-3"><h5 class="heading"><span class="codenumber">40<span class="period">.</span></span></h5>
 <div class="para" id="section-4-5-exercises-22-3-1-1">Rubidium-strontium radioactive dating is used in geologic studies to measure the age of minerals. Rubidium-87 decays into strontium-87 with a half-life of <span class="process-math">\(48.8\)</span> billion years. Several meteors were found to have <span class="process-math">\(93.7\%\)</span> of their original rubidium. How old are the meteors?</div></article><article class="exercise exercise-like" id="section-4-5-exercises-22-4"><h5 class="heading"><span class="codenumber">41<span class="period">.</span></span></h5>
-<div class="para" id="section-4-5-exercises-22-4-1-1">Americium-241 (Am-241) is used in residential smoke detectors. Particles emitted as Am-241 decays cause the air in a smoke alarm to ionize, allowing current to flow between two electrodes. If smoke absorbs the particles, the current changes and sets off the alarm. The half-life of Am-241 is <span class="process-math">\(432\)</span> years. How long will it take for <span class="process-math">\(30\%\)</span> of the Am-241 to decay?</div>
-<div class="solutions"><details id="section-4-5-exercises-22-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="section-4-5-exercises-22-4-2-1"><ol class="lower-alpha cols2">
-<li id="section-4-5-exercises-22-4-2-1-1-1"><div class="para" id="section-4-5-exercises-22-4-2-1-1-1-1"><span class="process-math">\(\displaystyle A = A_0 \left(\dfrac{1}{2} \right)^{t/432}\)</span></div></li>
-<li id="section-4-5-exercises-22-4-2-1-1-2"><div class="para" id="section-4-5-exercises-22-4-2-1-1-2-1">About <span class="process-math">\(220\)</span> years</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="section-4-5-exercises-22-5"><h5 class="heading"><span class="codenumber">42<span class="period">.</span></span></h5>
+<div class="para" id="section-4-5-exercises-22-4-1-1">Americium-241 (Am-241) is used in residential smoke detectors. Particles emitted as Am-241 decays cause the air in a smoke alarm to ionize, allowing current to flow between two electrodes. If smoke absorbs the particles, the current changes and sets off the alarm. The half-life of Am-241 is <span class="process-math">\(432\)</span> years. How long will it take for <span class="process-math">\(30\%\)</span> of the Am-241 to decay?</div></article><article class="exercise exercise-like" id="section-4-5-exercises-22-5"><h5 class="heading"><span class="codenumber">42<span class="period">.</span></span></h5>
 <div class="para" id="section-4-5-exercises-22-5-1-1">Doctors can measure the amount of blood in a patient by injecting a known volume of red blood cells tagged with chromium-51. After allowing the blood to mix, they measure the percentage of tagged cells in a sample of the patient’s blood and use a proportion to compute the original blood volume. Chromium-51 has a half-life of <span class="process-math">\(27.7\)</span> days. How much of the original chromium-51 will still be present after <span class="process-math">\(2\)</span> days?</div></article>
 </div>
 </div>
@@ -1227,9 +1145,7 @@ g(H) = \dfrac{1}{2}\cdot g(0)
 <div class="exercisegroup-exercises">
 <article class="exercise exercise-like" id="section-4-5-exercises-23-2"><h5 class="heading"><span class="codenumber">43<span class="period">.</span></span></h5>
 <div class="para" id="section-4-5-exercises-23-2-1-1">You want to retire with a nest egg of one million dollars. You plan to make fixed monthly payments of $<span class="process-math">\(1000\)</span> into a savings account until then. How long will you need to make payments if the account earns <span class="process-math">\(6\%\)</span> interest compounded monthly? What if the annual interest rate is <span class="process-math">\(5\%\text{?}\)</span>
-</div>
-<div class="solutions"><details id="section-4-5-exercises-23-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="section-4-5-exercises-23-2-2-1">
-<span class="process-math">\(\approx 30\)</span> years; <span class="process-math">\(\approx 33\)</span> years</div></div></details></div></article><article class="exercise exercise-like" id="section-4-5-exercises-23-3"><h5 class="heading"><span class="codenumber">44<span class="period">.</span></span></h5>
+</div></article><article class="exercise exercise-like" id="section-4-5-exercises-23-3"><h5 class="heading"><span class="codenumber">44<span class="period">.</span></span></h5>
 <div class="para" id="section-4-5-exercises-23-3-1-1">Francine plans to make monthly payments into an account to save up for a cruise vacation. She wants to save $<span class="process-math">\(25,000\)</span> for the trip. How many $<span class="process-math">\(200\)</span> payments will she need if the account pays <span class="process-math">\(3\%\)</span> interest compounded monthly? What if the rate is <span class="process-math">\(4\%\text{?}\)</span>
 </div></article>
 </div>
@@ -1239,9 +1155,7 @@ g(H) = \dfrac{1}{2}\cdot g(0)
 <div class="introduction" id="section-4-5-exercises-24-1"><div class="para" id="section-4-5-exercises-24-1-1">For Problems 45 and 46, use the formula for present value of an annuity.</div></div>
 <div class="exercisegroup-exercises">
 <article class="exercise exercise-like" id="section-4-5-exercises-24-2"><h5 class="heading"><span class="codenumber">45<span class="period">.</span></span></h5>
-<div class="para" id="section-4-5-exercises-24-2-1-1">You want to finance $<span class="process-math">\(25,000\)</span> to purchase a new car, and your financing institution charges an annual interest rate of <span class="process-math">\(2.7\%\text{,}\)</span> compounded monthly. How large will your monthly payment be to pay off the loan in <span class="process-math">\(5\)</span> years? In <span class="process-math">\(6\)</span> years?</div>
-<div class="solutions"><details id="section-4-5-exercises-24-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="section-4-5-exercises-24-2-2-1">$<span class="process-math">\(445.89\text{;}\)</span> $<span class="process-math">\(376.50\)</span>
-</div></div></details></div></article><article class="exercise exercise-like" id="section-4-5-exercises-24-3"><h5 class="heading"><span class="codenumber">46<span class="period">.</span></span></h5>
+<div class="para" id="section-4-5-exercises-24-2-1-1">You want to finance $<span class="process-math">\(25,000\)</span> to purchase a new car, and your financing institution charges an annual interest rate of <span class="process-math">\(2.7\%\text{,}\)</span> compounded monthly. How large will your monthly payment be to pay off the loan in <span class="process-math">\(5\)</span> years? In <span class="process-math">\(6\)</span> years?</div></article><article class="exercise exercise-like" id="section-4-5-exercises-24-3"><h5 class="heading"><span class="codenumber">46<span class="period">.</span></span></h5>
 <div class="para" id="section-4-5-exercises-24-3-1-1">Delbert has accumulated $<span class="process-math">\(5000\)</span> in credit card debt. The account charges an annual interest rate of <span class="process-math">\(17\%\text{,}\)</span> compounded monthly. Delbert decides not to make any further charges to his account and to pay it off in equal monthly payments. What will the payment be if Delbert decides to pay off the entire amount in <span class="process-math">\(5\)</span> years? In <span class="process-math">\(10\)</span> years?</div></article>
 </div>
 </div>
@@ -1289,43 +1203,7 @@ g(H) = \dfrac{1}{2}\cdot g(0)
 <li id="section-4-5-exercises-25-1-1-2-4"><div class="para" id="section-4-5-exercises-25-1-1-2-4-1">What is the doubling time for <span class="process-math">\(N(t)\text{?}\)</span>
 </div></li>
 </ol>
-</div>
-<div class="solutions"><details id="section-4-5-exercises-25-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="section-4-5-exercises-25-2-1"><ol class="lower-alpha">
-<li id="section-4-5-exercises-25-2-1-1-1"><div class="para" id="section-4-5-exercises-25-2-1-1-1-1"><span class="process-math">\(\displaystyle N(t) = 2200(2)^{t/1.5}\)</span></div></li>
-<li id="section-4-5-exercises-25-2-1-1-2"><div class="para" id="section-4-5-exercises-25-2-1-1-2-1">The given model has a smaller growth factor, <span class="process-math">\(1.356\text{,}\)</span> than <span class="process-math">\(2^{1/1.5}\approx 1.59\text{.}\)</span>
-</div></li>
-<li id="section-4-5-exercises-25-2-1-1-3"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
-<tr>
-<td class="l m b1 r1 l1 t1 lines">Name of chip</td>
-<td class="c m b1 r1 l0 t1 lines">Year</td>
-<td class="c m b1 r1 l0 t1 lines">Moore’s<br>law</td>
-<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(N(t)\)</span></td>
-<td class="c m b1 r1 l0 t1 lines">Actual<br>number</td>
-</tr>
-<tr>
-<td class="l m b1 r1 l1 t0 lines">Pentium IV</td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(2000\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(2,306,867,200\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(20,427,413\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(42,000,000\)</span></td>
-</tr>
-<tr>
-<td class="l m b1 r1 l1 t0 lines">Pentium M (Banias)</td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(2003\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(9,227,468,800\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(50,932,200\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(77,000,000\)</span></td>
-</tr>
-<tr>
-<td class="l m b1 r1 l1 t0 lines">Pentium M (Dothan)</td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(2004\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(14,647,693,680\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(69,064,063\)</span></td>
-<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(140,000,000\)</span></td>
-</tr>
-</table></div></div></div></li>
-<li id="section-4-5-exercises-25-2-1-1-4"><div class="para" id="section-4-5-exercises-25-2-1-1-4-1">About <span class="process-math">\(2.3\)</span> years</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="section-4-5-exercises-26"><h4 class="heading"><span class="codenumber">48<span class="period">.</span></span></h4>
+</div></article><article class="exercise exercise-like" id="section-4-5-exercises-26"><h4 class="heading"><span class="codenumber">48<span class="period">.</span></span></h4>
 <div class="para logical" id="section-4-5-exercises-26-1-1">
 <div class="para">If the population of a particular animal is very small, inbreeding will cause a loss of genetic diversity. In a population of <span class="process-math">\(N\)</span> individuals, the percent of the species’ original genetic variation that remains after <span class="process-math">\(t\)</span> generations is given by</div>
 <div class="displaymath process-math">

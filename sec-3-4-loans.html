@@ -122,7 +122,7 @@ eBookConfig.enable_chatcodes =  false;
 </head>
 <body id="qw2" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" target="_blank" href="https://mathatgrace.github.io/qw2"><img src="external/Lady-Wisdom.jpg" alt="Logo image"></a><div class="title-container">
+<a id="logo-link" class="logo-link" target="_blank" href="https://mathatgrace.github.io/qw"><img src="external/Lady-Wisdom.jpg" alt="Logo image"></a><div class="title-container">
 <h1 class="heading"><a href="qw.html"><span class="title">Quantitative Wisdom:</span> <span class="subtitle">Numerical literacy from the perspective of Biblical wisdom</span></a></h1>
 <p class="byline">Dr. Ryan Johnson</p>
 </div>
@@ -550,9 +550,9 @@ P=\frac{d\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}{\left(\frac{r}{n}\righ
 <dt id="sec-3-4-loans-5-6-3-1-5"><span class="process-math">\(t\)</span></dt>
 <dd><div class="para" id="sec-3-4-loans-5-6-3-1-5-2">is the length of the loan, in years</div></dd>
 </dl></div>
-<div class="para" id="sec-3-4-loans-5-6-4">Like before, the compounding frequency is not always explicitly given, but is determined by how often you make payments</div></article><details id="sec-3-4-loans-5-7" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<div class="para" id="sec-3-4-loans-5-6-4">Like before, the compounding frequency is not always explicitly given, but is determined by how often you make payments</div></article><article class="example example-like" id="sec-3-4-loans-5-7"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.1</span><span class="period">.</span>
-</h4></summary><article class="example example-like knowl__content">Teresa wants to buy a car that costs $15,000. She has $3,000 saved for the car and plans to finance the rest. She found a 3-year loan at 2.75% APR and a 5-year loan at 4% APR. How much will her monthly car payment be for each loan and how do these loans compare to each other.<div class="solutions"><details id="sec-3-4-loans-5-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+</h4>Teresa wants to buy a car that costs $15,000. She has $3,000 saved for the car and plans to finance the rest. She found a 3-year loan at 2.75% APR and a 5-year loan at 4% APR. How much will her monthly car payment be for each loan and how do these loans compare to each other.<div class="solutions"><details id="sec-3-4-loans-5-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="sec-3-4-loans-5-7-2-1">To use a spreadsheet, we use the <code class="code-inline tex2jax_ignore">=PMT</code> formula. For a loan, the loan amount is the present value and the future value is 0, indicating that the loan will be paid off. Teresa is making a down payment, so we also need to subtract that from the cost of the car to find the loan amount:</div> <div class="para" id="sec-3-4-loans-5-7-2-2"><span class="process-math">\(\$15,000 - \$3,000 = \$12,000\)</span></div> <div class="para" id="sec-3-4-loans-5-7-2-3">Her loan amount is $12,000. For the <ins class="insert">3-year</ins> loan at 2.75% APR, we enter:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
 <div class="sbspanel middle" style="width:40%;">
 <div class="para logical" id="sec-3-4-loans-5-7-2-4-1-1"><pre class="code-display tex2jax_ignore">=PMT(0.0275/12, 12*3, 12000, 0)</pre></div>
@@ -598,7 +598,7 @@ d\amp=\frac{P\left(\frac{r}{n}\right)}{\left(1-\left(1+\frac{r}{n}\right)^{-nt}\
 <span class="process-math">\(\$221.00(12)(5)=\$13,260.00\text{.}\)</span> Her interest would be $1,260.00.</div>
 </div>
 </div></div> <div class="para" id="sec-3-4-loans-5-7-2-22">There are two main differences between these two loans: the monthly payments and the total paid over the life of the loans. The first loan has a higher monthly payment by $126.65 per month. However, she would pay $744.60 less in interest.</div>
-</div></details></div></article></details><article class="activity project-like" id="sec-3-4-loans-5-8"><h4 class="heading">
+</div></details></div></article><article class="activity project-like" id="sec-3-4-loans-5-8"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.4.1</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="sec-3-4-loans-5-8-1-1"><ol class="lower-alpha">
@@ -621,9 +621,10 @@ d\amp=\frac{P\left(\frac{r}{n}\right)}{\left(1-\left(1+\frac{r}{n}\right)^{-nt}\
 <div class="para" id="sec-3-4-loans-5-8-2-1-1-3-1-1">Percentage toward the principal:</div> <div class="para" id="sec-3-4-loans-5-8-2-1-1-3-1-2"><code class="code-inline tex2jax_ignore">=$30,000/41,171.40</code></div> <div class="para" id="sec-3-4-loans-5-8-2-1-1-3-1-3">≈73%</div> <div class="para" id="sec-3-4-loans-5-8-2-1-1-3-1-4">About 73% of the total was paid toward the principal. That means about 27% was paid in interest.</div>
 </div></li>
 </ol></div></div></details></div></article><div class="para" id="sec-3-4-loans-5-9">In addition to loan payments, we can calculate the amount of loan we can afford given a monthly payment. Let’s look at that in the next example.</div>
-<details id="sec-3-4-loans-5-10" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="example example-like" id="sec-3-4-loans-5-10"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.2</span><span class="period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para" id="sec-3-4-loans-5-10-1-1">You can afford $200 per month as a car payment. If you can get an auto loan at 3% APR for 60 months (5 years), how expensive of a car can you afford? In other words, what amount loan can you pay off with $200 per month?</div>
+</h4>
+<div class="para" id="sec-3-4-loans-5-10-1-1">You can afford $200 per month as a car payment. If you can get an auto loan at 3% APR for 60 months (5 years), how expensive of a car can you afford? In other words, what amount loan can you pay off with $200 per month?</div>
 <div class="solutions"><details id="sec-3-4-loans-5-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="sec-3-4-loans-5-10-2-1">To use a spreadsheet for this problem, we use the <code class="code-inline tex2jax_ignore">=PV</code> formula because we want to know the present value, which is the value of the loan right now. We enter</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
 <div class="sbspanel middle" style="width:40%;"><div class="para logical" id="sec-3-4-loans-5-10-2-2-1">
@@ -643,10 +644,11 @@ P\amp=\frac{d\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}{\frac{r}{n}}\\
 \amp\approx\$11,130.47
 \end{align*}
 </div></div> <div class="para" id="sec-3-4-loans-5-10-2-9">You can afford a maximum loan of $11,130.47. If you have a down payment you can add that to get the value of the car you can buy. If there are any closing costs for the loan you also need to take that into consideration.</div> <div class="para" id="sec-3-4-loans-5-10-2-10">To find the amount of interest you will pay for this loan, calculate the total of all your payments.</div> <div class="para" id="sec-3-4-loans-5-10-2-11"><span class="process-math">\(\$200(5)(12)=\$12,000\)</span></div> <div class="para" id="sec-3-4-loans-5-10-2-12">Then take the difference between the total payments and the loan amount.</div> <div class="para" id="sec-3-4-loans-5-10-2-13"><span class="process-math">\(\$12,000-\$11,130.47=\$869.53\)</span></div> <div class="para" id="sec-3-4-loans-5-10-2-14">In this case, you would be paying $869.53 in interest.</div>
-</div></details></div></article></details><div class="para" id="sec-3-4-loans-5-11">So far, we have looked at car loans. Student loans and home mortgages are calculated in the same way. Here is an example of a mortgage payment.</div>
-<details id="sec-3-4-loans-5-12" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+</div></details></div></article><div class="para" id="sec-3-4-loans-5-11">So far, we have looked at car loans. Student loans and home mortgages are calculated in the same way. Here is an example of a mortgage payment.</div>
+<article class="example example-like" id="sec-3-4-loans-5-12"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.3</span><span class="period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para" id="sec-3-4-loans-5-12-1-1">You want to take out a $140,000 mortgage (home loan). The interest rate on the loan is 6%, and the loan is for 30 years. How much will your monthly payments be? What percentage of your total payments will go towards interest?</div>
+</h4>
+<div class="para" id="sec-3-4-loans-5-12-1-1">You want to take out a $140,000 mortgage (home loan). The interest rate on the loan is 6%, and the loan is for 30 years. How much will your monthly payments be? What percentage of your total payments will go towards interest?</div>
 <div class="solutions"><details id="sec-3-4-loans-5-12-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="sec-3-4-loans-5-12-2-1">To use a spreadsheet for this problem, we use the <code class="code-inline tex2jax_ignore">=PMT</code> formula because we want to know the payment amount. The amount of the loan is the present value and to pay off the loan the future value is 0. We enter</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
 <div class="sbspanel middle" style="width:40%;"><div class="para logical" id="sec-3-4-loans-5-12-2-2-1">
@@ -679,7 +681,7 @@ d\amp=\frac{P\left(\frac{r}{n}\right)}{\left(1-\left(1+\frac{r}{n}\right)^{-nt}\
 \frac{\$162,173.20}{\$302,173.20} \approx 0.5367
 \end{equation*}
 </div></div> <div class="para" id="sec-3-4-loans-5-12-2-16">About 53.7% of the total is being paid towards interest.</div>
-</div></details></div></article></details><article class="activity project-like" id="sec-3-4-loans-5-13"><h4 class="heading">
+</div></details></div></article><article class="activity project-like" id="sec-3-4-loans-5-13"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.4.2</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="sec-3-4-loans-5-13-1-1"><ol class="lower-alpha">
@@ -716,9 +718,10 @@ d\amp=\frac{P\left(\frac{r}{n}\right)}{\left(1-\left(1+\frac{r}{n}\right)^{-nt}\
 <div class="para" id="sec-3-4-loans-6-2">With loans, it is often desirable to determine what the remaining loan balance will be after some number of years. For example, if you purchase a home and plan to sell it in five years, you might want to know how much of the loan balance you will have paid off and how much you will have to pay from the sale.</div>
 <div class="para" id="sec-3-4-loans-6-3">To determine the remaining loan balance after some number of years, we first need to calculate the payment amount, if we don’t already know it. Remember that only a portion of your loan payments go towards the loan balance; a portion is going to go towards interest. For example, if your payments were $1,000 a month, after a year you will <em class="emphasis">not</em> have paid off $12,000 of the loan balance.</div>
 <div class="para" id="sec-3-4-loans-6-4">To determine the remaining loan balance, we can think “how much loan will these loan payments be able to pay off in the remaining time on the loan?”</div>
-<details id="sec-3-4-loans-6-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="example example-like" id="sec-3-4-loans-6-5"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.4</span><span class="period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para" id="sec-3-4-loans-6-5-1-1">If a 30-year mortgage at an interest rate of 6% APR has payments of $1,000 a month, what will the loan balance be in 5 years?</div>
+</h4>
+<div class="para" id="sec-3-4-loans-6-5-1-1">If a 30-year mortgage at an interest rate of 6% APR has payments of $1,000 a month, what will the loan balance be in 5 years?</div>
 <div class="solutions"><details id="sec-3-4-loans-6-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="sec-3-4-loans-6-5-2-1">To determine this, we need to think backwards. We are looking for the amount of the loan that can be paid off by $1,000 per month in the remaining 25 years. In other words, we’re looking for <span class="process-math">\(P\)</span> when:</div> <div class="para" id="sec-3-4-loans-6-5-2-2">
 <span class="process-math">\(d=\$1,000\text{,}\)</span> for the monthly loan payment</div> <div class="para" id="sec-3-4-loans-6-5-2-3">
@@ -737,7 +740,7 @@ P\amp=\frac{1000\left(1-\left(1+\frac{0.06}{12}\right)^{-12\cdot 25}\right)}{\fr
 \amp\approx\$155,206.86
 \end{align*}
 </div></div> <div class="para" id="sec-3-4-loans-6-5-2-10">The loan balance with 25 years remaining on the loan will be $155,206.86</div>
-</div></details></div></article></details><div class="para logical" id="sec-3-4-loans-6-6">
+</div></details></div></article><div class="para logical" id="sec-3-4-loans-6-6">
 <div class="para">Sometimes answering remaining balance questions requires two steps, both of which we have done in this section:</div>
 <ol class="decimal">
 <li id="sec-3-4-loans-6-6-1-1"><div class="para" id="sec-3-4-loans-6-6-1-1-1">Calculate the monthly payment on the loan</div></li>
@@ -748,9 +751,10 @@ P\amp=\frac{1000\left(1-\left(1+\frac{0.06}{12}\right)^{-12\cdot 25}\right)}{\fr
 </h3>
 <div class="para" id="sec-3-4-loans-7-2">Credit cards are useful to many people. They can be used to build a credit score, as a short-term loan and as an alternative to physical cash. It is highly advisable to fully pay off a credit card each month because the interest rates are much higher than the conventional installment loans we discussed earlier. There can also be many expensive fees applied when carrying a balance. Because of these higher rates, it can be very easy to get into a lot of debt quickly.</div>
 <div class="para" id="sec-3-4-loans-7-3">Credit cards are a common source of loan money, and therefore a common source of debt which must be repaid.  There are much fewer and lower barriers to obtaining and using a credit card than there are to obtaining, for example, a mortgage.  As such, there are some drawbacks both in terms of typically higher interest rates, as well as some structural differences.</div>
-<details id="sec-3-4-loans-7-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="example example-like" id="sec-3-4-loans-7-4"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.5</span><span class="period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para" id="sec-3-4-loans-7-4-1-1">Bilqis gets a credit card, with 17.99% APR compounding daily. She uses the card to buy a $900 plane ticket.  She does not make any payments during the interest-free grace period. Her first payment is due 35 days after the grace period ended. Following the fine print in the credit card agreement, the minimum payment is calculated to be 1% of the outstanding balance after applying the APR; or $25, whichever is larger. What is her outstanding balance? What is her minimum payment? If she pays the minimum payment what will her new balance be?</div>
+</h4>
+<div class="para" id="sec-3-4-loans-7-4-1-1">Bilqis gets a credit card, with 17.99% APR compounding daily. She uses the card to buy a $900 plane ticket.  She does not make any payments during the interest-free grace period. Her first payment is due 35 days after the grace period ended. Following the fine print in the credit card agreement, the minimum payment is calculated to be 1% of the outstanding balance after applying the APR; or $25, whichever is larger. What is her outstanding balance? What is her minimum payment? If she pays the minimum payment what will her new balance be?</div>
 <div class="solutions"><details id="sec-3-4-loans-7-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="sec-3-4-loans-7-4-2-1">First we will see what she owes with the 17.99% APR using the compound interest formula for 35 days:</div> <div class="para logical" id="sec-3-4-loans-7-4-2-2"><div class="displaymath process-math">
 \begin{equation*}
@@ -771,7 +775,7 @@ P\amp=\frac{1000\left(1-\left(1+\frac{0.06}{12}\right)^{-12\cdot 25}\right)}{\fr
 \$915.66-\$25 = \$890.66\text{.}
 \end{equation*}
 </div></div> <div class="para" id="sec-3-4-loans-7-4-2-8">Her new balance will be $890.66.</div>
-</div></details></div></article></details><article class="activity project-like" id="sec-3-4-loans-7-5"><h4 class="heading">
+</div></details></div></article><article class="activity project-like" id="sec-3-4-loans-7-5"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.4.3</span><span class="period">.</span>
 </h4>
 <div class="introduction" id="sec-3-4-loans-7-5-1">
@@ -926,200 +930,50 @@ P=\frac{d\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}{\frac{r}{n}} \text{  o
 <li id="sec-3-4-loans-12-2-1-2-1-1"><div class="para" id="sec-3-4-loans-12-2-1-2-1-1-1">How big of a loan can you afford?</div></li>
 <li id="sec-3-4-loans-12-2-1-2-1-2"><div class="para" id="sec-3-4-loans-12-2-1-2-1-2-1">How much total money will you pay the loan company?</div></li>
 <li id="sec-3-4-loans-12-2-1-2-1-3"><div class="para" id="sec-3-4-loans-12-2-1-2-1-3-1">How much of that money is interest?</div></li>
-</ol></div>
-<div class="solutions"><details id="sec-3-4-loans-12-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-3-4-loans-12-2-2-1"><ol class="lower-alpha">
-<li id="sec-3-4-loans-12-2-2-1-1-1">
-<div class="para" id="sec-3-4-loans-12-2-2-1-1-1-1">
-<span class="process-math">\(P = \frac{700\left(1-\left(1+\frac{5.5\%}{12}\right)^{-12\times 30}\right)}{\frac{5.5\%}{12}}\text{,}\)</span> which gives <span class="process-math">\(P \approx \$123,285.23\)</span>
-</div>
-<div class="para" id="sec-3-4-loans-12-2-2-1-1-1-2">or <code class="code-inline tex2jax_ignore">=PV(5.5%/12,12*30,-700)</code> [Note 700 is entered as negative, to signify a payment]</div>
-</li>
-<li id="sec-3-4-loans-12-2-2-1-1-2"><div class="para" id="sec-3-4-loans-12-2-2-1-1-2-1">
-<span class="process-math">\(700 * 12 * 30\)</span> dollars, or $252,000.00 in total payments to the loan company</div></li>
-<li id="sec-3-4-loans-12-2-2-1-1-3"><div class="para" id="sec-3-4-loans-12-2-2-1-1-3-1">Interest will be the difference between the total payments, and the amount borrowed. So the interest on this loan is <span class="process-math">\(\$252,000.00 - \$123,285.23 = \$128,714.77\text{.}\)</span>
-</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-3"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+</ol></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-3"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
 <div class="para" id="sec-3-4-loans-12-3-1-1">Marie can afford a $250 per month car payment. She’s found a 5-year loan at 7% APR.</div> <div class="para logical" id="sec-3-4-loans-12-3-1-2"><ol class="lower-alpha">
 <li id="sec-3-4-loans-12-3-1-2-1-1"><div class="para" id="sec-3-4-loans-12-3-1-2-1-1-1">How expensive of a car can she afford?</div></li>
 <li id="sec-3-4-loans-12-3-1-2-1-2"><div class="para" id="sec-3-4-loans-12-3-1-2-1-2-1">How much total money will she pay the loan company?</div></li>
 <li id="sec-3-4-loans-12-3-1-2-1-3"><div class="para" id="sec-3-4-loans-12-3-1-2-1-3-1">How much of that money is interest?</div></li>
-</ol></div>
-<div class="solutions"><details id="sec-3-4-loans-12-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-3-4-loans-12-3-2-1"><ol class="lower-alpha">
-<li id="sec-3-4-loans-12-3-2-1-1-1">
-<div class="para" id="sec-3-4-loans-12-3-2-1-1-1-1">
-<span class="process-math">\(P = \frac{250\left(1-\left(1+\frac{7\%}{12}\right)^{-12 \times 5}\right)}{\frac{7\%}{12}}\text{,}\)</span> which gives <span class="process-math">\(P \approx \$12,625.50\)</span>
-</div>
-<div class="para" id="sec-3-4-loans-12-3-2-1-1-1-2">or <code class="code-inline tex2jax_ignore">=PV(7%/12,12*5,-250)</code>
-</div>
-</li>
-<li id="sec-3-4-loans-12-3-2-1-1-2"><div class="para" id="sec-3-4-loans-12-3-2-1-1-2-1">
-<span class="process-math">\(250 * 12 * 5\)</span> dollars, or $15,000.00 in total payments to the loan company.</div></li>
-<li id="sec-3-4-loans-12-3-2-1-1-3"><div class="para" id="sec-3-4-loans-12-3-2-1-1-3-1">Interest will be the difference between the total payments, and the amount borrowed. So the interest on this loan is <span class="process-math">\(\$15,000.00 - \$12,625.50 = \$2,374.50\text{.}\)</span>
-</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-4"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
-<div class="para" id="sec-3-4-loans-12-4-1-1">You want to buy a $25,000 car. The company is offering an interest rate of 2% APR for 48 months (4 years). What will your monthly payments be?</div>
-<div class="solutions"><details id="sec-3-4-loans-12-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec-3-4-loans-12-4-2-1">
-<span class="process-math">\(d = \frac{25000\left(\frac{2\%}{12}\right)}{\left(1-\left(1+\frac{2\%}{12}\right)^{-12 \times 4}\right)}\text{,}\)</span> which gives <span class="process-math">\(d \approx \$542.38\)</span>
-</div> <div class="para" id="sec-3-4-loans-12-4-2-2">or <code class="code-inline tex2jax_ignore">=PMT(2%/12,48,25000)</code>
-</div>
-</div></details></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-5"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
-<div class="para" id="sec-3-4-loans-12-5-1-1">You decide to finance a $12,000 car at 3% APR compounded monthly for 4 years. What will your monthly payments be? How much interest will you pay over the life of the loan?</div>
-<div class="solutions"><details id="sec-3-4-loans-12-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec-3-4-loans-12-5-2-1">
-<span class="process-math">\(d = \frac{12000\left(\frac{3\%}{12}\right)}{\left(1-\left(1+\frac{3\%}{12}\right)^{-12\times 4}\right)}\text{,}\)</span> which gives <span class="process-math">\(d \approx \$265.61\)</span>
-</div> <div class="para" id="sec-3-4-loans-12-5-2-2">or <code class="code-inline tex2jax_ignore">=PMT(3%/12,48,12000)</code>
-</div> <div class="para" id="sec-3-4-loans-12-5-2-3">The interest will be the total amount paid, minus the amount of the loan. So the interest here is <span class="process-math">\((\$265.61 * 48) – \$12,000 = \$749.28\)</span>
-</div>
-</div></details></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-6"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
+</ol></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-4"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<div class="para" id="sec-3-4-loans-12-4-1-1">You want to buy a $25,000 car. The company is offering an interest rate of 2% APR for 48 months (4 years). What will your monthly payments be?</div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-5"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div class="para" id="sec-3-4-loans-12-5-1-1">You decide to finance a $12,000 car at 3% APR compounded monthly for 4 years. What will your monthly payments be? How much interest will you pay over the life of the loan?</div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-6"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
 <div class="para" id="sec-3-4-loans-12-6-1-1">You want to buy a $200,000 home. You plan to pay 10% as a down payment and take out a 30-year loan for the rest.</div> <div class="para logical" id="sec-3-4-loans-12-6-1-2"><ol class="lower-alpha">
 <li id="sec-3-4-loans-12-6-1-2-1-1"><div class="para" id="sec-3-4-loans-12-6-1-2-1-1-1">How much is the loan amount going to be?</div></li>
 <li id="sec-3-4-loans-12-6-1-2-1-2"><div class="para" id="sec-3-4-loans-12-6-1-2-1-2-1">What will your monthly payments be if the interest rate is 5%?</div></li>
 <li id="sec-3-4-loans-12-6-1-2-1-3"><div class="para" id="sec-3-4-loans-12-6-1-2-1-3-1">What will your monthly payments be if the interest rate is 6%?</div></li>
-</ol></div>
-<div class="solutions"><details id="sec-3-4-loans-12-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-3-4-loans-12-6-2-1"><ol class="lower-alpha">
-<li id="sec-3-4-loans-12-6-2-1-1-1"><div class="para logical" id="sec-3-4-loans-12-6-2-1-1-1-1">
-<div class="para">The loan amount will be 90% of $200,000.00</div>
-<div class="displaymath process-math" id="sec-3-4-loans-12-6-2-1-1-1-1-1">
-\begin{gather*}
-= (0.9 * \$200,000.00)\\
-= \$180,000.00
-\end{gather*}
-</div>
-</div></li>
-<li id="sec-3-4-loans-12-6-2-1-1-2">
-<div class="para" id="sec-3-4-loans-12-6-2-1-1-2-1">
-<span class="process-math">\(d = \frac{180000\left(\frac{5\%}{12}\right)}{\left(1-\left(1+\frac{5\%}{12}\right)^{-12 \times 30}\right)}\text{,}\)</span> which gives <span class="process-math">\(d \approx \$966.28\)</span>
-</div>
-<div class="para" id="sec-3-4-loans-12-6-2-1-1-2-2">or <code class="code-inline tex2jax_ignore">=PMT(5%/12,12*30,180000)</code>
-</div>
-</li>
-<li id="sec-3-4-loans-12-6-2-1-1-3">
-<div class="para" id="sec-3-4-loans-12-6-2-1-1-3-1">
-<span class="process-math">\(d = \frac{180000\left(\frac{6\%}{12}\right)}{\left(1-\left(1+\frac{6\%}{12}\right)^{-12 \times 30}\right)}\text{,}\)</span> which gives <span class="process-math">\(d \approx \$1,079.19\)</span>
-</div>
-<div class="para" id="sec-3-4-loans-12-6-2-1-1-3-2">or <code class="code-inline tex2jax_ignore">=PMT(6%/12,12*30,180000)</code>
-</div>
-</li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-7"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+</ol></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-7"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
 <div class="para" id="sec-3-4-loans-12-7-1-1">Lynn bought a $300,000 house, paying 10% down, and financing the rest at 6.5% APR for 30 years.</div> <div class="para logical" id="sec-3-4-loans-12-7-1-2"><ol class="lower-alpha">
 <li id="sec-3-4-loans-12-7-1-2-1-1"><div class="para" id="sec-3-4-loans-12-7-1-2-1-1-1">Find her monthly payments.</div></li>
 <li id="sec-3-4-loans-12-7-1-2-1-2"><div class="para" id="sec-3-4-loans-12-7-1-2-1-2-1">How much interest will she pay over the life of the loan?</div></li>
 <li id="sec-3-4-loans-12-7-1-2-1-3"><div class="para" id="sec-3-4-loans-12-7-1-2-1-3-1">What percentage of her total payment was interest?</div></li>
-</ol></div>
-<div class="solutions"><details id="sec-3-4-loans-12-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-3-4-loans-12-7-2-1"><ol class="lower-alpha">
-<li id="sec-3-4-loans-12-7-2-1-1-1">
-<div class="para" id="sec-3-4-loans-12-7-2-1-1-1-1">
-<span class="process-math">\(d = \frac{270000\left(\frac{6.5\%}{12}\right)}{\left(1-\left(1+\frac{6.5\%}{12}\right)^{-12 \times 30}\right)}\text{,}\)</span> which gives <span class="process-math">\(d \approx 1,706.58\)</span>
-</div>
-<div class="para" id="sec-3-4-loans-12-7-2-1-1-1-2">or <code class="code-inline tex2jax_ignore">=PMT(6.5%/12,12*30,270000)</code>
-</div>
-</li>
-<li id="sec-3-4-loans-12-7-2-1-1-2">
-<div class="para" id="sec-3-4-loans-12-7-2-1-1-2-1">The total of all loan payments will be <span class="process-math">\((12 * 30 * \$1,706.58) = \$614,368.80\text{.}\)</span>
-</div>
-<div class="para" id="sec-3-4-loans-12-7-2-1-1-2-2">So the total interest paid will be <span class="process-math">\(\$614,368.80 – \$270,000.00 = \$344,368.80\text{.}\)</span>
-</div>
-</li>
-<li id="sec-3-4-loans-12-7-2-1-1-3"><div class="para" id="sec-3-4-loans-12-7-2-1-1-3-1">
-<span class="process-math">\((\$344,368.80 / \$614,368.80)\text{,}\)</span> or <span class="process-math">\(\approx 56.0525\%\)</span>
-</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-8"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
-<div class="para" id="sec-3-4-loans-12-8-1-1">Emile bought a car for $24,000 three years ago. The loan had a 5-year term at 3% APR. How much does he still owe on the car?</div>
-<div class="solutions"><details id="sec-3-4-loans-12-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec-3-4-loans-12-8-2-1">First, we need to find out the amount of the monthly payments for this loan.</div> <div class="para" id="sec-3-4-loans-12-8-2-2">
-<span class="process-math">\(d = \frac{24000\left(\frac{3\%}{12}\right)}{\left(1-\left(1+\frac{3\%}{12}\right)^{-12 \times 5}\right)}\text{,}\)</span> which gives <span class="process-math">\(d \approx \$431.25\)</span>
-</div> <div class="para" id="sec-3-4-loans-12-8-2-3">or <code class="code-inline tex2jax_ignore">=PMT(3%/12,12*5,24000)</code>
-</div> <div class="para" id="sec-3-4-loans-12-8-2-4">The amount still owed three years later, is the present value of the two years of remaining payments on the loan.</div> <div class="para" id="sec-3-4-loans-12-8-2-5">
-<span class="process-math">\(P = \frac{\left(1-\left(1+\frac{3\%}{12}\right)^{-12 \times 2}\right)}{\frac{3\%}{12}}\text{,}\)</span> which gives <span class="process-math">\(P \approx \$10,033.45\)</span>
-</div> <div class="para" id="sec-3-4-loans-12-8-2-6">or <code class="code-inline tex2jax_ignore">=PV(3%/12,12*2,-431.25)</code>
-</div>
-</div></details></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-9"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
-<div class="para" id="sec-3-4-loans-12-9-1-1">A friend bought a house 15 years ago, taking out a $120,000 mortgage at 6% APR for 30 years. How much does she still owe on the mortgage?</div>
-<div class="solutions"><details id="sec-3-4-loans-12-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec-3-4-loans-12-9-2-1">First, we need to find out the amount of the monthly payments for this loan.</div> <div class="para" id="sec-3-4-loans-12-9-2-2">
-<span class="process-math">\(d = \frac{120000\left(\frac{6\%}{12}\right)}{\left(1-\left(1+\frac{6\%}{12}\right)^{-12 \times 30}\right)}\text{,}\)</span> which gives <span class="process-math">\(d \approx \$719.46\)</span>
-</div> <div class="para" id="sec-3-4-loans-12-9-2-3">or <code class="code-inline tex2jax_ignore">=PMT(6%/12,12*30,120000)</code>
-</div> <div class="para" id="sec-3-4-loans-12-9-2-4">The amount still owed fifteen years later, is the present value of the fifteen years of remaining payments on the loan.</div> <div class="para" id="sec-3-4-loans-12-9-2-5">
-<span class="process-math">\(P = \frac{719.46\left(1-\left(1+\frac{6\%}{12}\right)^{-12 \times 15}\right)}{\frac{6\%}{12}}\text{,}\)</span> which gives <span class="process-math">\(P \approx \$85,258.54\)</span>
-</div> <div class="para" id="sec-3-4-loans-12-9-2-6">or <code class="code-inline tex2jax_ignore">=PV(6%/12,12*15,-719.46)</code>
-</div>
-</div></details></div></article><div class="exercisegroup" id="sec-3-4-loans-12-10">
+</ol></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-8"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
+<div class="para" id="sec-3-4-loans-12-8-1-1">Emile bought a car for $24,000 three years ago. The loan had a 5-year term at 3% APR. How much does he still owe on the car?</div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-9"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
+<div class="para" id="sec-3-4-loans-12-9-1-1">A friend bought a house 15 years ago, taking out a $120,000 mortgage at 6% APR for 30 years. How much does she still owe on the mortgage?</div></article><div class="exercisegroup" id="sec-3-4-loans-12-10">
 <h4 class="heading"><span class="title">Exercise Group.</span></h4>
 <div class="introduction" id="sec-3-4-loans-12-10-1"><div class="para" id="sec-3-4-loans-12-10-1-1">Use a spreadsheet (not formulas) to answer problems 9 through 13 below.</div></div>
 <div class="exercisegroup-exercises">
 <article class="exercise exercise-like" id="sec-3-4-loans-12-10-2"><h5 class="heading"><span class="codenumber">9<span class="period">.</span></span></h5>
-<div class="para" id="sec-3-4-loans-12-10-2-1-1">Imagine you have $20,000 saved as a down payment on a house. You wish to take out a fixed-rate 30-year mortgage loan at 4% APR (remember that mortgage rates usually assume monthly compounding). If the maximum mortgage payment you can afford is $950 per month, then what is the maximum house price that you can afford?</div>
-<div class="solutions"><details id="sec-3-4-loans-12-10-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec-3-4-loans-12-10-2-2-1">
-<code class="code-inline tex2jax_ignore">=PV(4%/12,12*30,950)</code> which gives $198,988.18.</div> <div class="para" id="sec-3-4-loans-12-10-2-2-2">Now add $20,000 to this balance, which gives $218,988.18.</div>
-</div></details></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-10-3"><h5 class="heading"><span class="codenumber">10<span class="period">.</span></span></h5>
+<div class="para" id="sec-3-4-loans-12-10-2-1-1">Imagine you have $20,000 saved as a down payment on a house. You wish to take out a fixed-rate 30-year mortgage loan at 4% APR (remember that mortgage rates usually assume monthly compounding). If the maximum mortgage payment you can afford is $950 per month, then what is the maximum house price that you can afford?</div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-10-3"><h5 class="heading"><span class="codenumber">10<span class="period">.</span></span></h5>
 <div class="para" id="sec-3-4-loans-12-10-3-1-1">Suppose another mortgage lender offers you a fixed-rate 15-year mortgage at 2.95% APR. You have $20,000 saved as a down payment, and you can afford a maximum mortgage payment of $950 per month. You are interested in a certain house for sale, with firm selling price of $200,000.</div> <div class="para logical" id="sec-3-4-loans-12-10-3-1-2"><ol class="lower-alpha">
 <li id="sec-3-4-loans-12-10-3-1-2-1-1"><div class="para" id="sec-3-4-loans-12-10-3-1-2-1-1-1">Find the monthly payment for this house. Can you afford it, under the terms of this lender?</div></li>
 <li id="sec-3-4-loans-12-10-3-1-2-1-2"><div class="para" id="sec-3-4-loans-12-10-3-1-2-1-2-1">(Challenge): Suppose this same lender offers to increase the APR by only 0.05%, for each additional year added to the loan period beyond 15 years (so that a 16-year loan would have 3.00% APR, and a 17-year loan would have 3.05% APR, and so on), up to a maximum loan period of 25 years. Given these terms, does any combination of APR and loan period exist that would let you afford the house?  If so, state the <em class="emphasis">minimum</em> number of additional years needed, the total resulting loan period, the resulting APR, and the resulting monthly payment.</div></li>
-</ol></div>
-<div class="solutions"><details id="sec-3-4-loans-12-10-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-3-4-loans-12-10-3-2-1"><ol class="lower-alpha">
-<li id="sec-3-4-loans-12-10-3-2-1-1-1">
-<div class="para" id="sec-3-4-loans-12-10-3-2-1-1-1-1">
-<code class="code-inline tex2jax_ignore">=PMT(2.95%/12,12*15,180000,0)</code> which gives $1,238.72.</div>
-<div class="para" id="sec-3-4-loans-12-10-3-2-1-1-1-2">You cannot afford this home.</div>
-</li>
-<li id="sec-3-4-loans-12-10-3-2-1-1-2"><div class="para" id="sec-3-4-loans-12-10-3-2-1-1-2-1">Using trial-and-error: The minimum number of additional years is 8. There is a 23 year loan period, 3.35% APR, and $936.24 monthly payment.</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-10-4"><h5 class="heading"><span class="codenumber">11<span class="period">.</span></span></h5>
+</ol></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-10-4"><h5 class="heading"><span class="codenumber">11<span class="period">.</span></span></h5>
 <div class="para" id="sec-3-4-loans-12-10-4-1-1">An annuity firm pays 5% APR compounded yearly, and offers an investor the following: Deposit $100,000 with them today, and then starting one year from today, you will receive ten equal annual payments, with zero balance remaining afterward in the account. If an investor accepts their offer, then find the following:</div> <div class="para logical" id="sec-3-4-loans-12-10-4-1-2"><ol class="lower-alpha">
 <li id="sec-3-4-loans-12-10-4-1-2-1-1"><div class="para" id="sec-3-4-loans-12-10-4-1-2-1-1-1">What will be the payment amount for each of the ten equal payments?</div></li>
 <li id="sec-3-4-loans-12-10-4-1-2-1-2"><div class="para" id="sec-3-4-loans-12-10-4-1-2-1-2-1">After ten years, how much interest will the investor have received, and what percentage of the total payment sum will represent interest?</div></li>
-</ol></div>
-<div class="solutions"><details id="sec-3-4-loans-12-10-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-3-4-loans-12-10-4-2-1"><ol class="lower-alpha">
-<li id="sec-3-4-loans-12-10-4-2-1-1-1"><div class="para" id="sec-3-4-loans-12-10-4-2-1-1-1-1">
-<code class="code-inline tex2jax_ignore">=PMT(5%,10,100000,0)</code> which gives $12,950.46.</div></li>
-<li id="sec-3-4-loans-12-10-4-2-1-1-2">
-<div class="para" id="sec-3-4-loans-12-10-4-2-1-1-2-1">The total payments will be $129,504.60.</div>
-<div class="para" id="sec-3-4-loans-12-10-4-2-1-1-2-2">The interest is the amount over the $100,000 initial investment, or $29,504.60.</div>
-<div class="para" id="sec-3-4-loans-12-10-4-2-1-1-2-3">The percentage of the total payment sum representing interest will be <span class="process-math">\(100*(29,504.60/129,504.60)\%\text{,}\)</span> or approximately 22.7827%.</div>
-</li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-10-5"><h5 class="heading"><span class="codenumber">12<span class="period">.</span></span></h5>
+</ol></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-10-5"><h5 class="heading"><span class="codenumber">12<span class="period">.</span></span></h5>
 <div class="para" id="sec-3-4-loans-12-10-5-1-1">For twelve full years, and into an account that pays 3.5% APR compounded quarterly: Yanhong will either pay $1500 at the end of each calendar quarter, or, deposit a single lump sum that will give the same future value amount.</div> <div class="para logical" id="sec-3-4-loans-12-10-5-1-2"><ol class="lower-alpha">
 <li id="sec-3-4-loans-12-10-5-1-2-1-1"><div class="para" id="sec-3-4-loans-12-10-5-1-2-1-1-1">If Yanhong chooses the single lump sum option, then how much will Yanhong need to deposit?</div></li>
 <li id="sec-3-4-loans-12-10-5-1-2-1-2"><div class="para" id="sec-3-4-loans-12-10-5-1-2-1-2-1">If Yanhong needs to have earned $100,000 in this account at the end of the twelve years, then the quarterly deposit amount will need to be increased. What would the new quarterly deposit amount need to be?</div></li>
 <li id="sec-3-4-loans-12-10-5-1-2-1-3"><div class="para" id="sec-3-4-loans-12-10-5-1-2-1-3-1">(Challenge): If Yanhong will make quarterly deposits into this account for the twelve years, but also has $8,000 to additionally deposit into this account right away: What would the new quarterly deposit amount need to be, so that the total balance after twelve years is $100,000?</div></li>
-</ol></div>
-<div class="solutions"><details id="sec-3-4-loans-12-10-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-3-4-loans-12-10-5-2-1"><ol class="lower-alpha">
-<li id="sec-3-4-loans-12-10-5-2-1-1-1"><div class="para" id="sec-3-4-loans-12-10-5-2-1-1-1-1">
-<code class="code-inline tex2jax_ignore">=PV(3.5%/4,4*12,1500)</code> which gives $58,586.02.</div></li>
-<li id="sec-3-4-loans-12-10-5-2-1-1-2"><div class="para" id="sec-3-4-loans-12-10-5-2-1-1-2-1">
-<code class="code-inline tex2jax_ignore">=PMT(3.5%/4,4*12,0,100000)</code> which gives $1,685.34.</div></li>
-<li id="sec-3-4-loans-12-10-5-2-1-1-3">
-<div class="para" id="sec-3-4-loans-12-10-5-2-1-1-3-1">
-<code class="code-inline tex2jax_ignore">=PMT(3.5%/4,4*12,-8000,100000)</code> which gives $1,480.51.</div>
-<div class="para" id="sec-3-4-loans-12-10-5-2-1-1-3-2">(Note 8000 is input as negative, to signify a payment.)</div>
-<div class="para" id="sec-3-4-loans-12-10-5-2-1-1-3-3">Note this answer can also be found by subtracting the future value of $8000 here, which equals $12,153.47, from the required ending balance of $100,000 (which leaves $87,846.47) and then using the PMT function:</div>
-<div class="para" id="sec-3-4-loans-12-10-5-2-1-1-3-4">
-<code class="code-inline tex2jax_ignore">=PMT(3.5%/4,4*12,0,100000-12153.47)</code> which again gives $1,480.51.</div>
-<div class="para" id="sec-3-4-loans-12-10-5-2-1-1-3-5">This can also be done in nested fashion (be careful to add the negative FV quantity): <code class="code-inline tex2jax_ignore">=PMT(3.5%/4,4*12,0,100000+FV(3.5%/4,4*12,0,8000))</code>.</div>
-</li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-10-6"><h5 class="heading"><span class="codenumber">13<span class="period">.</span></span></h5>
+</ol></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-10-6"><h5 class="heading"><span class="codenumber">13<span class="period">.</span></span></h5>
 <div class="para" id="sec-3-4-loans-12-10-6-1-1">Assume you take out a 30-year mortgage loan for $250,000 at a fixed 4.5% APR.</div> <div class="para logical" id="sec-3-4-loans-12-10-6-1-2"><ol class="lower-alpha">
 <li id="sec-3-4-loans-12-10-6-1-2-1-1"><div class="para" id="sec-3-4-loans-12-10-6-1-2-1-1-1">What will be the amount of your monthly payment?</div></li>
 <li id="sec-3-4-loans-12-10-6-1-2-1-2"><div class="para" id="sec-3-4-loans-12-10-6-1-2-1-2-1">After the first ten years of payments, how much will remain on your loan balance?</div></li>
 <li id="sec-3-4-loans-12-10-6-1-2-1-3"><div class="para" id="sec-3-4-loans-12-10-6-1-2-1-3-1">After the first twenty years of payments, how much will remain on your loan balance?</div></li>
 <li id="sec-3-4-loans-12-10-6-1-2-1-4"><div class="para" id="sec-3-4-loans-12-10-6-1-2-1-4-1">Notice that the amount of the loan balance reduction during the second ten years, was very considerably bigger than the amount of the loan balance reduction during the first ten years. Why does the loan balance decrease at a faster and faster pace, the longer that the loan has been in repayment?</div></li>
-</ol></div>
-<div class="solutions"><details id="sec-3-4-loans-12-10-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-3-4-loans-12-10-6-2-1"><ol class="lower-alpha">
-<li id="sec-3-4-loans-12-10-6-2-1-1-1"><div class="para" id="sec-3-4-loans-12-10-6-2-1-1-1-1">
-<code class="code-inline tex2jax_ignore">=PMT(4.5%/12,12*30,250000)</code> which gives $1,266.71.</div></li>
-<li id="sec-3-4-loans-12-10-6-2-1-1-2">
-<div class="para" id="sec-3-4-loans-12-10-6-2-1-1-2-1">This will be the present value of the remaining 240 loan payments:</div>
-<div class="para" id="sec-3-4-loans-12-10-6-2-1-1-2-2">
-<code class="code-inline tex2jax_ignore">=PV(4.5%/12,12*20,1266.71)</code> which gives $200,223.07.</div>
-</li>
-<li id="sec-3-4-loans-12-10-6-2-1-1-3">
-<div class="para" id="sec-3-4-loans-12-10-6-2-1-1-3-1">This will be the present value of the remaining 120 loan payments:</div>
-<div class="para" id="sec-3-4-loans-12-10-6-2-1-1-3-2">
-<code class="code-inline tex2jax_ignore">=PV(4.5%/12,12*10,1266.71)</code> which gives $122,223.99.</div>
-</li>
-<li id="sec-3-4-loans-12-10-6-2-1-1-4"><div class="para" id="sec-3-4-loans-12-10-6-2-1-1-4-1">At the beginning of the repayment period, most of each payment goes to interest (thus the loan balance reduces very slowly at first). Over time, more of each payment shifts to principal, and less to interest.  At the end of the loan repayment period, nearly all the payment is going to principal.</div></li>
-</ol></div></div></details></div></article>
+</ol></div></article>
 </div>
 </div>
 <div class="exercisegroup" id="sec-3-4-loans-12-11">
@@ -1127,31 +981,14 @@ P=\frac{d\left(1-\left(1+\frac{r}{n}\right)^{-nt}\right)}{\frac{r}{n}} \text{  o
 <div class="introduction" id="sec-3-4-loans-12-11-1"><div class="para" id="sec-3-4-loans-12-11-1-1">For each of the following scenarios, determine which formula from sections 3.2-3.4 to use and solve the problem.</div></div>
 <div class="exercisegroup-exercises">
 <article class="exercise exercise-like" id="sec-3-4-loans-12-11-2"><h5 class="heading"><span class="codenumber">14<span class="period">.</span></span></h5>
-<div class="para" id="sec-3-4-loans-12-11-2-1-1">Keisha received an inheritance of $20,000 and invested it at 6.9% APR, compounded continuously. How much will she have for college in 8 years?</div>
-<div class="solutions"><details id="sec-3-4-loans-12-11-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="sec-3-4-loans-12-11-2-2-1">
-<code class="code-inline tex2jax_ignore">=20000*EXP(0.069*8)</code> = $34,734.46. Keisha will have $34,734.46 in 8 years.</div></div></details></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-11-3"><h5 class="heading"><span class="codenumber">15<span class="period">.</span></span></h5>
-<div class="para" id="sec-3-4-loans-12-11-3-1-1">Paul wants to buy a new car. Rather than take out a loan, he decides to save $200 a month in an account earning 3.5% APR compounded monthly. How much will he have saved up after 3 years?</div>
-<div class="solutions"><details id="sec-3-4-loans-12-11-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="sec-3-4-loans-12-11-3-2-1">
-<code class="code-inline tex2jax_ignore">=FV(0.035/12,3*12,200,0)</code> = $7,579.95. Paul will have $7,579.95 in 3 years.</div></div></details></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-11-4"><h5 class="heading"><span class="codenumber">16<span class="period">.</span></span></h5>
-<div class="para" id="sec-3-4-loans-12-11-4-1-1">Sol is managing investments for a non-profit company. They want to invest some money in an account earning 5% APR compounded annually with the goal to have $30,000 in the account in 6 years. How much should Sol deposit into the account?</div>
-<div class="solutions"><details id="sec-3-4-loans-12-11-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="sec-3-4-loans-12-11-4-2-1">
-<code class="code-inline tex2jax_ignore">=PV(0.05/1,6*1,0,30000)</code> = $22,386.46. Sol should deposit $22,386.46 to have $30,000 in 6 years.</div></div></details></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-11-5"><h5 class="heading"><span class="codenumber">17<span class="period">.</span></span></h5>
-<div class="para" id="sec-3-4-loans-12-11-5-1-1">Miao is going to finance new office equipment at 2.8% APR over a 4-year term. If she can afford monthly payments of $100, how much equipment can she buy?</div>
-<div class="solutions"><details id="sec-3-4-loans-12-11-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="sec-3-4-loans-12-11-5-2-1">
-<code class="code-inline tex2jax_ignore">=PV(0.028/12,4*12,100,0)</code> = $4,535.96. Miao can finance $4,535.96 in equipment to have a monthly loan payment of $100 for 4 years.</div></div></details></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-11-6"><h5 class="heading"><span class="codenumber">18<span class="period">.</span></span></h5>
-<div class="para" id="sec-3-4-loans-12-11-6-1-1">How much would you need to save every month in an account earning 4.1% APR to have $5,000 saved up in two years.</div>
-<div class="solutions"><details id="sec-3-4-loans-12-11-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="sec-3-4-loans-12-11-6-2-1">
-<code class="code-inline tex2jax_ignore">=PMT(0.041/12,2*12,0,5000)</code> = $200.26. You would need to save $200.26 every month to have $5,000 in 2 years.</div></div></details></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-11-7"><h5 class="heading"><span class="codenumber">19<span class="period">.</span></span></h5>
-<div class="para" id="sec-3-4-loans-12-11-7-1-1">Terry and Jess are buying a house for $405,000 and they can afford to put 10% down. Their interest rate is 4.3% APR for 30 years. What will their monthly mortgage payment be?</div>
-<div class="solutions"><details id="sec-3-4-loans-12-11-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="sec-3-4-loans-12-11-7-2-1">
-<code class="code-inline tex2jax_ignore">=PMT(0.043/12,30*12,364500,0)</code> = $1,803.81. Their mortgage payment would be $1,803.81.</div></div></details></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-11-8"><h5 class="heading"><span class="codenumber">20<span class="period">.</span></span></h5>
-<div class="para" id="sec-3-4-loans-12-11-8-1-1">You loan your sister $500 for two years and she agrees to pay you back with 3% simple interest per year. How much will she pay you back</div>
-<div class="solutions"><details id="sec-3-4-loans-12-11-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="sec-3-4-loans-12-11-8-2-1">
-<code class="code-inline tex2jax_ignore">=500+500*.03*2</code> = $530. Your sister should pay you back $530 in 2 years.</div></div></details></div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-11-9"><h5 class="heading"><span class="codenumber">21<span class="period">.</span></span></h5>
-<div class="para" id="sec-3-4-loans-12-11-9-1-1">Zahid starts saving $150 per month in an account that pays 4.8% APR compounded monthly. If he continues for 20 years, how much will he have? If he waited 10 years instead and put in $300 per month for 10 years with the same interest, how much would he have?</div>
-<div class="solutions"><details id="sec-3-4-loans-12-11-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec-3-4-loans-12-11-9-2-1">For the first plan: <code class="code-inline tex2jax_ignore">=FV(0.048/12,20*12,150,0)</code> = $60,251.26. Zahid would have $60,251.26 if he puts in $150 per month for 20 years.</div> <div class="para" id="sec-3-4-loans-12-11-9-2-2">For the second plan: <code class="code-inline tex2jax_ignore">=FV(0.048/12,10*12,300,0)</code> = $46,089.59. Zahid would only have $46,089.59 if he waited and put in $300 per month for 10 years.</div>
-</div></details></div></article>
+<div class="para" id="sec-3-4-loans-12-11-2-1-1">Keisha received an inheritance of $20,000 and invested it at 6.9% APR, compounded continuously. How much will she have for college in 8 years?</div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-11-3"><h5 class="heading"><span class="codenumber">15<span class="period">.</span></span></h5>
+<div class="para" id="sec-3-4-loans-12-11-3-1-1">Paul wants to buy a new car. Rather than take out a loan, he decides to save $200 a month in an account earning 3.5% APR compounded monthly. How much will he have saved up after 3 years?</div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-11-4"><h5 class="heading"><span class="codenumber">16<span class="period">.</span></span></h5>
+<div class="para" id="sec-3-4-loans-12-11-4-1-1">Sol is managing investments for a non-profit company. They want to invest some money in an account earning 5% APR compounded annually with the goal to have $30,000 in the account in 6 years. How much should Sol deposit into the account?</div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-11-5"><h5 class="heading"><span class="codenumber">17<span class="period">.</span></span></h5>
+<div class="para" id="sec-3-4-loans-12-11-5-1-1">Miao is going to finance new office equipment at 2.8% APR over a 4-year term. If she can afford monthly payments of $100, how much equipment can she buy?</div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-11-6"><h5 class="heading"><span class="codenumber">18<span class="period">.</span></span></h5>
+<div class="para" id="sec-3-4-loans-12-11-6-1-1">How much would you need to save every month in an account earning 4.1% APR to have $5,000 saved up in two years.</div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-11-7"><h5 class="heading"><span class="codenumber">19<span class="period">.</span></span></h5>
+<div class="para" id="sec-3-4-loans-12-11-7-1-1">Terry and Jess are buying a house for $405,000 and they can afford to put 10% down. Their interest rate is 4.3% APR for 30 years. What will their monthly mortgage payment be?</div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-11-8"><h5 class="heading"><span class="codenumber">20<span class="period">.</span></span></h5>
+<div class="para" id="sec-3-4-loans-12-11-8-1-1">You loan your sister $500 for two years and she agrees to pay you back with 3% simple interest per year. How much will she pay you back</div></article><article class="exercise exercise-like" id="sec-3-4-loans-12-11-9"><h5 class="heading"><span class="codenumber">21<span class="period">.</span></span></h5>
+<div class="para" id="sec-3-4-loans-12-11-9-1-1">Zahid starts saving $150 per month in an account that pays 4.8% APR compounded monthly. If he continues for 20 years, how much will he have? If he waited 10 years instead and put in $300 per month for 10 years with the same interest, how much would he have?</div></article>
 </div>
 </div></section></section></div>
 <div class="ptx-content-footer">

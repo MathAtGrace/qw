@@ -122,7 +122,7 @@ eBookConfig.enable_chatcodes =  false;
 </head>
 <body id="qw2" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" target="_blank" href="https://mathatgrace.github.io/qw2"><img src="external/Lady-Wisdom.jpg" alt="Logo image"></a><div class="title-container">
+<a id="logo-link" class="logo-link" target="_blank" href="https://mathatgrace.github.io/qw"><img src="external/Lady-Wisdom.jpg" alt="Logo image"></a><div class="title-container">
 <h1 class="heading"><a href="qw.html"><span class="title">Quantitative Wisdom:</span> <span class="subtitle">Numerical literacy from the perspective of Biblical wisdom</span></a></h1>
 <p class="byline">Dr. Ryan Johnson</p>
 </div>
@@ -603,9 +603,10 @@ A=\frac{d\left(\left(1+\frac{r}{n}\right)^{nt}-1\right)}{\left(\frac{r}{n}\right
 </div>
 <div class="para" id="sec-finance-savings-plan-5-10">If you make your deposits every month, use monthly compounding, <span class="process-math">\(n=12\text{,}\)</span> etc.</div>
 <div class="para" id="sec-finance-savings-plan-5-11">To see how both of these methods work, let’s look at an example.</div>
-<details id="sec-finance-savings-plan-5-12" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="example example-like" id="sec-finance-savings-plan-5-12"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.1</span><span class="period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para" id="sec-finance-savings-plan-5-12-1-1">A traditional individual retirement account (IRA) is a special type of retirement account in which the money you invest is exempt from income taxes until you withdraw it. If you deposit $100 each month into an IRA earning 6% APR, how much will you have in the account after 20 years? How much will you have earned in interest? What percentage of the balance is interest?</div>
+</h4>
+<div class="para" id="sec-finance-savings-plan-5-12-1-1">A traditional individual retirement account (IRA) is a special type of retirement account in which the money you invest is exempt from income taxes until you withdraw it. If you deposit $100 each month into an IRA earning 6% APR, how much will you have in the account after 20 years? How much will you have earned in interest? What percentage of the balance is interest?</div>
 <div class="solutions"><details id="sec-finance-savings-plan-5-12-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="sec-finance-savings-plan-5-12-2-1">To use a spreadsheet, we will use <code class="code-inline tex2jax_ignore">=FV</code> because we want to know the balance in the future. We enter 100 for the payment amount and 0 for the present value:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
 <div class="sbspanel middle" style="width:40%;">
@@ -636,10 +637,11 @@ A\amp=\frac{100\left(\left(1+\frac{0.06}{12}\right)^{12\cdot 20}-1\right)}{\left
 \frac{\$22,204.09}{\$46,204.09}\approx 0.4810
 \end{equation*}
 </div></div> <div class="para" id="sec-finance-savings-plan-5-12-2-18">or 48.1%. After 20 years 48.1% of the balance is from interest.</div>
-</div></details></div></article></details><div class="para" id="sec-finance-savings-plan-5-13">Now here’s an example with an initial deposit and monthly deposits. We can do this with the spreadsheet formula.</div>
-<details id="sec-finance-savings-plan-5-14" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+</div></details></div></article><div class="para" id="sec-finance-savings-plan-5-13">Now here’s an example with an initial deposit and monthly deposits. We can do this with the spreadsheet formula.</div>
+<article class="example example-like" id="sec-finance-savings-plan-5-14"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.2</span><span class="period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para" id="sec-finance-savings-plan-5-14-1-1">You want to jumpstart your saving by depositing $1500 from your tax return and then deposit $150 every month into an account that earns 5.5% APR compounded monthly. How much will you have in the account after 30 years?</div>
+</h4>
+<div class="para" id="sec-finance-savings-plan-5-14-1-1">You want to jumpstart your saving by depositing $1500 from your tax return and then deposit $150 every month into an account that earns 5.5% APR compounded monthly. How much will you have in the account after 30 years?</div>
 <div class="solutions"><details id="sec-finance-savings-plan-5-14-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="sec-finance-savings-plan-5-14-2-1">Using the spreadsheet formula, we can enter an initial deposit and a monthly payment. We enter</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
 <div class="sbspanel middle" style="width:40%;">
@@ -648,7 +650,7 @@ A\amp=\frac{100\left(\left(1+\frac{0.06}{12}\right)^{12\cdot 20}-1\right)}{\left
 </div>
 <div class="sbspanel middle" style="width:54%;"><img src="external/financial_math/2_3/savings_plan2.png" class="contained" alt="An image of the spreadsheet showing the formula used and the result."></div>
 </div></div>
-</div></details></div></article></details></section><section class="subsection" id="sec-finance-savings-plan-6"><h3 class="heading hide-type">
+</div></details></div></article></section><section class="subsection" id="sec-finance-savings-plan-6"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.3.3</span><span class="space"> </span><span class="title">Finding Payment Amounts Usings Spreadsheets and Formulas</span>
 </h3>
 <div class="para" id="sec-finance-savings-plan-6-2">Another important thing we can calculate is how much we need to save in each period to have a specified amount in the future. Say you want to achieve a certain amount for retirement or for your kids’ college.</div>
@@ -669,9 +671,10 @@ A\amp=\frac{100\left(\left(1+\frac{0.06}{12}\right)^{12\cdot 20}-1\right)}{\left
 <dd><div class="para" id="sec-finance-savings-plan-6-4-3-1-4-2">is the amount you want in the future, <span class="process-math">\(A\)</span>
 </div></dd>
 </dl></div></article><div class="para" id="sec-finance-savings-plan-6-5">Here is an example of a retirement goal calculated with a spreadsheet and the formula.</div>
-<details id="sec-finance-savings-plan-6-6" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="example example-like" id="sec-finance-savings-plan-6-6"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.3</span><span class="period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para" id="sec-finance-savings-plan-6-6-1-1">You want to have half a million dollars in your account when you retire in 30 years. Your retirement account earns 8% APR. How much do you need to deposit each month to meet your retirement goal?</div>
+</h4>
+<div class="para" id="sec-finance-savings-plan-6-6-1-1">You want to have half a million dollars in your account when you retire in 30 years. Your retirement account earns 8% APR. How much do you need to deposit each month to meet your retirement goal?</div>
 <div class="solutions"><details id="sec-finance-savings-plan-6-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="sec-finance-savings-plan-6-6-2-1">To calculate this with a spreadsheet, we will use the <code class="code-inline tex2jax_ignore">=PMT</code> function and enter 0 for the present value and $500,000 for the future value. We cannot enter commas within the numbers however, because spreadsheets use commas to separate the inputs. We enter:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
 <div class="sbspanel middle" style="width:40%;">
@@ -690,7 +693,7 @@ d\amp=\frac{A\left(\frac{r}{n}\right)}{\left(\left(1+\frac{r}{n}\right)^{nt}-1\r
 \amp\approx\$335.49
 \end{align*}
 </div></div> <div class="para" id="sec-finance-savings-plan-6-6-2-10">So, you would need to deposit $335.49 each month to have $500,000 in 30 years if your account earns 8% interest.</div>
-</div></details></div></article></details><article class="activity project-like" id="sec-finance-savings-plan-6-7"><h4 class="heading">
+</div></details></div></article><article class="activity project-like" id="sec-finance-savings-plan-6-7"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.3.3</span><span class="period">.</span>
 </h4>
 <div class="para" id="sec-finance-savings-plan-6-7-1-1">Use a spreadsheet to work on these problems. Write down the syntax to show your work. Answer each question in a complete sentence.</div> <div class="para" id="sec-finance-savings-plan-6-7-1-2">Jackie is 34 years old. She would like to have one million dollars in her retirement account when she is 65 years old.</div> <div class="para logical" id="sec-finance-savings-plan-6-7-1-3"><ol class="lower-alpha">
@@ -722,9 +725,10 @@ d\amp=\frac{A\left(\frac{r}{n}\right)}{\left(\left(1+\frac{r}{n}\right)^{nt}-1\r
 </li>
 </ol></div></div></details></div></article><article class="assemblage assemblage-like" id="sec-finance-savings-plan-6-8"><h4 class="heading"><span class="title">A note about rounding.</span></h4>
 <div class="para" id="sec-finance-savings-plan-6-8-2">If you are using the formulas and round during intermediate steps you will probably have some roundoff error. For this reason, we enter the whole expression into the calculator and do not show the intermediate steps.</div></article><div class="para" id="sec-finance-savings-plan-6-9">One of the challenges in this chapter is choosing the correct formula or spreadsheet function. Read this next example and see if you can determine which formula to use.</div>
-<details id="sec-finance-savings-plan-6-10" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="example example-like" id="sec-finance-savings-plan-6-10"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.4</span><span class="period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para" id="sec-finance-savings-plan-6-10-1-1">A more conservative investment account pays 3% APR. If you deposit $5 a day into this account, how much will you have after 10 years? What amount and percentage are from interest?</div>
+</h4>
+<div class="para" id="sec-finance-savings-plan-6-10-1-1">A more conservative investment account pays 3% APR. If you deposit $5 a day into this account, how much will you have after 10 years? What amount and percentage are from interest?</div>
 <div class="solutions"><details id="sec-finance-savings-plan-6-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="sec-finance-savings-plan-6-10-2-1">In this example we are given the regular deposit amount and we are looking for the future value. In a spreadsheet we use the <code class="code-inline tex2jax_ignore">=FV</code> function and enter:</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
 <div class="sbspanel middle" style="width:40%;">
@@ -747,13 +751,14 @@ A\amp=\frac{5\left(\left(1+\frac{0.03}{365}\right)^{365\cdot 10}-1\right)}{\left
 \end{equation*}
 </div></div> <div class="para" id="sec-finance-savings-plan-6-10-2-11">The interest earned is <span class="process-math">\(\$21,282.07-\$18,250=\$3,032.07\text{.}\)</span>
 </div> <div class="para" id="sec-finance-savings-plan-6-10-2-12">To find the percentage we divide by the total balance to get <span class="process-math">\(\frac{\$3,032.07}{\$21,282.07}\approx0.1425\)</span> or 14.25%.</div> <div class="para" id="sec-finance-savings-plan-6-10-2-13">After 10 years, about 14.25% of the account is interest.</div>
-</div></details></div></article></details></section><section class="subsection" id="sec-finance-savings-plan-7"><h3 class="heading hide-type">
+</div></details></div></article></section><section class="subsection" id="sec-finance-savings-plan-7"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.3.4</span><span class="space"> </span><span class="title">Comparing Lump Sum and Regular Savings Payments</span>
 </h3>
 <div class="para" id="sec-finance-savings-plan-7-2">Now let’s compare two scenarios to do some multistep problems and get a sense for the value of compounding over time.</div>
-<details id="sec-finance-savings-plan-7-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<article class="example example-like" id="sec-finance-savings-plan-7-3"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.5</span><span class="period">.</span>
-</h4></summary><article class="example example-like knowl__content"><div class="para" id="sec-finance-savings-plan-7-3-1-1">Scenario 1: Suppose you invest $200 a month for 15 years into an account earning 10% APR compounded monthly. After 15 years, you leave the money, without making additional deposits, in the account for another 20 years. How much will you have in the end?</div> <div class="para" id="sec-finance-savings-plan-7-3-1-2">Scenario 2: Suppose instead you didn’t invest anything for the first 15 years, then deposited $200 a month for 20 years into an account earning 10% APR compounded monthly. How much will you have in the end?</div>
+</h4>
+<div class="para" id="sec-finance-savings-plan-7-3-1-1">Scenario 1: Suppose you invest $200 a month for 15 years into an account earning 10% APR compounded monthly. After 15 years, you leave the money, without making additional deposits, in the account for another 20 years. How much will you have in the end?</div> <div class="para" id="sec-finance-savings-plan-7-3-1-2">Scenario 2: Suppose instead you didn’t invest anything for the first 15 years, then deposited $200 a month for 20 years into an account earning 10% APR compounded monthly. How much will you have in the end?</div>
 <div class="solutions"><details id="sec-finance-savings-plan-7-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="sec-finance-savings-plan-7-3-2-1">Before we calculate the balance for both scenarios, which one do you think will have a higher balance at the end?</div> <div class="para" id="sec-finance-savings-plan-7-3-2-2">For scenario 1, there are two steps involved. The first part is the monthly payments for 15 years. To calculate this with a spreadsheet we enter</div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
 <div class="sbspanel middle" style="width:40%;">
@@ -789,7 +794,7 @@ A\amp=\frac{200\left(\left(1+\frac{0.10}{12}\right)^{12\cdot 20}-1\right)}{\left
 \amp\approx\$151,873.77
 \end{align*}
 </div></div> <div class="para" id="sec-finance-savings-plan-7-3-2-14">Were you surprised by these numbers? You would put in less money in scenario 1 and end up with four times as much. The key to compounding interest is to start early. If you remember the graph of compound interest in <a href="sec-finance-simple-compound.html" class="internal" title="Section 3.2: Simple and Compound Interest">Section 3.2</a>, we can see that as time goes on, the balance increases exponentially.</div>
-</div></details></div></article></details><article class="activity project-like" id="sec-finance-savings-plan-7-4"><h4 class="heading">
+</div></details></div></article><article class="activity project-like" id="sec-finance-savings-plan-7-4"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.3.4</span><span class="period">.</span><span class="space"> </span><span class="title">Sal, Cal, and Val.</span>
 </h4>
 <div class="para logical" id="sec-finance-savings-plan-7-4-2-1">
@@ -876,19 +881,7 @@ A=\frac{d\left(\left(1+\frac{r}{n}\right)^{nt}-1\right)}{\left(\frac{r}{n}\right
 <li id="sec-finance-savings-plan-9-1-1-1-1-2"><div class="para" id="sec-finance-savings-plan-9-1-1-1-1-2-1">How much interest did you earn.</div></li>
 <li id="sec-finance-savings-plan-9-1-1-1-1-3"><div class="para" id="sec-finance-savings-plan-9-1-1-1-1-3-1">What percent of the balance is interest?</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="sec-finance-savings-plan-9-1-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-finance-savings-plan-9-1-2-1"><ol class="lower-alpha">
-<li id="sec-finance-savings-plan-9-1-2-1-1-1">
-<div class="para" id="sec-finance-savings-plan-9-1-2-1-1-1-1"><span class="process-math">\(\frac{250[(1+\frac{0.065}{12})^{12*35}-1]}{(\frac{0.065}{12})}\)</span></div>
-<div class="para" id="sec-finance-savings-plan-9-1-2-1-1-1-2">Or, <code class="code-inline tex2jax_ignore">FV(0.065/12,12*35,250)</code>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-1-2-1-1-1-3">In 35 years you will have $400,079.05 in your retirement plan.</div>
-</li>
-<li id="sec-finance-savings-plan-9-1-2-1-1-2"><div class="para" id="sec-finance-savings-plan-9-1-2-1-1-2-1">
-<span class="process-math">\(400079.05 - 12*35*250\text{.}\)</span> You will have earned $295,079.05 in interest.</div></li>
-<li id="sec-finance-savings-plan-9-1-2-1-1-3"><div class="para" id="sec-finance-savings-plan-9-1-2-1-1-3-1">
-<span class="process-math">\(295079.05 /400079.05\text{.}\)</span> The final balance will be about 73.8% interest.</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+</div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
 <div class="para logical" id="sec-finance-savings-plan-9-2-1-1">
 <div class="para">You set up a savings plan for retirement in 40 years. You will deposit $75 each week for 40 years.The account will earn an average of 8.5% APR compounded weekly.</div>
 <ol class="lower-alpha">
@@ -896,19 +889,7 @@ A=\frac{d\left(\left(1+\frac{r}{n}\right)^{nt}-1\right)}{\left(\frac{r}{n}\right
 <li id="sec-finance-savings-plan-9-2-1-1-1-2"><div class="para" id="sec-finance-savings-plan-9-2-1-1-1-2-1">How much interest did you earn.</div></li>
 <li id="sec-finance-savings-plan-9-2-1-1-1-3"><div class="para" id="sec-finance-savings-plan-9-2-1-1-1-3-1">What percent of the balance is interest?</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="sec-finance-savings-plan-9-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-finance-savings-plan-9-2-2-1"><ol class="lower-alpha">
-<li id="sec-finance-savings-plan-9-2-2-1-1-1">
-<div class="para" id="sec-finance-savings-plan-9-2-2-1-1-1-1"><span class="process-math">\(\frac{75\left(\left(1+\frac{0.085}{52}\right)^{52*40}-1\right)}{\left(\frac{0.085}{52}\right)}\)</span></div>
-<div class="para" id="sec-finance-savings-plan-9-2-2-1-1-1-2">Or, <code class="code-inline tex2jax_ignore">=FV(0.085/52,52*40,75)</code>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-2-2-1-1-1-3">In 40 years you will have $1,325,130.09 in your retirement plan.</div>
-</li>
-<li id="sec-finance-savings-plan-9-2-2-1-1-2"><div class="para" id="sec-finance-savings-plan-9-2-2-1-1-2-1">
-<span class="process-math">\(1325130.09 - 52*40*75\text{.}\)</span> You will have earned $1,169,130.09 in interest.</div></li>
-<li id="sec-finance-savings-plan-9-2-2-1-1-3"><div class="para" id="sec-finance-savings-plan-9-2-2-1-1-3-1">
-<span class="process-math">\(1169130.09/1325130.09\text{.}\)</span> The final balance will be about 88.2% interest.</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+</div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
 <div class="para logical" id="sec-finance-savings-plan-9-3-1-1">
 <div class="para">You set up a savings plan for retirement in 30 years. You will deposit $750 each quarter for 30 years. The account will earn an average of 7.75% APR compounded quarterly.</div>
 <ol class="lower-alpha">
@@ -916,19 +897,7 @@ A=\frac{d\left(\left(1+\frac{r}{n}\right)^{nt}-1\right)}{\left(\frac{r}{n}\right
 <li id="sec-finance-savings-plan-9-3-1-1-1-2"><div class="para" id="sec-finance-savings-plan-9-3-1-1-1-2-1">How much interest did you earn?</div></li>
 <li id="sec-finance-savings-plan-9-3-1-1-1-3"><div class="para" id="sec-finance-savings-plan-9-3-1-1-1-3-1">What percent of the balance is interest?</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="sec-finance-savings-plan-9-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-finance-savings-plan-9-3-2-1"><ol class="lower-alpha">
-<li id="sec-finance-savings-plan-9-3-2-1-1-1">
-<div class="para" id="sec-finance-savings-plan-9-3-2-1-1-1-1"><span class="process-math">\(\frac{750\left(1+\frac{0.0775}{4})^{4*30}-1\right)}{\left(frac{0.0775}{4}\right)}\)</span></div>
-<div class="para" id="sec-finance-savings-plan-9-3-2-1-1-1-2">Or, <code class="code-inline tex2jax_ignore">=FV(0.0775/4,4*30,750)</code>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-3-2-1-1-1-3">In 30 years you will have $348,456.10 in your retirement plan.</div>
-</li>
-<li id="sec-finance-savings-plan-9-3-2-1-1-2"><div class="para" id="sec-finance-savings-plan-9-3-2-1-1-2-1">
-<span class="process-math">\(348456.1 - 4*30*750\text{.}\)</span> You will have earned $258,456.10 in interest.</div></li>
-<li id="sec-finance-savings-plan-9-3-2-1-1-3"><div class="para" id="sec-finance-savings-plan-9-3-2-1-1-3-1">
-<span class="process-math">\(258456.1 /348456.1\text{.}\)</span> The final balance will be about 74.2% interest.</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-4"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+</div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-4"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
 <div class="para logical" id="sec-finance-savings-plan-9-4-1-1">
 <div class="para">You set up a savings plan for retirement in 25 years. You will deposit $20 per day for 25 years. The account will earn an average of 2.35% APR compounded daily.</div>
 <ol class="lower-alpha">
@@ -936,19 +905,7 @@ A=\frac{d\left(\left(1+\frac{r}{n}\right)^{nt}-1\right)}{\left(\frac{r}{n}\right
 <li id="sec-finance-savings-plan-9-4-1-1-1-2"><div class="para" id="sec-finance-savings-plan-9-4-1-1-1-2-1">How much interest did you earn?</div></li>
 <li id="sec-finance-savings-plan-9-4-1-1-1-3"><div class="para" id="sec-finance-savings-plan-9-4-1-1-1-3-1">What percent of the final balance is interest?</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="sec-finance-savings-plan-9-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-finance-savings-plan-9-4-2-1"><ol class="lower-alpha">
-<li id="sec-finance-savings-plan-9-4-2-1-1-1">
-<div class="para" id="sec-finance-savings-plan-9-4-2-1-1-1-1"><span class="process-math">\(\frac{20\left(\left(1+\frac{0.0235}{365}\right)^{365*25}-1\right)}{\left(\frac{0.0235}{365}\right)}\)</span></div>
-<div class="para" id="sec-finance-savings-plan-9-4-2-1-1-1-2">Or, <code class="code-inline tex2jax_ignore">=FV(0.0235/365,365*25,20)</code>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-4-2-1-1-1-3">In 25 years you will have $248,339.80 in your retirement plan.</div>
-</li>
-<li id="sec-finance-savings-plan-9-4-2-1-1-2"><div class="para" id="sec-finance-savings-plan-9-4-2-1-1-2-1">
-<span class="process-math">\(248339.8 - 365*25*20\text{.}\)</span> You will have earned $65,839.80 in interest.</div></li>
-<li id="sec-finance-savings-plan-9-4-2-1-1-3"><div class="para" id="sec-finance-savings-plan-9-4-2-1-1-3-1">
-<span class="process-math">\(65839.8 /248339.8\text{.}\)</span> The final balance will be about 26.5% interest.</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-5"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
+</div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-5"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
 <div class="para logical" id="sec-finance-savings-plan-9-5-1-1">
 <div class="para">Suppose you invest $130 a month for 5 years into an account earning 9% APR compounded monthly. After 5 years, you leave the money, without making additional deposits, in the account for another 25 years.</div>
 <ol class="lower-alpha">
@@ -956,23 +913,7 @@ A=\frac{d\left(\left(1+\frac{r}{n}\right)^{nt}-1\right)}{\left(\frac{r}{n}\right
 <li id="sec-finance-savings-plan-9-5-1-1-1-2"><div class="para" id="sec-finance-savings-plan-9-5-1-1-1-2-1">How much interest did you earn?</div></li>
 <li id="sec-finance-savings-plan-9-5-1-1-1-3"><div class="para" id="sec-finance-savings-plan-9-5-1-1-1-3-1">What percent of balance is interest?</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="sec-finance-savings-plan-9-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-finance-savings-plan-9-5-2-1"><ol class="lower-alpha">
-<li id="sec-finance-savings-plan-9-5-2-1-1-1">
-<div class="para" id="sec-finance-savings-plan-9-5-2-1-1-1-1">In 5 years: <span class="process-math">\(\frac{130\left(\left(1+\frac{0.09}{12}\right)^{12*5}-1\right)}{\left(\frac{0.09}{12}\right)}\)</span>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-5-2-1-1-1-2">Or, <code class="code-inline tex2jax_ignore">=FV(0.09/12,12*5,130)</code>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-5-2-1-1-1-3">In 25 more years: <span class="process-math">\(9805.14(1+\frac{0.09}{12})^{12*25}\)</span>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-5-2-1-1-1-4"><code class="code-inline tex2jax_ignore">=FV(0.09/12,12*25,0,9805.14)</code></div>
-<div class="para" id="sec-finance-savings-plan-9-5-2-1-1-1-5">Your final balance will be $92,250.82.</div>
-</li>
-<li id="sec-finance-savings-plan-9-5-2-1-1-2"><div class="para" id="sec-finance-savings-plan-9-5-2-1-1-2-1">
-<span class="process-math">\(92250.82 - 130*5*12\text{.}\)</span> You will earn $84,450.82 in interest.</div></li>
-<li id="sec-finance-savings-plan-9-5-2-1-1-3"><div class="para" id="sec-finance-savings-plan-9-5-2-1-1-3-1">
-<span class="process-math">\(84450.82/92250.82\text{.}\)</span> The final balance will be about 91.5% interest.</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-6"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+</div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-6"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
 <div class="para logical" id="sec-finance-savings-plan-9-6-1-1">
 <div class="para">Suppose you invest $200 per month for 10 years into an account earning 5% APR compounded monthly. You then leave the money, without making additional deposits, in the account for another 20 years.</div>
 <ol class="lower-alpha">
@@ -981,45 +922,11 @@ A=\frac{d\left(\left(1+\frac{r}{n}\right)^{nt}-1\right)}{\left(\frac{r}{n}\right
 <li id="sec-finance-savings-plan-9-6-1-1-1-3"><div class="para" id="sec-finance-savings-plan-9-6-1-1-1-3-1">How much total interest did you earn?</div></li>
 <li id="sec-finance-savings-plan-9-6-1-1-1-4"><div class="para" id="sec-finance-savings-plan-9-6-1-1-1-4-1">What percent of the final balance is interest?</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="sec-finance-savings-plan-9-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-finance-savings-plan-9-6-2-1"><ol class="lower-alpha">
-<li id="sec-finance-savings-plan-9-6-2-1-1-1">
-<div class="para" id="sec-finance-savings-plan-9-6-2-1-1-1-1"><span class="process-math">\(\frac{200\left(\left(1+\frac{0.05}{12}\right)^{12*20}-1\right)}{\left(\frac{0.05}{12}\right)}\)</span></div>
-<div class="para" id="sec-finance-savings-plan-9-6-2-1-1-1-2">Or, <code class="code-inline tex2jax_ignore">=FV(0.05/12, 12*10, 200)</code>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-6-2-1-1-1-3">After 10 years the balance will be $31,056.46.</div>
-</li>
-<li id="sec-finance-savings-plan-9-6-2-1-1-2">
-<div class="para" id="sec-finance-savings-plan-9-6-2-1-1-2-1">In 20 more years: <span class="process-math">\(31056.46\left(1+\frac{0.05}{12}\right)^{12*20}\)</span>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-6-2-1-1-2-2">Or, <code class="code-inline tex2jax_ignore">=FV(0.05/12,12*20,0,31056.46)</code>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-6-2-1-1-2-3">The final balance will be $84,245.00.</div>
-</li>
-<li id="sec-finance-savings-plan-9-6-2-1-1-3"><div class="para" id="sec-finance-savings-plan-9-6-2-1-1-3-1">
-<span class="process-math">\(84245 - 200*12*10\text{.}\)</span> You will earn $60,245 in interest.</div></li>
-<li id="sec-finance-savings-plan-9-6-2-1-1-4"><div class="para" id="sec-finance-savings-plan-9-6-2-1-1-4-1">
-<span class="process-math">\(60245/84245\text{.}\)</span> Your final balance will be about 71.5%. interest.</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-7"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
-<div class="para" id="sec-finance-savings-plan-9-7-1-1">Suppose you have 30 months in which to save $3,500 for a cruise for your family. If you can earn an APR of 3.8%, compounded monthly, how much should you deposit each month?</div>
-<div class="solutions"><details id="sec-finance-savings-plan-9-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec-finance-savings-plan-9-7-2-1"><span class="process-math">\(\frac{3500\left(\frac{0.038}{12}\right)}{\left(1+\frac{0.038}{12}\right)^{30}-1}\)</span></div> <div class="para" id="sec-finance-savings-plan-9-7-2-2"><code class="code-inline tex2jax_ignore">=PMT(0.038/12,30,0,3500)</code></div> <div class="para" id="sec-finance-savings-plan-9-7-2-3">You should deposit $111.40 each month.</div>
-</div></details></div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-8"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
-<div class="para" id="sec-finance-savings-plan-9-8-1-1">You wish to have $3,000 in 2 years to buy a fancy new stereo system. How much should you deposit each quarter into an account paying 6.5% APR compounded quarterly?</div>
-<div class="solutions"><details id="sec-finance-savings-plan-9-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec-finance-savings-plan-9-8-2-1"><span class="process-math">\(\frac{3000\left(\frac{0.065}{4}\right)}{\left(1+\frac{0.065}{4}\right)^{4*2}-1}\)</span></div> <div class="para" id="sec-finance-savings-plan-9-8-2-2">Or, <code class="code-inline tex2jax_ignore">=PMT(0.065/4,4*2,0,3000)</code>
-</div> <div class="para" id="sec-finance-savings-plan-9-8-2-3">You should deposit $354.19 each quarter.</div>
-</div></details></div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-9"><h4 class="heading"><span class="codenumber">9<span class="period">.</span></span></h4>
-<div class="para" id="sec-finance-savings-plan-9-9-1-1">Jamie has determined they need to have $450,000 for retirement in 30 years. Their account earns 6% APR. How much would Jamie need to deposit in the account each month?</div>
-<div class="solutions"><details id="sec-finance-savings-plan-9-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec-finance-savings-plan-9-9-2-1"><span class="process-math">\(\frac{450000\left(\frac{0.06}{12}\right)}{\left(1+\frac{0.06}{12}\right)^{12*30}-1}\)</span></div> <div class="para" id="sec-finance-savings-plan-9-9-2-2">Or, <code class="code-inline tex2jax_ignore">=PMT(0.06/12,12*30,0,450000)</code>
-</div> <div class="para" id="sec-finance-savings-plan-9-9-2-3">Jamie needs to deposit $447.98 each month.</div>
-</div></details></div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-10"><h4 class="heading"><span class="codenumber">10<span class="period">.</span></span></h4>
-<div class="para" id="sec-finance-savings-plan-9-10-1-1">Lashonda already knows that she wants $500,000 when she retires. If she sets up a saving plan for 40 years in an account paying 10% APR, compounded quarterly, how much should she deposit each quarter?</div>
-<div class="solutions"><details id="sec-finance-savings-plan-9-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec-finance-savings-plan-9-10-2-1"><span class="process-math">\(\frac{500000\left(\frac{0.1}{4}\right)}{\left(1+\frac{0.1}{4}\right)^{4*40}-1}\)</span></div> <div class="para" id="sec-finance-savings-plan-9-10-2-2">Or, <code class="code-inline tex2jax_ignore">=PMT(0.1/4,4*40,0,500000)</code>
-</div> <div class="para" id="sec-finance-savings-plan-9-10-2-3">Lashonda should deposit $245.20 each quarter.</div>
-</div></details></div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-11"><h4 class="heading"><span class="codenumber">11<span class="period">.</span></span></h4>
+</div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-7"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
+<div class="para" id="sec-finance-savings-plan-9-7-1-1">Suppose you have 30 months in which to save $3,500 for a cruise for your family. If you can earn an APR of 3.8%, compounded monthly, how much should you deposit each month?</div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-8"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
+<div class="para" id="sec-finance-savings-plan-9-8-1-1">You wish to have $3,000 in 2 years to buy a fancy new stereo system. How much should you deposit each quarter into an account paying 6.5% APR compounded quarterly?</div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-9"><h4 class="heading"><span class="codenumber">9<span class="period">.</span></span></h4>
+<div class="para" id="sec-finance-savings-plan-9-9-1-1">Jamie has determined they need to have $450,000 for retirement in 30 years. Their account earns 6% APR. How much would Jamie need to deposit in the account each month?</div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-10"><h4 class="heading"><span class="codenumber">10<span class="period">.</span></span></h4>
+<div class="para" id="sec-finance-savings-plan-9-10-1-1">Lashonda already knows that she wants $500,000 when she retires. If she sets up a saving plan for 40 years in an account paying 10% APR, compounded quarterly, how much should she deposit each quarter?</div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-11"><h4 class="heading"><span class="codenumber">11<span class="period">.</span></span></h4>
 <div class="para logical" id="sec-finance-savings-plan-9-11-1-1">
 <div class="para">Jose’ inherits $55,000 and decides to put it in the bank for the next 25 years to save for his retirement. He will earn an average of 5.6% APR compounded monthly for the next 25 years. His partner deposits $375 a month in a separate savings plan that earns 5.6% APR compounded monthly for the next 25 years.</div>
 <ol class="lower-alpha">
@@ -1027,34 +934,7 @@ A=\frac{d\left(\left(1+\frac{r}{n}\right)^{nt}-1\right)}{\left(\frac{r}{n}\right
 <li id="sec-finance-savings-plan-9-11-1-1-1-2"><div class="para" id="sec-finance-savings-plan-9-11-1-1-1-2-1">How much interest did each person earn?</div></li>
 <li id="sec-finance-savings-plan-9-11-1-1-1-3"><div class="para" id="sec-finance-savings-plan-9-11-1-1-1-3-1">What percent of balance is interest for each person?</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="sec-finance-savings-plan-9-11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-finance-savings-plan-9-11-2-1"><ol class="lower-alpha">
-<li id="sec-finance-savings-plan-9-11-2-1-1-1">
-<div class="para" id="sec-finance-savings-plan-9-11-2-1-1-1-1">Jose: <span class="process-math">\(55000\left(1+\frac{0.056}{12}\right)^{12*25}\)</span>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-11-2-1-1-1-2">Or, <code class="code-inline tex2jax_ignore">=FV(0.056/12,12*25,0,55000)</code>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-11-2-1-1-1-3">Jose’s partner:<span class="process-math">\(\frac{375\left(\left(1+\frac{0.056}{12}\right)^{12*25}-1\right)}{\left(\frac{0.056}{12}\right)}\)</span>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-11-2-1-1-1-4">Or, <code class="code-inline tex2jax_ignore">=FV(0.056/12,12*25,375)</code>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-11-2-1-1-1-5">Jose will have $222,310.85 and his partner will have $244,447.68.</div>
-</li>
-<li id="sec-finance-savings-plan-9-11-2-1-1-2">
-<div class="para" id="sec-finance-savings-plan-9-11-2-1-1-2-1">Jose: <span class="process-math">\(222310.85 - 55000\)</span>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-11-2-1-1-2-2">Jose’s partner: <span class="process-math">\(244447.68 - 375*12*25\)</span>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-11-2-1-1-2-3">Jose will earn $167,310.85 and his partner will earn $131,947.68 in interest.</div>
-</li>
-<li id="sec-finance-savings-plan-9-11-2-1-1-3">
-<div class="para" id="sec-finance-savings-plan-9-11-2-1-1-3-1">Jose: <span class="process-math">\(167310.85/222310.85\)</span>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-11-2-1-1-3-2">Jose’s partner: <span class="process-math">\(131947.68/244447.68\)</span>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-11-2-1-1-3-3">Jose’s final balance will be about 75.3% interest and Jose’s partner’s final balance will be about 54.0% interest.</div>
-</li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-12"><h4 class="heading"><span class="codenumber">12<span class="period">.</span></span></h4>
+</div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-12"><h4 class="heading"><span class="codenumber">12<span class="period">.</span></span></h4>
 <div class="para logical" id="sec-finance-savings-plan-9-12-1-1">
 <div class="para">Akiko inherits $45,000 and decides to put it in the bank for the next 30 years to save for her retirement. She will earn an average of 7.8% APR compounded monthly for the next 30 years. Her spouse deposits $200 a month in a separate savings plan that earns 7.8% APR compounded monthly for the next 30 years.</div>
 <ol class="lower-alpha">
@@ -1062,34 +942,7 @@ A=\frac{d\left(\left(1+\frac{r}{n}\right)^{nt}-1\right)}{\left(\frac{r}{n}\right
 <li id="sec-finance-savings-plan-9-12-1-1-1-2"><div class="para" id="sec-finance-savings-plan-9-12-1-1-1-2-1">How much interest did each person earn?</div></li>
 <li id="sec-finance-savings-plan-9-12-1-1-1-3"><div class="para" id="sec-finance-savings-plan-9-12-1-1-1-3-1">What percent of balance is interest for each person?</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="sec-finance-savings-plan-9-12-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-finance-savings-plan-9-12-2-1"><ol class="lower-alpha">
-<li id="sec-finance-savings-plan-9-12-2-1-1-1">
-<div class="para" id="sec-finance-savings-plan-9-12-2-1-1-1-1">Akiko: <span class="process-math">\(45000\left(1+\frac{0.078}{12}\right)^{12*30}\)</span>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-12-2-1-1-1-2">Or, <code class="code-inline tex2jax_ignore">=FV(0.078/12,12*30,0,45000)</code>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-12-2-1-1-1-3">Her spouse: <span class="process-math">\(\frac{200\left(\left(1+\frac{0.078}{12}\right)^{12*30}-1\right)}{\left(\frac{0.078}{12}\right)}\)</span>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-12-2-1-1-1-4">Or, <code class="code-inline tex2jax_ignore">=FV(0.078/12,12*30,200)</code>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-12-2-1-1-1-5">Akiko will have $463,631.61 and her spouse will have $286,243.83.</div>
-</li>
-<li id="sec-finance-savings-plan-9-12-2-1-1-2">
-<div class="para" id="sec-finance-savings-plan-9-12-2-1-1-2-1">Akiko: <span class="process-math">\(463631.61 - 45000\)</span>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-12-2-1-1-2-2">Her spouse: <span class="process-math">\(286243.83 - 200*12*30\)</span>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-12-2-1-1-2-3">Akiko will earn $418,631.61 and her spouse will earn $214,243.83 in interest.</div>
-</li>
-<li id="sec-finance-savings-plan-9-12-2-1-1-3">
-<div class="para" id="sec-finance-savings-plan-9-12-2-1-1-3-1">Akiko: <span class="process-math">\(418631.61/463631.61\)</span>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-12-2-1-1-3-2">Her spouse: <span class="process-math">\(214243.83/286243.83\)</span>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-12-2-1-1-3-3">Akiko’s final balance will be about 90.3% interest and her spouse’s final balance will be about 74.8% interest.</div>
-</li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-13"><h4 class="heading"><span class="codenumber">13<span class="period">.</span></span></h4>
+</div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-13"><h4 class="heading"><span class="codenumber">13<span class="period">.</span></span></h4>
 <div class="para logical" id="sec-finance-savings-plan-9-13-1-1">
 <div class="para">Sylvin makes an initial deposit of $1000 into a savings account and then adds $100 each month for 10 years into an account pays 4.5% APR compounded monthly.</div>
 <ol class="lower-alpha">
@@ -1097,19 +950,7 @@ A=\frac{d\left(\left(1+\frac{r}{n}\right)^{nt}-1\right)}{\left(\frac{r}{n}\right
 <li id="sec-finance-savings-plan-9-13-1-1-1-2"><div class="para" id="sec-finance-savings-plan-9-13-1-1-1-2-1">How much interest did she earn?</div></li>
 <li id="sec-finance-savings-plan-9-13-1-1-1-3"><div class="para" id="sec-finance-savings-plan-9-13-1-1-1-3-1">What percent of the final balance is interest?</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="sec-finance-savings-plan-9-13-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-finance-savings-plan-9-13-2-1"><ol class="lower-alpha">
-<li id="sec-finance-savings-plan-9-13-2-1-1-1">
-<div class="para" id="sec-finance-savings-plan-9-13-2-1-1-1-1"><span class="process-math">\(1000\left(1+\frac{0.045}{12}\right)^{12*10}+\frac{100\left(\left(1+\frac{0.045}{12}\right)^{12*10}-1\right)}{\frac{0.045}{12}}\)</span></div>
-<div class="para" id="sec-finance-savings-plan-9-13-2-1-1-1-2">Or, <code class="code-inline tex2jax_ignore">=FV(0.045/12,12*10,100,1000)</code>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-13-2-1-1-1-3">Sylvin will have a final balance of $16,686.80.</div>
-</li>
-<li id="sec-finance-savings-plan-9-13-2-1-1-2"><div class="para" id="sec-finance-savings-plan-9-13-2-1-1-2-1">
-<span class="process-math">\(16686.8 - (1000 + 100*12*10)\text{.}\)</span> Sylvin will earn $3,686.80 in interest.</div></li>
-<li id="sec-finance-savings-plan-9-13-2-1-1-3"><div class="para" id="sec-finance-savings-plan-9-13-2-1-1-3-1">
-<span class="process-math">\(3686.8/16686.8\text{.}\)</span> The final balance will be about 22.1% interest.</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-14"><h4 class="heading"><span class="codenumber">14<span class="period">.</span></span></h4>
+</div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-14"><h4 class="heading"><span class="codenumber">14<span class="period">.</span></span></h4>
 <div class="para logical" id="sec-finance-savings-plan-9-14-1-1">
 <div class="para">Elena makes an initial deposit of $5000 into a savings account and then adds $1000 each year for 20 years into an account pays 2.35% APR compounded annually.</div>
 <ol class="lower-alpha">
@@ -1117,101 +958,35 @@ A=\frac{d\left(\left(1+\frac{r}{n}\right)^{nt}-1\right)}{\left(\frac{r}{n}\right
 <li id="sec-finance-savings-plan-9-14-1-1-1-2"><div class="para" id="sec-finance-savings-plan-9-14-1-1-1-2-1">How much interest did she earn?</div></li>
 <li id="sec-finance-savings-plan-9-14-1-1-1-3"><div class="para" id="sec-finance-savings-plan-9-14-1-1-1-3-1">What percent of her final balance is interest?</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="sec-finance-savings-plan-9-14-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-finance-savings-plan-9-14-2-1"><ol class="lower-alpha">
-<li id="sec-finance-savings-plan-9-14-2-1-1-1">
-<div class="para" id="sec-finance-savings-plan-9-14-2-1-1-1-1"><span class="process-math">\(5000(1+0.0235)^{20}+\frac{1000\left(\left(1+0.0235\right)^{20}-1\right)}{0.0235}\)</span></div>
-<div class="para" id="sec-finance-savings-plan-9-14-2-1-1-1-2"><code class="code-inline tex2jax_ignore">=FV(0.0235,20,1000,5000)</code></div>
-<div class="para" id="sec-finance-savings-plan-9-14-2-1-1-1-3">Elena’s final balance will be $33,119.05.</div>
-</li>
-<li id="sec-finance-savings-plan-9-14-2-1-1-2"><div class="para" id="sec-finance-savings-plan-9-14-2-1-1-2-1">
-<span class="process-math">\(33119.05 - (5000 + 1000*20)\text{.}\)</span> Elena will earn $8,119.05 in interest.</div></li>
-<li id="sec-finance-savings-plan-9-14-2-1-1-3"><div class="para" id="sec-finance-savings-plan-9-14-2-1-1-3-1">
-<span class="process-math">\(8119.05/33119.05\text{.}\)</span> The final balance will be about 24.5% interest.</div></li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-15"><h4 class="heading"><span class="codenumber">15<span class="period">.</span></span></h4>
+</div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-15"><h4 class="heading"><span class="codenumber">15<span class="period">.</span></span></h4>
 <div class="para logical" id="sec-finance-savings-plan-9-15-1-1">
 <div class="para">Vanessa just turned 40 years old. Her plan is to save $100 per month until retirement at age 65. Suppose she deposits that $100 each month into a savings account that earns 4% APR compounded monthly.</div>
 <ol class="lower-alpha">
 <li id="sec-finance-savings-plan-9-15-1-1-1-1"><div class="para" id="sec-finance-savings-plan-9-15-1-1-1-1-1">What will her balance be when she turns 65 years old?</div></li>
 <li id="sec-finance-savings-plan-9-15-1-1-1-2"><div class="para" id="sec-finance-savings-plan-9-15-1-1-1-2-1">If she started saving when she turned 25 years old instead, what would her balance be?</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="sec-finance-savings-plan-9-15-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-finance-savings-plan-9-15-2-1"><ol class="lower-alpha">
-<li id="sec-finance-savings-plan-9-15-2-1-1-1">
-<div class="para" id="sec-finance-savings-plan-9-15-2-1-1-1-1"><span class="process-math">\(\frac{100\left(\left(1+\frac{0.04}{12}\right)^{12*25}-1\right)}{\frac{0.04}{12}}\)</span></div>
-<div class="para" id="sec-finance-savings-plan-9-15-2-1-1-1-2">Or, <code class="code-inline tex2jax_ignore">=FV(0.04/12,12*25,100)</code>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-15-2-1-1-1-3">Vanessa will have $51,412.95 when she turns 65.</div>
-</li>
-<li id="sec-finance-savings-plan-9-15-2-1-1-2">
-<div class="para" id="sec-finance-savings-plan-9-15-2-1-1-2-1"><span class="process-math">\(\frac{100\left(\left(1+\frac{0.04}{12}\right)^{12*40}-1\right)}{\frac{0.04}{12}}\)</span></div>
-<div class="para" id="sec-finance-savings-plan-9-15-2-1-1-2-2"><code class="code-inline tex2jax_ignore">=FV(0.04/12,12*40,100)</code></div>
-<div class="para" id="sec-finance-savings-plan-9-15-2-1-1-2-3">Vanessa would have $118,196.13 if she had started saving when she was 25.</div>
-</li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-16"><h4 class="heading"><span class="codenumber">16<span class="period">.</span></span></h4>
+</div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-16"><h4 class="heading"><span class="codenumber">16<span class="period">.</span></span></h4>
 <div class="para logical" id="sec-finance-savings-plan-9-16-1-1">
 <div class="para">Chris wants to start saving money for retirement. Suppose he deposits $1000 every year into a savings account that pays 5% APR compounded annually.</div>
 <ol class="lower-alpha">
 <li id="sec-finance-savings-plan-9-16-1-1-1-1"><div class="para" id="sec-finance-savings-plan-9-16-1-1-1-1-1">How much will Chris have saved in 20 years?</div></li>
 <li id="sec-finance-savings-plan-9-16-1-1-1-2"><div class="para" id="sec-finance-savings-plan-9-16-1-1-1-2-1">How much will Chris have saved in 40 years?</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="sec-finance-savings-plan-9-16-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-finance-savings-plan-9-16-2-1"><ol class="lower-alpha">
-<li id="sec-finance-savings-plan-9-16-2-1-1-1">
-<div class="para" id="sec-finance-savings-plan-9-16-2-1-1-1-1"><span class="process-math">\(\frac{1000\left((1+0.05)^{20}-1\right)}{0.05}\)</span></div>
-<div class="para" id="sec-finance-savings-plan-9-16-2-1-1-1-2">Or, <code class="code-inline tex2jax_ignore">=FV(0.05,20,1000)</code>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-16-2-1-1-1-3">Chris will have $33,065.95 after 20 years.</div>
-</li>
-<li id="sec-finance-savings-plan-9-16-2-1-1-2">
-<div class="para" id="sec-finance-savings-plan-9-16-2-1-1-2-1"><span class="process-math">\(\frac{1000\left((1+0.05)^{40}-1\right)}{0.05}\)</span></div>
-<div class="para" id="sec-finance-savings-plan-9-16-2-1-1-2-2">Or, <code class="code-inline tex2jax_ignore">=FV(0.05,40,1000)</code>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-16-2-1-1-2-3">Chris will have $120,799.77 after 40 years.</div>
-</li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-17"><h4 class="heading"><span class="codenumber">17<span class="period">.</span></span></h4>
+</div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-17"><h4 class="heading"><span class="codenumber">17<span class="period">.</span></span></h4>
 <div class="para logical" id="sec-finance-savings-plan-9-17-1-1">
 <div class="para">Fareshta and Ahmad want to save to help send their child to college. Their plan is to put aside $50 every week. Suppose they deposit that money into an account that pays 3.5% APR compounded weekly.</div>
 <ol class="lower-alpha">
 <li id="sec-finance-savings-plan-9-17-1-1-1-1"><div class="para" id="sec-finance-savings-plan-9-17-1-1-1-1-1">How much money will be in the account in 18 years? (assume 52 weeks in a year)</div></li>
 <li id="sec-finance-savings-plan-9-17-1-1-1-2"><div class="para" id="sec-finance-savings-plan-9-17-1-1-1-2-1">What minimum initial lump sum deposit would they need to make today to have the same balance in 18 years if they weren’t putting aside the $50 per week?</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="sec-finance-savings-plan-9-17-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-finance-savings-plan-9-17-2-1"><ol class="lower-alpha">
-<li id="sec-finance-savings-plan-9-17-2-1-1-1">
-<div class="para" id="sec-finance-savings-plan-9-17-2-1-1-1-1"><span class="process-math">\(\frac{50\left(\left(1+\frac{0.035}{52}\right)^{52*18}-1\right)}{\frac{0.035}{52}}\)</span></div>
-<div class="para" id="sec-finance-savings-plan-9-17-2-1-1-1-2">Or, <code class="code-inline tex2jax_ignore">=FV(0.035/52,52*18,50)</code>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-17-2-1-1-1-3">They will have saved $65,164.37 after 18 years.</div>
-</li>
-<li id="sec-finance-savings-plan-9-17-2-1-1-2">
-<div class="para" id="sec-finance-savings-plan-9-17-2-1-1-2-1"><span class="process-math">\(\frac{65164.37}{(1+\frac{0.035}{52})^{52*18}}\)</span></div>
-<div class="para" id="sec-finance-savings-plan-9-17-2-1-1-2-2">Or, <code class="code-inline tex2jax_ignore">=PV(0.035/52,52*18,0,65164.37)</code>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-17-2-1-1-2-3">They would have needed an deposit of $34,713.37.</div>
-</li>
-</ol></div></div></details></div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-18"><h4 class="heading"><span class="codenumber">18<span class="period">.</span></span></h4>
+</div></article><article class="exercise exercise-like" id="sec-finance-savings-plan-9-18"><h4 class="heading"><span class="codenumber">18<span class="period">.</span></span></h4>
 <div class="para logical" id="sec-finance-savings-plan-9-18-1-1">
 <div class="para">Elisa decides to cancel her cable TV and to deposit the $100 she will save each month into an account that pays 4.5% APR compounded monthly.</div>
 <ol class="lower-alpha">
 <li id="sec-finance-savings-plan-9-18-1-1-1-1"><div class="para" id="sec-finance-savings-plan-9-18-1-1-1-1-1">How much will she have in the account in 10 years?</div></li>
 <li id="sec-finance-savings-plan-9-18-1-1-1-2"><div class="para" id="sec-finance-savings-plan-9-18-1-1-1-2-1">What minimum initial lump sum deposit would she need to make today to have the same balance in 10 years without saving the $100 per month?</div></li>
 </ol>
-</div>
-<div class="solutions"><details id="sec-finance-savings-plan-9-18-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="sec-finance-savings-plan-9-18-2-1"><ol class="lower-alpha">
-<li id="sec-finance-savings-plan-9-18-2-1-1-1">
-<div class="para" id="sec-finance-savings-plan-9-18-2-1-1-1-1"><span class="process-math">\(\frac{100\left(\left(1+\frac{0.045}{12}\right)^{12*20}-1\right)}{\frac{0.045}{12}}\)</span></div>
-<div class="para" id="sec-finance-savings-plan-9-18-2-1-1-1-2">Or, <code class="code-inline tex2jax_ignore">=FV(0.045/12,12*10,100)</code>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-18-2-1-1-1-3">Elisa will have $15,119.81 in 10 years.</div>
-</li>
-<li id="sec-finance-savings-plan-9-18-2-1-1-2">
-<div class="para" id="sec-finance-savings-plan-9-18-2-1-1-2-1"><span class="process-math">\(\frac{15119.81}{\left(1+\frac{0.045}{12}\right)^{12*10}}\)</span></div>
-<div class="para" id="sec-finance-savings-plan-9-18-2-1-1-2-2">Or, <code class="code-inline tex2jax_ignore">=PV(0.045/12,12*10,0,15119.81)</code>
-</div>
-<div class="para" id="sec-finance-savings-plan-9-18-2-1-1-2-3">She would have needed an initial deposit of $9,648.93.</div>
-</li>
-</ol></div></div></details></div></article></section></section></div>
+</div></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-finance-simple-compound.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-3-4-loans.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
