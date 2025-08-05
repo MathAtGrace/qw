@@ -1,0 +1,47 @@
+WARNING : Using CLI version 2.19.3 but project's `requirements.txt`
+WARNING : is configured to use 2.3.9. Consider either installing
+WARNING : CLI version 2.3.9 or running `pretext update`
+WARNING : to update `requirements.txt` and other managed files to match 2.19.3.
+INFO    : Building target html
+INFO    : XSL conversion of /workspaces/qw/source/main.ptx by /root/.ptx/2.19.3/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /root/.ptx/2.19.3/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Generating any needed assets.
+INFO    : Finished generating assets.
+
+INFO    : Building with custom xsl /workspaces/qw/xsl/acs-html.xsl
+INFO    : Preparing to build into /workspaces/qw/output/html.
+INFO    : discovering source file's directory name: /workspaces/qw/source
+INFO    : verifying and expanding input directory: /workspaces/qw/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/qw/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/qw/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/qw/assets
+INFO    : XSL conversion of /workspaces/qw/source/main.ptx by /root/.ptx/2.19.3/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /root/.ptx/2.19.3/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : Downloading rs services file from https://runestone.academy/cdn/runestone/latest/webpack_static_imports.xml.
+INFO    : Runestone Services via online CDN query: version 7.9.4
+INFO    : Downloading Runestone Services, version 7.9.4
+INFO    : Extracting Runestone Services from archive file
+INFO    : Building custom css theme: theme-default-modern
+INFO    : converting /workspaces/qw/source/main.ptx to HTML in /ptx-yv4a4gh6
+INFO    : XSL conversion of /workspaces/qw/source/main.ptx by /ptxcli_ax0ujgrc/cli_xsl/acs-html.xsl
+INFO    : messages from the log for XSL processing:
+WARNING : * PTX:WARNING: the stringparam "latex.pageref" is deprecated. Your value, "no" will be used. However you should move to using a publisher file entry for  $publication/latex/@pageref  instead.
+INFO    : * PTX:INFO:   checking ONLY the last TWO YEARS of element deprecations.
+Rerun with the string parameter "author.deprecations.all" set to "yes" to check your source against all deprecations.
+WARNING : * PTX:DEPRECATE: (2023-08-08) a "website" element with "address" and "name" children has changed.  Continue to use the "website" element as before, but replace the "address" and "name" children with a single "url" element, which is more flexible and reliable.  We will try to honor your intent, but you may prefer your own adjustments. (1 time)
+INFO    : *              located within: "frontmatter" (xml:id), "Front Matter" (title)
+INFO    : * --------------
+WARNING : * PTX:DEPRECATE: (2025-03-08) the "commentary" element has been deprecated.  Remove the "commentary" element, and consult the PreTeXt Guide to learn about how version support can have the same effect. (If your "commentary" element uses a "component" attribute, we will try to honor your intent.) (1 time)
+INFO    : *              located within: "sec-math-theology" (xml:id), "God and Math" (title)
+WARNING : * PTX:DEPRECATE: (2024-10-08) elements previously included in a "titlepage" element inside the "frontmatter" (author, editor, credit, date, and event) should now be placed in "frontmatter/bibinfo".  To ensure a title page is created, put only the empty element "titlepage-items" inside "titlepage".  Until you move these elements, we will try to honor your intent. (1 time)
+WARNING : * PTX:DEPRECATE: (2024-10-08) elements previously included in a "colophon" element inside the "frontmatter" (credit, copyright, edition, and website) should now be placed in "frontmatter/bibinfo". To produce a "colophon", include only the empty element "colophon-items" inside "colophon" Until you move these elements, we will try to honor your intent. (1 time)
+WARNING : * PTX:DEPRECATE: (2022-10-24) the  latex.font.size  parameter has been replaced by the  latex/@font-size  entry in the publication file.   We will attempt to honor your intent.  Note that possible values are the same, but you no longer provide "pt" as the unit of measure.
+WARNING : * PTX:DEPRECATE: (2022-10-24) the  latex.pageref string parameter has been replaced by the  latex/@pageref  entry in the publication file.  We will attempt to honor your intent.
+WARNING : * PTX:DEPRECATE: (2022-11-19) the  webwork.divisional.static  string parameter has been replaced by a publication file entry.  We will try to honor your intent.
+INFO    : successful application of /ptxcli_ax0ujgrc/cli_xsl/acs-html.xsl
+INFO    : Removing temporary directory /ptx-yv4a4gh6
+INFO    : Removing temporary directory /ptx-55f8z0wp
+INFO    : 
+Success! Run `pretext view html` to see the results.
+
+INFO    : 
